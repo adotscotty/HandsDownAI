@@ -17,6 +17,10 @@ h3 { margin: 0 0 8px; font-size: 1.05rem; }
 .sub, .note, .updated { color: var(--muted); margin: 4px 0; }
 .note { font-size: .9rem; }
 .updated { font-size: .85rem; }
+.views { display: flex; gap: 22px; border-bottom: 1px solid var(--line); padding-top: 10px; }
+.views a { padding: 8px 2px; color: var(--muted); text-decoration: none; font-weight: 600;
+  border-bottom: 3px solid transparent; margin-bottom: -1px; }
+.views a.on { color: var(--ink); border-bottom-color: var(--accent); }
 .tabs { display: flex; gap: 8px; padding-top: 14px; flex-wrap: wrap; }
 .tabs button { border: 1px solid var(--line); background: var(--card); color: var(--ink);
   padding: 7px 14px; border-radius: 999px; font: inherit; cursor: pointer; }

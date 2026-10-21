@@ -110,6 +110,15 @@ function renderTrack() {
   box.append(grid);
 }
 
+function showView() {
+  const v = location.hash === "#results" ? "results" : "games";
+  document.getElementById("view-games").hidden = v !== "games";
+  document.getElementById("view-results").hidden = v !== "results";
+  document.querySelectorAll("#views a").forEach(a => a.classList.toggle("on", a.dataset.view === v));
+}
+window.addEventListener("hashchange", () => { showView(); window.scrollTo(0, 0); });
+showView();
+
 function render() { renderGames(); renderTrack(); }
 
 async function load() {

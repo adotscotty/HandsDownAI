@@ -16,6 +16,11 @@
   </div>
 </header>
 
+<nav class="wrap views" id="views" aria-label="Page">
+  <a href="#games" data-view="games" class="on">Upcoming games</a>
+  <a href="#results" data-view="results">Track record</a>
+</nav>
+
 <nav class="wrap tabs" id="tabs" aria-label="Sport">
   <button data-sport="all" class="on">All</button>
   <button data-sport="nfl">NFL</button>
@@ -24,7 +29,7 @@
 </nav>
 
 <main class="wrap">
-  <section>
+  <section id="view-games">
     <div class="row-head">
       <h2>Upcoming games</h2>
       <label class="toggle"><input type="checkbox" id="edgeOnly"> Only games where we disagree with the spread by 3+</label>
@@ -32,7 +37,7 @@
     <div id="games"></div>
   </section>
 
-  <section>
+  <section id="view-results" hidden>
     <h2>Track record</h2>
     <p class="note">"This season" grades each finished game using the prediction the model would have made before it, from earlier games only. "Last season" is the full 2025 test. Beating the spread needs about 52.4% to break even.</p>
     <div id="track"></div>
