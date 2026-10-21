@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports AI Picks</title>
+<meta name="description" content="Predicted margins of victory and win chances for NFL, NBA and college football, updated every 15 minutes.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Sports AI Picks</h1>
+    <p class="sub">Predicted margins and win chances for NFL, NBA and college football. Updated every 15 minutes with the latest injury news.</p>
+    <p class="updated" id="updated">Loading…</p>
+  </div>
+</header>
+
+<nav class="wrap tabs" id="tabs" aria-label="Sport">
+  <button data-sport="all" class="on">All</button>
+  <button data-sport="nfl">NFL</button>
+  <button data-sport="nba">NBA</button>
+  <button data-sport="cfb">College</button>
+</nav>
+
+<main class="wrap">
+  <section>
+    <div class="row-head">
+      <h2>Upcoming games</h2>
+      <label class="toggle"><input type="checkbox" id="edgeOnly"> Only games where we disagree with the spread by 3+</label>
+    </div>
+    <div id="games"></div>
+  </section>
+
+  <section>
+    <h2>Track record</h2>
+    <p class="note">"This season" grades each finished game using the prediction the model would have made before it, from earlier games only. "Last season" is the full 2025 test. Beating the spread needs about 52.4% to break even.</p>
+    <div id="track"></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>For entertainment only, not betting advice. Data from ESPN. Betting lines shown are ESPN's (ESPN BET).</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

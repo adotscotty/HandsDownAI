@@ -1,0 +1,94 @@
+sport,season,event_id,date,name,neutral,completed,home_id,home,home_name,home_score,away_id,away,away_name,away_score,spread,total,book,home_players,away_players,home_qb,home_qb_name,away_qb,away_qb_name
+nfl,2026,401872656,2026-09-10T00:20Z,New England Patriots at Seattle Seahawks,0,True,26,SEA,Seattle Seahawks,13,17,NE,New England Patriots,10,-3.0,44.5,DraftKings,,,3924327,Drew Lock,4431452,Drake Maye
+nfl,2026,401872657,2026-09-11T00:35Z,San Francisco 49ers at Los Angeles Rams,1,True,14,LAR,Los Angeles Rams,7,25,SF,San Francisco 49ers,27,-3.5,47.5,DraftKings,,,12483,Matthew Stafford,4361741,Brock Purdy
+nfl,2026,401872925,2026-09-13T17:00Z,Tampa Bay Buccaneers at Cincinnati Bengals,0,True,4,CIN,Cincinnati Bengals,33,27,TB,Tampa Bay Buccaneers,27,-3.5,50.5,DraftKings,,,3915511,Joe Burrow,3052587,Baker Mayfield
+nfl,2026,401872923,2026-09-13T17:00Z,New Orleans Saints at Detroit Lions,0,True,8,DET,Detroit Lions,31,18,NO,New Orleans Saints,30,-7.0,49.5,DraftKings,,,3046779,Jared Goff,4360689,Tyler Shough
+nfl,2026,401872924,2026-09-13T17:00Z,New York Jets at Tennessee Titans,0,True,10,TEN,Tennessee Titans,10,20,NYJ,New York Jets,23,-1.5,39.5,DraftKings,,,4688380,Cam Ward,15864,Geno Smith
+nfl,2026,401872659,2026-09-13T17:00Z,Baltimore Ravens at Indianapolis Colts,0,True,11,IND,Indianapolis Colts,23,33,BAL,Baltimore Ravens,41,3.0,48.5,DraftKings,,,3917792,Daniel Jones,3916387,Lamar Jackson
+nfl,2026,401872658,2026-09-13T17:00Z,Atlanta Falcons at Pittsburgh Steelers,0,True,23,PIT,Pittsburgh Steelers,20,1,ATL,Atlanta Falcons,13,-6.5,40.5,DraftKings,,,8439,Aaron Rodgers,2972515,Cooper Rush
+nfl,2026,401872661,2026-09-13T17:00Z,Chicago Bears at Carolina Panthers,0,True,29,CAR,Carolina Panthers,37,3,CHI,Chicago Bears,59,3.0,47.5,DraftKings,,,4685720,Bryce Young,4431611,Caleb Williams
+nfl,2026,401872922,2026-09-13T17:00Z,Cleveland Browns at Jacksonville Jaguars,0,True,30,JAX,Jacksonville Jaguars,34,5,CLE,Cleveland Browns,10,-8.5,40.5,DraftKings,,,4360310,Trevor Lawrence,3122840,Deshaun Watson
+nfl,2026,401872660,2026-09-13T17:00Z,Buffalo Bills at Houston Texans,0,True,34,HOU,Houston Texans,31,2,BUF,Buffalo Bills,36,1.5,44.5,DraftKings,,,4432577,C.J. Stroud,3918298,Josh Allen
+nfl,2026,401872928,2026-09-13T20:25Z,Miami Dolphins at Las Vegas Raiders,0,True,13,LV,Las Vegas Raiders,27,15,MIA,Miami Dolphins,13,-3.0,40.5,DraftKings,,,14880,Kirk Cousins,4242512,Malik Willis
+nfl,2026,401872927,2026-09-13T20:25Z,Green Bay Packers at Minnesota Vikings,0,True,16,MIN,Minnesota Vikings,39,9,GB,Green Bay Packers,22,-2.5,46.5,DraftKings,,,2573079,Carson Wentz,4036378,Jordan Love
+nfl,2026,401872929,2026-09-13T20:25Z,Washington Commanders at Philadelphia Eagles,0,True,21,PHI,Philadelphia Eagles,24,28,WSH,Washington Commanders,22,-6.0,43.5,DraftKings,,,4040715,Jalen Hurts,4426348,Jayden Daniels
+nfl,2026,401872926,2026-09-13T20:25Z,Arizona Cardinals at Los Angeles Chargers,0,True,24,LAC,Los Angeles Chargers,14,22,ARI,Arizona Cardinals,26,-8.5,47.5,DraftKings,,,4038941,Justin Herbert,2578570,Jacoby Brissett
+nfl,2026,401872930,2026-09-14T00:20Z,Dallas Cowboys at New York Giants,0,True,19,NYG,New York Giants,28,6,DAL,Dallas Cowboys,20,3.0,47.5,DraftKings,,,4689114,Jaxson Dart,2577417,Dak Prescott
+nfl,2026,401872931,2026-09-15T00:15Z,Denver Broncos at Kansas City Chiefs,0,True,12,KC,Kansas City Chiefs,31,7,DEN,Denver Broncos,10,-2.5,42.5,DraftKings,,,3139477,Patrick Mahomes,4426338,Bo Nix
+nfl,2026,401872932,2026-09-18T00:15Z,Detroit Lions at Buffalo Bills,0,True,2,BUF,Buffalo Bills,41,8,DET,Detroit Lions,31,-5.5,54.5,DraftKings,,,3918298,Josh Allen,3046779,Jared Goff
+nfl,2026,401872933,2026-09-20T17:00Z,Carolina Panthers at Atlanta Falcons,0,True,1,ATL,Atlanta Falcons,3,29,CAR,Carolina Panthers,34,2.5,43.5,DraftKings,,,2972515,Cooper Rush,4685720,Bryce Young
+nfl,2026,401872937,2026-09-20T17:00Z,Minnesota Vikings at Chicago Bears,0,True,3,CHI,Chicago Bears,3,16,MIN,Minnesota Vikings,9,-4.5,46.5,DraftKings,,,4431611,Caleb Williams,2573079,Carson Wentz
+nfl,2026,401872939,2026-09-20T17:00Z,Philadelphia Eagles at Tennessee Titans,0,True,10,TEN,Tennessee Titans,20,21,PHI,Philadelphia Eagles,24,7.0,39.5,DraftKings,,,4688380,Cam Ward,4040715,Jalen Hurts
+nfl,2026,401872946,2026-09-20T17:00Z,Pittsburgh Steelers at New England Patriots,0,True,17,NE,New England Patriots,20,23,PIT,Pittsburgh Steelers,3,-4.5,41.5,DraftKings,,,4431452,Drake Maye,8439,Aaron Rodgers
+nfl,2026,401872936,2026-09-20T17:00Z,Green Bay Packers at New York Jets,0,True,20,NYJ,New York Jets,17,9,GB,Green Bay Packers,20,3.5,44.5,DraftKings,,,15864,Geno Smith,4036378,Jordan Love
+nfl,2026,401872935,2026-09-20T17:00Z,Cleveland Browns at Tampa Bay Buccaneers,0,True,27,TB,Tampa Bay Buccaneers,19,5,CLE,Cleveland Browns,23,-8.5,41.5,DraftKings,,,3052587,Baker Mayfield,3122840,Deshaun Watson
+nfl,2026,401872938,2026-09-20T17:00Z,New Orleans Saints at Baltimore Ravens,0,True,33,BAL,Baltimore Ravens,17,18,NO,New Orleans Saints,24,-8.5,45.5,DraftKings,,,3916387,Lamar Jackson,4360689,Tyler Shough
+nfl,2026,401872934,2026-09-20T17:00Z,Cincinnati Bengals at Houston Texans,0,True,34,HOU,Houston Texans,6,4,CIN,Cincinnati Bengals,20,-3.0,45.5,DraftKings,,,4432577,C.J. Stroud,3915511,Joe Burrow
+nfl,2026,401872940,2026-09-20T20:05Z,Jacksonville Jaguars at Denver Broncos,0,True,7,DEN,Denver Broncos,20,30,JAX,Jacksonville Jaguars,13,-2.5,45.5,DraftKings,,,4426338,Bo Nix,4360310,Trevor Lawrence
+nfl,2026,401872941,2026-09-20T20:05Z,Las Vegas Raiders at Los Angeles Chargers,0,True,24,LAC,Los Angeles Chargers,14,13,LV,Las Vegas Raiders,26,-6.5,43.5,DraftKings,,,4038941,Justin Herbert,14880,Kirk Cousins
+nfl,2026,401872944,2026-09-20T20:25Z,Washington Commanders at Dallas Cowboys,0,True,6,DAL,Dallas Cowboys,37,28,WSH,Washington Commanders,20,-4.5,51.5,DraftKings,,,2577417,Dak Prescott,4426348,Jayden Daniels
+nfl,2026,401872943,2026-09-20T20:25Z,Seattle Seahawks at Arizona Cardinals,0,True,22,ARI,Arizona Cardinals,7,26,SEA,Seattle Seahawks,31,3.5,40.5,DraftKings,,,2578570,Jacoby Brissett,3924327,Drew Lock
+nfl,2026,401872942,2026-09-20T20:25Z,Miami Dolphins at San Francisco 49ers,0,True,25,SF,San Francisco 49ers,35,15,MIA,Miami Dolphins,13,-12.5,44.5,DraftKings,,,4361741,Brock Purdy,4242512,Malik Willis
+nfl,2026,401872945,2026-09-21T00:20Z,Indianapolis Colts at Kansas City Chiefs,0,True,12,KC,Kansas City Chiefs,33,11,IND,Indianapolis Colts,30,-6.0,46.5,DraftKings,,,3139477,Patrick Mahomes,3917792,Daniel Jones
+nfl,2026,401872947,2026-09-22T00:15Z,New York Giants at Los Angeles Rams,0,True,14,LAR,Los Angeles Rams,28,19,NYG,New York Giants,6,-7.0,47.5,DraftKings,,,12483,Matthew Stafford,2969939,Jameis Winston
+nfl,2026,401872948,2026-09-25T00:15Z,Atlanta Falcons at Green Bay Packers,0,True,9,GB,Green Bay Packers,14,1,ATL,Atlanta Falcons,35,-4.5,43.5,DraftKings,,,4036378,Jordan Love,4360423,Michael Penix Jr.
+nfl,2026,401872953,2026-09-27T17:00Z,Los Angeles Chargers at Buffalo Bills,0,True,2,BUF,Buffalo Bills,24,24,LAC,Los Angeles Chargers,16,-7.0,50.5,DraftKings,,,3918298,Josh Allen,4038941,Justin Herbert
+nfl,2026,401872949,2026-09-27T17:00Z,Carolina Panthers at Cleveland Browns,0,True,5,CLE,Cleveland Browns,21,29,CAR,Carolina Panthers,18,2.5,41.5,DraftKings,,,3122840,Deshaun Watson,4685720,Bryce Young
+nfl,2026,401872954,2026-09-27T17:00Z,New York Jets at Detroit Lions,0,True,8,DET,Detroit Lions,31,20,NYJ,New York Jets,24,-7.0,49.5,DraftKings,,,3046779,Jared Goff,15864,Geno Smith
+nfl,2026,401872951,2026-09-27T17:00Z,Houston Texans at Indianapolis Colts,0,True,11,IND,Indianapolis Colts,19,34,HOU,Houston Texans,17,1.5,42.5,DraftKings,,,3917792,Daniel Jones,4432577,C.J. Stroud
+nfl,2026,401872952,2026-09-27T17:00Z,Kansas City Chiefs at Miami Dolphins,0,True,15,MIA,Miami Dolphins,10,12,KC,Kansas City Chiefs,24,10.0,45.5,DraftKings,,,4242512,Malik Willis,3139477,Patrick Mahomes
+nfl,2026,401872956,2026-09-27T17:00Z,Tennessee Titans at New York Giants,0,True,19,NYG,New York Giants,12,10,TEN,Tennessee Titans,7,-2.5,37.5,DraftKings,,,2969939,Jameis Winston,4688380,Cam Ward
+nfl,2026,401872950,2026-09-27T17:00Z,Cincinnati Bengals at Pittsburgh Steelers,0,True,23,PIT,Pittsburgh Steelers,30,4,CIN,Cincinnati Bengals,27,3.5,42.5,DraftKings,,,8439,Aaron Rodgers,3915511,Joe Burrow
+nfl,2026,401872955,2026-09-27T17:00Z,Seattle Seahawks at Washington Commanders,0,True,28,WSH,Washington Commanders,33,26,SEA,Seattle Seahawks,31,8.5,40.5,DraftKings,,,2576980,Marcus Mariota,3912547,Sam Darnold
+nfl,2026,401872957,2026-09-27T17:00Z,New England Patriots at Jacksonville Jaguars,0,True,30,JAX,Jacksonville Jaguars,35,17,NE,New England Patriots,6,-3.0,46.5,DraftKings,,,4360310,Trevor Lawrence,4431452,Drake Maye
+nfl,2026,401872958,2026-09-27T20:05Z,Arizona Cardinals at San Francisco 49ers,0,True,25,SF,San Francisco 49ers,36,22,ARI,Arizona Cardinals,30,-7.5,48.5,DraftKings,,,4361741,Brock Purdy,2578570,Jacoby Brissett
+nfl,2026,401872959,2026-09-27T20:05Z,Minnesota Vikings at Tampa Bay Buccaneers,0,True,27,TB,Tampa Bay Buccaneers,16,16,MIN,Minnesota Vikings,23,-1.5,42.5,DraftKings,,,3052587,Baker Mayfield,3917315,Kyler Murray
+nfl,2026,401872960,2026-09-27T20:25Z,Baltimore Ravens at Dallas Cowboys,1,True,6,DAL,Dallas Cowboys,31,33,BAL,Baltimore Ravens,34,3.0,54.5,DraftKings,,,2577417,Dak Prescott,3916387,Lamar Jackson
+nfl,2026,401872961,2026-09-27T20:25Z,Las Vegas Raiders at New Orleans Saints,0,True,18,NO,New Orleans Saints,27,13,LV,Las Vegas Raiders,35,-3.5,44.5,DraftKings,,,4360689,Tyler Shough,14880,Kirk Cousins
+nfl,2026,401872962,2026-09-28T00:20Z,Los Angeles Rams at Denver Broncos,0,True,7,DEN,Denver Broncos,30,14,LAR,Los Angeles Rams,26,-1.5,44.5,DraftKings,,,4426338,Bo Nix,12483,Matthew Stafford
+nfl,2026,401872963,2026-09-29T00:15Z,Philadelphia Eagles at Chicago Bears,0,True,3,CHI,Chicago Bears,27,21,PHI,Philadelphia Eagles,7,3.0,42.5,DraftKings,,,15168,Case Keenum,4040715,Jalen Hurts
+nfl,2026,401872964,2026-10-02T00:15Z,Pittsburgh Steelers at Cleveland Browns,0,True,5,CLE,Cleveland Browns,27,23,PIT,Pittsburgh Steelers,24,2.5,38.5,DraftKings,,,3122840,Deshaun Watson,8439,Aaron Rodgers
+nfl,2026,401872965,2026-10-04T13:30Z,Indianapolis Colts at Washington Commanders,1,True,28,WSH,Washington Commanders,13,11,IND,Indianapolis Colts,30,4.5,46.5,DraftKings,,,4432722,Athan Kaliakmanis,3917792,Daniel Jones
+nfl,2026,401872971,2026-10-04T17:00Z,New England Patriots at Buffalo Bills,0,True,2,BUF,Buffalo Bills,26,17,NE,New England Patriots,29,-7.0,49.5,DraftKings,,,3918298,Josh Allen,4431452,Drake Maye
+nfl,2026,401872972,2026-10-04T17:00Z,New York Jets at Chicago Bears,0,True,3,CHI,Chicago Bears,23,20,NYJ,New York Jets,12,-3.5,43.5,DraftKings,,,4434153,Tyson Bagent,15864,Geno Smith
+nfl,2026,401872969,2026-10-04T17:00Z,Jacksonville Jaguars at Cincinnati Bengals,0,True,4,CIN,Cincinnati Bengals,17,30,JAX,Jacksonville Jaguars,22,-2.5,51.5,DraftKings,,,3915511,Joe Burrow,4360310,Trevor Lawrence
+nfl,2026,401872966,2026-10-04T17:00Z,Arizona Cardinals at New York Giants,0,True,19,NYG,New York Giants,36,22,ARI,Arizona Cardinals,24,2.5,43.5,DraftKings,,,2969939,Jameis Winston,2578570,Jacoby Brissett
+nfl,2026,401872970,2026-10-04T17:00Z,Los Angeles Rams at Philadelphia Eagles,0,True,21,PHI,Philadelphia Eagles,20,14,LAR,Los Angeles Rams,24,4.5,42.5,DraftKings,,,4040715,Jalen Hurts,12483,Matthew Stafford
+nfl,2026,401872968,2026-10-04T17:00Z,Green Bay Packers at Tampa Bay Buccaneers,0,True,27,TB,Tampa Bay Buccaneers,14,9,GB,Green Bay Packers,17,2.5,38.5,DraftKings,,,4596472,Jalon Daniels,4036378,Jordan Love
+nfl,2026,401872973,2026-10-04T17:00Z,Tennessee Titans at Baltimore Ravens,0,True,33,BAL,Baltimore Ravens,24,10,TEN,Tennessee Titans,18,-11.5,41.5,DraftKings,,,3916387,Lamar Jackson,4688380,Cam Ward
+nfl,2026,401872967,2026-10-04T17:00Z,Dallas Cowboys at Houston Texans,0,True,34,HOU,Houston Texans,30,6,DAL,Dallas Cowboys,34,-3.0,48.5,DraftKings,,,4432577,C.J. Stroud,2577417,Dak Prescott
+nfl,2026,401872974,2026-10-04T20:05Z,Miami Dolphins at Minnesota Vikings,0,True,16,MIN,Minnesota Vikings,15,15,MIA,Miami Dolphins,10,-10.0,38.5,DraftKings,,,3917315,Kyler Murray,4242512,Malik Willis
+nfl,2026,401872976,2026-10-04T20:25Z,Kansas City Chiefs at Las Vegas Raiders,0,True,13,LV,Las Vegas Raiders,27,12,KC,Kansas City Chiefs,30,3.5,47.5,DraftKings,,,14880,Kirk Cousins,3139477,Patrick Mahomes
+nfl,2026,401872975,2026-10-04T20:25Z,Denver Broncos at San Francisco 49ers,0,True,25,SF,San Francisco 49ers,24,7,DEN,Denver Broncos,14,-3.0,48.5,DraftKings,,,4361741,Brock Purdy,4426338,Bo Nix
+nfl,2026,401872977,2026-10-04T20:25Z,Los Angeles Chargers at Seattle Seahawks,0,True,26,SEA,Seattle Seahawks,30,24,LAC,Los Angeles Chargers,23,-7.0,43.5,DraftKings,,,3912547,Sam Darnold,4038941,Justin Herbert
+nfl,2026,401872978,2026-10-05T00:20Z,Detroit Lions at Carolina Panthers,0,True,29,CAR,Carolina Panthers,32,8,DET,Detroit Lions,26,3.5,52.5,DraftKings,,,4685720,Bryce Young,3046779,Jared Goff
+nfl,2026,401872979,2026-10-06T00:15Z,Atlanta Falcons at New Orleans Saints,0,True,18,NO,New Orleans Saints,24,1,ATL,Atlanta Falcons,45,-1.5,48.5,DraftKings,,,4360689,Tyler Shough,4360423,Michael Penix Jr.
+nfl,2026,401872980,2026-10-09T00:15Z,Tampa Bay Buccaneers at Dallas Cowboys,0,True,6,DAL,Dallas Cowboys,16,27,TB,Tampa Bay Buccaneers,24,-8.5,49.5,DraftKings,,,2577417,Dak Prescott,4596472,Jalon Daniels
+nfl,2026,401872981,2026-10-11T13:30Z,Philadelphia Eagles at Jacksonville Jaguars,1,True,30,JAX,Jacksonville Jaguars,19,21,PHI,Philadelphia Eagles,17,-7.5,41.5,DraftKings,,,4360310,Trevor Lawrence,4040715,Jalen Hurts
+nfl,2026,401872990,2026-10-11T17:00Z,Chicago Bears at Green Bay Packers,0,True,9,GB,Green Bay Packers,31,3,CHI,Chicago Bears,7,1.5,46.5,DraftKings,,,4036378,Jordan Love,4434153,Tyson Bagent
+nfl,2026,401872984,2026-10-11T17:00Z,Houston Texans at Tennessee Titans,0,True,10,TEN,Tennessee Titans,3,34,HOU,Houston Texans,26,6.5,37.5,DraftKings,,,4688380,Cam Ward,4432577,C.J. Stroud
+nfl,2026,401872982,2026-10-11T17:00Z,Cincinnati Bengals at Miami Dolphins,0,True,15,MIA,Miami Dolphins,24,4,CIN,Cincinnati Bengals,31,7.5,45.5,DraftKings,,,4242512,Malik Willis,3915511,Joe Burrow
+nfl,2026,401872986,2026-10-11T17:00Z,Las Vegas Raiders at New England Patriots,0,True,17,NE,New England Patriots,45,13,LV,Las Vegas Raiders,17,-3.5,45.5,DraftKings,,,4431452,Drake Maye,14880,Kirk Cousins
+nfl,2026,401872987,2026-10-11T17:00Z,Minnesota Vikings at New Orleans Saints,0,True,18,NO,New Orleans Saints,13,16,MIN,Minnesota Vikings,23,2.5,41.5,DraftKings,,,4360689,Tyler Shough,3917315,Kyler Murray
+nfl,2026,401872983,2026-10-11T17:00Z,Cleveland Browns at New York Jets,0,True,20,NYJ,New York Jets,17,5,CLE,Cleveland Browns,12,-2.5,38.5,DraftKings,,,15864,Geno Smith,3122840,Deshaun Watson
+nfl,2026,401872985,2026-10-11T17:00Z,Indianapolis Colts at Pittsburgh Steelers,0,True,23,PIT,Pittsburgh Steelers,34,11,IND,Indianapolis Colts,22,-3.0,42.5,DraftKings,,,8439,Aaron Rodgers,3917792,Daniel Jones
+nfl,2026,401872988,2026-10-11T17:00Z,New York Giants at Washington Commanders,0,True,28,WSH,Washington Commanders,27,19,NYG,New York Giants,27,-3.5,41.5,DraftKings,,,4426348,Jayden Daniels,2969939,Jameis Winston
+nfl,2026,401872989,2026-10-11T20:05Z,Denver Broncos at Los Angeles Chargers,0,True,24,LAC,Los Angeles Chargers,17,7,DEN,Denver Broncos,23,3.0,42.5,DraftKings,,,4038941,Justin Herbert,4426338,Bo Nix
+nfl,2026,401872991,2026-10-11T20:25Z,Detroit Lions at Arizona Cardinals,0,True,22,ARI,Arizona Cardinals,21,8,DET,Detroit Lions,45,4.5,55.5,DraftKings,,,2578570,Jacoby Brissett,3046779,Jared Goff
+nfl,2026,401872992,2026-10-11T20:25Z,San Francisco 49ers at Seattle Seahawks,0,True,26,SEA,Seattle Seahawks,29,25,SF,San Francisco 49ers,32,-3.0,46.5,DraftKings,,,3912547,Sam Darnold,4361741,Brock Purdy
+nfl,2026,401872993,2026-10-12T00:20Z,Baltimore Ravens at Atlanta Falcons,0,True,1,ATL,Atlanta Falcons,23,33,BAL,Baltimore Ravens,30,-3.0,44.5,DraftKings,,,4360423,Michael Penix Jr.,4035671,Tyler Huntley
+nfl,2026,401872994,2026-10-13T00:15Z,Buffalo Bills at Los Angeles Rams,0,True,14,LAR,Los Angeles Rams,34,2,BUF,Buffalo Bills,37,-3.5,55.5,DraftKings,,,12483,Matthew Stafford,3918298,Josh Allen
+nfl,2026,401872995,2026-10-16T00:15Z,Seattle Seahawks at Denver Broncos,0,True,7,DEN,Denver Broncos,17,26,SEA,Seattle Seahawks,14,3.0,40.5,DraftKings,,,4426338,Bo Nix,3912547,Sam Darnold
+nfl,2026,401872996,2026-10-18T13:30Z,Houston Texans at Jacksonville Jaguars,1,True,30,JAX,Jacksonville Jaguars,31,34,HOU,Houston Texans,34,-2.5,42.5,DraftKings,,,4360310,Trevor Lawrence,4432577,C.J. Stroud
+nfl,2026,401872999,2026-10-18T17:00Z,Chicago Bears at Atlanta Falcons,0,True,1,ATL,Atlanta Falcons,23,3,CHI,Chicago Bears,31,1.5,50.5,DraftKings,,,4360423,Michael Penix Jr.,4431611,Caleb Williams
+nfl,2026,401872997,2026-10-18T17:00Z,Baltimore Ravens at Cleveland Browns,0,True,5,CLE,Cleveland Browns,13,33,BAL,Baltimore Ravens,10,3.0,40.5,DraftKings,,,3122840,Deshaun Watson,4035671,Tyler Huntley
+nfl,2026,401873003,2026-10-18T17:00Z,Tennessee Titans at Indianapolis Colts,0,True,11,IND,Indianapolis Colts,20,10,TEN,Tennessee Titans,26,-6.5,43.5,DraftKings,,,3917792,Daniel Jones,4688380,Cam Ward
+nfl,2026,401873001,2026-10-18T17:00Z,New York Jets at New England Patriots,0,True,17,NE,New England Patriots,26,20,NYJ,New York Jets,19,-7.5,42.5,DraftKings,,,4431452,Drake Maye,15864,Geno Smith
+nfl,2026,401873000,2026-10-18T17:00Z,New Orleans Saints at New York Giants,0,True,19,NYG,New York Giants,27,18,NO,New Orleans Saints,34,1.5,46.5,DraftKings,,,2969939,Jameis Winston,4360689,Tyler Shough
+nfl,2026,401872998,2026-10-18T17:00Z,Carolina Panthers at Philadelphia Eagles,0,True,21,PHI,Philadelphia Eagles,14,29,CAR,Carolina Panthers,25,3.0,39.5,DraftKings,,,4685201,Tanner McKee,4685720,Bryce Young
+nfl,2026,401873002,2026-10-18T17:00Z,Pittsburgh Steelers at Tampa Bay Buccaneers,0,True,27,TB,Tampa Bay Buccaneers,19,23,PIT,Pittsburgh Steelers,26,2.5,37.5,DraftKings,,,4596472,Jalon Daniels,8439,Aaron Rodgers
+nfl,2026,401873004,2026-10-18T20:05Z,Arizona Cardinals at Los Angeles Rams,0,True,14,LAR,Los Angeles Rams,16,22,ARI,Arizona Cardinals,18,-13.5,51.5,DraftKings,,,12483,Matthew Stafford,2578570,Jacoby Brissett
+nfl,2026,401873006,2026-10-18T20:25Z,Los Angeles Chargers at Kansas City Chiefs,0,True,12,KC,Kansas City Chiefs,22,24,LAC,Los Angeles Chargers,6,-7.5,41.5,DraftKings,,,3139477,Patrick Mahomes,4038941,Justin Herbert
+nfl,2026,401873005,2026-10-18T20:25Z,Buffalo Bills at Las Vegas Raiders,0,True,13,LV,Las Vegas Raiders,30,2,BUF,Buffalo Bills,33,5.5,54.5,DraftKings,,,14880,Kirk Cousins,3918298,Josh Allen
+nfl,2026,401873007,2026-10-19T00:20Z,Dallas Cowboys at Green Bay Packers,0,True,9,GB,Green Bay Packers,23,6,DAL,Dallas Cowboys,13,1.5,54.5,DraftKings,,,4036378,Jordan Love,2577417,Dak Prescott
+nfl,2026,401873008,2026-10-20T00:15Z,Washington Commanders at San Francisco 49ers,0,True,25,SF,San Francisco 49ers,23,28,WSH,Washington Commanders,17,-7.5,51.5,DraftKings,,,4361741,Brock Purdy,4426348,Jayden Daniels

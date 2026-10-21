@@ -1,0 +1,54 @@
+# Sports AI: game predictions (step 1: data + model)
+
+Predicts the margin of victory and win probability for NFL, NBA and college football (FBS) games,
+using only free ESPN data. It runs on its own; nobody needs to touch the code.
+
+## What it does
+1. **Team ratings.** Every team has a rating in points. After each game the ratings move toward
+   what the score says. Between seasons they are pulled back partway toward average.
+2. **Prediction** = home-field edge + home rating - away rating - injury penalty.
+   Win probability comes from how big the predicted margin is.
+3. **Injuries** (from ESPN's injury report, refreshed every run):
+   - NBA: the value of regular rotation players listed Out (full), Doubtful (75%) or Questionable/Day-to-day (30%).
+   - NFL and college: whether the team's usual starting quarterback is listed out or doubtful.
+4. **Betting line**: ESPN's spread and over/under (ESPN BET) are shown next to our number.
+
+## Last season's backtest (tuned on 2024, graded on 2025, each game predicted only from earlier games)
+
+| | NFL | NBA | College (FBS v FBS) |
+|---|---|---|---|
+| Games graded | 285 | 1,316 | 809 |
+| Our average miss (points) | 10.1 | 11.3 | 12.8 |
+| Betting spread's average miss | 9.6 | 11.0 | 11.8 |
+| Picked the winner, us | 65% | 70% | 73% |
+| Picked the winner, spread | 66% | 69% | 73% |
+| Against the spread, every game | 44% | 50% | 51% |
+| Against the spread, when we disagree by 4+ pts | 42% (33 games) | 51% (313 games) | 55% (372 games) |
+
+Breaking even against the spread needs about 52.4%. So the model is about as good as the betting
+line at picking winners, slightly worse at the exact margin, and is not yet a proven betting edge.
+The injury adjustment improved accuracy in all three sports (NBA most).
+
+Caveat: in the backtest, "injured" means the player didn't play (taken from box scores), which is a
+bit more than what was known before kickoff. Live predictions use the real pre-game injury report.
+
+## Files
+- `sportsai/fetch_history.py` downloads past seasons (scores, closing spreads, who played).
+- `sportsai/backtest.py` tunes the settings and grades last season. Results: `data/backtest_summary.json`, `data/backtest_<sport>.csv`.
+- `sportsai/predict.py` makes predictions for upcoming games: `data/predictions.json`
+  (built to run every 15 minutes) and `data/season_<sport>.csv` (this season's track record so far).
+
+Commands: `python -m sportsai.fetch_history`, `python -m sportsai.backtest`, `python -m sportsai.predict`.
+No extra packages needed (plain Python 3).
+
+## When to consider paid data
+- **The Odds API (~$30/mo)**: if ESPN stops showing lines, or you want lines from several sportsbooks.
+- **SportsDataIO or similar**: if injury news on ESPN lags (e.g. late scratches in the NBA).
+- **Licensed data**: before charging money or running ads, since ESPN's API is unofficial and not licensed for commercial use.
+
+## Website and automatic updates
+- `site/` is the website (plain HTML/CSS/JS). It reads `site/data/predictions.json` and `site/data/track_record.json`,
+  which `python -m sportsai.build_site` writes.
+- `.github/workflows/update.yml` runs every 15 minutes on GitHub: fetches the latest scores, injuries and odds,
+  makes predictions, rebuilds the site data and publishes it to GitHub Pages. Finished games and the last
+  pre-game prediction for each game (`data/pregame_log.csv`) are saved back to the repository.
