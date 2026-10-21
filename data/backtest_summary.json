@@ -41,10 +41,41 @@
    "carry": 0.5,
    "hfa": 1.5,
    "cap": 24,
-   "beta": 5,
-   "sigma": 10.18,
+   "beta": 3,
+   "sigma": 11.41,
    "new": 0.0
-  }
+  },
+  "retunes": [
+   {
+    "date": "2026-10-21",
+    "judged_since": "2026-07-23",
+    "games_used": 663,
+    "recent_games": 93,
+    "recent_avg_miss_old": 9.94,
+    "recent_avg_miss_new": 9.79,
+    "adopted": true,
+    "old_settings": {
+     "k": 0.06,
+     "early": 2.0,
+     "carry": 0.5,
+     "hfa": 1.5,
+     "cap": 24,
+     "beta": 5,
+     "sigma": 10.18,
+     "new": 0.0
+    },
+    "new_settings": {
+     "k": 0.06,
+     "early": 2.0,
+     "carry": 0.5,
+     "hfa": 1.5,
+     "cap": 24,
+     "beta": 3,
+     "sigma": 11.41,
+     "new": 0.0
+    }
+   }
+  ]
  },
  "nba": {
   "games": 1316,
@@ -85,13 +116,44 @@
   "settings": {
    "k": 0.045,
    "early": 2.0,
-   "carry": 0.5,
+   "carry": 0.65,
    "hfa": 2.0,
    "cap": 25,
-   "beta": 0.08,
-   "sigma": 12.37,
+   "beta": 0.12,
+   "sigma": 11.56,
    "new": 0.0
-  }
+  },
+  "retunes": [
+   {
+    "date": "2026-10-21",
+    "judged_since": "2025-10-21",
+    "games_used": 2634,
+    "recent_games": 1319,
+    "recent_avg_miss_old": 11.28,
+    "recent_avg_miss_new": 11.25,
+    "adopted": true,
+    "old_settings": {
+     "k": 0.045,
+     "early": 2.0,
+     "carry": 0.5,
+     "hfa": 2.0,
+     "cap": 25,
+     "beta": 0.08,
+     "sigma": 12.37,
+     "new": 0.0
+    },
+    "new_settings": {
+     "k": 0.045,
+     "early": 2.0,
+     "carry": 0.65,
+     "hfa": 2.0,
+     "cap": 25,
+     "beta": 0.12,
+     "sigma": 11.56,
+     "new": 0.0
+    }
+   }
+  ]
  },
  "cfb": {
   "games": 809,
@@ -132,12 +194,43 @@
   "settings": {
    "k": 0.11,
    "early": 2.0,
-   "carry": 0.55,
-   "hfa": 2.75,
+   "carry": 0.85,
+   "hfa": 3.5,
    "cap": 35,
    "beta": 4,
-   "sigma": 15.24,
+   "sigma": 15.17,
    "new": -18.0
-  }
+  },
+  "retunes": [
+   {
+    "date": "2026-10-21",
+    "judged_since": "2026-07-23",
+    "games_used": 2436,
+    "recent_games": 391,
+    "recent_avg_miss_old": 13.75,
+    "recent_avg_miss_new": 13.19,
+    "adopted": true,
+    "old_settings": {
+     "k": 0.11,
+     "early": 2.0,
+     "carry": 0.55,
+     "hfa": 2.75,
+     "cap": 35,
+     "beta": 4,
+     "sigma": 15.24,
+     "new": -18.0
+    },
+    "new_settings": {
+     "k": 0.11,
+     "early": 2.0,
+     "carry": 0.85,
+     "hfa": 3.5,
+     "cap": 35,
+     "beta": 4,
+     "sigma": 15.17,
+     "new": -18.0
+    }
+   }
+  ]
  }
 }
