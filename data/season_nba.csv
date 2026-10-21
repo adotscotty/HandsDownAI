@@ -1,4 +1,4 @@
 sport,event_id,date,home,home_name,away,away_name,home_score,away_score,spread,pred,win_prob,home_missing,away_missing,home_fbs,away_fbs
-nba,401909088,2026-10-20T19:00Z,DET,Detroit Pistons,BOS,Boston Celtics,121,113,1.5,2.61,0.58,18.55,25.82,1,1
-nba,401909089,2026-10-20T23:00Z,NY,New York Knicks,PHI,Philadelphia 76ers,100,106,-4.5,10.16,0.79,0.0,27.81,1,1
-nba,401909090,2026-10-21T01:50Z,SA,San Antonio Spurs,OKC,Oklahoma City Thunder,104,116,1.5,3.3,0.61,0.0,4.33,1,1
+nba,401909088,2026-10-20T19:00Z,DET,Detroit Pistons,BOS,Boston Celtics,121,113,1.5,2.87,0.6,18.55,25.82,1,1
+nba,401909089,2026-10-20T23:00Z,NY,New York Knicks,PHI,Philadelphia 76ers,100,106,-4.5,13.02,0.87,0.0,27.81,1,1
+nba,401909090,2026-10-21T01:50Z,SA,San Antonio Spurs,OKC,Oklahoma City Thunder,104,116,1.5,3.67,0.62,0.0,4.33,1,1
