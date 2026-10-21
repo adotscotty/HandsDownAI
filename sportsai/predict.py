@@ -43,7 +43,8 @@ def parse_event(sport, ev, known):
 
 CURRENT_COLS = ["sport", "season", "event_id", "date", "name", "neutral", "completed", "home_id", "home",
                 "home_name", "home_score", "away_id", "away", "away_name", "away_score", "spread", "total",
-                "book", "home_players", "away_players", "home_qb", "home_qb_name", "away_qb", "away_qb_name"]
+                "book", "home_players", "away_players", "home_qb", "home_qb_name", "away_qb", "away_qb_name",
+                "home_qb_pts", "home_qb_db", "away_qb_pts", "away_qb_db"]
 
 
 def load_current(sport):
@@ -133,17 +134,27 @@ def predict_sport(sport, settings):
                 qb = model.usual_qb(team)
                 missing = weights.get(qb, 0.0) if qb else 0.0
                 key = [i for i in injuries if i["id"] == qb and i["weight"]]
-            side_info[side] = dict(missing=missing, key_injuries=key,
+                qb_drop = 0.0
+                if missing:  # compare the usual QB with his most likely replacement
+                    sub = model.backup_qb(team)
+                    sub_value = model.qb_value(sub) if sub else model.p["qb_repl"]
+                    qb_drop = missing * (model.qb_value(qb) - sub_value)
+            side_info[side] = dict(qb_drop=qb_drop if sport != "nba" else 0.0, missing=missing, key_injuries=key,
                                    all_injuries=[i for i in injuries if i["weight"] >= 0.75])
+        when = dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00"))
+        rest = model.rest_days(g["home_id"], when) - model.rest_days(g["away_id"], when)
+        hi, ai = side_info["home"], side_info["away"]
         m, wp = model.predict(g["home_id"], g["away_id"], g["neutral"], g["home_fbs"], g["away_fbs"],
-                              side_info["home"]["missing"], side_info["away"]["missing"])
-        injury_pts = -model.p["beta"] * (side_info["home"]["missing"] - side_info["away"]["missing"])
+                              hi["missing"], ai["missing"], rest, hi["qb_drop"], ai["qb_drop"])
+        injury_pts = (-model.p["beta"] * (hi["missing"] - ai["missing"])
+                      - model.p["qbq"] * (hi["qb_drop"] - ai["qb_drop"]))
         preds.append(dict(
             {k: g[k] for k in ("sport", "event_id", "date", "name", "status", "neutral", "home", "home_name",
                                "home_logo", "away", "away_name", "away_logo", "spread", "total",
                                "odds_detail", "book")},
             predicted_home_margin=round(m, 1), home_win_prob=round(wp, 3),
             injury_adjustment=round(injury_pts, 1),
+            rest_adjustment=round(model.p["rest"] * rest, 1),
             edge_vs_spread=round(m + g["spread"], 1) if g["spread"] is not None else None,
             home_injuries=side_info["home"], away_injuries=side_info["away"],
         ))

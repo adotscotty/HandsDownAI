@@ -3,10 +3,13 @@ import csv, datetime as dt, os, sys
 from .espn import get_many, get_json, scoreboard_url, summary_url, odds_url, teams_url
 
 SEASONS = {  # season label -> (first day, last day)
-    "nfl": {2024: ("2024-09-05", "2025-02-09"), 2025: ("2025-09-04", "2026-02-08")},
+    "nfl": {2021: ("2021-09-09", "2022-02-14"), 2022: ("2022-09-08", "2023-02-13"),
+            2023: ("2023-09-07", "2024-02-12"), 2024: ("2024-09-05", "2025-02-09"),
+            2025: ("2025-09-04", "2026-02-08")},
     "nba": {2024: ("2024-10-22", "2025-06-23"), 2025: ("2025-10-21", "2026-06-21")},
     "cfb": {2024: ("2024-08-24", "2025-01-20"), 2025: ("2025-08-23", "2026-01-20")},
 }
+ODDS_SEASONS = {"nfl": (2023, 2024, 2025)}  # seasons we pull closing spreads for (default: test season)
 TEST_SEASON = 2025  # the "last season" we backtest on; 2024 is used to tune and seed ratings
 DATA = os.path.join(os.path.dirname(__file__), "..", "data")
 
@@ -69,7 +72,8 @@ def fetch_games(sport):
 
 
 def add_closing_spreads(sport, games, all_seasons=False):
-    test = [g for g in games if all_seasons or g["season"] == TEST_SEASON]
+    wanted = ODDS_SEASONS.get(sport, (TEST_SEASON,))
+    test = [g for g in games if all_seasons or g["season"] in wanted]
     results = get_many([odds_url(sport, g["event_id"]) for g in test])
     for g, res in zip(test, results):
         items = (res or {}).get("items", [])
@@ -105,6 +109,22 @@ def game_score(st):
             - 0.4 * n("fouls") - n("turnovers"))
 
 
+def passing_line(st):
+    """(attempts, 'adjusted net yards', dropbacks) for a QB's box-score line.
+    Adjusted net yards = yards + 20 per TD - 45 per interception - sack yards (the ANY/A formula)."""
+    def num(v):
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return 0.0
+    att = st.get("completions/passingAttempts", "0/0").split("/")
+    attempts = num(att[1]) if len(att) == 2 else 0.0
+    sacks = st.get("sacks-sackYardsLost", "0-0").split("-")
+    n_sacks, sack_yds = (num(sacks[0]), num(sacks[1])) if len(sacks) == 2 else (0.0, 0.0)
+    pts = num(st.get("passingYards")) + 20 * num(st.get("passingTouchdowns")) - 45 * num(st.get("interceptions")) - sack_yds
+    return attempts, pts, attempts + n_sacks
+
+
 def player_lines(sport, summary, team_id):
     """Who played and how much, from the box score. Returns list of (player_id, name, value)."""
     out = []
@@ -126,8 +146,7 @@ def player_lines(sport, summary, team_id):
                     if mins > 0:
                         out.append((pid, name, (mins, game_score(stats))))
                 elif group.get("name") == "passing":
-                    att = stats.get("completions/passingAttempts", "0/0").split("/")
-                    out.append((pid, name, float(att[1]) if len(att) == 2 and att[1] else 0.0))
+                    out.append((pid, name, passing_line(stats)))
     return out
 
 
@@ -140,9 +159,11 @@ def add_lineups(sport, games):
             if sport == "nba":
                 g[side + "_players"] = ";".join(f"{p}:{m:g}:{gs:.1f}" for p, _, (m, gs) in lines)
             else:
-                qb = max(lines, key=lambda x: x[2]) if lines else None
+                qb = max(lines, key=lambda x: x[2][0]) if lines else None
                 g[side + "_qb"] = qb[0] if qb else ""
                 g[side + "_qb_name"] = qb[1] if qb else ""
+                g[side + "_qb_pts"] = round(qb[2][1], 1) if qb else ""
+                g[side + "_qb_db"] = qb[2][2] if qb else ""
 
 
 def main(sports):

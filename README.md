@@ -13,22 +13,28 @@ using only free ESPN data. It runs on its own; nobody needs to touch the code.
    - NFL and college: whether the team's usual starting quarterback is listed out or doubtful.
 4. **Betting line**: ESPN's spread and over/under (ESPN BET) are shown next to our number.
 
-## Last season's backtest (tuned on 2024, graded on 2025, each game predicted only from earlier games)
+## Last season's backtest (graded on 2025, each game predicted only from earlier games; NFL tuned on 2021-2024, NBA and college on 2024)
 
 | | NFL | NBA | College (FBS v FBS) |
 |---|---|---|---|
 | Games graded | 285 | 1,316 | 809 |
-| Our average miss (points) | 10.1 | 11.3 | 12.7 |
+| Our average miss (points) | 10.0 | 11.3 | 12.7 |
 | Betting spread's average miss | 9.6 | 11.0 | 11.8 |
-| Picked the winner, us | 63% | 70% | 73% |
+| Picked the winner, us | 64% | 70% | 73% |
 | Picked the winner, spread | 66% | 69% | 73% |
-| Against the spread, every game | 46% | 50% | 53% |
-| Against the spread, when we disagree by 4+ pts | 39% (57 games) | 51% (309 games) | 54% (361 games) |
+| Against the spread, every game | 48% | 50% | 53% |
+| Against the spread, when we disagree by 4+ pts | 32% (31 games) | 51% (309 games) | 54% (361 games) |
 
 Breaking even against the spread needs about 52.4%. So the model is about as good as the betting
 line at picking winners, slightly worse at the exact margin, and is not yet a proven betting edge.
 Win chances are fitted to who actually won, and in the NBA they line up well (games we called 75% were won about 79% of the time).
 The injury adjustment improved accuracy in all three sports (NBA most).
+
+NFL extras (added Oct 2026): rest days (bye weeks, short weeks) and quarterback quality (a QB's adjusted
+net yards per dropback, so losing a star costs more than losing an average starter). Tested on 2023-2025
+(854 games), these took NFL from 63.5% to 64.6% winners and 47.5% to 49.6% against the spread. The NFL
+betting line is very hard to beat with scores alone; the next step would be play-by-play efficiency data
+(free from nflverse).
 
 Caveat: in the backtest, "injured" means the player didn't play (taken from box scores), which is a
 bit more than what was known before kickoff. Live predictions use the real pre-game injury report.
