@@ -53,3 +53,7 @@ No extra packages needed (plain Python 3).
 - `.github/workflows/update.yml` runs every 15 minutes on GitHub: fetches the latest scores, injuries and odds,
   makes predictions, rebuilds the site data and publishes it to GitHub Pages. Finished games and the last
   pre-game prediction for each game (`data/pregame_log.csv`) are saved back to the repository.
+- `.github/workflows/retune.yml` re-picks the model's settings every quarter (Jan 1, Apr 1, Jul 1, Oct 1)
+  using every finished game so far (`python -m sportsai.retune`). New settings are only kept if they
+  predicted recent games at least as well as the old ones; each retune is logged under `retunes` in
+  `data/backtest_summary.json`.

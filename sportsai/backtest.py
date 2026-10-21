@@ -33,9 +33,11 @@ def mae(rows, key):
     return sum(abs(r["home_score"] - r["away_score"] - r[key]) for r in rows) / len(rows)
 
 
-def tune(sport, games):
-    """Pick settings that predicted the 2024 season best (after its first few weeks)."""
-    train = [g for g in games if g["season"] < TEST_SEASON]
+def tune(sport, games, train=None):
+    """Pick settings that predicted the training games best (after the first few weeks).
+    By default the training games are the 2024 season."""
+    if train is None:
+        train = [g for g in games if g["season"] < TEST_SEASON]
     cutoff = train[len(train) // 4]["date"]  # skip the cold start, when every team was rated 0
     best = None
     keys = list(GRID[sport])
