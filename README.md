@@ -18,15 +18,16 @@ using only free ESPN data. It runs on its own; nobody needs to touch the code.
 | | NFL | NBA | College (FBS v FBS) |
 |---|---|---|---|
 | Games graded | 285 | 1,316 | 809 |
-| Our average miss (points) | 10.1 | 11.3 | 12.8 |
+| Our average miss (points) | 10.1 | 11.3 | 12.7 |
 | Betting spread's average miss | 9.6 | 11.0 | 11.8 |
-| Picked the winner, us | 65% | 70% | 73% |
+| Picked the winner, us | 63% | 70% | 73% |
 | Picked the winner, spread | 66% | 69% | 73% |
-| Against the spread, every game | 44% | 50% | 51% |
-| Against the spread, when we disagree by 4+ pts | 42% (33 games) | 51% (313 games) | 55% (372 games) |
+| Against the spread, every game | 46% | 50% | 53% |
+| Against the spread, when we disagree by 4+ pts | 39% (57 games) | 51% (309 games) | 54% (361 games) |
 
 Breaking even against the spread needs about 52.4%. So the model is about as good as the betting
 line at picking winners, slightly worse at the exact margin, and is not yet a proven betting edge.
+Win chances are fitted to who actually won, and in the NBA they line up well (games we called 75% were won about 79% of the time).
 The injury adjustment improved accuracy in all three sports (NBA most).
 
 Caveat: in the backtest, "injured" means the player didn't play (taken from box scores), which is a

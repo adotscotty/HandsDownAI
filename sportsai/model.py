@@ -81,7 +81,9 @@ class RatingModel:
         q = self.qbs[team]
         if len(q) < 2:
             return None
-        best = max(set(q), key=list(q).count)
+        recent = list(q)
+        # most starts; ties go to whoever started most recently
+        best = max(recent, key=lambda pid: (recent.count(pid), max(i for i, x in enumerate(recent) if x == pid)))
         return best if list(q).count(best) >= 2 else None
 
     # ---------- predict / update ----------

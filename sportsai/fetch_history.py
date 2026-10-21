@@ -73,9 +73,13 @@ def add_closing_spreads(sport, games, all_seasons=False):
     results = get_many([odds_url(sport, g["event_id"]) for g in test])
     for g, res in zip(test, results):
         items = (res or {}).get("items", [])
-        items = [i for i in items if i.get("spread") is not None]
+        # Skip "Live Odds" entries: those are in-game lines, not the pre-game spread.
+        items = [i for i in items if i.get("spread") is not None
+                 and "live" not in i.get("provider", {}).get("name", "").lower()]
         if items:
-            best = sorted(items, key=lambda i: i.get("provider", {}).get("priority", 9))[0]
+            # Prefer ESPN BET, then whichever book ESPN ranks first
+            best = sorted(items, key=lambda i: ("ESPN" not in i.get("provider", {}).get("name", "").upper(),
+                                                i.get("provider", {}).get("priority", 9)))[0]
             g["spread"] = best["spread"]  # home spread, e.g. -5.5 = home favored by 5.5
             g["total"] = best.get("overUnder")
             g["book"] = best.get("provider", {}).get("name")

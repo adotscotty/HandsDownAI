@@ -4,7 +4,7 @@ Run: python -m sportsai.backtest [nfl nba cfb]
 Writes data/backtest_<sport>.csv (every game) and data/backtest_summary.json.
 """
 import csv, itertools, json, math, os, sys
-from .model import run, DEFAULTS
+from .model import run, win_prob, DEFAULTS
 from .fetch_history import TEST_SEASON, DATA
 
 GRID = {
@@ -45,10 +45,21 @@ def tune(sport, games):
         score = mae(graded(sport, [g for g in out if g["date"] >= cutoff]), "pred")
         if best is None or score < best[0]:
             best = (score, params)
-    # outcome spread for win probability, from the training residuals
+    # Win probability: pick the outcome spread that best matched who actually won in 2024.
+    # (Fitting it to wins/losses, not raw margins, keeps blowouts from making us too timid.)
     out, _ = run(sport, train, best[1])
-    res = [g["home_score"] - g["away_score"] - g["pred"] for g in graded(sport, out) if g["date"] >= cutoff]
-    best[1]["sigma"] = round(math.sqrt(sum(x * x for x in res) / len(res)), 2)
+    fit = [g for g in graded(sport, out) if g["date"] >= cutoff]
+
+    def log_loss(sigma):
+        total = 0.0
+        for g in fit:
+            p = min(max(win_prob(g["pred"], sigma), 1e-6), 1 - 1e-6)
+            total -= math.log(p if g["home_score"] > g["away_score"] else 1 - p)
+        return total / len(fit)
+    # Search near the typical miss size so a small sample (like one NFL season) can't push it too far.
+    rms = math.sqrt(sum((g["home_score"] - g["away_score"] - g["pred"]) ** 2 for g in fit) / len(fit))
+    choices = [round(rms * f, 2) for f in (0.8, 0.85, 0.9, 0.95, 1.0)]
+    best[1]["sigma"] = min(choices, key=log_loss)
     return best[1]
 
 
