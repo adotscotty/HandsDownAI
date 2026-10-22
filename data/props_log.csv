@@ -1,1 +1,2 @@
 sport,event_id,date,game,pid,name,stat,label,side,line,price,projection,prob,ev,actual,result,profit,logged_at
+nba,401909093,2026-10-22T23:00Z,Cleveland Cavaliers at Philadelphia 76ers,2581018,Kentavious Caldwell-Pope,tpm,threes,under,1.5,-198,1.0,0.636,-0.043,,,,2026-10-22T22:42+00:00
