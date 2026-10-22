@@ -169,14 +169,18 @@ def update_parlays(preds):
             w.writeheader()
             w.writerows(sorted(log.values(), key=lambda r: r["slot"]))
 
-    settled = [r for r in log.values() if r["status"] in ("won", "lost")]
-    staked = STAKE * len(settled)
-    profit = sum(float(r["profit"]) for r in settled)
-    summary = dict(bets=len(settled), won=sum(r["status"] == "won" for r in settled),
-                   lost=sum(r["status"] == "lost" for r in settled),
-                   pending=sum(r["status"] == "open" for r in log.values()),
-                   staked=staked, profit=round(profit, 2),
-                   roi=round(100 * profit / staked, 1) if staked else None)
+    def tally(rows):
+        settled = [r for r in rows if r["status"] in ("won", "lost")]
+        staked = STAKE * len(settled)
+        profit = sum(float(r["profit"]) for r in settled)
+        return dict(bets=len(settled), won=sum(r["status"] == "won" for r in settled),
+                    lost=sum(r["status"] == "lost" for r in settled),
+                    pending=sum(r["status"] == "open" for r in rows),
+                    staked=staked, profit=round(profit, 2),
+                    roi=round(100 * profit / staked, 1) if staked else None)
+    rows = list(log.values())
+    summary = tally(rows)
+    summary["by_kind"] = {kind: tally([r for r in rows if r["kind"] == kind]) for kind in ("two", "three")}
     history = [dict(r, legs=json.loads(r["legs"])) for r in sorted(log.values(), key=lambda r: r["slot"], reverse=True)[:60]]
     out = dict(updated=now.isoformat(timespec="seconds"), stake=STAKE, card_date=today,
                current=current, record=summary, history=history)

@@ -167,13 +167,20 @@ function renderParlays() {
   }
   if (!shown) box.append(el("p", { class: "empty", text: "No parlays today: a sport needs at least 4 games with betting lines in the next 24 hours for a 2-game parlay, and 6 for a 3-game parlay." }));
   const r = P.record;
-  const t = el("table");
-  const row = (k, v, cls) => t.append(el("tr", {}, el("td", { text: k }), el("td", { class: "r " + (cls || ""), text: v })));
-  row("Parlays settled", `${r.bets} (${r.won} won, ${r.lost} lost)`);
-  if (r.pending) row("Waiting on games", String(r.pending));
-  row("Total bet", money(r.staked));
-  row("Profit", money(r.profit), r.profit < 0 ? "neg" : "pos");
-  row("Return on money bet", r.roi == null ? "–" : r.roi + "%", r.roi < 0 ? "neg" : "pos");
+  const t = el("table", {}, el("tr", {}, el("th", { text: "" }), el("th", { class: "r", text: "Won-lost" }),
+    el("th", { class: "r", text: "Profit" }), el("th", { class: "r", text: "ROI" })));
+  const line = (label, x) => {
+    if (!x) return;
+    const cls = x.profit < 0 ? "neg" : x.profit > 0 ? "pos" : "";
+    t.append(el("tr", {}, el("td", { text: label + (x.pending ? ` (${x.pending} pending)` : "") }),
+      el("td", { class: "r", text: `${x.won}-${x.lost}` }),
+      el("td", { class: "r " + cls, text: money(x.profit) }),
+      el("td", { class: "r " + cls, text: x.roi == null ? "–" : x.roi + "%" })));
+  };
+  line("All parlays", r);
+  line("2-game", (r.by_kind || {}).two);
+  line("3-game", (r.by_kind || {}).three);
+  t.append(el("tr", {}, el("td", { text: "Total bet" }), el("td", {}), el("td", { class: "r", text: money(r.staked) }), el("td", {})));
   const card = el("div", { class: "card" }, t);
   if (P.history.length) {
     const h = el("table", {}, el("tr", {}, el("th", { text: "Parlay" }), el("th", { class: "r", text: "Result" })));
