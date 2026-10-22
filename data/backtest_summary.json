@@ -47,7 +47,10 @@
    "rest": 0.15,
    "rest_cap": 14,
    "qbq": 2,
-   "qb_repl": 4.5
+   "qb_repl": 4.5,
+   "epa_w": 0.0,
+   "epa_scale": 0.8,
+   "epa_close": 0
   }
  },
  "nba": {

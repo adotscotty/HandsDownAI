@@ -33,8 +33,13 @@ The injury adjustment improved accuracy in all three sports (NBA most).
 NFL extras (added Oct 2026): rest days (bye weeks, short weeks) and quarterback quality (a QB's adjusted
 net yards per dropback, so losing a star costs more than losing an average starter). Tested on 2023-2025
 (854 games), these took NFL from 63.5% to 64.6% winners and 47.5% to 49.6% against the spread. The NFL
-betting line is very hard to beat with scores alone; the next step would be play-by-play efficiency data
-(free from nflverse).
+betting line is very hard to beat with scores alone.
+
+Play-by-play test (Oct 2026): we also tried learning team ratings from nflverse play-by-play efficiency
+(EPA: all plays, competitive plays only, and without turnovers). On 2023-2025 none of these beat the
+current model (best: 49.9% vs 49.6% against the spread, same average miss), and the model doesn't beat
+opening lines either (50.3%). So it is not switched on. The code is kept in `sportsai/nflverse.py` and the
+model setting `epa_w` (0 = off), with the efficiency numbers saved in `data/games_nfl.csv`.
 
 Caveat: in the backtest, "injured" means the player didn't play (taken from box scores), which is a
 bit more than what was known before kickoff. Live predictions use the real pre-game injury report.

@@ -19,9 +19,12 @@ DEFAULTS = {
     #       beta: points per unit of missing value, sigma: spread of outcomes (for win %),
     #       rest: points per extra day of rest vs the opponent (counted up to rest_cap days),
     #       qbq: points per unit of QB quality drop (adjusted net yards per dropback) when the
-    #       usual starter is replaced, qb_repl: assumed quality of a QB we know nothing about
+    #       usual starter is replaced, qb_repl: assumed quality of a QB we know nothing about,
+    #       epa_w: how much the ratings learn from play-by-play efficiency instead of the final
+    #       score (0 = score only), epa_scale: points per unit of efficiency margin,
+    #       epa_close: 1 = only count plays while the game was still competitive, 2 = leave out turnovers
     "nfl": dict(k=0.10, early=2.0, carry=0.6, hfa=1.8, cap=24, beta=4.0, sigma=13.0, new=0.0,
-                rest=0.0, rest_cap=14, qbq=0.0, qb_repl=4.5),
+                rest=0.0, rest_cap=14, qbq=0.0, qb_repl=4.5, epa_w=0.0, epa_scale=0.8, epa_close=0),
     "nba": dict(k=0.06, early=2.0, carry=0.6, hfa=2.5, cap=25, beta=0.5, sigma=12.5, new=0.0,
                 rest=0.0, rest_cap=3, qbq=0.0, qb_repl=0.0),
     "cfb": dict(k=0.12, early=2.0, carry=0.7, hfa=2.8, cap=35, beta=5.0, sigma=15.5, new=-18.0,
@@ -135,9 +138,13 @@ class RatingModel:
         m -= p["qbq"] * (home_qb_drop - away_qb_drop)
         return m, win_prob(m, p["sigma"])
 
-    def update(self, home, away, margin, pred):
+    def update(self, home, away, margin, pred, eff_margin=None):
         p = self.p
-        err = max(-p["cap"], min(p["cap"], margin)) - pred
+        target = max(-p["cap"], min(p["cap"], margin))
+        if eff_margin is not None and p.get("epa_w"):
+            eff = max(-p["cap"], min(p["cap"], p["epa_scale"] * eff_margin))
+            target = (1 - p["epa_w"]) * target + p["epa_w"] * eff
+        err = target - pred
         for team, sign in ((home, 1), (away, -1)):
             k = p["k"] * (1 + p["early"] / (1 + self.n[team]))
             self.r[team] += sign * k * err
@@ -155,6 +162,15 @@ class RatingModel:
                 self.pval[(team, pid)].append(gs)
         if qb:
             self.qbs[team].append(qb)
+
+
+def eff_margin(g, p):
+    """Home team's play-by-play efficiency edge in the game (None if we don't have it)."""
+    suffix = {0: "_epa", 1: "_epa_close", 2: "_epa_noto"}[int(p.get("epa_close") or 0)]
+    try:
+        return float(g["home" + suffix]) - float(g["away" + suffix])
+    except (KeyError, TypeError, ValueError):
+        return None
 
 
 def qb_line(g, side):
@@ -203,7 +219,7 @@ def run(sport, games, params=None):
         out.append({**g, "pred": pred, "win_prob": wp, "home_missing": hm, "away_missing": am,
                     "pred_no_injury": pred + model.p["beta"] * (hm - am) + model.p["qbq"] * (hq - aq),
                     "rest_diff": rest, "home_qb_drop": hq, "away_qb_drop": aq})
-        model.update(h, a, margin, pred)
+        model.update(h, a, margin, pred, eff_margin(g, model.p))
         if sport == "nba":
             model.record_lineup(h, players=hp, when=when); model.record_lineup(a, players=ap, when=when)
         else:
