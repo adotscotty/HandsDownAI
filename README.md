@@ -58,12 +58,22 @@ No extra packages needed (plain Python 3).
 - **SportsDataIO or similar**: if injury news on ESPN lags (e.g. late scratches in the NBA).
 - **Licensed data**: before charging money or running ads, since ESPN's API is unofficial and not licensed for commercial use.
 
+## Main prediction (Oct 2026)
+The number shown first on each game is 90% the betting line and 10% our model (`blend_w` in
+`data/backtest_summary.json`); our model's own number is shown underneath. Tested on 2023-2025, the line
+alone was the most accurate, and our model adds little on top, so the main number leans on the line.
+On 2025: average miss NFL 9.7 / NBA 11.0 / college 11.8 points; winners 66% / 69% / 73%.
+College is now tuned on 2021-2024 (average miss of our model alone on 2025: 12.7 -> 12.3).
+NBA tuning on more seasons and back-to-back rest made no difference, so NBA is unchanged.
+
 ## Website and automatic updates
 - `site/` is the website (plain HTML/CSS/JS). It reads `site/data/predictions.json` and `site/data/track_record.json`,
   which `python -m sportsai.build_site` writes.
 - `.github/workflows/update.yml` runs every 15 minutes on GitHub: fetches the latest scores, injuries and odds,
   makes predictions, rebuilds the site data and publishes it to GitHub Pages. Finished games and the last
   pre-game prediction for each game (`data/pregame_log.csv`) are saved back to the repository.
+- Parlays tab: `sportsai/parlays.py` picks the best 2- and 3-game spread parlays for the day, locks the card
+  45 minutes before its first game and grades each parlay at $5 (`data/parlays_log.csv`).
 - `.github/workflows/retune.yml` re-picks the model's settings every quarter (Jan 1, Apr 1, Jul 1, Oct 1)
   using every finished game so far (`python -m sportsai.retune`). New settings are only kept if they
   predicted recent games at least as well as the old ones; each retune is logged under `retunes` in

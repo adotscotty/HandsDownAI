@@ -11,8 +11,12 @@ GRID = {
     "nfl": dict(k=[0.04, 0.06, 0.08, 0.10, 0.13], carry=[0.4, 0.5, 0.65, 0.8], hfa=[1.0, 1.5, 2.0, 2.5],
                 beta=[0, 1.5, 3, 5], early=[0.5, 1, 2, 4], rest=[0, 0.15, 0.3, 0.5], qbq=[0, 1, 2, 3, 4]),
     "nba": dict(k=[0.03, 0.045, 0.06, 0.08], carry=[0.5, 0.65, 0.8], hfa=[2.0, 2.5, 3.0], beta=[0, 0.08, 0.12, 0.16, 0.22]),
-    "cfb": dict(k=[0.08, 0.11, 0.14, 0.18], carry=[0.55, 0.7, 0.85], hfa=[2.0, 2.75, 3.5], beta=[0, 4, 7]),
+    "cfb": dict(k=[0.08, 0.11, 0.14, 0.18], carry=[0.55, 0.7, 0.85], hfa=[2.0, 2.75, 3.5], beta=[0, 4, 7],
+                early=[0.5, 1, 2, 4]),
 }
+
+
+TRAIN_SEASONS = {"nba": 1}  # seasons used for tuning (default 4, plus one to warm up the ratings)
 
 
 def load(sport):
@@ -35,10 +39,10 @@ def mae(rows, key):
 
 
 def tune(sport, games, train=None):
-    """Pick settings that predicted the training games best (after the first few weeks).
-    By default the training games are the 2024 season."""
-    if train is None:
-        train = [g for g in games if g["season"] < TEST_SEASON]
+    """Pick settings that predicted the training games best (after the first few weeks)."""
+    if train is None:  # NBA did best tuned on just the latest season; NFL and college on several
+        first = TEST_SEASON - TRAIN_SEASONS.get(sport, 4) - (0 if TRAIN_SEASONS.get(sport, 4) == 1 else 1)
+        train = [g for g in games if first <= g["season"] < TEST_SEASON]
     seasons = sorted({g["season"] for g in train})
     if len(seasons) > 1:  # the first season only warms up the ratings
         cutoff = min(g["date"] for g in train if g["season"] == seasons[1])

@@ -66,10 +66,10 @@
   "brier": 0.2012,
   "against_spread": {
    "edge_0+": {
-    "wins": 661,
-    "losses": 655,
+    "wins": 662,
+    "losses": 654,
     "pushes": 0,
-    "win_pct": 50.2
+    "win_pct": 50.3
    },
    "edge_2+": {
     "wins": 354,
@@ -109,80 +109,53 @@
  "cfb": {
   "games": 809,
   "games_with_spread": 809,
-  "model_avg_miss": 12.69,
-  "model_no_injury_avg_miss": 12.89,
-  "model_avg_miss_same_games": 12.69,
+  "model_avg_miss": 12.26,
+  "model_no_injury_avg_miss": 12.49,
+  "model_avg_miss_same_games": 12.26,
   "vegas_avg_miss_same_games": 11.84,
-  "picked_winner_pct": 72.6,
+  "picked_winner_pct": 74.3,
   "vegas_picked_winner_pct": 73.4,
-  "brier": 0.1819,
+  "brier": 0.1762,
   "against_spread": {
    "edge_0+": {
-    "wins": 426,
-    "losses": 383,
+    "wins": 444,
+    "losses": 365,
     "pushes": 0,
-    "win_pct": 52.7
+    "win_pct": 54.9
    },
    "edge_2+": {
-    "wins": 305,
-    "losses": 253,
+    "wins": 289,
+    "losses": 240,
     "pushes": 0,
-    "win_pct": 54.7
+    "win_pct": 54.6
    },
    "edge_4+": {
-    "wins": 196,
-    "losses": 165,
+    "wins": 161,
+    "losses": 142,
     "pushes": 0,
-    "win_pct": 54.3
+    "win_pct": 53.1
    },
    "edge_6+": {
-    "wins": 129,
-    "losses": 99,
+    "wins": 98,
+    "losses": 83,
     "pushes": 0,
-    "win_pct": 56.6
+    "win_pct": 54.1
    }
   },
   "settings": {
-   "k": 0.11,
-   "early": 2.0,
+   "k": 0.08,
+   "early": 2,
    "carry": 0.85,
-   "hfa": 3.5,
+   "hfa": 2.75,
    "cap": 35,
    "beta": 4,
-   "sigma": 15.17,
-   "new": -18.0
+   "sigma": 14.56,
+   "new": -18.0,
+   "rest": 0.0,
+   "rest_cap": 14,
+   "qbq": 0.0,
+   "qb_repl": 5.0
   },
-  "retunes": [
-   {
-    "date": "2026-10-21",
-    "judged_since": "2026-07-23",
-    "games_used": 2436,
-    "recent_games": 391,
-    "recent_avg_miss_old": 13.75,
-    "recent_avg_miss_new": 13.19,
-    "adopted": true,
-    "old_settings": {
-     "k": 0.11,
-     "early": 2.0,
-     "carry": 0.55,
-     "hfa": 2.75,
-     "cap": 35,
-     "beta": 4,
-     "sigma": 15.24,
-     "new": -18.0
-    },
-    "new_settings": {
-     "k": 0.11,
-     "early": 2.0,
-     "carry": 0.85,
-     "hfa": 3.5,
-     "cap": 35,
-     "beta": 4,
-     "sigma": 15.17,
-     "new": -18.0
-    }
-   }
-  ],
-  "blend_w": 0.2
+  "blend_w": 0.1
  }
 }
