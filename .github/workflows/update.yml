@@ -25,6 +25,8 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # always start from the newest saved data, not the commit that triggered the run
 
       - uses: actions/setup-python@v5
         with:
@@ -43,7 +45,7 @@ jobs:
           git add data/current_*.csv data/season_*.csv data/pregame_log.csv
           if ! git diff --cached --quiet; then
             git commit -m "Update finished games"
-            git pull --rebase origin main && git push origin HEAD:main
+            git pull --rebase -X theirs origin main && git push origin HEAD:main
           fi
 
       - uses: actions/configure-pages@v5

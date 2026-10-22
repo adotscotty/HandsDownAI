@@ -18,6 +18,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main   # always start from the newest saved data, not the commit that triggered the run
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -30,5 +32,5 @@ jobs:
           git add data/backtest_summary.json
           if ! git diff --cached --quiet; then
             git commit -m "Quarterly retune"
-            git pull --rebase origin main && git push origin HEAD:main
+            git pull --rebase -X theirs origin main && git push origin HEAD:main
           fi
