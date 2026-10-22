@@ -1,6 +1,9 @@
-sport,event_id,date,home,home_name,away,away_name,home_score,away_score,spread,pred,win_prob,home_missing,away_missing,home_fbs,away_fbs
-nba,401909088,2026-10-20T19:00Z,DET,Detroit Pistons,BOS,Boston Celtics,121,113,1.5,2.87,0.6,18.55,25.82,1,1
-nba,401909089,2026-10-20T23:00Z,NY,New York Knicks,PHI,Philadelphia 76ers,100,106,-4.5,13.02,0.87,0.0,27.81,1,1
-nba,401909090,2026-10-21T01:50Z,SA,San Antonio Spurs,OKC,Oklahoma City Thunder,104,116,1.5,3.67,0.62,0.0,4.33,1,1
-nba,401909835,2026-10-21T23:00Z,WSH,Washington Wizards,MIL,Milwaukee Bucks,128,116,-4.5,-5.27,0.32,59.56,28.21,1,1
-nba,401909834,2026-10-21T23:00Z,ORL,Orlando Magic,ATL,Atlanta Hawks,125,132,-2.5,1.46,0.55,7.39,8.56,1,1
+sport,event_id,date,home,home_name,away,away_name,home_score,away_score,spread,pred,pred_model,win_prob,home_missing,away_missing,home_fbs,away_fbs
+nba,401909088,2026-10-20T19:00Z,DET,Detroit Pistons,BOS,Boston Celtics,121,113,1.5,-1.09,2.61,0.46,18.55,25.82,1,1
+nba,401909089,2026-10-20T23:00Z,NY,New York Knicks,PHI,Philadelphia 76ers,100,106,-4.5,5.07,10.16,0.66,0.0,27.81,1,1
+nba,401909090,2026-10-21T01:50Z,SA,San Antonio Spurs,OKC,Oklahoma City Thunder,104,116,1.5,-1.02,3.3,0.47,0.0,4.33,1,1
+nba,401909835,2026-10-21T23:00Z,WSH,Washington Wizards,MIL,Milwaukee Bucks,128,116,-4.5,3.74,-3.15,0.62,59.56,28.21,1,1
+nba,401909834,2026-10-21T23:00Z,ORL,Orlando Magic,ATL,Atlanta Hawks,125,132,-2.5,2.43,1.77,0.58,7.39,8.56,1,1
+nba,401909091,2026-10-21T23:30Z,MIA,Miami Heat,MIN,Minnesota Timberwolves,106,131,-1.5,1.17,-1.85,0.54,57.68,19.3,1,1
+nba,401909836,2026-10-21T23:30Z,BKN,Brooklyn Nets,CHA,Charlotte Hornets,103,110,1.5,-2.04,-6.88,0.43,61.17,57.55,1,1
+nba,401909837,2026-10-21T23:30Z,TOR,Toronto Raptors,CHI,Chicago Bulls,135,92,-10.5,10.23,7.82,0.8,22.98,38.15,1,1
