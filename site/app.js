@@ -84,6 +84,20 @@ function statRows(s, last) {
   return t;
 }
 
+function periodTable(periods) {
+  const t = el("table", {}, el("tr", {}, el("th", { text: "" }), el("th", { class: "r", text: "Winners" }),
+    el("th", { class: "r", text: "Vs spread" }), el("th", { class: "r", text: "Avg miss" })));
+  for (const p of periods || []) {
+    const ats = p.ats;
+    t.append(el("tr", {},
+      el("td", { text: p.label }),
+      el("td", { class: "r", text: p.games ? `${p.winners[0]}-${p.winners[1]}` : "No games" }),
+      el("td", { class: "r", text: ats && (ats.wins + ats.losses) ? `${ats.wins}-${ats.losses}${ats.pushes ? "-" + ats.pushes : ""}` : "–" }),
+      el("td", { class: "r", text: p.games ? p.avg_miss + " pts" : "–" })));
+  }
+  return t;
+}
+
 function renderTrack() {
   const box = document.getElementById("track");
   box.replaceChildren();
@@ -103,6 +117,7 @@ function renderTrack() {
     }
     grid.append(el("div", { class: "card" },
       el("h3", { text: t.name }),
+      el("div", { class: "day", text: "Recent" }), periodTable(t.periods),
       el("div", { class: "day", text: "This season" }), statRows(t.this_season),
       el("div", { class: "day", text: "Last season (test)" }), statRows(t.last_season, true),
       t.recent.length ? el("details", {}, el("summary", { text: "Recent results" }), recent) : null));

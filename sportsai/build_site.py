@@ -1,5 +1,5 @@
 """Turn the model's output into the small data files the website reads (site/data/*.json)."""
-import csv, json, os, shutil
+import csv, datetime as dt, json, os, shutil
 from .fetch_history import DATA
 
 SITE = os.path.join(os.path.dirname(__file__), "..", "site")
@@ -51,6 +51,36 @@ def load_season(sport):
     return rows
 
 
+def eastern_now():
+    try:
+        from zoneinfo import ZoneInfo
+        return dt.datetime.now(ZoneInfo("America/New_York"))
+    except Exception:  # no time-zone data installed: Eastern standard time is close enough
+        return dt.datetime.now(dt.timezone(dt.timedelta(hours=-5)))
+
+
+def eastern_date(iso):
+    when = dt.datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    return when.astimezone(eastern_now().tzinfo).date()
+
+
+def periods(rows):
+    """Record for yesterday, this week (since Monday) and this month, by US Eastern date."""
+    today = eastern_now().date()
+    spans = [("Yesterday", today - dt.timedelta(days=1), today - dt.timedelta(days=1)),
+             ("This week", today - dt.timedelta(days=today.weekday()), today),
+             ("This month", today.replace(day=1), today)]
+    out = []
+    for label, start, end in spans:
+        picked = [r for r in rows if start <= eastern_date(r["date"]) <= end]
+        rec = record(picked) or dict(games=0)
+        if picked:
+            right = sum((r["pred"] > 0) == (r["home_score"] - r["away_score"] > 0) for r in picked)
+            rec["winners"] = [right, len(picked) - right]
+        out.append(dict(label=label, start=start.isoformat(), end=end.isoformat(), **rec))
+    return out
+
+
 def main():
     os.makedirs(os.path.join(SITE, "data"), exist_ok=True)
     shutil.copy(os.path.join(DATA, "predictions.json"), os.path.join(SITE, "data", "predictions.json"))
@@ -62,6 +92,7 @@ def main():
         track[sport] = dict(
             name=NAMES[sport],
             this_season=record(rows),
+            periods=periods(rows),
             last_season=dict(games=b.get("games"), winner_pct=b.get("picked_winner_pct"),
                              avg_miss=b.get("model_avg_miss"), spread_avg_miss=b.get("vegas_avg_miss_same_games"),
                              spread_winner_pct=b.get("vegas_picked_winner_pct"),
