@@ -3,9 +3,10 @@
 How picks are made: for every upcoming game in the next 24 hours with a betting line, take the side
 our main prediction favors against the spread, with its chance of covering. A parlay pays only if
 every leg covers, so its chance is the legs' chances multiplied together. Projected return =
-chance x payout - stake. We show the three best 2-game and three best 3-game parlays.
+chance x payout - stake. For each sport we show the best 2-game parlay (if it has 4+ games that day)
+and the best 3-game parlay (if it has 6+ games), all legs from that sport.
 
-Tracking: one card per day. The card is locked 45 minutes before its first game, then every parlay
+Tracking: one card per sport per day. It is locked 45 minutes before its first game, then every parlay
 on it is graded when its games are final, at $5 each. Results: data/parlays_log.csv.
 """
 import csv, datetime as dt, itertools, json, os
@@ -13,7 +14,7 @@ from .fetch_history import DATA
 
 STAKE = 5.0
 LOG = os.path.join(DATA, "parlays_log.csv")
-COLS = ["slot", "kind", "rank", "first_start", "legs", "chance", "payout", "projected_profit",
+COLS = ["slot", "sport", "kind", "rank", "first_start", "legs", "chance", "payout", "projected_profit",
         "status", "returned", "profit", "logged_at"]
 
 
@@ -100,60 +101,73 @@ def eastern_today(now):
         return (now - dt.timedelta(hours=5)).date().isoformat()
 
 
+MIN_GAMES = {2: 4, 3: 6}  # a sport needs this many games with lines to get a 2- / 3-game parlay
+SPORTS = ("nfl", "nba", "cfb")
+
+
+def as_row(slot, sport, kind, p, now):
+    return dict(slot=slot, sport=sport, kind=kind, rank=1, first_start=p["legs"][0]["start"],
+                legs=json.dumps(p["legs"]), chance=round(p["chance"], 4), payout=round(p["payout"], 2),
+                projected_profit=round(p["projected_profit"], 2), status="open", returned="", profit="",
+                logged_at=now.isoformat(timespec="minutes"))
+
+
+def from_row(r):
+    return dict(legs=json.loads(r["legs"]), chance=float(r["chance"]), payout=float(r["payout"]),
+                projected_profit=float(r["projected_profit"]), status=r["status"], profit=r["profit"])
+
+
 def update_parlays(preds):
-    """One card per day (US Eastern): the 3 best 2-game and 3-game parlays. The card keeps updating
-    until the first of its games is 45 minutes from starting; then it is locked, tracked, and shown
-    for the rest of the day."""
+    """One card per sport per day (US Eastern): the best 2-game and 3-game parlay, each only when the
+    sport has enough games. A sport's card keeps updating until its first game is 45 minutes away;
+    then it is locked, tracked at $5 per parlay, and shown for the rest of the day."""
     now = dt.datetime.now(dt.timezone.utc)
     today = eastern_today(now)
     log = load_log()
     changed = False
-
-    locked = sorted((r for r in log.values() if r["slot"].startswith(today + "|")), key=lambda r: r["slot"])
-    if locked:
-        current = {"two": [], "three": []}
-        for r in locked:
-            current[r["kind"]].append(dict(legs=json.loads(r["legs"]), chance=float(r["chance"]),
-                                           payout=float(r["payout"]),
-                                           projected_profit=float(r["projected_profit"]), status=r["status"]))
-        locked_flag = True
-    else:
-        legs = legs_for(preds, now)
-        current = {"two": best_parlays(legs, 2), "three": best_parlays(legs, 3)}
-        starts = [p["legs"][0]["start"] for ps in current.values() for p in ps]
-        locked_flag = False
-        if starts:
-            first = dt.datetime.fromisoformat(min(starts).replace("Z", "+00:00"))
-            if first <= now + dt.timedelta(minutes=45):
-                for kind, parlays in current.items():
-                    for rank, p in enumerate(parlays, 1):
-                        slot = f"{today}|{kind}|{rank}"
-                        log[slot] = dict(slot=slot, kind=kind, rank=rank, first_start=p["legs"][0]["start"],
-                                         legs=json.dumps(p["legs"]), chance=round(p["chance"], 4),
-                                         payout=round(p["payout"], 2),
-                                         projected_profit=round(p["projected_profit"], 2),
-                                         status="open", returned="", profit="",
-                                         logged_at=now.isoformat(timespec="minutes"))
-                        p["status"] = "open"
-                locked_flag = changed = True
+    legs = legs_for(preds, now)
+    current = {}
+    for sport in SPORTS:
+        card = {}
+        locked = {r["kind"]: r for r in log.values() if r["slot"].startswith(f"{today}|{sport}|")}
+        if locked:
+            for kind, r in locked.items():
+                card[kind] = from_row(r)
+            card["locked"] = True
+        else:
+            pool = [l for l in legs if l["sport"] == sport]
+            for kind, size in (("two", 2), ("three", 3)):
+                if len(pool) >= MIN_GAMES[size]:
+                    best = best_parlays(pool, size, n=1)
+                    if best:
+                        card[kind] = best[0]
+            starts = [p["legs"][0]["start"] for k, p in card.items()]
+            if starts and dt.datetime.fromisoformat(min(starts).replace("Z", "+00:00")) <= now + dt.timedelta(minutes=45):
+                for kind in ("two", "three"):
+                    if kind in card:
+                        slot = f"{today}|{sport}|{kind}"
+                        log[slot] = as_row(slot, sport, kind, card[kind], now)
+                        card[kind]["status"] = "open"
+                card["locked"] = changed = True
+        if card:
+            current[sport] = card
 
     # Grade parlays whose games are all final.
     finals = results()
-    for row in log.values():
+    for slot, row in log.items():
         if row["status"] == "open":
             grade(row, finals)
-            changed = changed or row["status"] != "open"
+            if row["status"] != "open":
+                changed = True
+                parts = slot.split("|")
+                card = current.get(parts[1], {}) if len(parts) == 3 else {}
+                if parts[0] == today and parts[2] in card:
+                    card[parts[2]].update(status=row["status"], profit=row["profit"])
     if changed or not os.path.exists(LOG):
         with open(LOG, "w", newline="") as f:
-            w = csv.DictWriter(f, COLS)
+            w = csv.DictWriter(f, COLS, extrasaction="ignore")
             w.writeheader()
             w.writerows(sorted(log.values(), key=lambda r: r["slot"]))
-    if locked_flag:  # show today's results as they come in
-        for kind in current:
-            for rank, p in enumerate(current[kind], 1):
-                r = log.get(f"{today}|{kind}|{rank}")
-                if r:
-                    p["status"], p["profit"] = r["status"], r["profit"]
 
     settled = [r for r in log.values() if r["status"] in ("won", "lost")]
     staked = STAKE * len(settled)
@@ -164,6 +178,6 @@ def update_parlays(preds):
                    staked=staked, profit=round(profit, 2),
                    roi=round(100 * profit / staked, 1) if staked else None)
     history = [dict(r, legs=json.loads(r["legs"])) for r in sorted(log.values(), key=lambda r: r["slot"], reverse=True)[:60]]
-    out = dict(updated=now.isoformat(timespec="seconds"), stake=STAKE, card_date=today, locked=locked_flag,
+    out = dict(updated=now.isoformat(timespec="seconds"), stake=STAKE, card_date=today,
                current=current, record=summary, history=history)
     json.dump(out, open(os.path.join(DATA, "parlays.json"), "w"), indent=1)

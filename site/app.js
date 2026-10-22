@@ -154,15 +154,18 @@ function renderParlays() {
   box.replaceChildren(); rec.replaceChildren();
   const P = state.parlays;
   if (!P) { box.append(el("p", { class: "empty", text: "Parlays will appear after the next update." })); return; }
-  const filt = list => list.filter(p => state.sport === "all" || p.legs.every(l => l.sport === state.sport));
-  for (const [kind, label] of [["two", "2-game"], ["three", "3-game"]]) {
-    const list = filt(P.current[kind] || []);
-    box.append(el("div", { class: "day", text: `Best ${label} parlays` + (P.locked ? " (today's locked card)" : "") }));
-    if (!list.length) { box.append(el("p", { class: "empty", text: "Not enough games with lines in the next 24 hours." })); continue; }
+  let shown = 0;
+  for (const sport of ["nfl", "nba", "cfb"]) {
+    if (state.sport !== "all" && state.sport !== sport) continue;
+    const card = (P.current || {})[sport];
+    if (!card || (!card.two && !card.three)) continue;
+    box.append(el("div", { class: "day", text: SPORT_NAMES[sport] + (card.locked ? " · locked for today" : "") }));
     const grid = el("div", { class: "grid" });
-    list.forEach((p, i) => grid.append(parlayCard(p, `#${i + 1}`)));
-    box.append(grid);
+    if (card.two) grid.append(parlayCard(card.two, "2-game parlay"));
+    if (card.three) grid.append(parlayCard(card.three, "3-game parlay"));
+    box.append(grid); shown++;
   }
+  if (!shown) box.append(el("p", { class: "empty", text: "No parlays today: a sport needs at least 4 games with betting lines in the next 24 hours for a 2-game parlay, and 6 for a 3-game parlay." }));
   const r = P.record;
   const t = el("table");
   const row = (k, v, cls) => t.append(el("tr", {}, el("td", { text: k }), el("td", { class: "r " + (cls || ""), text: v })));
