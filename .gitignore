@@ -4,3 +4,4 @@ __pycache__/
 site/data/
 data/predictions.json
 data/parlays.json
+data/props.json

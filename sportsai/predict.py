@@ -222,7 +222,7 @@ def lock_pregame(preds):
 
 def main(sports):
     summary = json.load(open(os.path.join(DATA, "backtest_summary.json")))
-    allpreds = []
+    allpreds, prop_rows = [], {}
     for sport in sports:
         settings, w = summary[sport]["settings"], summary[sport].get("blend_w", 0.0)
         preds, season = predict_sport(sport, settings, w)
@@ -230,6 +230,12 @@ def main(sports):
             g["pred_model"] = g["pred"]
             g["pred"] = blend(g["pred"], g.get("spread"), w)
             g["win_prob"] = win_prob(g["pred"], settings["sigma"])
+        if sport in ("nba", "nfl"):  # best player prop for each game
+            try:
+                from .props import update_sport
+                prop_rows[sport] = update_sport(sport, preds, season)
+            except Exception as e:  # props are extra: never let them stop the main predictions
+                print("props failed for", sport, e)
         allpreds += preds
         cols = ["sport", "event_id", "date", "home", "home_name", "away", "away_name", "home_score",
                 "away_score", "spread", "pred", "pred_model", "win_prob", "home_missing", "away_missing", "home_fbs", "away_fbs"]
@@ -243,6 +249,14 @@ def main(sports):
     lock_pregame(allpreds)
     from .parlays import update_parlays
     update_parlays(allpreds)
+    try:
+        from .props import lock_and_grade, record
+        log = lock_and_grade(allpreds, prop_rows)
+        json.dump(dict(record(log), current=[dict(p["best_prop"], sport=p["sport"], game=p["name"], date=p["date"])
+                                              for p in allpreds if p.get("best_prop")]),
+                  open(os.path.join(DATA, "props.json"), "w"), indent=1)
+    except Exception as e:
+        print("props tracking failed", e)
     stamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     json.dump(dict(updated=stamp, games=allpreds), open(os.path.join(DATA, "predictions.json"), "w"), indent=1)
 

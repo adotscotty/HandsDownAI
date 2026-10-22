@@ -1,6 +1,6 @@
 // Sports AI Picks: renders data/predictions.json and data/track_record.json
 const SPORT_NAMES = { nfl: "NFL", nba: "NBA", cfb: "College" };
-let state = { sport: "all", edgeOnly: false, preds: null, track: null, parlays: null };
+let state = { sport: "all", edgeOnly: false, preds: null, track: null, parlays: null, props: null };
 
 function el(tag, attrs = {}, ...kids) {
   const e = document.createElement(tag);
@@ -56,7 +56,60 @@ function gameCard(g) {
       el("div", {}, el("small", { text: "Betting spread" }), g.odds_detail || fmtSpread(g.home, g.spread))),
     g.model_home_margin != null && g.spread != null ? el("div", { class: "model-alone",
       text: `Our model alone: ${(g.model_home_margin >= 0 ? g.home_name : g.away_name)} by ${Math.abs(g.model_home_margin).toFixed(1)}` }) : null,
-    edgeBox, injBox);
+    edgeBox, propBox(g.best_prop), injBox);
+}
+
+const priceTxt = p => (+p > 0 ? "+" : "") + (+p);
+function propText(bp) {
+  return `${bp.name} ${bp.side} ${bp.line} ${bp.label} (${priceTxt(bp.price)})`;
+}
+function propBox(bp) {
+  if (!bp) return null;
+  return el("div", { class: "prop" }, el("small", { text: "Best player prop" }), propText(bp),
+    el("span", { class: "note", text: ` · DraftKings ${Math.round(bp.market_prob * 100)}% likely · our projection ${(+bp.projection).toFixed(1)}` }));
+}
+
+function renderProps() {
+  const box = document.getElementById("props"), rec = document.getElementById("propRecord");
+  box.replaceChildren(); rec.replaceChildren();
+  const P = state.props;
+  if (!P) { box.append(el("p", { class: "empty", text: "Props will appear after the next update." })); return; }
+  const cur = (P.current || []).filter(x => state.sport === "all" || state.sport === x.sport);
+  if (cur.length) {
+    const t = el("table", {}, el("tr", {}, el("th", { text: "Game" }), el("th", { text: "Prop" }),
+      el("th", { class: "r", text: "DK chance" }), el("th", { class: "r", text: "Our projection" })));
+    for (const x of cur) {
+      const when = new Date(x.date).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
+      t.append(el("tr", {}, el("td", {}, x.game, el("small", { text: ` · ${SPORT_NAMES[x.sport]} · ${when}` })),
+        el("td", { text: propText(x) }), el("td", { class: "r", text: Math.round(x.market_prob * 100) + "%" }),
+        el("td", { class: "r", text: (+x.projection).toFixed(1) })));
+    }
+    box.append(el("div", { class: "card" }, t));
+  } else {
+    box.append(el("p", { class: "empty", text: "No props yet: DraftKings usually posts NBA props the day of the game." }));
+  }
+  const t = el("table", {}, el("tr", {}, el("th", { text: "" }), el("th", { class: "r", text: "Won-lost" }),
+    el("th", { class: "r", text: "Profit" }), el("th", { class: "r", text: "ROI" })));
+  for (const [k, label] of [["all", "All props"], ["nba", "NBA"], ["nfl", "NFL"]]) {
+    const x = P.record[k]; if (!x || (k !== "all" && !(x.wins + x.losses + x.pushes))) continue;
+    const cls = x.profit < 0 ? "neg" : x.profit > 0 ? "pos" : "";
+    t.append(el("tr", {}, el("td", { text: label }), el("td", { class: "r", text: `${x.wins}-${x.losses}` + (x.pushes ? `-${x.pushes}` : "") }),
+      el("td", { class: "r " + cls, text: money(x.profit) }), el("td", { class: "r " + cls, text: x.roi == null ? "–" : x.roi + "%" })));
+  }
+  const card = el("div", { class: "card" }, t);
+  if (P.recent.length) {
+    const h = el("table", {}, el("tr", {}, el("th", { text: "Prop" }), el("th", { class: "r", text: "Actual" }), el("th", { class: "r", text: "Result" })));
+    for (const x of P.recent) {
+      const res = x.result === "win" ? `Won ${money(+x.profit)}` : x.result === "loss" ? "Lost -$5.00" : x.result === "void" ? "Void (sat out)" : "Push";
+      h.append(el("tr", {}, el("td", {}, `${x.name} ${x.side} ${x.line} ${x.label} (${priceTxt(x.price)})`, el("small", { text: " · " + x.game })),
+        el("td", { class: "r", text: x.actual || "–" }),
+        el("td", { class: "r " + (x.result === "win" ? "w" : x.result === "loss" ? "l" : ""), text: res })));
+    }
+    card.append(el("details", {}, el("summary", { text: "Recent graded props" }), h));
+  } else {
+    card.append(el("p", { class: "note", text: "Tracking starts today: each game's prop is saved 45 minutes before tip-off and graded from the box score." }));
+  }
+  rec.append(card);
 }
 
 function renderGames() {
@@ -197,16 +250,17 @@ function renderParlays() {
 }
 
 function showView() {
-  const v = ["#results", "#parlays"].includes(location.hash) ? location.hash.slice(1) : "games";
+  const v = ["#results", "#parlays", "#props"].includes(location.hash) ? location.hash.slice(1) : "games";
   document.getElementById("view-games").hidden = v !== "games";
   document.getElementById("view-results").hidden = v !== "results";
   document.getElementById("view-parlays").hidden = v !== "parlays";
+  document.getElementById("view-props").hidden = v !== "props";
   document.querySelectorAll("#views a").forEach(a => a.classList.toggle("on", a.dataset.view === v));
 }
 window.addEventListener("hashchange", () => { showView(); window.scrollTo(0, 0); });
 showView();
 
-function render() { renderGames(); renderTrack(); renderParlays(); }
+function render() { renderGames(); renderTrack(); renderParlays(); renderProps(); }
 
 async function load() {
   const bust = "?t=" + Date.now();
@@ -214,6 +268,7 @@ async function load() {
                                     fetch("data/track_record.json" + bust).then(r => r.json())]);
   state.preds = p; state.track = t;
   state.parlays = await fetch("data/parlays.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null);
+  state.props = await fetch("data/props.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null);
   document.getElementById("updated").textContent = "Last updated " + new Date(p.updated).toLocaleString();
   render();
 }

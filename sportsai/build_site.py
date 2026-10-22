@@ -84,8 +84,9 @@ def periods(rows):
 def main():
     os.makedirs(os.path.join(SITE, "data"), exist_ok=True)
     shutil.copy(os.path.join(DATA, "predictions.json"), os.path.join(SITE, "data", "predictions.json"))
-    if os.path.exists(os.path.join(DATA, "parlays.json")):
-        shutil.copy(os.path.join(DATA, "parlays.json"), os.path.join(SITE, "data", "parlays.json"))
+    for extra in ("parlays.json", "props.json"):
+        if os.path.exists(os.path.join(DATA, extra)):
+            shutil.copy(os.path.join(DATA, extra), os.path.join(SITE, "data", extra))
     backtest = json.load(open(os.path.join(DATA, "backtest_summary.json")))
     track = {}
     for sport in ("nfl", "nba", "cfb"):
