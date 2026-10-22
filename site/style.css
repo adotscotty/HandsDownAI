@@ -17,8 +17,9 @@ h3 { margin: 0 0 8px; font-size: 1.05rem; }
 .sub, .note, .updated { color: var(--muted); margin: 4px 0; }
 .note { font-size: .9rem; }
 .updated { font-size: .85rem; }
-.views { display: flex; gap: 22px; border-bottom: 1px solid var(--line); padding-top: 10px; }
-.views a { padding: 8px 2px; color: var(--muted); text-decoration: none; font-weight: 600;
+.views { display: flex; gap: 16px; border-bottom: 1px solid var(--line); padding-top: 10px; overflow-x: auto; scrollbar-width: none; }
+.views::-webkit-scrollbar { display: none; }
+.views a { white-space: nowrap; padding: 8px 2px; color: var(--muted); text-decoration: none; font-weight: 600;
   border-bottom: 3px solid transparent; margin-bottom: -1px; }
 .views a.on { color: var(--ink); border-bottom-color: var(--accent); }
 .tabs { display: flex; gap: 8px; padding-top: 14px; flex-wrap: wrap; }
@@ -62,3 +63,21 @@ footer { color: var(--muted); font-size: .85rem; padding: 30px 16px 40px; }
 .model-alone { font-size: .8rem; color: var(--muted); margin-top: 6px; }
 .prop { margin-top: 8px; font-size: .88rem; padding: 6px 8px; border-radius: 8px; background: var(--chip); }
 .prop small { display: block; color: var(--muted); font-size: .72rem; }
+.tabs[hidden] { display: none; }
+.bet-head { display: flex; flex-direction: column; margin-bottom: 4px; }
+.bet-head h3 { margin: 0; }
+.bet .hint { font-size: .78rem; color: var(--muted); }
+.bet .status { margin-top: 10px; font-size: .85rem; font-weight: 600; }
+.bet .status.muted { color: var(--muted); font-weight: 400; }
+.empty-bet { opacity: .7; }
+.teaser { display: block; margin-top: 14px; color: var(--ink); text-decoration: none; font-size: .92rem; }
+.teaser:hover { border-color: var(--accent); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; margin: 10px 0 6px; }
+.tile { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
+.tile small { display: block; color: var(--muted); font-size: .75rem; }
+.tile strong { font-size: 1.3rem; font-variant-numeric: tabular-nums; }
+.sub-h { margin: 22px 0 8px; }
+.hl .card small { display: block; color: var(--muted); font-size: .8rem; margin-bottom: 4px; }
+.hl .card p { margin: 4px 0 0; color: var(--muted); font-size: .9rem; }
+.hl .win { border-left: 4px solid var(--good); } .hl .beat { border-left: 4px solid var(--bad); }
+td small { color: var(--muted); }

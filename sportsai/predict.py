@@ -30,6 +30,14 @@ def parse_event(sport, ev, known):
     odds = (comp.get("odds") or [{}])[0]
     ps = odds.get("pointSpread") or {}
 
+    ml = odds.get("moneyline") or {}
+
+    def moneyline(side):
+        try:
+            return int(str(ml[side]["close"]["odds"]).replace("+", ""))
+        except (KeyError, TypeError, ValueError):
+            return None
+
     def price(side):  # American odds for betting this side's spread (default -110)
         try:
             return int(str(ps[side]["close"]["odds"]).replace("+", ""))
@@ -47,6 +55,7 @@ def parse_event(sport, ev, known):
         spread=odds.get("spread"), total=odds.get("overUnder"), odds_detail=odds.get("details"),
         book=(odds.get("provider") or {}).get("name"),
         home_spread_odds=price("home"), away_spread_odds=price("away"),
+        home_ml=moneyline("home"), away_ml=moneyline("away"),
     )
 
 
@@ -179,7 +188,7 @@ def predict_sport(sport, settings, blend_w=0.0):
         preds.append(dict(
             {k: g[k] for k in ("sport", "event_id", "date", "name", "status", "neutral", "home", "home_name",
                                "home_logo", "away", "away_name", "away_logo", "spread", "total",
-                               "odds_detail", "book", "home_spread_odds", "away_spread_odds")},
+                               "odds_detail", "book", "home_spread_odds", "away_spread_odds", "home_ml", "away_ml")},
             predicted_home_margin=round(main, 1), home_win_prob=round(win_prob(main, sigma), 3),
             model_home_margin=round(m, 1), model_home_win_prob=round(wp, 3),
             home_cover_prob=round(win_prob(main + g["spread"], sigma), 3) if g["spread"] is not None else None,
@@ -257,6 +266,11 @@ def main(sports):
                   open(os.path.join(DATA, "props.json"), "w"), indent=1)
     except Exception as e:
         print("props tracking failed", e)
+    try:
+        from .bestbets import update as update_best
+        update_best(allpreds, prop_rows)
+    except Exception as e:
+        print("best bets failed", e)
     stamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     json.dump(dict(updated=stamp, games=allpreds), open(os.path.join(DATA, "predictions.json"), "w"), indent=1)
 

@@ -17,10 +17,11 @@
 </header>
 
 <nav class="wrap views" id="views" aria-label="Page">
-  <a href="#games" data-view="games" class="on">Upcoming games</a>
-  <a href="#results" data-view="results">Track record</a>
-  <a href="#parlays" data-view="parlays">Parlays</a>
-  <a href="#props" data-view="props">Props</a>
+  <a href="#home" data-view="home" class="on">Best bets</a>
+  <a href="#games" data-view="games">Games</a>
+  <a href="#today" data-view="today">Today</a>
+  <a href="#yesterday" data-view="yesterday">Yesterday</a>
+  <a href="#record" data-view="record">Record</a>
 </nav>
 
 <nav class="wrap tabs" id="tabs" aria-label="Sport">
@@ -31,7 +32,16 @@
 </nav>
 
 <main class="wrap">
-  <section id="view-games">
+  <section id="view-home">
+    <h2 id="homeTitle">Today's best bets</h2>
+    <p class="note">One pick of each kind across all sports. Each bet updates with the latest news until 45 minutes before its first game, then it's locked and tracked at $5. "Chance" is our estimate; sportsbooks price same-game parlays differently, so that payout is an estimate.</p>
+    <div id="bestbets"></div>
+    <div id="yesterdayTeaser"></div>
+    <h2>Best bets record ($5 each)</h2>
+    <div id="bestRecord"></div>
+  </section>
+
+  <section id="view-games" hidden>
     <div class="row-head">
       <h2>Upcoming games</h2>
       <label class="toggle"><input type="checkbox" id="edgeOnly"> Only games where we disagree with the spread by 3+</label>
@@ -39,24 +49,28 @@
     <div id="games"></div>
   </section>
 
-  <section id="view-results" hidden>
-    <h2>Track record</h2>
-    <p class="note">"This season" grades each finished game using the prediction the model would have made before it, from earlier games only. "Last season" is the full 2025 test. Beating the spread needs about 52.4% to break even.</p>
-    <div id="track"></div>
+  <section id="view-today" hidden>
+    <h2>Today's results</h2>
+    <p class="note">Games that have finished today, with how our picks did. Updates every 15 minutes.</p>
+    <div id="today"></div>
   </section>
 
-  <section id="view-parlays" hidden>
-    <h2>Suggested parlays</h2>
-    <p class="note">One 2-game and one 3-game parlay per sport, from games in the next 24 hours, using each game's chance of covering the spread. A sport needs 4+ games for a 2-game parlay and 6+ for a 3-game parlay. A parlay only pays if every leg covers. "Projected" is what a $5 bet would average over many tries: negative means the sportsbook's cut is bigger than our edge. For entertainment only.</p>
-    <div id="parlays"></div>
-    <h2>Parlay record ($5 per parlay)</h2>
-    <div id="parlayRecord"></div>
+  <section id="view-yesterday" hidden>
+    <h2 id="yTitle">Yesterday's recap</h2>
+    <div id="yesterday"></div>
   </section>
-  <section id="view-props" hidden>
-    <h2>Best player prop per game</h2>
-    <p class="note">For each NBA game, the over/under player prop that DraftKings thinks is most likely to hit (after removing their cut), skipping prices worse than -300. Our own projection is shown for comparison. In a test on last season's NBA playoffs, this went 57-24 for about +1%; picking where our projection disagreed most with DraftKings lost 23%, so we follow DraftKings here. NFL props will be added once prices are available. For entertainment only.</p>
+
+  <section id="view-record" hidden>
+    <h2>Track record</h2>
+    <p class="note">"This season" grades each finished game using the prediction made before it, from earlier games only. "Last season" is the full 2025 test. Beating the spread needs about 52.4% to break even.</p>
+    <div id="track"></div>
+    <h2>Parlays ($5 per parlay)</h2>
+    <p class="note">One 2-game and one 3-game spread parlay per sport per day, when a sport has 4+ (or 6+) games in the next 24 hours. For entertainment only.</p>
+    <div id="parlays"></div>
+    <div id="parlayRecord"></div>
+    <h2>Player props ($5 per prop)</h2>
+    <p class="note">For each NBA game, the over/under player prop DraftKings thinks is most likely to hit (prices no worse than -300), with our projection for comparison. In a test on last season's NBA playoffs this went 57-24 for about +1%.</p>
     <div id="props"></div>
-    <h2>Prop record ($5 per prop)</h2>
     <div id="propRecord"></div>
   </section>
 </main>
