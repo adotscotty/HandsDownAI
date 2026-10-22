@@ -10,7 +10,9 @@ from .fetch_history import TEST_SEASON, DATA
 GRID = {
     "nfl": dict(k=[0.04, 0.06, 0.08, 0.10, 0.13], carry=[0.4, 0.5, 0.65, 0.8], hfa=[1.0, 1.5, 2.0, 2.5],
                 beta=[0, 1.5, 3, 5], early=[0.5, 1, 2, 4], rest=[0, 0.15, 0.3, 0.5], qbq=[0, 1, 2, 3, 4]),
-    "nba": dict(k=[0.03, 0.045, 0.06, 0.08], carry=[0.5, 0.65, 0.8], hfa=[2.0, 2.5, 3.0], beta=[0, 0.08, 0.12, 0.16, 0.22]),
+    "nba": dict(k=[0.03, 0.045, 0.06, 0.08], carry=[0.5, 0.65, 0.8], hfa=[2.0, 2.5, 3.0], beta=[0, 0.08, 0.12, 0.16, 0.22],
+                lu=[0, 0.4, 0.7, 1.0], luck=[0, 0.25, 0.5], pace_adj=[0, 1], late_tank=[0, 3, 5],
+                late_top=[0, 1.5, 3]),
     "cfb": dict(k=[0.08, 0.11, 0.14, 0.18], carry=[0.55, 0.7, 0.85], hfa=[2.0, 2.75, 3.5], beta=[0, 4, 7],
                 early=[0.5, 1, 2, 4]),
 }
@@ -38,7 +40,7 @@ def mae(rows, key):
     return sum(abs(r["home_score"] - r["away_score"] - r[key]) for r in rows) / len(rows)
 
 
-def tune(sport, games, train=None):
+def tune(sport, games, train=None, start=None):
     """Pick settings that predicted the training games best (after the first few weeks)."""
     if train is None:  # NBA did best tuned on just the latest season; NFL and college on several
         first = TEST_SEASON - TRAIN_SEASONS.get(sport, 4) - (0 if TRAIN_SEASONS.get(sport, 4) == 1 else 1)
@@ -58,7 +60,8 @@ def tune(sport, games, train=None):
         best = min(((score(dict(zip(keys, c))), dict(zip(keys, c)))
                     for c in itertools.product(*GRID[sport].values())), key=lambda x: x[0])
     else:  # big grid: improve one setting at a time until nothing changes
-        params = {k: v[len(v) // 2] for k, v in GRID[sport].items()}
+        start = {**DEFAULTS[sport], **(start or {})}  # begin from the current settings when they're on the grid
+        params = {k: start[k] if start.get(k) in v else v[len(v) // 2] for k, v in GRID[sport].items()}
         best = (score(params), params)
         for _ in range(4):
             improved = False
@@ -133,11 +136,14 @@ def main(sports):
     allsum = json.load(open(summary_path)) if os.path.exists(summary_path) else {}
     for sport in sports:
         games = load(sport)
-        params = tune(sport, games)
+        old = allsum.get(sport, {})
+        params = tune(sport, games, start=old.get("settings"))
         out, model = run(sport, games, params)
         test = graded(sport, [g for g in out if g["season"] == TEST_SEASON])
         s = summarize(sport, test)
         s["settings"] = {**DEFAULTS[sport], **params}
+        if "blend_w" in old:  # keep the model/line blend chosen earlier
+            s["blend_w"] = old["blend_w"]
         allsum[sport] = s
         print(sport, json.dumps(s, indent=1))
         cols = ["date", "season", "home", "away", "home_score", "away_score", "spread", "pred",

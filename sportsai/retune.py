@@ -40,7 +40,7 @@ def main(sports):
     for sport in sports:
         games = all_games(sport)
         old = summary[sport]["settings"]
-        new = {**old, **tune(sport, games, train=games)}
+        new = {**old, **tune(sport, games, train=games, start=old)}
         old_miss, n = recent_miss(sport, games, old, since)
         window = since
         if n < 50:  # early in a season: judge on the last year instead of 90 days

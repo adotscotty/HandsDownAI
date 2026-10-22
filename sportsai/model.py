@@ -23,10 +23,17 @@ DEFAULTS = {
     #       epa_w: how much the ratings learn from play-by-play efficiency instead of the final
     #       score (0 = score only), epa_scale: points per unit of efficiency margin,
     #       epa_close: 1 = only count plays while the game was still competitive, 2 = leave out turnovers
+    # NBA only:
+    #       lu: points per unit of tonight's lineup strength vs. the team's usual lineup,
+    #       lu_mix: how lineup strength rates players (1 = on-court plus-minus, 0 = box-score Game Score),
+    #       luck: share of three-point shooting luck removed before ratings learn from a game,
+    #       pace_adj: 1 = rate teams per possession and scale by tonight's expected pace,
+    #       late_tank / late_top: points taken off weak / strong teams in the last weeks of the season
     "nfl": dict(k=0.10, early=2.0, carry=0.6, hfa=1.8, cap=24, beta=4.0, sigma=13.0, new=0.0,
                 rest=0.0, rest_cap=14, qbq=0.0, qb_repl=4.5, epa_w=0.0, epa_scale=0.8, epa_close=0),
     "nba": dict(k=0.06, early=2.0, carry=0.6, hfa=2.5, cap=25, beta=0.5, sigma=12.5, new=0.0,
-                rest=0.0, rest_cap=3, qbq=0.0, qb_repl=0.0),
+                rest=0.0, rest_cap=3, qbq=0.0, qb_repl=0.0,
+                lu=0.7, lu_mix=0.0, luck=0.25, pace_adj=1, late_tank=5.0, late_top=0.0),
     "cfb": dict(k=0.12, early=2.0, carry=0.7, hfa=2.8, cap=35, beta=5.0, sigma=15.5, new=-18.0,
                 rest=0.0, rest_cap=14, qbq=0.0, qb_repl=5.0),
 }
@@ -51,6 +58,11 @@ class RatingModel:
         self.qbstats = defaultdict(lambda: deque(maxlen=24))  # QB -> recent (adj. net yards, dropbacks)
         self.last_game = {}                                   # team -> date of last game
         self.roster = defaultdict(set)                        # team -> players seen (NBA)
+        self.pstats = defaultdict(lambda: deque(maxlen=40))   # player -> recent (minutes, game score, +/-)
+        self.lu_hist = defaultdict(lambda: deque(maxlen=10))  # team -> lineup strength in recent games
+        self.pace = {}                                        # team -> possessions per game (smoothed)
+        self.lg_pace, self.lg_3p = 99.0, 0.36
+        self.wl = defaultdict(lambda: [0, 0])                 # team -> [wins, games] this season
 
     # ---------- season handling ----------
     def start_season(self, season):
@@ -58,6 +70,7 @@ class RatingModel:
             for t in self.r:
                 self.r[t] *= self.p["carry"]
             self.n.clear()
+            self.wl.clear()
             # Player history and QBs carry over, so injuries count from opening night.
         self.season = season
 
@@ -113,6 +126,64 @@ class RatingModel:
                 return pid
         return None
 
+    # ---------- NBA lineup strength ----------
+    def impact(self, pid):
+        """Per-48-minute value of a player, blended toward zero until he has played a lot."""
+        hist = self.pstats.get(pid, ())
+        mins = sum(h[0] for h in hist) + 300
+        pm48 = 48 * sum(h[2] for h in hist) / mins
+        gs48 = 48 * (sum(h[1] for h in hist) + 300 * 0.25) / mins - 16
+        mix = self.p["lu_mix"]
+        return mix * pm48 + (1 - mix) * gs48
+
+    def expected_minutes(self, team, pid):
+        m = self.pmin.get((team, pid))
+        return sum(m) / len(m) if m else 12.0
+
+    def lineup_strength(self, team, players):
+        """players: {player: share of normal minutes he'll play (1 = full)}"""
+        mins = {pid: self.expected_minutes(team, pid) * w for pid, w in players.items() if w > 0}
+        total = sum(mins.values())
+        if total <= 0:
+            return None
+        return sum(m / total * self.impact(pid) for pid, m in mins.items())
+
+    def lineup_delta(self, team, players):
+        hist = self.lu_hist[team]
+        if len(hist) < 3 or not players:
+            return 0.0, None
+        now = self.lineup_strength(team, players)
+        if now is None:
+            return 0.0, None
+        return now - sum(hist) / len(hist), now
+
+    def expected_players(self, team, injury_weights):
+        """Live: who should play tonight = recent rotation players, less the injured ones."""
+        games = self.recent[team]
+        out = {}
+        for pid in self.roster[team]:
+            if sum(pid in g for g in games) >= 3:
+                out[pid] = 1.0 - injury_weights.get(pid, 0.0)
+        return out
+
+    def pace_factor(self, home, away):
+        if not self.p.get("pace_adj") or home not in self.pace or away not in self.pace:
+            return 1.0
+        return (self.pace[home] + self.pace[away]) / 2 / self.lg_pace
+
+    def late_flags(self, team, when, season_type):
+        """(tanking, top team) late in the NBA regular season."""
+        if season_type != 2:
+            return 0, 0
+        end = dt.datetime(when.year if when.month < 7 else when.year + 1, 4, 13, tzinfo=dt.timezone.utc)
+        if (end - when).days > 25:
+            return 0, 0
+        w, n = self.wl[team]
+        if n < 20:
+            return 0, 0
+        pct = w / n
+        return int(pct < 0.38), int(pct > 0.68)
+
     def rest_days(self, team, when):
         last = self.last_game.get(team)
         if last is None or (when - last).days > 60:
@@ -130,9 +201,14 @@ class RatingModel:
 
     # ---------- predict / update ----------
     def predict(self, home, away, neutral=False, home_main=True, away_main=True,
-                home_missing=0.0, away_missing=0.0, rest_diff=0.0, home_qb_drop=0.0, away_qb_drop=0.0):
+                home_missing=0.0, away_missing=0.0, rest_diff=0.0, home_qb_drop=0.0, away_qb_drop=0.0,
+                pace_factor=1.0, lineup_diff=0.0, late=(0, 0, 0, 0)):
         p = self.p
         m = (0 if neutral else p["hfa"]) + self.rating(home, home_main) - self.rating(away, away_main)
+        m *= pace_factor
+        m += p.get("lu", 0) * lineup_diff
+        ht, htop, at, atop = late
+        m -= p.get("late_tank", 0) * (ht - at) + p.get("late_top", 0) * (htop - atop)
         m -= p["beta"] * (home_missing - away_missing)
         m += p["rest"] * rest_diff
         m -= p["qbq"] * (home_qb_drop - away_qb_drop)
@@ -157,12 +233,49 @@ class RatingModel:
             self.qbstats[qb].append(qb_line)
         if players is not None:   # NBA: {pid: (minutes, game_score)}
             self.recent[team].append(set(players))
-            for pid, (mins, gs) in players.items():
+            for pid, (mins, gs, *rest) in players.items():
+                self.pstats[pid].append((mins, gs, rest[0] if rest else 0.0))
                 self.roster[team].add(pid)
                 self.pmin[(team, pid)].append(mins)
                 self.pval[(team, pid)].append(gs)
         if qb:
             self.qbs[team].append(qb)
+
+
+def _num(g, k):
+    try:
+        return float(g.get(k))
+    except (TypeError, ValueError):
+        return None
+
+
+def nba_adjusted_margin(model, g, margin, h, a):
+    """NBA: take out three-point shooting luck, and put the margin on a per-possession basis.
+    Also keeps the league's three-point % and pace up to date."""
+    p = model.p
+    vals = {f"{side}_{k}": _num(g, f"{side}_{k}") for side in ("home", "away")
+            for k in ("tpm", "tpa", "fga", "oreb", "tov", "fta")}
+    if any(v is None for v in vals.values()):
+        return margin
+    adj = margin
+    if p.get("luck"):
+        luck_h = vals["home_tpm"] - vals["home_tpa"] * model.lg_3p
+        luck_a = vals["away_tpm"] - vals["away_tpa"] * model.lg_3p
+        adj -= p["luck"] * 3 * (luck_h - luck_a)
+    poss = {side: vals[f"{side}_fga"] - vals[f"{side}_oreb"] + vals[f"{side}_tov"] + 0.44 * vals[f"{side}_fta"]
+            for side in ("home", "away")}
+    game_pace = (poss["home"] + poss["away"]) / 2
+    if p.get("pace_adj") and game_pace > 50:
+        adj *= model.lg_pace / game_pace
+    # keep running averages
+    tpa = vals["home_tpa"] + vals["away_tpa"]
+    if tpa:
+        model.lg_3p += 0.002 * ((vals["home_tpm"] + vals["away_tpm"]) / tpa - model.lg_3p)
+    if game_pace > 50:
+        model.lg_pace += 0.002 * (game_pace - model.lg_pace)
+        for team in (h, a):
+            model.pace[team] = model.pace.get(team, game_pace) * 0.9 + 0.1 * game_pace
+    return adj
 
 
 def eff_margin(g, p):
@@ -185,8 +298,8 @@ def parse_players(s):
     out = {}
     for part in (s or "").split(";"):
         if part:
-            pid, m, gs = part.split(":")
-            out[pid] = (float(m), float(gs))
+            bits = part.split(":")
+            out[bits[0]] = (float(bits[1]), float(bits[2]), float(bits[3]) if len(bits) > 3 else 0.0)
     return out
 
 
@@ -202,11 +315,17 @@ def run(sport, games, params=None):
         hq = aq = 0.0
         when = dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00"))
         rest = model.rest_days(h, when) - model.rest_days(a, when)
+        pf, lud, late = 1.0, 0.0, (0, 0, 0, 0)
         if sport == "nba":
             hp, ap = parse_players(g.get("home_players")), parse_players(g.get("away_players"))
             if hp and ap:  # missing = regulars who did not play
                 hm = model.missing_value(h, {pid: 1.0 for pid in model.regulars(h) if pid not in hp})
                 am = model.missing_value(a, {pid: 1.0 for pid in model.regulars(a) if pid not in ap})
+            hd, h_now = model.lineup_delta(h, {pid: 1.0 for pid in hp})
+            ad, a_now = model.lineup_delta(a, {pid: 1.0 for pid in ap})
+            lud = hd - ad
+            pf = model.pace_factor(h, a)
+            late = model.late_flags(h, when, g.get("season_type")) + model.late_flags(a, when, g.get("season_type"))
         else:
             for side, team in (("home", h), ("away", a)):
                 usual, played = model.usual_qb(team), g.get(side + "_qb")
@@ -215,14 +334,25 @@ def run(sport, games, params=None):
                 if side == "home": hm, hq = miss, drop
                 else: am, aq = miss, drop
         pred, wp = model.predict(h, a, g["neutral"], g.get("home_fbs", 1), g.get("away_fbs", 1), hm, am,
-                                 rest, hq, aq)
+                                 rest, hq, aq, pf, lud, late)
         margin = g["home_score"] - g["away_score"]
+        learn = margin
+        if sport == "nba":
+            learn = nba_adjusted_margin(model, g, margin, h, a)
         out.append({**g, "pred": pred, "win_prob": wp, "home_missing": hm, "away_missing": am,
                     "pred_no_injury": pred + model.p["beta"] * (hm - am) + model.p["qbq"] * (hq - aq),
                     "rest_diff": rest, "home_qb_drop": hq, "away_qb_drop": aq})
-        model.update(h, a, margin, pred, eff_margin(g, model.p))
+        # ratings learn from the margin after removing what the lineup/late-season terms explain
+        model.update(h, a, learn, pred - model.p.get("lu", 0) * lud if sport == "nba" else pred,
+                     eff_margin(g, model.p))
         if sport == "nba":
             model.record_lineup(h, players=hp, when=when); model.record_lineup(a, players=ap, when=when)
+            for team, plist in ((h, hp), (a, ap)):
+                strength = model.lineup_strength(team, {pid: 1.0 for pid in plist}) if plist else None
+                if strength is not None:
+                    model.lu_hist[team].append(strength)
+            model.wl[h][0] += margin > 0; model.wl[h][1] += 1
+            model.wl[a][0] += margin < 0; model.wl[a][1] += 1
         else:
             for side, team in (("home", h), ("away", a)):
                 model.record_lineup(team, qb=g.get(side + "_qb"), qb_line=qb_line(g, side), when=when)

@@ -129,6 +129,28 @@ def passing_line(st):
     return attempts, pts, attempts + n_sacks
 
 
+def team_box(summary, team_id):
+    """Team shooting totals (NBA): field goals, threes, free throws, offensive rebounds, turnovers."""
+    for team in summary.get("boxscore", {}).get("teams", []):
+        if team["team"]["id"] != team_id:
+            continue
+        st = {x.get("name"): x.get("displayValue") for x in team.get("statistics", [])}
+
+        def pair(k):
+            try:
+                a, b = st.get(k, "0-0").split("-")
+                return int(a), int(b)
+            except ValueError:
+                return 0, 0
+        fgm, fga = pair("fieldGoalsMade-fieldGoalsAttempted")
+        tpm, tpa = pair("threePointFieldGoalsMade-threePointFieldGoalsAttempted")
+        ftm, fta = pair("freeThrowsMade-freeThrowsAttempted")
+        num = lambda k: int(float(st.get(k) or 0))
+        return dict(fga=fga, fgm=fgm, tpa=tpa, tpm=tpm, fta=fta, ftm=ftm, oreb=num("offensiveRebounds"),
+                    tov=num("totalTurnovers") or num("turnovers"))
+    return {}
+
+
 def player_lines(sport, summary, team_id):
     """Who played and how much, from the box score. Returns list of (player_id, name, value)."""
     out = []
@@ -148,7 +170,11 @@ def player_lines(sport, summary, team_id):
                     except ValueError:
                         mins = 0.0
                     if mins > 0:
-                        out.append((pid, name, (mins, game_score(stats))))
+                        try:
+                            pm = float(str(stats.get("plusMinus", "0")).replace("+", "") or 0)
+                        except ValueError:
+                            pm = 0.0
+                        out.append((pid, name, (mins, game_score(stats), pm)))
                 elif group.get("name") == "passing":
                     out.append((pid, name, passing_line(stats)))
     return out
@@ -161,7 +187,8 @@ def add_lineups(sport, games):
         for side in ("home", "away"):
             lines = player_lines(sport, s or {}, g[side + "_id"])
             if sport == "nba":
-                g[side + "_players"] = ";".join(f"{p}:{m:g}:{gs:.1f}" for p, _, (m, gs) in lines)
+                g[side + "_players"] = ";".join(f"{p}:{m:g}:{gs:.1f}:{pm:g}" for p, _, (m, gs, pm) in lines)
+                g.update({f"{side}_{k}": v for k, v in team_box(s or {}, g[side + "_id"]).items()})
             else:
                 qb = max(lines, key=lambda x: x[2][0]) if lines else None
                 g[side + "_qb"] = qb[0] if qb else ""

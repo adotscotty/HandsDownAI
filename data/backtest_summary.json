@@ -57,37 +57,37 @@
  "nba": {
   "games": 1316,
   "games_with_spread": 1316,
-  "model_avg_miss": 11.28,
-  "model_no_injury_avg_miss": 11.48,
-  "model_avg_miss_same_games": 11.28,
+  "model_avg_miss": 11.2,
+  "model_no_injury_avg_miss": 11.34,
+  "model_avg_miss_same_games": 11.2,
   "vegas_avg_miss_same_games": 11.0,
   "picked_winner_pct": 69.8,
   "vegas_picked_winner_pct": 68.5,
-  "brier": 0.2012,
+  "brier": 0.1993,
   "against_spread": {
    "edge_0+": {
-    "wins": 662,
-    "losses": 654,
+    "wins": 668,
+    "losses": 648,
     "pushes": 0,
-    "win_pct": 50.3
+    "win_pct": 50.8
    },
    "edge_2+": {
-    "wins": 354,
-    "losses": 365,
+    "wins": 356,
+    "losses": 335,
     "pushes": 0,
-    "win_pct": 49.2
+    "win_pct": 51.5
    },
    "edge_4+": {
-    "wins": 158,
-    "losses": 151,
+    "wins": 147,
+    "losses": 136,
     "pushes": 0,
-    "win_pct": 51.1
+    "win_pct": 51.9
    },
    "edge_6+": {
-    "wins": 56,
-    "losses": 53,
+    "wins": 39,
+    "losses": 45,
     "pushes": 0,
-    "win_pct": 51.4
+    "win_pct": 46.4
    }
   },
   "settings": {
@@ -97,12 +97,18 @@
    "hfa": 2.0,
    "cap": 25,
    "beta": 0.08,
-   "sigma": 12.37,
+   "sigma": 12.23,
    "new": 0.0,
    "rest": 0.0,
    "rest_cap": 3,
    "qbq": 0.0,
-   "qb_repl": 0.0
+   "qb_repl": 0.0,
+   "lu": 0.7,
+   "lu_mix": 0.0,
+   "luck": 0.25,
+   "pace_adj": 1,
+   "late_tank": 5.0,
+   "late_top": 0.0
   },
   "blend_w": 0.1
  },

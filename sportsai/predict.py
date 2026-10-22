@@ -37,6 +37,7 @@ def parse_event(sport, ev, known):
             return -110
     return dict(
         sport=sport, season=CURRENT[sport][0], event_id=ev["id"], date=ev["date"], name=ev.get("name"),
+        season_type=ev["season"]["type"],
         neutral=int(comp.get("neutralSite", False)), completed=comp["status"]["type"]["completed"],
         status=comp["status"]["type"].get("shortDetail"), state=comp["status"]["type"].get("state"),
         home_id=h["team"]["id"], home=h["team"]["abbreviation"], home_name=h["team"].get("displayName"),
@@ -52,7 +53,8 @@ def parse_event(sport, ev, known):
 CURRENT_COLS = ["sport", "season", "event_id", "date", "name", "neutral", "completed", "home_id", "home",
                 "home_name", "home_score", "away_id", "away", "away_name", "away_score", "spread", "total",
                 "book", "home_players", "away_players", "home_qb", "home_qb_name", "away_qb", "away_qb_name",
-                "home_qb_pts", "home_qb_db", "away_qb_pts", "away_qb_db"]
+                "home_qb_pts", "home_qb_db", "away_qb_pts", "away_qb_db", "season_type"] + [
+                f"{side}_{k}" for side in ("home", "away") for k in ("fga", "fgm", "tpa", "tpm", "fta", "ftm", "oreb", "tov")]
 
 
 def load_current(sport):
@@ -65,6 +67,7 @@ def load_current(sport):
         for k in ("season", "home_score", "away_score", "neutral"):
             r[k] = int(r[k] or 0)
         r["spread"] = float(r["spread"]) if r.get("spread") else None
+        r["season_type"] = int(r.get("season_type") or 2)
         r["completed"], r["_stored"] = True, True
     return rows
 
@@ -154,13 +157,21 @@ def predict_sport(sport, settings, blend_w=0.0):
                     sub = model.backup_qb(team)
                     sub_value = model.qb_value(sub) if sub else model.p["qb_repl"]
                     qb_drop = missing * (model.qb_value(qb) - sub_value)
-            side_info[side] = dict(qb_drop=qb_drop if sport != "nba" else 0.0, missing=missing, key_injuries=key,
+            side_info[side] = dict(weights=weights, qb_drop=qb_drop if sport != "nba" else 0.0, missing=missing, key_injuries=key,
                                    all_injuries=[i for i in injuries if i["weight"] >= 0.75])
         when = dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00"))
         rest = model.rest_days(g["home_id"], when) - model.rest_days(g["away_id"], when)
         hi, ai = side_info["home"], side_info["away"]
+        pf, lud, late = 1.0, 0.0, (0, 0, 0, 0)
+        if sport == "nba":  # who is expected to play, game pace, late-season tanking / top seeds
+            h, a = g["home_id"], g["away_id"]
+            hd, _ = model.lineup_delta(h, model.expected_players(h, hi["weights"]))
+            ad, _ = model.lineup_delta(a, model.expected_players(a, ai["weights"]))
+            lud = hd - ad
+            pf = model.pace_factor(h, a)
+            late = model.late_flags(h, when, g.get("season_type")) + model.late_flags(a, when, g.get("season_type"))
         m, wp = model.predict(g["home_id"], g["away_id"], g["neutral"], g["home_fbs"], g["away_fbs"],
-                              hi["missing"], ai["missing"], rest, hi["qb_drop"], ai["qb_drop"])
+                              hi["missing"], ai["missing"], rest, hi["qb_drop"], ai["qb_drop"], pf, lud, late)
         injury_pts = (-model.p["beta"] * (hi["missing"] - ai["missing"])
                       - model.p["qbq"] * (hi["qb_drop"] - ai["qb_drop"]))
         main = blend(m, g["spread"], blend_w)
@@ -175,7 +186,8 @@ def predict_sport(sport, settings, blend_w=0.0):
             injury_adjustment=round(injury_pts, 1),
             rest_adjustment=round(model.p["rest"] * rest, 1),
             edge_vs_spread=round(m + g["spread"], 1) if g["spread"] is not None else None,
-            home_injuries=side_info["home"], away_injuries=side_info["away"],
+            home_injuries={k: v for k, v in hi.items() if k != "weights"},
+            away_injuries={k: v for k, v in ai.items() if k != "weights"},
         ))
     return preds, this_season
 
