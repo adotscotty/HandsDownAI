@@ -9,7 +9,7 @@ import csv, datetime as dt, json, os, sys
 from .espn import get_json, get_many, scoreboard_url, summary_url
 from .fetch_history import DATA, days, main_teams, add_lineups, add_closing_spreads, fbs_teams_from_games
 from .backtest import load
-from .model import run, RatingModel
+from .model import run, RatingModel, win_prob
 
 CURRENT = {"nfl": (2026, "2026-09-01"), "nba": (2026, "2026-10-01"), "cfb": (2026, "2026-08-22")}
 LOOKAHEAD = {"nfl": 7, "nba": 2, "cfb": 7}
@@ -28,16 +28,24 @@ def parse_event(sport, ev, known):
     if ev.get("season", {}).get("type") not in (2, 3):
         return None
     odds = (comp.get("odds") or [{}])[0]
+    ps = odds.get("pointSpread") or {}
+
+    def price(side):  # American odds for betting this side's spread (default -110)
+        try:
+            return int(str(ps[side]["close"]["odds"]).replace("+", ""))
+        except (KeyError, TypeError, ValueError):
+            return -110
     return dict(
         sport=sport, season=CURRENT[sport][0], event_id=ev["id"], date=ev["date"], name=ev.get("name"),
         neutral=int(comp.get("neutralSite", False)), completed=comp["status"]["type"]["completed"],
-        status=comp["status"]["type"].get("shortDetail"),
+        status=comp["status"]["type"].get("shortDetail"), state=comp["status"]["type"].get("state"),
         home_id=h["team"]["id"], home=h["team"]["abbreviation"], home_name=h["team"].get("displayName"),
         home_logo=h["team"].get("logo"), home_score=int(h.get("score") or 0),
         away_id=a["team"]["id"], away=a["team"]["abbreviation"], away_name=a["team"].get("displayName"),
         away_logo=a["team"].get("logo"), away_score=int(a.get("score") or 0),
         spread=odds.get("spread"), total=odds.get("overUnder"), odds_detail=odds.get("details"),
         book=(odds.get("provider") or {}).get("name"),
+        home_spread_odds=price("home"), away_spread_odds=price("away"),
     )
 
 
@@ -82,7 +90,14 @@ def injury_list(summary, team_id):
     return out
 
 
-def predict_sport(sport, settings):
+def blend(model_margin, spread, w):
+    """Main prediction: mostly the betting line, tilted toward our model by weight w."""
+    if spread is None:
+        return model_margin
+    return w * model_margin + (1 - w) * -spread
+
+
+def predict_sport(sport, settings, blend_w=0.0):
     known = main_teams(sport)
     season, start = CURRENT[sport]
     today = dt.datetime.now(dt.timezone.utc).date()
@@ -107,7 +122,7 @@ def predict_sport(sport, settings):
         g["home_fbs"] = int(sport != "cfb" or g["home_id"] in fbs)
         g["away_fbs"] = int(sport != "cfb" or g["away_id"] in fbs)
     done = [g for g in games if g["completed"]]
-    upcoming = [g for g in games if not g["completed"]]
+    upcoming = [g for g in games if not g["completed"] and g.get("state", "pre") == "pre"]  # skip live games
     new_done = [g for g in done if not g.get("_stored")]
     add_lineups(sport, new_done)
     add_closing_spreads(sport, new_done, all_seasons=True)
@@ -148,11 +163,15 @@ def predict_sport(sport, settings):
                               hi["missing"], ai["missing"], rest, hi["qb_drop"], ai["qb_drop"])
         injury_pts = (-model.p["beta"] * (hi["missing"] - ai["missing"])
                       - model.p["qbq"] * (hi["qb_drop"] - ai["qb_drop"]))
+        main = blend(m, g["spread"], blend_w)
+        sigma = model.p["sigma"]
         preds.append(dict(
             {k: g[k] for k in ("sport", "event_id", "date", "name", "status", "neutral", "home", "home_name",
                                "home_logo", "away", "away_name", "away_logo", "spread", "total",
-                               "odds_detail", "book")},
-            predicted_home_margin=round(m, 1), home_win_prob=round(wp, 3),
+                               "odds_detail", "book", "home_spread_odds", "away_spread_odds")},
+            predicted_home_margin=round(main, 1), home_win_prob=round(win_prob(main, sigma), 3),
+            model_home_margin=round(m, 1), model_home_win_prob=round(wp, 3),
+            home_cover_prob=round(win_prob(main + g["spread"], sigma), 3) if g["spread"] is not None else None,
             injury_adjustment=round(injury_pts, 1),
             rest_adjustment=round(model.p["rest"] * rest, 1),
             edge_vs_spread=round(m + g["spread"], 1) if g["spread"] is not None else None,
@@ -193,10 +212,15 @@ def main(sports):
     summary = json.load(open(os.path.join(DATA, "backtest_summary.json")))
     allpreds = []
     for sport in sports:
-        preds, season = predict_sport(sport, summary[sport]["settings"])
+        settings, w = summary[sport]["settings"], summary[sport].get("blend_w", 0.0)
+        preds, season = predict_sport(sport, settings, w)
+        for g in season:  # track record grades the main (line-leaning) prediction
+            g["pred_model"] = g["pred"]
+            g["pred"] = blend(g["pred"], g.get("spread"), w)
+            g["win_prob"] = win_prob(g["pred"], settings["sigma"])
         allpreds += preds
         cols = ["sport", "event_id", "date", "home", "home_name", "away", "away_name", "home_score",
-                "away_score", "spread", "pred", "win_prob", "home_missing", "away_missing", "home_fbs", "away_fbs"]
+                "away_score", "spread", "pred", "pred_model", "win_prob", "home_missing", "away_missing", "home_fbs", "away_fbs"]
         with open(os.path.join(DATA, f"season_{sport}.csv"), "w", newline="") as f:
             w = csv.DictWriter(f, cols, extrasaction="ignore")
             w.writeheader()
@@ -205,6 +229,8 @@ def main(sports):
         print(sport, len(preds), "upcoming,", len(season), "played this season")
     allpreds.sort(key=lambda p: p["date"])
     lock_pregame(allpreds)
+    from .parlays import update_parlays
+    update_parlays(allpreds)
     stamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     json.dump(dict(updated=stamp, games=allpreds), open(os.path.join(DATA, "predictions.json"), "w"), indent=1)
 

@@ -50,6 +50,7 @@ class RatingModel:
         self.qbs = defaultdict(lambda: deque(maxlen=6))       # team -> recent starting QBs
         self.qbstats = defaultdict(lambda: deque(maxlen=24))  # QB -> recent (adj. net yards, dropbacks)
         self.last_game = {}                                   # team -> date of last game
+        self.roster = defaultdict(set)                        # team -> players seen (NBA)
 
     # ---------- season handling ----------
     def start_season(self, season):
@@ -72,13 +73,12 @@ class RatingModel:
         if len(games) < 3:
             return {}
         out = {}
-        for (t, pid), mins in list(self.pmin.items()):
-            if t != team:
-                continue
+        for pid in self.roster[team]:
+            mins = self.pmin[(team, pid)]
             played = sum(pid in g for g in games)
             avg_min = sum(mins) / len(mins)
             if played >= 0.5 * len(games) and avg_min >= 15:
-                vals = self.pval[(t, pid)]
+                vals = self.pval[(team, pid)]
                 out[pid] = max(sum(vals) / len(vals), 0.0)
         return out
 
@@ -158,6 +158,7 @@ class RatingModel:
         if players is not None:   # NBA: {pid: (minutes, game_score)}
             self.recent[team].append(set(players))
             for pid, (mins, gs) in players.items():
+                self.roster[team].add(pid)
                 self.pmin[(team, pid)].append(mins)
                 self.pval[(team, pid)].append(gs)
         if qb:

@@ -19,6 +19,7 @@
 <nav class="wrap views" id="views" aria-label="Page">
   <a href="#games" data-view="games" class="on">Upcoming games</a>
   <a href="#results" data-view="results">Track record</a>
+  <a href="#parlays" data-view="parlays">Parlays</a>
 </nav>
 
 <nav class="wrap tabs" id="tabs" aria-label="Sport">
@@ -41,6 +42,14 @@
     <h2>Track record</h2>
     <p class="note">"This season" grades each finished game using the prediction the model would have made before it, from earlier games only. "Last season" is the full 2025 test. Beating the spread needs about 52.4% to break even.</p>
     <div id="track"></div>
+  </section>
+
+  <section id="view-parlays" hidden>
+    <h2>Suggested parlays</h2>
+    <p class="note">Built from games in the next 24 hours, using each game's chance of covering the spread. A parlay only pays if every leg covers. "Projected" is what a $5 bet would average over many tries: negative means the sportsbook's cut is bigger than our edge. For entertainment only.</p>
+    <div id="parlays"></div>
+    <h2>Parlay record ($5 per parlay)</h2>
+    <div id="parlayRecord"></div>
   </section>
 </main>
 

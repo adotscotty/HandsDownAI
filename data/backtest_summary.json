@@ -51,7 +51,8 @@
    "epa_w": 0.0,
    "epa_scale": 0.8,
    "epa_close": 0
-  }
+  },
+  "blend_w": 0.1
  },
  "nba": {
   "games": 1316,
@@ -92,44 +93,18 @@
   "settings": {
    "k": 0.045,
    "early": 2.0,
-   "carry": 0.65,
+   "carry": 0.5,
    "hfa": 2.0,
    "cap": 25,
-   "beta": 0.12,
-   "sigma": 11.56,
-   "new": 0.0
+   "beta": 0.08,
+   "sigma": 12.37,
+   "new": 0.0,
+   "rest": 0.0,
+   "rest_cap": 3,
+   "qbq": 0.0,
+   "qb_repl": 0.0
   },
-  "retunes": [
-   {
-    "date": "2026-10-21",
-    "judged_since": "2025-10-21",
-    "games_used": 2634,
-    "recent_games": 1319,
-    "recent_avg_miss_old": 11.28,
-    "recent_avg_miss_new": 11.25,
-    "adopted": true,
-    "old_settings": {
-     "k": 0.045,
-     "early": 2.0,
-     "carry": 0.5,
-     "hfa": 2.0,
-     "cap": 25,
-     "beta": 0.08,
-     "sigma": 12.37,
-     "new": 0.0
-    },
-    "new_settings": {
-     "k": 0.045,
-     "early": 2.0,
-     "carry": 0.65,
-     "hfa": 2.0,
-     "cap": 25,
-     "beta": 0.12,
-     "sigma": 11.56,
-     "new": 0.0
-    }
-   }
-  ]
+  "blend_w": 0.1
  },
  "cfb": {
   "games": 809,
@@ -207,6 +182,7 @@
      "new": -18.0
     }
    }
-  ]
+  ],
+  "blend_w": 0.2
  }
 }

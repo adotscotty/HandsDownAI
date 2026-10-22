@@ -52,3 +52,11 @@ details { margin-top: 10px; }
 summary { cursor: pointer; color: var(--accent); font-size: .9rem; }
 .w { color: var(--good); } .l { color: var(--bad); }
 footer { color: var(--muted); font-size: .85rem; padding: 30px 16px 40px; }
+
+.legs { margin: 6px 0 10px; padding: 0; list-style: none; }
+.legs li { padding: 6px 0; border-bottom: 1px solid var(--line); font-size: .92rem; }
+.legs li small { display: block; color: var(--muted); font-size: .78rem; }
+.nums { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: .92rem; }
+.nums small { display: block; color: var(--muted); font-size: .75rem; }
+.neg { color: var(--bad); } .pos { color: var(--good); }
+.model-alone { font-size: .8rem; color: var(--muted); margin-top: 6px; }
