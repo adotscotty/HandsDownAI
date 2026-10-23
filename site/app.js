@@ -167,10 +167,17 @@ function gameRow(g) {
   const bar = h("div", { class: "wp", title: `Win chance: ${g.away} ${awayPct}%, ${g.home} ${homePct}%` });
   bar.append(h("span", { style: `width:${awayPct}%;background:${awayPct >= 50 ? "var(--gold)" : "var(--surface-3)"}` }),
              h("span", { style: `width:${homePct}%;background:${homePct > 50 ? "var(--gold)" : "#3a3427"}` }));
-  let edgeTxt = null;
-  if (e != null) {
+  // The spread pick we grade in the Record tab: our prediction against the line
+  let pickTxt = null, modelTxt = null;
+  if (g.spread != null) {
+    const d = g.predicted_home_margin + g.spread;
+    pickTxt = Math.abs(d) < 0.05 ? "No spread pick: our prediction lands right on the line"
+      : `Our spread pick: ${d > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`}`;
+  }
+  if (e != null && g.model_home_margin != null) {
     const side = e > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`;
-    edgeTxt = Math.abs(e) < 0.5 ? "We agree with the spread" : `We like ${side} by ${Math.abs(e).toFixed(1)} pts`;
+    modelTxt = `Model alone (before blending with Vegas): ${g.model_home_margin >= 0 ? g.home_name : g.away_name} by ${Math.abs(g.model_home_margin).toFixed(1)}` +
+      (Math.abs(e) < 0.5 ? ", about the same as the line." : `, so it leans ${side} by ${Math.abs(e).toFixed(1)} pts. Shown for interest, not tracked.`);
   }
   const inj = [...(g.away_injuries?.key_injuries || []).map(i => ({ ...i, t: g.away })), ...(g.home_injuries?.key_injuries || []).map(i => ({ ...i, t: g.home }))];
   const bp = g.best_prop;
@@ -178,13 +185,13 @@ function gameRow(g) {
     bp ? h("p", {}, h("b", { text: "Best prop: " }), `${bp.name} ${bp.side} ${bp.line} ${bp.label} (${price(bp.price)}), DraftKings ${Math.round(bp.market_prob * 100)}% likely, our projection ${(+bp.projection).toFixed(1)}`) : null,
     inj.length ? h("p", {}, h("b", { text: "Injuries counted: " }), inj.map(i => `${i.name} (${i.t}, ${i.status})`).join(", ") +
       (g.injury_adjustment ? `. Moves our line ${Math.abs(g.injury_adjustment).toFixed(1)} pts.` : "")) : null,
-    g.model_home_margin != null && g.spread != null ? h("p", { text: `Our model alone: ${g.model_home_margin >= 0 ? g.home_name : g.away_name} by ${Math.abs(g.model_home_margin).toFixed(1)}` }) : null);
+    modelTxt ? h("p", { text: modelTxt }) : null);
   return h("article", { class: "game rise" + (big ? " edge" : "") },
     h("div", {}, h("p", { class: "when", text: `${SPORT[g.sport]} · ${when(g.date)}` }),
       h("div", { class: "teams" }, team(g.away_logo, g.away_name, awayPct, !favHome), team(g.home_logo, (g.neutral ? "vs " : "@ ") + g.home_name, homePct, favHome)), bar),
     h("div", { class: "call" }, h("small", { text: "Our prediction" }), h("strong", { text: `${favName} by ${Math.abs(g.predicted_home_margin).toFixed(1)}` }),
       h("small", { text: "Betting spread" }), h("strong", { text: g.odds_detail || (g.spread == null ? "No line yet" : `${g.home} ${line(g.spread)}`) }),
-      edgeTxt ? h("p", { class: "edge-txt", text: edgeTxt }) : null),
+      pickTxt ? h("p", { class: "edge-txt", text: pickTxt }) : null),
     extra);
 }
 
@@ -271,7 +278,7 @@ function dayHeadline(d) {
         : "Winners picked." })),
     h("div", { class: "types rise", style: "grid-template-columns:repeat(2,1fr)" },
       h("div", {}, h("p", { class: "lbl", text: "Winners picked" }), h("div", { class: "big", text: wl(...s.winners) })),
-      h("div", {}, h("p", { class: "lbl", text: "Against the spread" }), h("div", { class: "big", text: wl(...s.ats) })),
+      h("div", {}, h("p", { class: "lbl", text: "Spread picks" }), h("div", { class: "big", text: wl(...s.ats) })),
       h("div", {}, h("p", { class: "lbl", text: "Best bets" }), h("div", { class: "big", text: wl(...bb) })),
       h("div", {}, h("p", { class: "lbl", text: "Games final" }), h("div", { class: "big", text: String(s.games) }))));
 }
@@ -371,7 +378,7 @@ function renderTrack() {
     const figs = h("div", { class: "season-figs" });
     if (s) {
       figs.append(h("div", {}, h("strong", { text: s.winner_pct + "%" }), h("small", { text: "Winners picked this season" })),
-        h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: "Against the spread" })),
+        h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: "Spread picks won-lost" })),
         h("div", {}, h("strong", { text: s.avg_miss + " pts" }), h("small", { text: "Average miss on margin" })),
         h("div", {}, h("strong", { text: s.games.toLocaleString() }), h("small", { text: "Games graded" })));
     }
@@ -384,7 +391,7 @@ function renderTrack() {
         h("td", { class: "r", text: p.games ? p.avg_miss + " pts" : "–" })));
     }
     const right = h("div", {}, h("table", {}, h("thead", {}, h("tr", {}, h("th", { text: "" }), h("th", { class: "r", text: "Winners" }),
-      h("th", { class: "r", text: "Vs spread" }), h("th", { class: "r", text: "Avg miss" }))), tb),
+      h("th", { class: "r", text: "Spread picks" }), h("th", { class: "r", text: "Avg miss" }))), tb),
       ls ? h("p", { class: "note", style: "margin-top:14px", text: `Last season's test: ${ls.winner_pct}% winners (spread ${ls.spread_winner_pct ?? "–"}%), ${ls.ats ? (ls.ats.pct ?? ls.ats.win_pct) + "% against the spread" : ""}, average miss ${ls.avg_miss} pts.` }) : null);
     if (t.recent && t.recent.length) {
       const rb = h("tbody");

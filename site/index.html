@@ -58,11 +58,11 @@
     <div class="top">
       <div>
         <h1>Upcoming games</h1>
-        <p>Our predicted margin and win chance for every game with a line. A gold edge means we disagree with the spread by 3 points or more.</p>
+        <p>Our predicted margin and win chance for every game with a line. Our prediction blends our model with the Vegas line, and our spread pick follows it; both are graded in the Record tab. A gold edge means our model on its own disagrees with the line by 3+ points.</p>
       </div>
       <div class="filters">
         <div class="sports" role="group" aria-label="Sport"></div>
-        <label class="toggle"><input type="checkbox" id="edgeOnly"> Only big disagreements</label>
+        <label class="toggle"><input type="checkbox" id="edgeOnly"> Only gold-edge games</label>
       </div>
     </div>
     <div id="gamesList"></div>
@@ -107,7 +107,7 @@
     <div class="top">
       <div>
         <h1>Track record</h1>
-        <p>Every best bet, parlay and prop we've tracked, plus how often the model picks winners and beats the spread. Beating the spread takes about 52.4% to break even.</p>
+        <p>Every best bet, parlay and prop we've tracked. The by-sport records grade the "Our prediction" pick and "Our spread pick" shown on each game. Beating the spread takes about 52.4% to break even.</p>
       </div>
     </div>
     <div class="record" id="recTotal"></div>
@@ -136,6 +136,6 @@
     </div>
   </div>
 </footer>
-<script src="app.js?v=9"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>
