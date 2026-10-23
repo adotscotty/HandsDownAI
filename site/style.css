@@ -1,10 +1,9 @@
 :root {
-  --bg: #f6f7f9; --card: #ffffff; --ink: #14171c; --muted: #5d6673; --line: #e3e6ea;
-  --accent: #1f6feb; --good: #1a7f37; --bad: #c2410c; --chip: #eef1f5;
-}
-@media (prefers-color-scheme: dark) {
-  :root { --bg: #0f1216; --card: #171b21; --ink: #e8ebef; --muted: #9aa4b1; --line: #2a3039;
-          --accent: #58a6ff; --good: #3fb950; --bad: #f0883e; --chip: #222831; }
+  /* black and gold */
+  --bg: #0b0b0a; --card: #161512; --ink: #f2ead7; --muted: #a59c86; --line: #2c2820;
+  --accent: #d4a73a; --gold-hi: #f3d27a; --good: #8fd18b; --bad: #e8866a; --chip: #211e17;
+  --display: "Alfa Slab One", Georgia, serif;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
@@ -25,7 +24,7 @@ h3 { margin: 0 0 8px; font-size: 1.05rem; }
 .tabs { display: flex; gap: 8px; padding-top: 14px; flex-wrap: wrap; }
 .tabs button { border: 1px solid var(--line); background: var(--card); color: var(--ink);
   padding: 7px 14px; border-radius: 999px; font: inherit; cursor: pointer; }
-.tabs button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.tabs button.on { background: var(--accent); border-color: var(--accent); color: #0b0b0a; font-weight: 600; }
 .row-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .toggle { font-size: .9rem; color: var(--muted); }
 .day { font-weight: 600; color: var(--muted); margin: 18px 0 8px; font-size: .9rem; text-transform: uppercase; letter-spacing: .03em; }
@@ -82,6 +81,20 @@ footer { color: var(--muted); font-size: .85rem; padding: 30px 16px 40px; }
 .hl .win { border-left: 4px solid var(--good); } .hl .beat { border-left: 4px solid var(--bad); }
 td small { color: var(--muted); }
 .brand { display: flex; align-items: center; gap: 10px; letter-spacing: -.02em; font-weight: 800; }
-.brand img { width: 40px; height: 40px; border-radius: 9px; }
+.brand img { width: 44px; height: 44px; }
 .brand b { color: var(--good); font-weight: 800; }
 @media (max-width: 440px) { .views { gap: 13px; } .views a { font-size: .92rem; } }
+
+/* retro touches */
+header { background: #0b0b0a; border-bottom: 2px solid var(--accent); }
+h1, h2, .tile strong, .bet h3 { font-family: var(--display); font-weight: 400; letter-spacing: .03em; }
+h2 { color: var(--gold-hi); text-transform: uppercase; font-size: 1.15rem; }
+.brand span { color: var(--gold-hi); font-weight: 400; letter-spacing: .04em; text-transform: uppercase; }
+.brand b { color: var(--accent); font-weight: 400; }
+.views a.on { color: var(--gold-hi); }
+.card, .tile { border-color: var(--line); }
+.bar span { background: var(--accent); }
+.day { color: var(--accent); }
+summary, a { color: var(--accent); }
+.teaser { color: var(--ink); }
+.bet h3 { color: var(--gold-hi); }
