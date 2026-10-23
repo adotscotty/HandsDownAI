@@ -1,0 +1,61 @@
+name: Weekly newsletter
+
+on:
+  schedule:
+    # Thursday 2 AM Eastern. GitHub only knows UTC, so this runs at both 06:00 and 07:00 UTC
+    # and the step below only sends on the run that lands at 2 AM in New York.
+    - cron: "0 6 * * 4"
+    - cron: "0 7 * * 4"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "draft = save in Buttondown for a look, send = send it now, preview = just print it"
+        default: draft
+        type: choice
+        options: [draft, send, preview]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: newsletter
+  cancel-in-progress: false
+
+jobs:
+  newsletter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Write and send HandsDown AI Weekly
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+          MODE: ${{ github.event.inputs.mode || 'scheduled' }}
+        run: |
+          if [ "$MODE" = "scheduled" ]; then
+            if [ "$(TZ=America/New_York date +%H)" != "02" ]; then echo "Not 2 AM in New York; the other run sends."; exit 0; fi
+            python -m sportsai.newsletter
+          elif [ "$MODE" = "send" ]; then
+            python -m sportsai.newsletter
+          elif [ "$MODE" = "draft" ]; then
+            python -m sportsai.newsletter --draft
+          else
+            python -m sportsai.newsletter --preview
+          fi
+
+      - name: Save a copy of the sent issue
+        run: |
+          git config user.name "sports-ai-bot"
+          git config user.email "sports-ai-bot@users.noreply.github.com"
+          git add data/newsletter || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Newsletter sent"
+            git pull --rebase -X theirs origin main && git push origin HEAD:main
+          fi
