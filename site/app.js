@@ -156,6 +156,33 @@ function scaleDetail(t) {
 }
 
 // ---------- Games ----------
+// Plain-English "Why this pick?": the pieces that add up to our model's number, then how Vegas changes it
+function whyBox(g) {
+  const w = g.why; if (!w) return null;
+  const H = g.home_name, A = g.away_name, pts = x => `${Math.abs(x).toFixed(1)} pt${Math.abs(x) >= 0.95 && Math.abs(x) < 1.05 ? "" : "s"}`;
+  const toward = x => x > 0 ? H : A, items = [];
+  const gap = w.home_rating - w.away_rating;
+  items.push(Math.abs(gap) < 0.5 ? `Team strength: our ratings have these teams about even.`
+    : `Team strength: our ratings have the ${toward(gap)} ${pts(gap)} better than the ${gap > 0 ? A : H} on a neutral field.`);
+  items.push(w.home_field ? `Home ${g.sport === "nba" ? "court" : "field"}: worth ${pts(w.home_field)} to the ${H}.` : `Neutral site, so no home edge.`);
+  if (Math.abs(g.injury_adjustment) >= 0.1) items.push(`Injuries: move it ${pts(g.injury_adjustment)} toward the ${toward(g.injury_adjustment)}.`);
+  if (Math.abs(w.lineup) >= 0.5) items.push(`Who's expected to play: moves it ${pts(w.lineup)} toward the ${toward(w.lineup)}.`);
+  if (Math.abs(g.rest_adjustment) >= 0.1) items.push(`Rest: moves it ${pts(g.rest_adjustment)} toward the ${toward(g.rest_adjustment)}.`);
+  if (Math.abs(w.late) >= 0.1) items.push(`Late-season tanking: moves it ${pts(w.late)} toward the ${toward(w.late)}.`);
+  const rec = (n, f) => f && (f.w + f.l) ? `${n} ${f.w}-${f.l}` + (f.last5.length ? ` (last ${f.last5.length}: ${f.last5.map(x => (x > 0 ? "W" : "L") + Math.abs(x)).join(", ")})` : "") : null;
+  const form = [rec(A, w.away_form), rec(H, w.home_form)].filter(Boolean);
+  if (form.length) items.push(`This season: ${form.join("; ")}.`);
+  const mm = g.model_home_margin;
+  items.push(`Our model adds that up to the ${mm >= 0 ? H : A} by ${Math.abs(mm).toFixed(1)}.`);
+  if (g.spread != null) {
+    const vf = -g.spread, pm = g.predicted_home_margin;
+    items.push(`Vegas has ${Math.abs(vf) < 0.25 ? "it a pick'em" : `the ${vf > 0 ? H : A} by ${Math.abs(vf).toFixed(1)}`}. Vegas is usually sharper, so our prediction is 90% Vegas and 10% our model: the ${pm >= 0 ? H : A} by ${Math.abs(pm).toFixed(1)}.`);
+    const d = pm + g.spread;
+    if (Math.abs(d) >= 0.05) items.push(`That's ${d > 0 ? "a bit more" : "a bit less"} than Vegas gives the ${H}, so our spread pick is the ${d > 0 ? H : A}. Our chance it covers: ${Math.round(100 * Math.max(g.home_cover_prob, 1 - g.home_cover_prob))}%.`);
+  }
+  return h("details", { class: "why" }, h("summary", { text: "Why this pick?" }), h("ul", {}, ...items.map(t => h("li", { text: t }))));
+}
+
 function gameRow(g) {
   const homePct = Math.round(g.home_win_prob * 100), awayPct = 100 - homePct;
   const favHome = g.predicted_home_margin >= 0;
@@ -186,7 +213,8 @@ function gameRow(g) {
     bp ? h("p", {}, h("b", { text: "Best prop: " }), `${bp.name} ${bp.side} ${bp.line} ${bp.label} (${price(bp.price)}), DraftKings ${Math.round(bp.market_prob * 100)}% likely, our projection ${(+bp.projection).toFixed(1)}`) : null,
     inj.length ? h("p", {}, h("b", { text: "Injuries counted: " }), inj.map(i => `${i.name} (${i.t}, ${i.status})`).join(", ") +
       (g.injury_adjustment ? `. Moves our line ${Math.abs(g.injury_adjustment).toFixed(1)} pts.` : "")) : null,
-    modelTxt ? h("p", { text: modelTxt }) : null);
+    modelTxt ? h("p", { text: modelTxt }) : null,
+    whyBox(g));
   return h("article", { class: "game rise" + (big ? " edge" : "") },
     h("div", {}, h("p", { class: "when", text: `${SPORT[g.sport]} · ${when(g.date)}` }),
       h("div", { class: "teams" }, team(g.away_logo, g.away_name, awayPct, !favHome), team(g.home_logo, (g.neutral ? "vs " : "@ ") + g.home_name, homePct, favHome)), bar),

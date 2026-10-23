@@ -146,6 +146,17 @@ def predict_sport(sport, settings, blend_w=0.0):
 
     # 3) upcoming games: injury report + current odds
     sums = get_many([summary_url(sport, g["event_id"]) for g in upcoming], cache=False)
+    form = {}  # team -> this season's results, oldest first (+1 win / -1 loss, margin)
+    for r in sorted(this_season, key=lambda r: r["date"]):
+        if r.get("home_score") is None or r.get("away_score") is None:
+            continue
+        m_ = r["home_score"] - r["away_score"]
+        form.setdefault(r["home_id"], []).append(m_)
+        form.setdefault(r["away_id"], []).append(-m_)
+
+    def summary(team):
+        f = form.get(team, [])
+        return dict(w=sum(x > 0 for x in f), l=sum(x < 0 for x in f), last5=[int(x) for x in f[-5:]])
     preds = []
     for g, s in zip(upcoming, sums):
         side_info = {}
@@ -197,6 +208,14 @@ def predict_sport(sport, settings, blend_w=0.0):
             edge_vs_spread=round(m + g["spread"], 1) if g["spread"] is not None else None,
             home_injuries={k: v for k, v in hi.items() if k != "weights"},
             away_injuries={k: v for k, v in ai.items() if k != "weights"},
+            why=dict(  # the pieces behind the model's number, for the "Why this pick?" box
+                home_rating=round(model.rating(g["home_id"], g["home_fbs"]), 1),
+                away_rating=round(model.rating(g["away_id"], g["away_fbs"]), 1),
+                home_field=0.0 if g["neutral"] else model.p["hfa"],
+                lineup=round(model.p.get("lu", 0) * lud, 1),
+                late=round(-(model.p.get("late_tank", 0) * (late[0] - late[2]) + model.p.get("late_top", 0) * (late[1] - late[3])), 1),
+                home_form=summary(g["home_id"]), away_form=summary(g["away_id"]),
+            ),
         ))
     return preds, this_season
 

@@ -209,3 +209,11 @@ footer .cols a { color: var(--gold); font-weight: 700; }
 .season-figs strong.gold { color: var(--gold); }
 .track-key { background: var(--surface); padding: 22px 28px; margin-bottom: 20px; }
 .track-key p + p { margin-top: 8px; }
+
+.why { margin-top: 12px; border-radius: 10px; padding: 10px 14px; background: var(--surface-2); }
+.why summary { cursor: pointer; color: var(--gold); font-weight: 600; list-style: none; }
+.why summary::-webkit-details-marker { display: none; }
+.why summary::after { content: " +"; }
+.why[open] summary::after { content: " \2212"; }
+.why ul { margin: 10px 0 2px; padding-left: 18px; }
+.why li + li { margin-top: 6px; }
