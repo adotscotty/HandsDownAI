@@ -81,3 +81,7 @@ footer { color: var(--muted); font-size: .85rem; padding: 30px 16px 40px; }
 .hl .card p { margin: 4px 0 0; color: var(--muted); font-size: .9rem; }
 .hl .win { border-left: 4px solid var(--good); } .hl .beat { border-left: 4px solid var(--bad); }
 td small { color: var(--muted); }
+.brand { display: flex; align-items: center; gap: 10px; letter-spacing: -.02em; font-weight: 800; }
+.brand img { width: 40px; height: 40px; border-radius: 9px; }
+.brand b { color: var(--good); font-weight: 800; }
+@media (max-width: 440px) { .views { gap: 13px; } .views a { font-size: .92rem; } }

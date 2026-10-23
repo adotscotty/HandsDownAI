@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 64">
+  <svg width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0f2a4a"/>
+  <g fill="#ffffff" transform="translate(-1 1)">
+    <rect x="22" y="10" width="28" height="20" rx="7"/>
+    <rect x="22" y="22" width="6.2" height="21" rx="3.1"/>
+    <rect x="29.3" y="22" width="6.2" height="27" rx="3.1"/>
+    <rect x="36.6" y="22" width="6.2" height="25" rx="3.1"/>
+    <rect x="43.8" y="22" width="6.2" height="19" rx="3.1"/>
+    <rect x="19" y="13" width="7.5" height="19" rx="3.75" transform="rotate(34 22.75 16)"/>
+  </g>
+  <path d="M51 44 l1.8 4.6 4.6 1.8 -4.6 1.8 -1.8 4.6 -1.8 -4.6 -4.6 -1.8 4.6 -1.8z" fill="#22c55e"/>
+  </svg>
+  <text x="78" y="44" font-family="Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5" fill="#0f2a4a">HandsDown<tspan fill="#16a34a">AI</tspan></text>
+</svg>

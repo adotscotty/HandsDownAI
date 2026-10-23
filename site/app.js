@@ -1,4 +1,4 @@
-// Sports AI Picks: renders data/predictions.json and data/track_record.json
+// HandsDownAI: renders data/predictions.json and data/track_record.json
 const SPORT_NAMES = { nfl: "NFL", nba: "NBA", cfb: "College" };
 let state = { sport: "all", edgeOnly: false, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
 

@@ -1,4 +1,4 @@
-# Sports AI: game predictions (step 1: data + model)
+# HandsDownAI (sports-ai)
 
 Predicts the margin of victory and win probability for NFL, NBA and college football (FBS) games,
 using only free ESPN data. It runs on its own; nobody needs to touch the code.
