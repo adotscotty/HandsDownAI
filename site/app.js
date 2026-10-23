@@ -160,7 +160,7 @@ function gameRow(g) {
   const homePct = Math.round(g.home_win_prob * 100), awayPct = 100 - homePct;
   const favHome = g.predicted_home_margin >= 0;
   const favName = favHome ? g.home_name : g.away_name;
-  const e = g.edge_vs_spread, big = e != null && Math.abs(e) >= 4;
+  const e = g.edge_vs_spread, big = e != null && Math.abs(e) >= 4 && Math.abs(e) < 7;
   const team = (logo, name, pct, fav) => h("div", { class: "team" + (fav ? " fav" : "") },
     logo ? h("img", { src: logo, alt: "", loading: "lazy", width: 30, height: 30 }) : null,
     h("span", { text: name }), h("span", { class: "pct", text: pct + "%" }));
@@ -178,7 +178,7 @@ function gameRow(g) {
     const side = e > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`;
     modelTxt = `Model alone (before blending with Vegas): ${g.model_home_margin >= 0 ? g.home_name : g.away_name} by ${Math.abs(g.model_home_margin).toFixed(1)}` +
       (Math.abs(e) < 0.5 ? ", about the same as the line." : `, so it disagrees with the line by ${Math.abs(e).toFixed(1)} pts` +
-        (Math.abs(e) >= 4 ? ". That makes this a gold-edge pick, tracked in the Record." : "."));
+        (big ? ". That makes this a gold-edge pick, tracked in the Record." : "."));
   }
   const inj = [...(g.away_injuries?.key_injuries || []).map(i => ({ ...i, t: g.away })), ...(g.home_injuries?.key_injuries || []).map(i => ({ ...i, t: g.home }))];
   const bp = g.best_prop;
@@ -199,7 +199,7 @@ function gameRow(g) {
 function renderGames() {
   const box = document.getElementById("gamesList"); box.replaceChildren();
   let games = (S.preds?.games || []).filter(g => sportOk(g.sport));
-  if (S.edgeOnly) games = games.filter(g => g.edge_vs_spread != null && Math.abs(g.edge_vs_spread) >= 4);
+  if (S.edgeOnly) games = games.filter(g => g.edge_vs_spread != null && Math.abs(g.edge_vs_spread) >= 4 && Math.abs(g.edge_vs_spread) < 7);
   if (!games.length) { box.append(h("p", { class: "empty", text: "No games to show right now." })); return; }
   let day = null, list = null;
   for (const g of games) {
