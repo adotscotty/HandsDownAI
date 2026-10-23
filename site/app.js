@@ -321,7 +321,7 @@ function betCard(kind, b) {
     el("div", { class: "nums" },
       el("div", {}, el("small", { text: "Price" }), priceTxt(b.price)),
       el("div", {}, el("small", { text: "Chance" }), Math.round(b.chance * 100) + "%"),
-      el("div", {}, el("small", { text: "ROI if it wins" }), "+" + Math.round((b.payout / 20 - 1) * 100) + "%")),
+      el("div", {}, el("small", { text: "Profit if it wins" }), "+" + money(b.payout - 20))),
     status);
 }
 
