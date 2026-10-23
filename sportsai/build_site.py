@@ -200,8 +200,17 @@ def daily(day):
     if misses:
         m = min(misses, key=lambda t: t[0])
         bad_beat = dict(title=m[1], detail=m[2])
+    # Every game we logged a pregame prediction for, so the page can show live scores against our pick
+    slate = {}
+    for r in _csv("pregame_log.csv"):
+        if eastern_date(r["date"]).isoformat() != day:
+            continue
+        num = lambda v: float(v) if v not in ("", None) else None
+        slate[r["event_id"]] = dict(event_id=r["event_id"], sport=r["sport"], date=r["date"], home=r["home"], away=r["away"],
+                                    spread=num(r["spread"]), pred=num(r["predicted_home_margin"]),
+                                    home_win_prob=num(r["home_win_prob"]))
     return dict(date=day, summary=summary, games=games, props=props, parlays=parlays, best_bets=best,
-                best_win=best_win, bad_beat=bad_beat)
+                best_win=best_win, bad_beat=bad_beat, slate=sorted(slate.values(), key=lambda g: g["date"]))
 
 
 def main():

@@ -43,9 +43,10 @@ function ticket(title, why, b, lead) {
     const r = l.result;
     const res = r ? h("strong", { class: r === "win" ? "res-w" : r === "loss" ? "res-l" : "",
       text: ` · ${r === "win" ? "hit" : r === "loss" ? "missed" : r}${l.type === "prop" && l.actual != null ? " (" + l.actual + ")" : ""}` }) : null;
+    const live = !r ? liveLeg(l) : null;
     const odds = l.odds != null ? ` · ${price(l.odds)}` : l.chance != null ? ` · ${Math.round(l.chance * 100)}% to cover` : "";
     legs.append(h("div", { class: "leg" }, h("b", { text: legText(l) }),
-      h("span", { text: `${SPORT[l.sport] || ""} · ${l.game} · ${when(l.start)}${odds}` }), res));
+      h("span", { text: `${SPORT[l.sport] || ""} · ${l.game} · ${when(l.start)}${odds}` }), res, live));
   }
   const pr = b.price != null ? b.price : american(b.payout / S.base);
   const figs = h("div", { class: "figs" },
@@ -56,7 +57,8 @@ function ticket(title, why, b, lead) {
   else if (b.status === "lost") t.append(h("div", { class: "stamp l", text: "Lost" }));
   else if (b.status === "push") t.append(h("div", { class: "stamp p", text: "Push" }));
   const stateTxt = b.status === "won" ? `Won ${money(scale(b.profit))} on $${S.stake}` : b.status === "lost" ? `Lost $${S.stake}`
-    : b.status === "push" ? "Push, money back" : b.locked ? "Locked · waiting on the game" : "Can still change until 45 min before start";
+    : b.status === "push" ? "Push, money back" : b.legs.some(l => !l.result && legNow(l)) ? "In play · live scores update every minute"
+    : b.locked ? "Locked · waiting on the game" : "Can still change until 45 min before start";
   const st = h("p", { class: "state", text: stateTxt });
   if (lead) t.append(h("div", {}, head, legs, st), figs); else t.append(head, legs, figs, st);
   return t;
@@ -310,6 +312,7 @@ function dayDetail(d, box) {
 
 function renderToday() {
   const box = document.getElementById("todayBox"); box.replaceChildren();
+  box.append(liveBlock());
   const d = S.daily && S.daily.today;
   if (!d) { box.append(h("p", { class: "empty", text: "Results will appear after the next update." })); return; }
   if (!d.games.length && !(d.best_bets || []).some(b => b.status && b.status !== "open")) {
@@ -457,6 +460,152 @@ async function load() {
   if (p) document.getElementById("updated").textContent = "Last updated " + new Date(p.updated).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" }) + ".";
   const first = !document.querySelector(".rise.in");
   first ? render() : rerender();
+  liveTick();
 }
 load().catch(() => { document.getElementById("bestbets").replaceChildren(h("p", { class: "empty", text: "Couldn't load picks. Try refreshing." })); });
 setInterval(() => load().catch(() => {}), 5 * 60 * 1000);
+
+// ---------- live scores (straight from ESPN, every minute) ----------
+const LIVE = {};          // event_id -> { state: pre|in|post, detail, home, away, hs, as }
+const BOX = {};           // event_id -> { pid -> stats }
+const FEEDS = { nfl: "football/nfl", nba: "basketball/nba", cfb: "football/college-football" };
+const COMBOS = { pr: ["pts", "reb"], pa: ["pts", "ast"], ar: ["ast", "reb"], pra: ["pts", "reb", "ast"],
+  rr_yds: ["rush_yds", "rec_yds"], pr_yds: ["pass_yds", "rush_yds"] };
+const etDate = (d = new Date()) => new URLSearchParams(location.search).get("liveday") || new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(d).replaceAll("-", "");
+const n = v => +String(v ?? 0).split(/[-/]/)[0] || 0;
+
+async function loadLive() {
+  const day = etDate();
+  const boards = await Promise.all(Object.entries(FEEDS).map(([sp, path]) =>
+    fetch(`https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard?dates=${day}${sp === "cfb" ? "&groups=80&limit=300" : ""}`)
+      .then(r => r.ok ? r.json() : null).catch(() => null)));
+  for (const b of boards) for (const e of (b && b.events) || []) {
+    const c = e.competitions[0], st = e.status.type;
+    const home = c.competitors.find(x => x.homeAway === "home"), away = c.competitors.find(x => x.homeAway === "away");
+    LIVE[e.id] = { state: st.state, detail: st.shortDetail || st.detail, home: home.team.abbreviation, away: away.team.abbreviation,
+      hs: +home.score || 0, as: +away.score || 0 };
+  }
+  // box scores for live player props
+  const need = new Set(allLegs().filter(l => l.type === "prop" && LIVE[l.event_id] && LIVE[l.event_id].state !== "pre").map(l => l.event_id + "|" + l.sport));
+  await Promise.all([...need].map(async k => {
+    const [id, sp] = k.split("|");
+    const d = await fetch(`https://site.api.espn.com/apis/site/v2/sports/${FEEDS[sp]}/summary?event=${id}`).then(r => r.ok ? r.json() : null).catch(() => null);
+    if (!d || !d.boxscore) return;
+    const rows = {};
+    for (const team of d.boxscore.players || []) for (const g of team.statistics || []) {
+      const keys = g.keys || [];
+      for (const a of g.athletes || []) {
+        const st = Object.fromEntries(keys.map((k, i) => [k, a.stats[i]])), r = rows[a.athlete.id] = rows[a.athlete.id] || {};
+        if (st.points != null) Object.assign(r, { pts: n(st.points), reb: n(st.rebounds), ast: n(st.assists), tpm: n(st["threePointFieldGoalsMade-threePointFieldGoalsAttempted"]) });
+        if (g.name === "passing") Object.assign(r, { pass_yds: n(st.passingYards), pass_cmp: n(st["completions/passingAttempts"]), pass_att: +String(st["completions/passingAttempts"] || "0/0").split("/")[1] || 0 });
+        if (g.name === "rushing") Object.assign(r, { rush_yds: n(st.rushingYards), carries: n(st.rushingAttempts) });
+        if (g.name === "receiving") Object.assign(r, { rec_yds: n(st.receivingYards), rec: n(st.receptions) });
+      }
+    }
+    BOX[id] = rows;
+  }));
+}
+
+// Every leg of today's tracked bets
+function allLegs() {
+  const legs = [];
+  const B = S.best;
+  if (B && B.card) for (const b of Object.values(B.card)) legs.push(...b.legs);
+  const P = S.parlays;
+  if (P && P.current) for (const c of Object.values(P.current)) for (const k of ["two", "three"]) if (c[k]) legs.push(...c[k].legs.map(l => ({ ...l, type: "spread" })));
+  const d = S.daily && S.daily.today;
+  if (d) for (const p of d.props || []) legs.push({ ...p, type: "prop", line: +p.line });
+  return legs;
+}
+
+// How one leg stands right now: { txt, good: true|false|null, done }
+function legNow(l) {
+  const g = LIVE[l.event_id];
+  if (!g || g.state === "pre") return null;
+  const done = g.state === "post";
+  if (l.type === "prop") {
+    const r = (BOX[l.event_id] || {})[l.pid];
+    if (!r) return { txt: done ? "didn't play" : "no stats yet", good: null, done };
+    const v = COMBOS[l.stat] ? COMBOS[l.stat].reduce((a, k) => a + (r[k] || 0), 0) : (r[l.stat] || 0);
+    if (l.side === "over") {
+      if (v > l.line) return { txt: `${v} ${l.label}, hit`, good: true, done: true };
+      const need = Math.floor(l.line) + 1 - v;
+      return { txt: done ? `${v} ${l.label}, missed` : `${v} ${l.label} so far, needs ${need} more`, good: done ? false : null, done };
+    }
+    if (v > l.line) return { txt: `${v} ${l.label}, missed`, good: false, done: true };
+    return { txt: done ? `${v} ${l.label}, hit` : `${v} ${l.label} so far, staying under`, good: done ? true : true, done };
+  }
+  const home = l.side === "home";
+  const margin = home ? g.hs - g.as : g.as - g.hs;
+  const score = `${g.away} ${g.as}-${g.hs} ${g.home}, ${done ? "final" : g.detail}`;
+  if (l.type === "ml") return { txt: `${score} · ${margin > 0 ? "winning" : margin < 0 ? "losing" : "tied"}`, good: margin > 0 ? true : margin < 0 ? false : null, done };
+  const diff = margin + l.line;
+  return { txt: `${score} · ${diff > 0 ? `covering by ${diff}` : diff < 0 ? `short by ${-diff}` : "right on the number"}`, good: diff > 0 ? true : diff < 0 ? false : null, done };
+}
+function liveLeg(l) {
+  const x = legNow(l);
+  if (!x) return null;
+  return h("strong", { class: "live " + (x.good === true ? "res-w" : x.good === false ? "res-l" : ""), text: `${x.done ? "" : "LIVE "}${x.txt}` });
+}
+
+function liveBlock() {
+  const wrap = h("div", { class: "live-block" });
+  const slate = (S.daily && S.daily.today && S.daily.today.slate) || [];
+  const live = slate.filter(g => LIVE[g.event_id] && LIVE[g.event_id].state === "in");
+  // bets with a leg in play
+  const bets = [];
+  const B = S.best;
+  if (B && B.card) for (const k of KINDS) { const b = B.card[k]; if (b && b.legs.some(l => legNow(l) && !l.result)) bets.push([NAMES[k], b]); }
+  const P = S.parlays;
+  if (P && P.current) for (const [sp, c] of Object.entries(P.current)) for (const [k, nm] of [["two", "2-game"], ["three", "3-game"]]) {
+    const p = c[k]; if (!p) continue;
+    const legs = p.legs.map(l => ({ ...l, type: "spread" }));
+    if (legs.some(l => legNow(l))) bets.push([`${SPORT[sp]} ${nm} parlay`, { ...p, legs }]);
+  }
+  for (const p of ((S.daily && S.daily.today && S.daily.today.props) || [])) {
+    const l = { ...p, type: "prop", line: +p.line, start: p.date, odds: +p.price };
+    if (!p.result && legNow(l)) bets.push(["Player prop", { legs: [l], chance: +p.prob, locked: true, payout: S.base * (1 + (+p.price > 0 ? +p.price / 100 : 100 / -p.price)) }]);
+  }
+  if (!live.length && !bets.length) return wrap;
+  wrap.append(h("h2", { text: "Live now" }));
+  if (bets.length) {
+    const cards = bets.map(([title, b]) => {
+      const states = b.legs.map(legNow).filter(Boolean);
+      const anyBad = states.some(x => x.good === false && x.done) , trailing = states.some(x => x.good === false);
+      const why = anyBad ? "A leg has lost" : trailing ? "Behind right now" : "On track right now";
+      return ticket(title, why, b);
+    });
+    wrap.append(pairs(cards));
+  }
+  if (live.length) {
+    const tb = h("tbody");
+    for (const g of live) {
+      const x = LIVE[g.event_id];
+      let pick = "–", st = null;
+      if (g.spread != null && g.pred != null && g.pred + g.spread !== 0) {
+        const home = g.pred + g.spread > 0;
+        const l = { type: "spread", event_id: g.event_id, side: home ? "home" : "away", line: home ? g.spread : -g.spread };
+        pick = `${home ? g.home : g.away} ${line(l.line)}`;
+        const now = legNow(l);
+        st = h("small", { class: now.good === true ? "w" : now.good === false ? "l" : "", text: now.txt.split(" · ")[1] });
+      }
+      tb.append(h("tr", {}, h("td", {}, `${x.away} ${x.as} @ ${x.home} ${x.hs}`, h("small", { text: `${SPORT[g.sport]} · ${x.detail}` })),
+        h("td", {}, pick, st)));
+    }
+    wrap.append(h("div", { class: "block", style: "margin-top:60px" }, h("h3", { class: "day-h", text: "Games in progress" }),
+      h("table", {}, h("thead", {}, h("tr", {}, h("th", { text: "Score" }), h("th", { text: "Our spread pick" }))), tb)));
+  }
+  wrap.style.marginBottom = "120px";
+  return wrap;
+}
+
+let liveTimer = null;
+let liveSig = "";
+async function liveTick() {
+  try {
+    await loadLive();
+    const sig = JSON.stringify([LIVE, BOX]);
+    if (S.best && sig !== liveSig) { liveSig = sig; rerender(); }
+  } catch (e) {}
+}
+liveTimer = setInterval(liveTick, 60 * 1000);

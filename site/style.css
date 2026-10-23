@@ -204,3 +204,5 @@ footer .cols a { color: var(--gold); font-weight: 700; }
 .hl .leg { padding-right: 110px; }
 @media (max-width: 900px) { .hl .leg { padding-right: 0; margin-top: 44px; } }
 @media (max-width: 600px) { .bar nav { gap: 14px; font-size: 15px; } .bar nav a.sub { padding: 7px 11px; } }
+.live { display: block; margin-top: 4px; font-size: 15px; }
+.lead .live { color: var(--gold-ink); }
