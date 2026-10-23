@@ -15,7 +15,7 @@ from .build_site import leg_txt, line_txt
 
 ET = ZoneInfo("America/New_York")
 SITE = "https://adotscotty.github.io/HandsDownAI/"
-SUBSCRIBE = "https://buttondown.com/handsdownai"   # replaced by the real Buttondown address at setup
+SUBSCRIBE = "https://buttondown.com/scotty"
 STAKE = 20.0
 FIRST_ISSUE_DATE = dt.date(2026, 10, 22)            # issue #1 went out the week of Oct 22
 KIND = {"winner": "Winner", "spread": "Spread", "parlay": "Parlay", "prop": "Player prop", "sgp": "Same-game parlay"}
