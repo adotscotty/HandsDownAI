@@ -1,436 +1,462 @@
-// HandsDownAI: renders data/predictions.json and data/track_record.json
-const SPORT_NAMES = { nfl: "NFL", nba: "NBA", cfb: "College" };
-let state = { sport: "all", edgeOnly: false, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
+// HandsDown AI: renders the data/*.json files the updater writes every 15 minutes.
+const SPORT = { nfl: "NFL", nba: "NBA", cfb: "College" };
+const NAMES = { winner: "Best winner", spread: "Best spread", parlay: "Best parlay", prop: "Best player prop", sgp: "Best same-game parlay" };
+const WHY = { winner: "Most likely team to win outright", spread: "Most likely to cover the spread", parlay: "Best value 2- or 3-game parlay",
+  prop: "DraftKings' most likely player prop", sgp: "Our spread pick plus a player prop, same game" };
+const KINDS = ["winner", "spread", "parlay", "prop", "sgp"];
+const VIEWS = ["home", "games", "today", "yesterday", "record"];
 
-function el(tag, attrs = {}, ...kids) {
+const S = { sport: "all", edgeOnly: false, stake: 20, base: 20, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
+try { S.stake = +localStorage.getItem("hd-stake") || 20; } catch (e) {}
+
+// ---------- helpers ----------
+function h(tag, attrs = {}, ...kids) {
   const e = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
+    if (v == null) continue;
     if (k === "class") e.className = v; else if (k === "text") e.textContent = v; else e.setAttribute(k, v);
   }
-  for (const k of kids) if (k != null) e.append(k);
+  for (const k of kids) if (k != null && k !== false) e.append(k);
   return e;
 }
-const short = (name, abbr) => (name || abbr || "").split(" ").slice(-1)[0] === "" ? abbr : name;
-function fmtSpread(team, spread) {
-  if (spread == null) return "No line yet";
-  if (spread === 0) return "Pick 'em";
-  return `${team} ${spread > 0 ? "+" : ""}${spread}`;
+const money = v => (v < 0 ? "-$" : "$") + Math.abs(v).toFixed(2);
+const signed = v => (v > 0 ? "+" : v < 0 ? "-" : "") + "$" + Math.abs(v).toFixed(2);
+const scale = v => (+v || 0) * S.stake / S.base;           // data is stored at $20 a bet
+const price = p => (+p > 0 ? "+" : "") + (+p);
+const line = l => l === 0 ? "PK" : (l > 0 ? "+" : "") + l;
+const when = s => new Date(s).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
+const dayName = d => new Date(d + "T12:00").toLocaleDateString([], { weekday: "long", month: "short", day: "numeric" });
+const american = dec => dec >= 2 ? Math.round((dec - 1) * 100) : Math.round(-100 / (dec - 1));
+const wl = (w, l, p) => `${w}-${l}${p ? "-" + p : ""}`;
+const cls = v => v > 0 ? "w" : v < 0 ? "l" : "";
+const legText = l => l.type === "prop" ? `${l.name} ${l.side} ${l.line} ${l.label}`
+  : l.type === "ml" ? `${l.team_name || l.team} to win` : `${l.team} ${line(l.line)}`;
+const sportOk = s => S.sport === "all" || S.sport === s;
+
+// ---------- tickets ----------
+// b: { legs, price?, chance, payout (at $20), status, profit, locked }
+function ticket(title, why, b, lead) {
+  const t = h("article", { class: "ticket rise" + (lead ? " lead" : "") });
+  const head = h("div", {}, h("h3", { text: title }), why ? h("p", { class: "why", text: why }) : null);
+  const legs = h("div", {});
+  for (const l of b.legs) {
+    const r = l.result;
+    const res = r ? h("strong", { class: r === "win" ? "res-w" : r === "loss" ? "res-l" : "",
+      text: ` · ${r === "win" ? "hit" : r === "loss" ? "missed" : r}${l.type === "prop" && l.actual != null ? " (" + l.actual + ")" : ""}` }) : null;
+    const odds = l.odds != null ? ` · ${price(l.odds)}` : l.chance != null ? ` · ${Math.round(l.chance * 100)}% to cover` : "";
+    legs.append(h("div", { class: "leg" }, h("b", { text: legText(l) }),
+      h("span", { text: `${SPORT[l.sport] || ""} · ${l.game} · ${when(l.start)}${odds}` }), res));
+  }
+  const pr = b.price != null ? b.price : american(b.payout / S.base);
+  const figs = h("div", { class: "figs" },
+    h("div", {}, h("small", { text: "Price" }), h("strong", { text: price(pr) })),
+    h("div", {}, h("small", { text: "Chance" }), h("strong", { text: Math.round(b.chance * 100) + "%" })),
+    h("div", { class: "pay" }, h("small", { text: `Wins on $${S.stake}` }), h("strong", { text: "+" + money(scale(b.payout - S.base)) })));
+  if (b.status === "won") t.append(h("div", { class: "stamp w", text: "Won" }));
+  else if (b.status === "lost") t.append(h("div", { class: "stamp l", text: "Lost" }));
+  else if (b.status === "push") t.append(h("div", { class: "stamp p", text: "Push" }));
+  const stateTxt = b.status === "won" ? `Won ${money(scale(b.profit))} on $${S.stake}` : b.status === "lost" ? `Lost $${S.stake}`
+    : b.status === "push" ? "Push, money back" : b.locked ? "Locked · waiting on the game" : "Can still change until 45 min before start";
+  const st = h("p", { class: "state", text: stateTxt });
+  if (lead) t.append(h("div", {}, head, legs, st), figs); else t.append(head, legs, figs, st);
+  return t;
+}
+const betTicket = (kind, b, lead) => ticket((lead ? "Top pick · " : "") + NAMES[kind], WHY[kind], b, lead);
+
+function pairs(items) {
+  const wrap = h("div", {});
+  for (let i = 0; i < items.length; i += 2) wrap.append(h("div", { class: "pair" }, items[i], items[i + 1] || null));
+  return wrap;
 }
 
-function gameCard(g) {
-  const homeFav = g.predicted_home_margin >= 0;
-  const favName = homeFav ? g.home_name : g.away_name;
-  const marg = Math.abs(g.predicted_home_margin).toFixed(1);
-  const homePct = Math.round(g.home_win_prob * 100);
-  const when = new Date(g.date).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
-
-  const team = (logo, name, pct) => el("div", { class: "team" },
-    logo ? el("img", { src: logo, alt: "", loading: "lazy" }) : null,
-    el("span", { class: "nm", text: name }), el("span", { class: "pct", text: pct + "%" }));
-
-  const bar = el("div", { class: "bar", title: "Win chance" });
-  bar.append(el("span", { style: `width:${100 - homePct}%` }));
-
-  let edgeBox = null;
-  if (g.edge_vs_spread != null) {
-    const e = g.edge_vs_spread;  // positive: model likes the home team against the spread
-    const side = e > 0 ? `${g.home} ${fmtSpread("", g.spread).trim()}` : `${g.away} ${fmtSpread("", -g.spread).trim()}`;
-    const txt = Math.abs(e) < 0.5 ? "Our model agrees with the spread"
-      : `Our model likes ${side} by ${Math.abs(e).toFixed(1)} pts`;
-    edgeBox = el("div", { class: "edge" + (Math.abs(e) >= 3 ? " big" : ""), text: txt });
-  }
-
-  const injuries = [...(g.away_injuries?.key_injuries || []).map(i => ({ ...i, t: g.away })),
-                    ...(g.home_injuries?.key_injuries || []).map(i => ({ ...i, t: g.home }))];
-  const injBox = injuries.length ? el("div", { class: "inj",
-    text: "Injuries counted: " + injuries.map(i => `${i.name} (${i.t}, ${i.status})`).join(", ") +
-      (g.injury_adjustment ? ` · moves line ${Math.abs(g.injury_adjustment).toFixed(1)} pts` : "") }) : null;
-
-  return el("div", { class: "card" },
-    el("div", { class: "meta" }, el("span", { text: SPORT_NAMES[g.sport] }), el("span", { text: when })),
-    team(g.away_logo, g.away_name, 100 - homePct),
-    team(g.home_logo, (g.neutral ? "vs " : "@ ") + g.home_name, homePct),
-    bar,
-    el("div", { class: "lines" },
-      el("div", {}, el("small", { text: "Our prediction" }), `${favName} by ${marg}`),
-      el("div", {}, el("small", { text: "Betting spread" }), g.odds_detail || fmtSpread(g.home, g.spread))),
-    g.model_home_margin != null && g.spread != null ? el("div", { class: "model-alone",
-      text: `Our model alone: ${(g.model_home_margin >= 0 ? g.home_name : g.away_name)} by ${Math.abs(g.model_home_margin).toFixed(1)}` }) : null,
-    edgeBox, propBox(g.best_prop), injBox);
+// ---------- shared blocks ----------
+function totalBlock(r, since) {
+  return h("div", { class: "total rise" },
+    h("div", { class: "big", text: signed(scale(r.profit)) }),
+    h("p", { text: `${wl(r.won, r.lost)} ${since}, betting $${S.stake} on every best bet.` + (r.roi != null ? ` Return ${r.roi}%.` : "") }));
 }
 
-const priceTxt = p => (+p > 0 ? "+" : "") + (+p);
-function propText(bp) {
-  return `${bp.name} ${bp.side} ${bp.line} ${bp.label} (${priceTxt(bp.price)})`;
-}
-function propBox(bp) {
-  if (!bp) return null;
-  return el("div", { class: "prop" }, el("small", { text: "Best player prop" }), propText(bp),
-    el("span", { class: "note", text: ` · DraftKings ${Math.round(bp.market_prob * 100)}% likely · our projection ${(+bp.projection).toFixed(1)}` }));
+function recordRows(rows) {
+  const tb = h("tbody");
+  for (const [n, x] of rows) {
+    if (!x) continue;
+    tb.append(h("tr", {}, h("td", { text: n }), h("td", { class: "r", text: wl(x.won ?? x.wins, x.lost ?? x.losses, x.pushes) }),
+      h("td", { class: "r " + cls(x.profit), text: money(scale(x.profit)) }), h("td", { class: "r", text: x.roi == null ? "–" : x.roi + "%" })));
+  }
+  return h("table", { class: "rise" }, h("thead", {}, h("tr", {}, h("th", { text: "Bet" }), h("th", { class: "r", text: "Won-lost" }),
+    h("th", { class: "r", text: "Profit" }), h("th", { class: "r", text: "Return" }))), tb);
 }
 
-function renderProps() {
-  const box = document.getElementById("props"), rec = document.getElementById("propRecord");
-  box.replaceChildren(); rec.replaceChildren();
-  const P = state.props;
-  if (!P) { box.append(el("p", { class: "empty", text: "Props will appear after the next update." })); return; }
-  const cur = (P.current || []).filter(x => state.sport === "all" || state.sport === x.sport);
-  if (cur.length) {
-    const t = el("table", {}, el("tr", {}, el("th", { text: "Game" }), el("th", { text: "Prop" }),
-      el("th", { class: "r", text: "DK chance" }), el("th", { class: "r", text: "Our projection" })));
-    for (const x of cur) {
-      const when = new Date(x.date).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
-      t.append(el("tr", {}, el("td", {}, x.game, el("small", { text: ` · ${SPORT_NAMES[x.sport]} · ${when}` })),
-        el("td", { text: propText(x) }), el("td", { class: "r", text: Math.round(x.market_prob * 100) + "%" }),
-        el("td", { class: "r", text: (+x.projection).toFixed(1) })));
-    }
-    box.append(el("div", { class: "card" }, t));
-  } else {
-    box.append(el("p", { class: "empty", text: "No props yet: DraftKings usually posts NBA props the day of the game." }));
+function chart(history) {
+  const box = h("div", { class: "chart rise" });
+  if (!history || !history.length) { box.append(h("p", { text: "The money chart starts after the first graded day." })); return box; }
+  let run = 0;
+  const pts = [{ date: null, v: 0 }, ...history.map(d => ({ date: d.date, v: (run += scale(d.profit)) }))];
+  const W = 640, H = 260, P = 34;
+  const vs = pts.map(p => p.v), lo = Math.min(0, ...vs), hi = Math.max(0, ...vs), span = hi - lo || 1;
+  const x = i => P + (W - 2 * P) * (pts.length === 1 ? 0 : i / (pts.length - 1));
+  const y = v => H - P - (H - 2 * P) * (v - lo) / span;
+  const ns = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(ns, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", `Best bets profit over time: ${signed(run)} at $${S.stake} a bet`);
+  const add = (tag, a, text) => { const e = document.createElementNS(ns, tag); for (const k in a) e.setAttribute(k, a[k]); if (text) e.textContent = text; svg.append(e); };
+  add("rect", { x: P, y: y(0) - 1, width: W - 2 * P, height: 2, fill: "#2b271f" });
+  add("text", { x: P, y: y(0) - 8, fill: "#b9b09c", "font-size": 14, "font-family": "Inter, sans-serif" }, "$0");
+  add("polyline", { points: pts.map((p, i) => `${x(i)},${y(p.v)}`).join(" "), fill: "none", stroke: "#d4a73a", "stroke-width": 4, "stroke-linejoin": "round", "stroke-linecap": "round" });
+  const last = pts[pts.length - 1];
+  add("circle", { cx: x(pts.length - 1), cy: y(last.v), r: 7, fill: "#d4a73a" });
+  add("text", { x: x(pts.length - 1) - 10, y: y(last.v) + (last.v >= 0 ? -16 : 28), fill: "#f2ead7", "font-size": 20, "font-weight": 800,
+    "text-anchor": "end", "font-family": "Inter, sans-serif" }, signed(last.v));
+  box.append(svg, h("p", { text: `Running profit from best bets since ${dayName(history[0].date).split(",").slice(0, 2).join(",")}, at $${S.stake} a bet.` }));
+  return box;
+}
+
+// ---------- Best bets ----------
+function renderHome() {
+  const box = document.getElementById("bestbets"); box.replaceChildren();
+  const B = S.best;
+  if (!B) { box.append(h("p", { class: "empty", text: "Best bets will appear after the next update." })); return; }
+  let card = B.card, title = "Today's best bets";
+  if ((!card || !Object.keys(card).length) && B.preview) { card = B.preview.card; title = "Next up: " + dayName(B.preview.date).split(",")[0]; }
+  document.getElementById("homeTitle").textContent = title;
+  const kinds = KINDS.filter(k => card && card[k]);
+  if (!kinds.length) box.append(h("p", { class: "empty", text: "No picks yet today. Check back after the next update." }));
+  else {
+    const top = kinds.reduce((a, k) => card[k].chance > card[a].chance ? k : a, kinds[0]);
+    box.append(betTicket(top, card[top], true));
+    const rest = pairs(kinds.filter(k => k !== top).map(k => betTicket(k, card[k])));
+    rest.style.marginTop = "20px";
+    box.append(rest);
   }
-  const t = el("table", {}, el("tr", {}, el("th", { text: "" }), el("th", { class: "r", text: "Won-lost" }),
-    el("th", { class: "r", text: "Profit" }), el("th", { class: "r", text: "ROI" })));
-  for (const [k, label] of [["all", "All props"], ["nba", "NBA"], ["nfl", "NFL"]]) {
-    const x = P.record[k]; if (!x || (k !== "all" && !(x.wins + x.losses + x.pushes))) continue;
-    const cls = x.profit < 0 ? "neg" : x.profit > 0 ? "pos" : "";
-    t.append(el("tr", {}, el("td", { text: label }), el("td", { class: "r", text: `${x.wins}-${x.losses}` + (x.pushes ? `-${x.pushes}` : "") }),
-      el("td", { class: "r " + cls, text: money(x.profit) }), el("td", { class: "r " + cls, text: x.roi == null ? "–" : x.roi + "%" })));
+  // yesterday trio
+  const yb = document.getElementById("homeYest"); yb.replaceChildren();
+  const y = S.daily && S.daily.yesterday;
+  if (y && y.summary && y.summary.games) {
+    const s = y.summary, bb = s.best_bets, prof = scale((y.best_bets || []).reduce((a, x) => a + (+x.profit || 0), 0));
+    yb.append(
+      h("div", { class: "rise" }, h("p", { class: "lbl", text: "Best bets" }), h("div", { class: "big " + cls(prof || 0), text: wl(bb[0], bb[1]) }),
+        h("p", { text: `${prof >= 0 ? "Up" : "Down"} ${money(Math.abs(prof))} at $${S.stake} a bet. Winners ${wl(...s.winners)}, spreads ${wl(...s.ats)}.` })),
+      y.best_win ? h("div", { class: "rise" }, h("p", { class: "lbl", text: "Best win" }), h("p", { text: y.best_win.title }), h("p", { text: scaleDetail(y.best_win.detail) })) : null,
+      y.bad_beat ? h("div", { class: "rise" }, h("p", { class: "lbl", text: "Bad beat" }), h("p", { text: y.bad_beat.title }), h("p", { text: y.bad_beat.detail }),
+        h("p", {}, h("a", { href: "#yesterday", text: "Full recap →" }))) : null);
+  } else yb.append(h("p", { class: "empty", text: "No games yesterday." }));
+  // record
+  const rb = document.getElementById("homeRecord"); rb.replaceChildren();
+  const r = B.record;
+  rb.append(totalBlock(r.all, "since Oct 22"),
+    recordRows([["Winner", r.winner], ["Spread", r.spread], ["Parlay", r.parlay], ["Prop", r.prop], ["Same-game parlay", r.sgp]]));
+}
+// "won $32.52 on $20" -> scaled to the visitor's stake
+function scaleDetail(t) {
+  const m = /won \$([\d.]+) on \$\d+/.exec(t || "");
+  return m ? t.replace(m[0], `won ${money(scale(+m[1]))} on $${S.stake}`) : t;
+}
+
+// ---------- Games ----------
+function gameRow(g) {
+  const homePct = Math.round(g.home_win_prob * 100), awayPct = 100 - homePct;
+  const favHome = g.predicted_home_margin >= 0;
+  const favName = favHome ? g.home_name : g.away_name;
+  const e = g.edge_vs_spread, big = e != null && Math.abs(e) >= 3;
+  const team = (logo, name, pct, fav) => h("div", { class: "team" + (fav ? " fav" : "") },
+    logo ? h("img", { src: logo, alt: "", loading: "lazy", width: 30, height: 30 }) : null,
+    h("span", { text: name }), h("span", { class: "pct", text: pct + "%" }));
+  const bar = h("div", { class: "wp", title: `Win chance: ${g.away} ${awayPct}%, ${g.home} ${homePct}%` });
+  bar.append(h("span", { style: `width:${awayPct}%;background:${awayPct >= 50 ? "var(--gold)" : "var(--surface-3)"}` }),
+             h("span", { style: `width:${homePct}%;background:${homePct > 50 ? "var(--gold)" : "#3a3427"}` }));
+  let edgeTxt = null;
+  if (e != null) {
+    const side = e > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`;
+    edgeTxt = Math.abs(e) < 0.5 ? "We agree with the spread" : `We like ${side} by ${Math.abs(e).toFixed(1)} pts`;
   }
-  const card = el("div", { class: "card" }, t);
-  if (P.recent.length) {
-    const h = el("table", {}, el("tr", {}, el("th", { text: "Prop" }), el("th", { class: "r", text: "Actual" }), el("th", { class: "r", text: "Result" })));
-    for (const x of P.recent) {
-      const res = x.result === "win" ? `Won ${money(+x.profit)}` : x.result === "loss" ? "Lost -$20.00" : x.result === "void" ? "Void (sat out)" : "Push";
-      h.append(el("tr", {}, el("td", {}, `${x.name} ${x.side} ${x.line} ${x.label} (${priceTxt(x.price)})`, el("small", { text: " · " + x.game })),
-        el("td", { class: "r", text: x.actual || "–" }),
-        el("td", { class: "r " + (x.result === "win" ? "w" : x.result === "loss" ? "l" : ""), text: res })));
-    }
-    card.append(el("details", {}, el("summary", { text: "Recent graded props" }), h));
-  } else {
-    card.append(el("p", { class: "note", text: "Tracking starts today: each game's prop is saved 45 minutes before tip-off and graded from the box score." }));
-  }
-  rec.append(card);
+  const inj = [...(g.away_injuries?.key_injuries || []).map(i => ({ ...i, t: g.away })), ...(g.home_injuries?.key_injuries || []).map(i => ({ ...i, t: g.home }))];
+  const bp = g.best_prop;
+  const extra = h("div", { class: "extra" },
+    bp ? h("p", {}, h("b", { text: "Best prop: " }), `${bp.name} ${bp.side} ${bp.line} ${bp.label} (${price(bp.price)}), DraftKings ${Math.round(bp.market_prob * 100)}% likely, our projection ${(+bp.projection).toFixed(1)}`) : null,
+    inj.length ? h("p", {}, h("b", { text: "Injuries counted: " }), inj.map(i => `${i.name} (${i.t}, ${i.status})`).join(", ") +
+      (g.injury_adjustment ? `. Moves our line ${Math.abs(g.injury_adjustment).toFixed(1)} pts.` : "")) : null,
+    g.model_home_margin != null && g.spread != null ? h("p", { text: `Our model alone: ${g.model_home_margin >= 0 ? g.home_name : g.away_name} by ${Math.abs(g.model_home_margin).toFixed(1)}` }) : null);
+  return h("article", { class: "game rise" + (big ? " edge" : "") },
+    h("div", {}, h("p", { class: "when", text: `${SPORT[g.sport]} · ${when(g.date)}` }),
+      h("div", { class: "teams" }, team(g.away_logo, g.away_name, awayPct, !favHome), team(g.home_logo, (g.neutral ? "vs " : "@ ") + g.home_name, homePct, favHome)), bar),
+    h("div", { class: "call" }, h("small", { text: "Our prediction" }), h("strong", { text: `${favName} by ${Math.abs(g.predicted_home_margin).toFixed(1)}` }),
+      h("small", { text: "Betting spread" }), h("strong", { text: g.odds_detail || (g.spread == null ? "No line yet" : `${g.home} ${line(g.spread)}`) }),
+      edgeTxt ? h("p", { class: "edge-txt", text: edgeTxt }) : null),
+    extra);
 }
 
 function renderGames() {
-  const box = document.getElementById("games");
-  box.replaceChildren();
-  let games = state.preds.games.filter(g => state.sport === "all" || g.sport === state.sport);
-  if (state.edgeOnly) games = games.filter(g => g.edge_vs_spread != null && Math.abs(g.edge_vs_spread) >= 3);
-  if (!games.length) { box.append(el("p", { class: "empty", text: "No games to show right now." })); return; }
-  let day = null, grid = null;
+  const box = document.getElementById("gamesList"); box.replaceChildren();
+  let games = (S.preds?.games || []).filter(g => sportOk(g.sport));
+  if (S.edgeOnly) games = games.filter(g => g.edge_vs_spread != null && Math.abs(g.edge_vs_spread) >= 3);
+  if (!games.length) { box.append(h("p", { class: "empty", text: "No games to show right now." })); return; }
+  let day = null, list = null;
   for (const g of games) {
     const d = new Date(g.date).toLocaleDateString([], { weekday: "long", month: "short", day: "numeric" });
-    if (d !== day) { day = d; box.append(el("div", { class: "day", text: d })); grid = el("div", { class: "grid" }); box.append(grid); }
-    grid.append(gameCard(g));
+    if (d !== day) { day = d; box.append(h("h3", { class: "day-h", text: d })); list = h("div", { class: "games" }); box.append(list); }
+    list.append(gameRow(g));
   }
-}
-
-function statRows(s, last) {
-  if (!s) return el("p", { class: "empty", text: "No finished games yet." });
-  const ats = s.ats;
-  const atsPct = ats ? (ats.pct ?? ats.win_pct) : null;
-  const t = el("table");
-  const row = (k, v) => t.append(el("tr", {}, el("td", { text: k }), el("td", { class: "r", text: v })));
-  row("Games graded", s.games.toLocaleString());
-  row("Picked the winner", s.winner_pct + "%" + (last && s.spread_winner_pct ? ` (spread: ${s.spread_winner_pct}%)` : ""));
-  row("Average miss on margin", s.avg_miss + " pts" + (s.spread_avg_miss ? ` (spread: ${s.spread_avg_miss})` : ""));
-  if (ats) row("Against the spread", `${ats.wins}-${ats.losses}${ats.pushes ? "-" + ats.pushes : ""} (${atsPct}%)`);
-  return t;
-}
-
-function periodTable(periods) {
-  const t = el("table", {}, el("tr", {}, el("th", { text: "" }), el("th", { class: "r", text: "Winners" }),
-    el("th", { class: "r", text: "Vs spread" }), el("th", { class: "r", text: "Avg miss" })));
-  for (const p of periods || []) {
-    const ats = p.ats;
-    t.append(el("tr", {},
-      el("td", { text: p.label }),
-      el("td", { class: "r", text: p.games ? `${p.winners[0]}-${p.winners[1]}` : "No games" }),
-      el("td", { class: "r", text: ats && (ats.wins + ats.losses) ? `${ats.wins}-${ats.losses}${ats.pushes ? "-" + ats.pushes : ""}` : "–" }),
-      el("td", { class: "r", text: p.games ? p.avg_miss + " pts" : "–" })));
-  }
-  return t;
-}
-
-function renderTrack() {
-  const box = document.getElementById("track");
-  box.replaceChildren();
-  const grid = el("div", { class: "track" });
-  for (const [sport, t] of Object.entries(state.track)) {
-    if (state.sport !== "all" && sport !== state.sport) continue;
-    const recent = el("table", {}, el("tr", {}, el("th", { text: "Game" }), el("th", { class: "r", text: "Ours" }),
-      el("th", { class: "r", text: "Final" }), el("th", { class: "r", text: "" })));
-    for (const r of t.recent) {
-      const margin = r.home_score - r.away_score;
-      const ok = (r.pred > 0) === (margin > 0);
-      recent.append(el("tr", {},
-        el("td", { text: `${r.away} @ ${r.home}` }),
-        el("td", { class: "r", text: (r.pred >= 0 ? r.home : r.away) + " " + Math.abs(r.pred).toFixed(1) }),
-        el("td", { class: "r", text: `${r.away_score}-${r.home_score}` }),
-        el("td", { class: "r " + (ok ? "w" : "l"), text: ok ? "✓" : "✗" })));
-    }
-    grid.append(el("div", { class: "card" },
-      el("h3", { text: t.name }),
-      el("div", { class: "day", text: "Recent" }), periodTable(t.periods),
-      el("div", { class: "day", text: "This season" }), statRows(t.this_season),
-      el("div", { class: "day", text: "Last season (test)" }), statRows(t.last_season, true),
-      t.recent.length ? el("details", {}, el("summary", { text: "Recent results" }), recent) : null));
-  }
-  box.append(grid);
-}
-
-const money = v => (v < 0 ? "-$" : "$") + Math.abs(v).toFixed(2);
-const lineTxt = l => (l > 0 ? "+" : "") + (l === 0 ? "PK" : l);
-
-function parlayCard(p, title) {
-  const legs = el("ul", { class: "legs" });
-  for (const l of p.legs) {
-    const when = new Date(l.start).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
-    legs.append(el("li", {}, `${l.team} ${lineTxt(l.line)}`,
-      el("small", { text: `${SPORT_NAMES[l.sport]} · ${l.game} · ${when} · ${Math.round(l.chance * 100)}% to cover` })));
-  }
-  const proj = p.projected_profit;
-  const status = p.status === "won" ? el("span", { class: "w", text: ` · Won ${money(+p.profit)}` })
-    : p.status === "lost" ? el("span", { class: "l", text: " · Lost" })
-    : p.status === "open" ? el("span", { class: "note", text: " · Locked, waiting on games" }) : null;
-  return el("div", { class: "card" }, el("h3", {}, title, status), legs,
-    el("div", { class: "nums" },
-      el("div", {}, el("small", { text: "Chance to win" }), Math.round(p.chance * 1000) / 10 + "%"),
-      el("div", {}, el("small", { text: "Pays on $20" }), money(p.payout)),
-      el("div", { class: proj < 0 ? "neg" : "pos" }, el("small", { text: "Projected" }),
-        `${money(proj)} (${(100 * proj / 5).toFixed(0)}%)`)));
 }
 
 function renderParlays() {
   const box = document.getElementById("parlays"), rec = document.getElementById("parlayRecord");
   box.replaceChildren(); rec.replaceChildren();
-  const P = state.parlays;
-  if (!P) { box.append(el("p", { class: "empty", text: "Parlays will appear after the next update." })); return; }
-  let shown = 0;
-  for (const sport of ["nfl", "nba", "cfb"]) {
-    if (state.sport !== "all" && state.sport !== sport) continue;
-    const card = (P.current || {})[sport];
-    if (!card || (!card.two && !card.three)) continue;
-    box.append(el("div", { class: "day", text: SPORT_NAMES[sport] + (card.locked ? " · locked for today" : "") }));
-    const grid = el("div", { class: "grid" });
-    if (card.two) grid.append(parlayCard(card.two, "2-game parlay"));
-    if (card.three) grid.append(parlayCard(card.three, "3-game parlay"));
-    box.append(grid); shown++;
-  }
-  if (!shown) box.append(el("p", { class: "empty", text: "No parlays today: a sport needs at least 4 games with betting lines in the next 24 hours for a 2-game parlay, and 6 for a 3-game parlay." }));
-  const r = P.record;
-  const t = el("table", {}, el("tr", {}, el("th", { text: "" }), el("th", { class: "r", text: "Won-lost" }),
-    el("th", { class: "r", text: "Profit" }), el("th", { class: "r", text: "ROI" })));
-  const line = (label, x) => {
-    if (!x) return;
-    const cls = x.profit < 0 ? "neg" : x.profit > 0 ? "pos" : "";
-    t.append(el("tr", {}, el("td", { text: label + (x.pending ? ` (${x.pending} pending)` : "") }),
-      el("td", { class: "r", text: `${x.won}-${x.lost}` }),
-      el("td", { class: "r " + cls, text: money(x.profit) }),
-      el("td", { class: "r " + cls, text: x.roi == null ? "–" : x.roi + "%" })));
-  };
-  line("All parlays", r);
-  line("2-game", (r.by_kind || {}).two);
-  line("3-game", (r.by_kind || {}).three);
-  t.append(el("tr", {}, el("td", { text: "Total bet" }), el("td", {}), el("td", { class: "r", text: money(r.staked) }), el("td", {})));
-  const card = el("div", { class: "card" }, t);
-  if (P.history.length) {
-    const h = el("table", {}, el("tr", {}, el("th", { text: "Parlay" }), el("th", { class: "r", text: "Result" })));
-    for (const x of P.history) {
-      const res = x.status === "open" ? "Pending" : x.status === "won" ? `Won ${money(+x.profit)}` : "Lost -$20.00";
-      h.append(el("tr", {}, el("td", { text: x.legs.map(l => `${l.team} ${lineTxt(l.line)}`).join(", ") }),
-        el("td", { class: "r " + (x.status === "won" ? "w" : x.status === "lost" ? "l" : ""), text: res })));
+  const P = S.parlays;
+  if (!P) { box.append(h("p", { class: "empty", text: "Parlays will appear after the next update." })); return; }
+  const items = [];
+  for (const sp of ["nfl", "nba", "cfb"]) {
+    if (!sportOk(sp)) continue;
+    const c = (P.current || {})[sp]; if (!c) continue;
+    for (const [k, n] of [["two", "2-game"], ["three", "3-game"]]) if (c[k]) {
+      const p = c[k];
+      items.push(ticket(`${SPORT[sp]} ${n} parlay`, c.locked ? "Locked for today" : `Projected ${signed(scale(p.projected_profit))} on $${S.stake}`,
+        { ...p, legs: p.legs.map(l => ({ ...l, type: "spread" })), locked: c.locked }));
     }
-    card.append(el("details", {}, el("summary", { text: "Every tracked parlay" }), h));
-  } else {
-    card.append(el("p", { class: "note", text: "Tracking starts with today's parlays: each one is saved just before its first game and graded when all its games finish." }));
   }
-  rec.append(card);
-}
-
-const VIEWS = ["home", "games", "today", "yesterday", "record"];
-function showView() {
-  const h = location.hash.slice(1);
-  const v = VIEWS.includes(h) ? h : (h === "results" || h === "parlays" || h === "props") ? "record" : "home";
-  for (const x of VIEWS) document.getElementById("view-" + x).hidden = x !== v;
-  document.getElementById("tabs").hidden = !["games", "record"].includes(v);
-  document.querySelectorAll("#views a").forEach(a => a.classList.toggle("on", a.dataset.view === v));
-}
-window.addEventListener("hashchange", () => { showView(); window.scrollTo(0, 0); });
-showView();
-
-function render() { renderHome(); renderGames(); renderToday(); renderYesterday(); renderTrack(); renderParlays(); renderProps(); }
-
-async function load() {
-  const bust = "?t=" + Date.now();
-  const [p, t] = await Promise.all([fetch("data/predictions.json" + bust).then(r => r.json()),
-                                    fetch("data/track_record.json" + bust).then(r => r.json())]);
-  state.preds = p; state.track = t;
-  state.parlays = await fetch("data/parlays.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null);
-  state.props = await fetch("data/props.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null);
-  state.best = await fetch("data/bestbets.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null);
-  state.daily = await fetch("data/daily.json" + bust).then(r => r.ok ? r.json() : null).catch(() => null);
-  document.getElementById("updated").textContent = "Last updated " + new Date(p.updated).toLocaleString();
-  render();
-}
-
-document.getElementById("tabs").addEventListener("click", e => {
-  const b = e.target.closest("button"); if (!b) return;
-  state.sport = b.dataset.sport;
-  document.querySelectorAll("#tabs button").forEach(x => x.classList.toggle("on", x === b));
-  render();
-});
-document.getElementById("edgeOnly").addEventListener("change", e => { state.edgeOnly = e.target.checked; renderGames(); });
-load().catch(() => { document.getElementById("updated").textContent = "Couldn't load predictions. Try refreshing."; });
-setInterval(() => load().catch(() => {}), 5 * 60 * 1000);
-
-
-// ---------- Best bets, today's results, yesterday's recap ----------
-
-const BET_NAMES = { winner: "Best winner", spread: "Best spread", parlay: "Best parlay", prop: "Best player prop", sgp: "Best same-game parlay" };
-const BET_HINT = { winner: "Most likely winner (moneyline)", spread: "Most likely to cover", parlay: "Best value 2- or 3-game parlay",
-  prop: "DraftKings' most likely prop", sgp: "Spread + player prop, same game" };
-const whenTxt = d => new Date(d).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
-const fmtLine = l => l === 0 ? "PK" : (l > 0 ? "+" : "") + l;
-function legText(l) {
-  if (l.type === "prop") return `${l.name} ${l.side} ${l.line} ${l.label}`;
-  if (l.type === "ml") return `${l.team_name || l.team} to win`;
-  return `${l.team} ${fmtLine(l.line)}`;
-}
-function legResult(l) {
-  if (!l.result) return null;
-  const cls = l.result === "win" ? "w" : l.result === "loss" ? "l" : "";
-  const extra = l.type === "prop" && l.actual != null ? ` (${l.actual})` : "";
-  return el("span", { class: cls, text: ` · ${l.result === "win" ? "hit" : l.result === "loss" ? "missed" : l.result}${extra}` });
-}
-
-function betCard(kind, b) {
-  const head = el("div", { class: "bet-head" }, el("h3", { text: BET_NAMES[kind] }), el("span", { class: "hint", text: BET_HINT[kind] }));
-  if (!b) return el("div", { class: "card bet empty-bet" }, head, el("p", { class: "empty", text: "Nothing qualifies today." }));
-  const legs = el("ul", { class: "legs" });
-  for (const l of b.legs) legs.append(el("li", {}, legText(l), legResult(l),
-    el("small", { text: `${SPORT_NAMES[l.sport]} · ${l.game} · ${whenTxt(l.start)} · ${priceTxt(l.odds)}` })));
-  let status;
-  if (b.status === "won") status = el("div", { class: "status w", text: `Won ${money(+b.profit)}` });
-  else if (b.status === "lost") status = el("div", { class: "status l", text: "Lost -$20.00" });
-  else if (b.status === "push") status = el("div", { class: "status", text: "Push, money back" });
-  else if (b.locked) status = el("div", { class: "status", text: "Locked · waiting on the game" });
-  else status = el("div", { class: "status muted", text: "Can still change until 45 min before start" });
-  return el("div", { class: "card bet" }, head, legs,
-    el("div", { class: "nums" },
-      el("div", {}, el("small", { text: "Price" }), priceTxt(b.price)),
-      el("div", {}, el("small", { text: "Chance" }), Math.round(b.chance * 100) + "%"),
-      el("div", {}, el("small", { text: "Profit if it wins" }), "+" + money(b.payout - 20))),
-    status);
-}
-
-function recordTable(rows) {
-  const t = el("table", {}, el("tr", {}, el("th", { text: "" }), el("th", { class: "r", text: "Won-lost" }),
-    el("th", { class: "r", text: "Profit" }), el("th", { class: "r", text: "ROI" })));
-  for (const [label, x] of rows) {
-    if (!x) continue;
-    const cls = x.profit < 0 ? "neg" : x.profit > 0 ? "pos" : "";
-    t.append(el("tr", {}, el("td", { text: label }), el("td", { class: "r", text: `${x.won}-${x.lost}` }),
-      el("td", { class: "r " + cls, text: money(x.profit) }), el("td", { class: "r " + cls, text: x.roi == null ? "–" : x.roi + "%" })));
+  box.append(items.length ? pairs(items) : h("p", { class: "empty", text: "No parlays today. A sport needs at least 4 games with lines in the next 24 hours for a 2-game parlay, and 6 for a 3-game parlay." }));
+  const r = P.record;
+  rec.style.marginTop = "28px";
+  rec.append(recordRows([["All parlays", r], ["2-game", (r.by_kind || {}).two], ["3-game", (r.by_kind || {}).three]]));
+  if (P.history && P.history.length) {
+    const tb = h("tbody");
+    for (const x of P.history) tb.append(h("tr", {}, h("td", { text: x.legs.map(l => `${l.team} ${line(l.line)}`).join(", ") }),
+      h("td", { class: "r " + (x.status === "won" ? "w" : x.status === "lost" ? "l" : ""),
+        text: x.status === "open" ? "Pending" : x.status === "won" ? `Won ${money(scale(x.profit))}` : `Lost $${S.stake}` })));
+    rec.append(h("details", {}, h("summary", { text: "Every tracked parlay" }), h("table", {}, tb)));
   }
-  return t;
 }
 
-function renderHome() {
-  const box = document.getElementById("bestbets"), rec = document.getElementById("bestRecord"), tz = document.getElementById("yesterdayTeaser");
-  box.replaceChildren(); rec.replaceChildren(); tz.replaceChildren();
-  const B = state.best;
-  if (!B) { box.append(el("p", { class: "empty", text: "Best bets will appear after the next update." })); return; }
-  let card = B.card, title = "Today's best bets";
-  if ((!card || !Object.keys(card).length) && B.preview) {
-    card = B.preview.card;
-    title = "Next up: " + new Date(B.preview.date + "T12:00").toLocaleDateString([], { weekday: "long", month: "short", day: "numeric" });
+function renderProps() {
+  const box = document.getElementById("props"), rec = document.getElementById("propRecord");
+  box.replaceChildren(); rec.replaceChildren();
+  const P = S.props;
+  if (!P) { box.append(h("p", { class: "empty", text: "Props will appear after the next update." })); return; }
+  const cur = (P.current || []).filter(x => sportOk(x.sport));
+  if (cur.length) {
+    const tb = h("tbody");
+    for (const x of cur) tb.append(h("tr", {},
+      h("td", {}, `${x.name} ${x.side} ${x.line} ${x.label}`, h("small", { text: `${x.game} · ${when(x.date)}` })),
+      h("td", { class: "r", text: price(x.price) }),
+      h("td", { class: "r", text: Math.round(x.market_prob * 100) + "%" }),
+      h("td", { class: "r", text: (+x.projection).toFixed(1) })));
+    box.append(h("div", { class: "wide-scroll" }, h("table", { class: "rise" }, h("thead", {}, h("tr", {}, h("th", { text: "Prop" }),
+      h("th", { class: "r", text: "Price" }), h("th", { class: "r", text: "DK chance" }), h("th", { class: "r", text: "Our projection" }))), tb)));
+  } else box.append(h("p", { class: "empty", text: "No props yet. DraftKings usually posts NBA props on game day." }));
+  rec.style.marginTop = "28px";
+  const rows = [["All props", P.record.all]];
+  for (const [k, n] of [["nba", "NBA"], ["nfl", "NFL"]]) { const x = P.record[k]; if (x && x.wins + x.losses + x.pushes) rows.push([n, x]); }
+  rec.append(recordRows(rows));
+  if (P.recent && P.recent.length) {
+    const tb = h("tbody");
+    for (const x of P.recent) tb.append(h("tr", {},
+      h("td", {}, `${x.name} ${x.side} ${x.line} ${x.label} (${price(x.price)})`, h("small", { text: x.game })),
+      h("td", { class: "r", text: x.actual || "–" }),
+      h("td", { class: "r " + (x.result === "win" ? "w" : x.result === "loss" ? "l" : ""),
+        text: x.result === "win" ? `Won ${money(scale(x.profit))}` : x.result === "loss" ? `Lost $${S.stake}` : x.result === "void" ? "Void (sat out)" : "Push" })));
+    rec.append(h("details", {}, h("summary", { text: "Recent graded props" }), h("table", {}, tb)));
   }
-  document.getElementById("homeTitle").textContent = title;
-  const grid = el("div", { class: "grid" });
-  for (const k of ["winner", "spread", "parlay", "prop", "sgp"]) grid.append(betCard(k, card ? card[k] : null));
-  box.append(grid);
-  const y = state.daily && state.daily.yesterday;
-  if (y && y.summary.games) {
-    const s = y.summary;
-    tz.append(el("a", { class: "card teaser", href: "#yesterday" },
-      el("strong", { text: "Yesterday: " }),
-      `Winners ${s.winners[0]}-${s.winners[1]} · Spreads ${s.ats[0]}-${s.ats[1]}` +
-      (s.best_bets[0] + s.best_bets[1] ? ` · Best bets ${s.best_bets[0]}-${s.best_bets[1]}` : "") + "  →  See the recap"));
-  }
-  const r = B.record;
-  rec.append(el("div", { class: "card" }, recordTable([["All best bets", r.all], ["Winner", r.winner], ["Spread", r.spread],
-    ["Parlay", r.parlay], ["Prop", r.prop], ["Same-game parlay", r.sgp]]),
-    r.all.won + r.all.lost ? null : el("p", { class: "note", text: "Tracking starts today." })));
 }
 
-function gameRow(g) {
-  const ats = g.ats ? el("span", { class: g.ats === "win" ? "w" : g.ats === "loss" ? "l" : "",
-    text: g.ats === "win" ? `covered by ${g.by}` : g.ats === "loss" ? `missed by ${-g.by}` : "push" }) : "–";
-  return el("tr", {},
-    el("td", {}, `${g.away} ${g.away_score} @ ${g.home} ${g.home_score}`, el("small", { text: " · " + SPORT_NAMES[g.sport] })),
-    el("td", {}, g.pick || "–", el("br"), ats),
-    el("td", { class: "r " + (g.winner_right ? "w" : "l"), text: g.winner_right ? "✓" : "✗" }));
+// ---------- Today and Yesterday ----------
+function dayHeadline(d) {
+  const s = d.summary, bb = s.best_bets;
+  const prof = scale(s.profit);
+  const anyBets = bb[0] + bb[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1];
+  return h("div", { class: "record" },
+    h("div", { class: "total rise" }, h("div", { class: "big", text: anyBets ? signed(prof) : wl(...s.winners) }),
+      h("p", { text: anyBets ? `All tracked bets at $${S.stake} each: best bets ${wl(...bb)}, parlays ${wl(...s.parlays)}, props ${wl(...s.props)}.`
+        : "Winners picked." })),
+    h("div", { class: "types rise", style: "grid-template-columns:repeat(2,1fr)" },
+      h("div", {}, h("p", { class: "lbl", text: "Winners picked" }), h("div", { class: "big", text: wl(...s.winners) })),
+      h("div", {}, h("p", { class: "lbl", text: "Against the spread" }), h("div", { class: "big", text: wl(...s.ats) })),
+      h("div", {}, h("p", { class: "lbl", text: "Best bets" }), h("div", { class: "big", text: wl(...bb) })),
+      h("div", {}, h("p", { class: "lbl", text: "Games final" }), h("div", { class: "big", text: String(s.games) }))));
+}
+
+function gamesTable(games) {
+  const tb = h("tbody");
+  for (const g of games) {
+    const ats = g.ats === "win" ? h("span", { class: "w", text: `covered by ${g.by}` }) : g.ats === "loss" ? h("span", { class: "l", text: `missed by ${-g.by}` }) : g.ats ? "push" : "–";
+    tb.append(h("tr", {},
+      h("td", {}, `${g.away} ${g.away_score} @ ${g.home} ${g.home_score}`, h("small", { text: SPORT[g.sport] })),
+      h("td", {}, g.pick || "–", h("small", {}, ats)),
+      h("td", { class: "r " + (g.winner_right ? "w" : "l"), text: g.winner_right ? "Right" : "Wrong" })));
+  }
+  return h("div", { class: "wide-scroll" }, h("table", { class: "rise" }, h("thead", {}, h("tr", {}, h("th", { text: "Final" }),
+    h("th", { text: "Our spread pick" }), h("th", { class: "r", text: "Winner" }))), tb));
+}
+
+function extrasTable(d) {
+  const rows = [];
+  for (const p of d.props || []) rows.push([`Prop: ${p.name} ${p.side} ${p.line} ${p.label}`, p.result, p.result === "win" ? money(scale(p.profit)) : p.actual != null ? `actual ${p.actual}` : ""]);
+  for (const p of d.parlays || []) rows.push([`${p.kind === "two" ? "2" : "3"}-game ${SPORT[p.sport]} parlay: ` + p.legs.map(legText).join(", "),
+    p.status === "won" ? "win" : p.status === "lost" ? "loss" : p.status === "open" ? "" : p.status, p.status === "won" ? money(scale(p.profit)) : ""]);
+  if (!rows.length) return null;
+  const tb = h("tbody");
+  for (const [txt, res, info] of rows) tb.append(h("tr", {}, h("td", { text: txt }),
+    h("td", { class: "r " + (res === "win" ? "w" : res === "loss" ? "l" : ""), text: (res ? (res === "win" ? "Won" : res === "loss" ? "Lost" : res) : "Pending") + (info ? ` (${info})` : "") })));
+  return h("table", { class: "rise" }, tb);
 }
 
 function dayDetail(d, box) {
-  const s = d.summary;
-  const tiles = el("div", { class: "tiles" });
-  const tile = (label, wl, extra) => tiles.append(el("div", { class: "tile" }, el("small", { text: label }),
-    el("strong", { text: `${wl[0]}-${wl[1]}` }), extra ? el("small", { text: extra }) : null));
-  tile("Winners picked", s.winners);
-  tile("Against the spread", s.ats);
-  if (s.best_bets[0] + s.best_bets[1]) tile("Best bets", s.best_bets);
-  if (s.parlays[0] + s.parlays[1]) tile("Parlays", s.parlays);
-  if (s.props[0] + s.props[1]) tile("Props", s.props);
-  if (s.best_bets[0] + s.best_bets[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1])
-    tiles.append(el("div", { class: "tile" }, el("small", { text: "Profit ($20 bets)" }),
-      el("strong", { class: s.profit < 0 ? "neg" : s.profit > 0 ? "pos" : "", text: money(s.profit) })));
-  box.append(tiles);
-  if (d.best_bets.length) {
-    const grid = el("div", { class: "grid" });
-    for (const b of d.best_bets) grid.append(betCard(b.kind, b));
-    box.append(el("h3", { class: "sub-h", text: "Best bets" }), grid);
+  if (d.best_bets && d.best_bets.length) {
+    box.append(h("div", { class: "block" }, h("h2", { text: "Best bets" }), pairs(d.best_bets.map(b => betTicket(b.kind, b)))));
   }
-  const extra = [];
-  for (const p of d.props) extra.push([`Prop: ${p.name} ${p.side} ${p.line} ${p.label}`, p.result, p.actual]);
-  for (const p of d.parlays) extra.push([`${p.kind === "two" ? "2" : "3"}-game parlay (${SPORT_NAMES[p.sport]}): ` + p.legs.map(legText).join(", "),
-    p.status === "won" ? "win" : p.status === "lost" ? "loss" : p.status === "open" ? "" : p.status, p.status === "won" ? money(p.profit) : ""]);
-  if (extra.length) {
-    const t = el("table", {});
-    for (const [txt, res, info] of extra) t.append(el("tr", {}, el("td", { text: txt }),
-      el("td", { class: "r " + (res === "win" ? "w" : res === "loss" ? "l" : ""), text: (res ? (res === "win" ? "Won" : res === "loss" ? "Lost" : res) : "Pending") + (info ? ` (${info})` : "") })));
-    box.append(el("h3", { class: "sub-h", text: "Parlays and props" }), el("div", { class: "card" }, t));
-  }
-  if (d.games.length) {
-    const t = el("table", {}, el("tr", {}, el("th", { text: "Final" }), el("th", { text: "Our spread pick" }), el("th", { class: "r", text: "Winner" })));
-    for (const g of d.games) t.append(gameRow(g));
-    box.append(el("h3", { class: "sub-h", text: "Every game" }), el("div", { class: "card" }, t));
-  }
+  const ex = extrasTable(d);
+  if (ex) box.append(h("div", { class: "block" }, h("h2", { text: "Parlays and props" }), ex));
+  if (d.games.length) box.append(h("div", { class: "block" }, h("h2", { text: "Every game" }), gamesTable(d.games)));
 }
 
 function renderToday() {
-  const box = document.getElementById("today"); box.replaceChildren();
-  const d = state.daily && state.daily.today;
-  if (!d || (!d.games.length && !d.best_bets.some(b => b.status !== "open"))) {
-    box.append(el("p", { class: "empty", text: "No games have finished yet today. Results show up here within 15 minutes of each final." }));
-    if (d && d.best_bets.length) { const g = el("div", { class: "grid" }); d.best_bets.forEach(b => g.append(betCard(b.kind, b))); box.append(g); }
+  const box = document.getElementById("todayBox"); box.replaceChildren();
+  const d = S.daily && S.daily.today;
+  if (!d) { box.append(h("p", { class: "empty", text: "Results will appear after the next update." })); return; }
+  if (!d.games.length && !(d.best_bets || []).some(b => b.status && b.status !== "open")) {
+    box.append(h("p", { class: "empty", text: "No games have finished yet today. Results show up here within 15 minutes of each final." }));
+    if (d.best_bets && d.best_bets.length) box.append(h("div", { class: "block" }, h("h2", { text: "Today's locked bets" }), pairs(d.best_bets.map(b => betTicket(b.kind, b)))));
     return;
   }
+  box.append(dayHeadline(d));
   dayDetail(d, box);
 }
 
 function renderYesterday() {
-  const box = document.getElementById("yesterday"); box.replaceChildren();
-  const d = state.daily && state.daily.yesterday;
+  const box = document.getElementById("yBox"); box.replaceChildren();
+  const d = S.daily && S.daily.yesterday;
   if (!d) return;
-  document.getElementById("yTitle").textContent = "Yesterday's recap · " +
-    new Date(d.date + "T12:00").toLocaleDateString([], { weekday: "long", month: "short", day: "numeric" });
-  if (!d.games.length) { box.append(el("p", { class: "empty", text: "No games yesterday." })); return; }
-  const hl = el("div", { class: "grid hl" });
-  if (d.best_win) hl.append(el("div", { class: "card win" }, el("small", { text: "🏆 Best win" }), el("strong", { text: d.best_win.title }), el("p", { text: d.best_win.detail })));
-  if (d.bad_beat) hl.append(el("div", { class: "card beat" }, el("small", { text: "😩 Bad beat" }), el("strong", { text: d.bad_beat.title }), el("p", { text: d.bad_beat.detail })));
-  box.append(hl);
+  document.getElementById("yDate").textContent = dayName(d.date);
+  if (!d.games.length) { box.append(h("p", { class: "empty", text: "No games yesterday." })); return; }
+  box.append(dayHeadline(d));
+  const hl = [];
+  if (d.best_win) hl.push(h("article", { class: "ticket lead hl rise", style: "display:block" }, h("div", { class: "stamp", text: "Won" }),
+    h("h3", { text: "Best win" }), h("div", { class: "leg" }, h("b", { text: d.best_win.title })), h("p", { class: "state", text: scaleDetail(d.best_win.detail) })));
+  if (d.bad_beat) hl.push(h("article", { class: "ticket hl rise" }, h("div", { class: "stamp l", text: "Ouch" }),
+    h("h3", { text: "Bad beat" }), h("div", { class: "leg" }, h("b", { text: d.bad_beat.title })), h("p", { class: "state", text: d.bad_beat.detail })));
+  if (hl.length) box.append(h("div", { class: "block" }, h("h2", { text: "Best win and bad beat" }), pairs(hl)));
   dayDetail(d, box);
 }
+
+// ---------- Record ----------
+function renderRecord() {
+  const B = S.best;
+  const tot = document.getElementById("recTotal"); tot.replaceChildren();
+  if (B) tot.append(totalBlock(B.record.all, "since Oct 22"), chart(B.history));
+  let types = document.getElementById("recTypes"); types.replaceChildren();
+  const tile = (name, x, note) => {
+    if (!x) return;
+    const w = x.won ?? x.wins ?? 0, l = x.lost ?? x.losses ?? 0;
+    types.append(h("div", { class: "rise" }, h("p", { class: "lbl", text: name }),
+      h("div", { class: "big " + cls(x.profit), text: signed(scale(x.profit)) }),
+      h("p", { text: (w + l ? wl(w, l, x.pushes) : "No graded bets yet") + (x.roi != null ? ` · ${x.roi}%` : "") + (note ? ` · ${note}` : "") })));
+  };
+  if (B) { const r = B.record; tile("Best winner", r.winner); tile("Best spread", r.spread); tile("Best parlay", r.parlay); tile("Best prop", r.prop); tile("Same-game parlay", r.sgp); }
+  const types2 = document.getElementById("recTypes2"); types2.replaceChildren();
+  types = types2;
+  if (S.parlays) tile("All parlays", S.parlays.record, S.parlays.record.pending ? `${S.parlays.record.pending} pending` : null);
+  if (S.props) tile("All props", S.props.record.all);
+  renderTrack();
+}
+
+function renderTrack() {
+  const box = document.getElementById("track"); box.replaceChildren();
+  if (!S.track) return;
+  const wrap = h("div", { class: "sport-blocks" });
+  for (const [sp, t] of Object.entries(S.track)) {
+    if (!sportOk(sp)) continue;
+    const s = t.this_season;
+    const figs = h("div", { class: "season-figs" });
+    if (s) {
+      figs.append(h("div", {}, h("strong", { text: s.winner_pct + "%" }), h("small", { text: "Winners picked this season" })),
+        h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: "Against the spread" })),
+        h("div", {}, h("strong", { text: s.avg_miss + " pts" }), h("small", { text: "Average miss on margin" })),
+        h("div", {}, h("strong", { text: s.games.toLocaleString() }), h("small", { text: "Games graded" })));
+    }
+    const ls = t.last_season;
+    const tb = h("tbody");
+    for (const p of t.periods || []) {
+      const a = p.ats;
+      tb.append(h("tr", {}, h("td", { text: p.label }), h("td", { class: "r", text: p.games ? wl(...p.winners) : "No games" }),
+        h("td", { class: "r", text: a && (a.wins + a.losses) ? wl(a.wins, a.losses, a.pushes) : "–" }),
+        h("td", { class: "r", text: p.games ? p.avg_miss + " pts" : "–" })));
+    }
+    const right = h("div", {}, h("table", {}, h("thead", {}, h("tr", {}, h("th", { text: "" }), h("th", { class: "r", text: "Winners" }),
+      h("th", { class: "r", text: "Vs spread" }), h("th", { class: "r", text: "Avg miss" }))), tb),
+      ls ? h("p", { class: "note", style: "margin-top:14px", text: `Last season's test: ${ls.winner_pct}% winners (spread ${ls.spread_winner_pct ?? "–"}%), ${ls.ats ? (ls.ats.pct ?? ls.ats.win_pct) + "% against the spread" : ""}, average miss ${ls.avg_miss} pts.` }) : null);
+    if (t.recent && t.recent.length) {
+      const rb = h("tbody");
+      for (const r of t.recent) {
+        const ok = (r.pred > 0) === (r.home_score - r.away_score > 0);
+        rb.append(h("tr", {}, h("td", { text: `${r.away} @ ${r.home}` }), h("td", { class: "r", text: (r.pred >= 0 ? r.home : r.away) + " " + Math.abs(r.pred).toFixed(1) }),
+          h("td", { class: "r", text: `${r.away_score}-${r.home_score}` }), h("td", { class: "r " + (ok ? "w" : "l"), text: ok ? "Right" : "Wrong" })));
+      }
+      right.append(h("details", {}, h("summary", { text: "Recent games" }), h("table", {}, rb)));
+    }
+    wrap.append(h("div", { class: "sport-block rise" }, h("div", {}, h("h3", { text: t.name }), figs), right));
+  }
+  box.append(wrap);
+}
+
+// ---------- page plumbing ----------
+function showView() {
+  const k = location.hash.slice(1);
+  const v = VIEWS.includes(k) ? k : ["results", "parlays", "props"].includes(k) ? (k === "results" ? "record" : "games") : "home";
+  for (const x of VIEWS) document.getElementById("view-" + x).hidden = x !== v;
+  document.querySelectorAll("#views a[data-view]").forEach(a => { a.classList.toggle("on", a.dataset.view === v); a.toggleAttribute("aria-current", a.dataset.view === v); });
+  reveal();
+}
+
+function render() {
+  renderHome(); renderGames(); renderParlays(); renderProps(); renderToday(); renderYesterday(); renderRecord();
+  reveal();
+}
+
+let io = null;
+function reveal() {
+  const els = document.querySelectorAll(".view:not([hidden]) .rise:not(.in)");
+  if (!("IntersectionObserver" in window)) { els.forEach(e => e.classList.add("in")); return; }
+  io = io || new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) {
+    const i = [...e.target.parentNode.children].indexOf(e.target);
+    setTimeout(() => e.target.classList.add("in"), Math.min(i, 4) * 75); io.unobserve(e.target); } }), { threshold: .1 });
+  els.forEach(e => io.observe(e));
+}
+function rerender() { render(); document.querySelectorAll(".rise").forEach(e => e.classList.add("in")); }
+
+function setStake(v) {
+  S.stake = Math.max(1, Math.min(10000, Math.round(+v) || 20));
+  try { localStorage.setItem("hd-stake", S.stake); } catch (e) {}
+  const inp = document.getElementById("stake"); if (+inp.value !== S.stake) inp.value = S.stake;
+  document.querySelectorAll(".chips button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.v === S.stake));
+  if (S.best) rerender();
+}
+document.getElementById("stake").addEventListener("input", e => e.target.value && setStake(e.target.value));
+document.querySelectorAll(".chips button").forEach(b => b.addEventListener("click", () => setStake(b.dataset.v)));
+
+for (const g of document.querySelectorAll(".sports")) {
+  for (const [k, n] of [["all", "All"], ["nfl", "NFL"], ["nba", "NBA"], ["cfb", "College"]]) g.append(h("button", { "data-sport": k, text: n }));
+  g.addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    S.sport = b.dataset.sport; syncSports(); rerender();
+  });
+}
+function syncSports() { document.querySelectorAll(".sports button").forEach(b => b.setAttribute("aria-pressed", b.dataset.sport === S.sport)); }
+syncSports();
+document.getElementById("edgeOnly").addEventListener("change", e => { S.edgeOnly = e.target.checked; renderGames(); document.querySelectorAll("#gamesList .rise").forEach(x => x.classList.add("in")); });
+
+window.addEventListener("hashchange", () => { showView(); window.scrollTo(0, 0); });
+showView();
+if (location.hash) window.scrollTo(0, 0);
+setStake(S.stake);
+
+async function load() {
+  const bust = "?t=" + Date.now();
+  const get = f => fetch("data/" + f + bust).then(r => r.ok ? r.json() : null).catch(() => null);
+  const [p, t, pa, pr, b, d] = await Promise.all(["predictions.json", "track_record.json", "parlays.json", "props.json", "bestbets.json", "daily.json"].map(get));
+  if (!p && !b) throw new Error("no data");
+  Object.assign(S, { preds: p, track: t, parlays: pa, props: pr, best: b, daily: d, base: (b && b.stake) || 20 });
+  if (p) document.getElementById("updated").textContent = "Last updated " + new Date(p.updated).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" }) + ".";
+  const first = !document.querySelector(".rise.in");
+  first ? render() : rerender();
+}
+load().catch(() => { document.getElementById("bestbets").replaceChildren(h("p", { class: "empty", text: "Couldn't load picks. Try refreshing." })); });
+setInterval(() => load().catch(() => {}), 5 * 60 * 1000);

@@ -3,90 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HandsDownAI</title>
-<link rel="icon" href="logo-crest3.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="apple-touch-icon.png?v=3">
-<meta property="og:title" content="HandsDownAI">
+<title>HandsDown AI</title>
+<link rel="icon" href="logo-crest4.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=4">
+<meta property="og:title" content="HandsDown AI">
 <meta name="theme-color" content="#0b0b0a">
-<meta name="description" content="Predicted margins of victory and win chances for NFL, NBA and college football, updated every 15 minutes.">
+<meta name="description" content="Best bets, predictions and an honest track record for NFL, NBA and college football, updated every 15 minutes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&display=swap">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
-<body>
-<header>
-  <div class="wrap">
-    <h1 class="brand"><img src="logo-crest3.svg" alt="" width="44" height="44"><span>HandsDown<b>AI</b></span></h1>
-    <p class="sub">Best bets, predictions and an honest track record for NFL, NBA and college football. Updated every 15 minutes with the latest injury news.</p>
-    <p class="updated" id="updated">Loading…</p>
-    <a class="sub-btn" href="https://handsdownai.substack.com/subscribe" target="_blank" rel="noopener">✉ Get the weekly email</a>
-  </div>
-</header>
+<body class="noscript">
+<script>document.body.classList.remove("noscript")</script>
+<div class="wrap">
+  <header class="bar">
+    <a class="brand" href="#home"><img src="logo-crest4.svg" alt="" width="44" height="44">HandsDown AI</a>
+    <nav id="views" aria-label="Pages">
+      <a href="#home" data-view="home">Best bets</a>
+      <a href="#games" data-view="games">Games</a>
+      <a href="#today" data-view="today">Today</a>
+      <a href="#yesterday" data-view="yesterday">Yesterday</a>
+      <a href="#record" data-view="record">Record</a>
+      <a class="sub" href="https://handsdownai.substack.com/subscribe" target="_blank" rel="noopener">Subscribe</a>
+    </nav>
+  </header>
 
-<nav class="wrap views" id="views" aria-label="Page">
-  <a href="#home" data-view="home" class="on">Best bets</a>
-  <a href="#games" data-view="games">Games</a>
-  <a href="#today" data-view="today">Today</a>
-  <a href="#yesterday" data-view="yesterday">Yesterday</a>
-  <a href="#record" data-view="record">Record</a>
-</nav>
-
-<nav class="wrap tabs" id="tabs" aria-label="Sport">
-  <button data-sport="all" class="on">All</button>
-  <button data-sport="nfl">NFL</button>
-  <button data-sport="nba">NBA</button>
-  <button data-sport="cfb">College</button>
-</nav>
-
-<main class="wrap">
-  <section id="view-home">
-    <h2 id="homeTitle">Today's best bets</h2>
-    <p class="note">One pick of each kind across all sports. Each bet updates with the latest news until 45 minutes before its first game, then it's locked and tracked at $20. "Chance" is our estimate; sportsbooks price same-game parlays differently, so that payout is an estimate.</p>
-    <div id="bestbets"></div>
-    <div id="yesterdayTeaser"></div>
-    <a class="card teaser newsletter" href="https://handsdownai.substack.com/subscribe" target="_blank" rel="noopener"><strong>HandsDownAI Weekly:</strong> last week's scorecard, the weekend's top plays and the parlay of the week, every Thursday. Free → Subscribe</a>
-    <h2>Best bets record ($20 each)</h2>
-    <div id="bestRecord"></div>
-  </section>
-
-  <section id="view-games" hidden>
-    <div class="row-head">
-      <h2>Upcoming games</h2>
-      <label class="toggle"><input type="checkbox" id="edgeOnly"> Only games where we disagree with the spread by 3+</label>
+  <!-- Best bets -->
+  <main>
+  <section id="view-home" class="view">
+    <div class="top">
+      <div>
+        <h1 id="homeTitle">Today's best bets</h1>
+        <p>Five picks across the NFL, NBA and college football. Each one updates with injury news until 45 minutes before the game, then it's locked and tracked.</p>
+      </div>
+      <div class="stake">
+        <label for="stake">Your bet on each</label>
+        <div class="row">$<input id="stake" type="number" min="1" max="10000" value="20" inputmode="numeric"></div>
+        <div class="chips"><button data-v="10">$10</button><button data-v="20">$20</button><button data-v="50">$50</button><button data-v="100">$100</button></div>
+      </div>
     </div>
-    <div id="games"></div>
+    <div id="bestbets"><p>Loading today's picks…</p></div>
+    <div class="block">
+      <h2>Yesterday</h2>
+      <div class="trio" id="homeYest"></div>
+    </div>
+    <div class="block">
+      <h2>Best bets record</h2>
+      <div class="record" id="homeRecord"></div>
+    </div>
   </section>
 
-  <section id="view-today" hidden>
-    <h2>Today's results</h2>
-    <p class="note">Games that have finished today, with how our picks did. Updates every 15 minutes.</p>
-    <div id="today"></div>
+  <!-- Games -->
+  <section id="view-games" class="view" hidden>
+    <div class="top">
+      <div>
+        <h1>Upcoming games</h1>
+        <p>Our predicted margin and win chance for every game with a line. A gold edge means we disagree with the spread by 3 points or more.</p>
+      </div>
+      <div class="filters">
+        <div class="sports" role="group" aria-label="Sport"></div>
+        <label class="toggle"><input type="checkbox" id="edgeOnly"> Only big disagreements</label>
+      </div>
+    </div>
+    <div id="gamesList"></div>
+    <div class="block" id="parlayBlock">
+      <h2>Parlays</h2>
+      <p class="lede">The best 2-game and 3-game spread parlays per sport, locked 45 minutes before the first game. For fun, not an edge.</p>
+      <div id="parlays"></div>
+      <div id="parlayRecord"></div>
+    </div>
+    <div class="block">
+      <h2>Player props</h2>
+      <p class="lede">For each NBA game, the over or under DraftKings thinks is most likely to hit (no worse than -300), with our projection next to it.</p>
+      <div id="props"></div>
+      <div id="propRecord"></div>
+    </div>
   </section>
 
-  <section id="view-yesterday" hidden>
-    <h2 id="yTitle">Yesterday's recap</h2>
-    <div id="yesterday"></div>
+  <!-- Today -->
+  <section id="view-today" class="view" hidden>
+    <div class="top">
+      <div>
+        <h1>Today's results</h1>
+        <p>How today's picks are doing. Finished games show up here within 15 minutes of the final.</p>
+      </div>
+    </div>
+    <div id="todayBox"></div>
   </section>
 
-  <section id="view-record" hidden>
-    <h2>Track record</h2>
-    <p class="note">"This season" grades each finished game using the prediction made before it, from earlier games only. "Last season" is the full 2025 test. Beating the spread needs about 52.4% to break even.</p>
-    <div id="track"></div>
-    <h2>Parlays ($20 per parlay)</h2>
-    <p class="note">One 2-game and one 3-game spread parlay per sport per day, when a sport has 4+ (or 6+) games in the next 24 hours. For entertainment only.</p>
-    <div id="parlays"></div>
-    <div id="parlayRecord"></div>
-    <h2>Player props ($20 per prop)</h2>
-    <p class="note">For each NBA game, the over/under player prop DraftKings thinks is most likely to hit (prices no worse than -300), with our projection for comparison. In a test on last season's NBA playoffs this went 57-24 for about +1%.</p>
-    <div id="props"></div>
-    <div id="propRecord"></div>
+  <!-- Yesterday -->
+  <section id="view-yesterday" class="view" hidden>
+    <div class="top">
+      <div>
+        <h1 id="yTitle">Yesterday's recap</h1>
+        <p id="yDate"></p>
+      </div>
+    </div>
+    <div id="yBox"></div>
   </section>
-</main>
 
-<footer class="wrap">
-  <p><a href="https://handsdownai.substack.com/subscribe" target="_blank" rel="noopener">Subscribe to HandsDownAI Weekly</a></p>
-  <p>For entertainment only, not betting advice. Data from ESPN. Betting lines shown are ESPN's (ESPN BET).</p>
+  <!-- Record -->
+  <section id="view-record" class="view" hidden>
+    <div class="top">
+      <div>
+        <h1>Track record</h1>
+        <p>Every best bet, parlay and prop we've tracked, plus how often the model picks winners and beats the spread. Beating the spread takes about 52.4% to break even.</p>
+      </div>
+    </div>
+    <div class="record" id="recTotal"></div>
+    <div class="block">
+      <h2>Profit by bet type</h2>
+      <div class="types five" id="recTypes"></div>
+      <div class="types two" id="recTypes2"></div>
+    </div>
+    <div class="block">
+      <div class="head-row">
+        <h2>By sport</h2>
+        <div class="sports" role="group" aria-label="Sport"></div>
+      </div>
+      <div id="track"></div>
+    </div>
+  </section>
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="name">HandsDown AI</div>
+    <div class="cols">
+      <p>For entertainment only, not betting advice. Data from ESPN. Lines are ESPN BET's; props are DraftKings'. <span id="updated">Updated every 15 minutes.</span></p>
+      <a href="https://handsdownai.substack.com/subscribe" target="_blank" rel="noopener">Get HandsDown AI Weekly every Thursday →</a>
+    </div>
+  </div>
 </footer>
-<script src="app.js?v=6"></script>
+<script src="app.js?v=7"></script>
 </body>
 </html>

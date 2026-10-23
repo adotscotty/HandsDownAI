@@ -213,6 +213,13 @@ def update(preds, player_rows):
         profit = sum(float(r["profit"]) for r in rs)
         staked = STAKE * (won + lost)
         rec[kind] = dict(won=won, lost=lost, profit=round(profit, 2), roi=round(100 * profit / staked, 1) if staked else None)
-    out = dict(updated=now.isoformat(timespec="seconds"), date=today, card=card, preview=preview, record=rec, stake=STAKE)
+    # 5) profit per day, for the money-over-time chart
+    days = {}
+    for r in log.values():
+        if r["status"] in ("won", "lost", "push"):
+            days[r["date"]] = days.get(r["date"], 0.0) + float(r["profit"])
+    history = [dict(date=d, profit=round(p, 2)) for d, p in sorted(days.items())]
+    out = dict(updated=now.isoformat(timespec="seconds"), date=today, card=card, preview=preview, record=rec, stake=STAKE,
+               history=history)
     json.dump(out, open(os.path.join(DATA, "bestbets.json"), "w"), indent=1)
     return out
