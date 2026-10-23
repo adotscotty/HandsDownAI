@@ -109,7 +109,9 @@ h3 { font: 22px/1.1 var(--display); color: var(--gold); }
 .chart svg { width: 100%; height: auto; display: block; }
 .chart p { color: var(--ink-2); font-size: 15px; margin-top: 8px; }
 .types { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-.types.five { grid-template-columns: repeat(5, 1fr); }
+.types.five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.types.five .big { font-size: clamp(24px, 2.5vw, 34px); }
+.types.five > div { padding: 22px 22px; }
 .types.two { grid-template-columns: repeat(2, 1fr); margin-top: 20px; }
 .types > div { background: var(--surface); padding: 24px 28px; }
 .types .big { font-size: clamp(30px, 3.4vw, 44px); margin: 10px 0 6px; }
