@@ -31,9 +31,9 @@ def record(rows):
             else:
                 l += 1
         out["ats"] = dict(wins=w, losses=l, pushes=p, pct=round(100 * w / (w + l), 1) if w + l else None)
-        # The model on its own (before blending with the line): every lean, and the gold-edge games (3+ pts)
+        # The model on its own (before blending with the line): every lean, and the gold-edge games (4+ pts)
         out["model_ats"] = ats_record(lined, "pred_model")
-        out["model_ats_big"] = ats_record(lined, "pred_model", min_edge=3)
+        out["model_ats_big"] = ats_record(lined, "pred_model", min_edge=4)
     return out
 
 
