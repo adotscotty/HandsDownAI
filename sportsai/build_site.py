@@ -31,7 +31,28 @@ def record(rows):
             else:
                 l += 1
         out["ats"] = dict(wins=w, losses=l, pushes=p, pct=round(100 * w / (w + l), 1) if w + l else None)
+        # The model on its own (before blending with the line): every lean, and the gold-edge games (3+ pts)
+        out["model_ats"] = ats_record(lined, "pred_model")
+        out["model_ats_big"] = ats_record(lined, "pred_model", min_edge=3)
     return out
+
+
+def ats_record(rows, key, min_edge=0.0):
+    """Won-lost against the spread for the side `key` (a predicted home margin) leans to."""
+    w = l = p = 0
+    for r in rows:
+        if r.get(key) is None:
+            continue
+        diff, cover = r[key] + r["spread"], r["home_score"] - r["away_score"] + r["spread"]
+        if diff == 0 or abs(diff) < min_edge:
+            continue
+        if cover == 0:
+            p += 1
+        elif (cover > 0) == (diff > 0):
+            w += 1
+        else:
+            l += 1
+    return dict(wins=w, losses=l, pushes=p, pct=round(100 * w / (w + l), 1) if w + l else None)
 
 
 def load_season(sport):
@@ -47,7 +68,8 @@ def load_season(sport):
                     home_name=r.get("home_name"), away_name=r.get("away_name"),
                     home_score=int(r["home_score"]), away_score=int(r["away_score"]),
                     spread=float(r["spread"]) if r["spread"] else None,
-                    pred=float(r["pred"]), win_prob=float(r["win_prob"])))
+                    pred=float(r["pred"]), win_prob=float(r["win_prob"]),
+                    pred_model=float(r["pred_model"]) if r.get("pred_model") else None))
     return rows
 
 
@@ -232,7 +254,7 @@ def main():
                              avg_miss=b.get("model_avg_miss"), spread_avg_miss=b.get("vegas_avg_miss_same_games"),
                              spread_winner_pct=b.get("vegas_picked_winner_pct"),
                              ats=b.get("against_spread", {}).get("edge_0+")),
-            recent=[{k: r[k] for k in ("date", "home", "away", "home_score", "away_score", "spread", "pred")}
+            recent=[{k: r[k] for k in ("date", "home", "away", "home_score", "away_score", "spread", "pred", "pred_model")}
                     for r in sorted(rows, key=lambda r: r["date"], reverse=True)[:40]],
         )
     json.dump(track, open(os.path.join(SITE, "data", "track_record.json"), "w"))

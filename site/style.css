@@ -206,3 +206,6 @@ footer .cols a { color: var(--gold); font-weight: 700; }
 @media (max-width: 600px) { .bar nav { gap: 14px; font-size: 15px; } .bar nav a.sub { padding: 7px 11px; } }
 .live { display: block; margin-top: 4px; font-size: 15px; }
 .lead .live { color: var(--gold-ink); }
+.season-figs strong.gold { color: var(--gold); }
+.track-key { background: var(--surface); padding: 22px 28px; margin-bottom: 20px; }
+.track-key p + p { margin-top: 8px; }

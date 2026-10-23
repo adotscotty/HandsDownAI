@@ -177,7 +177,8 @@ function gameRow(g) {
   if (e != null && g.model_home_margin != null) {
     const side = e > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`;
     modelTxt = `Model alone (before blending with Vegas): ${g.model_home_margin >= 0 ? g.home_name : g.away_name} by ${Math.abs(g.model_home_margin).toFixed(1)}` +
-      (Math.abs(e) < 0.5 ? ", about the same as the line." : `, so it leans ${side} by ${Math.abs(e).toFixed(1)} pts. Shown for interest, not tracked.`);
+      (Math.abs(e) < 0.5 ? ", about the same as the line." : `, so it disagrees with the line by ${Math.abs(e).toFixed(1)} pts` +
+        (Math.abs(e) >= 3 ? ". That makes this a gold-edge pick, tracked in the Record." : "."));
   }
   const inj = [...(g.away_injuries?.key_injuries || []).map(i => ({ ...i, t: g.away })), ...(g.home_injuries?.key_injuries || []).map(i => ({ ...i, t: g.home }))];
   const bp = g.best_prop;
@@ -379,8 +380,9 @@ function renderTrack() {
     if (s) {
       figs.append(h("div", {}, h("strong", { text: s.winner_pct + "%" }), h("small", { text: "Winners picked this season" })),
         h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: "Spread picks won-lost" })),
-        h("div", {}, h("strong", { text: s.avg_miss + " pts" }), h("small", { text: "Average miss on margin" })),
-        h("div", {}, h("strong", { text: s.games.toLocaleString() }), h("small", { text: "Games graded" })));
+        h("div", {}, h("strong", { class: "gold", text: s.model_ats_big ? wl(s.model_ats_big.wins, s.model_ats_big.losses, s.model_ats_big.pushes) : "–" }),
+          h("small", { text: "Gold-edge picks won-lost" + (s.model_ats_big && s.model_ats_big.pct != null ? ` (${s.model_ats_big.pct}%)` : "") })),
+        h("div", {}, h("strong", { text: s.avg_miss + " pts" }), h("small", { text: `Average miss on margin · ${s.games.toLocaleString()} games` })));
     }
     const ls = t.last_season;
     const tb = h("tbody");
@@ -388,10 +390,11 @@ function renderTrack() {
       const a = p.ats;
       tb.append(h("tr", {}, h("td", { text: p.label }), h("td", { class: "r", text: p.games ? wl(...p.winners) : "No games" }),
         h("td", { class: "r", text: a && (a.wins + a.losses) ? wl(a.wins, a.losses, a.pushes) : "–" }),
+        h("td", { class: "r", text: p.model_ats_big && (p.model_ats_big.wins + p.model_ats_big.losses) ? wl(p.model_ats_big.wins, p.model_ats_big.losses, p.model_ats_big.pushes) : "–" }),
         h("td", { class: "r", text: p.games ? p.avg_miss + " pts" : "–" })));
     }
     const right = h("div", {}, h("table", {}, h("thead", {}, h("tr", {}, h("th", { text: "" }), h("th", { class: "r", text: "Winners" }),
-      h("th", { class: "r", text: "Spread picks" }), h("th", { class: "r", text: "Avg miss" }))), tb),
+      h("th", { class: "r", text: "Spread picks" }), h("th", { class: "r", text: "Gold-edge" }), h("th", { class: "r", text: "Avg miss" }))), tb),
       ls ? h("p", { class: "note", style: "margin-top:14px", text: `Last season's test: ${ls.winner_pct}% winners (spread ${ls.spread_winner_pct ?? "–"}%), ${ls.ats ? (ls.ats.pct ?? ls.ats.win_pct) + "% against the spread" : ""}, average miss ${ls.avg_miss} pts.` }) : null);
     if (t.recent && t.recent.length) {
       const rb = h("tbody");
