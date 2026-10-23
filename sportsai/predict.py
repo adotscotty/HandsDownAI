@@ -6,7 +6,7 @@ each game predicted using only earlier games, for the track record).
 Designed to run every 15 minutes: past games come from the cache, only today/upcoming are refetched.
 """
 import csv, datetime as dt, json, os, sys
-from .espn import get_json, get_many, scoreboard_url, summary_url
+from .espn import get_json, get_many, scoreboard_url, summary_url, roster_url
 from .fetch_history import DATA, days, main_teams, add_lineups, add_closing_spreads, fbs_teams_from_games
 from .backtest import load
 from .model import run, RatingModel, win_prob
@@ -146,6 +146,13 @@ def predict_sport(sport, settings, blend_w=0.0):
 
     # 3) upcoming games: injury report + current odds
     sums = get_many([summary_url(sport, g["event_id"]) for g in upcoming], cache=False)
+    rosters = {}  # NBA: today's roster from ESPN, so trades and signings count right away
+    if sport == "nba":
+        ids = sorted({g[s + "_id"] for g in upcoming for s in ("home", "away")})
+        for tid, d in zip(ids, get_many([roster_url(sport, t) for t in ids], cache=False)):
+            ath = (d or {}).get("athletes") or []
+            if len(ath) >= 8:
+                rosters[tid] = {str(a["id"]) for a in ath}
     form = {}  # team -> this season's results, oldest first (+1 win / -1 loss, margin)
     for r in sorted(this_season, key=lambda r: r["date"]):
         if r.get("home_score") is None or r.get("away_score") is None:
@@ -185,8 +192,8 @@ def predict_sport(sport, settings, blend_w=0.0):
         pf, lud, late = 1.0, 0.0, (0, 0, 0, 0)
         if sport == "nba":  # who is expected to play, game pace, late-season tanking / top seeds
             h, a = g["home_id"], g["away_id"]
-            hd, _ = model.lineup_delta(h, model.expected_players(h, hi["weights"]))
-            ad, _ = model.lineup_delta(a, model.expected_players(a, ai["weights"]))
+            hd, _ = model.lineup_delta(h, model.expected_players(h, hi["weights"], rosters.get(h)))
+            ad, _ = model.lineup_delta(a, model.expected_players(a, ai["weights"], rosters.get(a)))
             lud = hd - ad
             pf = model.pace_factor(h, a)
             late = model.late_flags(h, when, g.get("season_type")) + model.late_flags(a, when, g.get("season_type"))

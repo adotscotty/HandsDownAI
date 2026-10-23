@@ -64,3 +64,7 @@ def odds_url(sport, event_id):
 def teams_url(sport):
     extra = "?groups=80&limit=400" if sport == "cfb" else "?limit=100"
     return f"{SITE}/{LEAGUES[sport]}/teams{extra}"
+
+
+def roster_url(sport, team_id):
+    return f"{SITE}/{LEAGUES[sport]}/teams/{team_id}/roster"

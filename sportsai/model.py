@@ -138,7 +138,10 @@ class RatingModel:
 
     def expected_minutes(self, team, pid):
         m = self.pmin.get((team, pid))
-        return sum(m) / len(m) if m else 12.0
+        if m:
+            return sum(m) / len(m)
+        hist = list(self.pstats.get(pid, ()))[-10:]  # new to this team: his recent minutes anywhere
+        return sum(h[0] for h in hist) / len(hist) if hist else 12.0
 
     def lineup_strength(self, team, players):
         """players: {player: share of normal minutes he'll play (1 = full)}"""
@@ -157,8 +160,14 @@ class RatingModel:
             return 0.0, None
         return now - sum(hist) / len(hist), now
 
-    def expected_players(self, team, injury_weights):
-        """Live: who should play tonight = recent rotation players, less the injured ones."""
+    def expected_players(self, team, injury_weights, roster=None):
+        """Live: who should play tonight = recent rotation players, less the injured ones.
+        With today's roster from ESPN, use the current roster instead, so trades and signings
+        count right away and departed players drop out."""
+        if roster:
+            known = [pid for pid in roster if self.pstats.get(pid)]
+            top = sorted(known, key=lambda pid: -self.expected_minutes(team, pid))[:10]
+            return {pid: 1.0 - injury_weights.get(pid, 0.0) for pid in top if self.expected_minutes(team, pid) >= 10}
         games = self.recent[team]
         out = {}
         for pid in self.roster[team]:
