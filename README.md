@@ -1,5 +1,7 @@
 # HandsDownAI (sports-ai)
 
+Live site: https://adotscotty.github.io/HandsDownAI/
+
 Predicts the margin of victory and win probability for NFL, NBA and college football (FBS) games,
 using only free ESPN data. It runs on its own; nobody needs to touch the code.
 
