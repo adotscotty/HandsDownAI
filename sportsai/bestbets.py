@@ -1,12 +1,12 @@
 """Today's best bets across all sports: one winner, one spread, one parlay, one player prop and one
 same-game parlay. Each bet keeps updating until its first game is 45 minutes away, then it is locked
-into data/bestbets_log.csv and graded at $5 once its games finish.
+into data/bestbets_log.csv and graded at $20 once its games finish.
 """
 import csv, datetime as dt, json, os
 from .fetch_history import DATA
 from .parlays import decimal, legs_for, best_parlays, results, eastern_today
 
-STAKE = 5.0
+STAKE = 20.0
 KINDS = ("winner", "spread", "parlay", "prop", "sgp")
 LOG = os.path.join(DATA, "bestbets_log.csv")
 COLS = ["slot", "date", "kind", "bet", "status", "profit", "logged_at"]

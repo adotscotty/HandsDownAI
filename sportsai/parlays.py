@@ -1,4 +1,4 @@
-"""Suggested 2- and 3-game spread parlays, and a running record assuming a $5 bet on each.
+"""Suggested 2- and 3-game spread parlays, and a running record assuming a $20 bet on each.
 
 How picks are made: for every upcoming game in the next 24 hours with a betting line, take the side
 our main prediction favors against the spread, with its chance of covering. A parlay pays only if
@@ -7,12 +7,12 @@ chance x payout - stake. For each sport we show the best 2-game parlay (if it ha
 and the best 3-game parlay (if it has 6+ games), all legs from that sport.
 
 Tracking: one card per sport per day. It is locked 45 minutes before its first game, then every parlay
-on it is graded when its games are final, at $5 each. Results: data/parlays_log.csv.
+on it is graded when its games are final, at $20 each. Results: data/parlays_log.csv.
 """
 import csv, datetime as dt, itertools, json, os
 from .fetch_history import DATA
 
-STAKE = 5.0
+STAKE = 20.0
 LOG = os.path.join(DATA, "parlays_log.csv")
 COLS = ["slot", "sport", "kind", "rank", "first_start", "legs", "chance", "payout", "projected_profit",
         "status", "returned", "profit", "logged_at"]
@@ -120,7 +120,7 @@ def from_row(r):
 def update_parlays(preds):
     """One card per sport per day (US Eastern): the best 2-game and 3-game parlay, each only when the
     sport has enough games. A sport's card keeps updating until its first game is 45 minutes away;
-    then it is locked, tracked at $5 per parlay, and shown for the rest of the day."""
+    then it is locked, tracked at $20 per parlay, and shown for the rest of the day."""
     now = dt.datetime.now(dt.timezone.utc)
     today = eastern_today(now)
     log = load_log()

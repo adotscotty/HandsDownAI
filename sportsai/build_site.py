@@ -162,9 +162,9 @@ def daily(day):
 
     # Best win: biggest money win, else the biggest cover
     wins = [(x["profit"], f'{BET_NAMES[x["kind"]]}: ' + " + ".join(leg_txt(l) for l in x["legs"]),
-             f'won ${x["profit"]:.2f} on $5') for x in best if x["status"] == "won"]
+             f'won ${x["profit"]:.2f} on $20') for x in best if x["status"] == "won"]
     wins += [(x["profit"], f'{"2" if x["kind"] == "two" else "3"}-game parlay: ' + ", ".join(leg_txt(l) for l in x["legs"]),
-              f'won ${x["profit"]:.2f} on $5') for x in parlays if x["status"] == "won"]
+              f'won ${x["profit"]:.2f} on $20') for x in parlays if x["status"] == "won"]
     wins += [(x["profit"], f'{x["name"]} {x["side"]} {x["line"]:g} {x["label"]}', f'hit with {x["actual"]}, won ${x["profit"]:.2f}')
              for x in props if x["result"] == "win"]
     best_win = None

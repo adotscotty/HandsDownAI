@@ -100,7 +100,7 @@ function renderProps() {
   if (P.recent.length) {
     const h = el("table", {}, el("tr", {}, el("th", { text: "Prop" }), el("th", { class: "r", text: "Actual" }), el("th", { class: "r", text: "Result" })));
     for (const x of P.recent) {
-      const res = x.result === "win" ? `Won ${money(+x.profit)}` : x.result === "loss" ? "Lost -$5.00" : x.result === "void" ? "Void (sat out)" : "Push";
+      const res = x.result === "win" ? `Won ${money(+x.profit)}` : x.result === "loss" ? "Lost -$20.00" : x.result === "void" ? "Void (sat out)" : "Push";
       h.append(el("tr", {}, el("td", {}, `${x.name} ${x.side} ${x.line} ${x.label} (${priceTxt(x.price)})`, el("small", { text: " · " + x.game })),
         el("td", { class: "r", text: x.actual || "–" }),
         el("td", { class: "r " + (x.result === "win" ? "w" : x.result === "loss" ? "l" : ""), text: res })));
@@ -197,7 +197,7 @@ function parlayCard(p, title) {
   return el("div", { class: "card" }, el("h3", {}, title, status), legs,
     el("div", { class: "nums" },
       el("div", {}, el("small", { text: "Chance to win" }), Math.round(p.chance * 1000) / 10 + "%"),
-      el("div", {}, el("small", { text: "Pays on $5" }), money(p.payout)),
+      el("div", {}, el("small", { text: "Pays on $20" }), money(p.payout)),
       el("div", { class: proj < 0 ? "neg" : "pos" }, el("small", { text: "Projected" }),
         `${money(proj)} (${(100 * proj / 5).toFixed(0)}%)`)));
 }
@@ -238,7 +238,7 @@ function renderParlays() {
   if (P.history.length) {
     const h = el("table", {}, el("tr", {}, el("th", { text: "Parlay" }), el("th", { class: "r", text: "Result" })));
     for (const x of P.history) {
-      const res = x.status === "open" ? "Pending" : x.status === "won" ? `Won ${money(+x.profit)}` : "Lost -$5.00";
+      const res = x.status === "open" ? "Pending" : x.status === "won" ? `Won ${money(+x.profit)}` : "Lost -$20.00";
       h.append(el("tr", {}, el("td", { text: x.legs.map(l => `${l.team} ${lineTxt(l.line)}`).join(", ") }),
         el("td", { class: "r " + (x.status === "won" ? "w" : x.status === "lost" ? "l" : ""), text: res })));
     }
@@ -313,7 +313,7 @@ function betCard(kind, b) {
     el("small", { text: `${SPORT_NAMES[l.sport]} · ${l.game} · ${whenTxt(l.start)} · ${priceTxt(l.odds)}` })));
   let status;
   if (b.status === "won") status = el("div", { class: "status w", text: `Won ${money(+b.profit)}` });
-  else if (b.status === "lost") status = el("div", { class: "status l", text: "Lost -$5.00" });
+  else if (b.status === "lost") status = el("div", { class: "status l", text: "Lost -$20.00" });
   else if (b.status === "push") status = el("div", { class: "status", text: "Push, money back" });
   else if (b.locked) status = el("div", { class: "status", text: "Locked · waiting on the game" });
   else status = el("div", { class: "status muted", text: "Can still change until 45 min before start" });
@@ -321,7 +321,7 @@ function betCard(kind, b) {
     el("div", { class: "nums" },
       el("div", {}, el("small", { text: "Price" }), priceTxt(b.price)),
       el("div", {}, el("small", { text: "Chance" }), Math.round(b.chance * 100) + "%"),
-      el("div", {}, el("small", { text: "Pays on $5" }), money(b.payout))),
+      el("div", {}, el("small", { text: "Pays on $20" }), money(b.payout))),
     status);
 }
 
@@ -385,7 +385,7 @@ function dayDetail(d, box) {
   if (s.parlays[0] + s.parlays[1]) tile("Parlays", s.parlays);
   if (s.props[0] + s.props[1]) tile("Props", s.props);
   if (s.best_bets[0] + s.best_bets[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1])
-    tiles.append(el("div", { class: "tile" }, el("small", { text: "Profit ($5 bets)" }),
+    tiles.append(el("div", { class: "tile" }, el("small", { text: "Profit ($20 bets)" }),
       el("strong", { class: s.profit < 0 ? "neg" : s.profit > 0 ? "pos" : "", text: money(s.profit) })));
   box.append(tiles);
   if (d.best_bets.length) {

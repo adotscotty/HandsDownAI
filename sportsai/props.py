@@ -1,6 +1,6 @@
 """Player props (NBA + NFL): project each player's stats, compare with DraftKings' over/under
 (free through ESPN), and pick the one best prop per game. Picks are locked before tip-off/kickoff
-and graded at $5 each in data/props_log.csv.
+and graded at $20 each in data/props_log.csv.
 
 Player game logs live in data/players_<sport>.csv (built from ESPN box scores).
 Run `python -m sportsai.props build` once to create them from history.
@@ -37,7 +37,7 @@ SPREAD = {"pts": (3.015, 0.3), "reb": (1.442, 0.4), "ast": (1.277, 0.4), "tpm": 
           "pr_yds": (18.653, 0.3)}
 MODEL_W = 0.5      # how much to trust our projection vs DraftKings' (no-vig) price
 MIN_EV = 0.03      # only pick a prop that looks at least 3% profitable
-STAKE = 5.0
+STAKE = 20.0
 
 
 # ---------- player game logs ----------
