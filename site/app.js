@@ -176,7 +176,7 @@ function whyBox(g) {
   items.push(`Our model adds that up to the ${mm >= 0 ? H : A} by ${Math.abs(mm).toFixed(1)}.`);
   if (g.spread != null) {
     const vf = -g.spread, pm = g.predicted_home_margin;
-    items.push(`Vegas has ${Math.abs(vf) < 0.25 ? "it a pick'em" : `the ${vf > 0 ? H : A} by ${Math.abs(vf).toFixed(1)}`}. Vegas is usually sharper, so our prediction is 90% Vegas and 10% our model: the ${pm >= 0 ? H : A} by ${Math.abs(pm).toFixed(1)}.`);
+    items.push(`Vegas has ${Math.abs(vf) < 0.25 ? "it a pick'em" : `the ${vf > 0 ? H : A} by ${Math.abs(vf).toFixed(1)}`}. Vegas is usually sharper, so our prediction is 60% Vegas and 40% our model: the ${pm >= 0 ? H : A} by ${Math.abs(pm).toFixed(1)}.`);
     const d = pm + g.spread;
     if (Math.abs(d) >= 0.05) items.push(`That's ${d > 0 ? "a bit more" : "a bit less"} than Vegas gives the ${H}, so our spread pick is the ${d > 0 ? H : A}. Our chance it covers: ${Math.round(100 * Math.max(g.home_cover_prob, 1 - g.home_cover_prob))}%.`);
   }
