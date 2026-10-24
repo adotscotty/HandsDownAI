@@ -35,6 +35,9 @@ jobs:
       - name: Make predictions (latest scores, injuries and odds from ESPN)
         run: python -m sportsai.predict
 
+      - name: Save ESPN power index (once a day, for later testing)
+        run: python -m sportsai.powerindex || true
+
       - name: Build website data
         run: python -m sportsai.build_site
 
@@ -42,7 +45,7 @@ jobs:
         run: |
           git config user.name "sports-ai-bot"
           git config user.email "sports-ai-bot@users.noreply.github.com"
-          git add data/current_*.csv data/season_*.csv data/pregame_log.csv data/parlays_log.csv data/props_log.csv data/players_*.csv data/bestbets_log.csv
+          git add data/current_*.csv data/season_*.csv data/pregame_log.csv data/parlays_log.csv data/props_log.csv data/players_*.csv data/bestbets_log.csv data/powerindex
           if ! git diff --cached --quiet; then
             git commit -m "Update finished games"
             git pull --rebase -X theirs origin main && git push origin HEAD:main

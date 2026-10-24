@@ -170,6 +170,13 @@ def predict_sport(sport, settings, blend_w=0.0):
         for side in ("home", "away"):
             team = g[side + "_id"]
             injuries = injury_list(s or {}, team)
+            if sport == "nba":  # a game-time decision who sat out the last game will most likely sit again
+                last = model.last_game.get(team)
+                prev = model.recent[team][-1] if model.recent[team] else None
+                if prev is not None and last is not None and (dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00")) - last).days <= 10:
+                    for i in injuries:
+                        if 0 < i["weight"] < 0.75 and i["id"] not in prev:
+                            i["weight"], i["status"] = 0.75, i["status"] + ", missed last game"
             weights = {i["id"]: i["weight"] for i in injuries}
             if sport == "nba":
                 regs = model.regulars(team)
