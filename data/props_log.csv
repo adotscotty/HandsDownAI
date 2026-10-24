@@ -2,14 +2,14 @@ sport,event_id,date,game,pid,name,stat,label,side,line,price,projection,prob,ev,
 nba,401909093,2026-10-22T23:00Z,Cleveland Cavaliers at Philadelphia 76ers,2581018,Kentavious Caldwell-Pope,tpm,threes,under,1.5,-198,1.0,0.636,-0.043,1,win,10.12,2026-10-22T22:42+00:00
 nba,401909094,2026-10-23T01:30Z,Denver Nuggets at Oklahoma City Thunder,4433255,Chet Holmgren,tpm,threes,under,1.5,-237,0.8,0.692,-0.016,0,win,8.44,2026-10-23T00:55+00:00
 nba,401909848,2026-10-23T20:00Z,Chicago Bulls at Milwaukee Bucks,5044385,Leonard Miller,tpm,threes,under,1.5,-239,1.4,0.593,-0.159,2,loss,-20.00,2026-10-23T19:26+00:00
-nba,401909095,2026-10-23T23:00Z,New York Knicks at Boston Celtics,4431823,Miles McBride,tpm,threes,under,1.5,-228,1.2,0.625,-0.101,,,,2026-10-23T22:23+00:00
-nba,401909843,2026-10-23T23:00Z,Atlanta Hawks at Charlotte Hornets,3032979,Dennis Schroder,tpm,threes,under,1.5,-236,0.7,0.728,0.036,,,,2026-10-23T22:23+00:00
-nba,401909844,2026-10-23T23:00Z,Dallas Mavericks at Indiana Pacers,3133603,Kelly Oubre Jr.,tpm,threes,under,1.5,-241,1.1,0.653,-0.076,,,,2026-10-23T22:23+00:00
-nba,401909845,2026-10-23T23:00Z,Minnesota Timberwolves at Orlando Magic,4432847,Terrence Shannon Jr.,tpm,threes,over,0.5,-210,1.2,0.676,-0.003,,,,2026-10-23T22:23+00:00
-nba,401909846,2026-10-23T23:00Z,Toronto Raptors at Washington Wizards,5160992,Alex Sarr,tpm,threes,under,1.5,-230,0.9,0.676,-0.03,,,,2026-10-23T22:23+00:00
-nba,401909847,2026-10-24T00:00Z,Detroit Pistons at Miami Heat,3908845,John Collins,ast,assists,under,1.5,-232,1.0,0.648,-0.073,,,,2026-10-23T23:17+00:00
-nba,401909096,2026-10-24T01:30Z,Houston Rockets at San Antonio Spurs,4433192,Tari Eason,tpm,threes,under,1.5,-233,1.2,0.633,-0.096,,,,2026-10-24T01:17+00:00
-nba,401909849,2026-10-24T01:30Z,New Orleans Pelicans at Utah Jazz,4397136,Saddiq Bey,tpm,threes,under,1.5,-201,2.5,0.45,-0.326,,,,2026-10-24T01:17+00:00
-nba,401909850,2026-10-24T02:00Z,Memphis Grizzlies at Golden State Warriors,4431785,Scotty Pippen Jr.,tpm,threes,over,0.5,-214,1.1,0.667,-0.021,,,,2026-10-24T01:17+00:00
-nba,401909851,2026-10-24T02:00Z,LA Clippers at Los Angeles Lakers,3907498,Matisse Thybulle,tpm,threes,under,1.5,-243,1.0,0.666,-0.06,,,,2026-10-24T01:17+00:00
-nba,401909852,2026-10-24T02:00Z,Portland Trail Blazers at Sacramento Kings,5105565,Donovan Clingan,tpm,threes,over,0.5,-224,1.2,0.68,-0.016,,,,2026-10-24T01:17+00:00
+nba,401909095,2026-10-23T23:00Z,New York Knicks at Boston Celtics,4431823,Miles McBride,tpm,threes,under,1.5,-228,1.2,0.625,-0.101,6,loss,-20.00,2026-10-23T22:23+00:00
+nba,401909843,2026-10-23T23:00Z,Atlanta Hawks at Charlotte Hornets,3032979,Dennis Schroder,tpm,threes,under,1.5,-236,0.7,0.728,0.036,0,win,8.47,2026-10-23T22:23+00:00
+nba,401909844,2026-10-23T23:00Z,Dallas Mavericks at Indiana Pacers,3133603,Kelly Oubre Jr.,tpm,threes,under,1.5,-241,1.1,0.653,-0.076,1,win,8.30,2026-10-23T22:23+00:00
+nba,401909845,2026-10-23T23:00Z,Minnesota Timberwolves at Orlando Magic,4432847,Terrence Shannon Jr.,tpm,threes,over,0.5,-210,1.2,0.676,-0.003,2,win,9.52,2026-10-23T22:23+00:00
+nba,401909846,2026-10-23T23:00Z,Toronto Raptors at Washington Wizards,5160992,Alex Sarr,tpm,threes,under,1.5,-230,0.9,0.676,-0.03,1,win,8.70,2026-10-23T22:23+00:00
+nba,401909847,2026-10-24T00:00Z,Detroit Pistons at Miami Heat,3908845,John Collins,ast,assists,under,1.5,-232,1.0,0.648,-0.073,1,win,8.62,2026-10-23T23:17+00:00
+nba,401909096,2026-10-24T01:30Z,Houston Rockets at San Antonio Spurs,4433192,Tari Eason,tpm,threes,under,1.5,-233,1.2,0.633,-0.096,0,win,8.58,2026-10-24T01:17+00:00
+nba,401909849,2026-10-24T01:30Z,New Orleans Pelicans at Utah Jazz,4397136,Saddiq Bey,tpm,threes,under,1.5,-201,2.5,0.45,-0.326,3,loss,-20.00,2026-10-24T01:17+00:00
+nba,401909850,2026-10-24T02:00Z,Memphis Grizzlies at Golden State Warriors,4431785,Scotty Pippen Jr.,tpm,threes,over,0.5,-214,1.1,0.667,-0.021,0,loss,-20.00,2026-10-24T01:17+00:00
+nba,401909851,2026-10-24T02:00Z,LA Clippers at Los Angeles Lakers,3907498,Matisse Thybulle,tpm,threes,under,1.5,-243,1.0,0.666,-0.06,3,loss,-20.00,2026-10-24T01:17+00:00
+nba,401909852,2026-10-24T02:00Z,Portland Trail Blazers at Sacramento Kings,5105565,Donovan Clingan,tpm,threes,over,0.5,-224,1.2,0.68,-0.016,0,loss,-20.00,2026-10-24T01:17+00:00
