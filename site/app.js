@@ -565,6 +565,7 @@ function legNow(l) {
     const r = (BOX[l.event_id] || {})[l.pid];
     if (!r) return { txt: done ? "didn't play" : "no stats yet", good: null, done };
     const v = COMBOS[l.stat] ? COMBOS[l.stat].reduce((a, k) => a + (r[k] || 0), 0) : (r[l.stat] || 0);
+    l = { ...l, label: v === 1 && /s$/.test(l.label) ? l.label.replace(/es$/, "e").replace(/s$/, "") : l.label };
     if (l.side === "over") {
       if (v > l.line) return { txt: `${v} ${l.label}, hit`, good: true, done: true };
       const need = Math.floor(l.line) + 1 - v;
