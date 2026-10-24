@@ -164,6 +164,7 @@ function whyBox(g) {
   const gap = w.home_rating - w.away_rating;
   items.push(Math.abs(gap) < 0.5 ? `Team strength: our ratings have these teams about even.`
     : `Team strength: our ratings have the ${toward(gap)} ${pts(gap)} better than the ${gap > 0 ? A : H} on a neutral field.`);
+  if (w.espn_adj) items.push(`ESPN check: ESPN's power index sees a ${Math.abs(w.espn_gap).toFixed(1)}-pt gap${Math.abs(w.espn_gap) >= 0.5 ? ` favoring the ${toward(w.espn_gap)}` : ""}, far from ours, so we moved ${pts(w.espn_adj)} toward the ${toward(w.espn_adj)}.`);
   items.push(w.home_field ? `Home ${g.sport === "nba" ? "court" : "field"}: worth ${pts(w.home_field)} to the ${H}.` : `Neutral site, so no home edge.`);
   if (Math.abs(g.injury_adjustment) >= 0.1) items.push(`Injuries: move it ${pts(g.injury_adjustment)} toward the ${toward(g.injury_adjustment)}.`);
   if (Math.abs(w.lineup) >= 0.5) items.push(`Who's expected to play: moves it ${pts(w.lineup)} toward the ${toward(w.lineup)}.`);

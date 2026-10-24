@@ -102,6 +102,20 @@ def injury_list(summary, team_id):
     return out
 
 
+# How far our team-strength gap may differ from ESPN's power index before we pull it back
+# (tested on NFL 2023-25: a 6-point cutoff was the only one that didn't hurt; college ratings spread wider).
+ESPN_CAP = {"nfl": 6.0, "nba": 6.0, "cfb": 10.0}
+
+
+def latest_powerindex(sport):
+    folder = os.path.join(DATA, "powerindex")
+    try:
+        files = sorted(f for f in os.listdir(folder) if f.startswith(sport + "-"))
+        return json.load(open(os.path.join(folder, files[-1])))["ratings"] if files else {}
+    except Exception:
+        return {}
+
+
 def blend(model_margin, spread, w):
     """Main prediction: mostly the betting line, tilted toward our model by weight w."""
     if spread is None:
@@ -153,6 +167,7 @@ def predict_sport(sport, settings, blend_w=0.0):
             ath = (d or {}).get("athletes") or []
             if len(ath) >= 8:
                 rosters[tid] = {str(a["id"]) for a in ath}
+    espn = latest_powerindex(sport)
     form = {}  # team -> this season's results, oldest first (+1 win / -1 loss, margin)
     for r in sorted(this_season, key=lambda r: r["date"]):
         if r.get("home_score") is None or r.get("away_score") is None:
@@ -206,6 +221,15 @@ def predict_sport(sport, settings, blend_w=0.0):
             late = model.late_flags(h, when, g.get("season_type")) + model.late_flags(a, when, g.get("season_type"))
         m, wp = model.predict(g["home_id"], g["away_id"], g["neutral"], g["home_fbs"], g["away_fbs"],
                               hi["missing"], ai["missing"], rest, hi["qb_drop"], ai["qb_drop"], pf, lud, late)
+        espn_gap, espn_adj = None, 0.0  # ESPN power index as a check on extreme outliers
+        eh, ea = espn.get(str(g["home_id"])), espn.get(str(g["away_id"]))
+        if eh is not None and ea is not None:
+            espn_gap = eh - ea
+            d = (model.rating(g["home_id"], g["home_fbs"]) - model.rating(g["away_id"], g["away_fbs"])) - espn_gap
+            if abs(d) > ESPN_CAP[sport]:
+                espn_adj = -(d - ESPN_CAP[sport]) if d > 0 else -(d + ESPN_CAP[sport])
+                m += espn_adj
+                wp = win_prob(m, model.p["sigma"])
         injury_pts = (-model.p["beta"] * (hi["missing"] - ai["missing"])
                       - model.p["qbq"] * (hi["qb_drop"] - ai["qb_drop"]))
         main = blend(m, g["spread"], blend_w)
@@ -229,6 +253,7 @@ def predict_sport(sport, settings, blend_w=0.0):
                 lineup=round(model.p.get("lu", 0) * lud, 1),
                 late=round(-(model.p.get("late_tank", 0) * (late[0] - late[2]) + model.p.get("late_top", 0) * (late[1] - late[3])), 1),
                 home_form=summary(g["home_id"]), away_form=summary(g["away_id"]),
+                espn_gap=None if espn_gap is None else round(espn_gap, 1), espn_adj=round(espn_adj, 1),
             ),
         ))
     return preds, this_season
