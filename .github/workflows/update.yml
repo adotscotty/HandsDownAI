@@ -42,6 +42,7 @@ jobs:
         run: python -m sportsai.build_site
 
       - name: Save finished games and pre-game picks
+        if: always()   # save locked picks even if a later step breaks, so no picks are lost
         run: |
           git config user.name "sports-ai-bot"
           git config user.email "sports-ai-bot@users.noreply.github.com"
