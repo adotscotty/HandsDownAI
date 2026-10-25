@@ -118,9 +118,9 @@ def line_txt(x):
 
 
 def leg_txt(l):
-    if l["type"] == "prop":
+    if l.get("type") == "prop":
         return f'{l["name"]} {l["side"]} {l["line"]:g} {l["label"]}'
-    if l["type"] == "ml":
+    if l.get("type") == "ml":
         return f'{l.get("team_name") or l["team"]} to win'
     return f'{l["team"]} {line_txt(l["line"])}'
 
