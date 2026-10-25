@@ -13,6 +13,6 @@ nba,401909849,2026-10-24T01:30Z,New Orleans Pelicans at Utah Jazz,4397136,Saddiq
 nba,401909850,2026-10-24T02:00Z,Memphis Grizzlies at Golden State Warriors,4431785,Scotty Pippen Jr.,tpm,threes,over,0.5,-214,1.1,0.667,-0.021,0,loss,-20.00,2026-10-24T01:17+00:00
 nba,401909851,2026-10-24T02:00Z,LA Clippers at Los Angeles Lakers,3907498,Matisse Thybulle,tpm,threes,under,1.5,-243,1.0,0.666,-0.06,3,loss,-20.00,2026-10-24T01:17+00:00
 nba,401909852,2026-10-24T02:00Z,Portland Trail Blazers at Sacramento Kings,5105565,Donovan Clingan,tpm,threes,over,0.5,-224,1.2,0.68,-0.016,0,loss,-20.00,2026-10-24T01:17+00:00
-nba,401909853,2026-10-24T22:00Z,Miami Heat at Charlotte Hornets,4433249,Moussa Diabate,ast,assists,over,1.5,-189,2.3,0.643,-0.017,,,,2026-10-24T21:38+00:00
-nba,401909854,2026-10-24T23:30Z,Brooklyn Nets at Cleveland Cavaliers,4432158,Evan Mobley,tpm,threes,over,0.5,-209,1.2,0.671,-0.008,,,,2026-10-24T23:03+00:00
-nba,401909855,2026-10-24T23:30Z,Milwaukee Bucks at Philadelphia 76ers,3134907,Kyle Kuzma,tpm,threes,under,1.5,-229,1.5,0.58,-0.167,,,,2026-10-24T23:03+00:00
+nba,401909853,2026-10-24T22:00Z,Miami Heat at Charlotte Hornets,4433249,Moussa Diabate,ast,assists,over,1.5,-189,2.3,0.643,-0.017,2,win,10.58,2026-10-24T21:38+00:00
+nba,401909854,2026-10-24T23:30Z,Brooklyn Nets at Cleveland Cavaliers,4432158,Evan Mobley,tpm,threes,over,0.5,-209,1.2,0.671,-0.008,2,win,9.57,2026-10-24T23:03+00:00
+nba,401909855,2026-10-24T23:30Z,Milwaukee Bucks at Philadelphia 76ers,3134907,Kyle Kuzma,tpm,threes,under,1.5,-229,1.5,0.58,-0.167,0,win,8.73,2026-10-24T23:03+00:00
