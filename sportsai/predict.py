@@ -10,6 +10,7 @@ from .espn import get_json, get_many, scoreboard_url, summary_url, roster_url
 from .fetch_history import DATA, days, main_teams, add_lineups, add_closing_spreads, fbs_teams_from_games
 from .backtest import load
 from .model import run, RatingModel, win_prob
+from .nbainjury import latest_report as nba_official_report, norm as norm_name
 
 CURRENT = {"nfl": (2026, "2026-09-01"), "nba": (2026, "2026-10-01"), "cfb": (2026, "2026-08-22")}
 LOOKAHEAD = {"nfl": 7, "nba": 2, "cfb": 7}
@@ -116,6 +117,21 @@ def latest_powerindex(sport):
         return {}
 
 
+OFFICIAL_WEIGHT = {"Out": 1.0, "Doubtful": 0.75, "Questionable": 0.4, "Probable": 0.05, "Available": 0.0}
+
+
+def apply_official(injuries, report, roster):
+    """NBA: the league's official report overrides ESPN's statuses and adds players ESPN missed."""
+    by_name = {norm_name(i["name"] or ""): i for i in injuries}
+    ids = {v: k for k, v in roster.items()}
+    for nm, status in report.items():
+        if nm in by_name:
+            by_name[nm].update(status=status + " (official)", weight=OFFICIAL_WEIGHT[status])
+        elif nm in ids and OFFICIAL_WEIGHT[status] > 0:
+            injuries.append(dict(id=ids[nm], name=nm.title(), pos=None, status=status + " (official)", weight=OFFICIAL_WEIGHT[status]))
+    return injuries
+
+
 def blend(model_margin, spread, w):
     """Main prediction: mostly the betting line, tilted toward our model by weight w."""
     if spread is None:
@@ -166,7 +182,8 @@ def predict_sport(sport, settings, blend_w=0.0):
         for tid, d in zip(ids, get_many([roster_url(sport, t) for t in ids], cache=False)):
             ath = (d or {}).get("athletes") or []
             if len(ath) >= 8:
-                rosters[tid] = {str(a["id"]) for a in ath}
+                rosters[tid] = {str(a["id"]): norm_name(a.get("displayName", "")) for a in ath}
+        official = nba_official_report({g[s + "_name"] for g in upcoming for s in ("home", "away")})
     espn = latest_powerindex(sport)
     form = {}  # team -> this season's results, oldest first (+1 win / -1 loss, margin)
     for r in sorted(this_season, key=lambda r: r["date"]):
@@ -185,12 +202,14 @@ def predict_sport(sport, settings, blend_w=0.0):
         for side in ("home", "away"):
             team = g[side + "_id"]
             injuries = injury_list(s or {}, team)
+            if sport == "nba" and official.get(g[side + "_name"]):
+                injuries = apply_official(injuries, official[g[side + "_name"]], rosters.get(team, {}))
             if sport == "nba":  # a game-time decision who sat out the last game will most likely sit again
                 last = model.last_game.get(team)
                 prev = model.recent[team][-1] if model.recent[team] else None
                 if prev is not None and last is not None and (dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00")) - last).days <= 10:
                     for i in injuries:
-                        if 0 < i["weight"] < 0.75 and i["id"] not in prev:
+                        if 0.2 < i["weight"] < 0.75 and i["id"] not in prev:  # game-time decisions, not "probable"
                             i["weight"], i["status"] = 0.75, i["status"] + ", missed last game"
             weights = {i["id"]: i["weight"] for i in injuries}
             if sport == "nba":

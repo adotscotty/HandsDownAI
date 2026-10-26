@@ -32,6 +32,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install PDF reader (for the NBA's official injury report)
+        run: which pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils) || true
+
       - name: Make predictions (latest scores, injuries and odds from ESPN)
         run: python -m sportsai.predict
 
