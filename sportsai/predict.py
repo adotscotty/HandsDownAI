@@ -309,7 +309,7 @@ def log_first_lines(preds):
                                   first_spread=p["spread"], first_pred=p["predicted_home_margin"],
                                   first_seen=now.isoformat(timespec="minutes"))
         new = True
-    if new:
+    if new or not os.path.exists(path):
         with open(path, "w", newline="") as f:
             w = csv.DictWriter(f, FIRST_COLS)
             w.writeheader()
