@@ -9,7 +9,7 @@ How it works, in plain terms:
 - Injury penalty: NBA uses the value of regular players who are missing;
   NFL / college use whether the team's usual starting quarterback is missing.
 """
-import datetime as dt
+import datetime as dt, json, os
 import math
 from collections import defaultdict, deque
 
@@ -31,7 +31,7 @@ DEFAULTS = {
     #       late_tank / late_top: points taken off weak / strong teams in the last weeks of the season
     "nfl": dict(k=0.10, early=2.0, carry=0.6, hfa=1.8, cap=24, beta=4.0, sigma=13.0, new=0.0,
                 rest=0.0, rest_cap=14, qbq=0.0, qb_repl=4.5, epa_w=0.0, epa_scale=0.8, epa_close=0),
-    "nba": dict(k=0.06, early=2.0, carry=0.6, hfa=2.5, cap=25, beta=0.5, sigma=12.5, new=0.0,
+    "nba": dict(wt_w=0.75, wt_k=2.7, k=0.06, early=2.0, carry=0.6, hfa=2.5, cap=25, beta=0.5, sigma=12.5, new=0.0,
                 rest=0.0, rest_cap=3, qbq=0.0, qb_repl=0.0,
                 lu=0.7, lu_mix=0.0, luck=0.25, pace_adj=1, late_tank=5.0, late_top=0.0),
     "cfb": dict(k=0.12, early=2.0, carry=0.7, hfa=2.8, cap=35, beta=5.0, sigma=15.5, new=-18.0,
@@ -63,12 +63,23 @@ class RatingModel:
         self.pace = {}                                        # team -> possessions per game (smoothed)
         self.lg_pace, self.lg_3p = 99.0, 0.36
         self.wl = defaultdict(lambda: [0, 0])                 # team -> [wins, games] this season
+        self.preseason = {}                                   # season -> {team: preseason win total}
+        path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", f"wintotals_{sport}.json")
+        if os.path.exists(path):
+            self.preseason = json.load(open(path)).get("wins", {})
 
     # ---------- season handling ----------
     def start_season(self, season):
         if self.season is not None and season != self.season:
             for t in self.r:
                 self.r[t] *= self.p["carry"]
+            # Preseason win totals know about offseason trades and signings: mix them in
+            # (NBA test 2023-25: first-month spread picks 51% -> 55%, average miss 10.2 -> 10.0)
+            wt = self.preseason.get(str(season), {})
+            w = self.p.get("wt_w", 0.0)
+            for t, wins in wt.items():
+                if w and wins:
+                    self.r[t] = (1 - w) * self.r[t] + w * (wins - 41) / self.p.get("wt_k", 2.7)
             self.n.clear()
             self.wl.clear()
             # Player history and QBs carry over, so injuries count from opening night.
