@@ -1,44 +1,44 @@
 sport,event_id,date,home,home_name,away,away_name,home_score,away_score,spread,pred,pred_model,win_prob,home_missing,away_missing,home_fbs,away_fbs
-nba,401909088,2026-10-20T19:00Z,DET,Detroit Pistons,BOS,Boston Celtics,121,113,1.5,0.1,2.51,0.5,18.55,25.82,1,1
-nba,401909089,2026-10-20T23:00Z,NY,New York Knicks,PHI,Philadelphia 76ers,100,106,-4.5,5.93,8.08,0.69,0.0,27.81,1,1
-nba,401909090,2026-10-21T01:50Z,SA,San Antonio Spurs,OKC,Oklahoma City Thunder,104,116,1.5,0.1,2.49,0.5,0.0,4.33,1,1
-nba,401909835,2026-10-21T23:00Z,WSH,Washington Wizards,MIL,Milwaukee Bucks,128,116,-4.5,2.26,-1.09,0.57,59.56,28.21,1,1
-nba,401909834,2026-10-21T23:00Z,ORL,Orlando Magic,ATL,Atlanta Hawks,125,132,-2.5,2.19,1.72,0.57,7.39,8.56,1,1
-nba,401909091,2026-10-21T23:30Z,MIA,Miami Heat,MIN,Minnesota Timberwolves,106,131,-1.5,0.53,-0.92,0.52,57.68,19.3,1,1
-nba,401909836,2026-10-21T23:30Z,BKN,Brooklyn Nets,CHA,Charlotte Hornets,103,110,1.5,-1.42,-1.29,0.45,61.17,57.55,1,1
-nba,401909837,2026-10-21T23:30Z,TOR,Toronto Raptors,CHI,Chicago Bulls,135,92,-10.5,9.0,6.75,0.77,22.98,38.15,1,1
-nba,401909838,2026-10-22T00:00Z,MEM,Memphis Grizzlies,UTAH,Utah Jazz,123,103,-1.5,0.8,-0.24,0.53,83.15,52.88,1,1
-nba,401909839,2026-10-22T00:00Z,NO,New Orleans Pelicans,IND,Indiana Pacers,120,123,2.5,1.06,6.41,0.53,7.02,49.81,1,1
-nba,401909840,2026-10-22T00:30Z,HOU,Houston Rockets,DAL,Dallas Mavericks,128,110,-9.5,9.14,8.59,0.77,3.17,56.21,1,1
-nba,401909092,2026-10-22T02:00Z,LAL,Los Angeles Lakers,GS,Golden State Warriors,127,105,-6.5,5.62,4.3,0.68,68.0,44.86,1,1
-nba,401909841,2026-10-22T02:00Z,POR,Portland Trail Blazers,PHX,Phoenix Suns,124,83,-3.5,3.32,3.04,0.61,26.98,19.64,1,1
-nba,401909842,2026-10-22T02:30Z,LAC,LA Clippers,SAC,Sacramento Kings,121,96,-5.5,4.69,3.48,0.65,55.23,66.07,1,1
-nba,401909093,2026-10-22T23:00Z,PHI,Philadelphia 76ers,CLE,Cleveland Cavaliers,114,106,-2.5,2.62,2.8,0.58,27.81,16.06,1,1
-nba,401909094,2026-10-23T01:30Z,OKC,Oklahoma City Thunder,DEN,Denver Nuggets,96,84,-7.5,7.83,8.31,0.74,4.33,24.59,1,1
-nba,401909848,2026-10-23T20:00Z,MIL,Milwaukee Bucks,CHI,Chicago Bulls,125,132,-1.5,1.84,2.36,0.56,33.37,38.15,1,1
-nba,401909095,2026-10-23T23:00Z,BOS,Boston Celtics,NY,New York Knicks,107,103,-2.5,1.0,-1.26,0.53,25.82,0.0,1,1
-nba,401909843,2026-10-23T23:00Z,CHA,Charlotte Hornets,ATL,Atlanta Hawks,81,128,2.5,-1.67,-0.43,0.45,57.55,8.56,1,1
-nba,401909844,2026-10-23T23:00Z,IND,Indiana Pacers,DAL,Dallas Mavericks,105,121,-7.5,7.34,7.1,0.73,31.09,56.21,1,1
-nba,401909845,2026-10-23T23:00Z,ORL,Orlando Magic,MIN,Minnesota Timberwolves,93,115,-1.5,0.31,-1.48,0.51,7.39,19.3,1,1
-nba,401909846,2026-10-23T23:00Z,WSH,Washington Wizards,TOR,Toronto Raptors,102,112,9.5,-7.66,-4.91,0.27,39.08,22.98,1,1
-nba,401909847,2026-10-24T00:00Z,MIA,Miami Heat,DET,Detroit Pistons,111,128,2.5,-3.74,-5.59,0.38,46.17,18.55,1,1
-nba,401909096,2026-10-24T01:30Z,SA,San Antonio Spurs,HOU,Houston Rockets,110,114,-4.5,4.4,4.25,0.64,0.0,13.7,1,1
-nba,401909849,2026-10-24T01:30Z,UTAH,Utah Jazz,NO,New Orleans Pelicans,120,119,-1.5,-1.12,-5.05,0.46,52.88,7.02,1,1
-nba,401909850,2026-10-24T02:00Z,GS,Golden State Warriors,MEM,Memphis Grizzlies,108,111,-4.5,2.29,-1.04,0.57,35.31,59.43,1,1
-nba,401909851,2026-10-24T02:00Z,LAL,Los Angeles Lakers,LAC,LA Clippers,125,117,-8.5,6.92,4.54,0.71,72.75,55.23,1,1
-nba,401909852,2026-10-24T02:00Z,SAC,Sacramento Kings,POR,Portland Trail Blazers,120,128,9.5,-9.63,-9.83,0.22,56.94,26.98,1,1
-nba,401909853,2026-10-24T22:00Z,CHA,Charlotte Hornets,MIA,Miami Heat,115,110,4.5,-1.63,2.66,0.45,57.55,46.17,1,1
-nba,401909854,2026-10-24T23:30Z,CLE,Cleveland Cavaliers,BKN,Brooklyn Nets,125,121,-11.5,10.09,7.97,0.8,16.06,43.17,1,1
-nba,401909855,2026-10-24T23:30Z,PHI,Philadelphia 76ers,MIL,Milwaukee Bucks,127,116,-12.5,12.14,11.6,0.84,27.81,40.85,1,1
-nba,401909857,2026-10-25T00:00Z,CHI,Chicago Bulls,WSH,Washington Wizards,120,124,-1.5,1.3,1.01,0.54,38.15,47.74,1,1
-nba,401909858,2026-10-25T00:00Z,DAL,Dallas Mavericks,SA,San Antonio Spurs,106,122,14.5,-11.51,-7.03,0.17,53.29,0.0,1,1
-nba,401909856,2026-10-25T00:30Z,ATL,Atlanta Hawks,HOU,Houston Rockets,114,121,1.5,-0.53,0.93,0.48,8.56,3.17,1,1
-nba,401909859,2026-10-25T01:00Z,DEN,Denver Nuggets,NO,New Orleans Pelicans,141,135,-11.5,8.12,3.06,0.75,36.23,15.19,1,1
-nba,401909860,2026-10-25T02:00Z,PHX,Phoenix Suns,GS,Golden State Warriors,131,122,-9.5,8.25,6.37,0.75,29.21,59.9,1,1
-nba,401909861,2026-10-25T21:00Z,UTAH,Utah Jazz,LAL,Los Angeles Lakers,123,132,6.5,-6.63,-6.83,0.29,66.22,68.0,1,1
-nba,401909862,2026-10-25T22:00Z,BKN,Brooklyn Nets,IND,Indiana Pacers,109,136,5.5,-3.55,-0.63,0.39,32.05,33.03,1,1
-nba,401909865,2026-10-25T23:00Z,OKC,Oklahoma City Thunder,LAC,LA Clippers,108,101,-16.5,14.84,12.34,0.89,4.33,55.23,1,1
-nba,401909863,2026-10-25T23:00Z,NY,New York Knicks,ORL,Orlando Magic,102,111,-6.5,7.51,9.02,0.73,0.0,17.46,1,1
-nba,401909864,2026-10-25T23:00Z,MIN,Minnesota Timberwolves,TOR,Toronto Raptors,117,94,-3.5,3.54,3.61,0.61,19.3,22.98,1,1
-nba,401909866,2026-10-25T23:30Z,PHI,Philadelphia 76ers,DET,Detroit Pistons,93,106,1.5,-1.03,-0.33,0.47,59.02,42.37,1,1
-nba,401909867,2026-10-26T01:00Z,SAC,Sacramento Kings,MEM,Memphis Grizzlies,112,123,3.5,-3.95,-4.63,0.37,51.7,40.34,1,1
+nba,401909088,2026-10-20T19:00Z,DET,Detroit Pistons,BOS,Boston Celtics,121,113,1.5,-0.04,2.15,0.5,18.55,25.82,1,1
+nba,401909089,2026-10-20T23:00Z,NY,New York Knicks,PHI,Philadelphia 76ers,100,106,-4.5,4.49,4.47,0.64,0.0,27.81,1,1
+nba,401909090,2026-10-21T01:50Z,SA,San Antonio Spurs,OKC,Oklahoma City Thunder,104,116,1.5,-0.49,1.02,0.48,0.0,4.33,1,1
+nba,401909835,2026-10-21T23:00Z,WSH,Washington Wizards,MIL,Milwaukee Bucks,128,116,-4.5,3.55,2.12,0.61,59.56,28.21,1,1
+nba,401909834,2026-10-21T23:00Z,ORL,Orlando Magic,ATL,Atlanta Hawks,125,132,-2.5,2.33,2.08,0.58,7.39,8.56,1,1
+nba,401909091,2026-10-21T23:30Z,MIA,Miami Heat,MIN,Minnesota Timberwolves,106,131,-1.5,0.33,-1.41,0.51,57.68,19.3,1,1
+nba,401909836,2026-10-21T23:30Z,BKN,Brooklyn Nets,CHA,Charlotte Hornets,103,110,1.5,-0.82,0.19,0.47,61.17,57.55,1,1
+nba,401909837,2026-10-21T23:30Z,TOR,Toronto Raptors,CHI,Chicago Bulls,135,92,-10.5,9.77,8.68,0.79,22.98,38.15,1,1
+nba,401909838,2026-10-22T00:00Z,MEM,Memphis Grizzlies,UTAH,Utah Jazz,123,103,-1.5,0.04,-2.14,0.5,83.15,52.88,1,1
+nba,401909839,2026-10-22T00:00Z,NO,New Orleans Pelicans,IND,Indiana Pacers,120,123,2.5,-1.21,0.73,0.46,7.02,49.81,1,1
+nba,401909840,2026-10-22T00:30Z,HOU,Houston Rockets,DAL,Dallas Mavericks,128,110,-9.5,9.8,10.26,0.79,3.17,56.21,1,1
+nba,401909092,2026-10-22T02:00Z,LAL,Los Angeles Lakers,GS,Golden State Warriors,127,105,-6.5,5.92,5.05,0.69,68.0,44.86,1,1
+nba,401909841,2026-10-22T02:00Z,POR,Portland Trail Blazers,PHX,Phoenix Suns,124,83,-3.5,3.23,2.83,0.6,26.98,19.64,1,1
+nba,401909842,2026-10-22T02:30Z,LAC,LA Clippers,SAC,Sacramento Kings,121,96,-5.5,4.68,3.44,0.65,55.23,66.07,1,1
+nba,401909093,2026-10-22T23:00Z,PHI,Philadelphia 76ers,CLE,Cleveland Cavaliers,114,106,-2.5,3.04,3.85,0.6,27.81,16.06,1,1
+nba,401909094,2026-10-23T01:30Z,OKC,Oklahoma City Thunder,DEN,Denver Nuggets,96,84,-7.5,8.19,9.22,0.75,4.33,24.59,1,1
+nba,401909848,2026-10-23T20:00Z,MIL,Milwaukee Bucks,CHI,Chicago Bulls,125,132,-1.5,1.94,2.59,0.56,33.37,38.15,1,1
+nba,401909095,2026-10-23T23:00Z,BOS,Boston Celtics,NY,New York Knicks,107,103,-2.5,1.55,0.12,0.55,25.82,0.0,1,1
+nba,401909843,2026-10-23T23:00Z,CHA,Charlotte Hornets,ATL,Atlanta Hawks,81,128,2.5,-2.88,-3.45,0.41,57.55,8.56,1,1
+nba,401909844,2026-10-23T23:00Z,IND,Indiana Pacers,DAL,Dallas Mavericks,105,121,-7.5,8.17,9.17,0.75,31.09,56.21,1,1
+nba,401909845,2026-10-23T23:00Z,ORL,Orlando Magic,MIN,Minnesota Timberwolves,93,115,-1.5,-0.1,-2.49,0.5,7.39,19.3,1,1
+nba,401909846,2026-10-23T23:00Z,WSH,Washington Wizards,TOR,Toronto Raptors,102,112,9.5,-7.18,-3.69,0.28,39.08,22.98,1,1
+nba,401909847,2026-10-24T00:00Z,MIA,Miami Heat,DET,Detroit Pistons,111,128,2.5,-3.33,-4.57,0.39,46.17,18.55,1,1
+nba,401909096,2026-10-24T01:30Z,SA,San Antonio Spurs,HOU,Houston Rockets,110,114,-4.5,4.55,4.62,0.64,0.0,13.7,1,1
+nba,401909849,2026-10-24T01:30Z,UTAH,Utah Jazz,NO,New Orleans Pelicans,120,119,-1.5,0.4,-1.25,0.51,52.88,7.02,1,1
+nba,401909850,2026-10-24T02:00Z,GS,Golden State Warriors,MEM,Memphis Grizzlies,108,111,-4.5,2.5,-0.5,0.58,35.31,59.43,1,1
+nba,401909851,2026-10-24T02:00Z,LAL,Los Angeles Lakers,LAC,LA Clippers,125,117,-8.5,8.67,8.92,0.76,72.75,55.23,1,1
+nba,401909852,2026-10-24T02:00Z,SAC,Sacramento Kings,POR,Portland Trail Blazers,120,128,9.5,-10.99,-13.23,0.18,56.94,26.98,1,1
+nba,401909853,2026-10-24T22:00Z,CHA,Charlotte Hornets,MIA,Miami Heat,115,110,4.5,-3.08,-0.95,0.4,57.55,46.17,1,1
+nba,401909854,2026-10-24T23:30Z,CLE,Cleveland Cavaliers,BKN,Brooklyn Nets,125,121,-11.5,11.09,10.47,0.82,16.06,43.17,1,1
+nba,401909855,2026-10-24T23:30Z,PHI,Philadelphia 76ers,MIL,Milwaukee Bucks,127,116,-12.5,13.06,13.89,0.86,27.81,40.85,1,1
+nba,401909857,2026-10-25T00:00Z,CHI,Chicago Bulls,WSH,Washington Wizards,120,124,-1.5,0.28,-1.54,0.51,38.15,47.74,1,1
+nba,401909858,2026-10-25T00:00Z,DAL,Dallas Mavericks,SA,San Antonio Spurs,106,122,14.5,-12.07,-8.42,0.16,53.29,0.0,1,1
+nba,401909856,2026-10-25T00:30Z,ATL,Atlanta Hawks,HOU,Houston Rockets,114,121,1.5,-0.77,0.31,0.47,8.56,3.17,1,1
+nba,401909859,2026-10-25T01:00Z,DEN,Denver Nuggets,NO,New Orleans Pelicans,141,135,-11.5,9.57,6.66,0.78,36.23,15.19,1,1
+nba,401909860,2026-10-25T02:00Z,PHX,Phoenix Suns,GS,Golden State Warriors,131,122,-9.5,8.15,6.13,0.75,29.21,59.9,1,1
+nba,401909861,2026-10-25T21:00Z,UTAH,Utah Jazz,LAL,Los Angeles Lakers,123,132,6.5,-6.53,-6.57,0.3,66.22,68.0,1,1
+nba,401909862,2026-10-25T22:00Z,BKN,Brooklyn Nets,IND,Indiana Pacers,109,136,5.5,-4.62,-3.31,0.35,32.05,33.03,1,1
+nba,401909865,2026-10-25T23:00Z,OKC,Oklahoma City Thunder,LAC,LA Clippers,108,101,-16.5,16.91,17.52,0.92,4.33,55.23,1,1
+nba,401909863,2026-10-25T23:00Z,NY,New York Knicks,ORL,Orlando Magic,102,111,-6.5,6.92,7.55,0.71,0.0,17.46,1,1
+nba,401909864,2026-10-25T23:00Z,MIN,Minnesota Timberwolves,TOR,Toronto Raptors,117,94,-3.5,3.88,4.45,0.62,19.3,22.98,1,1
+nba,401909866,2026-10-25T23:30Z,PHI,Philadelphia 76ers,DET,Detroit Pistons,93,106,1.5,-0.54,0.91,0.48,59.02,42.37,1,1
+nba,401909867,2026-10-26T01:00Z,SAC,Sacramento Kings,MEM,Memphis Grizzlies,112,123,3.5,-5.2,-7.76,0.34,51.7,40.34,1,1
