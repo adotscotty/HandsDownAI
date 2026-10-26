@@ -224,7 +224,12 @@ def update(preds, player_rows):
         if r["status"] in ("won", "lost", "push"):
             days[r["date"]] = days.get(r["date"], 0.0) + float(r["profit"])
     history = [dict(date=d, profit=round(p, 2)) for d, p in sorted(days.items())]
+    cdays = {}
+    for r in log.values():
+        if r["status"] in ("won", "lost", "push") and r["kind"] in CORE:
+            cdays[r["date"]] = cdays.get(r["date"], 0.0) + float(r["profit"])
+    history_core = [dict(date=d, profit=round(p, 2)) for d, p in sorted(cdays.items())]
     out = dict(updated=now.isoformat(timespec="seconds"), date=today, card=card, preview=preview, record=rec, stake=STAKE,
-               history=history)
+               history=history, history_core=history_core)
     json.dump(out, open(os.path.join(DATA, "bestbets.json"), "w"), indent=1)
     return out

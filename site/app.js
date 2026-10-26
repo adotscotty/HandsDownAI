@@ -1,7 +1,7 @@
 // HandsDown AI: renders the data/*.json files the updater writes every 15 minutes.
 const SPORT = { nfl: "NFL", nba: "NBA", cfb: "College" };
 const NAMES = { winner: "Best winner", spread: "Best spread", parlay: "Long-shot parlay", prop: "Best player prop", sgp: "Same-game parlay" };
-const WHY = { winner: "Most likely team to win outright, priced -200 or better", spread: "Most likely to cover the spread (NFL and NBA)", parlay: "Best value 2- or 3-game parlay",
+const WHY = { winner: "Most likely team to win outright (-200 or better from Oct 26)", spread: "Most likely to cover the spread", parlay: "Best value 2- or 3-game parlay",
   prop: "DraftKings' most likely player prop", sgp: "Our spread pick plus a player prop, same game" };
 const KINDS = ["prop", "spread", "winner", "parlay", "sgp"];
 const CORE = ["prop", "spread", "winner"], FUN = ["parlay", "sgp"];
@@ -327,13 +327,14 @@ function dayHeadline(d) {
   const anyBets = bb[0] + bb[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1];
   return h("div", { class: "record" },
     h("div", { class: "total rise" }, h("div", { class: "big", text: anyBets ? signed(prof) : wl(...s.winners) }),
-      h("p", { text: anyBets ? `All tracked bets at $${S.stake} each: best bets ${wl(...bb)}, parlays ${wl(...s.parlays)}, props ${wl(...s.props)}.`
-        : "Winners picked." })),
+      h("p", { text: anyBets ? `All tracked bets at $${S.stake} each: straight best bets ${wl(...bb)}` + (s.long_shots ? `, long shots ${wl(...s.long_shots)}` : "") +
+        `, all parlays ${wl(...s.parlays)}, props ${wl(...s.props)}.` : "Winners picked." })),
     h("div", { class: "types rise", style: "grid-template-columns:repeat(2,1fr)" },
+      h("div", {}, h("p", { class: "lbl", text: "Best bets (straight)" }), h("div", { class: "big", text: wl(...bb) })),
+      h("div", {}, h("p", { class: "lbl", text: "Spread picks (NFL, NBA)" }), h("div", { class: "big", text: wl(...s.ats) })),
       h("div", {}, h("p", { class: "lbl", text: "Winners picked" }), h("div", { class: "big", text: wl(...s.winners) })),
-      h("div", {}, h("p", { class: "lbl", text: "Spread picks" }), h("div", { class: "big", text: wl(...s.ats) })),
-      h("div", {}, h("p", { class: "lbl", text: "Best bets" }), h("div", { class: "big", text: wl(...bb) })),
-      h("div", {}, h("p", { class: "lbl", text: "Games final" }), h("div", { class: "big", text: String(s.games) }))));
+      s.cfb_leans ? h("div", {}, h("p", { class: "lbl", text: "College leans (not bets)" }), h("div", { class: "big", text: wl(...s.cfb_leans) }))
+        : h("div", {}, h("p", { class: "lbl", text: "Games final" }), h("div", { class: "big", text: String(s.games) }))));
 }
 
 function gamesTable(games) {
@@ -342,7 +343,7 @@ function gamesTable(games) {
     const ats = g.ats === "win" ? h("span", { class: "w", text: `covered by ${g.by}` }) : g.ats === "loss" ? h("span", { class: "l", text: `missed by ${-g.by}` }) : g.ats ? "push" : "–";
     tb.append(h("tr", {},
       h("td", {}, `${g.away} ${g.away_score} @ ${g.home} ${g.home_score}`, h("small", { text: SPORT[g.sport] })),
-      h("td", {}, g.pick || "–", h("small", {}, ats)),
+      h("td", {}, g.pick ? g.pick + (g.sport === "cfb" ? " (lean)" : "") : "–", h("small", {}, ats)),
       h("td", { class: "r " + (g.winner_right ? "w" : "l"), text: g.winner_right ? "Right" : "Wrong" })));
   }
   return h("div", { class: "wide-scroll" }, h("table", { class: "rise" }, h("thead", {}, h("tr", {}, h("th", { text: "Final" }),
@@ -362,9 +363,9 @@ function extrasTable(d) {
 }
 
 function dayDetail(d, box) {
-  if (d.best_bets && d.best_bets.length) {
-    box.append(h("div", { class: "block" }, h("h2", { text: "Best bets" }), pairs(d.best_bets.map(b => betTicket(b.kind, b)))));
-  }
+  const core = (d.best_bets || []).filter(b => CORE.includes(b.kind)), fun = (d.best_bets || []).filter(b => !CORE.includes(b.kind));
+  if (core.length) box.append(h("div", { class: "block" }, h("h2", { text: "Best bets" }), pairs(core.map(b => betTicket(b.kind, b)))));
+  if (fun.length) box.append(h("div", { class: "block" }, h("h2", { text: "Long shots" }), pairs(fun.map(b => betTicket(b.kind, b)))));
   const ex = extrasTable(d);
   if (ex) box.append(h("div", { class: "block" }, h("h2", { text: "Parlays and props" }), ex));
   if (d.games.length) box.append(h("div", { class: "block" }, h("h2", { text: "Every game" }), gamesTable(d.games)));
@@ -404,7 +405,7 @@ function renderYesterday() {
 function renderRecord() {
   const B = S.best;
   const tot = document.getElementById("recTotal"); tot.replaceChildren();
-  if (B) tot.append(totalBlock(B.record.all, "since Oct 22"), chart(B.history));
+  if (B) tot.append(totalBlock(B.record.core || B.record.all, "straight bets since Oct 22"), chart(B.history_core || B.history));
   let types = document.getElementById("recTypes"); types.replaceChildren();
   const tile = (name, x, note) => {
     if (!x) return;
@@ -413,7 +414,7 @@ function renderRecord() {
       h("div", { class: "big " + cls(x.profit), text: signed(scale(x.profit)) }),
       h("p", { text: (w + l ? wl(w, l, x.pushes) : "No graded bets yet") + (x.roi != null ? ` · ${x.roi}%` : "") + (note ? ` · ${note}` : "") })));
   };
-  if (B) { const r = B.record; tile("Best winner", r.winner); tile("Best spread", r.spread); tile("Best parlay", r.parlay); tile("Best prop", r.prop); tile("Same-game parlay", r.sgp); }
+  if (B) { const r = B.record; tile("Best prop", r.prop); tile("Best spread", r.spread); tile("Best winner", r.winner); tile("Long-shot parlay", r.parlay); tile("Same-game parlay", r.sgp); }
   const types2 = document.getElementById("recTypes2"); types2.replaceChildren();
   types = types2;
   if (S.parlays) tile("All parlays", S.parlays.record, S.parlays.record.pending ? `${S.parlays.record.pending} pending` : null);
@@ -431,7 +432,7 @@ function renderTrack() {
     const figs = h("div", { class: "season-figs" });
     if (s) {
       figs.append(h("div", {}, h("strong", { text: s.winner_pct + "%" }), h("small", { text: "Winners picked this season" })),
-        h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: "Spread picks won-lost" })),
+        h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: sp === "cfb" ? "Spread leans won-lost (not bets until above 52.4%)" : "Spread picks won-lost" })),
         h("div", {}, h("strong", { class: "gold", text: s.model_ats_big ? wl(s.model_ats_big.wins, s.model_ats_big.losses, s.model_ats_big.pushes) : "–" }),
           h("small", { text: "Gold-edge picks won-lost" + (s.model_ats_big && s.model_ats_big.pct != null ? ` (${s.model_ats_big.pct}%)` : "") })),
         h("div", {}, h("strong", { text: s.avg_miss + " pts" }), h("small", { text: `Average miss on margin · ${s.games.toLocaleString()} games` })));

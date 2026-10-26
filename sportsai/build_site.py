@@ -153,8 +153,9 @@ def leg_txt(l):
     return f'{l["team"]} {line_txt(l["line"])}'
 
 
-BET_NAMES = {"winner": "Best winner", "spread": "Best spread", "parlay": "Best parlay", "prop": "Best prop",
-             "sgp": "Best same-game parlay"}
+BET_NAMES = {"winner": "Best winner", "spread": "Best spread", "parlay": "Long-shot parlay", "prop": "Best prop",
+             "sgp": "Same-game parlay"}
+CORE = ("prop", "spread", "winner")  # straight bets; parlays are long shots
 
 
 def daily(day):
@@ -203,10 +204,12 @@ def daily(day):
     summary = dict(
         games=len(games),
         winners=[sum(g["winner_right"] for g in games), sum(not g["winner_right"] for g in games)],
-        ats=tally(games, "ats", "win", "loss"),
+        ats=tally([g for g in games if g["sport"] != "cfb"], "ats", "win", "loss"),  # NFL + NBA spread picks
+        cfb_leans=tally([g for g in games if g["sport"] == "cfb"], "ats", "win", "loss"),  # college: leans, not bets
         props=tally(props, "result", "win", "loss"),
         parlays=tally(parlays, "status", "won", "lost"),
-        best_bets=tally(best, "status", "won", "lost"),
+        best_bets=tally([x for x in best if x["kind"] in CORE], "status", "won", "lost"),  # straight bets
+        long_shots=tally([x for x in best if x["kind"] not in CORE], "status", "won", "lost"),
         profit=round(sum(x["profit"] or 0 for x in props + parlays + best), 2),
     )
 
