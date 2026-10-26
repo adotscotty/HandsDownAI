@@ -37,6 +37,34 @@ def record(rows):
     return out
 
 
+def line_moves(sport, rows):
+    """Closing line value: did the line move toward the side we picked when we first posted the game?"""
+    path = os.path.join(DATA, "first_lines.csv")
+    if not os.path.exists(path):
+        return None
+    with open(path) as f:
+        first = {r["event_id"]: r for r in csv.DictReader(f) if r["sport"] == sport}
+    toward = away = same = 0
+    for r in rows:
+        f = first.get(r.get("event_id"))
+        if not f or r["spread"] is None:
+            continue
+        s0, p0 = float(f["first_spread"]), float(f["first_pred"])
+        side = p0 + s0  # > 0: we took the home side
+        move = s0 - r["spread"]  # > 0: line moved toward the home side
+        if side == 0:
+            continue
+        if move == 0:
+            same += 1
+        elif (move > 0) == (side > 0):
+            toward += 1
+        else:
+            away += 1
+    if not toward + away + same:
+        return None
+    return dict(toward=toward, away=away, same=same, pct=round(100 * toward / (toward + away), 1) if toward + away else None)
+
+
 def ats_record(rows, key, min_edge=0.0, max_edge=999.0):
     """Won-lost against the spread for the side `key` (a predicted home margin) leans to."""
     w = l = p = 0
@@ -64,7 +92,7 @@ def load_season(sport):
                 if r.get("home_fbs") == "0" or r.get("away_fbs") == "0":
                     continue  # college: only grade games between two FBS teams
                 rows.append(dict(
-                    date=r["date"], home=r["home"], away=r["away"],
+                    event_id=r.get("event_id"), date=r["date"], home=r["home"], away=r["away"],
                     home_name=r.get("home_name"), away_name=r.get("away_name"),
                     home_score=int(r["home_score"]), away_score=int(r["away_score"]),
                     spread=float(r["spread"]) if r["spread"] else None,
@@ -249,6 +277,7 @@ def main():
         track[sport] = dict(
             name=NAMES[sport],
             this_season=record(rows),
+            line_moves=line_moves(sport, rows),
             periods=periods(rows),
             last_season=dict(games=b.get("games"), winner_pct=b.get("picked_winner_pct"),
                              avg_miss=b.get("model_avg_miss"), spread_avg_miss=b.get("vegas_avg_miss_same_games"),

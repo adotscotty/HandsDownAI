@@ -412,6 +412,9 @@ function renderTrack() {
         h("div", {}, h("strong", { class: "gold", text: s.model_ats_big ? wl(s.model_ats_big.wins, s.model_ats_big.losses, s.model_ats_big.pushes) : "–" }),
           h("small", { text: "Gold-edge picks won-lost" + (s.model_ats_big && s.model_ats_big.pct != null ? ` (${s.model_ats_big.pct}%)` : "") })),
         h("div", {}, h("strong", { text: s.avg_miss + " pts" }), h("small", { text: `Average miss on margin · ${s.games.toLocaleString()} games` })));
+      const lm = t.line_moves;
+      figs.append(h("div", {}, h("strong", { text: lm && lm.pct != null ? lm.pct + "%" : "–" }),
+        h("small", { text: lm && lm.toward + lm.away ? `Line moved our way after we posted (${lm.toward} of ${lm.toward + lm.away}; above 55% means a real edge)` : "Line moved our way: tracking started Oct 26" })));
     }
     const ls = t.last_season;
     const tb = h("tbody");

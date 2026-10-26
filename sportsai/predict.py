@@ -287,6 +287,35 @@ def lock_pregame(preds):
             w.writerows(sorted(log.values(), key=lambda r: r["date"]))
 
 
+FIRST_COLS = ["sport", "event_id", "date", "home", "away", "first_spread", "first_pred", "first_seen"]
+
+
+def log_first_lines(preds):
+    """Save the line and our pick the first time we post a game, to measure later whether
+    the line moved our way by kickoff (closing line value)."""
+    path = os.path.join(DATA, "first_lines.csv")
+    log = {}
+    if os.path.exists(path):
+        with open(path) as f:
+            log = {r["event_id"]: r for r in csv.DictReader(f)}
+    now = dt.datetime.now(dt.timezone.utc)
+    new = False
+    for p in preds:
+        if p["event_id"] in log or p.get("spread") is None:
+            continue
+        if dt.datetime.fromisoformat(p["date"].replace("Z", "+00:00")) <= now + dt.timedelta(minutes=45):
+            continue  # first seen too close to kickoff to count
+        log[p["event_id"]] = dict(sport=p["sport"], event_id=p["event_id"], date=p["date"], home=p["home"], away=p["away"],
+                                  first_spread=p["spread"], first_pred=p["predicted_home_margin"],
+                                  first_seen=now.isoformat(timespec="minutes"))
+        new = True
+    if new:
+        with open(path, "w", newline="") as f:
+            w = csv.DictWriter(f, FIRST_COLS)
+            w.writeheader()
+            w.writerows(sorted(log.values(), key=lambda r: r["date"]))
+
+
 def main(sports):
     summary = json.load(open(os.path.join(DATA, "backtest_summary.json")))
     allpreds, prop_rows = [], {}
@@ -314,6 +343,7 @@ def main(sports):
         print(sport, len(preds), "upcoming,", len(season), "played this season")
     allpreds.sort(key=lambda p: p["date"])
     lock_pregame(allpreds)
+    log_first_lines(allpreds)
     from .parlays import update_parlays
     update_parlays(allpreds)
     try:

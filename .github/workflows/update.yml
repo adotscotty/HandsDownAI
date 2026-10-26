@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name "sports-ai-bot"
           git config user.email "sports-ai-bot@users.noreply.github.com"
-          git add data/current_*.csv data/season_*.csv data/pregame_log.csv data/parlays_log.csv data/props_log.csv data/players_*.csv data/bestbets_log.csv data/powerindex
+          git add data/current_*.csv data/season_*.csv data/pregame_log.csv data/parlays_log.csv data/props_log.csv data/players_*.csv data/bestbets_log.csv data/powerindex data/first_lines.csv
           if ! git diff --cached --quiet; then
             git commit -m "Update finished games"
             git pull --rebase -X theirs origin main && git push origin HEAD:main
