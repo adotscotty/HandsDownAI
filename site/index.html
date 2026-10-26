@@ -11,7 +11,7 @@
 <meta name="description" content="Best bets, predictions and an honest track record for NFL, NBA and college football, updated every 15 minutes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:wght@400;500;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=10">
+<link rel="stylesheet" href="style.css?v=11">
 </head>
 <body class="noscript">
 <script>document.body.classList.remove("noscript")</script>
@@ -21,6 +21,7 @@
     <nav id="views" aria-label="Pages">
       <a href="#home" data-view="home">Best bets</a>
       <a href="#games" data-view="games">Games</a>
+      <a href="#parlays" data-view="parlays">Parlays</a>
       <a href="#today" data-view="today">Today</a>
       <a href="#yesterday" data-view="yesterday">Yesterday</a>
       <a href="#record" data-view="record">Record</a>
@@ -48,10 +49,9 @@
       <p class="lede" id="payingNote">Profit by bet type since Oct 22. Early days, so small samples swing a lot.</p>
       <div class="types five" id="homePaying"></div>
     </div>
-    <div class="block" id="funBlock">
+    <div class="block">
       <h2>For fun: long shots</h2>
-      <p class="lede">Parlays pay big, but the book's cut stacks on every leg, so they lose money over time. Tracked separately from the best bets.</p>
-      <div id="funBets"></div>
+      <p class="lede">Parlays pay big, but the book's cut stacks on every leg, so they lose money over time. They're tracked separately from the best bets. <a href="#parlays">See today's parlays →</a></p>
     </div>
     <div class="block">
       <h2>Yesterday</h2>
@@ -76,17 +76,33 @@
       </div>
     </div>
     <div id="gamesList"></div>
-    <div class="block" id="parlayBlock">
-      <h2>Parlays</h2>
-      <p class="lede">The best 2-game and 3-game spread parlays per sport, locked 45 minutes before the first game. For fun, not an edge.</p>
-      <div id="parlays"></div>
-      <div id="parlayRecord"></div>
-    </div>
     <div class="block">
       <h2>Player props</h2>
       <p class="lede">For each NBA game, the over or under DraftKings thinks is most likely to hit (no worse than -300), with our projection next to it.</p>
       <div id="props"></div>
       <div id="propRecord"></div>
+    </div>
+  </section>
+
+  <!-- Parlays -->
+  <section id="view-parlays" class="view" hidden>
+    <div class="top">
+      <div>
+        <h1>Parlays</h1>
+        <p>Long shots for fun. Parlays pay big, but the book's cut stacks on every leg, so over time they lose money. Every one is locked 45 minutes before its first game and tracked here, wins and losses.</p>
+      </div>
+      <div class="filters"><div class="sports" role="group" aria-label="Sport"></div></div>
+    </div>
+    <div class="block" id="funBlock">
+      <h2>Today's long shots</h2>
+      <p class="lede">The best-value parlay across all sports, and a same-game parlay: our spread pick plus a player prop.</p>
+      <div id="funBets"></div>
+    </div>
+    <div class="block">
+      <h2>Parlays by sport</h2>
+      <p class="lede">The best 2-game and 3-game spread parlays per sport.</p>
+      <div id="parlayList"></div>
+      <div id="parlayRecord"></div>
     </div>
   </section>
 
@@ -151,6 +167,6 @@
     </div>
   </div>
 </footer>
-<script src="app.js?v=20"></script>
+<script src="app.js?v=21"></script>
 </body>
 </html>

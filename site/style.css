@@ -203,7 +203,7 @@ footer .cols a { color: var(--gold); font-weight: 700; }
 .hl .leg b, .lead.hl .leg b { font-size: clamp(24px, 2.6vw, 32px); line-height: 1.15; letter-spacing: -.01em; }
 .hl .leg { padding-right: 110px; }
 @media (max-width: 900px) { .hl .leg { padding-right: 0; margin-top: 44px; } }
-@media (max-width: 600px) { .bar nav { gap: 14px; font-size: 15px; } .bar nav a.sub { padding: 7px 11px; } }
+@media (max-width: 600px) { .bar nav { gap: 10px 14px; font-size: 15px; flex-wrap: wrap; overflow: visible; } .bar nav a.sub { padding: 7px 11px; } }
 .live { display: block; margin-top: 4px; font-size: 15px; }
 .lead .live { color: var(--gold-ink); }
 .season-figs strong.gold { color: var(--gold); }

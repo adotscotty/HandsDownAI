@@ -5,7 +5,7 @@ const WHY = { winner: "Most likely team to win outright (-200 or better from Oct
   prop: "DraftKings' most likely player prop", sgp: "Our spread pick plus a player prop, same game" };
 const KINDS = ["prop", "spread", "winner", "parlay", "sgp"];
 const CORE = ["prop", "spread", "winner"], FUN = ["parlay", "sgp"];
-const VIEWS = ["home", "games", "today", "yesterday", "record"];
+const VIEWS = ["home", "games", "parlays", "today", "yesterday", "record"];
 
 const S = { sport: "all", edgeOnly: false, stake: 20, base: 20, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
 try { S.stake = +localStorage.getItem("hd-stake") || 20; } catch (e) {}
@@ -136,8 +136,7 @@ function renderHome() {
   }
   const fb = document.getElementById("funBets"); fb.replaceChildren();
   const fun = FUN.filter(k => card && card[k]);
-  document.getElementById("funBlock").hidden = !fun.length;
-  if (fun.length) fb.append(pairs(fun.map(k => betTicket(k, card[k]))));
+  fb.append(fun.length ? pairs(fun.map(k => betTicket(k, card[k]))) : h("p", { class: "empty", text: "No long shots yet today. They appear once there are enough games with lines." }));
   renderPaying();
   // yesterday trio
   const yb = document.getElementById("homeYest"); yb.replaceChildren();
@@ -262,7 +261,7 @@ function renderGames() {
 }
 
 function renderParlays() {
-  const box = document.getElementById("parlays"), rec = document.getElementById("parlayRecord");
+  const box = document.getElementById("parlayList"), rec = document.getElementById("parlayRecord");
   box.replaceChildren(); rec.replaceChildren();
   const P = S.parlays;
   if (!P) { box.append(h("p", { class: "empty", text: "Parlays will appear after the next update." })); return; }
@@ -469,7 +468,7 @@ function renderTrack() {
 // ---------- page plumbing ----------
 function showView() {
   const k = location.hash.slice(1);
-  const v = VIEWS.includes(k) ? k : ["results", "parlays", "props"].includes(k) ? (k === "results" ? "record" : "games") : "home";
+  const v = VIEWS.includes(k) ? k : ["results", "props"].includes(k) ? (k === "results" ? "record" : "games") : "home";
   for (const x of VIEWS) document.getElementById("view-" + x).hidden = x !== v;
   document.querySelectorAll("#views a[data-view]").forEach(a => { a.classList.toggle("on", a.dataset.view === v); a.toggleAttribute("aria-current", a.dataset.view === v); });
   reveal();
