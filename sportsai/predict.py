@@ -124,11 +124,12 @@ def apply_official(injuries, report, roster):
     """NBA: the league's official report overrides ESPN's statuses and adds players ESPN missed."""
     by_name = {norm_name(i["name"] or ""): i for i in injuries}
     ids = {v: k for k, v in roster.items()}
-    for nm, status in report.items():
+    for nm, (status, reason) in report.items():
+        label = status + (": " + reason.lower() if reason else "")
         if nm in by_name:
-            by_name[nm].update(status=status + " (official)", weight=OFFICIAL_WEIGHT[status])
+            by_name[nm].update(status=label, weight=OFFICIAL_WEIGHT[status], official=True)
         elif nm in ids and OFFICIAL_WEIGHT[status] > 0:
-            injuries.append(dict(id=ids[nm], name=nm.title(), pos=None, status=status + " (official)", weight=OFFICIAL_WEIGHT[status]))
+            injuries.append(dict(id=ids[nm], name=nm.title(), pos=None, status=label, weight=OFFICIAL_WEIGHT[status], official=True))
     return injuries
 
 

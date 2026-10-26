@@ -26,7 +26,7 @@ def _get(url):
 
 
 def latest_report(team_names, now=None):
-    """{team full name: {normalized player name: status}} from the newest report, or {} on any problem."""
+    """{team full name: {normalized player name: (status, reason)}} from the newest report, or {} on any problem."""
     try:
         now = now or dt.datetime.now(dt.timezone.utc)
         y = now.year if now.month >= 8 else now.year - 1
@@ -42,7 +42,8 @@ def latest_report(team_names, now=None):
             text = subprocess.run(["pdftotext", "-layout", f.name, "-"], capture_output=True, text=True, timeout=60).stdout
         out, team = {}, None
         names = sorted(team_names, key=len, reverse=True)
-        for line in text.splitlines():
+        lines = text.splitlines()
+        for i, line in enumerate(lines):
             m = LINE.match(line)
             if not m:
                 continue
@@ -50,8 +51,14 @@ def latest_report(team_names, now=None):
                 if t in m.group("pre"):
                     team = t
                     break
+            reason = line[m.end():].strip()
+            if not reason:  # long reasons wrap onto the lines just above and below
+                near = [lines[j].strip() for j in (i - 1, i + 1) if 0 <= j < len(lines)
+                        and lines[j].strip() and not LINE.match(lines[j]) and lines[j].startswith(" " * 40)]
+                reason = " ".join(near)
+            reason = re.sub(r"^Injury/Illness - ", "", reason).replace(" / ", " ").strip()
             if team:
-                out.setdefault(team, {})[norm(m.group("name"))] = m.group("status")
+                out.setdefault(team, {})[norm(m.group("name"))] = (m.group("status"), reason)
         return out
     except Exception as e:  # never block the update
         print("NBA injury report not used:", e)
