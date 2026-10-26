@@ -10,7 +10,10 @@ STAKE = 20.0
 KINDS = ("winner", "spread", "parlay", "prop", "sgp")
 LOG = os.path.join(DATA, "bestbets_log.csv")
 COLS = ["slot", "date", "kind", "bet", "status", "profit", "logged_at"]
-MAX_FAV = -300  # skip moneylines and props priced worse than this
+MAX_FAV = -300  # skip props priced worse than this
+WINNER_MAX = -200  # best winner: a win must pay enough to matter (big favorites lost money)
+CORE = ("prop", "spread", "winner")  # straight bets, the main card
+FUN = ("parlay", "sgp")  # long shots, shown separately
 
 
 def american(dec):
@@ -67,12 +70,12 @@ def candidates(preds, day, now):
     games = [p for p in preds if eastern_date(p["date"]) == day
              and dt.datetime.fromisoformat(p["date"].replace("Z", "+00:00")) > now]
     out = {}
-    # Winner: the most likely winner with a moneyline no worse than -300
+    # Winner: the most likely winner with a moneyline no worse than -200
     best = None
     for p in games:
         for side in ("home", "away"):
             ml = p.get(side + "_ml")
-            if ml is None or ml < MAX_FAV:
+            if ml is None or ml < WINNER_MAX:
                 continue
             chance = p["home_win_prob"] if side == "home" else 1 - p["home_win_prob"]
             if best is None or chance > best["chance"]:
@@ -81,7 +84,8 @@ def candidates(preds, day, now):
     if best:
         out["winner"] = make_bet("winner", [best])
     # Spread: the side most likely to cover
-    spreads = [l for l in (spread_leg(p) for p in games) if l]
+    # (college spreads are leans, not bets, until the model beats 52.4% there)
+    spreads = [l for l in (spread_leg(p) for p in games if p["sport"] != "cfb") if l]
     if spreads:
         out["spread"] = make_bet("spread", [max(spreads, key=lambda l: l["chance"])])
     # Parlay: best 2- or 3-game spread parlay across all sports
@@ -207,8 +211,9 @@ def update(preds, player_rows):
         w.writerows(sorted(log.values(), key=lambda r: r["slot"]))
     # 4) record per kind
     rec = {}
-    for kind in ("all",) + KINDS:
-        rs = [r for r in log.values() if r["status"] in ("won", "lost", "push") and kind in ("all", r["kind"])]
+    groups = {"all": KINDS, "core": CORE, "fun": FUN, **{k: (k,) for k in KINDS}}
+    for kind, members in groups.items():
+        rs = [r for r in log.values() if r["status"] in ("won", "lost", "push") and r["kind"] in members]
         won, lost = sum(r["status"] == "won" for r in rs), sum(r["status"] == "lost" for r in rs)
         profit = sum(float(r["profit"]) for r in rs)
         staked = STAKE * (won + lost)

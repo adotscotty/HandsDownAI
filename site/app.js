@@ -1,9 +1,10 @@
 // HandsDown AI: renders the data/*.json files the updater writes every 15 minutes.
 const SPORT = { nfl: "NFL", nba: "NBA", cfb: "College" };
-const NAMES = { winner: "Best winner", spread: "Best spread", parlay: "Best parlay", prop: "Best player prop", sgp: "Best same-game parlay" };
-const WHY = { winner: "Most likely team to win outright", spread: "Most likely to cover the spread", parlay: "Best value 2- or 3-game parlay",
+const NAMES = { winner: "Best winner", spread: "Best spread", parlay: "Long-shot parlay", prop: "Best player prop", sgp: "Same-game parlay" };
+const WHY = { winner: "Most likely team to win outright, priced -200 or better", spread: "Most likely to cover the spread (NFL and NBA)", parlay: "Best value 2- or 3-game parlay",
   prop: "DraftKings' most likely player prop", sgp: "Our spread pick plus a player prop, same game" };
-const KINDS = ["winner", "spread", "parlay", "prop", "sgp"];
+const KINDS = ["prop", "spread", "winner", "parlay", "sgp"];
+const CORE = ["prop", "spread", "winner"], FUN = ["parlay", "sgp"];
 const VIEWS = ["home", "games", "today", "yesterday", "record"];
 
 const S = { sport: "all", edgeOnly: false, stake: 20, base: 20, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
@@ -122,15 +123,22 @@ function renderHome() {
   let card = B.card, title = "Today's best bets";
   if ((!card || !Object.keys(card).length) && B.preview) { card = B.preview.card; title = "Next up: " + dayName(B.preview.date).split(",")[0]; }
   document.getElementById("homeTitle").textContent = title;
-  const kinds = KINDS.filter(k => card && card[k]);
+  const kinds = CORE.filter(k => card && card[k]);
   if (!kinds.length) box.append(h("p", { class: "empty", text: "No picks yet today. Check back after the next update." }));
   else {
-    const top = kinds.reduce((a, k) => card[k].chance > card[a].chance ? k : a, kinds[0]);
+    const top = kinds[0];  // ordered by what has paid best: prop, then spread, then winner
     box.append(betTicket(top, card[top], true));
-    const rest = pairs(kinds.filter(k => k !== top).map(k => betTicket(k, card[k])));
-    rest.style.marginTop = "20px";
-    box.append(rest);
+    if (kinds.length > 1) {
+      const rest = pairs(kinds.slice(1).map(k => betTicket(k, card[k])));
+      rest.style.marginTop = "20px";
+      box.append(rest);
+    }
   }
+  const fb = document.getElementById("funBets"); fb.replaceChildren();
+  const fun = FUN.filter(k => card && card[k]);
+  document.getElementById("funBlock").hidden = !fun.length;
+  if (fun.length) fb.append(pairs(fun.map(k => betTicket(k, card[k]))));
+  renderPaying();
   // yesterday trio
   const yb = document.getElementById("homeYest"); yb.replaceChildren();
   const y = S.daily && S.daily.yesterday;
@@ -146,8 +154,22 @@ function renderHome() {
   // record
   const rb = document.getElementById("homeRecord"); rb.replaceChildren();
   const r = B.record;
-  rb.append(totalBlock(r.all, "since Oct 22"),
-    recordRows([["Winner", r.winner], ["Spread", r.spread], ["Parlay", r.parlay], ["Prop", r.prop], ["Same-game parlay", r.sgp]]));
+  rb.append(totalBlock(r.core || r.all, "straight bets since Oct 22"),
+    recordRows([["Prop", r.prop], ["Spread", r.spread], ["Winner", r.winner], ["Long shots (parlays)", r.fun]].filter(x => x[1])));
+}
+
+// "What's paying": profit by bet type, best first
+function renderPaying() {
+  const box = document.getElementById("homePaying"); box.replaceChildren();
+  const B = S.best; if (!B) return;
+  const r = B.record, tiles = [["Best prop", r.prop], ["Best spread", r.spread], ["Best winner", r.winner], ["All NBA props", S.props && S.props.record && S.props.record.all], ["Long shots", r.fun]]
+    .filter(([, x]) => x).sort((a, b) => (b[1].profit ?? 0) - (a[1].profit ?? 0));
+  for (const [name, x] of tiles) {
+    const w = x.won ?? x.wins ?? 0, l = x.lost ?? x.losses ?? 0;
+    box.append(h("div", { class: "rise" }, h("p", { class: "lbl", text: name }),
+      h("div", { class: "big " + cls(x.profit), text: signed(scale(x.profit)) }),
+      h("p", { text: (w + l ? wl(w, l, x.pushes) : "No graded bets yet") + (x.roi != null ? ` · ${x.roi}%` : "") })));
+  }
 }
 // "won $32.52 on $20" -> scaled to the visitor's stake
 function scaleDetail(t) {
@@ -179,7 +201,8 @@ function whyBox(g) {
     const vf = -g.spread, pm = g.predicted_home_margin;
     items.push(`Vegas has ${Math.abs(vf) < 0.25 ? "it a pick'em" : `the ${vf > 0 ? H : A} by ${Math.abs(vf).toFixed(1)}`}. Vegas is usually sharper, so our prediction is 60% Vegas and 40% our model: the ${pm >= 0 ? H : A} by ${Math.abs(pm).toFixed(1)}.`);
     const d = pm + g.spread;
-    if (Math.abs(d) >= 0.05) items.push(`That's ${d > 0 ? "a bit more" : "a bit less"} than Vegas gives the ${H}, so our spread pick is the ${d > 0 ? H : A}. Our chance it covers: ${Math.round(100 * Math.max(g.home_cover_prob, 1 - g.home_cover_prob))}%.`);
+    if (Math.abs(d) >= 0.05) items.push(`That's ${d > 0 ? "a bit more" : "a bit less"} than Vegas gives the ${H}, so our spread ${g.sport === "cfb" ? "lean" : "pick"} is the ${d > 0 ? H : A}. Our chance it covers: ${Math.round(100 * Math.max(g.home_cover_prob, 1 - g.home_cover_prob))}%.` +
+      (g.sport === "cfb" ? " College spreads are leans, not bets, until our model beats the 52.4% break-even there." : ""));
   }
   return h("details", { class: "why" }, h("summary", { text: "Why this pick?" }), h("ul", {}, ...items.map(t => h("li", { text: t }))));
 }
@@ -200,7 +223,7 @@ function gameRow(g) {
   if (g.spread != null) {
     const d = g.predicted_home_margin + g.spread;
     pickTxt = Math.abs(d) < 0.05 ? "No spread pick: our prediction lands right on the line"
-      : `Our spread pick: ${d > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`}`;
+      : `${g.sport === "cfb" ? "Our spread lean (not a bet)" : "Our spread pick"}: ${d > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`}`;
   }
   if (e != null && g.model_home_margin != null) {
     const side = e > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`;
@@ -461,7 +484,7 @@ function reveal() {
   const els = document.querySelectorAll(".view:not([hidden]) .rise:not(.in)");
   if (!("IntersectionObserver" in window)) { els.forEach(e => e.classList.add("in")); return; }
   io = io || new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) {
-    const i = [...e.target.parentNode.children].indexOf(e.target);
+    const i = e.target.parentNode ? [...e.target.parentNode.children].indexOf(e.target) : 0;
     setTimeout(() => e.target.classList.add("in"), Math.min(i, 4) * 75); io.unobserve(e.target); } }), { threshold: .1 });
   els.forEach(e => io.observe(e));
 }
