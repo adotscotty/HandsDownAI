@@ -36,22 +36,22 @@
    "projected_profit": 0.54,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
   "bet": {
-   "chance": 0.642,
+   "chance": 0.647,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.642,
+     "chance": 0.647,
      "event_id": "401909880",
      "game": "POR @ LAL",
      "label": "threes",
      "line": 1.5,
      "name": "Collin Sexton",
-     "odds": -216,
+     "odds": -222,
      "pid": "4277811",
      "projection": 1.841,
      "side": "under",
@@ -61,56 +61,56 @@
      "type": "prop"
     }
    ],
-   "payout": 29.26,
-   "price": -216,
-   "projected_profit": -1.22,
+   "payout": 29.01,
+   "price": -222,
+   "projected_profit": -1.23,
    "start": "2026-10-28T03:00Z"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T03:00Z"
  },
  "bet|2026-10-27|sgp": {
   "bet": {
-   "chance": 0.3413,
+   "chance": 0.3403,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.546,
-     "event_id": "401909878",
-     "game": "DET @ NY",
-     "line": 4.5,
+     "chance": 0.526,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "line": -1.5,
      "odds": -115,
-     "side": "away",
+     "side": "home",
      "sport": "nba",
-     "start": "2026-10-28T00:00Z",
-     "team": "DET",
-     "team_name": "Detroit Pistons",
+     "start": "2026-10-28T03:00Z",
+     "team": "LAL",
+     "team_name": "Los Angeles Lakers",
      "type": "spread"
     },
     {
-     "chance": 0.625,
-     "event_id": "401909878",
-     "game": "DET @ NY",
-     "label": "assists",
+     "chance": 0.647,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "label": "threes",
      "line": 1.5,
-     "name": "John Collins",
-     "odds": -199,
-     "pid": "3908845",
-     "projection": 1.03,
+     "name": "Collin Sexton",
+     "odds": -222,
+     "pid": "4277811",
+     "projection": 1.841,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-28T00:00Z",
-     "stat": "ast",
+     "start": "2026-10-28T03:00Z",
+     "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 56.18,
-   "price": 181,
-   "projected_profit": -0.83,
-   "start": "2026-10-28T00:00Z"
+   "payout": 54.23,
+   "price": 171,
+   "projected_profit": -1.54,
+   "start": "2026-10-28T03:00Z"
   },
-  "seen": "2026-10-27T19:41+00:00",
-  "start": "2026-10-28T00:00Z"
+  "seen": "2026-10-27T19:52+00:00",
+  "start": "2026-10-28T03:00Z"
  },
  "bet|2026-10-27|spread": {
   "bet": {
@@ -136,7 +136,7 @@
    "projected_profit": 0.42,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -162,7 +162,7 @@
    "projected_profit": -0.94,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
@@ -197,7 +197,7 @@
     "projected_profit": 0.20998338164251606
    }
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
@@ -215,25 +215,25 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
   "prop": {
-   "ev": -0.048,
+   "ev": -0.07,
    "label": "assists",
-   "line": 1.5,
-   "market_prob": 0.625,
-   "name": "John Collins",
-   "pid": "3908845",
-   "price": "-199",
-   "prob": 0.633,
-   "projection": 1.03,
-   "score": 0.625,
+   "line": 2.5,
+   "market_prob": 0.62,
+   "name": "OG Anunoby",
+   "pid": "3934719",
+   "price": "-195",
+   "prob": 0.615,
+   "projection": 2.027,
+   "score": 0.62,
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
@@ -251,25 +251,25 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
   "prop": {
-   "ev": -0.231,
+   "ev": -0.234,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.642,
+   "market_prob": 0.647,
    "name": "Collin Sexton",
    "pid": "4277811",
-   "price": "-216",
-   "prob": 0.526,
+   "price": "-222",
+   "prob": 0.528,
    "projection": 1.841,
-   "score": 0.642,
+   "score": 0.647,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T19:41+00:00",
+  "seen": "2026-10-27T19:52+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
