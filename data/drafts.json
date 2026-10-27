@@ -36,7 +36,7 @@
    "projected_profit": 0.54,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
@@ -66,12 +66,12 @@
    "projected_profit": -1.22,
    "start": "2026-10-27T23:30Z"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "bet|2026-10-27|sgp": {
   "bet": {
-   "chance": 0.3385,
+   "chance": 0.3407,
    "kind": "sgp",
    "legs": [
     {
@@ -88,15 +88,15 @@
      "type": "spread"
     },
     {
-     "chance": 0.62,
+     "chance": 0.624,
      "event_id": "401909878",
      "game": "DET @ NY",
      "label": "assists",
-     "line": 2.5,
-     "name": "OG Anunoby",
-     "odds": -195,
-     "pid": "3934719",
-     "projection": 2.027,
+     "line": 1.5,
+     "name": "John Collins",
+     "odds": -199,
+     "pid": "3908845",
+     "projection": 1.03,
      "side": "under",
      "sport": "nba",
      "start": "2026-10-28T00:00Z",
@@ -104,12 +104,12 @@
      "type": "prop"
     }
    ],
-   "payout": 56.57,
-   "price": 183,
-   "projected_profit": -0.85,
+   "payout": 56.18,
+   "price": 181,
+   "projected_profit": -0.86,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -136,7 +136,7 @@
    "projected_profit": 0.42,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -162,7 +162,7 @@
    "projected_profit": -0.94,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
@@ -197,7 +197,7 @@
     "projected_profit": 0.20998338164251606
    }
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
@@ -215,25 +215,25 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
   "prop": {
-   "ev": -0.07,
+   "ev": -0.049,
    "label": "assists",
-   "line": 2.5,
-   "market_prob": 0.62,
-   "name": "OG Anunoby",
-   "pid": "3934719",
-   "price": "-195",
-   "prob": 0.615,
-   "projection": 2.027,
-   "score": 0.62,
+   "line": 1.5,
+   "market_prob": 0.624,
+   "name": "John Collins",
+   "pid": "3908845",
+   "price": "-199",
+   "prob": 0.633,
+   "projection": 1.03,
+   "score": 0.624,
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
@@ -251,7 +251,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -269,7 +269,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T20:05+00:00",
+  "seen": "2026-10-27T20:18+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
