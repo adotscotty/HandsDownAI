@@ -1,7 +1,7 @@
 {
  "bet|2026-10-27|parlay": {
   "bet": {
-   "chance": 0.2877,
+   "chance": 0.1476,
    "kind": "parlay",
    "legs": [
     {
@@ -29,29 +29,42 @@
      "team": "MOST",
      "team_name": "MOST",
      "type": "spread"
+    },
+    {
+     "chance": 0.513,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "line": -2.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-28T03:00Z",
+     "team": "LAL",
+     "team_name": "LAL",
+     "type": "spread"
     }
    ],
-   "payout": 71.38,
-   "price": 257,
-   "projected_profit": 0.54,
+   "payout": 139.37,
+   "price": 597,
+   "projected_profit": 0.57,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
   "bet": {
-   "chance": 0.643,
+   "chance": 0.64,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.643,
+     "chance": 0.64,
      "event_id": "401909877",
      "game": "BKN @ BOS",
      "label": "threes",
      "line": 1.5,
      "name": "Noah Clowney",
-     "odds": -218,
+     "odds": -214,
      "pid": "4712896",
      "projection": 1.213,
      "side": "under",
@@ -61,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 29.17,
-   "price": -218,
-   "projected_profit": -1.24,
+   "payout": 29.35,
+   "price": -214,
+   "projected_profit": -1.22,
    "start": "2026-10-27T23:30Z"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "bet|2026-10-27|sgp": {
@@ -109,7 +122,7 @@
    "projected_profit": -0.85,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -136,7 +149,7 @@
    "projected_profit": 0.42,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -162,13 +175,13 @@
    "projected_profit": -0.94,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
   "card": {
    "two": {
-    "chance": 0.287196,
+    "chance": 0.280098,
     "legs": [
      {
       "chance": 0.546,
@@ -182,40 +195,40 @@
       "team": "DET"
      },
      {
-      "chance": 0.526,
+      "chance": 0.513,
       "event_id": "401909880",
       "game": "POR @ LAL",
-      "line": -1.5,
-      "odds": -115,
+      "line": -2.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-28T03:00Z",
       "team": "LAL"
      }
     ],
-    "payout": 69.90548204158789,
-    "projected_profit": 0.07657482041587471
+    "payout": 73.00207039337474,
+    "projected_profit": 0.44773391304347854
    }
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
   "prop": {
-   "ev": -0.101,
+   "ev": -0.098,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.643,
+   "market_prob": 0.64,
    "name": "Noah Clowney",
    "pid": "4712896",
-   "price": "-218",
-   "prob": 0.616,
+   "price": "-214",
+   "prob": 0.615,
    "projection": 1.213,
-   "score": 0.643,
+   "score": 0.64,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
@@ -233,7 +246,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
@@ -251,7 +264,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -269,7 +282,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T17:39+00:00",
+  "seen": "2026-10-27T17:57+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
