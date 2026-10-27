@@ -26,7 +26,7 @@
    "projected_profit": -1.2,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": -0.04,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 1.23,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -122,13 +122,13 @@
    "projected_profit": -1.87,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
   "card": {
    "three": {
-    "chance": 0.166284888,
+    "chance": 0.16628488800000002,
     "legs": [
      {
       "chance": 0.536,
@@ -140,46 +140,17 @@
       "sport": "nba",
       "start": "2026-10-28T00:00Z",
       "team": "DET"
-     },
-     {
-      "chance": 0.5609999999999999,
-      "event_id": "401909882",
-      "game": "WSH @ CLE",
-      "line": 10.5,
-      "odds": -115,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-10-28T23:00Z",
-      "team": "WSH"
      },
      {
       "chance": 0.553,
       "event_id": "401909884",
       "game": "PHI @ IND",
       "line": 4.5,
-      "odds": -115,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-28T23:00Z",
       "team": "IND"
-     }
-    ],
-    "payout": 138.44026835687015,
-    "projected_profit": 3.0205245184120955
-   },
-   "two": {
-    "chance": 0.30069599999999996,
-    "legs": [
-     {
-      "chance": 0.536,
-      "event_id": "401909878",
-      "game": "DET @ NY",
-      "line": 3.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-10-28T00:00Z",
-      "team": "DET"
      },
      {
       "chance": 0.5609999999999999,
@@ -193,11 +164,40 @@
       "team": "WSH"
      }
     ],
-    "payout": 74.04944586530264,
-    "projected_profit": 2.266372173913041
+    "payout": 141.36712392466868,
+    "projected_profit": 3.507216368695655
+   },
+   "two": {
+    "chance": 0.29640800000000006,
+    "legs": [
+     {
+      "chance": 0.536,
+      "event_id": "401909878",
+      "game": "DET @ NY",
+      "line": 3.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-28T00:00Z",
+      "team": "DET"
+     },
+     {
+      "chance": 0.553,
+      "event_id": "401909884",
+      "game": "PHI @ IND",
+      "line": 4.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-28T23:00Z",
+      "team": "IND"
+     }
+    ],
+    "payout": 75.6149732620321,
+    "projected_profit": 2.4128829946524135
    }
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909878": {
@@ -215,25 +215,25 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
   "prop": {
-   "ev": 0.024,
+   "ev": -0.12,
    "label": "threes",
-   "line": 1.5,
+   "line": 2.5,
    "market_prob": 0.62,
-   "name": "Julian Champagnie",
-   "pid": "4592479",
+   "name": "Devin Vassell",
+   "pid": "4395630",
    "price": "-195",
-   "prob": 0.677,
-   "projection": 2.563,
+   "prob": 0.582,
+   "projection": 2.32,
    "score": 0.62,
-   "side": "over",
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -251,7 +251,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T23:24+00:00",
+  "seen": "2026-10-27T23:28+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
