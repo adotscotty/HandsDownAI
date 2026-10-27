@@ -1,15 +1,15 @@
 {
  "bet|2026-10-27|parlay": {
   "bet": {
-   "chance": 0.1479,
+   "chance": 0.1444,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.546,
+     "chance": 0.5329999999999999,
      "event_id": "401909878",
      "game": "DET @ NY",
-     "line": 4.5,
-     "odds": -115,
+     "line": 3.5,
+     "odds": -102,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-28T00:00Z",
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 141.37,
-   "price": 607,
-   "projected_profit": 0.91,
+   "payout": 149.75,
+   "price": 649,
+   "projected_profit": 1.62,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
   "bet": {
-   "chance": 0.672,
+   "chance": 0.679,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.672,
+     "chance": 0.679,
      "event_id": "401909878",
      "game": "DET @ NY",
      "label": "threes",
      "line": 0.5,
      "name": "Paul Reed",
-     "odds": -251,
+     "odds": -260,
      "pid": "4278562",
      "projection": 0.374,
      "side": "under",
@@ -74,25 +74,25 @@
      "type": "prop"
     }
    ],
-   "payout": 27.97,
-   "price": -251,
-   "projected_profit": -1.21,
+   "payout": 27.69,
+   "price": -260,
+   "projected_profit": -1.2,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|sgp": {
   "bet": {
-   "chance": 0.3669,
+   "chance": 0.3619,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.546,
+     "chance": 0.5329999999999999,
      "event_id": "401909878",
      "game": "DET @ NY",
-     "line": 4.5,
-     "odds": -115,
+     "line": 3.5,
+     "odds": -102,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-28T00:00Z",
@@ -101,13 +101,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.672,
+     "chance": 0.679,
      "event_id": "401909878",
      "game": "DET @ NY",
      "label": "threes",
      "line": 0.5,
      "name": "Paul Reed",
-     "odds": -251,
+     "odds": -260,
      "pid": "4278562",
      "projection": 0.374,
      "side": "under",
@@ -117,25 +117,25 @@
      "type": "prop"
     }
    ],
-   "payout": 52.29,
-   "price": 161,
-   "projected_profit": -0.81,
+   "payout": 54.84,
+   "price": 174,
+   "projected_profit": -0.15,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
   "bet": {
-   "chance": 0.546,
+   "chance": 0.533,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.546,
+     "chance": 0.5329999999999999,
      "event_id": "401909878",
      "game": "DET @ NY",
-     "line": 4.5,
-     "odds": -115,
+     "line": 3.5,
+     "odds": -102,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-28T00:00Z",
@@ -144,21 +144,21 @@
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 0.42,
+   "payout": 39.61,
+   "price": -102,
+   "projected_profit": 1.11,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
   "bet": {
-   "chance": 0.6,
+   "chance": 0.581,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.6,
+     "chance": 0.581,
      "event_id": "401909878",
      "game": "DET @ NY",
      "odds": -170,
@@ -172,23 +172,23 @@
    ],
    "payout": 31.76,
    "price": -170,
-   "projected_profit": -0.94,
+   "projected_profit": -1.54,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
   "card": {
    "two": {
-    "chance": 0.280644,
+    "chance": 0.273962,
     "legs": [
      {
-      "chance": 0.546,
+      "chance": 0.5329999999999999,
       "event_id": "401909878",
       "game": "DET @ NY",
-      "line": 4.5,
-      "odds": -115,
+      "line": 3.5,
+      "odds": -102,
       "side": "away",
       "sport": "nba",
       "start": "2026-10-28T00:00Z",
@@ -206,83 +206,83 @@
       "team": "SAC"
      }
     ],
-    "payout": 74.04944586530264,
-    "projected_profit": 0.7815326854219968
+    "payout": 78.43906189926952,
+    "projected_profit": 1.4893222760476732
    }
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
   "prop": {
-   "ev": -0.1,
+   "ev": -0.109,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.644,
+   "market_prob": 0.657,
    "name": "Noah Clowney",
    "pid": "4712896",
-   "price": "-218",
-   "prob": 0.617,
+   "price": "-233",
+   "prob": 0.623,
    "projection": 1.213,
-   "score": 0.644,
+   "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
   "prop": {
-   "ev": -0.141,
+   "ev": -0.144,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.672,
+   "market_prob": 0.679,
    "name": "Paul Reed",
    "pid": "4278562",
-   "price": "-251",
-   "prob": 0.615,
+   "price": "-260",
+   "prob": 0.618,
    "projection": 0.374,
-   "score": 0.672,
+   "score": 0.679,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
   "prop": {
-   "ev": 0.023,
+   "ev": -0.165,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.623,
+   "line": 2.5,
+   "market_prob": 0.622,
    "name": "Julian Champagnie",
    "pid": "4592479",
    "price": "-197",
-   "prob": 0.678,
+   "prob": 0.554,
    "projection": 2.563,
-   "score": 0.623,
-   "side": "over",
+   "score": 0.622,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
   "prop": {
-   "ev": -0.183,
+   "ev": -0.186,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.647,
+   "market_prob": 0.655,
    "name": "Ziaire Williams",
    "pid": "4433137",
-   "price": "-222",
-   "prob": 0.564,
+   "price": "-230",
+   "prob": 0.567,
    "projection": 1.571,
-   "score": 0.647,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:31+00:00",
+  "seen": "2026-10-27T22:44+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
