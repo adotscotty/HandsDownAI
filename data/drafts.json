@@ -1,9 +1,22 @@
 {
  "bet|2026-10-27|parlay": {
   "bet": {
-   "chance": 0.2877,
+   "chance": 0.1491,
    "kind": "parlay",
    "legs": [
+    {
+     "chance": 0.518,
+     "event_id": "401871071",
+     "game": "DEL @ WKU",
+     "line": 1.5,
+     "odds": -105,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-10-27T23:00Z",
+     "team": "DEL",
+     "team_name": "DEL",
+     "type": "spread"
+    },
     {
      "chance": 0.546,
      "event_id": "401909878",
@@ -31,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 71.38,
-   "price": 257,
-   "projected_profit": 0.54,
-   "start": "2026-10-28T00:00Z"
+   "payout": 139.37,
+   "price": 597,
+   "projected_profit": 0.77,
+   "start": "2026-10-27T23:00Z"
   },
-  "seen": "2026-10-27T21:42+00:00",
-  "start": "2026-10-28T00:00Z"
+  "seen": "2026-10-27T21:55+00:00",
+  "start": "2026-10-27T23:00Z"
  },
  "bet|2026-10-27|prop": {
   "bet": {
-   "chance": 0.639,
+   "chance": 0.642,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.639,
+     "chance": 0.642,
      "event_id": "401909877",
      "game": "BKN @ BOS",
      "label": "threes",
      "line": 1.5,
      "name": "Noah Clowney",
-     "odds": -213,
+     "odds": -216,
      "pid": "4712896",
      "projection": 1.213,
      "side": "under",
@@ -61,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 29.39,
-   "price": -213,
+   "payout": 29.26,
+   "price": -216,
    "projected_profit": -1.22,
    "start": "2026-10-27T23:30Z"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "bet|2026-10-27|sgp": {
@@ -109,7 +122,7 @@
    "projected_profit": -0.84,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -136,7 +149,7 @@
    "projected_profit": 0.42,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -162,7 +175,7 @@
    "projected_profit": -0.94,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
@@ -197,25 +210,25 @@
     "projected_profit": 0.20998338164251606
    }
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
   "prop": {
-   "ev": -0.097,
+   "ev": -0.099,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.639,
+   "market_prob": 0.642,
    "name": "Noah Clowney",
    "pid": "4712896",
-   "price": "-213",
-   "prob": 0.614,
+   "price": "-216",
+   "prob": 0.616,
    "projection": 1.213,
-   "score": 0.639,
+   "score": 0.642,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
@@ -233,7 +246,7 @@
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
@@ -251,7 +264,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -269,7 +282,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T21:42+00:00",
+  "seen": "2026-10-27T21:55+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
