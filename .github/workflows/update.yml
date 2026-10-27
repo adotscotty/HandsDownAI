@@ -17,47 +17,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update:
-    runs-on: ubuntu-latest
-    timeout-minutes: 14
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main   # always start from the newest saved data, not the commit that triggered the run
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install PDF reader (for the NBA's official injury report)
-        run: which pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils) || true
-
-      - name: Make predictions (latest scores, injuries and odds from ESPN)
-        run: python -m sportsai.predict
-
-      - name: Save ESPN power index (once a day, for later testing)
-        run: python -m sportsai.powerindex || true
-
-      - name: Build website data
-        run: python -m sportsai.build_site
-
-      - name: Save finished games and pre-game picks
-        if: always()   # save locked picks even if a later step breaks, so no picks are lost
-        run: |
-          git config user.name "sports-ai-bot"
-          git config user.email "sports-ai-bot@users.noreply.github.com"
-          git add data/current_*.csv data/season_*.csv data/pregame_log.csv data/parlays_log.csv data/props_log.csv data/players_*.csv data/bestbets_log.csv data/powerindex data/first_lines.csv
-          if ! git diff --cached --quiet; then
-            git commit -m "Update finished games"
-            git pull --rebase -X theirs origin main && git push origin HEAD:main
-          fi
-
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-      - id: deploy
-        uses: actions/deploy-pages@v4
+  # GitHub only starts this about every 40 minutes, so each start refreshes the site three times,
+  # about 13 minutes apart. That keeps picks fresh right up to the 25-minute lock.
+  pass1:
+    uses: ./.github/workflows/refresh.yml
+    with: { pass: 1, wait_minutes: 0 }
+  pass2:
+    needs: pass1
+    if: ${{ !cancelled() }}
+    uses: ./.github/workflows/refresh.yml
+    with: { pass: 2, wait_minutes: 12 }
+  pass3:
+    needs: pass2
+    if: ${{ !cancelled() }}
+    uses: ./.github/workflows/refresh.yml
+    with: { pass: 3, wait_minutes: 12 }

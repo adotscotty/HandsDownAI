@@ -59,7 +59,7 @@ function ticket(title, why, b, lead) {
   else if (b.status === "push") t.append(h("div", { class: "stamp p", text: "Push" }));
   const stateTxt = b.status === "won" ? `Won ${money(scale(b.profit))} on $${S.stake}` : b.status === "lost" ? `Lost $${S.stake}`
     : b.status === "push" ? "Push, money back" : b.legs.some(l => !l.result && legNow(l)) ? "In play · live scores update every minute"
-    : b.locked ? "Locked · waiting on the game" : "Can still change until 45 min before start";
+    : b.locked ? "Locked · waiting on the game" : "Can still change until 25 min before start";
   const st = h("p", { class: "state", text: stateTxt });
   if (lead) t.append(h("div", {}, head, legs, st), figs); else t.append(head, legs, figs, st);
   return t;
@@ -319,6 +319,13 @@ function renderProps() {
   }
 }
 
+// e.g. ", same-game parlay won, long-shot parlay lost"
+function longShotText(d) {
+  const names = { parlay: "long-shot parlay", sgp: "same-game parlay" };
+  const done = (d.best_bets || []).filter(b => !CORE.includes(b.kind) && (b.status === "won" || b.status === "lost"));
+  return done.map(b => `, ${names[b.kind] || b.kind} ${b.status}`).join("");
+}
+
 // ---------- Today and Yesterday ----------
 function dayHeadline(d) {
   const s = d.summary, bb = s.best_bets;
@@ -326,8 +333,8 @@ function dayHeadline(d) {
   const anyBets = bb[0] + bb[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1];
   return h("div", { class: "record" },
     h("div", { class: "total rise" }, h("div", { class: "big", text: anyBets ? signed(prof) : wl(...s.winners) }),
-      h("p", { text: anyBets ? `All tracked bets at $${S.stake} each: straight best bets ${wl(...bb)}` + (s.long_shots ? `, long shots ${wl(...s.long_shots)}` : "") +
-        `, all parlays ${wl(...s.parlays)}, props ${wl(...s.props)}.` : "Winners picked." })),
+      h("p", { text: anyBets ? `All tracked bets at $${S.stake} each: straight best bets ${wl(...bb)}` + longShotText(d) +
+        (s.parlays[0] + s.parlays[1] ? `, Parlays page ${wl(...s.parlays)}` : "") + `, props ${wl(...s.props)}.` : "Winners picked." })),
     h("div", { class: "types rise", style: "grid-template-columns:repeat(2,1fr)" },
       h("div", {}, h("p", { class: "lbl", text: "Best bets (straight)" }), h("div", { class: "big", text: wl(...bb) })),
       h("div", {}, h("p", { class: "lbl", text: "Spread picks (NFL, NBA)" }), h("div", { class: "big", text: wl(...s.ats) })),
@@ -352,7 +359,7 @@ function gamesTable(games) {
 function extrasTable(d) {
   const rows = [];
   for (const p of d.props || []) rows.push([`Prop: ${p.name} ${p.side} ${p.line} ${p.label}`, p.result, p.result === "win" ? money(scale(p.profit)) : p.actual != null ? `actual ${p.actual}` : ""]);
-  for (const p of d.parlays || []) rows.push([`${p.kind === "two" ? "2" : "3"}-game ${SPORT[p.sport]} parlay: ` + p.legs.map(legText).join(", "),
+  for (const p of d.parlays || []) rows.push([`Parlays page, ${p.kind === "two" ? "2" : "3"}-game ${SPORT[p.sport]}: ` + p.legs.map(legText).join(", "),
     p.status === "won" ? "win" : p.status === "lost" ? "loss" : p.status === "open" ? "" : p.status, p.status === "won" ? money(scale(p.profit)) : ""]);
   if (!rows.length) return null;
   const tb = h("tbody");

@@ -1,0 +1,68 @@
+name: Refresh once (called by "Update predictions")
+
+on:
+  workflow_call:
+    inputs:
+      pass:
+        type: number
+        required: true
+      wait_minutes:
+        type: number
+        default: 0
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # always start from the newest saved data, not the commit that triggered the run
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PDF reader (for the NBA's official injury report)
+        run: which pdftotext || (sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils) || true
+
+      - name: Wait for this pass's turn
+        if: inputs.wait_minutes > 0
+        run: sleep $(( ${{ inputs.wait_minutes }} * 60 ))
+
+      - name: Get the newest saved data
+        if: inputs.wait_minutes > 0
+        run: git pull -q origin main
+
+      - name: Make predictions (latest scores, injuries and odds from ESPN)
+        run: python -m sportsai.predict
+
+      - name: Save ESPN power index (once a day, for later testing)
+        run: python -m sportsai.powerindex || true
+
+      - name: Build website data
+        run: python -m sportsai.build_site
+
+      - name: Save finished games and pre-game picks
+        if: always()   # save locked picks even if a later step breaks, so no picks are lost
+        run: |
+          git config user.name "sports-ai-bot"
+          git config user.email "sports-ai-bot@users.noreply.github.com"
+          git add data/current_*.csv data/season_*.csv data/pregame_log.csv data/parlays_log.csv data/props_log.csv data/players_*.csv data/bestbets_log.csv data/powerindex data/first_lines.csv data/drafts.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update finished games"
+            git pull --rebase -X theirs origin main && git push origin HEAD:main
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+          name: github-pages-${{ inputs.pass }}
+      - id: deploy
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ inputs.pass }}

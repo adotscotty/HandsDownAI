@@ -1,10 +1,11 @@
 """Today's best bets across all sports: one winner, one spread, one parlay, one player prop and one
-same-game parlay. Each bet keeps updating until its first game is 45 minutes away, then it is locked
+same-game parlay. Each bet keeps updating until its first game is 25 minutes away, then it is locked
 into data/bestbets_log.csv and graded at $20 once its games finish.
 """
 import csv, datetime as dt, json, os
 from .fetch_history import DATA
 from .parlays import decimal, legs_for, best_parlays, results, eastern_today
+from . import lock
 
 STAKE = 20.0
 KINDS = ("winner", "spread", "parlay", "prop", "sgp")
@@ -173,22 +174,29 @@ def update(preds, player_rows):
     now = dt.datetime.now(dt.timezone.utc)
     today = eastern_today(now)
     log = load_log()
-    # 1) today's card: locked bets stay; the rest update until 45 minutes before their first game
+    # 1) today's card: locked bets stay; the rest update until 25 minutes before their first game
     picks = candidates(preds, today, now)
+    drafts = lock.load()
     card = {}
     for kind in KINDS:
         slot = f"{today}|{kind}"
         if slot in log:
             card[kind] = dict(json.loads(log[slot]["bet"]), status=log[slot]["status"],
                               profit=log[slot]["profit"], locked=True)
-        elif kind in picks:
-            b = picks[kind]
-            if dt.datetime.fromisoformat(b["start"].replace("Z", "+00:00")) <= now + dt.timedelta(minutes=45):
-                log[slot] = dict(slot=slot, date=today, kind=kind, bet=json.dumps(b), status="open", profit="",
-                                 logged_at=now.isoformat(timespec="minutes"))
-                card[kind] = dict(b, status="open", locked=True)
-            else:
-                card[kind] = dict(b, locked=False)
+            continue
+        b, at = picks.get(kind), now
+        d = lock.missed(drafts, "bet|" + slot, now)
+        if d:   # its game started with no update inside the lock window: lock the last version shown
+            b, at = d["bet"], lock.when(d["seen"])
+        if b and (d or lock.in_window(b["start"], now)):
+            log[slot] = dict(slot=slot, date=today, kind=kind, bet=json.dumps(b), status="open", profit="",
+                             logged_at=at.isoformat(timespec="minutes"))
+            card[kind] = dict(b, status="open", locked=True)
+            drafts.pop("bet|" + slot, None)
+        elif b:
+            card[kind] = dict(b, locked=False)
+            drafts["bet|" + slot] = dict(bet=b, start=b["start"], seen=now.isoformat(timespec="minutes"))
+    lock.save(drafts, now)
     # 2) nothing left today: preview the next day with games
     preview = None
     if not card:

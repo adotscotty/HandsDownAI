@@ -6,11 +6,12 @@ every leg covers, so its chance is the legs' chances multiplied together. Projec
 chance x payout - stake. For each sport we show the best 2-game parlay (if it has 4+ games that day)
 and the best 3-game parlay (if it has 6+ games), all legs from that sport.
 
-Tracking: one card per sport per day. It is locked 45 minutes before its first game, then every parlay
+Tracking: one card per sport per day. It is locked 25 minutes before its first game, then every parlay
 on it is graded when its games are final, at $20 each. Results: data/parlays_log.csv.
 """
 import csv, datetime as dt, itertools, json, os
 from .fetch_history import DATA
+from . import lock
 
 STAKE = 20.0
 LOG = os.path.join(DATA, "parlays_log.csv")
@@ -119,16 +120,18 @@ def from_row(r):
 
 def update_parlays(preds):
     """One card per sport per day (US Eastern): the best 2-game and 3-game parlay, each only when the
-    sport has enough games. A sport's card keeps updating until its first game is 45 minutes away;
+    sport has enough games. A sport's card keeps updating until its first game is 25 minutes away;
     then it is locked, tracked at $20 per parlay, and shown for the rest of the day."""
     now = dt.datetime.now(dt.timezone.utc)
     today = eastern_today(now)
     log = load_log()
     changed = False
     legs = legs_for(preds, now)
+    drafts = lock.load()
     current = {}
     for sport in SPORTS:
         card = {}
+        key = f"parlay|{today}|{sport}"
         locked = {r["kind"]: r for r in log.values() if r["slot"].startswith(f"{today}|{sport}|")}
         if locked:
             for kind, r in locked.items():
@@ -141,16 +144,24 @@ def update_parlays(preds):
                     best = best_parlays(pool, size, n=1)
                     if best:
                         card[kind] = best[0]
-            starts = [p["legs"][0]["start"] for k, p in card.items()]
-            if starts and dt.datetime.fromisoformat(min(starts).replace("Z", "+00:00")) <= now + dt.timedelta(minutes=45):
+            at = now
+            d = lock.missed(drafts, key, now)
+            if d:   # its first game started with no update inside the lock window: lock the last card shown
+                card, at = d["card"], lock.when(d["seen"])
+            starts = [l["start"] for p in card.values() for l in p["legs"]]
+            if starts and (d or lock.in_window(min(starts), now)):
                 for kind in ("two", "three"):
                     if kind in card:
                         slot = f"{today}|{sport}|{kind}"
-                        log[slot] = as_row(slot, sport, kind, card[kind], now)
+                        log[slot] = as_row(slot, sport, kind, card[kind], at)
                         card[kind]["status"] = "open"
                 card["locked"] = changed = True
+                drafts.pop(key, None)
+            elif starts:
+                drafts[key] = dict(card=card, start=min(starts), seen=now.isoformat(timespec="minutes"))
         if card:
             current[sport] = card
+    lock.save(drafts, now)
 
     # Grade parlays whose games are all final.
     finals = results()

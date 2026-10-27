@@ -9,6 +9,7 @@ import csv, datetime as dt, json, math, os, sys
 from collections import defaultdict
 from .espn import get_json, get_many, summary_url, CORE, LEAGUES
 from .fetch_history import DATA
+from . import lock
 
 SPORTS = ("nba", "nfl")
 BASE = {"nba": ["min", "pts", "reb", "ast", "tpm"],
@@ -333,20 +334,31 @@ def update_sport(sport, preds, done_games):
 
 
 def lock_and_grade(preds, player_rows):
-    """Lock each game's best prop 45 minutes before start; grade finished ones from the box score."""
+    """Lock each game's best prop 25 minutes before start; grade finished ones from the box score.
+    If no update ran inside that window, the last prop shown before the game is locked."""
     now = dt.datetime.now(dt.timezone.utc)
     log = load_log()
+    drafts = lock.load()
     have = {(r["sport"], r["event_id"]) for r in log}
     for p in preds:
-        bp = p.get("best_prop")
-        if not bp or (p["sport"], p["event_id"]) in have:
+        key = f'prop|{p["sport"]}|{p["event_id"]}'
+        if (p["sport"], p["event_id"]) in have:
             continue
-        start = dt.datetime.fromisoformat(p["date"].replace("Z", "+00:00"))
-        if start - now <= dt.timedelta(minutes=45):
+        bp, at = p.get("best_prop"), now
+        d = lock.missed(drafts, key, now)
+        if d:
+            bp, at = d["prop"], lock.when(d["seen"])
+        if not bp:
+            continue
+        if d or lock.in_window(p["date"], now):
             log.append(dict(sport=p["sport"], event_id=p["event_id"], date=p["date"], game=p["name"], pid=bp["pid"],
                             name=bp["name"], stat=bp["stat"], label=bp["label"], side=bp["side"], line=bp["line"],
                             price=bp["price"], projection=round(bp["projection"], 1), prob=bp["prob"], ev=bp["ev"],
-                            actual="", result="", profit="", logged_at=now.isoformat(timespec="minutes")))
+                            actual="", result="", profit="", logged_at=at.isoformat(timespec="minutes")))
+            drafts.pop(key, None)
+        else:
+            drafts[key] = dict(prop=bp, start=p["date"], seen=now.isoformat(timespec="minutes"))
+    lock.save(drafts, now)
     by_game = defaultdict(dict)
     played = defaultdict(set)
     for sport, rows in player_rows.items():
