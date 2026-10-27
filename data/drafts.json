@@ -22,7 +22,7 @@
      "event_id": "401909878",
      "game": "DET @ NY",
      "line": 3.5,
-     "odds": -112,
+     "odds": -108,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-28T00:00Z",
@@ -31,12 +31,12 @@
      "type": "spread"
     }
    ],
-   "payout": 73.91,
-   "price": 270,
-   "projected_profit": 1.0,
+   "payout": 75.2,
+   "price": 276,
+   "projected_profit": 1.36,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
@@ -46,17 +46,17 @@
    "legs": [
     {
      "chance": 0.657,
-     "event_id": "401909877",
-     "game": "BKN @ BOS",
+     "event_id": "401909880",
+     "game": "POR @ LAL",
      "label": "threes",
-     "line": 0.5,
-     "name": "Noah Clowney",
+     "line": 1.5,
+     "name": "Quentin Grimes",
      "odds": -234,
-     "pid": "4712896",
-     "projection": 1.213,
-     "side": "over",
+     "pid": "4397014",
+     "projection": 1.226,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-10-27T23:30Z",
+     "start": "2026-10-28T03:00Z",
      "stat": "tpm",
      "type": "prop"
     }
@@ -64,10 +64,10 @@
    "payout": 28.55,
    "price": -234,
    "projected_profit": -1.24,
-   "start": "2026-10-27T23:30Z"
+   "start": "2026-10-28T03:00Z"
   },
-  "seen": "2026-10-27T14:11+00:00",
-  "start": "2026-10-27T23:30Z"
+  "seen": "2026-10-27T14:32+00:00",
+  "start": "2026-10-28T03:00Z"
  },
  "bet|2026-10-27|sgp": {
   "bet": {
@@ -109,7 +109,7 @@
    "projected_profit": -1.47,
    "start": "2026-10-28T03:00Z"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T03:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -122,7 +122,7 @@
      "event_id": "401909878",
      "game": "DET @ NY",
      "line": 3.5,
-     "odds": -112,
+     "odds": -108,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-28T00:00Z",
@@ -131,12 +131,12 @@
      "type": "spread"
     }
    ],
-   "payout": 37.86,
-   "price": -112,
-   "projected_profit": 0.18,
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 0.53,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -162,7 +162,7 @@
    "projected_profit": 0.65,
    "start": "2026-10-28T03:00Z"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T03:00Z"
  },
  "parlay|2026-10-27|nba": {
@@ -175,7 +175,7 @@
       "event_id": "401909878",
       "game": "DET @ NY",
       "line": 3.5,
-      "odds": -112,
+      "odds": -108,
       "side": "away",
       "sport": "nba",
       "start": "2026-10-28T00:00Z",
@@ -193,65 +193,65 @@
       "team": "LAL"
      }
     ],
-    "payout": 72.91005291005291,
-    "projected_profit": -0.06427714285714359
+    "payout": 74.18381344307271,
+    "projected_profit": 0.2840059259259249
    }
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
   "prop": {
-   "ev": -0.021,
+   "ev": -0.108,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
+   "line": 1.5,
+   "market_prob": 0.656,
    "name": "Noah Clowney",
    "pid": "4712896",
-   "price": "-234",
-   "prob": 0.686,
+   "price": "-231",
+   "prob": 0.623,
    "projection": 1.213,
-   "score": 0.657,
-   "side": "over",
+   "score": 0.656,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
   "prop": {
-   "ev": -0.058,
-   "label": "assists",
+   "ev": -0.013,
+   "label": "threes",
    "line": 1.5,
-   "market_prob": 0.616,
-   "name": "OG Anunoby",
-   "pid": "3934719",
-   "price": "-192",
-   "prob": 0.619,
-   "projection": 2.027,
-   "score": 0.616,
+   "market_prob": 0.617,
+   "name": "Cade Cunningham",
+   "pid": "4432166",
+   "price": "-193",
+   "prob": 0.65,
+   "projection": 2.272,
+   "score": 0.617,
    "side": "over",
-   "stat": "ast"
+   "stat": "tpm"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
   "prop": {
-   "ev": -0.153,
+   "ev": -0.147,
    "label": "threes",
    "line": 2.5,
-   "market_prob": 0.601,
+   "market_prob": 0.591,
    "name": "Julian Champagnie",
    "pid": "4592479",
-   "price": "-179",
-   "prob": 0.543,
+   "price": "-171",
+   "prob": 0.538,
    "projection": 2.563,
-   "score": 0.601,
+   "score": 0.591,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -269,7 +269,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T14:11+00:00",
+  "seen": "2026-10-27T14:32+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
