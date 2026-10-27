@@ -26,7 +26,7 @@
    "projected_profit": -1.2,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": -0.15,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 1.11,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -122,13 +122,13 @@
    "projected_profit": -1.54,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
   "card": {
-   "two": {
-    "chance": 0.28089099999999995,
+   "three": {
+    "chance": 0.16535418899999996,
     "legs": [
      {
       "chance": 0.5329999999999999,
@@ -142,41 +142,63 @@
       "team": "DET"
      },
      {
-      "chance": 0.527,
-      "event_id": "401909880",
-      "game": "POR @ LAL",
-      "line": -1.5,
-      "odds": -108,
+      "chance": 0.5609999999999999,
+      "event_id": "401909882",
+      "game": "WSH @ CLE",
+      "line": 10.5,
+      "odds": -115,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-28T23:00Z",
+      "team": "WSH"
+     },
+     {
+      "chance": 0.553,
+      "event_id": "401909884",
+      "game": "PHI @ IND",
+      "line": 4.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
-      "start": "2026-10-28T03:00Z",
-      "team": "LAL"
+      "start": "2026-10-28T23:00Z",
+      "team": "IND"
      }
     ],
-    "payout": 76.28177196804648,
-    "projected_profit": 1.4268632098765401
+    "payout": 138.44026835687015,
+    "projected_profit": 2.8916782990926215
+   },
+   "two": {
+    "chance": 0.2990129999999999,
+    "legs": [
+     {
+      "chance": 0.5329999999999999,
+      "event_id": "401909878",
+      "game": "DET @ NY",
+      "line": 3.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-28T00:00Z",
+      "team": "DET"
+     },
+     {
+      "chance": 0.5609999999999999,
+      "event_id": "401909882",
+      "game": "WSH @ CLE",
+      "line": 10.5,
+      "odds": -115,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-28T23:00Z",
+      "team": "WSH"
+     }
+    ],
+    "payout": 74.04944586530264,
+    "projected_profit": 2.1417469565217324
    }
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T00:00Z"
- },
- "prop|nba|401909877": {
-  "prop": {
-   "ev": -0.097,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.639,
-   "name": "Noah Clowney",
-   "pid": "4712896",
-   "price": "-213",
-   "prob": 0.614,
-   "projection": 1.213,
-   "score": 0.639,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-27T22:58+00:00",
-  "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
   "prop": {
@@ -193,25 +215,25 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
   "prop": {
-   "ev": -0.165,
+   "ev": 0.024,
    "label": "threes",
-   "line": 2.5,
-   "market_prob": 0.622,
+   "line": 1.5,
+   "market_prob": 0.62,
    "name": "Julian Champagnie",
    "pid": "4592479",
-   "price": "-197",
-   "prob": 0.554,
+   "price": "-195",
+   "prob": 0.677,
    "projection": 2.563,
-   "score": 0.622,
-   "side": "under",
+   "score": 0.62,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -229,7 +251,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:58+00:00",
+  "seen": "2026-10-27T23:11+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
