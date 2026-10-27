@@ -1,20 +1,20 @@
 {
  "prop|nba|401909880": {
   "prop": {
-   "ev": -0.103,
+   "ev": 0.07,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.644,
-   "name": "Quentin Grimes",
-   "pid": "4397014",
-   "price": "-218",
-   "prob": 0.615,
-   "projection": 1.226,
-   "score": 0.644,
-   "side": "under",
+   "line": 0.5,
+   "market_prob": 0.636,
+   "name": "Collin Sexton",
+   "pid": "4277811",
+   "price": "-211",
+   "prob": 0.726,
+   "projection": 1.841,
+   "score": 0.636,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T23:41+00:00",
+  "seen": "2026-10-27T23:53+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
