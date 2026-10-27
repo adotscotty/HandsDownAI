@@ -26,16 +26,16 @@
    "projected_profit": -1.2,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|sgp": {
   "bet": {
-   "chance": 0.3619,
+   "chance": 0.3639,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.5329999999999999,
+     "chance": 0.536,
      "event_id": "401909878",
      "game": "DET @ NY",
      "line": 3.5,
@@ -66,19 +66,19 @@
    ],
    "payout": 54.84,
    "price": 174,
-   "projected_profit": -0.15,
+   "projected_profit": -0.04,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
   "bet": {
-   "chance": 0.533,
+   "chance": 0.536,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.5329999999999999,
+     "chance": 0.536,
      "event_id": "401909878",
      "game": "DET @ NY",
      "line": 3.5,
@@ -93,22 +93,22 @@
    ],
    "payout": 39.61,
    "price": -102,
-   "projected_profit": 1.11,
+   "projected_profit": 1.23,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
   "bet": {
-   "chance": 0.581,
+   "chance": 0.577,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.581,
+     "chance": 0.577,
      "event_id": "401909878",
      "game": "DET @ NY",
-     "odds": -170,
+     "odds": -175,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-28T00:00Z",
@@ -117,21 +117,21 @@
      "type": "ml"
     }
    ],
-   "payout": 31.76,
-   "price": -170,
-   "projected_profit": -1.54,
+   "payout": 31.43,
+   "price": -175,
+   "projected_profit": -1.87,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
   "card": {
    "three": {
-    "chance": 0.16535418899999996,
+    "chance": 0.166284888,
     "legs": [
      {
-      "chance": 0.5329999999999999,
+      "chance": 0.536,
       "event_id": "401909878",
       "game": "DET @ NY",
       "line": 3.5,
@@ -165,13 +165,13 @@
      }
     ],
     "payout": 138.44026835687015,
-    "projected_profit": 2.8916782990926215
+    "projected_profit": 3.0205245184120955
    },
    "two": {
-    "chance": 0.2990129999999999,
+    "chance": 0.30069599999999996,
     "legs": [
      {
-      "chance": 0.5329999999999999,
+      "chance": 0.536,
       "event_id": "401909878",
       "game": "DET @ NY",
       "line": 3.5,
@@ -194,10 +194,10 @@
      }
     ],
     "payout": 74.04944586530264,
-    "projected_profit": 2.1417469565217324
+    "projected_profit": 2.266372173913041
    }
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909878": {
@@ -215,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
@@ -233,7 +233,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -251,7 +251,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T23:11+00:00",
+  "seen": "2026-10-27T23:24+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
