@@ -36,81 +36,81 @@
    "projected_profit": 0.52,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
-     "event_id": "401909880",
-     "game": "POR @ LAL",
+     "chance": 0.662,
+     "event_id": "401909877",
+     "game": "BKN @ BOS",
      "label": "threes",
-     "line": 1.5,
-     "name": "Quentin Grimes",
-     "odds": -234,
-     "pid": "4397014",
-     "projection": 1.226,
-     "side": "under",
+     "line": 0.5,
+     "name": "Noah Clowney",
+     "odds": -238,
+     "pid": "4712896",
+     "projection": 1.213,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-10-28T03:00Z",
+     "start": "2026-10-27T23:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.24,
-   "start": "2026-10-28T03:00Z"
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.2,
+   "start": "2026-10-27T23:30Z"
   },
-  "seen": "2026-10-27T12:52+00:00",
-  "start": "2026-10-28T03:00Z"
+  "seen": "2026-10-27T13:05+00:00",
+  "start": "2026-10-27T23:30Z"
  },
  "bet|2026-10-27|sgp": {
   "bet": {
-   "chance": 0.337,
+   "chance": 0.3376,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.513,
-     "event_id": "401909880",
-     "game": "POR @ LAL",
-     "line": -2.5,
+     "chance": 0.51,
+     "event_id": "401909877",
+     "game": "BKN @ BOS",
+     "line": -11.5,
      "odds": -110,
      "side": "home",
      "sport": "nba",
-     "start": "2026-10-28T03:00Z",
-     "team": "LAL",
-     "team_name": "Los Angeles Lakers",
+     "start": "2026-10-27T23:30Z",
+     "team": "BOS",
+     "team_name": "Boston Celtics",
      "type": "spread"
     },
     {
-     "chance": 0.657,
-     "event_id": "401909880",
-     "game": "POR @ LAL",
+     "chance": 0.662,
+     "event_id": "401909877",
+     "game": "BKN @ BOS",
      "label": "threes",
-     "line": 1.5,
-     "name": "Quentin Grimes",
-     "odds": -234,
-     "pid": "4397014",
-     "projection": 1.226,
-     "side": "under",
+     "line": 0.5,
+     "name": "Noah Clowney",
+     "odds": -238,
+     "pid": "4712896",
+     "projection": 1.213,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-10-28T03:00Z",
+     "start": "2026-10-27T23:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 54.5,
-   "price": 172,
-   "projected_profit": -1.63,
-   "start": "2026-10-28T03:00Z"
+   "payout": 54.22,
+   "price": 171,
+   "projected_profit": -1.69,
+   "start": "2026-10-27T23:30Z"
   },
-  "seen": "2026-10-27T12:52+00:00",
-  "start": "2026-10-28T03:00Z"
+  "seen": "2026-10-27T13:05+00:00",
+  "start": "2026-10-27T23:30Z"
  },
  "bet|2026-10-27|spread": {
   "bet": {
@@ -136,7 +136,7 @@
    "projected_profit": 0.18,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -162,13 +162,13 @@
    "projected_profit": 0.21,
    "start": "2026-10-28T03:00Z"
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-28T03:00Z"
  },
  "parlay|2026-10-27|nba": {
   "card": {
    "two": {
-    "chance": 0.273429,
+    "chance": 0.26703299999999996,
     "legs": [
      {
       "chance": 0.5329999999999999,
@@ -182,40 +182,40 @@
       "team": "DET"
      },
      {
-      "chance": 0.513,
-      "event_id": "401909880",
-      "game": "POR @ LAL",
-      "line": -2.5,
-      "odds": -110,
-      "side": "home",
+      "chance": 0.501,
+      "event_id": "401909879",
+      "game": "SAC @ SA",
+      "line": 17.5,
+      "odds": -102,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-10-28T03:00Z",
-      "team": "LAL"
+      "start": "2026-10-28T00:00Z",
+      "team": "SAC"
      }
     ],
-    "payout": 72.27272727272727,
-    "projected_profit": -0.2385404545454577
+    "payout": 74.9719887955182,
+    "projected_profit": 0.019995084033610055
    }
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
   "prop": {
-   "ev": -0.107,
+   "ev": -0.023,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.654,
+   "line": 0.5,
+   "market_prob": 0.662,
    "name": "Noah Clowney",
    "pid": "4712896",
-   "price": "-229",
-   "prob": 0.622,
+   "price": "-238",
+   "prob": 0.688,
    "projection": 1.213,
-   "score": 0.654,
-   "side": "under",
+   "score": 0.662,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
@@ -233,25 +233,25 @@
    "side": "over",
    "stat": "ast"
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
   "prop": {
-   "ev": -0.088,
+   "ev": -0.153,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.61,
-   "name": "Victor Wembanyama",
-   "pid": "5104157",
-   "price": "-186",
-   "prob": 0.593,
-   "projection": 1.784,
-   "score": 0.61,
-   "side": "over",
+   "line": 2.5,
+   "market_prob": 0.601,
+   "name": "Julian Champagnie",
+   "pid": "4592479",
+   "price": "-179",
+   "prob": 0.543,
+   "projection": 2.563,
+   "score": 0.601,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -269,7 +269,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T12:52+00:00",
+  "seen": "2026-10-27T13:05+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
