@@ -1,7 +1,7 @@
 {
  "bet|2026-10-27|parlay": {
   "bet": {
-   "chance": 0.291,
+   "chance": 0.1476,
    "kind": "parlay",
    "legs": [
     {
@@ -18,40 +18,53 @@
      "type": "spread"
     },
     {
-     "chance": 0.533,
+     "chance": 0.527,
      "event_id": "401871072",
      "game": "SHSU @ MOST",
-     "line": -5.5,
-     "odds": -115,
+     "line": -6.0,
+     "odds": -110,
      "side": "home",
      "sport": "cfb",
      "start": "2026-10-28T00:00Z",
      "team": "MOST",
      "team_name": "MOST",
      "type": "spread"
+    },
+    {
+     "chance": 0.513,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "line": -2.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-28T03:00Z",
+     "team": "LAL",
+     "team_name": "LAL",
+     "type": "spread"
     }
    ],
-   "payout": 69.91,
-   "price": 250,
-   "projected_profit": 0.34,
+   "payout": 139.37,
+   "price": 597,
+   "projected_profit": 0.57,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
   "bet": {
-   "chance": 0.64,
+   "chance": 0.642,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.64,
+     "chance": 0.642,
      "event_id": "401909877",
      "game": "BKN @ BOS",
      "label": "threes",
      "line": 1.5,
      "name": "Noah Clowney",
-     "odds": -215,
+     "odds": -216,
      "pid": "4712896",
      "projection": 1.213,
      "side": "under",
@@ -61,17 +74,17 @@
      "type": "prop"
     }
    ],
-   "payout": 29.3,
-   "price": -215,
-   "projected_profit": -1.25,
+   "payout": 29.26,
+   "price": -216,
+   "projected_profit": -1.22,
    "start": "2026-10-27T23:30Z"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "bet|2026-10-27|sgp": {
   "bet": {
-   "chance": 0.3369,
+   "chance": 0.3396,
    "kind": "sgp",
    "legs": [
     {
@@ -88,13 +101,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.617,
+     "chance": 0.622,
      "event_id": "401909878",
      "game": "DET @ NY",
      "label": "assists",
      "line": 1.5,
      "name": "OG Anunoby",
-     "odds": -193,
+     "odds": -197,
      "pid": "3934719",
      "projection": 2.027,
      "side": "over",
@@ -104,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 56.77,
-   "price": 184,
-   "projected_profit": -0.88,
+   "payout": 56.37,
+   "price": 182,
+   "projected_profit": -0.86,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -136,7 +149,7 @@
    "projected_profit": 0.42,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -162,13 +175,13 @@
    "projected_profit": -0.94,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
   "card": {
    "two": {
-    "chance": 0.287196,
+    "chance": 0.280098,
     "legs": [
      {
       "chance": 0.546,
@@ -182,22 +195,22 @@
       "team": "DET"
      },
      {
-      "chance": 0.526,
+      "chance": 0.513,
       "event_id": "401909880",
       "game": "POR @ LAL",
-      "line": -1.5,
-      "odds": -115,
+      "line": -2.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-28T03:00Z",
       "team": "LAL"
      }
     ],
-    "payout": 69.90548204158789,
-    "projected_profit": 0.07657482041587471
+    "payout": 73.00207039337474,
+    "projected_profit": 0.44773391304347854
    }
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
@@ -205,35 +218,35 @@
    "ev": -0.099,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.64,
+   "market_prob": 0.642,
    "name": "Noah Clowney",
    "pid": "4712896",
-   "price": "-215",
-   "prob": 0.615,
+   "price": "-216",
+   "prob": 0.616,
    "projection": 1.213,
-   "score": 0.64,
+   "score": 0.642,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
   "prop": {
-   "ev": -0.059,
+   "ev": -0.062,
    "label": "assists",
    "line": 1.5,
-   "market_prob": 0.617,
+   "market_prob": 0.622,
    "name": "OG Anunoby",
    "pid": "3934719",
-   "price": "-193",
-   "prob": 0.62,
+   "price": "-197",
+   "prob": 0.622,
    "projection": 2.027,
-   "score": 0.617,
+   "score": 0.622,
    "side": "over",
    "stat": "ast"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
@@ -251,7 +264,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
@@ -269,7 +282,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T17:10+00:00",
+  "seen": "2026-10-27T17:23+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
