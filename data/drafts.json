@@ -1,1 +1,275 @@
-{}
+{
+ "bet|2026-10-27|parlay": {
+  "bet": {
+   "chance": 0.29,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.544,
+     "event_id": "401871072",
+     "game": "SHSU @ MOST",
+     "line": -4.5,
+     "odds": -115,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-10-28T00:00Z",
+     "team": "MOST",
+     "team_name": "MOST",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5329999999999999,
+     "event_id": "401909878",
+     "game": "DET @ NY",
+     "line": 3.5,
+     "odds": -112,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-10-28T00:00Z",
+     "team": "DET",
+     "team_name": "DET",
+     "type": "spread"
+    }
+   ],
+   "payout": 70.78,
+   "price": 254,
+   "projected_profit": 0.52,
+   "start": "2026-10-28T00:00Z"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T00:00Z"
+ },
+ "bet|2026-10-27|prop": {
+  "bet": {
+   "chance": 0.657,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.657,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Quentin Grimes",
+     "odds": -234,
+     "pid": "4397014",
+     "projection": 1.226,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-10-28T03:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.55,
+   "price": -234,
+   "projected_profit": -1.24,
+   "start": "2026-10-28T03:00Z"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T03:00Z"
+ },
+ "bet|2026-10-27|sgp": {
+  "bet": {
+   "chance": 0.337,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.513,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "line": -2.5,
+     "odds": -110,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-28T03:00Z",
+     "team": "LAL",
+     "team_name": "Los Angeles Lakers",
+     "type": "spread"
+    },
+    {
+     "chance": 0.657,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Quentin Grimes",
+     "odds": -234,
+     "pid": "4397014",
+     "projection": 1.226,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-10-28T03:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 54.5,
+   "price": 172,
+   "projected_profit": -1.63,
+   "start": "2026-10-28T03:00Z"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T03:00Z"
+ },
+ "bet|2026-10-27|spread": {
+  "bet": {
+   "chance": 0.533,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.5329999999999999,
+     "event_id": "401909878",
+     "game": "DET @ NY",
+     "line": 3.5,
+     "odds": -112,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-10-28T00:00Z",
+     "team": "DET",
+     "team_name": "Detroit Pistons",
+     "type": "spread"
+    }
+   ],
+   "payout": 37.86,
+   "price": -112,
+   "projected_profit": 0.18,
+   "start": "2026-10-28T00:00Z"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T00:00Z"
+ },
+ "bet|2026-10-27|winner": {
+  "bet": {
+   "chance": 0.593,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.593,
+     "event_id": "401909880",
+     "game": "POR @ LAL",
+     "odds": -142,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-28T03:00Z",
+     "team": "LAL",
+     "team_name": "Los Angeles Lakers",
+     "type": "ml"
+    }
+   ],
+   "payout": 34.08,
+   "price": -142,
+   "projected_profit": 0.21,
+   "start": "2026-10-28T03:00Z"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T03:00Z"
+ },
+ "parlay|2026-10-27|nba": {
+  "card": {
+   "two": {
+    "chance": 0.273429,
+    "legs": [
+     {
+      "chance": 0.5329999999999999,
+      "event_id": "401909878",
+      "game": "DET @ NY",
+      "line": 3.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-28T00:00Z",
+      "team": "DET"
+     },
+     {
+      "chance": 0.513,
+      "event_id": "401909880",
+      "game": "POR @ LAL",
+      "line": -2.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-28T03:00Z",
+      "team": "LAL"
+     }
+    ],
+    "payout": 72.27272727272727,
+    "projected_profit": -0.2385404545454577
+   }
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T00:00Z"
+ },
+ "prop|nba|401909877": {
+  "prop": {
+   "ev": -0.107,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.654,
+   "name": "Noah Clowney",
+   "pid": "4712896",
+   "price": "-229",
+   "prob": 0.622,
+   "projection": 1.213,
+   "score": 0.654,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-27T23:30Z"
+ },
+ "prop|nba|401909878": {
+  "prop": {
+   "ev": -0.013,
+   "label": "assists",
+   "line": 1.5,
+   "market_prob": 0.61,
+   "name": "Duncan Robinson",
+   "pid": "3157465",
+   "price": "-186",
+   "prob": 0.642,
+   "projection": 2.307,
+   "score": 0.61,
+   "side": "over",
+   "stat": "ast"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T00:00Z"
+ },
+ "prop|nba|401909879": {
+  "prop": {
+   "ev": -0.156,
+   "label": "threes",
+   "line": 2.5,
+   "market_prob": 0.605,
+   "name": "Julian Champagnie",
+   "pid": "4592479",
+   "price": "-182",
+   "prob": 0.545,
+   "projection": 2.563,
+   "score": 0.605,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T00:00Z"
+ },
+ "prop|nba|401909880": {
+  "prop": {
+   "ev": -0.113,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.657,
+   "name": "Quentin Grimes",
+   "pid": "4397014",
+   "price": "-234",
+   "prob": 0.622,
+   "projection": 1.226,
+   "score": 0.657,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-27T12:39+00:00",
+  "start": "2026-10-28T03:00Z"
+ }
+}
