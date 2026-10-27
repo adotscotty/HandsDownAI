@@ -1,22 +1,9 @@
 {
  "bet|2026-10-27|parlay": {
   "bet": {
-   "chance": 0.1454,
+   "chance": 0.1479,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.518,
-     "event_id": "401871071",
-     "game": "DEL @ WKU",
-     "line": 1.5,
-     "odds": -105,
-     "side": "away",
-     "sport": "cfb",
-     "start": "2026-10-27T23:00Z",
-     "team": "DEL",
-     "team_name": "DEL",
-     "type": "spread"
-    },
     {
      "chance": 0.546,
      "event_id": "401909878",
@@ -42,15 +29,28 @@
      "team": "SAC",
      "team_name": "SAC",
      "type": "spread"
+    },
+    {
+     "chance": 0.527,
+     "event_id": "401871072",
+     "game": "SHSU @ MOST",
+     "line": -6.0,
+     "odds": -110,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-10-28T00:00Z",
+     "team": "MOST",
+     "team_name": "MOST",
+     "type": "spread"
     }
    ],
-   "payout": 144.57,
-   "price": 623,
-   "projected_profit": 1.02,
-   "start": "2026-10-27T23:00Z"
+   "payout": 141.37,
+   "price": 607,
+   "projected_profit": 0.91,
+   "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:17+00:00",
-  "start": "2026-10-27T23:00Z"
+  "seen": "2026-10-27T22:31+00:00",
+  "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|prop": {
   "bet": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": -0.81,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 0.42,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "bet|2026-10-27|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": -0.94,
    "start": "2026-10-28T00:00Z"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "parlay|2026-10-27|nba": {
@@ -210,7 +210,7 @@
     "projected_profit": 0.7815326854219968
    }
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909877": {
@@ -228,7 +228,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-27T23:30Z"
  },
  "prop|nba|401909878": {
@@ -246,43 +246,43 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909879": {
   "prop": {
-   "ev": -0.165,
+   "ev": 0.023,
    "label": "threes",
-   "line": 2.5,
-   "market_prob": 0.621,
+   "line": 1.5,
+   "market_prob": 0.623,
    "name": "Julian Champagnie",
    "pid": "4592479",
-   "price": "-196",
-   "prob": 0.553,
+   "price": "-197",
+   "prob": 0.678,
    "projection": 2.563,
-   "score": 0.621,
-   "side": "under",
+   "score": 0.623,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T00:00Z"
  },
  "prop|nba|401909880": {
   "prop": {
-   "ev": -0.041,
+   "ev": -0.183,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.643,
-   "name": "Sandro Mamukelashvili",
-   "pid": "4278580",
-   "price": "-218",
-   "prob": 0.657,
-   "projection": 1.022,
-   "score": 0.643,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.647,
+   "name": "Ziaire Williams",
+   "pid": "4433137",
+   "price": "-222",
+   "prob": 0.564,
+   "projection": 1.571,
+   "score": 0.647,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-27T22:17+00:00",
+  "seen": "2026-10-27T22:31+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
