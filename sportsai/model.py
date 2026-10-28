@@ -33,7 +33,7 @@ DEFAULTS = {
                 rest=0.0, rest_cap=14, qbq=0.0, qb_repl=4.5, epa_w=0.0, epa_scale=0.8, epa_close=0),
     "nba": dict(wt_w=0.75, wt_k=2.7, k=0.06, early=2.0, carry=0.6, hfa=2.5, cap=25, beta=0.5, sigma=12.5, new=0.0,
                 rest=0.0, rest_cap=3, qbq=0.0, qb_repl=0.0,
-                lu=0.7, lu_mix=0.0, luck=0.25, pace_adj=1, late_tank=5.0, late_top=0.0),
+                lu=0.7, lu_mix=0.0, luck=0.25, pace_adj=1, late_tank=5.0, late_top=0.0, cur=1),
     "cfb": dict(k=0.12, early=2.0, carry=0.7, hfa=2.8, cap=35, beta=5.0, sigma=15.5, new=-18.0,
                 rest=0.0, rest_cap=14, qbq=0.0, qb_repl=5.0),
 }
@@ -90,10 +90,19 @@ class RatingModel:
             self.r[team] = self.p["new"]   # e.g. small-division college teams start low
         return self.r[team]
 
+    def this_season(self, team, games):
+        """Once a team has played 3+ games this season, judge 'regulars' and its normal lineup on this
+        season's games only (last season's games hide a star who returned or a new signing)."""
+        games = list(games)
+        n = self.wl[team][1] if team in self.wl else 0
+        if self.p.get("cur") and n >= 3:
+            return games[-n:]
+        return games
+
     # ---------- injuries ----------
     def regulars(self, team):
         """NBA: players who usually play real minutes, with their value."""
-        games = self.recent[team]
+        games = self.this_season(team, self.recent[team])
         if len(games) < 3:
             return {}
         out = {}
@@ -163,7 +172,7 @@ class RatingModel:
         return sum(m / total * self.impact(pid) for pid, m in mins.items())
 
     def lineup_delta(self, team, players):
-        hist = self.lu_hist[team]
+        hist = self.this_season(team, self.lu_hist[team])
         if len(hist) < 3 or not players:
             return 0.0, None
         now = self.lineup_strength(team, players)

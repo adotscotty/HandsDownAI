@@ -249,6 +249,9 @@ function gameRow(g) {
         (big ? ". That makes this a gold-edge pick, tracked in the Record." : "."));
   }
   const inj = [...(g.away_injuries?.key_injuries || []).map(i => ({ ...i, t: g.away })), ...(g.home_injuries?.key_injuries || []).map(i => ({ ...i, t: g.home }))];
+  const counted = new Set(inj.map(i => i.id));
+  const alsoOut = [...(g.away_injuries?.all_injuries || []).map(i => ({ ...i, t: g.away })), ...(g.home_injuries?.all_injuries || []).map(i => ({ ...i, t: g.home }))]
+    .filter(i => !counted.has(i.id) && i.weight >= 0.75);
   const bp = g.best_prop;
   const why = whyList(g);
   const extra = h("details", { class: "why" }, h("summary", {}, "Why this pick? ", h("span", { class: "vh", text: `${g.away_name} at ${g.home_name}` })),
@@ -256,6 +259,8 @@ function gameRow(g) {
     bp ? h("p", {}, h("b", { text: "Best prop: " }), `${bp.name} ${bp.side} ${bp.line} ${bp.label} (${price(bp.price)}), DraftKings ${Math.round(bp.market_prob * 100)}% likely, our projection ${(+bp.projection).toFixed(1)}`) : null,
     inj.length ? h("p", {}, h("b", { text: "Injuries counted: " }), inj.map(i => `${i.name} (${i.t}, ${i.status})`).join(", ") +
       (g.injury_adjustment ? `. Moves our line ${Math.abs(g.injury_adjustment).toFixed(1)} pts.` : "")) : null,
+    alsoOut.length ? h("p", {}, h("b", { text: "Also out: " }), alsoOut.map(i => `${i.name} (${i.t})`).join(", ") +
+      ". Not counted separately: they haven't been part of the rotation lately, so the team's recent results already reflect them.") : null,
     modelTxt ? h("p", { text: modelTxt }) : null);
   return h("article", { class: "game rise" + (big ? " edge" : "") },
     h("div", {}, h("p", { class: "when", text: `${SPORT[g.sport]} · ${when(g.date)}` }),
