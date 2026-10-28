@@ -128,6 +128,18 @@ def update_parlays(preds):
     changed = False
     legs = legs_for(preds, now)
     drafts = lock.load()
+    # safety net first: a card whose first game started with no update inside the lock window is locked
+    # as last shown (any date, so a late game still counts when the next update runs after midnight)
+    for key, d in list(drafts.items()):
+        if key.startswith("parlay|") and lock.missed(drafts, key, now):
+            _, day, sport = key.split("|")
+            if not any(r["slot"].startswith(f"{day}|{sport}|") for r in log.values()):
+                for kind in ("two", "three"):
+                    if kind in d["card"]:
+                        slot = f"{day}|{sport}|{kind}"
+                        log[slot] = as_row(slot, sport, kind, d["card"][kind], lock.when(d["seen"]))
+                changed = True
+            drafts.pop(key)
     current = {}
     for sport in SPORTS:
         card = {}
@@ -144,21 +156,19 @@ def update_parlays(preds):
                     best = best_parlays(pool, size, n=1)
                     if best:
                         card[kind] = best[0]
-            at = now
-            d = lock.missed(drafts, key, now)
-            if d:   # its first game started with no update inside the lock window: lock the last card shown
-                card, at = d["card"], lock.when(d["seen"])
             starts = [l["start"] for p in card.values() for l in p["legs"]]
-            if starts and (d or lock.in_window(min(starts), now)):
+            if starts and lock.in_window(min(starts), now):
                 for kind in ("two", "three"):
                     if kind in card:
                         slot = f"{today}|{sport}|{kind}"
-                        log[slot] = as_row(slot, sport, kind, card[kind], at)
+                        log[slot] = as_row(slot, sport, kind, card[kind], now)
                         card[kind]["status"] = "open"
                 card["locked"] = changed = True
                 drafts.pop(key, None)
             elif starts:
                 drafts[key] = dict(card=card, start=min(starts), seen=now.isoformat(timespec="minutes"))
+            else:
+                drafts.pop(key, None)   # no longer shown, so it must not be tracked
         if card:
             current[sport] = card
     lock.save(drafts, now)

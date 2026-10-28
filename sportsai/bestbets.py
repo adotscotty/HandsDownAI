@@ -177,25 +177,35 @@ def update(preds, player_rows):
     # 1) today's card: locked bets stay; the rest update until 25 minutes before their first game
     picks = candidates(preds, today, now)
     drafts = lock.load()
+    # safety net first: a bet whose game started with no update inside the lock window is locked as last
+    # shown (any date, so an 11 PM game still counts when the next update runs after midnight)
+    for key, d in list(drafts.items()):
+        if key.startswith("bet|") and lock.missed(drafts, key, now):
+            slot = key[4:]
+            if slot not in log:
+                day, kind = slot.split("|")
+                log[slot] = dict(slot=slot, date=day, kind=kind, bet=json.dumps(d["bet"]), status="open", profit="",
+                                 logged_at=d["seen"])
+            drafts.pop(key)
     card = {}
     for kind in KINDS:
         slot = f"{today}|{kind}"
+        key = "bet|" + slot
         if slot in log:
             card[kind] = dict(json.loads(log[slot]["bet"]), status=log[slot]["status"],
                               profit=log[slot]["profit"], locked=True)
             continue
-        b, at = picks.get(kind), now
-        d = lock.missed(drafts, "bet|" + slot, now)
-        if d:   # its game started with no update inside the lock window: lock the last version shown
-            b, at = d["bet"], lock.when(d["seen"])
-        if b and (d or lock.in_window(b["start"], now)):
+        b = picks.get(kind)
+        if b and lock.in_window(b["start"], now):
             log[slot] = dict(slot=slot, date=today, kind=kind, bet=json.dumps(b), status="open", profit="",
-                             logged_at=at.isoformat(timespec="minutes"))
+                             logged_at=now.isoformat(timespec="minutes"))
             card[kind] = dict(b, status="open", locked=True)
-            drafts.pop("bet|" + slot, None)
+            drafts.pop(key, None)
         elif b:
             card[kind] = dict(b, locked=False)
-            drafts["bet|" + slot] = dict(bet=b, start=b["start"], seen=now.isoformat(timespec="minutes"))
+            drafts[key] = dict(bet=b, start=b["start"], seen=now.isoformat(timespec="minutes"))
+        else:
+            drafts.pop(key, None)   # no longer shown, so it must not be tracked
     lock.save(drafts, now)
     # 2) nothing left today: preview the next day with games
     preview = None

@@ -112,12 +112,23 @@ def latest_powerindex(sport):
     folder = os.path.join(DATA, "powerindex")
     try:
         files = sorted(f for f in os.listdir(folder) if f.startswith(sport + "-"))
-        return json.load(open(os.path.join(folder, files[-1])))["ratings"] if files else {}
+        if not files:
+            return {}
+        day = dt.date.fromisoformat(files[-1][len(sport) + 1:len(sport) + 11])
+        if (dt.date.today() - day).days > 3:   # too old (e.g. last season's): don't use it as a check
+            return {}
+        with open(os.path.join(folder, files[-1])) as f:
+            return json.load(f)["ratings"]
     except Exception:
         return {}
 
 
 OFFICIAL_WEIGHT = {"Out": 1.0, "Doubtful": 0.75, "Questionable": 0.4, "Probable": 0.05, "Available": 0.0}
+
+
+def eastern_day(iso):
+    from zoneinfo import ZoneInfo
+    return dt.datetime.fromisoformat(iso.replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York")).date().isoformat()
 
 
 def apply_official(injuries, report, roster):
@@ -203,14 +214,17 @@ def predict_sport(sport, settings, blend_w=0.0):
         for side in ("home", "away"):
             team = g[side + "_id"]
             injuries = injury_list(s or {}, team)
-            if sport == "nba" and official.get(g[side + "_name"]):
-                injuries = apply_official(injuries, official[g[side + "_name"]], rosters.get(team, {}))
+            report = official.get(g[side + "_name"], {}).get(eastern_day(g["date"])) if sport == "nba" else None
+            if report:  # only the report for this game's date (it also lists other days' games)
+                injuries = apply_official(injuries, report, rosters.get(team, {}))
             if sport == "nba":  # a game-time decision who sat out the last game will most likely sit again
                 last = model.last_game.get(team)
                 prev = model.recent[team][-1] if model.recent[team] else None
                 if prev is not None and last is not None and (dt.datetime.fromisoformat(g["date"].replace("Z", "+00:00")) - last).days <= 10:
+                    earlier = set().union(*list(model.recent[team])[:-1])
                     for i in injuries:
-                        if 0.2 < i["weight"] < 0.75 and i["id"] not in prev:  # game-time decisions, not "probable"
+                        # game-time decisions (not "probable") who played for this team before but sat out its last game
+                        if 0.2 < i["weight"] < 0.75 and i["id"] and i["id"] not in prev and i["id"] in earlier:
                             i["weight"], i["status"] = 0.75, i["status"] + ", missed last game"
             weights = {i["id"]: i["weight"] for i in injuries}
             if sport == "nba":
@@ -364,8 +378,11 @@ def main(sports):
     allpreds.sort(key=lambda p: p["date"])
     lock_pregame(allpreds)
     log_first_lines(allpreds)
-    from .parlays import update_parlays
-    update_parlays(allpreds)
+    try:
+        from .parlays import update_parlays
+        update_parlays(allpreds)
+    except Exception as e:
+        print("parlays failed", e)
     try:
         from .props import lock_and_grade, record
         log = lock_and_grade(allpreds, prop_rows)

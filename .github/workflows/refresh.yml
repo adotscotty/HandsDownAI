@@ -37,6 +37,11 @@ jobs:
         if: inputs.wait_minutes > 0
         run: git pull -q origin main
 
+      - name: Quick checks (report only; never blocks the update)
+        if: inputs.pass == 1
+        continue-on-error: true
+        run: python -m unittest -q
+
       - name: Make predictions (latest scores, injuries and odds from ESPN)
         run: python -m sportsai.predict
 

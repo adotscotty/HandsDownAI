@@ -161,7 +161,7 @@ function renderHome() {
 function renderPaying() {
   const box = document.getElementById("homePaying"); box.replaceChildren();
   const B = S.best; if (!B) return;
-  const r = B.record, tiles = [["Best prop", r.prop], ["Best spread", r.spread], ["Best winner", r.winner], ["All NBA props", S.props && S.props.record && S.props.record.all], ["Long shots", r.fun]]
+  const r = B.record, tiles = [["Best prop", r.prop], ["Best spread", r.spread], ["Best winner", r.winner], ["All props", S.props && S.props.record && S.props.record.all], ["Long shots", r.fun]]
     .filter(([, x]) => x).sort((a, b) => (b[1].profit ?? 0) - (a[1].profit ?? 0));
   for (const [name, x] of tiles) {
     const w = x.won ?? x.wins ?? 0, l = x.lost ?? x.losses ?? 0;
@@ -212,7 +212,7 @@ function gameRow(g) {
   const favName = favHome ? g.home_name : g.away_name;
   const e = g.edge_vs_spread, big = e != null && Math.abs(e) >= 4 && Math.abs(e) < 7;
   const team = (logo, name, pct, fav) => h("div", { class: "team" + (fav ? " fav" : "") },
-    logo ? h("img", { src: logo, alt: "", loading: "lazy", width: 30, height: 30 }) : null,
+    logo ? h("img", { src: smallLogo(logo), alt: "", loading: "lazy", width: 30, height: 30, onerror: "this.onerror=null;this.src='" + logo + "'" }) : null,
     h("span", { text: name }), h("span", { class: "pct", text: pct + "%" }));
   const bar = h("div", { class: "wp", title: `Win chance: ${g.away} ${awayPct}%, ${g.home} ${homePct}%` });
   bar.append(h("span", { style: `width:${awayPct}%;background:${awayPct >= 50 ? "var(--gold)" : "var(--surface-3)"}` }),
@@ -326,11 +326,18 @@ function longShotText(d) {
   return done.map(b => `, ${names[b.kind] || b.kind} ${b.status}`).join("");
 }
 
+// ESPN logos are 500px (up to 570 KB each); ask ESPN's resizer for a 60px copy (about 5 KB)
+function smallLogo(url) {
+  const m = /^https:\/\/a\.espncdn\.com(\/i\/teamlogos\/.+\.png)$/.exec(url);
+  return m ? `https://a.espncdn.com/combiner/i?img=${m[1]}&w=60&h=60` : url;
+}
+
 // ---------- Today and Yesterday ----------
 function dayHeadline(d) {
   const s = d.summary, bb = s.best_bets;
   const prof = scale(s.profit);
-  const anyBets = bb[0] + bb[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1];
+  const ls = s.long_shots || [0, 0];
+  const anyBets = bb[0] + bb[1] + ls[0] + ls[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1];
   return h("div", { class: "record" },
     h("div", { class: "total rise" }, h("div", { class: "big", text: anyBets ? signed(prof) : wl(...s.winners) }),
       h("p", { text: anyBets ? `All tracked bets at $${S.stake} each: straight best bets ${wl(...bb)}` + longShotText(d) +
@@ -599,7 +606,7 @@ function legNow(l) {
     const r = (BOX[l.event_id] || {})[l.pid];
     if (!r) return { txt: done ? "didn't play" : "no stats yet", good: null, done };
     const v = COMBOS[l.stat] ? COMBOS[l.stat].reduce((a, k) => a + (r[k] || 0), 0) : (r[l.stat] || 0);
-    l = { ...l, label: v === 1 && /s$/.test(l.label) ? l.label.replace(/es$/, "e").replace(/s$/, "") : l.label };
+    l = { ...l, label: v === 1 && /s$/.test(l.label) ? (l.label === "threes" ? "three" : / \+ /.test(l.label) ? l.label : l.label.replace(/s$/, "")) : l.label };
     if (l.side === "over") {
       if (v > l.line) return { txt: `${v} ${l.label}, hit`, good: true, done: true };
       const need = Math.floor(l.line) + 1 - v;

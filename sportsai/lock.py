@@ -22,7 +22,11 @@ def in_window(start_iso, now):
 
 def load():
     try:
-        return json.load(open(PATH))
+        with open(PATH) as f:
+            data = json.load(f)
+        # keep only well-formed drafts, so one bad entry can't stop the update
+        return {k: v for k, v in data.items() if isinstance(v, dict) and "start" in v and "seen" in v
+                and (not k.startswith("prop|") or "game" in v)}
     except Exception:
         return {}
 

@@ -15,7 +15,11 @@ def main():
         if os.path.exists(path):
             continue
         try:
-            season = dt.date.today().year + (1 if sport == "nba" and dt.date.today().month >= 8 else 0)
+            t = dt.date.today()
+            if sport == "nba":   # NBA seasons are named by the year they end
+                season = t.year + (1 if t.month >= 8 else 0)
+            else:                # football seasons by the year they start (January = last season's playoffs/bowls)
+                season = t.year - (1 if t.month <= 2 else 0)
             d = get_json(f"https://sports.core.api.espn.com/v2/sports/{sp}/leagues/{lg}/seasons/{season}/powerindex?limit=400", cache=False)
             out = {}
             for it in d.get("items", []):

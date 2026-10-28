@@ -340,24 +340,34 @@ def lock_and_grade(preds, player_rows):
     log = load_log()
     drafts = lock.load()
     have = {(r["sport"], r["event_id"]) for r in log}
+
+    def add(p, bp, at):
+        log.append(dict(sport=p["sport"], event_id=p["event_id"], date=p["date"], game=p["name"], pid=bp["pid"],
+                        name=bp["name"], stat=bp["stat"], label=bp["label"], side=bp["side"], line=bp["line"],
+                        price=bp["price"], projection=round(bp["projection"], 1), prob=bp["prob"], ev=bp["ev"],
+                        actual="", result="", profit="", logged_at=at.isoformat(timespec="minutes")))
+        have.add((p["sport"], p["event_id"]))
+
+    # safety net first: started games drop out of the predictions, so lock their last shown prop from the draft
+    for key, d in list(drafts.items()):
+        if key.startswith("prop|") and lock.missed(drafts, key, now):
+            g = d["game"]
+            if (g["sport"], g["event_id"]) not in have:
+                add(g, d["prop"], lock.when(d["seen"]))
+            drafts.pop(key)
     for p in preds:
         key = f'prop|{p["sport"]}|{p["event_id"]}'
         if (p["sport"], p["event_id"]) in have:
             continue
-        bp, at = p.get("best_prop"), now
-        d = lock.missed(drafts, key, now)
-        if d:
-            bp, at = d["prop"], lock.when(d["seen"])
-        if not bp:
-            continue
-        if d or lock.in_window(p["date"], now):
-            log.append(dict(sport=p["sport"], event_id=p["event_id"], date=p["date"], game=p["name"], pid=bp["pid"],
-                            name=bp["name"], stat=bp["stat"], label=bp["label"], side=bp["side"], line=bp["line"],
-                            price=bp["price"], projection=round(bp["projection"], 1), prob=bp["prob"], ev=bp["ev"],
-                            actual="", result="", profit="", logged_at=at.isoformat(timespec="minutes")))
+        bp = p.get("best_prop")
+        if bp and lock.in_window(p["date"], now):
+            add(p, bp, now)
             drafts.pop(key, None)
+        elif bp:
+            drafts[key] = dict(prop=bp, start=p["date"], seen=now.isoformat(timespec="minutes"),
+                               game={k: p[k] for k in ("sport", "event_id", "date", "name")})
         else:
-            drafts[key] = dict(prop=bp, start=p["date"], seen=now.isoformat(timespec="minutes"))
+            drafts.pop(key, None)   # no longer shown, so it must not be tracked
     lock.save(drafts, now)
     by_game = defaultdict(dict)
     played = defaultdict(set)

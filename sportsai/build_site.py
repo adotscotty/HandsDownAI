@@ -49,7 +49,10 @@ def line_moves(sport, rows):
         f = first.get(r.get("event_id"))
         if not f or r["spread"] is None:
             continue
-        s0, p0 = float(f["first_spread"]), float(f["first_pred"])
+        try:
+            s0, p0 = float(f["first_spread"]), float(f["first_pred"])
+        except (TypeError, ValueError):
+            continue
         side = p0 + s0  # > 0: we took the home side
         move = s0 - r["spread"]  # > 0: line moved toward the home side
         if side == 0:
@@ -210,7 +213,8 @@ def daily(day):
         parlays=tally(parlays, "status", "won", "lost"),
         best_bets=tally([x for x in best if x["kind"] in CORE], "status", "won", "lost"),  # straight bets
         long_shots=tally([x for x in best if x["kind"] not in CORE], "status", "won", "lost"),
-        profit=round(sum(x["profit"] or 0 for x in props + parlays + best), 2),
+        # the best prop is also one of the tracked props, so count it once
+        profit=round(sum(x["profit"] or 0 for x in props + parlays + [b for b in best if b["kind"] != "prop"]), 2),
     )
 
     # Best win: biggest money win, else the biggest cover
