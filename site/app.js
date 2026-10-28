@@ -368,13 +368,20 @@ function smallLogo(url) {
 // ---------- Today and Yesterday ----------
 function dayHeadline(d) {
   const s = d.summary, bb = s.best_bets;
-  const prof = scale(s.profit);
   const ls = s.long_shots || [0, 0];
   const anyBets = bb[0] + bb[1] + ls[0] + ls[1] + s.parlays[0] + s.parlays[1] + s.props[0] + s.props[1];
+  // headline = the straight best bets (same as the Record page); everything else is listed after it
+  const big = !anyBets ? wl(...s.winners) : bb[0] + bb[1] && s.best_profit != null ? signed(scale(s.best_profit)) : signed(scale(s.profit));
+  let text = "Winners picked.";
+  if (anyBets) {
+    text = bb[0] + bb[1] ? `Straight best bets ${wl(...bb)} at $${S.stake} each.` : "No straight best bets settled.";
+    const all = s.all_bets;
+    if (all && all[0] + all[1] > bb[0] + bb[1])
+      text += ` Everything we tracked, including props and parlays: ${wl(...all)}, ${signed(scale(s.profit))}` +
+        ` (${[`props ${wl(...s.props)}`, ls[0] + ls[1] ? `long shots ${wl(...ls)}` : null, s.parlays[0] + s.parlays[1] ? `Parlays page ${wl(...s.parlays)}` : null].filter(Boolean).join(", ")}).`;
+  }
   return h("div", { class: "record" },
-    h("div", { class: "total rise" }, h("div", { class: "big", text: anyBets ? signed(prof) : wl(...s.winners) }),
-      h("p", { text: anyBets ? `All tracked bets at $${S.stake} each: straight best bets ${wl(...bb)}` + longShotText(d) +
-        (s.parlays[0] + s.parlays[1] ? `, Parlays page ${wl(...s.parlays)}` : "") + `, props ${wl(...s.props)}.` : "Winners picked." })),
+    h("div", { class: "total rise" }, h("div", { class: "big", text: big }), h("p", { text })),
     h("div", { class: "types rise", style: "grid-template-columns:repeat(2,1fr)" },
       h("div", {}, h("p", { class: "lbl", text: "Best bets (straight)" }), h("div", { class: "big", text: wl(...bb) })),
       h("div", {}, h("p", { class: "lbl", text: "Spread picks (NFL, NBA)" }), h("div", { class: "big", text: wl(...s.ats) })),

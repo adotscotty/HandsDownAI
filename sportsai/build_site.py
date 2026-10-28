@@ -215,7 +215,12 @@ def daily(day):
         long_shots=tally([x for x in best if x["kind"] not in CORE], "status", "won", "lost"),
         # the best prop is also one of the tracked props, so count it once
         profit=round(sum(x["profit"] or 0 for x in props + parlays + [b for b in best if b["kind"] != "prop"]), 2),
+        best_profit=round(sum(x["profit"] or 0 for x in best if x["kind"] in CORE), 2),
     )
+    summary["all_bets"] = [summary["props"][0] + summary["parlays"][0] + summary["long_shots"][0] +
+                           sum(x["status"] == "won" for x in best if x["kind"] in CORE and x["kind"] != "prop"),
+                           summary["props"][1] + summary["parlays"][1] + summary["long_shots"][1] +
+                           sum(x["status"] == "lost" for x in best if x["kind"] in CORE and x["kind"] != "prop")]
 
     # Best win: biggest money win, else the biggest cover
     wins = [(x["profit"], f'{BET_NAMES[x["kind"]]}: ' + " + ".join(leg_txt(l) for l in x["legs"]),
