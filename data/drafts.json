@@ -1,4 +1,215 @@
 {
+ "bet|2026-10-28|parlay": {
+  "bet": {
+   "chance": 0.1816,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.553,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
+     "line": 4.5,
+     "odds": -110,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-28T23:00Z",
+     "team": "IND",
+     "team_name": "IND",
+     "type": "spread"
+    },
+    {
+     "chance": 0.578,
+     "event_id": "401909888",
+     "game": "GS @ MIN",
+     "line": -3.5,
+     "odds": -115,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-29T00:00Z",
+     "team": "MIN",
+     "team_name": "MIN",
+     "type": "spread"
+    },
+    {
+     "chance": 0.568,
+     "event_id": "401909890",
+     "game": "SA @ UTAH",
+     "line": 12.5,
+     "odds": -110,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-29T01:00Z",
+     "team": "UTAH",
+     "team_name": "UTAH",
+     "type": "spread"
+    }
+   ],
+   "payout": 136.28,
+   "price": 581,
+   "projected_profit": 4.74,
+   "start": "2026-10-28T23:00Z"
+  },
+  "seen": "2026-10-28T04:05+00:00",
+  "start": "2026-10-28T23:00Z"
+ },
+ "bet|2026-10-28|prop": {
+  "bet": {
+   "chance": 0.657,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.657,
+     "event_id": "401909889",
+     "game": "DEN @ NO",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Jeremiah Fears",
+     "odds": -233,
+     "pid": "5144091",
+     "projection": 1.552,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-10-29T00:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.58,
+   "price": -233,
+   "projected_profit": -1.22,
+   "start": "2026-10-29T00:00Z"
+  },
+  "seen": "2026-10-28T04:05+00:00",
+  "start": "2026-10-29T00:00Z"
+ },
+ "bet|2026-10-28|spread": {
+  "bet": {
+   "chance": 0.578,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.578,
+     "event_id": "401909888",
+     "game": "GS @ MIN",
+     "line": -3.5,
+     "odds": -115,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-29T00:00Z",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
+     "type": "spread"
+    }
+   ],
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 1.61,
+   "start": "2026-10-29T00:00Z"
+  },
+  "seen": "2026-10-28T04:05+00:00",
+  "start": "2026-10-29T00:00Z"
+ },
+ "bet|2026-10-28|winner": {
+  "bet": {
+   "chance": 0.685,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.685,
+     "event_id": "401909888",
+     "game": "GS @ MIN",
+     "odds": -155,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-29T00:00Z",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
+     "type": "ml"
+    }
+   ],
+   "payout": 32.9,
+   "price": -155,
+   "projected_profit": 2.54,
+   "start": "2026-10-29T00:00Z"
+  },
+  "seen": "2026-10-28T04:05+00:00",
+  "start": "2026-10-29T00:00Z"
+ },
+ "parlay|2026-10-28|nba": {
+  "card": {
+   "three": {
+    "chance": 0.181552112,
+    "legs": [
+     {
+      "chance": 0.553,
+      "event_id": "401909884",
+      "game": "PHI @ IND",
+      "line": 4.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-28T23:00Z",
+      "team": "IND"
+     },
+     {
+      "chance": 0.578,
+      "event_id": "401909888",
+      "game": "GS @ MIN",
+      "line": -3.5,
+      "odds": -115,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-29T00:00Z",
+      "team": "MIN"
+     },
+     {
+      "chance": 0.568,
+      "event_id": "401909890",
+      "game": "SA @ UTAH",
+      "line": 12.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-29T01:00Z",
+      "team": "UTAH"
+     }
+    ],
+    "payout": 136.27739849083724,
+    "projected_profit": 4.741449513877111
+   },
+   "two": {
+    "chance": 0.32830399999999993,
+    "legs": [
+     {
+      "chance": 0.578,
+      "event_id": "401909888",
+      "game": "GS @ MIN",
+      "line": -3.5,
+      "odds": -115,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-29T00:00Z",
+      "team": "MIN"
+     },
+     {
+      "chance": 0.568,
+      "event_id": "401909890",
+      "game": "SA @ UTAH",
+      "line": 12.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-29T01:00Z",
+      "team": "UTAH"
+     }
+    ],
+    "payout": 71.38339920948617,
+    "projected_profit": 3.4354554940711424
+   }
+  },
+  "seen": "2026-10-28T04:05+00:00",
+  "start": "2026-10-28T23:00Z"
+ },
  "prop|nba|401909889": {
   "game": {
    "date": "2026-10-29T00:00Z",
@@ -20,7 +231,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T03:53+00:00",
+  "seen": "2026-10-28T04:05+00:00",
   "start": "2026-10-29T00:00Z"
  }
 }
