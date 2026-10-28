@@ -22,7 +22,31 @@
    "projected_profit": 2.43,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T23:02+00:00",
+  "seen": "2026-10-28T23:15+00:00",
+  "start": "2026-10-29T00:00Z"
+ },
+ "prop|nba|401909887": {
+  "game": {
+   "date": "2026-10-29T00:00Z",
+   "event_id": "401909887",
+   "name": "Houston Rockets at Milwaukee Bucks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.01,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.651,
+   "name": "Jaime Jaquez Jr.",
+   "pid": "4432848",
+   "price": "-227",
+   "prob": 0.701,
+   "projection": 1.407,
+   "score": 0.651,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-28T23:15+00:00",
   "start": "2026-10-29T00:00Z"
  }
 }
