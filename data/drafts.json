@@ -1,11 +1,11 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1998,
+   "chance": 0.1981,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.595,
+     "chance": 0.59,
      "event_id": "401909884",
      "game": "PHI @ IND",
      "line": 7.5,
@@ -46,25 +46,25 @@
    ],
    "payout": 142.31,
    "price": 612,
-   "projected_profit": 8.44,
+   "projected_profit": 8.2,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T22:01+00:00",
+  "seen": "2026-10-28T22:15+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
   "bet": {
-   "chance": 0.678,
+   "chance": 0.686,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.678,
+     "chance": 0.686,
      "event_id": "401909883",
      "game": "CHA @ DET",
      "label": "threes",
      "line": 0.5,
      "name": "Paul Reed",
-     "odds": -258,
+     "odds": -269,
      "pid": "4278562",
      "projection": 0.465,
      "side": "under",
@@ -74,21 +74,21 @@
      "type": "prop"
     }
    ],
-   "payout": 27.75,
-   "price": -258,
+   "payout": 27.43,
+   "price": -269,
    "projected_profit": -1.18,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T22:01+00:00",
+  "seen": "2026-10-28T22:15+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
-   "chance": 0.595,
+   "chance": 0.59,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.595,
+     "chance": 0.59,
      "event_id": "401909884",
      "game": "PHI @ IND",
      "line": 7.5,
@@ -103,10 +103,10 @@
    ],
    "payout": 39.05,
    "price": -105,
-   "projected_profit": 3.23,
+   "projected_profit": 3.04,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T22:01+00:00",
+  "seen": "2026-10-28T22:15+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -132,16 +132,16 @@
    "projected_profit": 2.16,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T22:01+00:00",
+  "seen": "2026-10-28T22:15+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.19981170999999998,
+    "chance": 0.19813261999999998,
     "legs": [
      {
-      "chance": 0.595,
+      "chance": 0.59,
       "event_id": "401909884",
       "game": "PHI @ IND",
       "line": 7.5,
@@ -175,13 +175,13 @@
      }
     ],
     "payout": 142.31404958677686,
-    "projected_profit": 8.436013604958674
+    "projected_profit": 8.197055507438016
    },
    "two": {
-    "chance": 0.345695,
+    "chance": 0.34279,
     "legs": [
      {
-      "chance": 0.595,
+      "chance": 0.59,
       "event_id": "401909884",
       "game": "PHI @ IND",
       "line": 7.5,
@@ -204,10 +204,10 @@
      }
     ],
     "payout": 74.54545454545455,
-    "projected_profit": 5.769990909090907
+    "projected_profit": 5.5534363636363615
    }
   },
-  "seen": "2026-10-28T22:01+00:00",
+  "seen": "2026-10-28T22:15+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909883": {
@@ -218,20 +218,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.172,
+   "ev": -0.176,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.678,
+   "market_prob": 0.686,
    "name": "Paul Reed",
    "pid": "4278562",
-   "price": "-258",
-   "prob": 0.597,
+   "price": "-269",
+   "prob": 0.601,
    "projection": 0.465,
-   "score": 0.678,
+   "score": 0.686,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T22:01+00:00",
+  "seen": "2026-10-28T22:15+00:00",
   "start": "2026-10-28T23:00Z"
  }
 }
