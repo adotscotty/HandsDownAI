@@ -1,7 +1,7 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1878,
+   "chance": 0.1988,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.546,
-     "event_id": "401909881",
-     "game": "MIA @ ATL",
-     "line": -2.5,
-     "odds": 100,
+     "chance": 0.578,
+     "event_id": "401909888",
+     "game": "GS @ MIN",
+     "line": -3.5,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
-     "start": "2026-10-28T23:00Z",
-     "team": "ATL",
-     "team_name": "ATL",
+     "start": "2026-10-29T00:00Z",
+     "team": "MIN",
+     "team_name": "MIN",
      "type": "spread"
     },
     {
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 146.0,
-   "price": 630,
-   "projected_profit": 7.42,
+   "payout": 136.48,
+   "price": 582,
+   "projected_profit": 7.13,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T20:21+00:00",
+  "seen": "2026-10-28T20:34+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
   "bet": {
-   "chance": 0.683,
+   "chance": 0.698,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.683,
+     "chance": 0.698,
      "event_id": "401909883",
      "game": "CHA @ DET",
      "label": "threes",
      "line": 0.5,
      "name": "Paul Reed",
-     "odds": -266,
+     "odds": -287,
      "pid": "4278562",
      "projection": 0.465,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 27.52,
-   "price": -266,
-   "projected_profit": -1.2,
+   "payout": 26.97,
+   "price": -287,
+   "projected_profit": -1.18,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T20:21+00:00",
+  "seen": "2026-10-28T20:34+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 3.12,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T20:21+00:00",
+  "seen": "2026-10-28T20:34+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -132,13 +132,13 @@
    "projected_profit": 1.76,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T20:21+00:00",
+  "seen": "2026-10-28T20:34+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.187797792,
+    "chance": 0.19880425599999998,
     "legs": [
      {
       "chance": 0.592,
@@ -152,15 +152,15 @@
       "team": "IND"
      },
      {
-      "chance": 0.546,
-      "event_id": "401909881",
-      "game": "MIA @ ATL",
-      "line": -2.5,
-      "odds": 100,
+      "chance": 0.578,
+      "event_id": "401909888",
+      "game": "GS @ MIN",
+      "line": -3.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
-      "start": "2026-10-28T23:00Z",
-      "team": "ATL"
+      "start": "2026-10-29T00:00Z",
+      "team": "MIN"
      },
      {
       "chance": 0.581,
@@ -174,11 +174,11 @@
       "team": "UTAH"
      }
     ],
-    "payout": 146.00414078674945,
-    "projected_profit": 7.4192552626086865
+    "payout": 136.4821316050049,
+    "projected_profit": 7.13322863102708
    },
    "two": {
-    "chance": 0.323232,
+    "chance": 0.343952,
     "legs": [
      {
       "chance": 0.592,
@@ -192,22 +192,22 @@
       "team": "IND"
      },
      {
-      "chance": 0.546,
-      "event_id": "401909881",
-      "game": "MIA @ ATL",
-      "line": -2.5,
-      "odds": 100,
+      "chance": 0.581,
+      "event_id": "401909890",
+      "game": "SA @ UTAH",
+      "line": 13.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
-      "start": "2026-10-28T23:00Z",
-      "team": "ATL"
+      "start": "2026-10-29T01:00Z",
+      "team": "UTAH"
      }
     ],
-    "payout": 78.09523809523809,
-    "projected_profit": 5.2428799999999995
+    "payout": 73.00207039337472,
+    "projected_profit": 5.109208115942021
    }
   },
-  "seen": "2026-10-28T20:21+00:00",
+  "seen": "2026-10-28T20:34+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909883": {
@@ -218,20 +218,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.175,
+   "ev": -0.181,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.683,
+   "market_prob": 0.698,
    "name": "Paul Reed",
    "pid": "4278562",
-   "price": "-266",
-   "prob": 0.6,
+   "price": "-287",
+   "prob": 0.607,
    "projection": 0.465,
-   "score": 0.683,
+   "score": 0.698,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T20:21+00:00",
+  "seen": "2026-10-28T20:34+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909889": {
@@ -255,7 +255,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T20:21+00:00",
+  "seen": "2026-10-28T20:34+00:00",
   "start": "2026-10-29T00:00Z"
  }
 }
