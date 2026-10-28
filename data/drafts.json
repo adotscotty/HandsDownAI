@@ -1,7 +1,7 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1816,
+   "chance": 0.1857,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.568,
+     "chance": 0.581,
      "event_id": "401909890",
      "game": "SA @ UTAH",
-     "line": 12.5,
-     "odds": -105,
+     "line": 13.5,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T01:00Z",
@@ -44,70 +44,70 @@
      "type": "spread"
     }
    ],
-   "payout": 142.31,
-   "price": 612,
-   "projected_profit": 5.84,
+   "payout": 136.28,
+   "price": 581,
+   "projected_profit": 5.31,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T12:17+00:00",
+  "seen": "2026-10-28T12:30+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909885",
-     "game": "ORL @ TOR",
+     "chance": 0.656,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
      "label": "threes",
      "line": 1.5,
-     "name": "Scottie Barnes",
-     "odds": -235,
-     "pid": "4433134",
-     "projection": 0.806,
+     "name": "LeBron James",
+     "odds": -231,
+     "pid": "1966",
+     "projection": 1.201,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-28T23:30Z",
+     "start": "2026-10-28T23:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
-   "start": "2026-10-28T23:30Z"
+   "payout": 28.66,
+   "price": -231,
+   "projected_profit": -1.2,
+   "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T12:17+00:00",
-  "start": "2026-10-28T23:30Z"
+  "seen": "2026-10-28T12:30+00:00",
+  "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
-   "chance": 0.578,
+   "chance": 0.581,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.578,
-     "event_id": "401909888",
-     "game": "GS @ MIN",
-     "line": -3.5,
-     "odds": -110,
+     "chance": 0.581,
+     "event_id": "401909890",
+     "game": "SA @ UTAH",
+     "line": 13.5,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
-     "start": "2026-10-29T00:00Z",
-     "team": "MIN",
-     "team_name": "Minnesota Timberwolves",
+     "start": "2026-10-29T01:00Z",
+     "team": "UTAH",
+     "team_name": "Utah Jazz",
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 2.07,
-   "start": "2026-10-29T00:00Z"
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 1.72,
+   "start": "2026-10-29T01:00Z"
   },
-  "seen": "2026-10-28T12:17+00:00",
-  "start": "2026-10-29T00:00Z"
+  "seen": "2026-10-28T12:30+00:00",
+  "start": "2026-10-29T01:00Z"
  },
  "bet|2026-10-28|winner": {
   "bet": {
@@ -132,13 +132,13 @@
    "projected_profit": 2.16,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T12:17+00:00",
+  "seen": "2026-10-28T12:30+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.181552112,
+    "chance": 0.185707354,
     "legs": [
      {
       "chance": 0.553,
@@ -163,22 +163,22 @@
       "team": "MIN"
      },
      {
-      "chance": 0.568,
+      "chance": 0.581,
       "event_id": "401909890",
       "game": "SA @ UTAH",
-      "line": 12.5,
-      "odds": -105,
+      "line": 13.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T01:00Z",
       "team": "UTAH"
      }
     ],
-    "payout": 142.31404958677686,
-    "projected_profit": 5.837416269752065
+    "payout": 136.27739849083724,
+    "projected_profit": 5.307715083736976
    },
    "two": {
-    "chance": 0.32830399999999993,
+    "chance": 0.33581799999999995,
     "legs": [
      {
       "chance": 0.578,
@@ -192,22 +192,22 @@
       "team": "MIN"
      },
      {
-      "chance": 0.568,
+      "chance": 0.581,
       "event_id": "401909890",
       "game": "SA @ UTAH",
-      "line": 12.5,
-      "odds": -105,
+      "line": 13.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T01:00Z",
       "team": "UTAH"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 4.473570909090903
+    "payout": 71.38339920948617,
+    "projected_profit": 3.9718303557312247
    }
   },
-  "seen": "2026-10-28T12:17+00:00",
+  "seen": "2026-10-28T12:30+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909884": {
@@ -231,7 +231,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T12:17+00:00",
+  "seen": "2026-10-28T12:30+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909885": {
@@ -242,20 +242,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.002,
+   "ev": 0.004,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
+   "market_prob": 0.652,
    "name": "Scottie Barnes",
    "pid": "4433134",
-   "price": "-235",
-   "prob": 0.7,
+   "price": "-227",
+   "prob": 0.697,
    "projection": 0.806,
-   "score": 0.659,
+   "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T12:17+00:00",
+  "seen": "2026-10-28T12:30+00:00",
   "start": "2026-10-28T23:30Z"
+ },
+ "prop|nba|401909887": {
+  "game": {
+   "date": "2026-10-29T00:00Z",
+   "event_id": "401909887",
+   "name": "Houston Rockets at Milwaukee Bucks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.048,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.655,
+   "name": "Tari Eason",
+   "pid": "4433192",
+   "price": "-231",
+   "prob": 0.664,
+   "projection": 1.031,
+   "score": 0.655,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-28T12:30+00:00",
+  "start": "2026-10-29T00:00Z"
  }
 }
