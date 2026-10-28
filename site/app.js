@@ -303,7 +303,7 @@ function renderProps() {
       h("td", { class: "r", text: (+x.projection).toFixed(1) })));
     box.append(h("div", { class: "wide-scroll" }, h("table", { class: "rise" }, h("thead", {}, h("tr", {}, h("th", { text: "Prop" }),
       h("th", { class: "r", text: "Price" }), h("th", { class: "r", text: "DK chance" }), h("th", { class: "r", text: "Our projection" }))), tb)));
-  } else box.append(h("p", { class: "empty", text: "No props yet. DraftKings usually posts NBA props on game day." }));
+  } else box.append(h("p", { class: "empty", text: "No props yet. DraftKings usually posts NBA props on game day, and we only show ones at least 65% likely to hit." }));
   rec.style.marginTop = "28px";
   const rows = [["All props", P.record.all]];
   for (const [k, n] of [["nba", "NBA"], ["nfl", "NFL"]]) { const x = P.record[k]; if (x && x.wins + x.losses + x.pushes) rows.push([n, x]); }

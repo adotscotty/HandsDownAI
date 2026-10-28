@@ -252,12 +252,14 @@ def evaluate(proj_obj, pid, stat, line, over, under, w=MODEL_W):
 
 PICK = "market"      # "market": DraftKings' most likely side; "edge": our projection's biggest edge
 MIN_DEC = 1.33       # skip prices worse than -300
+MIN_FAIR = 0.65      # and skip a game's prop unless its likely side is 65%+ (133-game test: +2.3% -> +6.2% return)
 
 
 def best_prop(proj_obj, props, skip=(), mode=PICK):
     """The single best prop for one game.
     Tested on 2025-26 NBA playoff props: our biggest edges went 29-52 (DraftKings knew better),
-    while DraftKings' most likely side went 57-24 with prices no worse than -300."""
+    while DraftKings' most likely side went 57-24 with prices no worse than -300. Since Oct 28 2026 a game
+    only gets a prop when that side is at least 65% likely (playoffs + this season: 56-19, +6.2%)."""
     best = None
     for pid, stat, line, over, under in props:
         if pid in skip:
@@ -269,7 +271,7 @@ def best_prop(proj_obj, props, skip=(), mode=PICK):
             do, du = dec(over), dec(under)
             fair_over = (1 / do) / (1 / do + 1 / du)
             side, fair, price = ("over", fair_over, over) if fair_over >= 0.5 else ("under", 1 - fair_over, under)
-            if dec(price) < MIN_DEC:
+            if dec(price) < MIN_DEC or fair < MIN_FAIR:
                 continue
             our = e["prob"] if e["side"] == side else 1 - e["prob"]
             e.update(side=side, price=str(price), market_prob=fair, prob=our, ev=our * dec(price) - 1, score=fair)

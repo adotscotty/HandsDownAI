@@ -127,6 +127,23 @@ class Locking(unittest.TestCase):
         self.assertEqual(sorted(parlays.load_log()), ["2026-10-27|nba|two"])
 
 
+class PropPick(unittest.TestCase):
+    """Per-game prop: DraftKings' most likely side, only when it is at least 65% likely (tested 2026-10-28)."""
+    class Proj:
+        names = {"1": "A", "2": "B"}
+        def project(self, pid, stat): return 10.0
+        def sd(self, proj, stat): return 4.0
+
+    def test_skips_weak_favorites(self):
+        # -150 / +125 is about 58% likely after removing the book's cut: no pick
+        self.assertIsNone(props.best_prop(self.Proj(), [("1", "pts", 10.5, -150, 125)]))
+
+    def test_keeps_strong_favorite(self):
+        # -250 / +200 is about 69% likely: pick it
+        b = props.best_prop(self.Proj(), [("1", "pts", 10.5, -150, 125), ("2", "reb", 4.5, -250, 200)])
+        self.assertEqual((b["pid"], b["side"]), ("2", "over"))
+
+
 class SiteBuild(unittest.TestCase):
     def test_build_runs_on_saved_data(self):
         """The site build must finish on today's saved data (a crash here once froze the site)."""
