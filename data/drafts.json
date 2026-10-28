@@ -1,14 +1,14 @@
 {
  "bet|2026-10-28|winner": {
   "bet": {
-   "chance": 0.69,
+   "chance": 0.713,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.69,
+     "chance": 0.713,
      "event_id": "401909888",
      "game": "GS @ MIN",
-     "odds": -162,
+     "odds": -170,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T00:00Z",
@@ -17,12 +17,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.35,
-   "price": -162,
-   "projected_profit": 2.32,
+   "payout": 31.76,
+   "price": -170,
+   "projected_profit": 2.65,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T22:41+00:00",
+  "seen": "2026-10-28T22:54+00:00",
   "start": "2026-10-29T00:00Z"
  }
 }
