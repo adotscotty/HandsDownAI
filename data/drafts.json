@@ -22,7 +22,7 @@
      "event_id": "401909888",
      "game": "GS @ MIN",
      "line": -3.5,
-     "odds": -110,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T00:00Z",
@@ -44,43 +44,86 @@
      "type": "spread"
     }
    ],
-   "payout": 137.48,
-   "price": 587,
-   "projected_profit": 5.9,
+   "payout": 134.63,
+   "price": 573,
+   "projected_profit": 5.36,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T13:39+00:00",
+  "seen": "2026-10-28T13:52+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909885",
-     "game": "ORL @ TOR",
+     "chance": 0.656,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
      "label": "threes",
      "line": 1.5,
-     "name": "Scottie Barnes",
-     "odds": -235,
-     "pid": "4433134",
-     "projection": 0.806,
+     "name": "LeBron James",
+     "odds": -231,
+     "pid": "1966",
+     "projection": 1.201,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-28T23:30Z",
+     "start": "2026-10-28T23:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
-   "start": "2026-10-28T23:30Z"
+   "payout": 28.66,
+   "price": -231,
+   "projected_profit": -1.2,
+   "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T13:39+00:00",
-  "start": "2026-10-28T23:30Z"
+  "seen": "2026-10-28T13:52+00:00",
+  "start": "2026-10-28T23:00Z"
+ },
+ "bet|2026-10-28|sgp": {
+  "bet": {
+   "chance": 0.3713,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.566,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
+     "line": 5.5,
+     "odds": -112,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-28T23:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
+     "type": "spread"
+    },
+    {
+     "chance": 0.656,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
+     "label": "threes",
+     "line": 1.5,
+     "name": "LeBron James",
+     "odds": -231,
+     "pid": "1966",
+     "projection": 1.201,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-10-28T23:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 54.25,
+   "price": 171,
+   "projected_profit": 0.14,
+   "start": "2026-10-28T23:00Z"
+  },
+  "seen": "2026-10-28T13:52+00:00",
+  "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
@@ -106,7 +149,7 @@
    "projected_profit": 1.72,
    "start": "2026-10-29T01:00Z"
   },
-  "seen": "2026-10-28T13:39+00:00",
+  "seen": "2026-10-28T13:52+00:00",
   "start": "2026-10-29T01:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -132,7 +175,7 @@
    "projected_profit": 2.16,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T13:39+00:00",
+  "seen": "2026-10-28T13:52+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
@@ -156,7 +199,7 @@
       "event_id": "401909888",
       "game": "GS @ MIN",
       "line": -3.5,
-      "odds": -110,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T00:00Z",
@@ -174,8 +217,8 @@
       "team": "UTAH"
      }
     ],
-    "payout": 137.47913921826967,
-    "projected_profit": 5.900230931014487
+    "payout": 134.63278022824335,
+    "projected_profit": 5.3639942657760855
    },
    "two": {
     "chance": 0.33581799999999995,
@@ -185,7 +228,7 @@
       "event_id": "401909888",
       "game": "GS @ MIN",
       "line": -3.5,
-      "odds": -110,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T00:00Z",
@@ -203,11 +246,11 @@
       "team": "UTAH"
      }
     ],
-    "payout": 71.38339920948617,
-    "projected_profit": 3.9718303557312247
+    "payout": 69.90548204158789,
+    "projected_profit": 3.4755191682419593
    }
   },
-  "seen": "2026-10-28T13:39+00:00",
+  "seen": "2026-10-28T13:52+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909884": {
@@ -231,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T13:39+00:00",
+  "seen": "2026-10-28T13:52+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909885": {
@@ -242,20 +285,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.002,
+   "ev": 0.005,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
+   "market_prob": 0.651,
    "name": "Scottie Barnes",
    "pid": "4433134",
-   "price": "-235",
-   "prob": 0.7,
+   "price": "-225",
+   "prob": 0.696,
    "projection": 0.806,
-   "score": 0.659,
+   "score": 0.651,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T13:39+00:00",
+  "seen": "2026-10-28T13:52+00:00",
   "start": "2026-10-28T23:30Z"
  },
  "prop|nba|401909887": {
@@ -279,7 +322,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T13:39+00:00",
+  "seen": "2026-10-28T13:52+00:00",
   "start": "2026-10-29T00:00Z"
  }
 }
