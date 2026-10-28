@@ -1,15 +1,15 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1901,
+   "chance": 0.1988,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.566,
+     "chance": 0.592,
      "event_id": "401909884",
      "game": "PHI @ IND",
-     "line": 5.5,
-     "odds": -112,
+     "line": 7.5,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-28T23:00Z",
@@ -44,70 +44,70 @@
      "type": "spread"
     }
    ],
-   "payout": 132.32,
-   "price": 562,
-   "projected_profit": 5.15,
+   "payout": 136.48,
+   "price": 582,
+   "projected_profit": 7.13,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T17:35+00:00",
+  "seen": "2026-10-28T17:48+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
   "bet": {
-   "chance": 0.654,
+   "chance": 0.651,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.654,
-     "event_id": "401909887",
-     "game": "HOU @ MIL",
+     "chance": 0.651,
+     "event_id": "401909891",
+     "game": "OKC @ DAL",
      "label": "threes",
      "line": 1.5,
-     "name": "Tari Eason",
-     "odds": -229,
-     "pid": "4433192",
-     "projection": 1.031,
+     "name": "Ajay Mitchell",
+     "odds": -226,
+     "pid": "4900671",
+     "projection": 0.829,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-29T00:00Z",
+     "start": "2026-10-29T01:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.73,
-   "price": -229,
-   "projected_profit": -1.21,
-   "start": "2026-10-29T00:00Z"
+   "payout": 28.85,
+   "price": -226,
+   "projected_profit": -1.22,
+   "start": "2026-10-29T01:30Z"
   },
-  "seen": "2026-10-28T17:35+00:00",
-  "start": "2026-10-29T00:00Z"
+  "seen": "2026-10-28T17:48+00:00",
+  "start": "2026-10-29T01:30Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
-   "chance": 0.581,
+   "chance": 0.592,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.581,
-     "event_id": "401909890",
-     "game": "SA @ UTAH",
-     "line": 13.5,
-     "odds": -115,
+     "chance": 0.592,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
+     "line": 7.5,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
-     "start": "2026-10-29T01:00Z",
-     "team": "UTAH",
-     "team_name": "Utah Jazz",
+     "start": "2026-10-28T23:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 1.72,
-   "start": "2026-10-29T01:00Z"
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 3.12,
+   "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T17:35+00:00",
-  "start": "2026-10-29T01:00Z"
+  "seen": "2026-10-28T17:48+00:00",
+  "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|winner": {
   "bet": {
@@ -132,20 +132,20 @@
    "projected_profit": 1.76,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T17:35+00:00",
+  "seen": "2026-10-28T17:48+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.19007298799999994,
+    "chance": 0.19880425599999998,
     "legs": [
      {
-      "chance": 0.566,
+      "chance": 0.592,
       "event_id": "401909884",
       "game": "PHI @ IND",
-      "line": 5.5,
-      "odds": -112,
+      "line": 7.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-28T23:00Z",
@@ -174,22 +174,22 @@
       "team": "UTAH"
      }
     ],
-    "payout": 132.32109100729136,
-    "projected_profit": 5.1506651431757895
+    "payout": 136.4821316050049,
+    "projected_profit": 7.13322863102708
    },
    "two": {
-    "chance": 0.33581799999999995,
+    "chance": 0.343952,
     "legs": [
      {
-      "chance": 0.578,
-      "event_id": "401909888",
-      "game": "GS @ MIN",
-      "line": -3.5,
-      "odds": -115,
+      "chance": 0.592,
+      "event_id": "401909884",
+      "game": "PHI @ IND",
+      "line": 7.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
-      "start": "2026-10-29T00:00Z",
-      "team": "MIN"
+      "start": "2026-10-28T23:00Z",
+      "team": "IND"
      },
      {
       "chance": 0.581,
@@ -203,36 +203,12 @@
       "team": "UTAH"
      }
     ],
-    "payout": 69.90548204158789,
-    "projected_profit": 3.4755191682419593
+    "payout": 73.00207039337472,
+    "projected_profit": 5.109208115942021
    }
   },
-  "seen": "2026-10-28T17:35+00:00",
+  "seen": "2026-10-28T17:48+00:00",
   "start": "2026-10-28T23:00Z"
- },
- "prop|nba|401909887": {
-  "game": {
-   "date": "2026-10-29T00:00Z",
-   "event_id": "401909887",
-   "name": "Houston Rockets at Milwaukee Bucks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.061,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.654,
-   "name": "Tari Eason",
-   "pid": "4433192",
-   "price": "-229",
-   "prob": 0.654,
-   "projection": 1.031,
-   "score": 0.654,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-28T17:35+00:00",
-  "start": "2026-10-29T00:00Z"
  },
  "prop|nba|401909891": {
   "game": {
@@ -255,7 +231,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T17:35+00:00",
+  "seen": "2026-10-28T17:48+00:00",
   "start": "2026-10-29T01:30Z"
  }
 }
