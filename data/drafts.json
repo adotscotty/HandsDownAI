@@ -1,5 +1,11 @@
 {
  "prop|nba|401909880": {
+  "game": {
+   "date": "2026-10-28T03:00Z",
+   "event_id": "401909880",
+   "name": "Portland Trail Blazers at Los Angeles Lakers",
+   "sport": "nba"
+  },
   "prop": {
    "ev": -0.177,
    "label": "threes",
@@ -14,7 +20,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T00:24+00:00",
+  "seen": "2026-10-28T00:26+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
