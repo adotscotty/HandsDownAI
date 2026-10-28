@@ -1,20 +1,20 @@
 {
  "prop|nba|401909880": {
   "prop": {
-   "ev": 0.07,
+   "ev": -0.177,
    "label": "threes",
-   "line": 0.5,
+   "line": 1.5,
    "market_prob": 0.636,
-   "name": "Collin Sexton",
-   "pid": "4277811",
+   "name": "Ziaire Williams",
+   "pid": "4433137",
    "price": "-211",
-   "prob": 0.726,
-   "projection": 1.841,
+   "prob": 0.558,
+   "projection": 1.571,
    "score": 0.636,
-   "side": "over",
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T00:11+00:00",
+  "seen": "2026-10-28T00:24+00:00",
   "start": "2026-10-28T03:00Z"
  }
 }
