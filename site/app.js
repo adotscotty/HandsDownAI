@@ -1,8 +1,8 @@
 // HandsDown AI: renders the data/*.json files the updater writes every 15 minutes.
 const SPORT = { nfl: "NFL", nba: "NBA", cfb: "College" };
 const NAMES = { winner: "Best winner", spread: "Best spread", parlay: "Long-shot parlay", prop: "Best player prop", sgp: "Same-game parlay" };
-const WHY = { winner: "Most likely team to win outright (-200 or better from Oct 26)", spread: "Most likely to cover the spread", parlay: "Best value 2- or 3-game parlay",
-  prop: "DraftKings' most likely player prop", sgp: "Our spread pick plus a player prop, same game" };
+const WHY = { winner: "Most likely winner priced to profit (-200 or better)", spread: "Most likely cover priced to profit", parlay: "Best value 2- or 3-game parlay",
+  prop: "DraftKings' most likely player prop", sgp: "Our spread pick plus a player prop, priced to profit" };
 const KINDS = ["prop", "spread", "winner", "parlay", "sgp"];
 const CORE = ["prop", "spread", "winner"], FUN = ["parlay", "sgp"];
 const VIEWS = ["home", "games", "parlays", "today", "yesterday", "record"];
@@ -65,8 +65,10 @@ function ticket(title, why, b, lead) {
   let value = null;
   if (be != null && b.chance != null) {
     const gap = Math.round((b.chance - be) * 1000) / 10;
-    value = h("p", { class: "value " + (gap >= 0 ? "above" : "below"),
+    const propNote = b.kind === "prop" && gap < 0;  // prop chance is DraftKings' own fair odds, so it always sits just under
+    value = h("p", { class: "value " + (gap >= 0 ? "above" : propNote ? "" : "below"),
       text: gap >= 0 ? `Our chance is ${gap} pts above the ${(be * 100).toFixed(1)}% this price needs to profit.`
+        : propNote ? `DraftKings' own odds put this just under the ${(be * 100).toFixed(1)}% it needs. We list it because their 65%+ favorites have hit more often than that. See What's paying.`
         : `Below break-even: this price needs ${(be * 100).toFixed(1)}% to profit, and we give it ${(b.chance * 100).toFixed(1)}%.` });
   }
   if (b.status === "won") t.append(h("div", { class: "stamp w", text: "Won" }));
@@ -140,7 +142,7 @@ function renderHome() {
   if ((!card || !Object.keys(card).length) && B.preview) { card = B.preview.card; title = "Next up: " + dayName(B.preview.date).split(",")[0]; }
   document.getElementById("homeTitle").textContent = title;
   const kinds = CORE.filter(k => card && card[k]);
-  if (!kinds.length) box.append(h("p", { class: "empty", text: "No picks yet today. Check back after the next update." }));
+  if (!kinds.length) box.append(h("p", { class: "empty", text: "No bet beats its break-even yet today. Check back after the next update." }));
   else {
     const top = kinds[0];  // ordered by what has paid best: prop, then spread, then winner
     box.append(betTicket(top, card[top], true));
@@ -660,7 +662,7 @@ function liveBlock() {
   }
   for (const p of ((S.daily && S.daily.today && S.daily.today.props) || [])) {
     const l = { ...p, type: "prop", line: +p.line, start: p.date, odds: +p.price };
-    if (!p.result && legNow(l)) bets.push(["Player prop", { legs: [l], chance: +p.prob, locked: true, payout: S.base * (1 + (+p.price > 0 ? +p.price / 100 : 100 / -p.price)) }]);
+    if (!p.result && legNow(l)) bets.push(["Player prop", { kind: "prop", legs: [l], chance: +p.prob, locked: true, payout: S.base * (1 + (+p.price > 0 ? +p.price / 100 : 100 / -p.price)) }]);
   }
   if (!live.length && !bets.length) return wrap;
   wrap.append(h("h2", { text: "Live now" }));

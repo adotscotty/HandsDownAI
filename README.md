@@ -74,6 +74,11 @@ NBA tuning on more seasons and back-to-back rest made no difference, so NBA is u
 - `.github/workflows/update.yml` runs every 15 minutes on GitHub: fetches the latest scores, injuries and odds,
   makes predictions, rebuilds the site data and publishes it to GitHub Pages. Finished games and the last
   pre-game prediction for each game (`data/pregame_log.csv`) are saved back to the repository.
+- Best bets (`sportsai/bestbets.py`, Oct 2026): the winner, spread and both parlays only make the card when our
+  chance beats the break-even their price needs; among those the most likely is picked (and the best winner must
+  be more likely than not). A kind with no such bet is left off that day. The player prop keeps its own rule
+  (DraftKings' most likely side at 65%+), since its chance is DraftKings' own fair odds, which always sit just
+  under break-even.
 - Parlays tab: `sportsai/parlays.py` picks the best 2- and 3-game spread parlays for the day, locks the card
   45 minutes before its first game and grades each parlay at $5 (`data/parlays_log.csv`).
 - `.github/workflows/retune.yml` re-picks the model's settings every quarter (Jan 1, Apr 1, Jul 1, Oct 1)

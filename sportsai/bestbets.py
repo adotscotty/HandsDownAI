@@ -13,6 +13,7 @@ LOG = os.path.join(DATA, "bestbets_log.csv")
 COLS = ["slot", "date", "kind", "bet", "status", "profit", "logged_at"]
 MAX_FAV = -300  # skip props priced worse than this
 WINNER_MAX = -200  # best winner: a win must pay enough to matter (big favorites lost money)
+WINNER_MIN_CHANCE = 0.5  # and it must be more likely than not to win (value alone can pick long underdogs)
 CORE = ("prop", "spread", "winner")  # straight bets, the main card
 FUN = ("parlay", "sgp")  # long shots, shown separately
 
@@ -66,29 +67,40 @@ def make_bet(kind, legs):
                 payout=round(STAKE * dec, 2), projected_profit=round(chance * STAKE * dec - STAKE, 2))
 
 
+def has_value(b):
+    """True when our chance beats the break-even this price needs (expected profit above $0)."""
+    return b["chance"] * b["payout"] > STAKE
+
+
 def candidates(preds, day, now):
-    """Pick the best bet of each kind from games on this Eastern date that haven't started."""
+    """Pick the best bet of each kind from games on this Eastern date that haven't started.
+    Winner, spread and both parlays must beat their break-even (best value); among those we take the
+    most likely. A kind with no such bet is left off the card that day. Props are the exception: their
+    chance is DraftKings' own fair odds, which always sit just under break-even, and the 65%+ prop rule
+    has been the bet that pays, so the prop keeps its own rule."""
     games = [p for p in preds if eastern_date(p["date"]) == day
              and dt.datetime.fromisoformat(p["date"].replace("Z", "+00:00")) > now]
     out = {}
-    # Winner: the most likely winner with a moneyline no worse than -200
-    best = None
+    # Winner: the most likely winner with a moneyline no worse than -200 that beats its break-even
+    wins = []
     for p in games:
         for side in ("home", "away"):
             ml = p.get(side + "_ml")
-            if ml is None or ml < WINNER_MAX:
+            if ml is None or ml < WINNER_MAX or p.get("home_win_prob") is None:
                 continue
             chance = p["home_win_prob"] if side == "home" else 1 - p["home_win_prob"]
-            if best is None or chance > best["chance"]:
-                best = dict(type="ml", event_id=p["event_id"], sport=p["sport"], side=side, team=p[side],
-                            team_name=p[side + "_name"], game=short(p), start=p["date"], odds=ml, chance=chance)
-    if best:
-        out["winner"] = make_bet("winner", [best])
-    # Spread: the side most likely to cover
+            wins.append(make_bet("winner", [dict(type="ml", event_id=p["event_id"], sport=p["sport"], side=side,
+                                                 team=p[side], team_name=p[side + "_name"], game=short(p),
+                                                 start=p["date"], odds=ml, chance=chance)]))
+    wins = [b for b in wins if has_value(b) and b["chance"] >= WINNER_MIN_CHANCE]
+    if wins:
+        out["winner"] = max(wins, key=lambda b: b["chance"])
+    # Spread: the side most likely to cover, among those that beat their break-even
     # (college spreads are leans, not bets, until the model beats 52.4% there)
-    spreads = [l for l in (spread_leg(p) for p in games if p["sport"] != "cfb") if l]
+    spreads = [make_bet("spread", [l]) for l in (spread_leg(p) for p in games if p["sport"] != "cfb") if l]
+    spreads = [b for b in spreads if has_value(b)]
     if spreads:
-        out["spread"] = make_bet("spread", [max(spreads, key=lambda l: l["chance"])])
+        out["spread"] = max(spreads, key=lambda b: b["chance"])
     # Parlay: best 2- or 3-game spread parlay across all sports
     pool = [l for l in legs_for(games, now)]
     combos = []
@@ -97,17 +109,22 @@ def candidates(preds, day, now):
             combos += best_parlays(pool, size, n=1)
     if combos:
         top = max(combos, key=lambda c: c["projected_profit"])
-        out["parlay"] = make_bet("parlay", [dict(l, type="spread", team_name=l["team"]) for l in top["legs"]])
+        bet = make_bet("parlay", [dict(l, type="spread", team_name=l["team"]) for l in top["legs"]])
+        if has_value(bet):
+            out["parlay"] = bet
     # Prop: the prop DraftKings thinks is most likely to hit
     props = [l for l in (prop_leg(p) for p in games) if l]
     if props:
         out["prop"] = make_bet("prop", [max(props, key=lambda l: l["chance"])])
     # Same-game parlay: our spread side + that game's best prop, most likely to hit together
+    # among those that beat their break-even
     sgps = []
     for p in games:
         s, pr = spread_leg(p), prop_leg(p)
         if s and pr:
-            sgps.append(make_bet("sgp", [s, pr]))
+            b = make_bet("sgp", [s, pr])
+            if has_value(b):
+                sgps.append(b)
     if sgps:
         out["sgp"] = max(sgps, key=lambda b: b["chance"])
     return out
