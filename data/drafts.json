@@ -1,124 +1,14 @@
 {
- "bet|2026-10-28|parlay": {
-  "bet": {
-   "chance": 0.1985,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.59,
-     "event_id": "401909884",
-     "game": "PHI @ IND",
-     "line": 7.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-28T23:00Z",
-     "team": "IND",
-     "team_name": "IND",
-     "type": "spread"
-    },
-    {
-     "chance": 0.579,
-     "event_id": "401909888",
-     "game": "GS @ MIN",
-     "line": -3.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-29T00:00Z",
-     "team": "MIN",
-     "team_name": "MIN",
-     "type": "spread"
-    },
-    {
-     "chance": 0.581,
-     "event_id": "401909890",
-     "game": "SA @ UTAH",
-     "line": 13.5,
-     "odds": -110,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-29T01:00Z",
-     "team": "UTAH",
-     "team_name": "UTAH",
-     "type": "spread"
-    }
-   ],
-   "payout": 145.54,
-   "price": 628,
-   "projected_profit": 8.89,
-   "start": "2026-10-28T23:00Z"
-  },
-  "seen": "2026-10-28T22:28+00:00",
-  "start": "2026-10-28T23:00Z"
- },
- "bet|2026-10-28|prop": {
-  "bet": {
-   "chance": 0.686,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.686,
-     "event_id": "401909883",
-     "game": "CHA @ DET",
-     "label": "threes",
-     "line": 0.5,
-     "name": "Paul Reed",
-     "odds": -269,
-     "pid": "4278562",
-     "projection": 0.465,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-10-28T23:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 27.43,
-   "price": -269,
-   "projected_profit": -1.18,
-   "start": "2026-10-28T23:00Z"
-  },
-  "seen": "2026-10-28T22:28+00:00",
-  "start": "2026-10-28T23:00Z"
- },
- "bet|2026-10-28|spread": {
-  "bet": {
-   "chance": 0.59,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.59,
-     "event_id": "401909884",
-     "game": "PHI @ IND",
-     "line": 7.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-28T23:00Z",
-     "team": "IND",
-     "team_name": "Indiana Pacers",
-     "type": "spread"
-    }
-   ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 3.04,
-   "start": "2026-10-28T23:00Z"
-  },
-  "seen": "2026-10-28T22:28+00:00",
-  "start": "2026-10-28T23:00Z"
- },
  "bet|2026-10-28|winner": {
   "bet": {
-   "chance": 0.686,
+   "chance": 0.69,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.686,
+     "chance": 0.69,
      "event_id": "401909888",
      "game": "GS @ MIN",
-     "odds": -155,
+     "odds": -162,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T00:00Z",
@@ -127,111 +17,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.9,
-   "price": -155,
-   "projected_profit": 2.57,
+   "payout": 32.35,
+   "price": -162,
+   "projected_profit": 2.32,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T22:28+00:00",
+  "seen": "2026-10-28T22:41+00:00",
   "start": "2026-10-29T00:00Z"
- },
- "parlay|2026-10-28|nba": {
-  "card": {
-   "three": {
-    "chance": 0.19847540999999996,
-    "legs": [
-     {
-      "chance": 0.59,
-      "event_id": "401909884",
-      "game": "PHI @ IND",
-      "line": 7.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-28T23:00Z",
-      "team": "IND"
-     },
-     {
-      "chance": 0.579,
-      "event_id": "401909888",
-      "game": "GS @ MIN",
-      "line": -3.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-29T00:00Z",
-      "team": "MIN"
-     },
-     {
-      "chance": 0.581,
-      "event_id": "401909890",
-      "game": "SA @ UTAH",
-      "line": 13.5,
-      "odds": -110,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-29T01:00Z",
-      "team": "UTAH"
-     }
-    ],
-    "payout": 145.54112554112552,
-    "projected_profit": 8.886334563636353
-   },
-   "two": {
-    "chance": 0.34160999999999997,
-    "legs": [
-     {
-      "chance": 0.59,
-      "event_id": "401909884",
-      "game": "PHI @ IND",
-      "line": 7.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-28T23:00Z",
-      "team": "IND"
-     },
-     {
-      "chance": 0.579,
-      "event_id": "401909888",
-      "game": "GS @ MIN",
-      "line": -3.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-29T00:00Z",
-      "team": "MIN"
-     }
-    ],
-    "payout": 76.23582766439908,
-    "projected_profit": 6.042921088435367
-   }
-  },
-  "seen": "2026-10-28T22:28+00:00",
-  "start": "2026-10-28T23:00Z"
- },
- "prop|nba|401909883": {
-  "game": {
-   "date": "2026-10-28T23:00Z",
-   "event_id": "401909883",
-   "name": "Charlotte Hornets at Detroit Pistons",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.176,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.686,
-   "name": "Paul Reed",
-   "pid": "4278562",
-   "price": "-269",
-   "prob": 0.601,
-   "projection": 0.465,
-   "score": 0.686,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-28T22:28+00:00",
-  "start": "2026-10-28T23:00Z"
  }
 }
