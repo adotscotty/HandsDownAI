@@ -49,38 +49,8 @@
    "projected_profit": 7.13,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T17:48+00:00",
+  "seen": "2026-10-28T18:09+00:00",
   "start": "2026-10-28T23:00Z"
- },
- "bet|2026-10-28|prop": {
-  "bet": {
-   "chance": 0.651,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.651,
-     "event_id": "401909891",
-     "game": "OKC @ DAL",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Ajay Mitchell",
-     "odds": -226,
-     "pid": "4900671",
-     "projection": 0.829,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-10-29T01:30Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.85,
-   "price": -226,
-   "projected_profit": -1.22,
-   "start": "2026-10-29T01:30Z"
-  },
-  "seen": "2026-10-28T17:48+00:00",
-  "start": "2026-10-29T01:30Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
@@ -106,7 +76,7 @@
    "projected_profit": 3.12,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T17:48+00:00",
+  "seen": "2026-10-28T18:09+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -132,7 +102,7 @@
    "projected_profit": 1.76,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T17:48+00:00",
+  "seen": "2026-10-28T18:09+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
@@ -207,31 +177,7 @@
     "projected_profit": 5.109208115942021
    }
   },
-  "seen": "2026-10-28T17:48+00:00",
+  "seen": "2026-10-28T18:09+00:00",
   "start": "2026-10-28T23:00Z"
- },
- "prop|nba|401909891": {
-  "game": {
-   "date": "2026-10-29T01:30Z",
-   "event_id": "401909891",
-   "name": "Oklahoma City Thunder at Dallas Mavericks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.003,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.651,
-   "name": "Ajay Mitchell",
-   "pid": "4900671",
-   "price": "-226",
-   "prob": 0.691,
-   "projection": 0.829,
-   "score": 0.651,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-28T17:48+00:00",
-  "start": "2026-10-29T01:30Z"
  }
 }
