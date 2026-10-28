@@ -1,0 +1,2612 @@
+{
+ "target_roi": 0.1,
+ "rules_tested": 124,
+ "passed_train": [],
+ "passed_train_and_test": [],
+ "all": [
+  {
+   "rule": "NFL: underdogs of 7+",
+   "train": {
+    "n": 130,
+    "won": 72,
+    "lost": 58,
+    "win_pct": 55.4,
+    "roi": 5.7,
+    "roi_low": -10.6,
+    "roi_high": 22.0
+   },
+   "test": {
+    "n": 78,
+    "won": 40,
+    "lost": 38,
+    "win_pct": 51.3,
+    "roi": -2.1,
+    "roi_low": -23.3,
+    "roi_high": 19.1
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 10+",
+   "train": {
+    "n": 113,
+    "won": 62,
+    "lost": 51,
+    "win_pct": 54.9,
+    "roi": 4.7,
+    "roi_low": -12.8,
+    "roi_high": 22.3
+   },
+   "test": {
+    "n": 65,
+    "won": 24,
+    "lost": 41,
+    "win_pct": 36.9,
+    "roi": -29.5,
+    "roi_low": -51.9,
+    "roi_high": -7.1
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 7+",
+   "train": {
+    "n": 327,
+    "won": 177,
+    "lost": 150,
+    "win_pct": 54.1,
+    "roi": 3.3,
+    "roi_low": -7.0,
+    "roi_high": 13.6
+   },
+   "test": {
+    "n": 176,
+    "won": 79,
+    "lost": 97,
+    "win_pct": 44.9,
+    "roi": -14.3,
+    "roi_low": -28.3,
+    "roi_high": -0.3
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 6+",
+   "train": {
+    "n": 350,
+    "won": 188,
+    "lost": 162,
+    "win_pct": 53.7,
+    "roi": 2.5,
+    "roi_low": -7.4,
+    "roi_high": 12.5
+   },
+   "test": {
+    "n": 181,
+    "won": 83,
+    "lost": 98,
+    "win_pct": 45.9,
+    "roi": -12.5,
+    "roi_low": -26.3,
+    "roi_high": 1.4
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 8+",
+   "train": {
+    "n": 213,
+    "won": 114,
+    "lost": 99,
+    "win_pct": 53.5,
+    "roi": 2.2,
+    "roi_low": -10.6,
+    "roi_high": 15.0
+   },
+   "test": {
+    "n": 112,
+    "won": 46,
+    "lost": 66,
+    "win_pct": 41.1,
+    "roi": -21.6,
+    "roi_low": -39.0,
+    "roi_high": -4.2
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 7+",
+   "train": {
+    "n": 264,
+    "won": 141,
+    "lost": 123,
+    "win_pct": 53.4,
+    "roi": 2.0,
+    "roi_low": -9.5,
+    "roi_high": 13.5
+   },
+   "test": {
+    "n": 139,
+    "won": 62,
+    "lost": 77,
+    "win_pct": 44.6,
+    "roi": -14.8,
+    "roi_low": -30.6,
+    "roi_high": 0.9
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 10+",
+   "train": {
+    "n": 107,
+    "won": 57,
+    "lost": 50,
+    "win_pct": 53.3,
+    "roi": 1.7,
+    "roi_low": -16.3,
+    "roi_high": 19.7
+   },
+   "test": {
+    "n": 62,
+    "won": 22,
+    "lost": 40,
+    "win_pct": 35.5,
+    "roi": -32.3,
+    "roi_low": -55.0,
+    "roi_high": -9.5
+   }
+  },
+  {
+   "rule": "NBA: against model, disagrees by 6+",
+   "train": {
+    "n": 111,
+    "won": 59,
+    "lost": 52,
+    "win_pct": 53.2,
+    "roi": 1.5,
+    "roi_low": -16.2,
+    "roi_high": 19.2
+   },
+   "test": {
+    "n": 71,
+    "won": 39,
+    "lost": 32,
+    "win_pct": 54.9,
+    "roi": 4.9,
+    "roi_low": -17.2,
+    "roi_high": 27.0
+   }
+  },
+  {
+   "rule": "NBA: against model, disagrees by 5+",
+   "train": {
+    "n": 240,
+    "won": 127,
+    "lost": 113,
+    "win_pct": 52.9,
+    "roi": 1.0,
+    "roi_low": -11.0,
+    "roi_high": 13.1
+   },
+   "test": {
+    "n": 133,
+    "won": 64,
+    "lost": 69,
+    "win_pct": 48.1,
+    "roi": -8.1,
+    "roi_low": -24.3,
+    "roi_high": 8.1
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 6+",
+   "train": {
+    "n": 488,
+    "won": 258,
+    "lost": 230,
+    "win_pct": 52.9,
+    "roi": 0.9,
+    "roi_low": -7.5,
+    "roi_high": 9.4
+   },
+   "test": {
+    "n": 263,
+    "won": 129,
+    "lost": 134,
+    "win_pct": 49.0,
+    "roi": -6.4,
+    "roi_low": -17.9,
+    "roi_high": 5.2
+   }
+  },
+  {
+   "rule": "CFB: every over",
+   "train": {
+    "n": 1572,
+    "won": 824,
+    "lost": 748,
+    "win_pct": 52.4,
+    "roi": 0.1,
+    "roi_low": -4.6,
+    "roi_high": 4.8
+   },
+   "test": {
+    "n": 807,
+    "won": 391,
+    "lost": 416,
+    "win_pct": 48.5,
+    "roi": -7.5,
+    "roi_low": -14.1,
+    "roi_high": -0.9
+   }
+  },
+  {
+   "rule": "NFL: road favorites",
+   "train": {
+    "n": 214,
+    "won": 112,
+    "lost": 102,
+    "win_pct": 52.3,
+    "roi": -0.1,
+    "roi_low": -12.9,
+    "roi_high": 12.7
+   },
+   "test": {
+    "n": 111,
+    "won": 52,
+    "lost": 59,
+    "win_pct": 46.8,
+    "roi": -10.6,
+    "roi_low": -28.3,
+    "roi_high": 7.2
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 5+",
+   "train": {
+    "n": 464,
+    "won": 242,
+    "lost": 222,
+    "win_pct": 52.2,
+    "roi": -0.4,
+    "roi_low": -9.1,
+    "roi_high": 8.2
+   },
+   "test": {
+    "n": 240,
+    "won": 110,
+    "lost": 130,
+    "win_pct": 45.8,
+    "roi": -12.5,
+    "roi_low": -24.5,
+    "roi_high": -0.5
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 5+",
+   "train": {
+    "n": 757,
+    "won": 393,
+    "lost": 364,
+    "win_pct": 51.9,
+    "roi": -0.9,
+    "roi_low": -7.7,
+    "roi_high": 5.9
+   },
+   "test": {
+    "n": 392,
+    "won": 187,
+    "lost": 205,
+    "win_pct": 47.7,
+    "roi": -8.9,
+    "roi_low": -18.4,
+    "roi_high": 0.5
+   }
+  },
+  {
+   "rule": "NBA: model side, disagrees by 1+",
+   "train": {
+    "n": 1934,
+    "won": 1004,
+    "lost": 930,
+    "win_pct": 51.9,
+    "roi": -0.9,
+    "roi_low": -5.1,
+    "roi_high": 3.4
+   },
+   "test": {
+    "n": 947,
+    "won": 489,
+    "lost": 458,
+    "win_pct": 51.6,
+    "roi": -1.4,
+    "roi_low": -7.5,
+    "roi_high": 4.7
+   }
+  },
+  {
+   "rule": "NFL: every favorite",
+   "train": {
+    "n": 569,
+    "won": 294,
+    "lost": 275,
+    "win_pct": 51.7,
+    "roi": -1.4,
+    "roi_low": -9.2,
+    "roi_high": 6.5
+   },
+   "test": {
+    "n": 285,
+    "won": 137,
+    "lost": 148,
+    "win_pct": 48.1,
+    "roi": -8.2,
+    "roi_low": -19.3,
+    "roi_high": 2.8
+   }
+  },
+  {
+   "rule": "NBA: model side, disagrees by 0+",
+   "train": {
+    "n": 2627,
+    "won": 1356,
+    "lost": 1271,
+    "win_pct": 51.6,
+    "roi": -1.5,
+    "roi_low": -5.1,
+    "roi_high": 2.2
+   },
+   "test": {
+    "n": 1316,
+    "won": 674,
+    "lost": 642,
+    "win_pct": 51.2,
+    "roi": -2.2,
+    "roi_low": -7.4,
+    "roi_high": 2.9
+   }
+  },
+  {
+   "rule": "NFL: model side, disagrees by 0+",
+   "train": {
+    "n": 569,
+    "won": 293,
+    "lost": 276,
+    "win_pct": 51.5,
+    "roi": -1.7,
+    "roi_low": -9.5,
+    "roi_high": 6.1
+   },
+   "test": {
+    "n": 285,
+    "won": 136,
+    "lost": 149,
+    "win_pct": 47.7,
+    "roi": -8.9,
+    "roi_low": -20.0,
+    "roi_high": 2.2
+   }
+  },
+  {
+   "rule": "all sports: every over",
+   "train": {
+    "n": 4768,
+    "won": 2453,
+    "lost": 2315,
+    "win_pct": 51.4,
+    "roi": -1.8,
+    "roi_low": -4.5,
+    "roi_high": 0.9
+   },
+   "test": {
+    "n": 2408,
+    "won": 1192,
+    "lost": 1216,
+    "win_pct": 49.5,
+    "roi": -5.5,
+    "roi_low": -9.3,
+    "roi_high": -1.7
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 2+",
+   "train": {
+    "n": 1060,
+    "won": 544,
+    "lost": 516,
+    "win_pct": 51.3,
+    "roi": -2.0,
+    "roi_low": -7.8,
+    "roi_high": 3.7
+   },
+   "test": {
+    "n": 529,
+    "won": 240,
+    "lost": 289,
+    "win_pct": 45.4,
+    "roi": -13.4,
+    "roi_low": -21.5,
+    "roi_high": -5.3
+   }
+  },
+  {
+   "rule": "NFL: model side, disagrees by 3+",
+   "train": {
+    "n": 156,
+    "won": 80,
+    "lost": 76,
+    "win_pct": 51.3,
+    "roi": -2.1,
+    "roi_low": -17.1,
+    "roi_high": 12.9
+   },
+   "test": {
+    "n": 63,
+    "won": 26,
+    "lost": 37,
+    "win_pct": 41.3,
+    "roi": -21.2,
+    "roi_low": -44.4,
+    "roi_high": 2.0
+   }
+  },
+  {
+   "rule": "CFB: every underdog",
+   "train": {
+    "n": 1572,
+    "won": 805,
+    "lost": 767,
+    "win_pct": 51.2,
+    "roi": -2.2,
+    "roi_low": -7.0,
+    "roi_high": 2.5
+   },
+   "test": {
+    "n": 809,
+    "won": 402,
+    "lost": 407,
+    "win_pct": 49.7,
+    "roi": -5.1,
+    "roi_low": -11.7,
+    "roi_high": 1.4
+   }
+  },
+  {
+   "rule": "CFB: underdogs of 10+",
+   "train": {
+    "n": 636,
+    "won": 325,
+    "lost": 311,
+    "win_pct": 51.1,
+    "roi": -2.4,
+    "roi_low": -9.9,
+    "roi_high": 5.0
+   },
+   "test": {
+    "n": 322,
+    "won": 161,
+    "lost": 161,
+    "win_pct": 50.0,
+    "roi": -4.5,
+    "roi_low": -15.0,
+    "roi_high": 5.9
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 0+",
+   "train": {
+    "n": 4768,
+    "won": 2436,
+    "lost": 2332,
+    "win_pct": 51.1,
+    "roi": -2.5,
+    "roi_low": -5.2,
+    "roi_high": 0.2
+   },
+   "test": {
+    "n": 2410,
+    "won": 1254,
+    "lost": 1156,
+    "win_pct": 52.0,
+    "roi": -0.7,
+    "roi_low": -4.5,
+    "roi_high": 3.1
+   }
+  },
+  {
+   "rule": "NBA: every over",
+   "train": {
+    "n": 2627,
+    "won": 1341,
+    "lost": 1286,
+    "win_pct": 51.0,
+    "roi": -2.5,
+    "roi_low": -6.2,
+    "roi_high": 1.1
+   },
+   "test": {
+    "n": 1316,
+    "won": 652,
+    "lost": 664,
+    "win_pct": 49.5,
+    "roi": -5.4,
+    "roi_low": -10.6,
+    "roi_high": -0.3
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 8+",
+   "train": {
+    "n": 186,
+    "won": 95,
+    "lost": 91,
+    "win_pct": 51.1,
+    "roi": -2.5,
+    "roi_low": -16.2,
+    "roi_high": 11.2
+   },
+   "test": {
+    "n": 100,
+    "won": 41,
+    "lost": 59,
+    "win_pct": 41.0,
+    "roi": -21.7,
+    "roi_low": -40.1,
+    "roi_high": -3.3
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 1+",
+   "train": {
+    "n": 3625,
+    "won": 1850,
+    "lost": 1775,
+    "win_pct": 51.0,
+    "roi": -2.6,
+    "roi_low": -5.7,
+    "roi_high": 0.5
+   },
+   "test": {
+    "n": 1786,
+    "won": 938,
+    "lost": 848,
+    "win_pct": 52.5,
+    "roi": 0.3,
+    "roi_low": -4.2,
+    "roi_high": 4.7
+   }
+  },
+  {
+   "rule": "NFL: model side, disagrees by 1+",
+   "train": {
+    "n": 394,
+    "won": 201,
+    "lost": 193,
+    "win_pct": 51.0,
+    "roi": -2.6,
+    "roi_low": -12.0,
+    "roi_high": 6.8
+   },
+   "test": {
+    "n": 183,
+    "won": 88,
+    "lost": 95,
+    "win_pct": 48.1,
+    "roi": -8.2,
+    "roi_low": -22.0,
+    "roi_high": 5.6
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 3+",
+   "train": {
+    "n": 812,
+    "won": 414,
+    "lost": 398,
+    "win_pct": 51.0,
+    "roi": -2.7,
+    "roi_low": -9.2,
+    "roi_high": 3.9
+   },
+   "test": {
+    "n": 421,
+    "won": 194,
+    "lost": 227,
+    "win_pct": 46.1,
+    "roi": -12.0,
+    "roi_low": -21.1,
+    "roi_high": -2.9
+   }
+  },
+  {
+   "rule": "NBA: against model, disagrees by 3+",
+   "train": {
+    "n": 799,
+    "won": 406,
+    "lost": 393,
+    "win_pct": 50.8,
+    "roi": -3.0,
+    "roi_low": -9.6,
+    "roi_high": 3.6
+   },
+   "test": {
+    "n": 403,
+    "won": 198,
+    "lost": 205,
+    "win_pct": 49.1,
+    "roi": -6.2,
+    "roi_low": -15.5,
+    "roi_high": 3.1
+   }
+  },
+  {
+   "rule": "CFB: home underdogs",
+   "train": {
+    "n": 540,
+    "won": 274,
+    "lost": 266,
+    "win_pct": 50.7,
+    "roi": -3.1,
+    "roi_low": -11.2,
+    "roi_high": 4.9
+   },
+   "test": {
+    "n": 286,
+    "won": 144,
+    "lost": 142,
+    "win_pct": 50.3,
+    "roi": -3.9,
+    "roi_low": -14.9,
+    "roi_high": 7.2
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 3+",
+   "train": {
+    "n": 1767,
+    "won": 896,
+    "lost": 871,
+    "win_pct": 50.7,
+    "roi": -3.2,
+    "roi_low": -7.6,
+    "roi_high": 1.3
+   },
+   "test": {
+    "n": 887,
+    "won": 429,
+    "lost": 458,
+    "win_pct": 48.4,
+    "roi": -7.7,
+    "roi_low": -13.9,
+    "roi_high": -1.4
+   }
+  },
+  {
+   "rule": "NFL: every over",
+   "train": {
+    "n": 569,
+    "won": 288,
+    "lost": 281,
+    "win_pct": 50.6,
+    "roi": -3.4,
+    "roi_low": -11.2,
+    "roi_high": 4.5
+   },
+   "test": {
+    "n": 285,
+    "won": 149,
+    "lost": 136,
+    "win_pct": 52.3,
+    "roi": -0.2,
+    "roi_low": -11.3,
+    "roi_high": 10.9
+   }
+  },
+  {
+   "rule": "CFB: underdogs of 7+",
+   "train": {
+    "n": 852,
+    "won": 431,
+    "lost": 421,
+    "win_pct": 50.6,
+    "roi": -3.4,
+    "roi_low": -9.8,
+    "roi_high": 3.0
+   },
+   "test": {
+    "n": 431,
+    "won": 213,
+    "lost": 218,
+    "win_pct": 49.4,
+    "roi": -5.7,
+    "roi_low": -14.7,
+    "roi_high": 3.4
+   }
+  },
+  {
+   "rule": "NBA: against model, disagrees by 4+",
+   "train": {
+    "n": 449,
+    "won": 227,
+    "lost": 222,
+    "win_pct": 50.6,
+    "roi": -3.5,
+    "roi_low": -12.3,
+    "roi_high": 5.3
+   },
+   "test": {
+    "n": 243,
+    "won": 117,
+    "lost": 126,
+    "win_pct": 48.1,
+    "roi": -8.1,
+    "roi_low": -20.1,
+    "roi_high": 3.9
+   }
+  },
+  {
+   "rule": "NBA: every away team",
+   "train": {
+    "n": 2627,
+    "won": 1326,
+    "lost": 1301,
+    "win_pct": 50.5,
+    "roi": -3.6,
+    "roi_low": -7.3,
+    "roi_high": 0.0
+   },
+   "test": {
+    "n": 1316,
+    "won": 637,
+    "lost": 679,
+    "win_pct": 48.4,
+    "roi": -7.6,
+    "roi_low": -12.7,
+    "roi_high": -2.4
+   }
+  },
+  {
+   "rule": "all sports: every underdog",
+   "train": {
+    "n": 4768,
+    "won": 2402,
+    "lost": 2366,
+    "win_pct": 50.4,
+    "roi": -3.8,
+    "roi_low": -6.5,
+    "roi_high": -1.1
+   },
+   "test": {
+    "n": 2410,
+    "won": 1216,
+    "lost": 1194,
+    "win_pct": 50.5,
+    "roi": -3.7,
+    "roi_low": -7.5,
+    "roi_high": 0.1
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 2+",
+   "train": {
+    "n": 2596,
+    "won": 1307,
+    "lost": 1289,
+    "win_pct": 50.3,
+    "roi": -3.9,
+    "roi_low": -7.6,
+    "roi_high": -0.2
+   },
+   "test": {
+    "n": 1282,
+    "won": 613,
+    "lost": 669,
+    "win_pct": 47.8,
+    "roi": -8.7,
+    "roi_low": -13.9,
+    "roi_high": -3.5
+   }
+  },
+  {
+   "rule": "all sports: every away team",
+   "train": {
+    "n": 4768,
+    "won": 2399,
+    "lost": 2369,
+    "win_pct": 50.3,
+    "roi": -3.9,
+    "roi_low": -6.7,
+    "roi_high": -1.2
+   },
+   "test": {
+    "n": 2410,
+    "won": 1174,
+    "lost": 1236,
+    "win_pct": 48.7,
+    "roi": -7.0,
+    "roi_low": -10.8,
+    "roi_high": -3.2
+   }
+  },
+  {
+   "rule": "NBA: model side, disagrees by 2+",
+   "train": {
+    "n": 1281,
+    "won": 645,
+    "lost": 636,
+    "win_pct": 50.4,
+    "roi": -3.9,
+    "roi_low": -9.1,
+    "roi_high": 1.4
+   },
+   "test": {
+    "n": 645,
+    "won": 335,
+    "lost": 310,
+    "win_pct": 51.9,
+    "roi": -0.8,
+    "roi_low": -8.2,
+    "roi_high": 6.5
+   }
+  },
+  {
+   "rule": "NBA: every underdog",
+   "train": {
+    "n": 2627,
+    "won": 1322,
+    "lost": 1305,
+    "win_pct": 50.3,
+    "roi": -3.9,
+    "roi_low": -7.6,
+    "roi_high": -0.3
+   },
+   "test": {
+    "n": 1316,
+    "won": 666,
+    "lost": 650,
+    "win_pct": 50.6,
+    "roi": -3.4,
+    "roi_low": -8.5,
+    "roi_high": 1.8
+   }
+  },
+  {
+   "rule": "NFL: every home team",
+   "train": {
+    "n": 569,
+    "won": 286,
+    "lost": 283,
+    "win_pct": 50.3,
+    "roi": -4.0,
+    "roi_low": -11.9,
+    "roi_high": 3.8
+   },
+   "test": {
+    "n": 285,
+    "won": 144,
+    "lost": 141,
+    "win_pct": 50.5,
+    "roi": -3.5,
+    "roi_low": -14.6,
+    "roi_high": 7.5
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 1+",
+   "train": {
+    "n": 1297,
+    "won": 652,
+    "lost": 645,
+    "win_pct": 50.3,
+    "roi": -4.0,
+    "roi_low": -9.2,
+    "roi_high": 1.2
+   },
+   "test": {
+    "n": 656,
+    "won": 295,
+    "lost": 361,
+    "win_pct": 45.0,
+    "roi": -14.1,
+    "roi_low": -21.4,
+    "roi_high": -6.9
+   }
+  },
+  {
+   "rule": "CFB: underdogs of 3+",
+   "train": {
+    "n": 1263,
+    "won": 635,
+    "lost": 628,
+    "win_pct": 50.3,
+    "roi": -4.0,
+    "roi_low": -9.3,
+    "roi_high": 1.2
+   },
+   "test": {
+    "n": 665,
+    "won": 330,
+    "lost": 335,
+    "win_pct": 49.6,
+    "roi": -5.3,
+    "roi_low": -12.5,
+    "roi_high": 2.0
+   }
+  },
+  {
+   "rule": "CFB: every away team",
+   "train": {
+    "n": 1572,
+    "won": 790,
+    "lost": 782,
+    "win_pct": 50.3,
+    "roi": -4.1,
+    "roi_low": -8.8,
+    "roi_high": 0.7
+   },
+   "test": {
+    "n": 809,
+    "won": 396,
+    "lost": 413,
+    "win_pct": 48.9,
+    "roi": -6.6,
+    "roi_low": -13.1,
+    "roi_high": 0.0
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 4+",
+   "train": {
+    "n": 1142,
+    "won": 573,
+    "lost": 569,
+    "win_pct": 50.2,
+    "roi": -4.2,
+    "roi_low": -9.7,
+    "roi_high": 1.3
+   },
+   "test": {
+    "n": 577,
+    "won": 297,
+    "lost": 280,
+    "win_pct": 51.5,
+    "roi": -1.7,
+    "roi_low": -9.5,
+    "roi_high": 6.1
+   }
+  },
+  {
+   "rule": "NFL: model side, disagrees by 2+",
+   "train": {
+    "n": 255,
+    "won": 128,
+    "lost": 127,
+    "win_pct": 50.2,
+    "roi": -4.2,
+    "roi_low": -15.9,
+    "roi_high": 7.5
+   },
+   "test": {
+    "n": 108,
+    "won": 45,
+    "lost": 63,
+    "win_pct": 41.7,
+    "roi": -20.5,
+    "roi_low": -38.2,
+    "roi_high": -2.7
+   }
+  },
+  {
+   "rule": "daily top 3 disagreements (any sport, 0+ pts)",
+   "train": {
+    "n": 1361,
+    "won": 683,
+    "lost": 678,
+    "win_pct": 50.2,
+    "roi": -4.2,
+    "roi_low": -9.3,
+    "roi_high": 0.9
+   },
+   "test": {
+    "n": 686,
+    "won": 330,
+    "lost": 356,
+    "win_pct": 48.1,
+    "roi": -8.2,
+    "roi_low": -15.3,
+    "roi_high": -1.0
+   }
+  },
+  {
+   "rule": "all sports: road favorites",
+   "train": {
+    "n": 1729,
+    "won": 867,
+    "lost": 862,
+    "win_pct": 50.1,
+    "roi": -4.3,
+    "roi_low": -8.8,
+    "roi_high": 0.2
+   },
+   "test": {
+    "n": 934,
+    "won": 448,
+    "lost": 486,
+    "win_pct": 48.0,
+    "roi": -8.4,
+    "roi_low": -14.5,
+    "roi_high": -2.3
+   }
+  },
+  {
+   "rule": "NBA: road favorites",
+   "train": {
+    "n": 975,
+    "won": 489,
+    "lost": 486,
+    "win_pct": 50.2,
+    "roi": -4.3,
+    "roi_low": -10.2,
+    "roi_high": 1.7
+   },
+   "test": {
+    "n": 537,
+    "won": 254,
+    "lost": 283,
+    "win_pct": 47.3,
+    "roi": -9.7,
+    "roi_low": -17.8,
+    "roi_high": -1.6
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 0+",
+   "train": {
+    "n": 1572,
+    "won": 787,
+    "lost": 785,
+    "win_pct": 50.1,
+    "roi": -4.4,
+    "roi_low": -9.1,
+    "roi_high": 0.3
+   },
+   "test": {
+    "n": 809,
+    "won": 444,
+    "lost": 365,
+    "win_pct": 54.9,
+    "roi": 4.8,
+    "roi_low": -1.8,
+    "roi_high": 11.3
+   }
+  },
+  {
+   "rule": "daily top 3 disagreements (any sport, 4+ pts)",
+   "train": {
+    "n": 663,
+    "won": 332,
+    "lost": 331,
+    "win_pct": 50.1,
+    "roi": -4.4,
+    "roi_low": -11.7,
+    "roi_high": 2.9
+   },
+   "test": {
+    "n": 340,
+    "won": 162,
+    "lost": 178,
+    "win_pct": 47.6,
+    "roi": -9.0,
+    "roi_low": -19.2,
+    "roi_high": 1.1
+   }
+  },
+  {
+   "rule": "all sports: underdogs of 10+",
+   "train": {
+    "n": 1261,
+    "won": 631,
+    "lost": 630,
+    "win_pct": 50.0,
+    "roi": -4.5,
+    "roi_low": -9.7,
+    "roi_high": 0.8
+   },
+   "test": {
+    "n": 690,
+    "won": 341,
+    "lost": 349,
+    "win_pct": 49.4,
+    "roi": -5.7,
+    "roi_low": -12.8,
+    "roi_high": 1.5
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 4+",
+   "train": {
+    "n": 608,
+    "won": 304,
+    "lost": 304,
+    "win_pct": 50.0,
+    "roi": -4.5,
+    "roi_low": -12.1,
+    "roi_high": 3.0
+   },
+   "test": {
+    "n": 303,
+    "won": 161,
+    "lost": 142,
+    "win_pct": 53.1,
+    "roi": 1.4,
+    "roi_low": -9.3,
+    "roi_high": 12.2
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 4+",
+   "train": {
+    "n": 608,
+    "won": 304,
+    "lost": 304,
+    "win_pct": 50.0,
+    "roi": -4.5,
+    "roi_low": -12.1,
+    "roi_high": 3.0
+   },
+   "test": {
+    "n": 303,
+    "won": 142,
+    "lost": 161,
+    "win_pct": 46.9,
+    "roi": -10.5,
+    "roi_low": -21.3,
+    "roi_high": 0.2
+   }
+  },
+  {
+   "rule": "CFB: against model, disagrees by 0+",
+   "train": {
+    "n": 1572,
+    "won": 785,
+    "lost": 787,
+    "win_pct": 49.9,
+    "roi": -4.7,
+    "roi_low": -9.4,
+    "roi_high": 0.1
+   },
+   "test": {
+    "n": 809,
+    "won": 365,
+    "lost": 444,
+    "win_pct": 45.1,
+    "roi": -13.9,
+    "roi_low": -20.4,
+    "roi_high": -7.3
+   }
+  },
+  {
+   "rule": "all sports: home underdogs",
+   "train": {
+    "n": 1729,
+    "won": 862,
+    "lost": 867,
+    "win_pct": 49.9,
+    "roi": -4.8,
+    "roi_low": -9.3,
+    "roi_high": -0.3
+   },
+   "test": {
+    "n": 934,
+    "won": 486,
+    "lost": 448,
+    "win_pct": 52.0,
+    "roi": -0.7,
+    "roi_low": -6.8,
+    "roi_high": 5.5
+   }
+  },
+  {
+   "rule": "NBA: home underdogs",
+   "train": {
+    "n": 975,
+    "won": 486,
+    "lost": 489,
+    "win_pct": 49.8,
+    "roi": -4.8,
+    "roi_low": -10.8,
+    "roi_high": 1.2
+   },
+   "test": {
+    "n": 537,
+    "won": 283,
+    "lost": 254,
+    "win_pct": 52.7,
+    "roi": 0.6,
+    "roi_low": -7.5,
+    "roi_high": 8.7
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 4+",
+   "train": {
+    "n": 1142,
+    "won": 569,
+    "lost": 573,
+    "win_pct": 49.8,
+    "roi": -4.9,
+    "roi_low": -10.4,
+    "roi_high": 0.7
+   },
+   "test": {
+    "n": 577,
+    "won": 280,
+    "lost": 297,
+    "win_pct": 48.5,
+    "roi": -7.4,
+    "roi_low": -15.1,
+    "roi_high": 0.4
+   }
+  },
+  {
+   "rule": "all sports: underdogs of 7+",
+   "train": {
+    "n": 2057,
+    "won": 1025,
+    "lost": 1032,
+    "win_pct": 49.8,
+    "roi": -4.9,
+    "roi_low": -9.0,
+    "roi_high": -0.7
+   },
+   "test": {
+    "n": 1095,
+    "won": 544,
+    "lost": 551,
+    "win_pct": 49.7,
+    "roi": -5.2,
+    "roi_low": -10.8,
+    "roi_high": 0.5
+   }
+  },
+  {
+   "rule": "NFL: against model, disagrees by 2+",
+   "train": {
+    "n": 255,
+    "won": 127,
+    "lost": 128,
+    "win_pct": 49.8,
+    "roi": -4.9,
+    "roi_low": -16.6,
+    "roi_high": 6.8
+   },
+   "test": {
+    "n": 108,
+    "won": 63,
+    "lost": 45,
+    "win_pct": 58.3,
+    "roi": 11.4,
+    "roi_low": -6.4,
+    "roi_high": 29.1
+   }
+  },
+  {
+   "rule": "NFL: every away team",
+   "train": {
+    "n": 569,
+    "won": 283,
+    "lost": 286,
+    "win_pct": 49.7,
+    "roi": -5.0,
+    "roi_low": -12.9,
+    "roi_high": 2.8
+   },
+   "test": {
+    "n": 285,
+    "won": 141,
+    "lost": 144,
+    "win_pct": 49.5,
+    "roi": -5.6,
+    "roi_low": -16.6,
+    "roi_high": 5.5
+   }
+  },
+  {
+   "rule": "CFB: every home team",
+   "train": {
+    "n": 1572,
+    "won": 782,
+    "lost": 790,
+    "win_pct": 49.7,
+    "roi": -5.0,
+    "roi_low": -9.7,
+    "roi_high": -0.3
+   },
+   "test": {
+    "n": 809,
+    "won": 413,
+    "lost": 396,
+    "win_pct": 51.1,
+    "roi": -2.5,
+    "roi_low": -9.1,
+    "roi_high": 4.0
+   }
+  },
+  {
+   "rule": "all sports: every home team",
+   "train": {
+    "n": 4768,
+    "won": 2369,
+    "lost": 2399,
+    "win_pct": 49.7,
+    "roi": -5.1,
+    "roi_low": -7.9,
+    "roi_high": -2.4
+   },
+   "test": {
+    "n": 2410,
+    "won": 1236,
+    "lost": 1174,
+    "win_pct": 51.3,
+    "roi": -2.1,
+    "roi_low": -5.9,
+    "roi_high": 1.7
+   }
+  },
+  {
+   "rule": "all sports: underdogs of 3+",
+   "train": {
+    "n": 3730,
+    "won": 1855,
+    "lost": 1875,
+    "win_pct": 49.7,
+    "roi": -5.1,
+    "roi_low": -8.1,
+    "roi_high": -2.0
+   },
+   "test": {
+    "n": 1918,
+    "won": 955,
+    "lost": 963,
+    "win_pct": 49.8,
+    "roi": -4.9,
+    "roi_low": -9.2,
+    "roi_high": -0.7
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 1+",
+   "train": {
+    "n": 1297,
+    "won": 645,
+    "lost": 652,
+    "win_pct": 49.7,
+    "roi": -5.1,
+    "roi_low": -10.3,
+    "roi_high": 0.1
+   },
+   "test": {
+    "n": 656,
+    "won": 361,
+    "lost": 295,
+    "win_pct": 55.0,
+    "roi": 5.1,
+    "roi_low": -2.2,
+    "roi_high": 12.3
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 2+",
+   "train": {
+    "n": 2596,
+    "won": 1289,
+    "lost": 1307,
+    "win_pct": 49.7,
+    "roi": -5.2,
+    "roi_low": -8.9,
+    "roi_high": -1.5
+   },
+   "test": {
+    "n": 1282,
+    "won": 669,
+    "lost": 613,
+    "win_pct": 52.2,
+    "roi": -0.4,
+    "roi_low": -5.6,
+    "roi_high": 4.8
+   }
+  },
+  {
+   "rule": "NBA: against model, disagrees by 2+",
+   "train": {
+    "n": 1281,
+    "won": 636,
+    "lost": 645,
+    "win_pct": 49.6,
+    "roi": -5.2,
+    "roi_low": -10.4,
+    "roi_high": 0.0
+   },
+   "test": {
+    "n": 645,
+    "won": 310,
+    "lost": 335,
+    "win_pct": 48.1,
+    "roi": -8.2,
+    "roi_low": -15.6,
+    "roi_high": -0.9
+   }
+  },
+  {
+   "rule": "NBA: every favorite",
+   "train": {
+    "n": 2627,
+    "won": 1305,
+    "lost": 1322,
+    "win_pct": 49.7,
+    "roi": -5.2,
+    "roi_low": -8.8,
+    "roi_high": -1.5
+   },
+   "test": {
+    "n": 1316,
+    "won": 650,
+    "lost": 666,
+    "win_pct": 49.4,
+    "roi": -5.7,
+    "roi_low": -10.9,
+    "roi_high": -0.5
+   }
+  },
+  {
+   "rule": "NBA: underdogs of 3+",
+   "train": {
+    "n": 2079,
+    "won": 1032,
+    "lost": 1047,
+    "win_pct": 49.6,
+    "roi": -5.2,
+    "roi_low": -9.3,
+    "roi_high": -1.1
+   },
+   "test": {
+    "n": 1047,
+    "won": 516,
+    "lost": 531,
+    "win_pct": 49.3,
+    "roi": -5.9,
+    "roi_low": -11.7,
+    "roi_high": -0.1
+   }
+  },
+  {
+   "rule": "CFB: underdogs of 14+",
+   "train": {
+    "n": 441,
+    "won": 219,
+    "lost": 222,
+    "win_pct": 49.7,
+    "roi": -5.2,
+    "roi_low": -14.1,
+    "roi_high": 3.7
+   },
+   "test": {
+    "n": 212,
+    "won": 108,
+    "lost": 104,
+    "win_pct": 50.9,
+    "roi": -2.7,
+    "roi_low": -15.6,
+    "roi_high": 10.1
+   }
+  },
+  {
+   "rule": "all sports: every favorite",
+   "train": {
+    "n": 4768,
+    "won": 2366,
+    "lost": 2402,
+    "win_pct": 49.6,
+    "roi": -5.3,
+    "roi_low": -8.0,
+    "roi_high": -2.6
+   },
+   "test": {
+    "n": 2410,
+    "won": 1194,
+    "lost": 1216,
+    "win_pct": 49.5,
+    "roi": -5.4,
+    "roi_low": -9.2,
+    "roi_high": -1.6
+   }
+  },
+  {
+   "rule": "NBA: every home team",
+   "train": {
+    "n": 2627,
+    "won": 1301,
+    "lost": 1326,
+    "win_pct": 49.5,
+    "roi": -5.5,
+    "roi_low": -9.1,
+    "roi_high": -1.8
+   },
+   "test": {
+    "n": 1316,
+    "won": 679,
+    "lost": 637,
+    "win_pct": 51.6,
+    "roi": -1.5,
+    "roi_low": -6.7,
+    "roi_high": 3.7
+   }
+  },
+  {
+   "rule": "NBA: model side, disagrees by 4+",
+   "train": {
+    "n": 449,
+    "won": 222,
+    "lost": 227,
+    "win_pct": 49.4,
+    "roi": -5.6,
+    "roi_low": -14.4,
+    "roi_high": 3.2
+   },
+   "test": {
+    "n": 243,
+    "won": 126,
+    "lost": 117,
+    "win_pct": 51.9,
+    "roi": -1.0,
+    "roi_low": -13.0,
+    "roi_high": 11.0
+   }
+  },
+  {
+   "rule": "NFL: every under",
+   "train": {
+    "n": 569,
+    "won": 281,
+    "lost": 288,
+    "win_pct": 49.4,
+    "roi": -5.7,
+    "roi_low": -13.6,
+    "roi_high": 2.1
+   },
+   "test": {
+    "n": 285,
+    "won": 136,
+    "lost": 149,
+    "win_pct": 47.7,
+    "roi": -8.9,
+    "roi_low": -20.0,
+    "roi_high": 2.2
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 3+",
+   "train": {
+    "n": 1767,
+    "won": 871,
+    "lost": 896,
+    "win_pct": 49.3,
+    "roi": -5.9,
+    "roi_low": -10.3,
+    "roi_high": -1.4
+   },
+   "test": {
+    "n": 887,
+    "won": 458,
+    "lost": 429,
+    "win_pct": 51.6,
+    "roi": -1.4,
+    "roi_low": -7.7,
+    "roi_high": 4.9
+   }
+  },
+  {
+   "rule": "CFB: road favorites",
+   "train": {
+    "n": 540,
+    "won": 266,
+    "lost": 274,
+    "win_pct": 49.3,
+    "roi": -6.0,
+    "roi_low": -14.0,
+    "roi_high": 2.1
+   },
+   "test": {
+    "n": 286,
+    "won": 142,
+    "lost": 144,
+    "win_pct": 49.7,
+    "roi": -5.2,
+    "roi_low": -16.3,
+    "roi_high": 5.8
+   }
+  },
+  {
+   "rule": "NBA: model side, disagrees by 3+",
+   "train": {
+    "n": 799,
+    "won": 393,
+    "lost": 406,
+    "win_pct": 49.2,
+    "roi": -6.1,
+    "roi_low": -12.7,
+    "roi_high": 0.5
+   },
+   "test": {
+    "n": 403,
+    "won": 205,
+    "lost": 198,
+    "win_pct": 50.9,
+    "roi": -2.9,
+    "roi_low": -12.2,
+    "roi_high": 6.4
+   }
+  },
+  {
+   "rule": "daily top 3 disagreements (any sport, 2+ pts)",
+   "train": {
+    "n": 1135,
+    "won": 558,
+    "lost": 577,
+    "win_pct": 49.2,
+    "roi": -6.1,
+    "roi_low": -11.7,
+    "roi_high": -0.6
+   },
+   "test": {
+    "n": 577,
+    "won": 277,
+    "lost": 300,
+    "win_pct": 48.0,
+    "roi": -8.4,
+    "roi_low": -16.1,
+    "roi_high": -0.6
+   }
+  },
+  {
+   "rule": "all sports: underdogs of 14+",
+   "train": {
+    "n": 602,
+    "won": 295,
+    "lost": 307,
+    "win_pct": 49.0,
+    "roi": -6.4,
+    "roi_low": -14.1,
+    "roi_high": 1.2
+   },
+   "test": {
+    "n": 344,
+    "won": 170,
+    "lost": 174,
+    "win_pct": 49.4,
+    "roi": -5.7,
+    "roi_low": -15.7,
+    "roi_high": 4.4
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 3+",
+   "train": {
+    "n": 812,
+    "won": 398,
+    "lost": 414,
+    "win_pct": 49.0,
+    "roi": -6.4,
+    "roi_low": -13.0,
+    "roi_high": 0.1
+   },
+   "test": {
+    "n": 421,
+    "won": 227,
+    "lost": 194,
+    "win_pct": 53.9,
+    "roi": 2.9,
+    "roi_low": -6.2,
+    "roi_high": 12.0
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 1+",
+   "train": {
+    "n": 3625,
+    "won": 1775,
+    "lost": 1850,
+    "win_pct": 49.0,
+    "roi": -6.5,
+    "roi_low": -9.6,
+    "roi_high": -3.4
+   },
+   "test": {
+    "n": 1786,
+    "won": 848,
+    "lost": 938,
+    "win_pct": 47.5,
+    "roi": -9.4,
+    "roi_low": -13.8,
+    "roi_high": -4.9
+   }
+  },
+  {
+   "rule": "all sports: model side on underdogs of 14+",
+   "train": {
+    "n": 343,
+    "won": 168,
+    "lost": 175,
+    "win_pct": 49.0,
+    "roi": -6.5,
+    "roi_low": -16.6,
+    "roi_high": 3.6
+   },
+   "test": {
+    "n": 201,
+    "won": 98,
+    "lost": 103,
+    "win_pct": 48.8,
+    "roi": -6.9,
+    "roi_low": -20.1,
+    "roi_high": 6.3
+   }
+  },
+  {
+   "rule": "NFL: against model, disagrees by 1+",
+   "train": {
+    "n": 394,
+    "won": 193,
+    "lost": 201,
+    "win_pct": 49.0,
+    "roi": -6.5,
+    "roi_low": -15.9,
+    "roi_high": 2.9
+   },
+   "test": {
+    "n": 183,
+    "won": 95,
+    "lost": 88,
+    "win_pct": 51.9,
+    "roi": -0.9,
+    "roi_low": -14.7,
+    "roi_high": 12.9
+   }
+  },
+  {
+   "rule": "NBA: every under",
+   "train": {
+    "n": 2627,
+    "won": 1286,
+    "lost": 1341,
+    "win_pct": 49.0,
+    "roi": -6.5,
+    "roi_low": -10.2,
+    "roi_high": -2.9
+   },
+   "test": {
+    "n": 1316,
+    "won": 664,
+    "lost": 652,
+    "win_pct": 50.5,
+    "roi": -3.7,
+    "roi_low": -8.8,
+    "roi_high": 1.5
+   }
+  },
+  {
+   "rule": "all sports: against model, disagrees by 0+",
+   "train": {
+    "n": 4768,
+    "won": 2332,
+    "lost": 2436,
+    "win_pct": 48.9,
+    "roi": -6.6,
+    "roi_low": -9.3,
+    "roi_high": -3.9
+   },
+   "test": {
+    "n": 2410,
+    "won": 1156,
+    "lost": 1254,
+    "win_pct": 48.0,
+    "roi": -8.4,
+    "roi_low": -12.2,
+    "roi_high": -4.6
+   }
+  },
+  {
+   "rule": "NBA: model side on underdogs of 3+",
+   "train": {
+    "n": 807,
+    "won": 395,
+    "lost": 412,
+    "win_pct": 48.9,
+    "roi": -6.6,
+    "roi_low": -13.1,
+    "roi_high": 0.0
+   },
+   "test": {
+    "n": 414,
+    "won": 204,
+    "lost": 210,
+    "win_pct": 49.3,
+    "roi": -5.9,
+    "roi_low": -15.1,
+    "roi_high": 3.3
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 8+",
+   "train": {
+    "n": 186,
+    "won": 91,
+    "lost": 95,
+    "win_pct": 48.9,
+    "roi": -6.6,
+    "roi_low": -20.3,
+    "roi_high": 7.1
+   },
+   "test": {
+    "n": 100,
+    "won": 59,
+    "lost": 41,
+    "win_pct": 59.0,
+    "roi": 12.6,
+    "roi_low": -5.8,
+    "roi_high": 31.0
+   }
+  },
+  {
+   "rule": "NBA: underdogs of 10+",
+   "train": {
+    "n": 577,
+    "won": 282,
+    "lost": 295,
+    "win_pct": 48.9,
+    "roi": -6.7,
+    "roi_low": -14.5,
+    "roi_high": 1.1
+   },
+   "test": {
+    "n": 337,
+    "won": 167,
+    "lost": 170,
+    "win_pct": 49.6,
+    "roi": -5.4,
+    "roi_low": -15.6,
+    "roi_high": 4.8
+   }
+  },
+  {
+   "rule": "CFB: every favorite",
+   "train": {
+    "n": 1572,
+    "won": 767,
+    "lost": 805,
+    "win_pct": 48.8,
+    "roi": -6.9,
+    "roi_low": -11.6,
+    "roi_high": -2.1
+   },
+   "test": {
+    "n": 809,
+    "won": 407,
+    "lost": 402,
+    "win_pct": 50.3,
+    "roi": -4.0,
+    "roi_low": -10.5,
+    "roi_high": 2.6
+   }
+  },
+  {
+   "rule": "NFL: against model, disagrees by 3+",
+   "train": {
+    "n": 156,
+    "won": 76,
+    "lost": 80,
+    "win_pct": 48.7,
+    "roi": -7.0,
+    "roi_low": -22.0,
+    "roi_high": 8.0
+   },
+   "test": {
+    "n": 63,
+    "won": 37,
+    "lost": 26,
+    "win_pct": 58.7,
+    "roi": 12.1,
+    "roi_low": -11.1,
+    "roi_high": 35.3
+   }
+  },
+  {
+   "rule": "daily top 3 disagreements (any sport, 6+ pts)",
+   "train": {
+    "n": 271,
+    "won": 132,
+    "lost": 139,
+    "win_pct": 48.7,
+    "roi": -7.0,
+    "roi_low": -18.4,
+    "roi_high": 4.4
+   },
+   "test": {
+    "n": 155,
+    "won": 74,
+    "lost": 81,
+    "win_pct": 47.7,
+    "roi": -8.9,
+    "roi_low": -23.9,
+    "roi_high": 6.2
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 2+",
+   "train": {
+    "n": 1060,
+    "won": 516,
+    "lost": 544,
+    "win_pct": 48.7,
+    "roi": -7.1,
+    "roi_low": -12.8,
+    "roi_high": -1.3
+   },
+   "test": {
+    "n": 529,
+    "won": 289,
+    "lost": 240,
+    "win_pct": 54.6,
+    "roi": 4.3,
+    "roi_low": -3.8,
+    "roi_high": 12.4
+   }
+  },
+  {
+   "rule": "all sports: model side on underdogs of 7+",
+   "train": {
+    "n": 920,
+    "won": 447,
+    "lost": 473,
+    "win_pct": 48.6,
+    "roi": -7.2,
+    "roi_low": -13.4,
+    "roi_high": -1.1
+   },
+   "test": {
+    "n": 503,
+    "won": 243,
+    "lost": 260,
+    "win_pct": 48.3,
+    "roi": -7.8,
+    "roi_low": -16.1,
+    "roi_high": 0.6
+   }
+  },
+  {
+   "rule": "all sports: every under",
+   "train": {
+    "n": 4768,
+    "won": 2315,
+    "lost": 2453,
+    "win_pct": 48.6,
+    "roi": -7.3,
+    "roi_low": -10.0,
+    "roi_high": -4.6
+   },
+   "test": {
+    "n": 2408,
+    "won": 1216,
+    "lost": 1192,
+    "win_pct": 50.5,
+    "roi": -3.6,
+    "roi_low": -7.4,
+    "roi_high": 0.2
+   }
+  },
+  {
+   "rule": "NBA: underdogs of 7+",
+   "train": {
+    "n": 1075,
+    "won": 522,
+    "lost": 553,
+    "win_pct": 48.6,
+    "roi": -7.3,
+    "roi_low": -13.0,
+    "roi_high": -1.6
+   },
+   "test": {
+    "n": 586,
+    "won": 291,
+    "lost": 295,
+    "win_pct": 49.7,
+    "roi": -5.2,
+    "roi_low": -12.9,
+    "roi_high": 2.5
+   }
+  },
+  {
+   "rule": "NFL: against model, disagrees by 0+",
+   "train": {
+    "n": 569,
+    "won": 276,
+    "lost": 293,
+    "win_pct": 48.5,
+    "roi": -7.4,
+    "roi_low": -15.2,
+    "roi_high": 0.4
+   },
+   "test": {
+    "n": 285,
+    "won": 149,
+    "lost": 136,
+    "win_pct": 52.3,
+    "roi": -0.2,
+    "roi_low": -11.3,
+    "roi_high": 10.9
+   }
+  },
+  {
+   "rule": "all sports: model side on underdogs of 3+",
+   "train": {
+    "n": 1544,
+    "won": 748,
+    "lost": 796,
+    "win_pct": 48.4,
+    "roi": -7.5,
+    "roi_low": -12.3,
+    "roi_high": -2.8
+   },
+   "test": {
+    "n": 784,
+    "won": 384,
+    "lost": 400,
+    "win_pct": 49.0,
+    "roi": -6.5,
+    "roi_low": -13.2,
+    "roi_high": 0.2
+   }
+  },
+  {
+   "rule": "NFL: underdogs of 3+",
+   "train": {
+    "n": 388,
+    "won": 188,
+    "lost": 200,
+    "win_pct": 48.5,
+    "roi": -7.5,
+    "roi_low": -17.0,
+    "roi_high": 2.0
+   },
+   "test": {
+    "n": 206,
+    "won": 109,
+    "lost": 97,
+    "win_pct": 52.9,
+    "roi": 1.0,
+    "roi_low": -12.0,
+    "roi_high": 14.0
+   }
+  },
+  {
+   "rule": "NBA: against model, disagrees by 0+",
+   "train": {
+    "n": 2627,
+    "won": 1271,
+    "lost": 1356,
+    "win_pct": 48.4,
+    "roi": -7.6,
+    "roi_low": -11.3,
+    "roi_high": -4.0
+   },
+   "test": {
+    "n": 1316,
+    "won": 642,
+    "lost": 674,
+    "win_pct": 48.8,
+    "roi": -6.9,
+    "roi_low": -12.0,
+    "roi_high": -1.7
+   }
+  },
+  {
+   "rule": "NFL: every underdog",
+   "train": {
+    "n": 569,
+    "won": 275,
+    "lost": 294,
+    "win_pct": 48.3,
+    "roi": -7.7,
+    "roi_low": -15.6,
+    "roi_high": 0.1
+   },
+   "test": {
+    "n": 285,
+    "won": 148,
+    "lost": 137,
+    "win_pct": 51.9,
+    "roi": -0.9,
+    "roi_low": -11.9,
+    "roi_high": 10.2
+   }
+  },
+  {
+   "rule": "CFB: model side on underdogs of 10+",
+   "train": {
+    "n": 383,
+    "won": 185,
+    "lost": 198,
+    "win_pct": 48.3,
+    "roi": -7.8,
+    "roi_low": -17.3,
+    "roi_high": 1.8
+   },
+   "test": {
+    "n": 201,
+    "won": 100,
+    "lost": 101,
+    "win_pct": 49.8,
+    "roi": -5.0,
+    "roi_low": -18.2,
+    "roi_high": 8.2
+   }
+  },
+  {
+   "rule": "CFB: model side on underdogs of 7+",
+   "train": {
+    "n": 454,
+    "won": 219,
+    "lost": 235,
+    "win_pct": 48.2,
+    "roi": -7.9,
+    "roi_low": -16.7,
+    "roi_high": 0.9
+   },
+   "test": {
+    "n": 228,
+    "won": 112,
+    "lost": 116,
+    "win_pct": 49.1,
+    "roi": -6.2,
+    "roi_low": -18.6,
+    "roi_high": 6.2
+   }
+  },
+  {
+   "rule": "all sports: model side on underdogs of 10+",
+   "train": {
+    "n": 614,
+    "won": 296,
+    "lost": 318,
+    "win_pct": 48.2,
+    "roi": -8.0,
+    "roi_low": -15.5,
+    "roi_high": -0.4
+   },
+   "test": {
+    "n": 360,
+    "won": 172,
+    "lost": 188,
+    "win_pct": 47.8,
+    "roi": -8.8,
+    "roi_low": -18.6,
+    "roi_high": 1.1
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 5+",
+   "train": {
+    "n": 757,
+    "won": 364,
+    "lost": 393,
+    "win_pct": 48.1,
+    "roi": -8.2,
+    "roi_low": -15.0,
+    "roi_high": -1.4
+   },
+   "test": {
+    "n": 392,
+    "won": 205,
+    "lost": 187,
+    "win_pct": 52.3,
+    "roi": -0.2,
+    "roi_low": -9.6,
+    "roi_high": 9.3
+   }
+  },
+  {
+   "rule": "NBA: against model, disagrees by 1+",
+   "train": {
+    "n": 1934,
+    "won": 930,
+    "lost": 1004,
+    "win_pct": 48.1,
+    "roi": -8.2,
+    "roi_low": -12.4,
+    "roi_high": -3.9
+   },
+   "test": {
+    "n": 947,
+    "won": 458,
+    "lost": 489,
+    "win_pct": 48.4,
+    "roi": -7.7,
+    "roi_low": -13.7,
+    "roi_high": -1.6
+   }
+  },
+  {
+   "rule": "CFB: model side on underdogs of 3+",
+   "train": {
+    "n": 599,
+    "won": 287,
+    "lost": 312,
+    "win_pct": 47.9,
+    "roi": -8.5,
+    "roi_low": -16.2,
+    "roi_high": -0.9
+   },
+   "test": {
+    "n": 308,
+    "won": 157,
+    "lost": 151,
+    "win_pct": 51.0,
+    "roi": -2.7,
+    "roi_low": -13.3,
+    "roi_high": 8.0
+   }
+  },
+  {
+   "rule": "CFB: model side on underdogs of 14+",
+   "train": {
+    "n": 286,
+    "won": 137,
+    "lost": 149,
+    "win_pct": 47.9,
+    "roi": -8.6,
+    "roi_low": -19.6,
+    "roi_high": 2.5
+   },
+   "test": {
+    "n": 142,
+    "won": 72,
+    "lost": 70,
+    "win_pct": 50.7,
+    "roi": -3.2,
+    "roi_low": -18.9,
+    "roi_high": 12.5
+   }
+  },
+  {
+   "rule": "NFL: model side on underdogs of 3+",
+   "train": {
+    "n": 138,
+    "won": 66,
+    "lost": 72,
+    "win_pct": 47.8,
+    "roi": -8.7,
+    "roi_low": -24.6,
+    "roi_high": 7.2
+   },
+   "test": {
+    "n": 62,
+    "won": 23,
+    "lost": 39,
+    "win_pct": 37.1,
+    "roi": -29.2,
+    "roi_low": -52.1,
+    "roi_high": -6.2
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 5+",
+   "train": {
+    "n": 464,
+    "won": 222,
+    "lost": 242,
+    "win_pct": 47.8,
+    "roi": -8.7,
+    "roi_low": -17.3,
+    "roi_high": 0.0
+   },
+   "test": {
+    "n": 240,
+    "won": 130,
+    "lost": 110,
+    "win_pct": 54.2,
+    "roi": 3.4,
+    "roi_low": -8.6,
+    "roi_high": 15.4
+   }
+  },
+  {
+   "rule": "NBA: model side on underdogs of 7+",
+   "train": {
+    "n": 398,
+    "won": 190,
+    "lost": 208,
+    "win_pct": 47.7,
+    "roi": -8.9,
+    "roi_low": -18.2,
+    "roi_high": 0.5
+   },
+   "test": {
+    "n": 248,
+    "won": 122,
+    "lost": 126,
+    "win_pct": 49.2,
+    "roi": -6.1,
+    "roi_low": -18.0,
+    "roi_high": 5.8
+   }
+  },
+  {
+   "rule": "NFL: home underdogs",
+   "train": {
+    "n": 214,
+    "won": 102,
+    "lost": 112,
+    "win_pct": 47.7,
+    "roi": -9.0,
+    "roi_low": -21.8,
+    "roi_high": 3.8
+   },
+   "test": {
+    "n": 111,
+    "won": 59,
+    "lost": 52,
+    "win_pct": 53.2,
+    "roi": 1.5,
+    "roi_low": -16.2,
+    "roi_high": 19.2
+   }
+  },
+  {
+   "rule": "CFB: every under",
+   "train": {
+    "n": 1572,
+    "won": 748,
+    "lost": 824,
+    "win_pct": 47.6,
+    "roi": -9.2,
+    "roi_low": -13.9,
+    "roi_high": -4.4
+   },
+   "test": {
+    "n": 807,
+    "won": 416,
+    "lost": 391,
+    "win_pct": 51.5,
+    "roi": -1.6,
+    "roi_low": -8.2,
+    "roi_high": 5.0
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 6+",
+   "train": {
+    "n": 488,
+    "won": 230,
+    "lost": 258,
+    "win_pct": 47.1,
+    "roi": -10.0,
+    "roi_low": -18.5,
+    "roi_high": -1.6
+   },
+   "test": {
+    "n": 263,
+    "won": 134,
+    "lost": 129,
+    "win_pct": 51.0,
+    "roi": -2.7,
+    "roi_low": -14.3,
+    "roi_high": 8.8
+   }
+  },
+  {
+   "rule": "NBA: model side, disagrees by 5+",
+   "train": {
+    "n": 240,
+    "won": 113,
+    "lost": 127,
+    "win_pct": 47.1,
+    "roi": -10.1,
+    "roi_low": -22.2,
+    "roi_high": 1.9
+   },
+   "test": {
+    "n": 133,
+    "won": 69,
+    "lost": 64,
+    "win_pct": 51.9,
+    "roi": -1.0,
+    "roi_low": -17.2,
+    "roi_high": 15.3
+   }
+  },
+  {
+   "rule": "NBA: underdogs of 14+",
+   "train": {
+    "n": 149,
+    "won": 70,
+    "lost": 79,
+    "win_pct": 47.0,
+    "roi": -10.3,
+    "roi_low": -25.6,
+    "roi_high": 5.0
+   },
+   "test": {
+    "n": 123,
+    "won": 58,
+    "lost": 65,
+    "win_pct": 47.2,
+    "roi": -10.0,
+    "roi_low": -26.8,
+    "roi_high": 6.9
+   }
+  },
+  {
+   "rule": "NBA: model side, disagrees by 6+",
+   "train": {
+    "n": 111,
+    "won": 52,
+    "lost": 59,
+    "win_pct": 46.8,
+    "roi": -10.6,
+    "roi_low": -28.3,
+    "roi_high": 7.2
+   },
+   "test": {
+    "n": 71,
+    "won": 32,
+    "lost": 39,
+    "win_pct": 45.1,
+    "roi": -14.0,
+    "roi_low": -36.1,
+    "roi_high": 8.1
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 10+",
+   "train": {
+    "n": 107,
+    "won": 50,
+    "lost": 57,
+    "win_pct": 46.7,
+    "roi": -10.8,
+    "roi_low": -28.8,
+    "roi_high": 7.3
+   },
+   "test": {
+    "n": 62,
+    "won": 40,
+    "lost": 22,
+    "win_pct": 64.5,
+    "roi": 23.2,
+    "roi_low": 0.4,
+    "roi_high": 45.9
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 7+",
+   "train": {
+    "n": 264,
+    "won": 123,
+    "lost": 141,
+    "win_pct": 46.6,
+    "roi": -11.1,
+    "roi_low": -22.5,
+    "roi_high": 0.4
+   },
+   "test": {
+    "n": 139,
+    "won": 77,
+    "lost": 62,
+    "win_pct": 55.4,
+    "roi": 5.8,
+    "roi_low": -10.0,
+    "roi_high": 21.5
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 8+",
+   "train": {
+    "n": 213,
+    "won": 99,
+    "lost": 114,
+    "win_pct": 46.5,
+    "roi": -11.3,
+    "roi_low": -24.1,
+    "roi_high": 1.5
+   },
+   "test": {
+    "n": 112,
+    "won": 66,
+    "lost": 46,
+    "win_pct": 58.9,
+    "roi": 12.5,
+    "roi_low": -4.9,
+    "roi_high": 29.9
+   }
+  },
+  {
+   "rule": "NBA: model side on underdogs of 10+",
+   "train": {
+    "n": 203,
+    "won": 94,
+    "lost": 109,
+    "win_pct": 46.3,
+    "roi": -11.6,
+    "roi_low": -24.7,
+    "roi_high": 1.5
+   },
+   "test": {
+    "n": 143,
+    "won": 67,
+    "lost": 76,
+    "win_pct": 46.9,
+    "roi": -10.6,
+    "roi_low": -26.2,
+    "roi_high": 5.1
+   }
+  },
+  {
+   "rule": "CFB: model side, disagrees by 6+",
+   "train": {
+    "n": 350,
+    "won": 162,
+    "lost": 188,
+    "win_pct": 46.3,
+    "roi": -11.6,
+    "roi_low": -21.6,
+    "roi_high": -1.7
+   },
+   "test": {
+    "n": 181,
+    "won": 98,
+    "lost": 83,
+    "win_pct": 54.1,
+    "roi": 3.4,
+    "roi_low": -10.5,
+    "roi_high": 17.2
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 7+",
+   "train": {
+    "n": 327,
+    "won": 150,
+    "lost": 177,
+    "win_pct": 45.9,
+    "roi": -12.4,
+    "roi_low": -22.7,
+    "roi_high": -2.1
+   },
+   "test": {
+    "n": 176,
+    "won": 97,
+    "lost": 79,
+    "win_pct": 55.1,
+    "roi": 5.2,
+    "roi_low": -8.8,
+    "roi_high": 19.2
+   }
+  },
+  {
+   "rule": "all sports: model side, disagrees by 10+",
+   "train": {
+    "n": 113,
+    "won": 51,
+    "lost": 62,
+    "win_pct": 45.1,
+    "roi": -13.8,
+    "roi_low": -31.4,
+    "roi_high": 3.7
+   },
+   "test": {
+    "n": 65,
+    "won": 41,
+    "lost": 24,
+    "win_pct": 63.1,
+    "roi": 20.4,
+    "roi_low": -2.0,
+    "roi_high": 42.8
+   }
+  }
+ ]
+}
