@@ -1,11 +1,11 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1988,
+   "chance": 0.1998,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.592,
+     "chance": 0.595,
      "event_id": "401909884",
      "game": "PHI @ IND",
      "line": 7.5,
@@ -22,7 +22,7 @@
      "event_id": "401909888",
      "game": "GS @ MIN",
      "line": -3.5,
-     "odds": -115,
+     "odds": -110,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 139.37,
-   "price": 597,
-   "projected_profit": 7.71,
+   "payout": 142.31,
+   "price": 612,
+   "projected_profit": 8.44,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T21:48+00:00",
+  "seen": "2026-10-28T22:01+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
@@ -64,7 +64,7 @@
      "label": "threes",
      "line": 0.5,
      "name": "Paul Reed",
-     "odds": -259,
+     "odds": -258,
      "pid": "4278562",
      "projection": 0.465,
      "side": "under",
@@ -74,21 +74,21 @@
      "type": "prop"
     }
    ],
-   "payout": 27.72,
-   "price": -259,
-   "projected_profit": -1.2,
+   "payout": 27.75,
+   "price": -258,
+   "projected_profit": -1.18,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T21:48+00:00",
+  "seen": "2026-10-28T22:01+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
-   "chance": 0.592,
+   "chance": 0.595,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.592,
+     "chance": 0.595,
      "event_id": "401909884",
      "game": "PHI @ IND",
      "line": 7.5,
@@ -103,10 +103,10 @@
    ],
    "payout": 39.05,
    "price": -105,
-   "projected_profit": 3.12,
+   "projected_profit": 3.23,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T21:48+00:00",
+  "seen": "2026-10-28T22:01+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -118,7 +118,7 @@
      "chance": 0.685,
      "event_id": "401909888",
      "game": "GS @ MIN",
-     "odds": -170,
+     "odds": -162,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T00:00Z",
@@ -127,21 +127,21 @@
      "type": "ml"
     }
    ],
-   "payout": 31.76,
-   "price": -170,
-   "projected_profit": 1.76,
+   "payout": 32.35,
+   "price": -162,
+   "projected_profit": 2.16,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T21:48+00:00",
+  "seen": "2026-10-28T22:01+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.19880425599999998,
+    "chance": 0.19981170999999998,
     "legs": [
      {
-      "chance": 0.592,
+      "chance": 0.595,
       "event_id": "401909884",
       "game": "PHI @ IND",
       "line": 7.5,
@@ -156,7 +156,7 @@
       "event_id": "401909888",
       "game": "GS @ MIN",
       "line": -3.5,
-      "odds": -115,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T00:00Z",
@@ -174,14 +174,14 @@
       "team": "UTAH"
      }
     ],
-    "payout": 139.3675889328063,
-    "projected_profit": 7.706869828300391
+    "payout": 142.31404958677686,
+    "projected_profit": 8.436013604958674
    },
    "two": {
-    "chance": 0.343952,
+    "chance": 0.345695,
     "legs": [
      {
-      "chance": 0.592,
+      "chance": 0.595,
       "event_id": "401909884",
       "game": "PHI @ IND",
       "line": 7.5,
@@ -204,10 +204,10 @@
      }
     ],
     "payout": 74.54545454545455,
-    "projected_profit": 5.64005818181818
+    "projected_profit": 5.769990909090907
    }
   },
-  "seen": "2026-10-28T21:48+00:00",
+  "seen": "2026-10-28T22:01+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909883": {
@@ -224,14 +224,14 @@
    "market_prob": 0.678,
    "name": "Paul Reed",
    "pid": "4278562",
-   "price": "-259",
+   "price": "-258",
    "prob": 0.597,
    "projection": 0.465,
    "score": 0.678,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T21:48+00:00",
+  "seen": "2026-10-28T22:01+00:00",
   "start": "2026-10-28T23:00Z"
  }
 }
