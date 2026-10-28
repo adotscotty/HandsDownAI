@@ -7,7 +7,7 @@ const KINDS = ["prop", "spread", "winner", "parlay", "sgp"];
 const CORE = ["prop", "spread", "winner"], FUN = ["parlay", "sgp"];
 const VIEWS = ["home", "games", "parlays", "today", "yesterday", "record"];
 
-const S = { sport: "all", day: null, edgeOnly: false, stake: 20, base: 20, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
+const S = { loadFail: false, liveFail: false, sport: "all", day: null, edgeOnly: false, stake: 20, base: 20, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
 try { S.stake = +localStorage.getItem("hd-stake") || 20; } catch (e) {}
 
 // ---------- helpers ----------
@@ -574,13 +574,30 @@ async function load() {
   const [p, t, pa, pr, b, d] = await Promise.all(["predictions.json", "track_record.json", "parlays.json", "props.json", "bestbets.json", "daily.json"].map(get));
   if (!p && !b) throw new Error("no data");
   Object.assign(S, { preds: p, track: t, parlays: pa, props: pr, best: b, daily: d, base: (b && b.stake) || 20 });
+  S.loadFail = false; freshness();
   if (p) document.getElementById("updated").textContent = "Last updated " + new Date(p.updated).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" }) + ".";
   const first = !document.querySelector(".rise.in");
   first ? render() : rerender();
   liveTick();
 }
-load().catch(() => { document.getElementById("bestbets").replaceChildren(h("p", { class: "empty", text: "Couldn't load picks. Try refreshing." })); });
-setInterval(() => load().catch(() => {}), 5 * 60 * 1000);
+// Data age and load problems, shown under the header on every page.
+const STALE_MIN = 30;
+function freshness() {
+  const el = document.getElementById("fresh"); el.replaceChildren(); el.hidden = false; el.className = "fresh";
+  const at = S.preds && Date.parse(S.preds.updated), mins = at ? Math.max(0, Math.round((Date.now() - at) / 60000)) : null;
+  const ago = mins == null ? "" : mins < 1 ? "just now" : mins < 120 ? `${mins} min ago` : `${Math.round(mins / 60)} hours ago`;
+  const retry = h("button", { type: "button", text: "Try again" });
+  retry.addEventListener("click", () => { retry.disabled = true; retry.textContent = "Loading…"; load().catch(loadFailed); });
+  if (S.loadFail && !at) { el.classList.add("bad"); el.append("Couldn't load picks and games. Check your connection; we'll keep retrying every 5 minutes. ", retry); }
+  else if (S.loadFail) { el.classList.add("bad"); el.append(`Couldn't refresh just now, so you're seeing data from ${ago}. Lines may have moved. `, retry); }
+  else if (mins != null && mins > STALE_MIN) { el.classList.add("warn"); el.append(`These numbers are from ${ago}. Our updater normally runs every 15 minutes, so lines may have moved since.`); }
+  else if (at) el.append(`Updated ${ago}`);
+  else el.hidden = true;
+}
+function loadFailed() { S.loadFail = true; freshness(); }
+load().catch(loadFailed);
+setInterval(() => load().catch(loadFailed), 5 * 60 * 1000);
+setInterval(freshness, 60 * 1000);
 
 // ---------- live scores (straight from ESPN, every minute) ----------
 const LIVE = {};          // event_id -> { state: pre|in|post, detail, home, away, hs, as }
@@ -596,6 +613,7 @@ async function loadLive() {
   const boards = await Promise.all(Object.entries(FEEDS).map(([sp, path]) =>
     fetch(`https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard?dates=${day}${sp === "cfb" ? "&groups=80&limit=300" : ""}`)
       .then(r => r.ok ? r.json() : null).catch(() => null)));
+  S.liveFail = boards.every(b => !b);
   for (const b of boards) for (const e of (b && b.events) || []) {
     const c = e.competitions[0], st = e.status.type;
     const home = c.competitors.find(x => x.homeAway === "home"), away = c.competitors.find(x => x.homeAway === "away");
@@ -670,6 +688,8 @@ function liveBlock() {
   const wrap = h("div", { class: "live-block" });
   const slate = (S.daily && S.daily.today && S.daily.today.slate) || [];
   const live = slate.filter(g => LIVE[g.event_id] && LIVE[g.event_id].state === "in");
+  if (S.liveFail && slate.some(g => Date.parse(g.date) <= Date.now()))
+    wrap.append(h("p", { class: "fresh bad", text: "Live scores aren't loading right now. We'll keep trying every minute, and final results still arrive with each update." }));
   // bets with a leg in play
   const bets = [];
   const B = S.best;
@@ -723,7 +743,7 @@ async function liveTick() {
   try {
     await loadLive();
     const sig = JSON.stringify([LIVE, BOX]);
-    if (S.best && sig !== liveSig) { liveSig = sig; rerender(); }
+    if (S.best && (sig !== liveSig || S.liveFail)) { liveSig = sig; rerender(); }
   } catch (e) {}
 }
 liveTimer = setInterval(liveTick, 60 * 1000);

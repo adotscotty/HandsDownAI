@@ -229,7 +229,16 @@ footer .cols a { color: var(--gold); font-weight: 700; }
 .hl .leg b, .lead.hl .leg b { font-size: clamp(24px, 2.6vw, 32px); line-height: 1.15; letter-spacing: -.01em; }
 .hl .leg { padding-right: 110px; }
 @media (max-width: 900px) { .hl .leg { padding-right: 0; margin-top: 44px; } }
-@media (max-width: 600px) { .bar nav { gap: 10px 14px; font-size: 15px; flex-wrap: wrap; overflow: visible; } .bar nav a.sub { padding: 7px 11px; } }
+.fresh { font-size: 14px; color: var(--ink-2); margin-top: -4px; }
+.fresh.warn { color: var(--gold); } .fresh.bad { color: var(--loss); }
+.fresh button { font: 600 14px var(--text); background: var(--surface-2); color: var(--ink); border: 0; padding: 8px 14px; margin-left: 6px; min-height: 36px; cursor: pointer; }
+.fresh button:hover { background: var(--surface-3); }
+.live-block > .fresh { margin: 0 0 20px; }
+@media (max-width: 600px) {
+  .bar nav { gap: 4px 14px; font-size: 15px; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 calc(-1 * var(--m)); padding: 0 var(--m); width: auto; }
+  .bar nav a { display: inline-flex; align-items: center; min-height: 44px; }
+  .bar nav a.sub { padding: 0 12px; }
+}
 .live { display: block; margin-top: 4px; font-size: 15px; }
 .lead .live { color: var(--gold-ink); }
 .season-figs strong.gold { color: var(--gold); }
