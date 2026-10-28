@@ -9,7 +9,7 @@
      "event_id": "401909884",
      "game": "PHI @ IND",
      "line": 4.5,
-     "odds": -110,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-28T23:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 136.28,
-   "price": 581,
-   "projected_profit": 4.74,
+   "payout": 137.48,
+   "price": 587,
+   "projected_profit": 4.96,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
@@ -79,8 +79,51 @@
    "projected_profit": -1.22,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-29T00:00Z"
+ },
+ "bet|2026-10-28|sgp": {
+  "bet": {
+   "chance": 0.3628,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.553,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
+     "line": 4.5,
+     "odds": -108,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-28T23:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
+     "type": "spread"
+    },
+    {
+     "chance": 0.656,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
+     "label": "threes",
+     "line": 1.5,
+     "name": "LeBron James",
+     "odds": -231,
+     "pid": "1966",
+     "projection": 1.201,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-10-28T23:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 55.19,
+   "price": 176,
+   "projected_profit": 0.02,
+   "start": "2026-10-28T23:00Z"
+  },
+  "seen": "2026-10-28T06:20+00:00",
+  "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
@@ -106,7 +149,7 @@
    "projected_profit": 1.61,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -132,7 +175,7 @@
    "projected_profit": 2.54,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
@@ -145,7 +188,7 @@
       "event_id": "401909884",
       "game": "PHI @ IND",
       "line": 4.5,
-      "odds": -110,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-28T23:00Z",
@@ -174,8 +217,8 @@
       "team": "UTAH"
      }
     ],
-    "payout": 136.27739849083724,
-    "projected_profit": 4.741449513877111
+    "payout": 137.47913921826967,
+    "projected_profit": 4.959628081018884
    },
    "two": {
     "chance": 0.32830399999999993,
@@ -207,7 +250,7 @@
     "projected_profit": 3.4354554940711424
    }
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909884": {
@@ -231,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909885": {
@@ -255,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-28T23:30Z"
  },
  "prop|nba|401909889": {
@@ -279,7 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T06:07+00:00",
+  "seen": "2026-10-28T06:20+00:00",
   "start": "2026-10-29T00:00Z"
  }
 }
