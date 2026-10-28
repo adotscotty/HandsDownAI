@@ -135,7 +135,24 @@ summary { cursor: pointer; color: var(--gold); font-weight: 700; padding: 8px 0;
 .day-h { font: 26px/1.1 var(--display); color: var(--gold); margin: 56px 0 18px; }
 .day-h:first-child { margin-top: 0; }
 .games { display: grid; gap: 12px; }
-.game { position: relative; display: grid; grid-template-columns: 1.3fr 1fr 1.2fr; gap: 16px 36px; background: var(--surface); padding: 24px 28px 24px 34px; }
+.gbar { position: sticky; top: 0; z-index: 5; background: var(--ground); display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px;
+  padding: 12px 0; margin-bottom: 28px; border-bottom: 1px solid var(--surface-3); }
+.gbar button { min-height: 44px; }
+.days { display: flex; gap: 6px; overflow-x: auto; max-width: 100%; scrollbar-width: thin; }
+.days button { font: 600 15px var(--text); background: var(--surface-2); border: 0; padding: 0 14px; cursor: pointer; white-space: nowrap; transition: background .15s; }
+.days button:hover { background: var(--surface-3); }
+.days button small { color: var(--ink-2); font-weight: 500; font-variant-numeric: tabular-nums; }
+.days button[aria-pressed="true"] { background: var(--gold); color: var(--gold-ink); }
+.days button[aria-pressed="true"] small { color: var(--gold-ink-2); }
+.gbar .toggle { min-height: 44px; margin-left: auto; }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.noline { margin-top: 12px; background: var(--surface); padding: 16px 28px; color: var(--ink-2); font-size: 15px; }
+.noline summary { cursor: pointer; color: var(--ink); font-weight: 600; min-height: 28px; }
+.noline ul { list-style: none; margin-top: 10px; display: grid; gap: 8px; }
+.noline b { color: var(--ink); }
+.game { position: relative; display: grid; grid-template-columns: 1.3fr 1fr; gap: 12px 36px; background: var(--surface); padding: 20px 28px 20px 34px; }
+.game .why { grid-column: 1 / -1; margin-top: 0; }
+.game .why p { margin-top: 8px; }
 .game.edge::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 8px; background: var(--gold); }
 .game .when { color: var(--ink-2); font-size: 15px; }
 .teams { display: grid; gap: 8px; margin-top: 8px; }
@@ -146,12 +163,12 @@ summary { cursor: pointer; color: var(--gold); font-weight: 700; padding: 8px 0;
 .wp { display: flex; height: 14px; background: var(--surface-3); margin-top: 12px; }
 .wp span { background: var(--gold); }
 .call small { color: var(--ink-2); font-size: 14px; display: block; }
-.call strong { font: 800 24px/1.2 var(--text); display: block; margin-bottom: 12px; }
+.call strong { font: 800 22px/1.2 var(--text); display: block; margin-bottom: 8px; }
 .call .edge-txt { font-weight: 700; }
 .game.edge .call .edge-txt { color: var(--gold); }
-.extra { font-size: 15px; color: var(--ink-2); }
-.extra p + p { margin-top: 10px; }
-.extra b { color: var(--ink); font-weight: 600; }
+.game .why { font-size: 15px; color: var(--ink-2); }
+
+.game .why b { color: var(--ink); font-weight: 600; }
 
 /* sport blocks in record */
 .sport-blocks { display: grid; gap: 20px; }
@@ -179,8 +196,6 @@ footer .cols a { color: var(--gold); font-weight: 700; }
 
 @media (max-width: 1000px) {
   .types, .types.five { grid-template-columns: repeat(2, 1fr); }
-  .game { grid-template-columns: 1fr 1fr; }
-  .game .extra { grid-column: 1 / -1; }
 }
 @media (max-width: 900px) {
   .bar { flex-wrap: wrap; gap: 14px; }
@@ -198,7 +213,14 @@ footer .cols a { color: var(--gold); font-weight: 700; }
   .lead .leg { padding-right: 0; }
 }
 @media (max-width: 600px) {
-  .game { grid-template-columns: 1fr; padding: 20px 20px 20px 26px; }
+  .game { grid-template-columns: 1fr; padding: 18px 20px 18px 26px; }
+  .gbar { flex-wrap: nowrap; overflow-x: auto; gap: 6px; margin: 0 calc(-1 * var(--m)) 20px; padding: 10px var(--m); scrollbar-width: none; }
+  .gbar .sports, .gbar .days { flex-wrap: nowrap; overflow: visible; }
+  .gbar .days { margin-left: 6px; padding-left: 12px; border-left: 1px solid var(--surface-3); }
+  .gbar .sports button { white-space: nowrap; }
+  .gbar .toggle { margin-left: 8px; white-space: nowrap; }
+  .call { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; } .call .edge-txt { grid-column: 1 / -1; }
+  .call small { grid-row: 1; } .call strong { grid-row: 2; }
   .types, .types.five, .types.two { grid-template-columns: 1fr 1fr; gap: 12px; }
   .types > div { padding: 18px 18px; }
   td, th { padding-left: 10px; padding-right: 10px; }

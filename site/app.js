@@ -7,7 +7,7 @@ const KINDS = ["prop", "spread", "winner", "parlay", "sgp"];
 const CORE = ["prop", "spread", "winner"], FUN = ["parlay", "sgp"];
 const VIEWS = ["home", "games", "parlays", "today", "yesterday", "record"];
 
-const S = { sport: "all", edgeOnly: false, stake: 20, base: 20, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
+const S = { sport: "all", day: null, edgeOnly: false, stake: 20, base: 20, preds: null, track: null, parlays: null, props: null, best: null, daily: null };
 try { S.stake = +localStorage.getItem("hd-stake") || 20; } catch (e) {}
 
 // ---------- helpers ----------
@@ -196,7 +196,7 @@ function scaleDetail(t) {
 
 // ---------- Games ----------
 // Plain-English "Why this pick?": the pieces that add up to our model's number, then how Vegas changes it
-function whyBox(g) {
+function whyList(g) {
   const w = g.why; if (!w) return null;
   const H = g.home_name, A = g.away_name, pts = x => `${Math.abs(x).toFixed(1)} pt${Math.abs(x) >= 0.95 && Math.abs(x) < 1.05 ? "" : "s"}`;
   const toward = x => x > 0 ? H : A, items = [];
@@ -221,7 +221,7 @@ function whyBox(g) {
     if (Math.abs(d) >= 0.05) items.push(`That's ${d > 0 ? "a bit more" : "a bit less"} than Vegas gives the ${H}, so our spread ${g.sport === "cfb" ? "lean" : "pick"} is the ${d > 0 ? H : A}. Our chance it covers: ${Math.round(100 * Math.max(g.home_cover_prob, 1 - g.home_cover_prob))}%.` +
       (g.sport === "cfb" ? " College spreads are leans, not bets, until our model beats the 52.4% break-even there." : ""));
   }
-  return h("details", { class: "why" }, h("summary", { text: "Why this pick?" }), h("ul", {}, ...items.map(t => h("li", { text: t }))));
+  return h("ul", {}, ...items.map(t => h("li", { text: t })));
 }
 
 function gameRow(g) {
@@ -232,7 +232,7 @@ function gameRow(g) {
   const team = (logo, name, pct, fav) => h("div", { class: "team" + (fav ? " fav" : "") },
     logo ? h("img", { src: smallLogo(logo), alt: "", loading: "lazy", width: 30, height: 30, onerror: "this.onerror=null;this.src='" + logo + "'" }) : null,
     h("span", { text: name }), h("span", { class: "pct", text: pct + "%" }));
-  const bar = h("div", { class: "wp", title: `Win chance: ${g.away} ${awayPct}%, ${g.home} ${homePct}%` });
+  const bar = h("div", { class: "wp", role: "img", "aria-label": `Win chance: ${g.away_name} ${awayPct}%, ${g.home_name} ${homePct}%` });
   bar.append(h("span", { style: `width:${awayPct}%;background:${awayPct >= 50 ? "var(--gold)" : "var(--surface-3)"}` }),
              h("span", { style: `width:${homePct}%;background:${homePct > 50 ? "var(--gold)" : "#3a3427"}` }));
   // The spread pick we grade in the Record tab: our prediction against the line
@@ -250,12 +250,13 @@ function gameRow(g) {
   }
   const inj = [...(g.away_injuries?.key_injuries || []).map(i => ({ ...i, t: g.away })), ...(g.home_injuries?.key_injuries || []).map(i => ({ ...i, t: g.home }))];
   const bp = g.best_prop;
-  const extra = h("div", { class: "extra" },
+  const why = whyList(g);
+  const extra = h("details", { class: "why" }, h("summary", {}, "Why this pick? ", h("span", { class: "vh", text: `${g.away_name} at ${g.home_name}` })),
+    why,
     bp ? h("p", {}, h("b", { text: "Best prop: " }), `${bp.name} ${bp.side} ${bp.line} ${bp.label} (${price(bp.price)}), DraftKings ${Math.round(bp.market_prob * 100)}% likely, our projection ${(+bp.projection).toFixed(1)}`) : null,
     inj.length ? h("p", {}, h("b", { text: "Injuries counted: " }), inj.map(i => `${i.name} (${i.t}, ${i.status})`).join(", ") +
       (g.injury_adjustment ? `. Moves our line ${Math.abs(g.injury_adjustment).toFixed(1)} pts.` : "")) : null,
-    modelTxt ? h("p", { text: modelTxt }) : null,
-    whyBox(g));
+    modelTxt ? h("p", { text: modelTxt }) : null);
   return h("article", { class: "game rise" + (big ? " edge" : "") },
     h("div", {}, h("p", { class: "when", text: `${SPORT[g.sport]} · ${when(g.date)}` }),
       h("div", { class: "teams" }, team(g.away_logo, g.away_name, awayPct, !favHome), team(g.home_logo, (g.neutral ? "vs " : "@ ") + g.home_name, homePct, favHome)), bar),
@@ -265,16 +266,30 @@ function gameRow(g) {
     extra);
 }
 
+// One day at a time (the next day with games by default); games with no line yet fold into one list.
+const dayKey = s => new Date(s).toLocaleDateString("en-CA");
 function renderGames() {
-  const box = document.getElementById("gamesList"); box.replaceChildren();
+  const box = document.getElementById("gamesList"), pick = document.getElementById("dayPick");
+  box.replaceChildren(); pick.replaceChildren();
   let games = (S.preds?.games || []).filter(g => sportOk(g.sport));
   if (S.edgeOnly) games = games.filter(g => g.edge_vs_spread != null && Math.abs(g.edge_vs_spread) >= 4 && Math.abs(g.edge_vs_spread) < 7);
-  if (!games.length) { box.append(h("p", { class: "empty", text: "No games to show right now." })); return; }
-  let day = null, list = null;
-  for (const g of games) {
-    const d = new Date(g.date).toLocaleDateString([], { weekday: "long", month: "short", day: "numeric" });
-    if (d !== day) { day = d; box.append(h("h3", { class: "day-h", text: d })); list = h("div", { class: "games" }); box.append(list); }
-    list.append(gameRow(g));
+  if (!games.length) { box.append(h("p", { class: "empty", text: S.edgeOnly ? "No gold-stripe games right now. Untick \"Gold stripe only\" to see every game." : "No games to show right now." })); return; }
+  const days = [...new Set(games.map(g => dayKey(g.date)))];
+  if (S.day !== "all" && !days.includes(S.day)) S.day = days[0];
+  const label = (k, opt) => new Date(k + "T12:00").toLocaleDateString([], opt);
+  for (const k of [...days, "all"]) {
+    const n = k === "all" ? games.length : games.filter(g => dayKey(g.date) === k).length;
+    pick.append(h("button", { "data-day": k, "aria-pressed": String(S.day === k) },
+      k === "all" ? "All days" : label(k, { weekday: "short" }) + " " + +k.slice(8), h("small", { text: " " + n })));
+  }
+  for (const k of S.day === "all" ? days : [S.day]) {
+    const list = games.filter(g => dayKey(g.date) === k), lined = list.filter(g => g.spread != null), open = list.filter(g => g.spread == null);
+    box.append(h("h3", { class: "day-h", text: label(k, { weekday: "long", month: "short", day: "numeric" }) }));
+    if (lined.length) box.append(h("div", { class: "games" }, ...lined.map(gameRow)));
+    if (open.length) box.append(h("details", { class: "noline" },
+      h("summary", { text: `${open.length} game${open.length > 1 ? "s" : ""} without a betting line yet` }),
+      h("ul", {}, ...open.map(g => h("li", {}, h("b", { text: `${g.away_name} ${g.neutral ? "vs" : "@"} ${g.home_name}` }),
+        ` · ${SPORT[g.sport]} · ${when(g.date)} · our prediction: ${g.predicted_home_margin >= 0 ? g.home_name : g.away_name} by ${Math.abs(g.predicted_home_margin).toFixed(1)}`)))));
   }
 }
 
@@ -541,6 +556,11 @@ for (const g of document.querySelectorAll(".sports")) {
 }
 function syncSports() { document.querySelectorAll(".sports button").forEach(b => b.setAttribute("aria-pressed", b.dataset.sport === S.sport)); }
 syncSports();
+document.getElementById("dayPick").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  S.day = b.dataset.day; renderGames(); document.querySelectorAll("#gamesList .rise").forEach(x => x.classList.add("in"));
+  const bar = document.querySelector(".gbar"); if (bar.getBoundingClientRect().top <= 0) bar.scrollIntoView();
+});
 document.getElementById("edgeOnly").addEventListener("change", e => { S.edgeOnly = e.target.checked; renderGames(); document.querySelectorAll("#gamesList .rise").forEach(x => x.classList.add("in")); });
 
 window.addEventListener("hashchange", () => { showView(); window.scrollTo(0, 0); });

@@ -68,12 +68,13 @@
     <div class="top">
       <div>
         <h1>Upcoming games</h1>
-        <p>Our predicted margin and win chance for every game with a line. Our prediction is 60% the Vegas line and 40% our own model, and our spread pick follows it; both are graded in the Record tab. A gold edge means our model on its own disagrees with the line by 4 to 6.9 points.</p>
+        <p>Our predicted margin, win chance and spread pick for each game, graded in the Record tab. A gold stripe means our model on its own disagrees with Vegas by 4 to 6.9 points.</p>
       </div>
-      <div class="filters">
-        <div class="sports" role="group" aria-label="Sport"></div>
-        <label class="toggle"><input type="checkbox" id="edgeOnly"> Only gold-edge games</label>
-      </div>
+    </div>
+    <div class="gbar">
+      <div class="sports" role="group" aria-label="Sport"></div>
+      <div class="days" id="dayPick" role="group" aria-label="Day"></div>
+      <label class="toggle"><input type="checkbox" id="edgeOnly"> Gold stripe only</label>
     </div>
     <div id="gamesList"></div>
     <div class="block">
