@@ -33,12 +33,18 @@ const cls = v => v > 0 ? "w" : v < 0 ? "l" : "";
 const legText = l => l.type === "prop" ? `${l.name} ${l.side} ${l.line} ${l.label}`
   : l.type === "ml" ? `${l.team_name || l.team} to win` : `${l.team} ${line(l.line)}`;
 const sportOk = s => S.sport === "all" || S.sport === s;
+// A bet is locked once it is logged (it then has a status) or its first game is 25 minutes away.
+const LOCK_MS = 25 * 60 * 1000;
+const isLocked = b => b.locked === true || (b.locked == null && b.status != null)
+  || b.legs.some(l => l.start && Date.parse(l.start) - Date.now() <= LOCK_MS);
+// Chance needed to break even at this price (payout is the total return on a $20 bet).
+const breakEven = b => b.payout > 0 ? S.base / b.payout : null;
 
 // ---------- tickets ----------
 // b: { legs, price?, chance, payout (at $20), status, profit, locked }
 function ticket(title, why, b, lead) {
   const t = h("article", { class: "ticket rise" + (lead ? " lead" : "") });
-  const head = h("div", {}, h("h3", { text: title }), why ? h("p", { class: "why", text: why }) : null);
+  const head = h("div", {}, h("h3", { text: title }), why ? h("p", { class: "deck", text: why }) : null);
   const legs = h("div", {});
   for (const l of b.legs) {
     const r = l.result;
@@ -50,18 +56,28 @@ function ticket(title, why, b, lead) {
       h("span", { text: `${SPORT[l.sport] || ""} · ${l.game} · ${when(l.start)}${odds}` }), res, live));
   }
   const pr = b.price != null ? b.price : american(b.payout / S.base);
+  const be = breakEven(b);
   const figs = h("div", { class: "figs" },
     h("div", {}, h("small", { text: "Price" }), h("strong", { text: price(pr) })),
     h("div", {}, h("small", { text: "Chance" }), h("strong", { text: Math.round(b.chance * 100) + "%" })),
+    be != null ? h("div", {}, h("small", { text: "Needs" }), h("strong", { text: (be * 100).toFixed(1) + "%" })) : null,
     h("div", { class: "pay" }, h("small", { text: `Wins on $${S.stake}` }), h("strong", { text: "+" + money(scale(b.payout - S.base)) })));
+  let value = null;
+  if (be != null && b.chance != null) {
+    const gap = Math.round((b.chance - be) * 1000) / 10;
+    value = h("p", { class: "value " + (gap >= 0 ? "above" : "below"),
+      text: gap >= 0 ? `Our chance is ${gap} pts above the ${(be * 100).toFixed(1)}% this price needs to profit.`
+        : `Below break-even: this price needs ${(be * 100).toFixed(1)}% to profit, and we give it ${(b.chance * 100).toFixed(1)}%.` });
+  }
   if (b.status === "won") t.append(h("div", { class: "stamp w", text: "Won" }));
   else if (b.status === "lost") t.append(h("div", { class: "stamp l", text: "Lost" }));
   else if (b.status === "push") t.append(h("div", { class: "stamp p", text: "Push" }));
   const stateTxt = b.status === "won" ? `Won ${money(scale(b.profit))} on $${S.stake}` : b.status === "lost" ? `Lost $${S.stake}`
     : b.status === "push" ? "Push, money back" : b.legs.some(l => !l.result && legNow(l)) ? "In play · live scores update every minute"
-    : b.locked ? "Locked · waiting on the game" : "Can still change until 25 min before start";
+    : isLocked(b) ? "Locked · waiting on the game" : "Can still change until 25 min before start";
   const st = h("p", { class: "state", text: stateTxt });
-  if (lead) t.append(h("div", {}, head, legs, st), figs); else t.append(head, legs, figs, st);
+  if (lead) t.append(h("div", {}, head, legs, st), h("div", { class: "lead-figs" }, figs, value));
+  else t.append(head, legs, figs, value, st);
   return t;
 }
 const betTicket = (kind, b, lead) => ticket((lead ? "Top pick · " : "") + NAMES[kind], WHY[kind], b, lead);
@@ -391,7 +407,7 @@ function renderToday() {
   if (!d) { box.append(h("p", { class: "empty", text: "Results will appear after the next update." })); return; }
   if (!d.games.length && !(d.best_bets || []).some(b => b.status && b.status !== "open")) {
     box.append(h("p", { class: "empty", text: "No games have finished yet today. Results show up here within 15 minutes of each final." }));
-    if (d.best_bets && d.best_bets.length) box.append(h("div", { class: "block" }, h("h2", { text: "Today's locked bets" }), pairs(d.best_bets.map(b => betTicket(b.kind, b)))));
+    if (d.best_bets && d.best_bets.length) box.append(h("div", { class: "block" }, h("h2", { text: "Today's locked bets" }), pairs([...d.best_bets].sort((a, b) => CORE.includes(b.kind) - CORE.includes(a.kind)).map(b => betTicket(b.kind, b)))));
     return;
   }
   box.append(dayHeadline(d));
