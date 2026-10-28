@@ -1,7 +1,7 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1777,
+   "chance": 0.1816,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.556,
+     "chance": 0.568,
      "event_id": "401909890",
      "game": "SA @ UTAH",
-     "line": 11.5,
-     "odds": -105,
+     "line": 12.5,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T01:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 143.57,
-   "price": 618,
-   "projected_profit": 5.51,
+   "payout": 137.48,
+   "price": 587,
+   "projected_profit": 4.96,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-10-28T23:30Z"
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-28T23:30Z"
  },
  "bet|2026-10-28|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.02,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.07,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -175,13 +175,13 @@
    "projected_profit": 2.16,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.177716504,
+    "chance": 0.181552112,
     "legs": [
      {
       "chance": 0.553,
@@ -206,23 +206,34 @@
       "team": "MIN"
      },
      {
-      "chance": 0.556,
+      "chance": 0.568,
       "event_id": "401909890",
       "game": "SA @ UTAH",
-      "line": 11.5,
-      "odds": -105,
+      "line": 12.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T01:00Z",
       "team": "UTAH"
      }
     ],
-    "payout": 143.56902356902359,
-    "projected_profit": 5.514584951380474
+    "payout": 137.47913921826967,
+    "projected_profit": 4.959628081018884
    },
    "two": {
-    "chance": 0.321368,
+    "chance": 0.31963400000000003,
     "legs": [
+     {
+      "chance": 0.553,
+      "event_id": "401909884",
+      "game": "PHI @ IND",
+      "line": 4.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-28T23:00Z",
+      "team": "IND"
+     },
      {
       "chance": 0.578,
       "event_id": "401909888",
@@ -233,24 +244,13 @@
       "sport": "nba",
       "start": "2026-10-29T00:00Z",
       "team": "MIN"
-     },
-     {
-      "chance": 0.556,
-      "event_id": "401909890",
-      "game": "SA @ UTAH",
-      "line": 11.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-29T01:00Z",
-      "team": "UTAH"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 3.9565236363636345
+    "payout": 73.53535353535355,
+    "projected_profit": 3.504399191919198
    }
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909884": {
@@ -274,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909885": {
@@ -298,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T09:52+00:00",
+  "seen": "2026-10-28T10:05+00:00",
   "start": "2026-10-28T23:30Z"
  }
 }
