@@ -1,7 +1,7 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1694,
+   "chance": 0.1777,
    "kind": "parlay",
    "legs": [
     {
@@ -31,25 +31,25 @@
      "type": "spread"
     },
     {
-     "chance": 0.53,
-     "event_id": "401909891",
-     "game": "OKC @ DAL",
-     "line": 5.5,
-     "odds": -102,
+     "chance": 0.556,
+     "event_id": "401909890",
+     "game": "SA @ UTAH",
+     "line": 11.5,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
-     "start": "2026-10-29T01:30Z",
-     "team": "DAL",
-     "team_name": "DAL",
+     "start": "2026-10-29T01:00Z",
+     "team": "UTAH",
+     "team_name": "UTAH",
      "type": "spread"
     }
    ],
-   "payout": 145.63,
-   "price": 628,
-   "projected_profit": 4.67,
+   "payout": 143.57,
+   "price": 618,
+   "projected_profit": 5.51,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-10-28T23:30Z"
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-28T23:30Z"
  },
  "bet|2026-10-28|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.02,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.07,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -175,13 +175,13 @@
    "projected_profit": 2.16,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.16940602000000002,
+    "chance": 0.177716504,
     "legs": [
      {
       "chance": 0.553,
@@ -206,34 +206,23 @@
       "team": "MIN"
      },
      {
-      "chance": 0.53,
-      "event_id": "401909891",
-      "game": "OKC @ DAL",
-      "line": 5.5,
-      "odds": -102,
+      "chance": 0.556,
+      "event_id": "401909890",
+      "game": "SA @ UTAH",
+      "line": 11.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
-      "start": "2026-10-29T01:30Z",
-      "team": "DAL"
+      "start": "2026-10-29T01:00Z",
+      "team": "UTAH"
      }
     ],
-    "payout": 145.6288373935433,
-    "projected_profit": 4.670401740067348
+    "payout": 143.56902356902359,
+    "projected_profit": 5.514584951380474
    },
    "two": {
-    "chance": 0.31963400000000003,
+    "chance": 0.321368,
     "legs": [
-     {
-      "chance": 0.553,
-      "event_id": "401909884",
-      "game": "PHI @ IND",
-      "line": 4.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-28T23:00Z",
-      "team": "IND"
-     },
      {
       "chance": 0.578,
       "event_id": "401909888",
@@ -244,13 +233,24 @@
       "sport": "nba",
       "start": "2026-10-29T00:00Z",
       "team": "MIN"
+     },
+     {
+      "chance": 0.556,
+      "event_id": "401909890",
+      "game": "SA @ UTAH",
+      "line": 11.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-29T01:00Z",
+      "team": "UTAH"
      }
     ],
-    "payout": 73.53535353535355,
-    "projected_profit": 3.504399191919198
+    "payout": 74.54545454545455,
+    "projected_profit": 3.9565236363636345
    }
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909884": {
@@ -274,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909885": {
@@ -298,31 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T08:30+00:00",
+  "seen": "2026-10-28T08:57+00:00",
   "start": "2026-10-28T23:30Z"
- },
- "prop|nba|401909889": {
-  "game": {
-   "date": "2026-10-29T00:00Z",
-   "event_id": "401909889",
-   "name": "Denver Nuggets at New Orleans Pelicans",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.184,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.657,
-   "name": "Jeremiah Fears",
-   "pid": "5144091",
-   "price": "-233",
-   "prob": 0.571,
-   "projection": 1.552,
-   "score": 0.657,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-28T08:30+00:00",
-  "start": "2026-10-29T00:00Z"
  }
 }
