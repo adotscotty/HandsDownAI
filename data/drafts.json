@@ -1,28 +1,28 @@
 {
  "bet|2026-10-28|parlay": {
   "bet": {
-   "chance": 0.1884,
+   "chance": 0.1799,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.5609999999999999,
-     "event_id": "401909882",
-     "game": "WSH @ CLE",
-     "line": 10.5,
-     "odds": -108,
-     "side": "away",
+     "chance": 0.548,
+     "event_id": "401909881",
+     "game": "MIA @ ATL",
+     "line": -2.5,
+     "odds": -102,
+     "side": "home",
      "sport": "nba",
      "start": "2026-10-28T23:00Z",
-     "team": "WSH",
-     "team_name": "WSH",
+     "team": "ATL",
+     "team_name": "ATL",
      "type": "spread"
     },
     {
-     "chance": 0.578,
+     "chance": 0.565,
      "event_id": "401909888",
      "game": "GS @ MIN",
-     "line": -3.5,
-     "odds": -115,
+     "line": -4.5,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-29T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 134.63,
-   "price": 573,
-   "projected_profit": 5.36,
+   "payout": 144.57,
+   "price": 623,
+   "projected_profit": 6.01,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T14:58+00:00",
+  "seen": "2026-10-28T15:31+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
@@ -76,16 +76,16 @@
    "projected_profit": 1.72,
    "start": "2026-10-29T01:00Z"
   },
-  "seen": "2026-10-28T14:58+00:00",
+  "seen": "2026-10-28T15:31+00:00",
   "start": "2026-10-29T01:00Z"
  },
  "bet|2026-10-28|winner": {
   "bet": {
-   "chance": 0.685,
+   "chance": 0.703,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.685,
+     "chance": 0.703,
      "event_id": "401909888",
      "game": "GS @ MIN",
      "odds": -170,
@@ -99,34 +99,34 @@
    ],
    "payout": 31.76,
    "price": -170,
-   "projected_profit": 1.76,
+   "projected_profit": 2.33,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T14:58+00:00",
+  "seen": "2026-10-28T15:31+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
   "card": {
    "three": {
-    "chance": 0.18839389799999995,
+    "chance": 0.17988922,
     "legs": [
      {
-      "chance": 0.5609999999999999,
-      "event_id": "401909882",
-      "game": "WSH @ CLE",
-      "line": 10.5,
-      "odds": -108,
-      "side": "away",
+      "chance": 0.548,
+      "event_id": "401909881",
+      "game": "MIA @ ATL",
+      "line": -2.5,
+      "odds": -102,
+      "side": "home",
       "sport": "nba",
       "start": "2026-10-28T23:00Z",
-      "team": "WSH"
+      "team": "ATL"
      },
      {
-      "chance": 0.578,
+      "chance": 0.565,
       "event_id": "401909888",
       "game": "GS @ MIN",
-      "line": -3.5,
-      "odds": -115,
+      "line": -4.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T00:00Z",
@@ -144,18 +144,18 @@
       "team": "UTAH"
      }
     ],
-    "payout": 134.63278022824335,
-    "projected_profit": 5.3639942657760855
+    "payout": 144.5727276417813,
+    "projected_profit": 6.007075208752479
    },
    "two": {
-    "chance": 0.33581799999999995,
+    "chance": 0.328265,
     "legs": [
      {
-      "chance": 0.578,
+      "chance": 0.565,
       "event_id": "401909888",
       "game": "GS @ MIN",
-      "line": -3.5,
-      "odds": -115,
+      "line": -4.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-29T00:00Z",
@@ -173,11 +173,11 @@
       "team": "UTAH"
      }
     ],
-    "payout": 69.90548204158789,
-    "projected_profit": 3.4755191682419593
+    "payout": 73.00207039337472,
+    "projected_profit": 3.9640246376811525
    }
   },
-  "seen": "2026-10-28T14:58+00:00",
+  "seen": "2026-10-28T15:31+00:00",
   "start": "2026-10-28T23:00Z"
  }
 }
