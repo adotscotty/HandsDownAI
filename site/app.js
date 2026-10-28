@@ -462,8 +462,8 @@ function renderTrack() {
         h("td", { class: "r", text: p.model_ats_big && (p.model_ats_big.wins + p.model_ats_big.losses) ? wl(p.model_ats_big.wins, p.model_ats_big.losses, p.model_ats_big.pushes) : "–" }),
         h("td", { class: "r", text: p.games ? p.avg_miss + " pts" : "–" })));
     }
-    const right = h("div", {}, h("table", {}, h("thead", {}, h("tr", {}, h("th", { text: "" }), h("th", { class: "r", text: "Winners" }),
-      h("th", { class: "r", text: "Spread picks" }), h("th", { class: "r", text: "Gold-edge" }), h("th", { class: "r", text: "Avg miss" }))), tb),
+    const right = h("div", {}, h("div", { class: "wide-scroll" }, h("table", {}, h("thead", {}, h("tr", {}, h("th", { text: "" }), h("th", { class: "r", text: "Winners" }),
+      h("th", { class: "r", text: "Spread picks" }), h("th", { class: "r", text: "Gold-edge" }), h("th", { class: "r", text: "Avg miss" }))), tb)),
       ls ? h("p", { class: "note", style: "margin-top:14px", text: `Last season's test: ${ls.winner_pct}% winners (spread ${ls.spread_winner_pct ?? "–"}%), ${ls.ats ? (ls.ats.pct ?? ls.ats.win_pct) + "% against the spread" : ""}, average miss ${ls.avg_miss} pts.` }) : null);
     if (t.recent && t.recent.length) {
       const rb = h("tbody");
