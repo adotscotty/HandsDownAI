@@ -49,38 +49,38 @@
    "projected_profit": 4.74,
    "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T04:45+00:00",
+  "seen": "2026-10-28T04:58+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.663,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
-     "event_id": "401909889",
-     "game": "DEN @ NO",
+     "chance": 0.663,
+     "event_id": "401909884",
+     "game": "PHI @ IND",
      "label": "threes",
      "line": 1.5,
-     "name": "Jeremiah Fears",
-     "odds": -233,
-     "pid": "5144091",
-     "projection": 1.552,
+     "name": "LeBron James",
+     "odds": -240,
+     "pid": "1966",
+     "projection": 1.201,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-29T00:00Z",
+     "start": "2026-10-28T23:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.58,
-   "price": -233,
-   "projected_profit": -1.22,
-   "start": "2026-10-29T00:00Z"
+   "payout": 28.33,
+   "price": -240,
+   "projected_profit": -1.21,
+   "start": "2026-10-28T23:00Z"
   },
-  "seen": "2026-10-28T04:45+00:00",
-  "start": "2026-10-29T00:00Z"
+  "seen": "2026-10-28T04:58+00:00",
+  "start": "2026-10-28T23:00Z"
  },
  "bet|2026-10-28|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.61,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T04:45+00:00",
+  "seen": "2026-10-28T04:58+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "bet|2026-10-28|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 2.54,
    "start": "2026-10-29T00:00Z"
   },
-  "seen": "2026-10-28T04:45+00:00",
+  "seen": "2026-10-28T04:58+00:00",
   "start": "2026-10-29T00:00Z"
  },
  "parlay|2026-10-28|nba": {
@@ -207,7 +207,31 @@
     "projected_profit": 3.4354554940711424
    }
   },
-  "seen": "2026-10-28T04:45+00:00",
+  "seen": "2026-10-28T04:58+00:00",
+  "start": "2026-10-28T23:00Z"
+ },
+ "prop|nba|401909884": {
+  "game": {
+   "date": "2026-10-28T23:00Z",
+   "event_id": "401909884",
+   "name": "Philadelphia 76ers at Indiana Pacers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.11,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.663,
+   "name": "LeBron James",
+   "pid": "1966",
+   "price": "-240",
+   "prob": 0.629,
+   "projection": 1.201,
+   "score": 0.663,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-28T04:58+00:00",
   "start": "2026-10-28T23:00Z"
  },
  "prop|nba|401909889": {
@@ -231,7 +255,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-28T04:45+00:00",
+  "seen": "2026-10-28T04:58+00:00",
   "start": "2026-10-29T00:00Z"
  }
 }
