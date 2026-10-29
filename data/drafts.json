@@ -1,7 +1,7 @@
 {
  "bet|2026-10-29|parlay": {
   "bet": {
-   "chance": 0.2867,
+   "chance": 0.1473,
    "kind": "parlay",
    "legs": [
     {
@@ -29,29 +29,42 @@
      "team": "JMU",
      "team_name": "JMU",
      "type": "spread"
+    },
+    {
+     "chance": 0.514,
+     "event_id": "401909893",
+     "game": "CLE @ ATL",
+     "line": -1.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "ATL",
+     "team_name": "ATL",
+     "type": "spread"
     }
    ],
-   "payout": 72.27,
-   "price": 261,
-   "projected_profit": 0.72,
+   "payout": 141.1,
+   "price": 606,
+   "projected_profit": 0.79,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T16:58+00:00",
+  "seen": "2026-10-29T17:29+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
   "bet": {
-   "chance": 0.658,
+   "chance": 0.652,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.658,
+     "chance": 0.652,
      "event_id": "401909894",
      "game": "SAC @ NO",
      "label": "threes",
      "line": 1.5,
      "name": "Jeremiah Fears",
-     "odds": -234,
+     "odds": -228,
      "pid": "5144091",
      "projection": 1.477,
      "side": "under",
@@ -61,21 +74,48 @@
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.22,
+   "payout": 28.77,
+   "price": -228,
+   "projected_profit": -1.24,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T16:58+00:00",
+  "seen": "2026-10-29T17:29+00:00",
+  "start": "2026-10-30T00:00Z"
+ },
+ "bet|2026-10-29|spread": {
+  "bet": {
+   "chance": 0.514,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.514,
+     "event_id": "401909893",
+     "game": "CLE @ ATL",
+     "line": -1.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "ATL",
+     "team_name": "Atlanta Hawks",
+     "type": "spread"
+    }
+   ],
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 0.07,
+   "start": "2026-10-30T00:00Z"
+  },
+  "seen": "2026-10-29T17:29+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
   "bet": {
-   "chance": 0.558,
+   "chance": 0.563,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.558,
+     "chance": 0.563,
      "event_id": "401909893",
      "game": "CLE @ ATL",
      "odds": -115,
@@ -89,10 +129,10 @@
    ],
    "payout": 37.39,
    "price": -115,
-   "projected_profit": 0.86,
+   "projected_profit": 1.05,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T16:58+00:00",
+  "seen": "2026-10-29T17:29+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
@@ -103,20 +143,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.169,
+   "ev": -0.166,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.658,
+   "market_prob": 0.652,
    "name": "Jeremiah Fears",
    "pid": "5144091",
-   "price": "-234",
-   "prob": 0.583,
+   "price": "-228",
+   "prob": 0.58,
    "projection": 1.477,
-   "score": 0.658,
+   "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T16:58+00:00",
+  "seen": "2026-10-29T17:29+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
