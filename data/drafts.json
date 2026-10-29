@@ -1,7 +1,7 @@
 {
  "bet|2026-10-29|parlay": {
   "bet": {
-   "chance": 0.1462,
+   "chance": 0.1499,
    "kind": "parlay",
    "legs": [
     {
@@ -18,11 +18,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.521,
+     "chance": 0.534,
      "event_id": "401909894",
      "game": "SAC @ NO",
-     "line": 5.5,
-     "odds": -105,
+     "line": 6.5,
+     "odds": -112,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -44,29 +44,29 @@
      "type": "spread"
     }
    ],
-   "payout": 144.3,
-   "price": 622,
-   "projected_profit": 1.1,
+   "payout": 139.9,
+   "price": 600,
+   "projected_profit": 0.97,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T22:34+00:00",
+  "seen": "2026-10-29T22:49+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
   "bet": {
-   "chance": 0.695,
+   "chance": 0.665,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.695,
+     "chance": 0.665,
      "event_id": "401909894",
      "game": "SAC @ NO",
      "label": "threes",
      "line": 0.5,
-     "name": "Zion Williamson",
-     "odds": -282,
-     "pid": "4395628",
-     "projection": 0.228,
+     "name": "Precious Achiuwa",
+     "odds": -242,
+     "pid": "4431679",
+     "projection": 0.256,
      "side": "under",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -74,25 +74,25 @@
      "type": "prop"
     }
    ],
-   "payout": 27.09,
-   "price": -282,
-   "projected_profit": -1.17,
+   "payout": 28.26,
+   "price": -242,
+   "projected_profit": -1.2,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T22:34+00:00",
+  "seen": "2026-10-29T22:49+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|spread": {
   "bet": {
-   "chance": 0.521,
+   "chance": 0.534,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.521,
+     "chance": 0.534,
      "event_id": "401909894",
      "game": "SAC @ NO",
-     "line": 5.5,
-     "odds": -105,
+     "line": 6.5,
+     "odds": -112,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 0.34,
+   "payout": 37.86,
+   "price": -112,
+   "projected_profit": 0.22,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T22:34+00:00",
+  "seen": "2026-10-29T22:49+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.06,
    "start": "2026-10-30T00:15Z"
   },
-  "seen": "2026-10-29T22:34+00:00",
+  "seen": "2026-10-29T22:49+00:00",
   "start": "2026-10-30T00:15Z"
  },
  "prop|nba|401909893": {
@@ -156,7 +156,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T22:34+00:00",
+  "seen": "2026-10-29T22:49+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
@@ -167,20 +167,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.109,
+   "ev": -0.1,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.695,
-   "name": "Zion Williamson",
-   "pid": "4395628",
-   "price": "-282",
-   "prob": 0.657,
-   "projection": 0.228,
-   "score": 0.695,
+   "market_prob": 0.665,
+   "name": "Precious Achiuwa",
+   "pid": "4431679",
+   "price": "-242",
+   "prob": 0.637,
+   "projection": 0.256,
+   "score": 0.665,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T22:34+00:00",
+  "seen": "2026-10-29T22:49+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
