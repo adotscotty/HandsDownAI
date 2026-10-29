@@ -1,1 +1,82 @@
-{}
+{
+ "bet|2026-10-29|parlay": {
+  "bet": {
+   "chance": 0.1571,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.546,
+     "event_id": "401862812",
+     "game": "FAU @ UNT",
+     "line": -14.0,
+     "odds": -110,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-10-29T23:30Z",
+     "team": "UNT",
+     "team_name": "UNT",
+     "type": "spread"
+    },
+    {
+     "chance": 0.525,
+     "event_id": "401869963",
+     "game": "TROY @ JMU",
+     "line": -19.5,
+     "odds": -110,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-10-29T23:30Z",
+     "team": "JMU",
+     "team_name": "JMU",
+     "type": "spread"
+    },
+    {
+     "chance": 0.548,
+     "event_id": "401909893",
+     "game": "CLE @ ATL",
+     "line": 1.5,
+     "odds": -118,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "ATL",
+     "team_name": "ATL",
+     "type": "spread"
+    }
+   ],
+   "payout": 134.67,
+   "price": 573,
+   "projected_profit": 1.15,
+   "start": "2026-10-29T23:30Z"
+  },
+  "seen": "2026-10-29T04:08+00:00",
+  "start": "2026-10-29T23:30Z"
+ },
+ "bet|2026-10-29|spread": {
+  "bet": {
+   "chance": 0.548,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.548,
+     "event_id": "401909893",
+     "game": "CLE @ ATL",
+     "line": 1.5,
+     "odds": -118,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "ATL",
+     "team_name": "Atlanta Hawks",
+     "type": "spread"
+    }
+   ],
+   "payout": 36.95,
+   "price": -118,
+   "projected_profit": 0.25,
+   "start": "2026-10-30T00:00Z"
+  },
+  "seen": "2026-10-29T04:08+00:00",
+  "start": "2026-10-30T00:00Z"
+ }
+}
