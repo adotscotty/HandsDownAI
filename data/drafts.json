@@ -36,8 +36,38 @@
    "projected_profit": 0.89,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T11:40+00:00",
+  "seen": "2026-10-29T11:56+00:00",
   "start": "2026-10-29T23:30Z"
+ },
+ "bet|2026-10-29|prop": {
+  "bet": {
+   "chance": 0.662,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.662,
+     "event_id": "401909894",
+     "game": "SAC @ NO",
+     "label": "threes",
+     "line": 0.5,
+     "name": "Jeremiah Fears",
+     "odds": -238,
+     "pid": "5144091",
+     "projection": 1.477,
+     "side": "over",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.2,
+   "start": "2026-10-30T00:00Z"
+  },
+  "seen": "2026-10-29T11:56+00:00",
+  "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
   "bet": {
@@ -62,7 +92,31 @@
    "projected_profit": 0.86,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T11:40+00:00",
+  "seen": "2026-10-29T11:56+00:00",
+  "start": "2026-10-30T00:00Z"
+ },
+ "prop|nba|401909894": {
+  "game": {
+   "date": "2026-10-30T00:00Z",
+   "event_id": "401909894",
+   "name": "Sacramento Kings at New Orleans Pelicans",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.012,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.662,
+   "name": "Jeremiah Fears",
+   "pid": "5144091",
+   "price": "-238",
+   "prob": 0.712,
+   "projection": 1.477,
+   "score": 0.662,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-29T11:56+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
