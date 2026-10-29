@@ -1,7 +1,7 @@
 {
  "bet|2026-10-29|parlay": {
   "bet": {
-   "chance": 0.1446,
+   "chance": 0.284,
    "kind": "parlay",
    "legs": [
     {
@@ -29,55 +29,15 @@
      "team": "JMU",
      "team_name": "JMU",
      "type": "spread"
-    },
-    {
-     "chance": 0.509,
-     "event_id": "401909893",
-     "game": "CLE @ ATL",
-     "line": -1.5,
-     "odds": 100,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-30T00:00Z",
-     "team": "ATL",
-     "team_name": "ATL",
-     "type": "spread"
     }
    ],
-   "payout": 147.07,
-   "price": 635,
-   "projected_profit": 1.26,
+   "payout": 73.54,
+   "price": 268,
+   "projected_profit": 0.89,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T10:55+00:00",
+  "seen": "2026-10-29T11:14+00:00",
   "start": "2026-10-29T23:30Z"
- },
- "bet|2026-10-29|spread": {
-  "bet": {
-   "chance": 0.509,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.509,
-     "event_id": "401909893",
-     "game": "CLE @ ATL",
-     "line": -1.5,
-     "odds": 100,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-30T00:00Z",
-     "team": "ATL",
-     "team_name": "Atlanta Hawks",
-     "type": "spread"
-    }
-   ],
-   "payout": 40.0,
-   "price": 100,
-   "projected_profit": 0.36,
-   "start": "2026-10-30T00:00Z"
-  },
-  "seen": "2026-10-29T10:55+00:00",
-  "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
   "bet": {
@@ -88,7 +48,7 @@
      "chance": 0.558,
      "event_id": "401909893",
      "game": "CLE @ ATL",
-     "odds": -110,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -97,12 +57,12 @@
      "type": "ml"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 1.31,
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 0.86,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T10:55+00:00",
+  "seen": "2026-10-29T11:14+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
