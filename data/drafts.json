@@ -1,7 +1,7 @@
 {
  "bet|2026-10-29|parlay": {
   "bet": {
-   "chance": 0.1473,
+   "chance": 0.1462,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.525,
-     "event_id": "401869963",
-     "game": "TROY @ JMU",
-     "line": -19.5,
-     "odds": -110,
-     "side": "home",
-     "sport": "cfb",
-     "start": "2026-10-29T23:30Z",
-     "team": "JMU",
-     "team_name": "JMU",
+     "chance": 0.521,
+     "event_id": "401909894",
+     "game": "SAC @ NO",
+     "line": 5.5,
+     "odds": -105,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "SAC",
+     "team_name": "SAC",
      "type": "spread"
     },
     {
@@ -44,29 +44,29 @@
      "type": "spread"
     }
    ],
-   "payout": 141.1,
-   "price": 606,
-   "projected_profit": 0.79,
+   "payout": 144.3,
+   "price": 622,
+   "projected_profit": 1.1,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T22:21+00:00",
+  "seen": "2026-10-29T22:34+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
   "bet": {
-   "chance": 0.674,
+   "chance": 0.695,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.674,
+     "chance": 0.695,
      "event_id": "401909894",
      "game": "SAC @ NO",
      "label": "threes",
      "line": 0.5,
-     "name": "Precious Achiuwa",
-     "odds": -253,
-     "pid": "4431679",
-     "projection": 0.256,
+     "name": "Zion Williamson",
+     "odds": -282,
+     "pid": "4395628",
+     "projection": 0.228,
      "side": "under",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -74,39 +74,39 @@
      "type": "prop"
     }
    ],
-   "payout": 27.91,
-   "price": -253,
-   "projected_profit": -1.19,
+   "payout": 27.09,
+   "price": -282,
+   "projected_profit": -1.17,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T22:21+00:00",
+  "seen": "2026-10-29T22:34+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|spread": {
   "bet": {
-   "chance": 0.514,
+   "chance": 0.521,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.514,
-     "event_id": "401909893",
-     "game": "CLE @ ATL",
-     "line": -1.5,
+     "chance": 0.521,
+     "event_id": "401909894",
+     "game": "SAC @ NO",
+     "line": 5.5,
      "odds": -105,
-     "side": "home",
+     "side": "away",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
-     "team": "ATL",
-     "team_name": "Atlanta Hawks",
+     "team": "SAC",
+     "team_name": "Sacramento Kings",
      "type": "spread"
     }
    ],
    "payout": 39.05,
    "price": -105,
-   "projected_profit": 0.07,
+   "projected_profit": 0.34,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T22:21+00:00",
+  "seen": "2026-10-29T22:34+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.06,
    "start": "2026-10-30T00:15Z"
   },
-  "seen": "2026-10-29T22:21+00:00",
+  "seen": "2026-10-29T22:34+00:00",
   "start": "2026-10-30T00:15Z"
  },
  "prop|nba|401909893": {
@@ -156,7 +156,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T22:21+00:00",
+  "seen": "2026-10-29T22:34+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
@@ -167,20 +167,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.106,
+   "ev": -0.109,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.674,
-   "name": "Precious Achiuwa",
-   "pid": "4431679",
-   "price": "-253",
-   "prob": 0.641,
-   "projection": 0.256,
-   "score": 0.674,
+   "market_prob": 0.695,
+   "name": "Zion Williamson",
+   "pid": "4395628",
+   "price": "-282",
+   "prob": 0.657,
+   "projection": 0.228,
+   "score": 0.695,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T22:21+00:00",
+  "seen": "2026-10-29T22:34+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
