@@ -1,7 +1,7 @@
 {
  "bet|2026-10-29|parlay": {
   "bet": {
-   "chance": 0.1571,
+   "chance": 0.1459,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.548,
+     "chance": 0.509,
      "event_id": "401909893",
      "game": "CLE @ ATL",
-     "line": 1.5,
-     "odds": -118,
+     "line": -1.5,
+     "odds": 100,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -44,25 +44,25 @@
      "type": "spread"
     }
    ],
-   "payout": 134.67,
-   "price": 573,
-   "projected_profit": 1.15,
+   "payout": 145.79,
+   "price": 629,
+   "projected_profit": 1.27,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T04:08+00:00",
+  "seen": "2026-10-29T04:20+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|spread": {
   "bet": {
-   "chance": 0.548,
+   "chance": 0.509,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.548,
+     "chance": 0.509,
      "event_id": "401909893",
      "game": "CLE @ ATL",
-     "line": 1.5,
-     "odds": -118,
+     "line": -1.5,
+     "odds": 100,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -71,12 +71,38 @@
      "type": "spread"
     }
    ],
-   "payout": 36.95,
-   "price": -118,
-   "projected_profit": 0.25,
+   "payout": 40.0,
+   "price": 100,
+   "projected_profit": 0.36,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T04:08+00:00",
+  "seen": "2026-10-29T04:20+00:00",
+  "start": "2026-10-30T00:00Z"
+ },
+ "bet|2026-10-29|winner": {
+  "bet": {
+   "chance": 0.558,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.558,
+     "event_id": "401909893",
+     "game": "CLE @ ATL",
+     "odds": -110,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "ATL",
+     "team_name": "Atlanta Hawks",
+     "type": "ml"
+    }
+   ],
+   "payout": 38.18,
+   "price": -110,
+   "projected_profit": 1.31,
+   "start": "2026-10-30T00:00Z"
+  },
+  "seen": "2026-10-29T04:20+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
