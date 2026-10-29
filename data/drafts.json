@@ -35,7 +35,7 @@
      "event_id": "401909893",
      "game": "CLE @ ATL",
      "line": -1.5,
-     "odds": -102,
+     "odds": 100,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 141.37,
-   "price": 607,
-   "projected_profit": 0.63,
+   "payout": 142.77,
+   "price": 614,
+   "projected_profit": 0.83,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T13:02+00:00",
+  "seen": "2026-10-29T13:41+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T13:02+00:00",
+  "seen": "2026-10-29T13:41+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|spread": {
@@ -92,7 +92,7 @@
      "event_id": "401909893",
      "game": "CLE @ ATL",
      "line": -1.5,
-     "odds": -102,
+     "odds": 100,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 39.61,
-   "price": -102,
-   "projected_profit": 0.16,
+   "payout": 40.0,
+   "price": 100,
+   "projected_profit": 0.36,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T13:02+00:00",
+  "seen": "2026-10-29T13:41+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.86,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T13:02+00:00",
+  "seen": "2026-10-29T13:41+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
@@ -156,7 +156,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T13:02+00:00",
+  "seen": "2026-10-29T13:41+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
