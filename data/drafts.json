@@ -9,7 +9,7 @@
      "event_id": "401862812",
      "game": "FAU @ UNT",
      "line": -14.0,
-     "odds": -115,
+     "odds": -112,
      "side": "home",
      "sport": "cfb",
      "start": "2026-10-29T23:30Z",
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 142.77,
-   "price": 614,
-   "projected_profit": 0.83,
+   "payout": 144.55,
+   "price": 623,
+   "projected_profit": 1.09,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T13:41+00:00",
+  "seen": "2026-10-29T13:55+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.654,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
+     "chance": 0.654,
      "event_id": "401909894",
      "game": "SAC @ NO",
      "label": "threes",
      "line": 0.5,
      "name": "Jeremiah Fears",
-     "odds": -238,
+     "odds": -229,
      "pid": "5144091",
      "projection": 1.477,
      "side": "over",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.2,
+   "payout": 28.73,
+   "price": -229,
+   "projected_profit": -1.21,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T13:41+00:00",
+  "seen": "2026-10-29T13:55+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.36,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T13:41+00:00",
+  "seen": "2026-10-29T13:55+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.86,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T13:41+00:00",
+  "seen": "2026-10-29T13:55+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
@@ -143,20 +143,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": 0.012,
+   "ev": 0.017,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.662,
+   "market_prob": 0.654,
    "name": "Jeremiah Fears",
    "pid": "5144091",
-   "price": "-238",
-   "prob": 0.712,
+   "price": "-229",
+   "prob": 0.708,
    "projection": 1.477,
-   "score": 0.662,
+   "score": 0.654,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T13:41+00:00",
+  "seen": "2026-10-29T13:55+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
