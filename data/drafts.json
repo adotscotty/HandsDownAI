@@ -49,22 +49,22 @@
    "projected_profit": 1.09,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T20:58+00:00",
+  "seen": "2026-10-29T21:20+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
   "bet": {
-   "chance": 0.668,
+   "chance": 0.674,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.668,
+     "chance": 0.674,
      "event_id": "401909894",
      "game": "SAC @ NO",
      "label": "threes",
      "line": 0.5,
      "name": "Precious Achiuwa",
-     "odds": -245,
+     "odds": -253,
      "pid": "4431679",
      "projection": 0.256,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.16,
-   "price": -245,
+   "payout": 27.91,
+   "price": -253,
    "projected_profit": -1.19,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T20:58+00:00",
+  "seen": "2026-10-29T21:20+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.36,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T20:58+00:00",
+  "seen": "2026-10-29T21:20+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.25,
    "start": "2026-10-30T00:15Z"
   },
-  "seen": "2026-10-29T20:58+00:00",
+  "seen": "2026-10-29T21:20+00:00",
   "start": "2026-10-30T00:15Z"
  },
  "prop|nba|401909893": {
@@ -156,7 +156,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T20:58+00:00",
+  "seen": "2026-10-29T21:20+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
@@ -167,20 +167,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.101,
+   "ev": -0.106,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.668,
+   "market_prob": 0.674,
    "name": "Precious Achiuwa",
    "pid": "4431679",
-   "price": "-245",
-   "prob": 0.638,
+   "price": "-253",
+   "prob": 0.641,
    "projection": 0.256,
-   "score": 0.668,
+   "score": 0.674,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T20:58+00:00",
+  "seen": "2026-10-29T21:20+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
