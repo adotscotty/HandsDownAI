@@ -49,38 +49,8 @@
    "projected_profit": 1.26,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T04:49+00:00",
+  "seen": "2026-10-29T05:02+00:00",
   "start": "2026-10-29T23:30Z"
- },
- "bet|2026-10-29|prop": {
-  "bet": {
-   "chance": 0.707,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.707,
-     "event_id": "401909894",
-     "game": "SAC @ NO",
-     "label": "threes",
-     "line": 0.5,
-     "name": "Zion Williamson",
-     "odds": -300,
-     "pid": "4395628",
-     "projection": 0.228,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-10-30T00:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 26.67,
-   "price": -300,
-   "projected_profit": -1.15,
-   "start": "2026-10-30T00:00Z"
-  },
-  "seen": "2026-10-29T04:49+00:00",
-  "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|spread": {
   "bet": {
@@ -106,7 +76,7 @@
    "projected_profit": 0.36,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T04:49+00:00",
+  "seen": "2026-10-29T05:02+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -132,31 +102,7 @@
    "projected_profit": 1.31,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T04:49+00:00",
-  "start": "2026-10-30T00:00Z"
- },
- "prop|nba|401909894": {
-  "game": {
-   "date": "2026-10-30T00:00Z",
-   "event_id": "401909894",
-   "name": "Sacramento Kings at New Orleans Pelicans",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.115,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.707,
-   "name": "Zion Williamson",
-   "pid": "4395628",
-   "price": "-300",
-   "prob": 0.663,
-   "projection": 0.228,
-   "score": 0.707,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-29T04:49+00:00",
+  "seen": "2026-10-29T05:02+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
