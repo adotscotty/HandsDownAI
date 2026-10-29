@@ -49,24 +49,24 @@
    "projected_profit": 0.79,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T18:41+00:00",
+  "seen": "2026-10-29T19:08+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
   "bet": {
-   "chance": 0.652,
+   "chance": 0.667,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.652,
+     "chance": 0.667,
      "event_id": "401909894",
      "game": "SAC @ NO",
      "label": "threes",
-     "line": 1.5,
-     "name": "Jeremiah Fears",
-     "odds": -228,
-     "pid": "5144091",
-     "projection": 1.477,
+     "line": 0.5,
+     "name": "Precious Achiuwa",
+     "odds": -244,
+     "pid": "4431679",
+     "projection": 0.256,
      "side": "under",
      "sport": "nba",
      "start": "2026-10-30T00:00Z",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.77,
-   "price": -228,
-   "projected_profit": -1.24,
+   "payout": 28.2,
+   "price": -244,
+   "projected_profit": -1.19,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T18:41+00:00",
+  "seen": "2026-10-29T19:08+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.07,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T18:41+00:00",
+  "seen": "2026-10-29T19:08+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -132,8 +132,32 @@
    "projected_profit": 0.06,
    "start": "2026-10-30T00:15Z"
   },
-  "seen": "2026-10-29T18:41+00:00",
+  "seen": "2026-10-29T19:08+00:00",
   "start": "2026-10-30T00:15Z"
+ },
+ "prop|nba|401909893": {
+  "game": {
+   "date": "2026-10-30T00:00Z",
+   "event_id": "401909893",
+   "name": "Cleveland Cavaliers at Atlanta Hawks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.044,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.662,
+   "name": "Evan Mobley",
+   "pid": "4432158",
+   "price": "-238",
+   "prob": 0.735,
+   "projection": 1.786,
+   "score": 0.662,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-29T19:08+00:00",
+  "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
   "game": {
@@ -143,20 +167,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.166,
+   "ev": -0.101,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Jeremiah Fears",
-   "pid": "5144091",
-   "price": "-228",
-   "prob": 0.58,
-   "projection": 1.477,
-   "score": 0.652,
+   "line": 0.5,
+   "market_prob": 0.667,
+   "name": "Precious Achiuwa",
+   "pid": "4431679",
+   "price": "-244",
+   "prob": 0.638,
+   "projection": 0.256,
+   "score": 0.667,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T18:41+00:00",
+  "seen": "2026-10-29T19:08+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
