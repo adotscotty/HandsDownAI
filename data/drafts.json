@@ -1,7 +1,7 @@
 {
  "bet|2026-10-29|parlay": {
   "bet": {
-   "chance": 0.2867,
+   "chance": 0.1473,
    "kind": "parlay",
    "legs": [
     {
@@ -29,14 +29,27 @@
      "team": "JMU",
      "team_name": "JMU",
      "type": "spread"
+    },
+    {
+     "chance": 0.514,
+     "event_id": "401909893",
+     "game": "CLE @ ATL",
+     "line": -1.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "ATL",
+     "team_name": "ATL",
+     "type": "spread"
     }
    ],
-   "payout": 72.27,
-   "price": 261,
-   "projected_profit": 0.72,
+   "payout": 141.1,
+   "price": 606,
+   "projected_profit": 0.79,
    "start": "2026-10-29T23:30Z"
   },
-  "seen": "2026-10-29T21:46+00:00",
+  "seen": "2026-10-29T22:08+00:00",
   "start": "2026-10-29T23:30Z"
  },
  "bet|2026-10-29|prop": {
@@ -66,7 +79,34 @@
    "projected_profit": -1.19,
    "start": "2026-10-30T00:00Z"
   },
-  "seen": "2026-10-29T21:46+00:00",
+  "seen": "2026-10-29T22:08+00:00",
+  "start": "2026-10-30T00:00Z"
+ },
+ "bet|2026-10-29|spread": {
+  "bet": {
+   "chance": 0.514,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.514,
+     "event_id": "401909893",
+     "game": "CLE @ ATL",
+     "line": -1.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T00:00Z",
+     "team": "ATL",
+     "team_name": "Atlanta Hawks",
+     "type": "spread"
+    }
+   ],
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 0.07,
+   "start": "2026-10-30T00:00Z"
+  },
+  "seen": "2026-10-29T22:08+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "bet|2026-10-29|winner": {
@@ -78,7 +118,7 @@
      "chance": 0.651,
      "event_id": "401873023",
      "game": "CAR @ GB",
-     "odds": -180,
+     "odds": -185,
      "side": "home",
      "sport": "nfl",
      "start": "2026-10-30T00:15Z",
@@ -87,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 31.11,
-   "price": -180,
-   "projected_profit": 0.25,
+   "payout": 30.81,
+   "price": -185,
+   "projected_profit": 0.06,
    "start": "2026-10-30T00:15Z"
   },
-  "seen": "2026-10-29T21:46+00:00",
+  "seen": "2026-10-29T22:08+00:00",
   "start": "2026-10-30T00:15Z"
  },
  "prop|nba|401909893": {
@@ -103,20 +143,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.229,
+   "ev": -0.231,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.66,
+   "market_prob": 0.664,
    "name": "Evan Mobley",
    "pid": "4432158",
-   "price": "-236",
-   "prob": 0.541,
+   "price": "-241",
+   "prob": 0.544,
    "projection": 1.786,
-   "score": 0.66,
+   "score": 0.664,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T21:46+00:00",
+  "seen": "2026-10-29T22:08+00:00",
   "start": "2026-10-30T00:00Z"
  },
  "prop|nba|401909894": {
@@ -140,7 +180,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-29T21:46+00:00",
+  "seen": "2026-10-29T22:08+00:00",
   "start": "2026-10-30T00:00Z"
  }
 }
