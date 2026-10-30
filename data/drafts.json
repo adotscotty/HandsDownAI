@@ -49,7 +49,37 @@
    "projected_profit": 4.54,
    "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T07:42+00:00",
+  "seen": "2026-10-30T07:55+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "bet|2026-10-30|prop": {
+  "bet": {
+   "chance": 0.662,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.662,
+     "event_id": "401909281",
+     "game": "ORL @ TOR",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Scottie Barnes",
+     "odds": -238,
+     "pid": "4433134",
+     "projection": 0.731,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-10-30T23:30Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.2,
+   "start": "2026-10-30T23:30Z"
+  },
+  "seen": "2026-10-30T07:55+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|spread": {
@@ -76,7 +106,7 @@
    "projected_profit": 1.67,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T07:42+00:00",
+  "seen": "2026-10-30T07:55+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -102,7 +132,7 @@
    "projected_profit": 0.2,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T07:42+00:00",
+  "seen": "2026-10-30T07:55+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -252,7 +282,55 @@
     "projected_profit": 2.974810204081635
    }
   },
-  "seen": "2026-10-30T07:42+00:00",
+  "seen": "2026-10-30T07:55+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909279": {
+  "game": {
+   "date": "2026-10-30T23:30Z",
+   "event_id": "401909279",
+   "name": "Detroit Pistons at Brooklyn Nets",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.149,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.651,
+   "name": "Daniss Jenkins",
+   "pid": "5107199",
+   "price": "-226",
+   "prob": 0.59,
+   "projection": 1.402,
+   "score": 0.651,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T07:55+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909281": {
+  "game": {
+   "date": "2026-10-30T23:30Z",
+   "event_id": "401909281",
+   "name": "Orlando Magic at Toronto Raptors",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.018,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.662,
+   "name": "Scottie Barnes",
+   "pid": "4433134",
+   "price": "-238",
+   "prob": 0.717,
+   "projection": 0.731,
+   "score": 0.662,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T07:55+00:00",
   "start": "2026-10-30T23:30Z"
  }
 }
