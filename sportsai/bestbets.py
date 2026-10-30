@@ -46,8 +46,8 @@ def spread_leg(p):
                 chance=p["home_cover_prob"] if home else 1 - p["home_cover_prob"])
 
 
-def prop_leg(p):
-    bp = p.get("best_prop")
+def prop_leg(p, for_sgp=False):
+    bp = (p.get("sgp_prop") or p.get("best_prop")) if for_sgp else p.get("best_prop")
     if not bp:
         return None
     return dict(type="prop", event_id=p["event_id"], sport=p["sport"], pid=bp["pid"], name=bp["name"],
@@ -120,7 +120,7 @@ def candidates(preds, day, now):
     # among those that beat their break-even
     sgps = []
     for p in games:
-        s, pr = spread_leg(p), prop_leg(p)
+        s, pr = spread_leg(p), prop_leg(p, for_sgp=True)
         if s and pr:
             b = make_bet("sgp", [s, pr])
             if has_value(b):

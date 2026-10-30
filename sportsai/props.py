@@ -255,7 +255,7 @@ MIN_DEC = 1.33       # skip prices worse than -300
 MIN_FAIR = 0.65      # and skip a game's prop unless its likely side is 65%+ (133-game test: +2.3% -> +6.2% return)
 
 
-def best_prop(proj_obj, props, skip=(), mode=PICK):
+def best_prop(proj_obj, props, skip=(), mode=PICK, min_fair=MIN_FAIR):
     """The single best prop for one game.
     Tested on 2025-26 NBA playoff props: our biggest edges went 29-52 (DraftKings knew better),
     while DraftKings' most likely side went 57-24 with prices no worse than -300. Since Oct 28 2026 a game
@@ -271,7 +271,7 @@ def best_prop(proj_obj, props, skip=(), mode=PICK):
             do, du = dec(over), dec(under)
             fair_over = (1 / do) / (1 / do + 1 / du)
             side, fair, price = ("over", fair_over, over) if fair_over >= 0.5 else ("under", 1 - fair_over, under)
-            if dec(price) < MIN_DEC or fair < MIN_FAIR:
+            if dec(price) < MIN_DEC or fair < min_fair:
                 continue
             our = e["prob"] if e["side"] == side else 1 - e["prob"]
             e.update(side=side, price=str(price), market_prob=fair, prob=our, ev=our * dec(price) - 1, score=fair)
@@ -324,7 +324,7 @@ def update_sport(sport, preds, done_games):
     games = [p for p in preds if p["sport"] == sport]
     lists = get_many([props_url(sport, p["event_id"]) for p in games], cache=False)
     for p, first in zip(games, lists):
-        p["best_prop"] = None
+        p["best_prop"] = p["sgp_prop"] = None
         if not first or not first.get("items"):
             continue
         props = fetch_props(sport, p["event_id"])
@@ -332,6 +332,10 @@ def update_sport(sport, preds, done_games):
         best = best_prop(proj, props, skip=out)
         if best:
             p["best_prop"] = {k: (round(v, 3) if isinstance(v, float) else v) for k, v in best.items()}
+        # the same-game parlay keeps the original rule (most likely side, no 65% minimum)
+        sgp = best_prop(proj, props, skip=out, min_fair=0.5)
+        if sgp:
+            p["sgp_prop"] = {k: (round(v, 3) if isinstance(v, float) else v) for k, v in sgp.items()}
     return rows
 
 

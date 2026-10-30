@@ -144,6 +144,19 @@ class PropPick(unittest.TestCase):
         self.assertEqual((b["pid"], b["side"]), ("2", "over"))
 
 
+class SameGameParlayProp(unittest.TestCase):
+    """The same-game parlay keeps its original prop rule (no 65% minimum), so it still shows most days."""
+    def test_sgp_rule_allows_weaker_favorite(self):
+        b = props.best_prop(PropPick.Proj(), [("1", "pts", 10.5, -150, 125)], min_fair=0.5)
+        self.assertEqual((b["pid"], b["side"]), ("1", "over"))
+
+    def test_sgp_uses_its_own_prop(self):
+        leg = bestbets.prop_leg(dict(PRED, home="B", away="A", best_prop=None, sgp_prop=dict(
+            pid="1", name="A", stat="pts", label="points", side="over", line=10.5, price="-150", prob=0.6,
+            market_prob=0.58, projection=12.0)), for_sgp=True)
+        self.assertEqual(leg["pid"], "1")
+
+
 class SiteBuild(unittest.TestCase):
     def test_build_runs_on_saved_data(self):
         """The site build must finish on today's saved data (a crash here once froze the site)."""
