@@ -31,15 +31,15 @@
       "event_id": "401909283",
       "game": "HOU @ DAL",
       "line": 5.5,
-      "odds": -110,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "DAL"
      }
     ],
-    "payout": 145.54112554112555,
-    "projected_profit": 3.5533576974026033
+    "payout": 148.84137782096963,
+    "projected_profit": 4.087447441107869
    },
    "two": {
     "chance": 0.30136500000000005,
@@ -60,18 +60,18 @@
       "event_id": "401909283",
       "game": "HOU @ DAL",
       "line": 5.5,
-      "odds": -110,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "DAL"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 2.465390909090914
+    "payout": 76.23582766439908,
+    "projected_profit": 2.974810204081635
    }
   },
-  "seen": "2026-10-30T00:26+00:00",
+  "seen": "2026-10-30T01:04+00:00",
   "start": "2026-10-30T23:30Z"
  }
 }
