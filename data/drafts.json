@@ -49,42 +49,42 @@
    "projected_profit": 5.65,
    "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.66,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909285",
-     "game": "LAL @ GS",
+     "chance": 0.66,
+     "event_id": "401909281",
+     "game": "ORL @ TOR",
      "label": "threes",
      "line": 0.5,
-     "name": "Quentin Grimes",
-     "odds": -235,
-     "pid": "4397014",
-     "projection": 1.089,
+     "name": "Jamal Shead",
+     "odds": -236,
+     "pid": "4432241",
+     "projection": 1.047,
      "side": "over",
      "sport": "nba",
-     "start": "2026-10-31T02:00Z",
+     "start": "2026-10-30T23:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
+   "payout": 28.47,
+   "price": -236,
    "projected_profit": -1.21,
-   "start": "2026-10-31T02:00Z"
+   "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T16:19+00:00",
-  "start": "2026-10-31T02:00Z"
+  "seen": "2026-10-30T16:33+00:00",
+  "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|sgp": {
   "bet": {
-   "chance": 0.3726,
+   "chance": 0.3692,
    "kind": "sgp",
    "legs": [
     {
@@ -101,28 +101,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.656,
+     "chance": 0.65,
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Tari Eason",
-     "odds": -231,
+     "odds": -225,
      "pid": "4433192",
      "projection": 1.042,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-10-31T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 54.71,
-   "price": 174,
-   "projected_profit": 0.39,
+   "payout": 55.15,
+   "price": 176,
+   "projected_profit": 0.36,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.69,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.41,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -325,7 +325,7 @@
     "projected_profit": 4.3877090909090875
    }
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
@@ -400,7 +400,7 @@
     "projected_profit": 3.753759999999996
    }
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909279": {
@@ -411,20 +411,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.151,
+   "ev": -0.149,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.652,
    "name": "Daniss Jenkins",
    "pid": "5107199",
-   "price": "-230",
-   "prob": 0.592,
+   "price": "-227",
+   "prob": 0.591,
    "projection": 1.402,
-   "score": 0.655,
+   "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -435,45 +435,21 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": 0.023,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.656,
-   "name": "Scottie Barnes",
-   "pid": "4433134",
-   "price": "-231",
-   "prob": 0.714,
-   "projection": 0.731,
-   "score": 0.656,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-30T16:19+00:00",
-  "start": "2026-10-30T23:30Z"
- },
- "prop|nba|401909283": {
-  "game": {
-   "date": "2026-10-31T00:00Z",
-   "event_id": "401909283",
-   "name": "Houston Rockets at Dallas Mavericks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.046,
+   "ev": -0.048,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.656,
-   "name": "Tari Eason",
-   "pid": "4433192",
-   "price": "-231",
-   "prob": 0.666,
-   "projection": 1.042,
-   "score": 0.656,
+   "market_prob": 0.66,
+   "name": "Jamal Shead",
+   "pid": "4432241",
+   "price": "-236",
+   "prob": 0.668,
+   "projection": 1.047,
+   "score": 0.66,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T16:19+00:00",
-  "start": "2026-10-31T00:00Z"
+  "seen": "2026-10-30T16:33+00:00",
+  "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
   "game": {
@@ -496,7 +472,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T16:19+00:00",
+  "seen": "2026-10-30T16:33+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
