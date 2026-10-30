@@ -1,20 +1,20 @@
 {
  "bet|2026-10-30|parlay": {
   "bet": {
-   "chance": 0.1777,
+   "chance": 0.1745,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.563,
-     "event_id": "401909280",
-     "game": "NY @ PHI",
-     "line": 3.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-30T23:30Z",
-     "team": "PHI",
-     "team_name": "PHI",
+     "chance": 0.5529999999999999,
+     "event_id": "401862813",
+     "game": "TULN @ CLT",
+     "line": -8.5,
+     "odds": -105,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-10-30T23:00Z",
+     "team": "TULN",
+     "team_name": "TULN",
      "type": "spread"
     },
     {
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 146.91,
-   "price": 635,
-   "projected_profit": 6.11,
-   "start": "2026-10-30T23:30Z"
+   "payout": 148.93,
+   "price": 645,
+   "projected_profit": 5.99,
+   "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T21:01+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T21:14+00:00",
+  "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.658,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.658,
+     "chance": 0.656,
      "event_id": "401909285",
      "game": "LAL @ GS",
      "label": "threes",
      "line": 1.5,
      "name": "Sandro Mamukelashvili",
-     "odds": -234,
+     "odds": -231,
      "pid": "4278580",
      "projection": 1.194,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.22,
+   "payout": 28.66,
+   "price": -231,
+   "projected_profit": -1.2,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T21:01+00:00",
+  "seen": "2026-10-30T21:14+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.86,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T21:01+00:00",
+  "seen": "2026-10-30T21:14+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.23,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T21:01+00:00",
+  "seen": "2026-10-30T21:14+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.34,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T21:01+00:00",
+  "seen": "2026-10-30T21:14+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -325,7 +325,7 @@
     "projected_profit": 4.901134545454543
    }
   },
-  "seen": "2026-10-30T21:01+00:00",
+  "seen": "2026-10-30T21:14+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
@@ -338,7 +338,7 @@
       "event_id": "401909280",
       "game": "NY @ PHI",
       "line": 3.5,
-      "odds": -108,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-30T23:30Z",
@@ -367,8 +367,8 @@
       "team": "IND"
      }
     ],
-    "payout": 141.6236438458661,
-    "projected_profit": 5.579659773797232
+    "payout": 139.1919191919192,
+    "projected_profit": 5.140448582626259
    },
    "two": {
     "chance": 0.32485099999999995,
@@ -378,7 +378,7 @@
       "event_id": "401909280",
       "game": "NY @ PHI",
       "line": 3.5,
-      "odds": -108,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-30T23:30Z",
@@ -396,11 +396,11 @@
       "team": "DAL"
      }
     ],
-    "payout": 74.18381344307271,
-    "projected_profit": 4.098685980795608
+    "payout": 72.91005291005291,
+    "projected_profit": 3.6849035978835936
    }
   },
-  "seen": "2026-10-30T21:01+00:00",
+  "seen": "2026-10-30T21:14+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
@@ -411,20 +411,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.105,
+   "ev": -0.103,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.658,
+   "market_prob": 0.656,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-234",
-   "prob": 0.627,
+   "price": "-231",
+   "prob": 0.626,
    "projection": 1.194,
-   "score": 0.658,
+   "score": 0.656,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T21:01+00:00",
+  "seen": "2026-10-30T21:14+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
