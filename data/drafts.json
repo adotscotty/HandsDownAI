@@ -9,7 +9,7 @@
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "line": 5.5,
-     "odds": -105,
+     "odds": -102,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-31T00:00Z",
@@ -44,43 +44,43 @@
      "type": "spread"
     }
    ],
-   "payout": 148.84,
-   "price": 644,
-   "projected_profit": 4.76,
+   "payout": 150.98,
+   "price": 655,
+   "projected_profit": 5.12,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T09:56+00:00",
+  "seen": "2026-10-30T10:22+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.659,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
-     "event_id": "401909277",
-     "game": "CHA @ WSH",
+     "chance": 0.659,
+     "event_id": "401909285",
+     "game": "LAL @ GS",
      "label": "threes",
      "line": 1.5,
-     "name": "Anthony Davis",
-     "odds": -232,
-     "pid": "6583",
-     "projection": 0.749,
+     "name": "Quentin Grimes",
+     "odds": -235,
+     "pid": "4397014",
+     "projection": 1.089,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-30T23:00Z",
+     "start": "2026-10-31T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.62,
-   "price": -232,
-   "projected_profit": -1.2,
-   "start": "2026-10-30T23:00Z"
+   "payout": 28.51,
+   "price": -235,
+   "projected_profit": -1.21,
+   "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T09:56+00:00",
-  "start": "2026-10-30T23:00Z"
+  "seen": "2026-10-30T10:22+00:00",
+  "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|spread": {
   "bet": {
@@ -92,7 +92,7 @@
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "line": 5.5,
-     "odds": -105,
+     "odds": -102,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-31T00:00Z",
@@ -101,24 +101,24 @@
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 1.67,
+   "payout": 39.61,
+   "price": -102,
+   "projected_profit": 1.98,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T09:56+00:00",
+  "seen": "2026-10-30T10:22+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
   "bet": {
-   "chance": 0.571,
+   "chance": 0.59,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.571,
+     "chance": 0.5900000000000001,
      "event_id": "401909285",
      "game": "LAL @ GS",
-     "odds": -130,
+     "odds": -135,
      "side": "away",
      "sport": "nba",
      "start": "2026-10-31T02:00Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 35.38,
-   "price": -130,
-   "projected_profit": 0.2,
+   "payout": 34.81,
+   "price": -135,
+   "projected_profit": 0.54,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T09:56+00:00",
+  "seen": "2026-10-30T10:22+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -231,7 +231,7 @@
       "event_id": "401909283",
       "game": "HOU @ DAL",
       "line": 5.5,
-      "odds": -105,
+      "odds": -102,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
@@ -249,8 +249,8 @@
       "team": "IND"
      }
     ],
-    "payout": 148.84137782096963,
-    "projected_profit": 4.580858841205057
+    "payout": 150.97683517851584,
+    "projected_profit": 4.933525395598249
    },
    "two": {
     "chance": 0.3041400000000001,
@@ -260,7 +260,7 @@
       "event_id": "401909283",
       "game": "HOU @ DAL",
       "line": 5.5,
-      "odds": -105,
+      "odds": -102,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
@@ -278,59 +278,11 @@
       "team": "IND"
      }
     ],
-    "payout": 76.23582766439908,
-    "projected_profit": 3.1863646258503415
+    "payout": 77.32959850606909,
+    "projected_profit": 3.5190240896358596
    }
   },
-  "seen": "2026-10-30T09:56+00:00",
-  "start": "2026-10-30T23:30Z"
- },
- "prop|nba|401909277": {
-  "game": {
-   "date": "2026-10-30T23:00Z",
-   "event_id": "401909277",
-   "name": "Charlotte Hornets at Washington Wizards",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.017,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.657,
-   "name": "Anthony Davis",
-   "pid": "6583",
-   "price": "-232",
-   "prob": 0.711,
-   "projection": 0.749,
-   "score": 0.657,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-30T09:56+00:00",
-  "start": "2026-10-30T23:00Z"
- },
- "prop|nba|401909279": {
-  "game": {
-   "date": "2026-10-30T23:30Z",
-   "event_id": "401909279",
-   "name": "Detroit Pistons at Brooklyn Nets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.149,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.651,
-   "name": "Daniss Jenkins",
-   "pid": "5107199",
-   "price": "-226",
-   "prob": 0.59,
-   "projection": 1.402,
-   "score": 0.651,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-30T09:56+00:00",
+  "seen": "2026-10-30T10:22+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -341,20 +293,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.046,
+   "ev": -0.047,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.657,
+   "market_prob": 0.658,
    "name": "Jamal Shead",
    "pid": "4432241",
-   "price": "-232",
-   "prob": 0.667,
+   "price": "-234",
+   "prob": 0.668,
    "projection": 1.047,
-   "score": 0.657,
+   "score": 0.658,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T09:56+00:00",
+  "seen": "2026-10-30T10:22+00:00",
   "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909285": {
+  "game": {
+   "date": "2026-10-31T02:00Z",
+   "event_id": "401909285",
+   "name": "Los Angeles Lakers at Golden State Warriors",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.079,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.659,
+   "name": "Quentin Grimes",
+   "pid": "4397014",
+   "price": "-235",
+   "prob": 0.646,
+   "projection": 1.089,
+   "score": 0.659,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T10:22+00:00",
+  "start": "2026-10-31T02:00Z"
  }
 }
