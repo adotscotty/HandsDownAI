@@ -1,4 +1,110 @@
 {
+ "bet|2026-10-30|parlay": {
+  "bet": {
+   "chance": 0.1648,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.543,
+     "event_id": "401909280",
+     "game": "NY @ PHI",
+     "line": 1.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-30T23:30Z",
+     "team": "PHI",
+     "team_name": "PHI",
+     "type": "spread"
+    },
+    {
+     "chance": 0.555,
+     "event_id": "401909283",
+     "game": "HOU @ DAL",
+     "line": 5.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-31T00:00Z",
+     "team": "DAL",
+     "team_name": "DAL",
+     "type": "spread"
+    },
+    {
+     "chance": 0.547,
+     "event_id": "401866451",
+     "game": "KENT @ SAC",
+     "line": 7.0,
+     "odds": -105,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-10-31T02:30Z",
+     "team": "SAC",
+     "team_name": "SAC",
+     "type": "spread"
+    }
+   ],
+   "payout": 148.84,
+   "price": 644,
+   "projected_profit": 4.54,
+   "start": "2026-10-30T23:30Z"
+  },
+  "seen": "2026-10-30T04:01+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "bet|2026-10-30|spread": {
+  "bet": {
+   "chance": 0.555,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.555,
+     "event_id": "401909283",
+     "game": "HOU @ DAL",
+     "line": 5.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-10-31T00:00Z",
+     "team": "DAL",
+     "team_name": "Dallas Mavericks",
+     "type": "spread"
+    }
+   ],
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 1.67,
+   "start": "2026-10-31T00:00Z"
+  },
+  "seen": "2026-10-30T04:01+00:00",
+  "start": "2026-10-31T00:00Z"
+ },
+ "bet|2026-10-30|winner": {
+  "bet": {
+   "chance": 0.571,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.571,
+     "event_id": "401909285",
+     "game": "LAL @ GS",
+     "odds": -130,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-10-31T02:00Z",
+     "team": "LAL",
+     "team_name": "Los Angeles Lakers",
+     "type": "ml"
+    }
+   ],
+   "payout": 35.38,
+   "price": -130,
+   "projected_profit": 0.2,
+   "start": "2026-10-31T02:00Z"
+  },
+  "seen": "2026-10-30T04:01+00:00",
+  "start": "2026-10-31T02:00Z"
+ },
  "parlay|2026-10-29|nba": {
   "card": {
    "three": {
@@ -72,6 +178,81 @@
    }
   },
   "seen": "2026-10-30T03:48+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "parlay|2026-10-30|nba": {
+  "card": {
+   "three": {
+    "chance": 0.16183300500000003,
+    "legs": [
+     {
+      "chance": 0.543,
+      "event_id": "401909280",
+      "game": "NY @ PHI",
+      "line": 1.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-30T23:30Z",
+      "team": "PHI"
+     },
+     {
+      "chance": 0.537,
+      "event_id": "401909281",
+      "game": "ORL @ TOR",
+      "line": -5.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-30T23:30Z",
+      "team": "TOR"
+     },
+     {
+      "chance": 0.555,
+      "event_id": "401909283",
+      "game": "HOU @ DAL",
+      "line": 5.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-31T00:00Z",
+      "team": "DAL"
+     }
+    ],
+    "payout": 148.84137782096963,
+    "projected_profit": 4.087447441107869
+   },
+   "two": {
+    "chance": 0.30136500000000005,
+    "legs": [
+     {
+      "chance": 0.543,
+      "event_id": "401909280",
+      "game": "NY @ PHI",
+      "line": 1.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-30T23:30Z",
+      "team": "PHI"
+     },
+     {
+      "chance": 0.555,
+      "event_id": "401909283",
+      "game": "HOU @ DAL",
+      "line": 5.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-31T00:00Z",
+      "team": "DAL"
+     }
+    ],
+    "payout": 76.23582766439908,
+    "projected_profit": 2.974810204081635
+   }
+  },
+  "seen": "2026-10-30T04:01+00:00",
   "start": "2026-10-30T23:30Z"
  }
 }
