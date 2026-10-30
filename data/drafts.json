@@ -1,22 +1,9 @@
 {
  "bet|2026-10-30|parlay": {
   "bet": {
-   "chance": 0.1648,
+   "chance": 0.1664,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.543,
-     "event_id": "401909280",
-     "game": "NY @ PHI",
-     "line": 1.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-30T23:30Z",
-     "team": "PHI",
-     "team_name": "PHI",
-     "type": "spread"
-    },
     {
      "chance": 0.555,
      "event_id": "401909283",
@@ -28,6 +15,19 @@
      "start": "2026-10-31T00:00Z",
      "team": "DAL",
      "team_name": "DAL",
+     "type": "spread"
+    },
+    {
+     "chance": 0.548,
+     "event_id": "401909282",
+     "game": "IND @ MIA",
+     "line": 7.5,
+     "odds": -105,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-10-31T00:00Z",
+     "team": "IND",
+     "team_name": "IND",
      "type": "spread"
     },
     {
@@ -46,41 +46,41 @@
    ],
    "payout": 148.84,
    "price": 644,
-   "projected_profit": 4.54,
-   "start": "2026-10-30T23:30Z"
+   "projected_profit": 4.76,
+   "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T09:43+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T09:56+00:00",
+  "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.658,
+   "chance": 0.657,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.658,
-     "event_id": "401909281",
-     "game": "ORL @ TOR",
+     "chance": 0.657,
+     "event_id": "401909277",
+     "game": "CHA @ WSH",
      "label": "threes",
-     "line": 0.5,
-     "name": "Jamal Shead",
-     "odds": -234,
-     "pid": "4432241",
-     "projection": 1.047,
-     "side": "over",
+     "line": 1.5,
+     "name": "Anthony Davis",
+     "odds": -232,
+     "pid": "6583",
+     "projection": 0.749,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-10-30T23:30Z",
+     "start": "2026-10-30T23:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.22,
-   "start": "2026-10-30T23:30Z"
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.2,
+   "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T09:43+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T09:56+00:00",
+  "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.67,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T09:43+00:00",
+  "seen": "2026-10-30T09:56+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.2,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T09:43+00:00",
+  "seen": "2026-10-30T09:56+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -213,7 +213,7 @@
  "parlay|2026-10-30|nba": {
   "card": {
    "three": {
-    "chance": 0.16394256000000004,
+    "chance": 0.16514802000000006,
     "legs": [
      {
       "chance": 0.543,
@@ -238,34 +238,23 @@
       "team": "DAL"
      },
      {
-      "chance": 0.544,
-      "event_id": "401909286",
-      "game": "DEN @ PHX",
-      "line": 4.5,
-      "odds": -110,
-      "side": "home",
+      "chance": 0.548,
+      "event_id": "401909282",
+      "game": "IND @ MIA",
+      "line": 7.5,
+      "odds": -105,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-10-31T02:00Z",
-      "team": "PHX"
+      "start": "2026-10-31T00:00Z",
+      "team": "IND"
      }
     ],
-    "payout": 145.54112554112552,
-    "projected_profit": 3.860384706493509
+    "payout": 148.84137782096963,
+    "projected_profit": 4.580858841205057
    },
    "two": {
-    "chance": 0.30136500000000005,
+    "chance": 0.3041400000000001,
     "legs": [
-     {
-      "chance": 0.543,
-      "event_id": "401909280",
-      "game": "NY @ PHI",
-      "line": 1.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "PHI"
-     },
      {
       "chance": 0.555,
       "event_id": "401909283",
@@ -276,13 +265,24 @@
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "DAL"
+     },
+     {
+      "chance": 0.548,
+      "event_id": "401909282",
+      "game": "IND @ MIA",
+      "line": 7.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-31T00:00Z",
+      "team": "IND"
      }
     ],
     "payout": 76.23582766439908,
-    "projected_profit": 2.974810204081635
+    "projected_profit": 3.1863646258503415
    }
   },
-  "seen": "2026-10-30T09:43+00:00",
+  "seen": "2026-10-30T09:56+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909277": {
@@ -306,7 +306,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T09:43+00:00",
+  "seen": "2026-10-30T09:56+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "prop|nba|401909279": {
@@ -330,7 +330,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T09:43+00:00",
+  "seen": "2026-10-30T09:56+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -341,44 +341,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.047,
+   "ev": -0.046,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.658,
+   "market_prob": 0.657,
    "name": "Jamal Shead",
    "pid": "4432241",
-   "price": "-234",
-   "prob": 0.668,
+   "price": "-232",
+   "prob": 0.667,
    "projection": 1.047,
-   "score": 0.658,
+   "score": 0.657,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T09:43+00:00",
+  "seen": "2026-10-30T09:56+00:00",
   "start": "2026-10-30T23:30Z"
- },
- "prop|nba|401909285": {
-  "game": {
-   "date": "2026-10-31T02:00Z",
-   "event_id": "401909285",
-   "name": "Los Angeles Lakers at Golden State Warriors",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.102,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Sandro Mamukelashvili",
-   "pid": "4278580",
-   "price": "-228",
-   "prob": 0.624,
-   "projection": 1.194,
-   "score": 0.652,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-30T09:43+00:00",
-  "start": "2026-10-31T02:00Z"
  }
 }
