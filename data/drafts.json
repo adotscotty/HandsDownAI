@@ -49,38 +49,38 @@
    "projected_profit": 5.65,
    "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.66,
+   "chance": 0.659,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.66,
-     "event_id": "401909281",
-     "game": "ORL @ TOR",
+     "chance": 0.659,
+     "event_id": "401909285",
+     "game": "LAL @ GS",
      "label": "threes",
      "line": 0.5,
-     "name": "Jamal Shead",
-     "odds": -236,
-     "pid": "4432241",
-     "projection": 1.047,
+     "name": "Quentin Grimes",
+     "odds": -235,
+     "pid": "4397014",
+     "projection": 1.089,
      "side": "over",
      "sport": "nba",
-     "start": "2026-10-30T23:30Z",
+     "start": "2026-10-31T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.47,
-   "price": -236,
+   "payout": 28.51,
+   "price": -235,
    "projected_profit": -1.21,
-   "start": "2026-10-30T23:30Z"
+   "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T16:33+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T16:46+00:00",
+  "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
   "bet": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.69,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.41,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -325,7 +325,7 @@
     "projected_profit": 4.3877090909090875
    }
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
@@ -400,7 +400,7 @@
     "projected_profit": 3.753759999999996
    }
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909279": {
@@ -424,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -435,20 +435,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.048,
+   "ev": 0.023,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.66,
-   "name": "Jamal Shead",
-   "pid": "4432241",
-   "price": "-236",
-   "prob": 0.668,
-   "projection": 1.047,
-   "score": 0.66,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.656,
+   "name": "Scottie Barnes",
+   "pid": "4433134",
+   "price": "-231",
+   "prob": 0.714,
+   "projection": 0.731,
+   "score": 0.656,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
@@ -472,7 +472,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T16:33+00:00",
+  "seen": "2026-10-30T16:46+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
