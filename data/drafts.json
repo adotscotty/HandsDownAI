@@ -49,37 +49,37 @@
    "projected_profit": 5.65,
    "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.658,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.658,
+     "chance": 0.661,
      "event_id": "401909285",
      "game": "LAL @ GS",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Quentin Grimes",
-     "odds": -234,
+     "odds": -238,
      "pid": "4397014",
      "projection": 1.089,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-10-31T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.22,
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.23,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.69,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.41,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -285,18 +285,18 @@
       "event_id": "401856846",
       "game": "KSU @ COLO",
       "line": 2.5,
-      "odds": -115,
+      "odds": -110,
       "side": "away",
       "sport": "cfb",
       "start": "2026-10-31T18:00Z",
       "team": "KSU"
      }
     ],
-    "payout": 135.11857707509878,
-    "projected_profit": 6.535948161264816
+    "payout": 137.97520661157023,
+    "projected_profit": 7.096961864462806
    },
    "two": {
-    "chance": 0.33743999999999996,
+    "chance": 0.344544,
     "legs": [
      {
       "chance": 0.592,
@@ -310,22 +310,22 @@
       "team": "USF"
      },
      {
-      "chance": 0.57,
-      "event_id": "401859185",
-      "game": "ND @ NAVY",
-      "line": 30.5,
+      "chance": 0.5820000000000001,
+      "event_id": "401856846",
+      "game": "KSU @ COLO",
+      "line": 2.5,
       "odds": -110,
-      "side": "home",
+      "side": "away",
       "sport": "cfb",
-      "start": "2026-10-31T16:00Z",
-      "team": "NAVY"
+      "start": "2026-10-31T18:00Z",
+      "team": "KSU"
      }
     ],
     "payout": 72.27272727272727,
-    "projected_profit": 4.3877090909090875
+    "projected_profit": 4.901134545454543
    }
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
@@ -338,7 +338,7 @@
       "event_id": "401909280",
       "game": "NY @ PHI",
       "line": 1.5,
-      "odds": -108,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-30T23:30Z",
@@ -367,8 +367,8 @@
       "team": "DAL"
      }
     ],
-    "payout": 143.56902356902359,
-    "projected_profit": 4.841154346666666
+    "payout": 145.54112554112555,
+    "projected_profit": 5.182378994285713
    },
    "two": {
     "chance": 0.31864799999999993,
@@ -400,7 +400,7 @@
     "projected_profit": 3.753759999999996
    }
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909277": {
@@ -424,7 +424,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "prop|nba|401909279": {
@@ -435,20 +435,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.149,
+   "ev": -0.148,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.652,
+   "market_prob": 0.651,
    "name": "Daniss Jenkins",
    "pid": "5107199",
-   "price": "-227",
-   "prob": 0.591,
+   "price": "-225",
+   "prob": 0.59,
    "projection": 1.402,
-   "score": 0.652,
+   "score": 0.651,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -472,7 +472,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
@@ -483,20 +483,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.078,
+   "ev": -0.043,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.658,
+   "line": 0.5,
+   "market_prob": 0.661,
    "name": "Quentin Grimes",
    "pid": "4397014",
-   "price": "-234",
-   "prob": 0.646,
+   "price": "-238",
+   "prob": 0.674,
    "projection": 1.089,
-   "score": 0.658,
-   "side": "under",
+   "score": 0.661,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T18:57+00:00",
+  "seen": "2026-10-30T19:27+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
