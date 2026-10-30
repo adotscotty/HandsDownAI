@@ -1,11 +1,11 @@
 {
  "bet|2026-10-30|sgp": {
   "bet": {
-   "chance": 0.3506,
+   "chance": 0.353,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.571,
+     "chance": 0.575,
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "line": 5.5,
@@ -36,19 +36,19 @@
    ],
    "payout": 57.07,
    "price": 185,
-   "projected_profit": 0.01,
+   "projected_profit": 0.15,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T23:16+00:00",
+  "seen": "2026-10-30T23:30+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
   "bet": {
-   "chance": 0.571,
+   "chance": 0.575,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.571,
+     "chance": 0.575,
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "line": 5.5,
@@ -63,86 +63,11 @@
    ],
    "payout": 37.39,
    "price": -115,
-   "projected_profit": 1.35,
+   "projected_profit": 1.5,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T23:16+00:00",
+  "seen": "2026-10-30T23:30+00:00",
   "start": "2026-10-31T00:00Z"
- },
- "parlay|2026-10-29|nba": {
-  "card": {
-   "three": {
-    "chance": 0.16183300500000003,
-    "legs": [
-     {
-      "chance": 0.543,
-      "event_id": "401909280",
-      "game": "NY @ PHI",
-      "line": 1.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "PHI"
-     },
-     {
-      "chance": 0.537,
-      "event_id": "401909281",
-      "game": "ORL @ TOR",
-      "line": -5.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "TOR"
-     },
-     {
-      "chance": 0.555,
-      "event_id": "401909283",
-      "game": "HOU @ DAL",
-      "line": 5.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T00:00Z",
-      "team": "DAL"
-     }
-    ],
-    "payout": 148.84137782096963,
-    "projected_profit": 4.087447441107869
-   },
-   "two": {
-    "chance": 0.30136500000000005,
-    "legs": [
-     {
-      "chance": 0.543,
-      "event_id": "401909280",
-      "game": "NY @ PHI",
-      "line": 1.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "PHI"
-     },
-     {
-      "chance": 0.555,
-      "event_id": "401909283",
-      "game": "HOU @ DAL",
-      "line": 5.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T00:00Z",
-      "team": "DAL"
-     }
-    ],
-    "payout": 76.23582766439908,
-    "projected_profit": 2.974810204081635
-   }
-  },
-  "seen": "2026-10-30T03:48+00:00",
-  "start": "2026-10-30T23:30Z"
  },
  "parlay|2026-10-30|cfb": {
   "card": {
@@ -216,16 +141,16 @@
     "projected_profit": 6.976719576719578
    }
   },
-  "seen": "2026-10-30T23:16+00:00",
+  "seen": "2026-10-30T23:30+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
   "card": {
-   "three": {
-    "chance": 0.16645734899999998,
+   "two": {
+    "chance": 0.31567499999999993,
     "legs": [
      {
-      "chance": 0.571,
+      "chance": 0.575,
       "event_id": "401909283",
       "game": "HOU @ DAL",
       "line": 5.5,
@@ -245,53 +170,13 @@
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "IND"
-     },
-     {
-      "chance": 0.531,
-      "event_id": "401909286",
-      "game": "DEN @ PHX",
-      "line": 3.5,
-      "odds": -102,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T02:00Z",
-      "team": "PHX"
      }
     ],
-    "payout": 141.3671239246687,
-    "projected_profit": 3.5315966842548256
-   },
-   "two": {
-    "chance": 0.303201,
-    "legs": [
-     {
-      "chance": 0.571,
-      "event_id": "401909283",
-      "game": "HOU @ DAL",
-      "line": 5.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T00:00Z",
-      "team": "DAL"
-     },
-     {
-      "chance": 0.531,
-      "event_id": "401909286",
-      "game": "DEN @ PHX",
-      "line": 3.5,
-      "odds": -102,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T02:00Z",
-      "team": "PHX"
-     }
-    ],
-    "payout": 74.04944586530264,
-    "projected_profit": 2.451866035805626
+    "payout": 71.38339920948617,
+    "projected_profit": 2.5339545454545416
    }
   },
-  "seen": "2026-10-30T23:16+00:00",
+  "seen": "2026-10-30T23:30+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909285": {
@@ -315,7 +200,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T23:16+00:00",
+  "seen": "2026-10-30T23:30+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
