@@ -49,7 +49,7 @@
    "projected_profit": 5.63,
    "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.86,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,34 +149,34 @@
    "projected_profit": 2.23,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
   "bet": {
-   "chance": 0.607,
+   "chance": 0.544,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.607,
-     "event_id": "401909285",
-     "game": "LAL @ GS",
-     "odds": -148,
+     "chance": 0.544,
+     "event_id": "401909277",
+     "game": "CHA @ WSH",
+     "odds": -118,
      "side": "away",
      "sport": "nba",
-     "start": "2026-10-31T02:00Z",
-     "team": "LAL",
-     "team_name": "Los Angeles Lakers",
+     "start": "2026-10-30T23:00Z",
+     "team": "CHA",
+     "team_name": "Charlotte Hornets",
      "type": "ml"
     }
    ],
-   "payout": 33.51,
-   "price": -148,
-   "projected_profit": 0.34,
-   "start": "2026-10-31T02:00Z"
+   "payout": 36.95,
+   "price": -118,
+   "projected_profit": 0.1,
+   "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T21:39+00:00",
-  "start": "2026-10-31T02:00Z"
+  "seen": "2026-10-30T21:52+00:00",
+  "start": "2026-10-30T23:00Z"
  },
  "parlay|2026-10-29|nba": {
   "card": {
@@ -325,16 +325,16 @@
     "projected_profit": 4.901134545454543
    }
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
   "card": {
    "three": {
-    "chance": 0.18061715599999997,
+    "chance": 0.179013096,
     "legs": [
      {
-      "chance": 0.563,
+      "chance": 0.558,
       "event_id": "401909280",
       "game": "NY @ PHI",
       "line": 3.5,
@@ -368,7 +368,7 @@
      }
     ],
     "payout": 137.47913921826964,
-    "projected_profit": 4.8310911349319205
+    "projected_profit": 4.610566346877469
    },
    "two": {
     "chance": 0.320812,
@@ -400,7 +400,7 @@
     "projected_profit": 3.591023838383837
    }
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909279": {
@@ -424,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909280": {
@@ -438,17 +438,17 @@
    "ev": -0.071,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.654,
    "name": "Dean Wade",
    "pid": "3912848",
-   "price": "-230",
+   "price": "-229",
    "prob": 0.647,
    "projection": 1.07,
-   "score": 0.655,
+   "score": 0.654,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
@@ -472,7 +472,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T21:39+00:00",
+  "seen": "2026-10-30T21:52+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
