@@ -1,57 +1,4 @@
 {
- "bet|2026-10-30|parlay": {
-  "bet": {
-   "chance": 0.178,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.5640000000000001,
-     "event_id": "401862813",
-     "game": "TULN @ CLT",
-     "line": -7.5,
-     "odds": -112,
-     "side": "away",
-     "sport": "cfb",
-     "start": "2026-10-30T23:00Z",
-     "team": "TULN",
-     "team_name": "TULN",
-     "type": "spread"
-    },
-    {
-     "chance": 0.577,
-     "event_id": "401909283",
-     "game": "HOU @ DAL",
-     "line": 6.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-31T00:00Z",
-     "team": "DAL",
-     "team_name": "DAL",
-     "type": "spread"
-    },
-    {
-     "chance": 0.547,
-     "event_id": "401866451",
-     "game": "KENT @ SAC",
-     "line": 7.0,
-     "odds": -105,
-     "side": "home",
-     "sport": "cfb",
-     "start": "2026-10-31T02:30Z",
-     "team": "SAC",
-     "team_name": "SAC",
-     "type": "spread"
-    }
-   ],
-   "payout": 142.35,
-   "price": 612,
-   "projected_profit": 5.34,
-   "start": "2026-10-30T23:00Z"
-  },
-  "seen": "2026-10-30T22:29+00:00",
-  "start": "2026-10-30T23:00Z"
- },
  "bet|2026-10-30|prop": {
   "bet": {
    "chance": 0.66,
@@ -79,12 +26,12 @@
    "projected_profit": -1.21,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T22:29+00:00",
+  "seen": "2026-10-30T22:45+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
   "bet": {
-   "chance": 0.3745,
+   "chance": 0.3543,
    "kind": "sgp",
    "legs": [
     {
@@ -101,13 +48,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.649,
+     "chance": 0.614,
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "label": "threes",
      "line": 1.5,
      "name": "Tari Eason",
-     "odds": -224,
+     "odds": -190,
      "pid": "4433192",
      "projection": 1.042,
      "side": "under",
@@ -117,12 +64,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.71,
-   "price": 179,
-   "projected_profit": 0.86,
+   "payout": 58.79,
+   "price": 194,
+   "projected_profit": 0.83,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T22:29+00:00",
+  "seen": "2026-10-30T22:45+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,34 +96,8 @@
    "projected_profit": 2.23,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T22:29+00:00",
+  "seen": "2026-10-30T22:45+00:00",
   "start": "2026-10-31T00:00Z"
- },
- "bet|2026-10-30|winner": {
-  "bet": {
-   "chance": 0.54,
-   "kind": "winner",
-   "legs": [
-    {
-     "chance": 0.54,
-     "event_id": "401909277",
-     "game": "CHA @ WSH",
-     "odds": -115,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-10-30T23:00Z",
-     "team": "CHA",
-     "team_name": "Charlotte Hornets",
-     "type": "ml"
-    }
-   ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 0.19,
-   "start": "2026-10-30T23:00Z"
-  },
-  "seen": "2026-10-30T22:29+00:00",
-  "start": "2026-10-30T23:00Z"
  },
  "parlay|2026-10-29|nba": {
   "card": {
@@ -256,7 +177,7 @@
  "parlay|2026-10-30|cfb": {
   "card": {
    "three": {
-    "chance": 0.19639008,
+    "chance": 0.19841472,
     "legs": [
      {
       "chance": 0.592,
@@ -281,22 +202,22 @@
       "team": "NAVY"
      },
      {
-      "chance": 0.5820000000000001,
+      "chance": 0.5880000000000001,
       "event_id": "401856846",
       "game": "KSU @ COLO",
-      "line": 2.5,
-      "odds": -110,
+      "line": 3.0,
+      "odds": -115,
       "side": "away",
       "sport": "cfb",
       "start": "2026-10-31T18:00Z",
       "team": "KSU"
      }
     ],
-    "payout": 137.97520661157023,
-    "projected_profit": 7.096961864462806
+    "payout": 135.11857707509878,
+    "projected_profit": 6.809514637154141
    },
    "two": {
-    "chance": 0.344544,
+    "chance": 0.348096,
     "legs": [
      {
       "chance": 0.592,
@@ -310,40 +231,29 @@
       "team": "USF"
      },
      {
-      "chance": 0.5820000000000001,
+      "chance": 0.5880000000000001,
       "event_id": "401856846",
       "game": "KSU @ COLO",
-      "line": 2.5,
-      "odds": -110,
+      "line": 3.0,
+      "odds": -115,
       "side": "away",
       "sport": "cfb",
       "start": "2026-10-31T18:00Z",
       "team": "KSU"
      }
     ],
-    "payout": 72.27272727272727,
-    "projected_profit": 4.901134545454543
+    "payout": 70.77639751552793,
+    "projected_profit": 4.636980869565214
    }
   },
-  "seen": "2026-10-30T22:29+00:00",
+  "seen": "2026-10-30T22:45+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
   "card": {
    "three": {
-    "chance": 0.179013096,
+    "chance": 0.170351172,
     "legs": [
-     {
-      "chance": 0.558,
-      "event_id": "401909280",
-      "game": "NY @ PHI",
-      "line": 3.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "PHI"
-     },
      {
       "chance": 0.577,
       "event_id": "401909283",
@@ -365,10 +275,21 @@
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "IND"
+     },
+     {
+      "chance": 0.531,
+      "event_id": "401909286",
+      "game": "DEN @ PHX",
+      "line": 3.5,
+      "odds": -102,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-31T02:00Z",
+      "team": "PHX"
      }
     ],
-    "payout": 137.47913921826964,
-    "projected_profit": 4.610566346877469
+    "payout": 145.62883739354328,
+    "projected_profit": 4.808043126987521
    },
    "two": {
     "chance": 0.320812,
@@ -400,8 +321,8 @@
     "projected_profit": 3.591023838383837
    }
   },
-  "seen": "2026-10-30T22:29+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T22:45+00:00",
+  "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909278": {
   "game": {
@@ -424,7 +345,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T22:29+00:00",
+  "seen": "2026-10-30T22:45+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
@@ -448,7 +369,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T22:29+00:00",
+  "seen": "2026-10-30T22:45+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
