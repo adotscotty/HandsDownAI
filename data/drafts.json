@@ -26,7 +26,7 @@
    "projected_profit": -1.22,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T22:58+00:00",
+  "seen": "2026-10-30T23:11+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": 0.01,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T22:58+00:00",
+  "seen": "2026-10-30T23:11+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 1.35,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T22:58+00:00",
+  "seen": "2026-10-30T23:11+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -177,7 +177,7 @@
  "parlay|2026-10-30|cfb": {
   "card": {
    "three": {
-    "chance": 0.19841472,
+    "chance": 0.21756000000000003,
     "legs": [
      {
       "chance": 0.592,
@@ -191,33 +191,33 @@
       "team": "USF"
      },
      {
-      "chance": 0.57,
-      "event_id": "401859185",
-      "game": "ND @ NAVY",
-      "line": 30.5,
-      "odds": -110,
-      "side": "home",
-      "sport": "cfb",
-      "start": "2026-10-31T16:00Z",
-      "team": "NAVY"
-     },
-     {
       "chance": 0.5880000000000001,
       "event_id": "401856846",
       "game": "KSU @ COLO",
       "line": 3.0,
-      "odds": -115,
+      "odds": -112,
       "side": "away",
       "sport": "cfb",
       "start": "2026-10-31T18:00Z",
       "team": "KSU"
+     },
+     {
+      "chance": 0.625,
+      "event_id": "401856847",
+      "game": "OKST @ ISU",
+      "line": 9.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-10-31T23:00Z",
+      "team": "ISU"
      }
     ],
-    "payout": 135.11857707509878,
-    "projected_profit": 6.809514637154141
+    "payout": 138.00831443688585,
+    "projected_profit": 10.025088888888892
    },
    "two": {
-    "chance": 0.348096,
+    "chance": 0.37,
     "legs": [
      {
       "chance": 0.592,
@@ -231,22 +231,22 @@
       "team": "USF"
      },
      {
-      "chance": 0.5880000000000001,
-      "event_id": "401856846",
-      "game": "KSU @ COLO",
-      "line": 3.0,
-      "odds": -115,
-      "side": "away",
+      "chance": 0.625,
+      "event_id": "401856847",
+      "game": "OKST @ ISU",
+      "line": 9.5,
+      "odds": -108,
+      "side": "home",
       "sport": "cfb",
-      "start": "2026-10-31T18:00Z",
-      "team": "KSU"
+      "start": "2026-10-31T23:00Z",
+      "team": "ISU"
      }
     ],
-    "payout": 70.77639751552793,
-    "projected_profit": 4.636980869565214
+    "payout": 72.91005291005291,
+    "projected_profit": 6.976719576719578
    }
   },
-  "seen": "2026-10-30T22:58+00:00",
+  "seen": "2026-10-30T23:11+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
@@ -321,32 +321,8 @@
     "projected_profit": 2.451866035805626
    }
   },
-  "seen": "2026-10-30T22:58+00:00",
+  "seen": "2026-10-30T23:11+00:00",
   "start": "2026-10-31T00:00Z"
- },
- "prop|nba|401909278": {
-  "game": {
-   "date": "2026-10-30T23:30Z",
-   "event_id": "401909278",
-   "name": "Chicago Bulls at Boston Celtics",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.096,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.656,
-   "name": "Leonard Miller",
-   "pid": "5044385",
-   "price": "-231",
-   "prob": 0.631,
-   "projection": 1.164,
-   "score": 0.656,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-30T22:58+00:00",
-  "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
   "game": {
@@ -369,7 +345,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T22:58+00:00",
+  "seen": "2026-10-30T23:11+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
