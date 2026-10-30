@@ -1,74 +1,4 @@
 {
- "bet|2026-10-30|sgp": {
-  "bet": {
-   "chance": 0.353,
-   "kind": "sgp",
-   "legs": [
-    {
-     "chance": 0.575,
-     "event_id": "401909283",
-     "game": "HOU @ DAL",
-     "line": 5.5,
-     "odds": -115,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-31T00:00Z",
-     "team": "DAL",
-     "team_name": "Dallas Mavericks",
-     "type": "spread"
-    },
-    {
-     "chance": 0.614,
-     "event_id": "401909283",
-     "game": "HOU @ DAL",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Tari Eason",
-     "odds": -190,
-     "pid": "4433192",
-     "projection": 1.042,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-10-31T00:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 57.07,
-   "price": 185,
-   "projected_profit": 0.15,
-   "start": "2026-10-31T00:00Z"
-  },
-  "seen": "2026-10-30T23:30+00:00",
-  "start": "2026-10-31T00:00Z"
- },
- "bet|2026-10-30|spread": {
-  "bet": {
-   "chance": 0.575,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.575,
-     "event_id": "401909283",
-     "game": "HOU @ DAL",
-     "line": 5.5,
-     "odds": -115,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-31T00:00Z",
-     "team": "DAL",
-     "team_name": "Dallas Mavericks",
-     "type": "spread"
-    }
-   ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 1.5,
-   "start": "2026-10-31T00:00Z"
-  },
-  "seen": "2026-10-30T23:30+00:00",
-  "start": "2026-10-31T00:00Z"
- },
  "parlay|2026-10-30|cfb": {
   "card": {
    "three": {
@@ -141,43 +71,8 @@
     "projected_profit": 6.976719576719578
    }
   },
-  "seen": "2026-10-30T23:30+00:00",
+  "seen": "2026-10-30T23:43+00:00",
   "start": "2026-10-31T16:00Z"
- },
- "parlay|2026-10-30|nba": {
-  "card": {
-   "two": {
-    "chance": 0.31567499999999993,
-    "legs": [
-     {
-      "chance": 0.575,
-      "event_id": "401909283",
-      "game": "HOU @ DAL",
-      "line": 5.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T00:00Z",
-      "team": "DAL"
-     },
-     {
-      "chance": 0.5489999999999999,
-      "event_id": "401909282",
-      "game": "IND @ MIA",
-      "line": 8.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-10-31T00:00Z",
-      "team": "IND"
-     }
-    ],
-    "payout": 71.38339920948617,
-    "projected_profit": 2.5339545454545416
-   }
-  },
-  "seen": "2026-10-30T23:30+00:00",
-  "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909285": {
   "game": {
@@ -200,7 +95,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T23:30+00:00",
+  "seen": "2026-10-30T23:43+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
