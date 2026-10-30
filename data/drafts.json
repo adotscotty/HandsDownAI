@@ -49,42 +49,42 @@
    "projected_profit": 5.18,
    "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.656,
+   "chance": 0.663,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.656,
-     "event_id": "401909277",
-     "game": "CHA @ WSH",
+     "chance": 0.663,
+     "event_id": "401909283",
+     "game": "HOU @ DAL",
      "label": "threes",
-     "line": 1.5,
-     "name": "Anthony Davis",
-     "odds": -231,
-     "pid": "6583",
-     "projection": 0.749,
-     "side": "under",
+     "line": 0.5,
+     "name": "Tari Eason",
+     "odds": -240,
+     "pid": "4433192",
+     "projection": 1.042,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-10-30T23:00Z",
+     "start": "2026-10-31T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.2,
-   "start": "2026-10-30T23:00Z"
+   "payout": 28.33,
+   "price": -240,
+   "projected_profit": -1.21,
+   "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T14:09+00:00",
-  "start": "2026-10-30T23:00Z"
+  "seen": "2026-10-30T14:35+00:00",
+  "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|sgp": {
   "bet": {
-   "chance": 0.3726,
+   "chance": 0.3766,
    "kind": "sgp",
    "legs": [
     {
@@ -101,13 +101,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.656,
+     "chance": 0.663,
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "label": "threes",
      "line": 0.5,
      "name": "Tari Eason",
-     "odds": -232,
+     "odds": -240,
      "pid": "4433192",
      "projection": 1.042,
      "side": "over",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 54.64,
-   "price": 173,
-   "projected_profit": 0.36,
+   "payout": 54.09,
+   "price": 170,
+   "projected_profit": 0.37,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,8 +149,34 @@
    "projected_profit": 1.69,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-31T00:00Z"
+ },
+ "bet|2026-10-30|winner": {
+  "bet": {
+   "chance": 0.609,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.609,
+     "event_id": "401909285",
+     "game": "LAL @ GS",
+     "odds": -148,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-10-31T02:00Z",
+     "team": "LAL",
+     "team_name": "Los Angeles Lakers",
+     "type": "ml"
+    }
+   ],
+   "payout": 33.51,
+   "price": -148,
+   "projected_profit": 0.41,
+   "start": "2026-10-31T02:00Z"
+  },
+  "seen": "2026-10-30T14:35+00:00",
+  "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
   "card": {
@@ -299,7 +325,7 @@
     "projected_profit": 3.753759999999996
    }
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909277": {
@@ -323,7 +349,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "prop|nba|401909281": {
@@ -347,7 +373,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909283": {
@@ -358,20 +384,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.047,
+   "ev": -0.052,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.656,
+   "market_prob": 0.663,
    "name": "Tari Eason",
    "pid": "4433192",
-   "price": "-232",
-   "prob": 0.666,
+   "price": "-240",
+   "prob": 0.67,
    "projection": 1.042,
-   "score": 0.656,
+   "score": 0.663,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909285": {
@@ -382,20 +408,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.076,
+   "ev": -0.077,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.656,
    "name": "Quentin Grimes",
    "pid": "4397014",
-   "price": "-230",
+   "price": "-231",
    "prob": 0.644,
    "projection": 1.089,
-   "score": 0.655,
+   "score": 0.656,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T14:09+00:00",
+  "seen": "2026-10-30T14:35+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
