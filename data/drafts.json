@@ -49,38 +49,38 @@
    "projected_profit": 4.89,
    "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
-     "event_id": "401909285",
-     "game": "LAL @ GS",
+     "chance": 0.661,
+     "event_id": "401909283",
+     "game": "HOU @ DAL",
      "label": "threes",
-     "line": 1.5,
-     "name": "Al Horford",
-     "odds": -239,
-     "pid": "3213",
-     "projection": 1.401,
-     "side": "under",
+     "line": 0.5,
+     "name": "Tari Eason",
+     "odds": -237,
+     "pid": "4433192",
+     "projection": 1.042,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-10-31T02:00Z",
+     "start": "2026-10-31T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
-   "start": "2026-10-31T02:00Z"
+   "payout": 28.44,
+   "price": -237,
+   "projected_profit": -1.2,
+   "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T10:48+00:00",
-  "start": "2026-10-31T02:00Z"
+  "seen": "2026-10-30T11:08+00:00",
+  "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|sgp": {
   "bet": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.66,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 0.98,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.54,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -325,7 +325,7 @@
     "projected_profit": 3.3044344537815142
    }
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -349,7 +349,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909283": {
@@ -373,7 +373,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909285": {
@@ -384,20 +384,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.155,
+   "ev": -0.151,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.662,
+   "market_prob": 0.656,
    "name": "Al Horford",
    "pid": "3213",
-   "price": "-239",
-   "prob": 0.596,
+   "price": "-231",
+   "prob": 0.593,
    "projection": 1.401,
-   "score": 0.662,
+   "score": 0.656,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T10:48+00:00",
+  "seen": "2026-10-30T11:08+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
