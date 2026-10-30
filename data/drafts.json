@@ -1,22 +1,9 @@
 {
  "bet|2026-10-30|parlay": {
   "bet": {
-   "chance": 0.1762,
+   "chance": 0.1743,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.5529999999999999,
-     "event_id": "401862813",
-     "game": "TULN @ CLT",
-     "line": -8.5,
-     "odds": -105,
-     "side": "away",
-     "sport": "cfb",
-     "start": "2026-10-30T23:00Z",
-     "team": "TULN",
-     "team_name": "TULN",
-     "type": "spread"
-    },
     {
      "chance": 0.5609999999999999,
      "event_id": "401909282",
@@ -35,22 +22,35 @@
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "line": 6.5,
-     "odds": -110,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-31T00:00Z",
      "team": "DAL",
      "team_name": "DAL",
      "type": "spread"
+    },
+    {
+     "chance": 0.547,
+     "event_id": "401866451",
+     "game": "KENT @ SAC",
+     "line": 7.0,
+     "odds": -102,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-10-31T02:30Z",
+     "team": "SAC",
+     "team_name": "SAC",
+     "type": "spread"
     }
    ],
-   "payout": 145.54,
-   "price": 628,
-   "projected_profit": 5.65,
-   "start": "2026-10-30T23:00Z"
+   "payout": 148.93,
+   "price": 645,
+   "projected_profit": 5.96,
+   "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T19:40+00:00",
-  "start": "2026-10-30T23:00Z"
+  "seen": "2026-10-30T19:53+00:00",
+  "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.22,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
@@ -92,7 +92,7 @@
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "line": 6.5,
-     "odds": -110,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-31T00:00Z",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.23,
-   "price": 176,
-   "projected_profit": 0.36,
+   "payout": 55.71,
+   "price": 179,
+   "projected_profit": 0.54,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -135,7 +135,7 @@
      "event_id": "401909283",
      "game": "HOU @ DAL",
      "line": 6.5,
-     "odds": -110,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
      "start": "2026-10-31T00:00Z",
@@ -144,12 +144,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 1.69,
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 1.88,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.41,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -325,20 +325,20 @@
     "projected_profit": 4.901134545454543
    }
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
   "card": {
    "three": {
-    "chance": 0.17302586399999997,
+    "chance": 0.17716828799999998,
     "legs": [
      {
-      "chance": 0.543,
+      "chance": 0.556,
       "event_id": "401909280",
       "game": "NY @ PHI",
-      "line": 1.5,
-      "odds": -105,
+      "line": 2.5,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-30T23:30Z",
@@ -360,15 +360,15 @@
       "event_id": "401909283",
       "game": "HOU @ DAL",
       "line": 6.5,
-      "odds": -110,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "DAL"
      }
     ],
-    "payout": 145.54112554112555,
-    "projected_profit": 5.182378994285713
+    "payout": 143.56902356902356,
+    "projected_profit": 5.43587811555555
    },
    "two": {
     "chance": 0.31864799999999993,
@@ -389,43 +389,19 @@
       "event_id": "401909283",
       "game": "HOU @ DAL",
       "line": 6.5,
-      "odds": -110,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "DAL"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 3.753759999999996
+    "payout": 75.20282186948853,
+    "projected_profit": 3.963228783068775
    }
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-30T23:30Z"
- },
- "prop|nba|401909277": {
-  "game": {
-   "date": "2026-10-30T23:00Z",
-   "event_id": "401909277",
-   "name": "Charlotte Hornets at Washington Wizards",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.103,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.654,
-   "name": "Anthony Davis",
-   "pid": "6583",
-   "price": "-229",
-   "prob": 0.624,
-   "projection": 0.749,
-   "score": 0.654,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-30T19:40+00:00",
-  "start": "2026-10-30T23:00Z"
  },
  "prop|nba|401909281": {
   "game": {
@@ -448,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
@@ -472,7 +448,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T19:40+00:00",
+  "seen": "2026-10-30T19:53+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
