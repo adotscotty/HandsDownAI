@@ -49,38 +49,38 @@
    "projected_profit": 5.65,
    "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.656,
+   "chance": 0.659,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.656,
-     "event_id": "401909281",
-     "game": "ORL @ TOR",
+     "chance": 0.659,
+     "event_id": "401909285",
+     "game": "LAL @ GS",
      "label": "threes",
-     "line": 1.5,
-     "name": "Scottie Barnes",
-     "odds": -231,
-     "pid": "4433134",
-     "projection": 0.731,
-     "side": "under",
+     "line": 0.5,
+     "name": "Quentin Grimes",
+     "odds": -235,
+     "pid": "4397014",
+     "projection": 1.089,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-10-30T23:30Z",
+     "start": "2026-10-31T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.2,
-   "start": "2026-10-30T23:30Z"
+   "payout": 28.51,
+   "price": -235,
+   "projected_profit": -1.21,
+   "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T15:55+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T16:19+00:00",
+  "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
   "bet": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.39,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.69,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.41,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -253,6 +253,81 @@
   "seen": "2026-10-30T03:48+00:00",
   "start": "2026-10-30T23:30Z"
  },
+ "parlay|2026-10-30|cfb": {
+  "card": {
+   "three": {
+    "chance": 0.19369055999999996,
+    "legs": [
+     {
+      "chance": 0.592,
+      "event_id": "401862816",
+      "game": "UAB @ USF",
+      "line": -7.5,
+      "odds": -112,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-10-31T16:00Z",
+      "team": "USF"
+     },
+     {
+      "chance": 0.57,
+      "event_id": "401859185",
+      "game": "ND @ NAVY",
+      "line": 30.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-10-31T16:00Z",
+      "team": "NAVY"
+     },
+     {
+      "chance": 0.574,
+      "event_id": "401858278",
+      "game": "SMU @ SYR",
+      "line": 10.5,
+      "odds": -112,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-10-31T16:00Z",
+      "team": "SYR"
+     }
+    ],
+    "payout": 136.80194805194805,
+    "projected_profit": 6.4972459272727185
+   },
+   "two": {
+    "chance": 0.33743999999999996,
+    "legs": [
+     {
+      "chance": 0.592,
+      "event_id": "401862816",
+      "game": "UAB @ USF",
+      "line": -7.5,
+      "odds": -112,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-10-31T16:00Z",
+      "team": "USF"
+     },
+     {
+      "chance": 0.57,
+      "event_id": "401859185",
+      "game": "ND @ NAVY",
+      "line": 30.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-10-31T16:00Z",
+      "team": "NAVY"
+     }
+    ],
+    "payout": 72.27272727272727,
+    "projected_profit": 4.3877090909090875
+   }
+  },
+  "seen": "2026-10-30T16:19+00:00",
+  "start": "2026-10-31T16:00Z"
+ },
  "parlay|2026-10-30|nba": {
   "card": {
    "three": {
@@ -325,7 +400,31 @@
     "projected_profit": 3.753759999999996
    }
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909279": {
+  "game": {
+   "date": "2026-10-30T23:30Z",
+   "event_id": "401909279",
+   "name": "Detroit Pistons at Brooklyn Nets",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.151,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.655,
+   "name": "Daniss Jenkins",
+   "pid": "5107199",
+   "price": "-230",
+   "prob": 0.592,
+   "projection": 1.402,
+   "score": 0.655,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -349,7 +448,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909283": {
@@ -373,7 +472,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909285": {
@@ -384,20 +483,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.077,
+   "ev": -0.04,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.656,
+   "line": 0.5,
+   "market_prob": 0.659,
    "name": "Quentin Grimes",
    "pid": "4397014",
-   "price": "-231",
-   "prob": 0.644,
+   "price": "-235",
+   "prob": 0.673,
    "projection": 1.089,
-   "score": 0.656,
-   "side": "under",
+   "score": 0.659,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T15:55+00:00",
+  "seen": "2026-10-30T16:19+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
