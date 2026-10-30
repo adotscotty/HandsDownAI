@@ -49,38 +49,38 @@
    "projected_profit": 4.54,
    "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T08:57+00:00",
+  "seen": "2026-10-30T09:30+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.658,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
-     "event_id": "401909277",
-     "game": "CHA @ WSH",
+     "chance": 0.658,
+     "event_id": "401909281",
+     "game": "ORL @ TOR",
      "label": "threes",
-     "line": 1.5,
-     "name": "Anthony Davis",
-     "odds": -232,
-     "pid": "6583",
-     "projection": 0.749,
-     "side": "under",
+     "line": 0.5,
+     "name": "Jamal Shead",
+     "odds": -234,
+     "pid": "4432241",
+     "projection": 1.047,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-10-30T23:00Z",
+     "start": "2026-10-30T23:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.62,
-   "price": -232,
-   "projected_profit": -1.2,
-   "start": "2026-10-30T23:00Z"
+   "payout": 28.55,
+   "price": -234,
+   "projected_profit": -1.22,
+   "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T08:57+00:00",
-  "start": "2026-10-30T23:00Z"
+  "seen": "2026-10-30T09:30+00:00",
+  "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.67,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T08:57+00:00",
+  "seen": "2026-10-30T09:30+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.2,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T08:57+00:00",
+  "seen": "2026-10-30T09:30+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -282,7 +282,7 @@
     "projected_profit": 2.974810204081635
    }
   },
-  "seen": "2026-10-30T08:57+00:00",
+  "seen": "2026-10-30T09:30+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909277": {
@@ -306,7 +306,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T08:57+00:00",
+  "seen": "2026-10-30T09:30+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "prop|nba|401909279": {
@@ -330,7 +330,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T08:57+00:00",
+  "seen": "2026-10-30T09:30+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -341,20 +341,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.046,
+   "ev": -0.047,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
+   "market_prob": 0.658,
    "name": "Jamal Shead",
    "pid": "4432241",
-   "price": "-231",
-   "prob": 0.666,
+   "price": "-234",
+   "prob": 0.668,
    "projection": 1.047,
-   "score": 0.655,
+   "score": 0.658,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T08:57+00:00",
+  "seen": "2026-10-30T09:30+00:00",
   "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909285": {
+  "game": {
+   "date": "2026-10-31T02:00Z",
+   "event_id": "401909285",
+   "name": "Los Angeles Lakers at Golden State Warriors",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.102,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.652,
+   "name": "Sandro Mamukelashvili",
+   "pid": "4278580",
+   "price": "-228",
+   "prob": 0.624,
+   "projection": 1.194,
+   "score": 0.652,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T09:30+00:00",
+  "start": "2026-10-31T02:00Z"
  }
 }
