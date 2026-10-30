@@ -49,38 +49,38 @@
    "projected_profit": 4.54,
    "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T07:55+00:00",
+  "seen": "2026-10-30T08:08+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.657,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
-     "event_id": "401909281",
-     "game": "ORL @ TOR",
+     "chance": 0.657,
+     "event_id": "401909277",
+     "game": "CHA @ WSH",
      "label": "threes",
      "line": 1.5,
-     "name": "Scottie Barnes",
-     "odds": -238,
-     "pid": "4433134",
-     "projection": 0.731,
+     "name": "Anthony Davis",
+     "odds": -232,
+     "pid": "6583",
+     "projection": 0.749,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-30T23:30Z",
+     "start": "2026-10-30T23:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
+   "payout": 28.62,
+   "price": -232,
    "projected_profit": -1.2,
-   "start": "2026-10-30T23:30Z"
+   "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T07:55+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T08:08+00:00",
+  "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.67,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T07:55+00:00",
+  "seen": "2026-10-30T08:08+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.2,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T07:55+00:00",
+  "seen": "2026-10-30T08:08+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -282,8 +282,32 @@
     "projected_profit": 2.974810204081635
    }
   },
-  "seen": "2026-10-30T07:55+00:00",
+  "seen": "2026-10-30T08:08+00:00",
   "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909277": {
+  "game": {
+   "date": "2026-10-30T23:00Z",
+   "event_id": "401909277",
+   "name": "Charlotte Hornets at Washington Wizards",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.017,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.657,
+   "name": "Anthony Davis",
+   "pid": "6583",
+   "price": "-232",
+   "prob": 0.711,
+   "projection": 0.749,
+   "score": 0.657,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T08:08+00:00",
+  "start": "2026-10-30T23:00Z"
  },
  "prop|nba|401909279": {
   "game": {
@@ -306,7 +330,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T07:55+00:00",
+  "seen": "2026-10-30T08:08+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -317,20 +341,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": 0.018,
+   "ev": -0.047,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.662,
-   "name": "Scottie Barnes",
-   "pid": "4433134",
-   "price": "-238",
-   "prob": 0.717,
-   "projection": 0.731,
-   "score": 0.662,
-   "side": "under",
+   "line": 0.5,
+   "market_prob": 0.657,
+   "name": "Jamal Shead",
+   "pid": "4432241",
+   "price": "-233",
+   "prob": 0.667,
+   "projection": 1.047,
+   "score": 0.657,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T07:55+00:00",
+  "seen": "2026-10-30T08:08+00:00",
   "start": "2026-10-30T23:30Z"
  }
 }
