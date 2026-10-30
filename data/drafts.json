@@ -49,7 +49,7 @@
    "projected_profit": 5.63,
    "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "bet|2026-10-30|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.86,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.23,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.34,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -325,7 +325,7 @@
     "projected_profit": 4.901134545454543
    }
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-30|nba": {
@@ -338,7 +338,7 @@
       "event_id": "401909280",
       "game": "NY @ PHI",
       "line": 3.5,
-      "odds": -112,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-30T23:30Z",
@@ -367,23 +367,12 @@
       "team": "IND"
      }
     ],
-    "payout": 139.1919191919192,
-    "projected_profit": 5.140448582626259
+    "payout": 137.47913921826964,
+    "projected_profit": 4.8310911349319205
    },
    "two": {
-    "chance": 0.32485099999999995,
+    "chance": 0.320812,
     "legs": [
-     {
-      "chance": 0.563,
-      "event_id": "401909280",
-      "game": "NY @ PHI",
-      "line": 3.5,
-      "odds": -112,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "PHI"
-     },
      {
       "chance": 0.577,
       "event_id": "401909283",
@@ -394,13 +383,72 @@
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "DAL"
+     },
+     {
+      "chance": 0.556,
+      "event_id": "401909282",
+      "game": "IND @ MIA",
+      "line": 8.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-31T00:00Z",
+      "team": "IND"
      }
     ],
-    "payout": 72.91005291005291,
-    "projected_profit": 3.6849035978835936
+    "payout": 73.53535353535354,
+    "projected_profit": 3.591023838383837
    }
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909279": {
+  "game": {
+   "date": "2026-10-30T23:30Z",
+   "event_id": "401909279",
+   "name": "Detroit Pistons at Brooklyn Nets",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.151,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.655,
+   "name": "Daniss Jenkins",
+   "pid": "5107199",
+   "price": "-230",
+   "prob": 0.592,
+   "projection": 1.402,
+   "score": 0.655,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T21:39+00:00",
+  "start": "2026-10-30T23:30Z"
+ },
+ "prop|nba|401909280": {
+  "game": {
+   "date": "2026-10-30T23:30Z",
+   "event_id": "401909280",
+   "name": "New York Knicks at Philadelphia 76ers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.071,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.655,
+   "name": "Dean Wade",
+   "pid": "3912848",
+   "price": "-230",
+   "prob": 0.647,
+   "projection": 1.07,
+   "score": 0.655,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909285": {
@@ -424,7 +472,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T21:26+00:00",
+  "seen": "2026-10-30T21:39+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
