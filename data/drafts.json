@@ -49,38 +49,38 @@
    "projected_profit": 5.18,
    "start": "2026-10-30T23:30Z"
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
-     "event_id": "401909285",
-     "game": "LAL @ GS",
+     "chance": 0.656,
+     "event_id": "401909277",
+     "game": "CHA @ WSH",
      "label": "threes",
      "line": 1.5,
-     "name": "Quentin Grimes",
-     "odds": -233,
-     "pid": "4397014",
-     "projection": 1.089,
+     "name": "Anthony Davis",
+     "odds": -231,
+     "pid": "6583",
+     "projection": 0.749,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-31T02:00Z",
+     "start": "2026-10-30T23:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.58,
-   "price": -233,
-   "projected_profit": -1.22,
-   "start": "2026-10-31T02:00Z"
+   "payout": 28.66,
+   "price": -231,
+   "projected_profit": -1.2,
+   "start": "2026-10-30T23:00Z"
   },
-  "seen": "2026-10-30T13:56+00:00",
-  "start": "2026-10-31T02:00Z"
+  "seen": "2026-10-30T14:09+00:00",
+  "start": "2026-10-30T23:00Z"
  },
  "bet|2026-10-30|sgp": {
   "bet": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -149,34 +149,8 @@
    "projected_profit": 1.69,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-31T00:00Z"
- },
- "bet|2026-10-30|winner": {
-  "bet": {
-   "chance": 0.609,
-   "kind": "winner",
-   "legs": [
-    {
-     "chance": 0.609,
-     "event_id": "401909285",
-     "game": "LAL @ GS",
-     "odds": -148,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-10-31T02:00Z",
-     "team": "LAL",
-     "team_name": "Los Angeles Lakers",
-     "type": "ml"
-    }
-   ],
-   "payout": 33.51,
-   "price": -148,
-   "projected_profit": 0.41,
-   "start": "2026-10-31T02:00Z"
-  },
-  "seen": "2026-10-30T13:56+00:00",
-  "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
   "card": {
@@ -325,7 +299,7 @@
     "projected_profit": 3.753759999999996
    }
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909277": {
@@ -349,7 +323,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-30T23:00Z"
  },
  "prop|nba|401909281": {
@@ -373,7 +347,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909283": {
@@ -397,7 +371,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909285": {
@@ -408,20 +382,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.078,
+   "ev": -0.076,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.657,
+   "market_prob": 0.655,
    "name": "Quentin Grimes",
    "pid": "4397014",
-   "price": "-233",
-   "prob": 0.645,
+   "price": "-230",
+   "prob": 0.644,
    "projection": 1.089,
-   "score": 0.657,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T13:56+00:00",
+  "seen": "2026-10-30T14:09+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
