@@ -1,22 +1,9 @@
 {
  "bet|2026-10-30|parlay": {
   "bet": {
-   "chance": 0.1687,
+   "chance": 0.1743,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.543,
-     "event_id": "401909280",
-     "game": "NY @ PHI",
-     "line": 1.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-10-30T23:30Z",
-     "team": "PHI",
-     "team_name": "PHI",
-     "type": "spread"
-    },
     {
      "chance": 0.568,
      "event_id": "401909283",
@@ -28,6 +15,19 @@
      "start": "2026-10-31T00:00Z",
      "team": "DAL",
      "team_name": "DAL",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5609999999999999,
+     "event_id": "401909282",
+     "game": "IND @ MIA",
+     "line": 8.5,
+     "odds": -112,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-10-31T00:00Z",
+     "team": "IND",
+     "team_name": "IND",
      "type": "spread"
     },
     {
@@ -44,13 +44,13 @@
      "type": "spread"
     }
    ],
-   "payout": 142.53,
-   "price": 613,
-   "projected_profit": 4.05,
-   "start": "2026-10-30T23:30Z"
+   "payout": 138.18,
+   "price": 591,
+   "projected_profit": 4.09,
+   "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T11:34+00:00",
-  "start": "2026-10-30T23:30Z"
+  "seen": "2026-10-30T11:47+00:00",
+  "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|prop": {
   "bet": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T11:34+00:00",
+  "seen": "2026-10-30T11:47+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.24,
    "start": "2026-10-31T00:00Z"
   },
-  "seen": "2026-10-30T11:34+00:00",
+  "seen": "2026-10-30T11:47+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "bet|2026-10-30|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.54,
    "start": "2026-10-31T02:00Z"
   },
-  "seen": "2026-10-30T11:34+00:00",
+  "seen": "2026-10-30T11:47+00:00",
   "start": "2026-10-31T02:00Z"
  },
  "parlay|2026-10-29|nba": {
@@ -213,14 +213,14 @@
  "parlay|2026-10-30|nba": {
   "card": {
    "three": {
-    "chance": 0.169016352,
+    "chance": 0.17716828799999998,
     "legs": [
      {
-      "chance": 0.543,
+      "chance": 0.556,
       "event_id": "401909280",
       "game": "NY @ PHI",
-      "line": 1.5,
-      "odds": -105,
+      "line": 2.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-30T23:30Z",
@@ -238,34 +238,23 @@
       "team": "DAL"
      },
      {
-      "chance": 0.548,
+      "chance": 0.5609999999999999,
       "event_id": "401909282",
       "game": "IND @ MIA",
-      "line": 7.5,
-      "odds": -108,
+      "line": 8.5,
+      "odds": -112,
       "side": "away",
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "IND"
      }
     ],
-    "payout": 140.59658001686986,
-    "projected_profit": 3.763121058127446
+    "payout": 132.32109100729136,
+    "projected_profit": 3.4431011600540025
    },
    "two": {
-    "chance": 0.308424,
+    "chance": 0.31864799999999993,
     "legs": [
-     {
-      "chance": 0.543,
-      "event_id": "401909280",
-      "game": "NY @ PHI",
-      "line": 1.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "PHI"
-     },
      {
       "chance": 0.568,
       "event_id": "401909283",
@@ -276,13 +265,24 @@
       "sport": "nba",
       "start": "2026-10-31T00:00Z",
       "team": "DAL"
+     },
+     {
+      "chance": 0.5609999999999999,
+      "event_id": "401909282",
+      "game": "IND @ MIA",
+      "line": 8.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-10-31T00:00Z",
+      "team": "IND"
      }
     ],
-    "payout": 73.00207039337474,
-    "projected_profit": 2.5155905590062098
+    "payout": 70.77639751552795,
+    "projected_profit": 2.5527575155279436
    }
   },
-  "seen": "2026-10-30T11:34+00:00",
+  "seen": "2026-10-30T11:47+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909281": {
@@ -306,7 +306,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T11:34+00:00",
+  "seen": "2026-10-30T11:47+00:00",
   "start": "2026-10-30T23:30Z"
  },
  "prop|nba|401909283": {
@@ -330,7 +330,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T11:34+00:00",
+  "seen": "2026-10-30T11:47+00:00",
   "start": "2026-10-31T00:00Z"
  },
  "prop|nba|401909285": {
@@ -341,20 +341,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.08,
+   "ev": -0.152,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.661,
-   "name": "Quentin Grimes",
-   "pid": "4397014",
-   "price": "-237",
-   "prob": 0.647,
-   "projection": 1.089,
-   "score": 0.661,
+   "market_prob": 0.658,
+   "name": "Al Horford",
+   "pid": "3213",
+   "price": "-234",
+   "prob": 0.594,
+   "projection": 1.401,
+   "score": 0.658,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-30T11:34+00:00",
+  "seen": "2026-10-30T11:47+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
