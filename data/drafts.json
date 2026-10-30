@@ -2,7 +2,7 @@
  "parlay|2026-10-29|nba": {
   "card": {
    "three": {
-    "chance": 0.15509057399999998,
+    "chance": 0.16364119500000002,
     "legs": [
      {
       "chance": 0.543,
@@ -27,22 +27,22 @@
       "team": "CHI"
      },
      {
-      "chance": 0.526,
-      "event_id": "401909279",
-      "game": "DET @ BKN",
-      "line": -7.5,
-      "odds": -105,
-      "side": "away",
+      "chance": 0.555,
+      "event_id": "401909283",
+      "game": "HOU @ DAL",
+      "line": 5.5,
+      "odds": -110,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "DET"
+      "start": "2026-10-31T00:00Z",
+      "team": "DAL"
      }
     ],
-    "payout": 142.31404958677686,
-    "projected_profit": 2.071567638677685
+    "payout": 139.15852742299026,
+    "projected_profit": 2.7720677219383987
    },
    "two": {
-    "chance": 0.29484899999999997,
+    "chance": 0.30136500000000005,
     "legs": [
      {
       "chance": 0.543,
@@ -56,22 +56,22 @@
       "team": "PHI"
      },
      {
-      "chance": 0.5429999999999999,
-      "event_id": "401909278",
-      "game": "CHI @ BOS",
-      "line": 15.5,
+      "chance": 0.555,
+      "event_id": "401909283",
+      "game": "HOU @ DAL",
+      "line": 5.5,
       "odds": -110,
-      "side": "away",
+      "side": "home",
       "sport": "nba",
-      "start": "2026-10-30T23:30Z",
-      "team": "CHI"
+      "start": "2026-10-31T00:00Z",
+      "team": "DAL"
      }
     ],
     "payout": 72.89256198347108,
-    "projected_profit": 1.4922990082644638
+    "projected_profit": 1.9672669421487683
    }
   },
-  "seen": "2026-10-29T23:52+00:00",
+  "seen": "2026-10-30T00:00+00:00",
   "start": "2026-10-30T23:30Z"
  }
 }
