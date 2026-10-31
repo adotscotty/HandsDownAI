@@ -26,7 +26,7 @@
    "projected_profit": -1.18,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": 2.35,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 3.79,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -122,20 +122,20 @@
    "projected_profit": 0.06,
    "start": "2026-10-31T19:00Z"
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "parlay|2026-10-31|nba": {
   "card": {
    "three": {
-    "chance": 0.19218927,
+    "chance": 0.18972530499999998,
     "legs": [
      {
-      "chance": 0.546,
+      "chance": 0.539,
       "event_id": "401909896",
       "game": "POR @ UTAH",
-      "line": 8.5,
-      "odds": -115,
+      "line": 6.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T19:00Z",
@@ -164,8 +164,8 @@
       "team": "MIN"
      }
     ],
-    "payout": 133.45592026121327,
-    "projected_profit": 5.648795892180786
+    "payout": 139.36758893280634,
+    "projected_profit": 6.441558317391305
    },
    "two": {
     "chance": 0.35199499999999995,
@@ -197,7 +197,7 @@
     "projected_profit": 5.126599604743081
    }
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -272,32 +272,8 @@
     "projected_profit": 2.3242057142857178
    }
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-11-01T18:00Z"
- },
- "prop|nba|401909896": {
-  "game": {
-   "date": "2026-10-31T19:00Z",
-   "event_id": "401909896",
-   "name": "Portland Trail Blazers at Utah Jazz",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.02,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
-   "name": "Donovan Clingan",
-   "pid": "5105565",
-   "price": "-233",
-   "prob": 0.686,
-   "projection": 1.218,
-   "score": 0.657,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-31T18:12+00:00",
-  "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
   "game": {
@@ -320,7 +296,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -331,20 +307,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.117,
+   "ev": -0.016,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.661,
+   "line": 0.5,
+   "market_prob": 0.656,
    "name": "Mario Hezonja",
    "pid": "2995706",
-   "price": "-237",
-   "prob": 0.621,
+   "price": "-232",
+   "prob": 0.687,
    "projection": 1.237,
-   "score": 0.661,
-   "side": "under",
+   "score": 0.656,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909901": {
@@ -368,7 +344,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T18:12+00:00",
+  "seen": "2026-10-31T18:25+00:00",
   "start": "2026-11-01T00:00Z"
  }
 }
