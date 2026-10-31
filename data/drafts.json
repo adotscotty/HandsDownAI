@@ -1,22 +1,9 @@
 {
  "bet|2026-10-31|parlay": {
   "bet": {
-   "chance": 0.223,
+   "chance": 0.2316,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.57,
-     "event_id": "401859185",
-     "game": "ND @ NAVY",
-     "line": 30.5,
-     "odds": -102,
-     "side": "home",
-     "sport": "cfb",
-     "start": "2026-10-31T16:00Z",
-     "team": "NAVY",
-     "team_name": "NAVY",
-     "type": "spread"
-    },
     {
      "chance": 0.625,
      "event_id": "401856847",
@@ -28,6 +15,19 @@
      "start": "2026-10-31T23:00Z",
      "team": "ISU",
      "team_name": "ISU",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5920000000000001,
+     "event_id": "401856737",
+     "game": "MSST @ TEX",
+     "line": 20.5,
+     "odds": -108,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-10-31T23:30Z",
+     "team": "MSST",
+     "team_name": "MSST",
      "type": "spread"
     },
     {
@@ -44,13 +44,13 @@
      "type": "spread"
     }
    ],
-   "payout": 142.61,
-   "price": 613,
-   "projected_profit": 11.8,
-   "start": "2026-10-31T16:00Z"
+   "payout": 138.69,
+   "price": 593,
+   "projected_profit": 12.12,
+   "start": "2026-10-31T23:00Z"
   },
-  "seen": "2026-10-31T11:08+00:00",
-  "start": "2026-10-31T16:00Z"
+  "seen": "2026-10-31T11:14+00:00",
+  "start": "2026-10-31T23:00Z"
  },
  "bet|2026-10-31|prop": {
   "bet": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.17,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 3.41,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.21,
    "start": "2026-10-31T18:00Z"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-10-31T18:00Z"
  },
  "parlay|2026-10-30|cfb": {
@@ -256,7 +256,7 @@
  "parlay|2026-10-31|cfb": {
   "card": {
    "three": {
-    "chance": 0.21089999999999998,
+    "chance": 0.2109,
     "legs": [
      {
       "chance": 0.57,
@@ -270,17 +270,6 @@
       "team": "NAVY"
      },
      {
-      "chance": 0.592,
-      "event_id": "401862816",
-      "game": "UAB @ USF",
-      "line": -7.5,
-      "odds": -112,
-      "side": "home",
-      "sport": "cfb",
-      "start": "2026-10-31T16:00Z",
-      "team": "USF"
-     },
-     {
       "chance": 0.625,
       "event_id": "401856847",
       "game": "OKST @ ISU",
@@ -290,25 +279,25 @@
       "sport": "cfb",
       "start": "2026-10-31T23:00Z",
       "team": "ISU"
+     },
+     {
+      "chance": 0.5920000000000001,
+      "event_id": "401856737",
+      "game": "MSST @ TEX",
+      "line": 20.5,
+      "odds": -108,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-10-31T23:30Z",
+      "team": "MSST"
      }
     ],
-    "payout": 144.39049693951657,
-    "projected_profit": 10.451955804544042
+    "payout": 146.91304230883026,
+    "projected_profit": 10.983960622932301
    },
    "two": {
-    "chance": 0.35624999999999996,
+    "chance": 0.37000000000000005,
     "legs": [
-     {
-      "chance": 0.57,
-      "event_id": "401859185",
-      "game": "ND @ NAVY",
-      "line": 30.5,
-      "odds": -102,
-      "side": "home",
-      "sport": "cfb",
-      "start": "2026-10-31T16:00Z",
-      "team": "NAVY"
-     },
      {
       "chance": 0.625,
       "event_id": "401856847",
@@ -319,13 +308,24 @@
       "sport": "cfb",
       "start": "2026-10-31T23:00Z",
       "team": "ISU"
+     },
+     {
+      "chance": 0.5920000000000001,
+      "event_id": "401856737",
+      "game": "MSST @ TEX",
+      "line": 20.5,
+      "odds": -108,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-10-31T23:30Z",
+      "team": "MSST"
      }
     ],
-    "payout": 76.28177196804648,
-    "projected_profit": 7.175381263616558
+    "payout": 74.18381344307271,
+    "projected_profit": 7.448010973936906
    }
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-31|nba": {
@@ -400,7 +400,7 @@
     "projected_profit": 3.683584189723323
    }
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -424,7 +424,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
@@ -448,7 +448,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -472,7 +472,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909901": {
@@ -496,7 +496,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909902": {
@@ -520,7 +520,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T11:08+00:00",
+  "seen": "2026-10-31T11:14+00:00",
   "start": "2026-11-01T00:30Z"
  }
 }
