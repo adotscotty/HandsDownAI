@@ -26,7 +26,7 @@
    "projected_profit": -1.19,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 3.41,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -122,135 +122,60 @@
    "projected_profit": 0.06,
    "start": "2026-10-31T19:00Z"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-10-31T19:00Z"
- },
- "parlay|2026-10-30|cfb": {
-  "card": {
-   "three": {
-    "chance": 0.21756000000000003,
-    "legs": [
-     {
-      "chance": 0.592,
-      "event_id": "401862816",
-      "game": "UAB @ USF",
-      "line": -7.5,
-      "odds": -112,
-      "side": "home",
-      "sport": "cfb",
-      "start": "2026-10-31T16:00Z",
-      "team": "USF"
-     },
-     {
-      "chance": 0.5880000000000001,
-      "event_id": "401856846",
-      "game": "KSU @ COLO",
-      "line": 3.0,
-      "odds": -112,
-      "side": "away",
-      "sport": "cfb",
-      "start": "2026-10-31T18:00Z",
-      "team": "KSU"
-     },
-     {
-      "chance": 0.625,
-      "event_id": "401856847",
-      "game": "OKST @ ISU",
-      "line": 9.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "cfb",
-      "start": "2026-10-31T23:00Z",
-      "team": "ISU"
-     }
-    ],
-    "payout": 138.00831443688585,
-    "projected_profit": 10.025088888888892
-   },
-   "two": {
-    "chance": 0.37,
-    "legs": [
-     {
-      "chance": 0.592,
-      "event_id": "401862816",
-      "game": "UAB @ USF",
-      "line": -7.5,
-      "odds": -112,
-      "side": "home",
-      "sport": "cfb",
-      "start": "2026-10-31T16:00Z",
-      "team": "USF"
-     },
-     {
-      "chance": 0.625,
-      "event_id": "401856847",
-      "game": "OKST @ ISU",
-      "line": 9.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "cfb",
-      "start": "2026-10-31T23:00Z",
-      "team": "ISU"
-     }
-    ],
-    "payout": 72.91005291005291,
-    "projected_profit": 6.976719576719578
-   }
-  },
-  "seen": "2026-10-31T03:50+00:00",
-  "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-31|nba": {
   "card": {
    "three": {
-    "chance": 0.18377356800000003,
+    "chance": 0.17675736,
     "legs": [
      {
-      "chance": 0.556,
+      "chance": 0.543,
       "event_id": "401909896",
       "game": "POR @ UTAH",
-      "line": 8.5,
-      "odds": -110,
+      "line": 7.5,
+      "odds": -102,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T19:00Z",
       "team": "UTAH"
      },
      {
-      "chance": 0.528,
-      "event_id": "401909897",
-      "game": "PHI @ CHA",
-      "line": 1.5,
+      "chance": 0.626,
+      "event_id": "401909901",
+      "game": "MIN @ SA",
+      "line": 12.5,
+      "odds": -115,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-01T00:00Z",
+      "team": "MIN"
+     },
+     {
+      "chance": 0.52,
+      "event_id": "401909900",
+      "game": "CLE @ MIL",
+      "line": 9.5,
       "odds": -108,
       "side": "home",
       "sport": "nba",
-      "start": "2026-10-31T22:00Z",
-      "team": "CHA"
-     },
-     {
-      "chance": 0.626,
-      "event_id": "401909901",
-      "game": "MIN @ SA",
-      "line": 12.5,
-      "odds": -115,
-      "side": "away",
-      "sport": "nba",
       "start": "2026-11-01T00:00Z",
-      "team": "MIN"
+      "team": "MIL"
      }
     ],
-    "payout": 137.47913921826967,
-    "projected_profit": 5.265031939710152
+    "payout": 142.61374759243472,
+    "projected_profit": 5.208029524145118
    },
    "two": {
-    "chance": 0.34805600000000003,
+    "chance": 0.339918,
     "legs": [
      {
-      "chance": 0.556,
+      "chance": 0.543,
       "event_id": "401909896",
       "game": "POR @ UTAH",
-      "line": 8.5,
-      "odds": -110,
+      "line": 7.5,
+      "odds": -102,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T19:00Z",
@@ -268,11 +193,11 @@
       "team": "MIN"
      }
     ],
-    "payout": 71.38339920948617,
-    "projected_profit": 4.8454203952569195
+    "payout": 74.04944586530264,
+    "projected_profit": 5.170739539641943
    }
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -296,7 +221,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
@@ -320,7 +245,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -344,7 +269,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909901": {
@@ -368,7 +293,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909902": {
@@ -392,7 +317,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T15:58+00:00",
+  "seen": "2026-10-31T16:11+00:00",
   "start": "2026-11-01T00:30Z"
  }
 }
