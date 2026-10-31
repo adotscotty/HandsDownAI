@@ -11,7 +11,7 @@
      "label": "threes",
      "line": 0.5,
      "name": "Precious Achiuwa",
-     "odds": -270,
+     "odds": -269,
      "pid": "4431679",
      "projection": 0.248,
      "side": "under",
@@ -21,17 +21,17 @@
      "type": "prop"
     }
    ],
-   "payout": 27.41,
-   "price": -270,
-   "projected_profit": -1.2,
+   "payout": 27.43,
+   "price": -269,
+   "projected_profit": -1.18,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T23:17+00:00",
+  "seen": "2026-10-31T23:29+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
   "bet": {
-   "chance": 0.4054,
+   "chance": 0.4017,
    "kind": "sgp",
    "legs": [
     {
@@ -39,7 +39,7 @@
      "event_id": "401909901",
      "game": "MIN @ SA",
      "line": 12.5,
-     "odds": -110,
+     "odds": -105,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-01T00:00Z",
@@ -48,28 +48,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.655,
+     "chance": 0.649,
      "event_id": "401909901",
      "game": "MIN @ SA",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Dylan Harper",
-     "odds": -230,
+     "odds": -224,
      "pid": "5037871",
      "projection": 1.335,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-01T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 54.78,
-   "price": 174,
-   "projected_profit": 2.21,
+   "payout": 56.48,
+   "price": 182,
+   "projected_profit": 2.69,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T23:17+00:00",
+  "seen": "2026-10-31T23:29+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -82,7 +82,7 @@
      "event_id": "401909901",
      "game": "MIN @ SA",
      "line": 12.5,
-     "odds": -110,
+     "odds": -105,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-01T00:00Z",
@@ -91,12 +91,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 3.63,
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 4.17,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T23:17+00:00",
+  "seen": "2026-10-31T23:29+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -171,7 +171,7 @@
     "projected_profit": 2.3242057142857178
    }
   },
-  "seen": "2026-10-31T23:17+00:00",
+  "seen": "2026-10-31T23:29+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909899": {
@@ -188,14 +188,14 @@
    "market_prob": 0.686,
    "name": "Precious Achiuwa",
    "pid": "4431679",
-   "price": "-270",
+   "price": "-269",
    "prob": 0.649,
    "projection": 0.248,
    "score": 0.686,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T23:17+00:00",
+  "seen": "2026-10-31T23:29+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -219,31 +219,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T23:17+00:00",
-  "start": "2026-11-01T00:00Z"
- },
- "prop|nba|401909901": {
-  "game": {
-   "date": "2026-11-01T00:00Z",
-   "event_id": "401909901",
-   "name": "Minnesota Timberwolves at San Antonio Spurs",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.136,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-230",
-   "prob": 0.602,
-   "projection": 1.335,
-   "score": 0.655,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-31T23:17+00:00",
+  "seen": "2026-10-31T23:29+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909902": {
@@ -254,20 +230,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.067,
+   "ev": -0.017,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
-   "name": "Tari Eason",
-   "pid": "4433192",
-   "price": "-234",
-   "prob": 0.654,
-   "projection": 0.939,
-   "score": 0.657,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.656,
+   "name": "Kenrich Williams",
+   "pid": "3133626",
+   "price": "-231",
+   "prob": 0.686,
+   "projection": 0.869,
+   "score": 0.656,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T23:17+00:00",
+  "seen": "2026-10-31T23:29+00:00",
   "start": "2026-11-01T00:30Z"
  }
 }
