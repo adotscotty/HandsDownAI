@@ -26,12 +26,12 @@
    "projected_profit": -1.18,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
   "bet": {
-   "chance": 0.4094,
+   "chance": 0.4144,
    "kind": "sgp",
    "legs": [
     {
@@ -48,28 +48,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.654,
+     "chance": 0.662,
      "event_id": "401909901",
      "game": "MIN @ SA",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Dylan Harper",
-     "odds": -229,
+     "odds": -238,
      "pid": "5037871",
      "projection": 1.335,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-01T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 53.72,
-   "price": 169,
-   "projected_profit": 1.99,
+   "payout": 53.1,
+   "price": 166,
+   "projected_profit": 2.01,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 3.41,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.06,
    "start": "2026-10-31T19:00Z"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "parlay|2026-10-31|nba": {
@@ -135,7 +135,7 @@
       "event_id": "401909896",
       "game": "POR @ UTAH",
       "line": 7.5,
-      "odds": -102,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T19:00Z",
@@ -164,8 +164,8 @@
       "team": "MIL"
      }
     ],
-    "payout": 142.61374759243472,
-    "projected_profit": 5.208029524145118
+    "payout": 138.69147730661422,
+    "projected_profit": 4.514739383217041
    },
    "two": {
     "chance": 0.339918,
@@ -175,7 +175,7 @@
       "event_id": "401909896",
       "game": "POR @ UTAH",
       "line": 7.5,
-      "odds": -102,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T19:00Z",
@@ -193,11 +193,11 @@
       "team": "MIN"
      }
     ],
-    "payout": 74.04944586530264,
-    "projected_profit": 5.170739539641943
+    "payout": 72.01288244766506,
+    "projected_profit": 4.478474975845412
    }
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -221,7 +221,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
@@ -245,7 +245,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -269,7 +269,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909901": {
@@ -280,20 +280,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.135,
+   "ev": -0.006,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.654,
+   "line": 0.5,
+   "market_prob": 0.662,
    "name": "Dylan Harper",
    "pid": "5037871",
-   "price": "-229",
-   "prob": 0.602,
+   "price": "-238",
+   "prob": 0.7,
    "projection": 1.335,
-   "score": 0.654,
-   "side": "under",
+   "score": 0.662,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909902": {
@@ -317,7 +317,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T16:42+00:00",
+  "seen": "2026-10-31T16:55+00:00",
   "start": "2026-11-01T00:30Z"
  }
 }
