@@ -49,22 +49,22 @@
    "projected_profit": 12.12,
    "start": "2026-10-31T23:00Z"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-10-31T23:00Z"
  },
  "bet|2026-10-31|prop": {
   "bet": {
-   "chance": 0.689,
+   "chance": 0.679,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.689,
+     "chance": 0.679,
      "event_id": "401909899",
      "game": "SAC @ MEM",
      "label": "threes",
      "line": 0.5,
      "name": "Precious Achiuwa",
-     "odds": -273,
+     "odds": -260,
      "pid": "4431679",
      "projection": 0.248,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 27.33,
-   "price": -273,
-   "projected_profit": -1.17,
+   "payout": 27.69,
+   "price": -260,
+   "projected_profit": -1.2,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 3.41,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.21,
    "start": "2026-10-31T18:00Z"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-10-31T18:00Z"
  },
  "parlay|2026-10-30|cfb": {
@@ -325,20 +325,20 @@
     "projected_profit": 7.448010973936906
    }
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-31|nba": {
   "card": {
    "three": {
-    "chance": 0.17119848000000001,
+    "chance": 0.175397688,
     "legs": [
      {
-      "chance": 0.53,
+      "chance": 0.543,
       "event_id": "401909896",
       "game": "POR @ UTAH",
-      "line": 6.5,
-      "odds": -110,
+      "line": 7.5,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T19:00Z",
@@ -367,18 +367,18 @@
       "team": "OKC"
      }
     ],
-    "payout": 137.47913921826967,
-    "projected_profit": 3.536219665876157
+    "payout": 136.31009891879458,
+    "projected_profit": 3.9084762014078684
    },
    "two": {
-    "chance": 0.33178,
+    "chance": 0.339918,
     "legs": [
      {
-      "chance": 0.53,
+      "chance": 0.543,
       "event_id": "401909896",
       "game": "POR @ UTAH",
-      "line": 6.5,
-      "odds": -110,
+      "line": 7.5,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T19:00Z",
@@ -396,11 +396,11 @@
       "team": "MIN"
      }
     ],
-    "payout": 71.38339920948617,
-    "projected_profit": 3.683584189723323
+    "payout": 70.77639751552795,
+    "projected_profit": 4.058171490683229
    }
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -424,7 +424,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
@@ -435,20 +435,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.112,
+   "ev": -0.106,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.689,
+   "market_prob": 0.679,
    "name": "Precious Achiuwa",
    "pid": "4431679",
-   "price": "-273",
-   "prob": 0.65,
+   "price": "-260",
+   "prob": 0.646,
    "projection": 0.248,
-   "score": 0.689,
+   "score": 0.679,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -472,7 +472,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909901": {
@@ -496,7 +496,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909902": {
@@ -520,7 +520,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T12:15+00:00",
+  "seen": "2026-10-31T12:31+00:00",
   "start": "2026-11-01T00:30Z"
  }
 }
