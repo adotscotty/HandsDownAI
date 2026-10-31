@@ -49,38 +49,38 @@
    "projected_profit": 12.52,
    "start": "2026-10-31T16:00Z"
   },
-  "seen": "2026-10-31T04:51+00:00",
+  "seen": "2026-10-31T05:04+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "bet|2026-10-31|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.68,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
-     "event_id": "401909896",
-     "game": "POR @ UTAH",
+     "chance": 0.68,
+     "event_id": "401909899",
+     "game": "SAC @ MEM",
      "label": "threes",
-     "line": 1.5,
-     "name": "Donovan Clingan",
-     "odds": -238,
-     "pid": "5105565",
-     "projection": 1.218,
+     "line": 0.5,
+     "name": "Precious Achiuwa",
+     "odds": -261,
+     "pid": "4431679",
+     "projection": 0.248,
      "side": "under",
      "sport": "nba",
-     "start": "2026-10-31T19:00Z",
+     "start": "2026-11-01T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.2,
-   "start": "2026-10-31T19:00Z"
+   "payout": 27.66,
+   "price": -261,
+   "projected_profit": -1.19,
+   "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T04:51+00:00",
-  "start": "2026-10-31T19:00Z"
+  "seen": "2026-10-31T05:04+00:00",
+  "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 3.94,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T04:51+00:00",
+  "seen": "2026-10-31T05:04+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.21,
    "start": "2026-10-31T18:00Z"
   },
-  "seen": "2026-10-31T04:51+00:00",
+  "seen": "2026-10-31T05:04+00:00",
   "start": "2026-10-31T18:00Z"
  },
  "parlay|2026-10-30|cfb": {
@@ -282,7 +282,7 @@
     "projected_profit": 7.175381263616558
    }
   },
-  "seen": "2026-10-31T04:51+00:00",
+  "seen": "2026-10-31T05:04+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-31|nba": {
@@ -357,7 +357,7 @@
     "projected_profit": 4.630339999999997
    }
   },
-  "seen": "2026-10-31T04:51+00:00",
+  "seen": "2026-10-31T05:04+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -381,7 +381,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T04:51+00:00",
+  "seen": "2026-10-31T05:04+00:00",
   "start": "2026-10-31T19:00Z"
+ },
+ "prop|nba|401909899": {
+  "game": {
+   "date": "2026-11-01T00:00Z",
+   "event_id": "401909899",
+   "name": "Sacramento Kings at Memphis Grizzlies",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.106,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.68,
+   "name": "Precious Achiuwa",
+   "pid": "4431679",
+   "price": "-261",
+   "prob": 0.646,
+   "projection": 0.248,
+   "score": 0.68,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-31T05:04+00:00",
+  "start": "2026-11-01T00:00Z"
  }
 }
