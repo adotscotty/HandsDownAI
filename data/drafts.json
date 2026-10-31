@@ -71,7 +71,7 @@
     "projected_profit": 2.3242057142857178
    }
   },
-  "seen": "2026-10-31T23:41+00:00",
+  "seen": "2026-10-31T23:54+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909902": {
@@ -82,20 +82,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.023,
+   "ev": -0.017,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.663,
+   "market_prob": 0.655,
    "name": "Kenrich Williams",
    "pid": "3133626",
-   "price": "-240",
-   "prob": 0.69,
+   "price": "-230",
+   "prob": 0.685,
    "projection": 0.869,
-   "score": 0.663,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T23:41+00:00",
+  "seen": "2026-10-31T23:54+00:00",
   "start": "2026-11-01T00:30Z"
  }
 }
