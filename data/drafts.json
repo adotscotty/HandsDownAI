@@ -71,7 +71,31 @@
     "projected_profit": 6.976719576719578
    }
   },
-  "seen": "2026-10-31T02:12+00:00",
+  "seen": "2026-10-31T02:37+00:00",
   "start": "2026-10-31T16:00Z"
+ },
+ "prop|nba|401909896": {
+  "game": {
+   "date": "2026-10-31T19:00Z",
+   "event_id": "401909896",
+   "name": "Portland Trail Blazers at Utah Jazz",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.019,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.657,
+   "name": "Donovan Clingan",
+   "pid": "5105565",
+   "price": "-232",
+   "prob": 0.686,
+   "projection": 1.218,
+   "score": 0.657,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-31T02:37+00:00",
+  "start": "2026-10-31T19:00Z"
  }
 }
