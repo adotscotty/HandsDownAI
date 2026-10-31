@@ -26,12 +26,12 @@
    "projected_profit": -1.18,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
   "bet": {
-   "chance": 0.4144,
+   "chance": 0.4138,
    "kind": "sgp",
    "legs": [
     {
@@ -48,28 +48,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.662,
+     "chance": 0.661,
      "event_id": "401909901",
      "game": "MIN @ SA",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Dylan Harper",
-     "odds": -238,
+     "odds": -237,
      "pid": "5037871",
      "projection": 1.335,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-01T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 53.1,
+   "payout": 53.17,
    "price": 166,
-   "projected_profit": 2.01,
+   "projected_profit": 2.0,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 3.41,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.06,
    "start": "2026-10-31T19:00Z"
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "parlay|2026-10-31|nba": {
@@ -146,7 +146,7 @@
       "event_id": "401909897",
       "game": "PHI @ CHA",
       "line": 1.5,
-      "odds": -112,
+      "odds": -120,
       "side": "home",
       "sport": "nba",
       "start": "2026-10-31T22:00Z",
@@ -164,22 +164,22 @@
       "team": "MIN"
      }
     ],
-    "payout": 136.31009891879458,
-    "projected_profit": 6.178854755417529
+    "payout": 132.0236178207193,
+    "projected_profit": 5.355620329146539
    },
    "two": {
-    "chance": 0.35368999999999995,
+    "chance": 0.339918,
     "legs": [
      {
-      "chance": 0.565,
-      "event_id": "401909897",
-      "game": "PHI @ CHA",
-      "line": 1.5,
-      "odds": -112,
+      "chance": 0.543,
+      "event_id": "401909896",
+      "game": "POR @ UTAH",
+      "line": 7.5,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
-      "start": "2026-10-31T22:00Z",
-      "team": "CHA"
+      "start": "2026-10-31T19:00Z",
+      "team": "UTAH"
      },
      {
       "chance": 0.626,
@@ -193,11 +193,11 @@
       "team": "MIN"
      }
     ],
-    "payout": 70.77639751552795,
-    "projected_profit": 5.032904037267077
+    "payout": 72.01288244766506,
+    "projected_profit": 4.478474975845412
    }
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -221,7 +221,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
@@ -245,7 +245,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -269,7 +269,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T17:07+00:00",
+  "seen": "2026-10-31T17:20+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909901": {
@@ -280,44 +280,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.006,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.662,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-238",
-   "prob": 0.7,
-   "projection": 1.335,
-   "score": 0.662,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-31T17:07+00:00",
-  "start": "2026-11-01T00:00Z"
- },
- "prop|nba|401909902": {
-  "game": {
-   "date": "2026-11-01T00:30Z",
-   "event_id": "401909902",
-   "name": "Oklahoma City Thunder at Houston Rockets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.017,
+   "ev": -0.139,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Kenrich Williams",
-   "pid": "3133626",
-   "price": "-230",
-   "prob": 0.685,
-   "projection": 0.869,
-   "score": 0.655,
+   "market_prob": 0.661,
+   "name": "Dylan Harper",
+   "pid": "5037871",
+   "price": "-237",
+   "prob": 0.605,
+   "projection": 1.335,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T17:07+00:00",
-  "start": "2026-11-01T00:30Z"
+  "seen": "2026-10-31T17:20+00:00",
+  "start": "2026-11-01T00:00Z"
  }
 }
