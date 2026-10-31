@@ -26,7 +26,7 @@
    "projected_profit": -1.18,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T18:25+00:00",
+  "seen": "2026-10-31T18:38+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": 2.35,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T18:25+00:00",
+  "seen": "2026-10-31T18:38+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -96,109 +96,8 @@
    "projected_profit": 3.79,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T18:25+00:00",
+  "seen": "2026-10-31T18:38+00:00",
   "start": "2026-11-01T00:00Z"
- },
- "bet|2026-10-31|winner": {
-  "bet": {
-   "chance": 0.651,
-   "kind": "winner",
-   "legs": [
-    {
-     "chance": 0.651,
-     "event_id": "401862815",
-     "game": "TEM @ ECU",
-     "odds": -185,
-     "side": "home",
-     "sport": "cfb",
-     "start": "2026-10-31T19:00Z",
-     "team": "ECU",
-     "team_name": "East Carolina Pirates",
-     "type": "ml"
-    }
-   ],
-   "payout": 30.81,
-   "price": -185,
-   "projected_profit": 0.06,
-   "start": "2026-10-31T19:00Z"
-  },
-  "seen": "2026-10-31T18:25+00:00",
-  "start": "2026-10-31T19:00Z"
- },
- "parlay|2026-10-31|nba": {
-  "card": {
-   "three": {
-    "chance": 0.18972530499999998,
-    "legs": [
-     {
-      "chance": 0.539,
-      "event_id": "401909896",
-      "game": "POR @ UTAH",
-      "line": 6.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T19:00Z",
-      "team": "UTAH"
-     },
-     {
-      "chance": 0.565,
-      "event_id": "401909897",
-      "game": "PHI @ CHA",
-      "line": 1.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T22:00Z",
-      "team": "CHA"
-     },
-     {
-      "chance": 0.623,
-      "event_id": "401909901",
-      "game": "MIN @ SA",
-      "line": 12.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-01T00:00Z",
-      "team": "MIN"
-     }
-    ],
-    "payout": 139.36758893280634,
-    "projected_profit": 6.441558317391305
-   },
-   "two": {
-    "chance": 0.35199499999999995,
-    "legs": [
-     {
-      "chance": 0.565,
-      "event_id": "401909897",
-      "game": "PHI @ CHA",
-      "line": 1.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-10-31T22:00Z",
-      "team": "CHA"
-     },
-     {
-      "chance": 0.623,
-      "event_id": "401909901",
-      "game": "MIN @ SA",
-      "line": 12.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-01T00:00Z",
-      "team": "MIN"
-     }
-    ],
-    "payout": 71.38339920948617,
-    "projected_profit": 5.126599604743081
-   }
-  },
-  "seen": "2026-10-31T18:25+00:00",
-  "start": "2026-10-31T19:00Z"
  },
  "parlay|2026-10-31|nfl": {
   "card": {
@@ -272,7 +171,7 @@
     "projected_profit": 2.3242057142857178
    }
   },
-  "seen": "2026-10-31T18:25+00:00",
+  "seen": "2026-10-31T18:38+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909899": {
@@ -296,7 +195,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T18:25+00:00",
+  "seen": "2026-10-31T18:38+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -307,20 +206,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.016,
+   "ev": -0.021,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.656,
+   "market_prob": 0.662,
    "name": "Mario Hezonja",
    "pid": "2995706",
-   "price": "-232",
-   "prob": 0.687,
+   "price": "-239",
+   "prob": 0.69,
    "projection": 1.237,
-   "score": 0.656,
+   "score": 0.662,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T18:25+00:00",
+  "seen": "2026-10-31T18:38+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909901": {
@@ -344,7 +243,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T18:25+00:00",
+  "seen": "2026-10-31T18:38+00:00",
   "start": "2026-11-01T00:00Z"
  }
 }
