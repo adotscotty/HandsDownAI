@@ -26,12 +26,12 @@
    "projected_profit": -1.18,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T19:06+00:00",
+  "seen": "2026-10-31T19:19+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|sgp": {
   "bet": {
-   "chance": 0.4113,
+   "chance": 0.4044,
    "kind": "sgp",
    "legs": [
     {
@@ -48,13 +48,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.655,
+     "chance": 0.644,
      "event_id": "401909901",
      "game": "MIN @ SA",
      "label": "threes",
      "line": 1.5,
      "name": "Dylan Harper",
-     "odds": -230,
+     "odds": -219,
      "pid": "5037871",
      "projection": 1.335,
      "side": "under",
@@ -64,12 +64,12 @@
      "type": "prop"
     }
    ],
-   "payout": 54.78,
-   "price": 174,
-   "projected_profit": 2.53,
+   "payout": 55.62,
+   "price": 178,
+   "projected_profit": 2.49,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T19:06+00:00",
+  "seen": "2026-10-31T19:19+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 3.98,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T19:06+00:00",
+  "seen": "2026-10-31T19:19+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -171,7 +171,7 @@
     "projected_profit": 2.3242057142857178
    }
   },
-  "seen": "2026-10-31T19:06+00:00",
+  "seen": "2026-10-31T19:19+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909899": {
@@ -195,7 +195,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T19:06+00:00",
+  "seen": "2026-10-31T19:19+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "prop|nba|401909900": {
@@ -219,31 +219,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T19:06+00:00",
-  "start": "2026-11-01T00:00Z"
- },
- "prop|nba|401909901": {
-  "game": {
-   "date": "2026-11-01T00:00Z",
-   "event_id": "401909901",
-   "name": "Minnesota Timberwolves at San Antonio Spurs",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.136,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-230",
-   "prob": 0.602,
-   "projection": 1.335,
-   "score": 0.655,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-31T19:06+00:00",
+  "seen": "2026-10-31T19:19+00:00",
   "start": "2026-11-01T00:00Z"
  }
 }
