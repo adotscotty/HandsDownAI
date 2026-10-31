@@ -71,7 +71,7 @@
     "projected_profit": 6.976719576719578
    }
   },
-  "seen": "2026-10-31T00:12+00:00",
+  "seen": "2026-10-31T00:24+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "prop|nba|401909285": {
@@ -82,20 +82,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.106,
+   "ev": 0.002,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.659,
-   "name": "Sandro Mamukelashvili",
-   "pid": "4278580",
-   "price": "-235",
-   "prob": 0.627,
-   "projection": 1.194,
-   "score": 0.659,
-   "side": "under",
+   "line": 0.5,
+   "market_prob": 0.661,
+   "name": "Al Horford",
+   "pid": "3213",
+   "price": "-238",
+   "prob": 0.705,
+   "projection": 1.401,
+   "score": 0.661,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T00:12+00:00",
+  "seen": "2026-10-31T00:24+00:00",
   "start": "2026-10-31T02:00Z"
  }
 }
