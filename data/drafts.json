@@ -1,7 +1,7 @@
 {
  "bet|2026-10-31|parlay": {
   "bet": {
-   "chance": 0.2184,
+   "chance": 0.223,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.613,
+     "chance": 0.626,
      "event_id": "401909901",
      "game": "MIN @ SA",
-     "line": 11.5,
-     "odds": -105,
+     "line": 12.5,
+     "odds": -115,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-01T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 148.93,
-   "price": 645,
-   "projected_profit": 12.52,
+   "payout": 142.61,
+   "price": 613,
+   "projected_profit": 11.8,
    "start": "2026-10-31T16:00Z"
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "bet|2026-10-31|prop": {
@@ -79,20 +79,20 @@
    "projected_profit": -1.19,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
   "bet": {
-   "chance": 0.613,
+   "chance": 0.626,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.613,
+     "chance": 0.626,
      "event_id": "401909901",
      "game": "MIN @ SA",
-     "line": 11.5,
-     "odds": -105,
+     "line": 12.5,
+     "odds": -115,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-01T00:00Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 3.94,
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 3.41,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.21,
    "start": "2026-10-31T18:00Z"
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-10-31T18:00Z"
  },
  "parlay|2026-10-30|cfb": {
@@ -282,13 +282,13 @@
     "projected_profit": 7.175381263616558
    }
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-31|nba": {
   "card": {
    "three": {
-    "chance": 0.17511570999999998,
+    "chance": 0.17551162,
     "legs": [
      {
       "chance": 0.53,
@@ -302,18 +302,18 @@
       "team": "UTAH"
      },
      {
-      "chance": 0.613,
+      "chance": 0.626,
       "event_id": "401909901",
       "game": "MIN @ SA",
-      "line": 11.5,
-      "odds": -105,
+      "line": 12.5,
+      "odds": -115,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-01T00:00Z",
       "team": "MIN"
      },
      {
-      "chance": 0.5389999999999999,
+      "chance": 0.529,
       "event_id": "401909902",
       "game": "OKC @ HOU",
       "line": 4.5,
@@ -324,40 +324,40 @@
       "team": "OKC"
      }
     ],
-    "payout": 142.31404958677686,
-    "projected_profit": 4.921425836363635
+    "payout": 136.27739849083724,
+    "projected_profit": 3.918266978512399
    },
    "two": {
-    "chance": 0.33040699999999995,
+    "chance": 0.33178,
     "legs": [
      {
-      "chance": 0.613,
+      "chance": 0.53,
+      "event_id": "401909896",
+      "game": "POR @ UTAH",
+      "line": 6.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-10-31T19:00Z",
+      "team": "UTAH"
+     },
+     {
+      "chance": 0.626,
       "event_id": "401909901",
       "game": "MIN @ SA",
-      "line": 11.5,
-      "odds": -105,
+      "line": 12.5,
+      "odds": -115,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-01T00:00Z",
       "team": "MIN"
-     },
-     {
-      "chance": 0.5389999999999999,
-      "event_id": "401909902",
-      "game": "OKC @ HOU",
-      "line": 4.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-01T00:30Z",
-      "team": "OKC"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 4.630339999999997
+    "payout": 71.38339920948617,
+    "projected_profit": 3.683584189723323
    }
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -381,7 +381,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
@@ -405,7 +405,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T05:04+00:00",
+  "seen": "2026-10-31T05:17+00:00",
   "start": "2026-11-01T00:00Z"
  }
 }
