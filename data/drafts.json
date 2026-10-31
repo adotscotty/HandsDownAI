@@ -49,7 +49,7 @@
    "projected_profit": 11.8,
    "start": "2026-10-31T16:00Z"
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "bet|2026-10-31|prop": {
@@ -79,7 +79,50 @@
    "projected_profit": -1.19,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
+  "start": "2026-11-01T00:00Z"
+ },
+ "bet|2026-10-31|sgp": {
+  "bet": {
+   "chance": 0.4075,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.626,
+     "event_id": "401909901",
+     "game": "MIN @ SA",
+     "line": 12.5,
+     "odds": -115,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-01T00:00Z",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
+     "type": "spread"
+    },
+    {
+     "chance": 0.651,
+     "event_id": "401909901",
+     "game": "MIN @ SA",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Dylan Harper",
+     "odds": -226,
+     "pid": "5037871",
+     "projection": 1.335,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-01T00:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 53.94,
+   "price": 170,
+   "projected_profit": 1.98,
+   "start": "2026-11-01T00:00Z"
+  },
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|spread": {
@@ -106,7 +149,7 @@
    "projected_profit": 3.41,
    "start": "2026-11-01T00:00Z"
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-11-01T00:00Z"
  },
  "bet|2026-10-31|winner": {
@@ -132,7 +175,7 @@
    "projected_profit": 0.21,
    "start": "2026-10-31T18:00Z"
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-10-31T18:00Z"
  },
  "parlay|2026-10-30|cfb": {
@@ -282,7 +325,7 @@
     "projected_profit": 7.175381263616558
    }
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "parlay|2026-10-31|nba": {
@@ -357,7 +400,7 @@
     "projected_profit": 3.683584189723323
    }
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909896": {
@@ -381,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-10-31T19:00Z"
  },
  "prop|nba|401909899": {
@@ -405,7 +448,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T06:09+00:00",
+  "seen": "2026-10-31T06:22+00:00",
+  "start": "2026-11-01T00:00Z"
+ },
+ "prop|nba|401909901": {
+  "game": {
+   "date": "2026-11-01T00:00Z",
+   "event_id": "401909901",
+   "name": "Minnesota Timberwolves at San Antonio Spurs",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.134,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.651,
+   "name": "Dylan Harper",
+   "pid": "5037871",
+   "price": "-226",
+   "prob": 0.601,
+   "projection": 1.335,
+   "score": 0.651,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-10-31T06:22+00:00",
   "start": "2026-11-01T00:00Z"
  }
 }
