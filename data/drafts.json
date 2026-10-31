@@ -71,7 +71,7 @@
     "projected_profit": 6.976719576719578
    }
   },
-  "seen": "2026-10-31T02:37+00:00",
+  "seen": "2026-10-31T02:50+00:00",
   "start": "2026-10-31T16:00Z"
  },
  "prop|nba|401909896": {
@@ -82,20 +82,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.019,
+   "ev": -0.111,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
+   "line": 1.5,
+   "market_prob": 0.659,
    "name": "Donovan Clingan",
    "pid": "5105565",
-   "price": "-232",
-   "prob": 0.686,
+   "price": "-235",
+   "prob": 0.623,
    "projection": 1.218,
-   "score": 0.657,
-   "side": "over",
+   "score": 0.659,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-10-31T02:37+00:00",
+  "seen": "2026-10-31T02:50+00:00",
   "start": "2026-10-31T19:00Z"
  }
 }
