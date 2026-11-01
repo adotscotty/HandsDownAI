@@ -49,38 +49,38 @@
    "projected_profit": 4.59,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T14:19+00:00",
+  "seen": "2026-11-01T14:32+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.665,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
-     "event_id": "401909903",
-     "game": "BOS @ ORL",
+     "chance": 0.665,
+     "event_id": "401909905",
+     "game": "LAC @ GS",
      "label": "threes",
-     "line": 1.5,
-     "name": "Jase Richardson",
-     "odds": -239,
-     "pid": "5239561",
-     "projection": 0.843,
-     "side": "under",
+     "line": 0.5,
+     "name": "Gui Santos",
+     "odds": -242,
+     "pid": "4997536",
+     "projection": 1.078,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-01T20:30Z",
+     "start": "2026-11-02T01:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
-   "start": "2026-11-01T20:30Z"
+   "payout": 28.26,
+   "price": -242,
+   "projected_profit": -1.2,
+   "start": "2026-11-02T01:30Z"
   },
-  "seen": "2026-11-01T14:19+00:00",
-  "start": "2026-11-01T20:30Z"
+  "seen": "2026-11-01T14:32+00:00",
+  "start": "2026-11-02T01:30Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -106,34 +106,34 @@
    "projected_profit": 1.65,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T14:19+00:00",
+  "seen": "2026-11-01T14:32+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
   "bet": {
-   "chance": 0.639,
+   "chance": 0.655,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.639,
-     "event_id": "401909904",
-     "game": "BKN @ IND",
-     "odds": -170,
+     "chance": 0.655,
+     "event_id": "401873027",
+     "game": "CLE @ PIT",
+     "odds": -185,
      "side": "home",
-     "sport": "nba",
-     "start": "2026-11-01T22:00Z",
-     "team": "IND",
-     "team_name": "Indiana Pacers",
+     "sport": "nfl",
+     "start": "2026-11-01T18:00Z",
+     "team": "PIT",
+     "team_name": "Pittsburgh Steelers",
      "type": "ml"
     }
    ],
-   "payout": 31.76,
-   "price": -170,
-   "projected_profit": 0.3,
-   "start": "2026-11-01T22:00Z"
+   "payout": 30.81,
+   "price": -185,
+   "projected_profit": 0.18,
+   "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T14:19+00:00",
-  "start": "2026-11-01T22:00Z"
+  "seen": "2026-11-01T14:32+00:00",
+  "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-10-31|nfl": {
   "card": {
@@ -242,7 +242,7 @@
     "projected_profit": 0.9751527272727287
    }
   },
-  "seen": "2026-11-01T14:19+00:00",
+  "seen": "2026-11-01T14:32+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.473245714285717
    }
   },
-  "seen": "2026-11-01T14:19+00:00",
+  "seen": "2026-11-01T14:32+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -328,45 +328,21 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.015,
+   "ev": -0.008,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.662,
+   "market_prob": 0.653,
    "name": "Jase Richardson",
    "pid": "5239561",
-   "price": "-239",
-   "prob": 0.694,
+   "price": "-228",
+   "prob": 0.69,
    "projection": 0.843,
-   "score": 0.662,
+   "score": 0.653,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T14:19+00:00",
+  "seen": "2026-11-01T14:32+00:00",
   "start": "2026-11-01T20:30Z"
- },
- "prop|nba|401909904": {
-  "game": {
-   "date": "2026-11-01T22:00Z",
-   "event_id": "401909904",
-   "name": "Brooklyn Nets at Indiana Pacers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.03,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.656,
-   "name": "Kelly Oubre Jr.",
-   "pid": "3133603",
-   "price": "-231",
-   "prob": 0.677,
-   "projection": 0.914,
-   "score": 0.656,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-01T14:19+00:00",
-  "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
   "game": {
@@ -376,20 +352,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.032,
+   "ev": -0.047,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.66,
-   "name": "Kris Dunn",
-   "pid": "2991139",
-   "price": "-236",
-   "prob": 0.68,
-   "projection": 0.91,
-   "score": 0.66,
-   "side": "under",
+   "line": 0.5,
+   "market_prob": 0.665,
+   "name": "Gui Santos",
+   "pid": "4997536",
+   "price": "-242",
+   "prob": 0.674,
+   "projection": 1.078,
+   "score": 0.665,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T14:19+00:00",
+  "seen": "2026-11-01T14:32+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -403,17 +379,17 @@
    "ev": -0.075,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.651,
+   "market_prob": 0.652,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-227",
-   "prob": 0.642,
+   "price": "-228",
+   "prob": 0.643,
    "projection": 1.089,
-   "score": 0.651,
+   "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T14:19+00:00",
+  "seen": "2026-11-01T14:32+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
