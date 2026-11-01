@@ -71,7 +71,7 @@
     "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T03:38+00:00",
+  "seen": "2026-11-01T03:59+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -95,7 +95,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T03:38+00:00",
+  "seen": "2026-11-01T03:59+00:00",
   "start": "2026-11-01T20:30Z"
+ },
+ "prop|nba|401909904": {
+  "game": {
+   "date": "2026-11-01T22:00Z",
+   "event_id": "401909904",
+   "name": "Brooklyn Nets at Indiana Pacers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.071,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.657,
+   "name": "Kelly Oubre Jr.",
+   "pid": "3133603",
+   "price": "-233",
+   "prob": 0.65,
+   "projection": 0.914,
+   "score": 0.657,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-01T03:59+00:00",
+  "start": "2026-11-01T22:00Z"
  }
 }
