@@ -26,51 +26,8 @@
    "projected_profit": -1.21,
    "start": "2026-11-02T01:30Z"
   },
-  "seen": "2026-11-01T20:02+00:00",
+  "seen": "2026-11-01T20:15+00:00",
   "start": "2026-11-02T01:30Z"
- },
- "bet|2026-11-01|sgp": {
-  "bet": {
-   "chance": 0.3619,
-   "kind": "sgp",
-   "legs": [
-    {
-     "chance": 0.555,
-     "event_id": "401909903",
-     "game": "BOS @ ORL",
-     "line": 7.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-01T20:30Z",
-     "team": "ORL",
-     "team_name": "Orlando Magic",
-     "type": "spread"
-    },
-    {
-     "chance": 0.652,
-     "event_id": "401909903",
-     "game": "BOS @ ORL",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Jase Richardson",
-     "odds": -227,
-     "pid": "5239561",
-     "projection": 0.843,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-01T20:30Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 55.49,
-   "price": 177,
-   "projected_profit": 0.08,
-   "start": "2026-11-01T20:30Z"
-  },
-  "seen": "2026-11-01T20:02+00:00",
-  "start": "2026-11-01T20:30Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -96,7 +53,7 @@
    "projected_profit": 1.72,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T20:02+00:00",
+  "seen": "2026-11-01T20:15+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -122,67 +79,8 @@
    "projected_profit": 0.3,
    "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T20:02+00:00",
+  "seen": "2026-11-01T20:15+00:00",
   "start": "2026-11-01T22:00Z"
- },
- "parlay|2026-11-01|nba": {
-  "card": {
-   "two": {
-    "chance": 0.29026500000000005,
-    "legs": [
-     {
-      "chance": 0.555,
-      "event_id": "401909903",
-      "game": "BOS @ ORL",
-      "line": 7.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-01T20:30Z",
-      "team": "ORL"
-     },
-     {
-      "chance": 0.523,
-      "event_id": "401909906",
-      "game": "TOR @ LAL",
-      "line": 2.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-02T02:00Z",
-      "team": "TOR"
-     }
-    ],
-    "payout": 75.20282186948853,
-    "projected_profit": 1.8287470899470932
-   }
-  },
-  "seen": "2026-11-01T20:02+00:00",
-  "start": "2026-11-01T20:30Z"
- },
- "prop|nba|401909903": {
-  "game": {
-   "date": "2026-11-01T20:30Z",
-   "event_id": "401909903",
-   "name": "Boston Celtics at Orlando Magic",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.007,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Jase Richardson",
-   "pid": "5239561",
-   "price": "-227",
-   "prob": 0.689,
-   "projection": 0.843,
-   "score": 0.652,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-01T20:02+00:00",
-  "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909905": {
   "game": {
@@ -205,7 +103,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T20:02+00:00",
+  "seen": "2026-11-01T20:15+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -216,20 +114,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.177,
+   "ev": 0.025,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.653,
+   "line": 0.5,
+   "market_prob": 0.652,
    "name": "Collin Sexton",
    "pid": "4277811",
-   "price": "-228",
-   "prob": 0.572,
+   "price": "-227",
+   "prob": 0.712,
    "projection": 1.531,
-   "score": 0.653,
-   "side": "under",
+   "score": 0.652,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T20:02+00:00",
+  "seen": "2026-11-01T20:15+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
