@@ -49,7 +49,7 @@
    "projected_profit": 4.59,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
@@ -64,7 +64,7 @@
      "label": "threes",
      "line": 1.5,
      "name": "Jase Richardson",
-     "odds": -238,
+     "odds": -239,
      "pid": "5239561",
      "projection": 0.843,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.2,
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.22,
    "start": "2026-11-01T20:30Z"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "bet|2026-11-01|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.65,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.52,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.205242828282831
    }
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.473245714285717
    }
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -328,20 +328,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.014,
+   "ev": -0.015,
    "label": "threes",
    "line": 1.5,
    "market_prob": 0.662,
    "name": "Jase Richardson",
    "pid": "5239561",
-   "price": "-238",
+   "price": "-239",
    "prob": 0.694,
    "projection": 0.843,
    "score": 0.662,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909904": {
@@ -365,7 +365,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
@@ -389,7 +389,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -400,20 +400,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.178,
+   "ev": 0.014,
    "label": "threes",
    "line": 1.5,
    "market_prob": 0.654,
-   "name": "Collin Sexton",
-   "pid": "4277811",
+   "name": "Scottie Barnes",
+   "pid": "4433134",
    "price": "-229",
-   "prob": 0.572,
-   "projection": 1.531,
+   "prob": 0.706,
+   "projection": 0.764,
    "score": 0.654,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:33+00:00",
+  "seen": "2026-11-01T13:46+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
