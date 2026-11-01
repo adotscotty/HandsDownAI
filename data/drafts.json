@@ -49,38 +49,38 @@
    "projected_profit": 4.47,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.66,
+   "chance": 0.667,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.66,
-     "event_id": "401909905",
-     "game": "LAC @ GS",
+     "chance": 0.667,
+     "event_id": "401909904",
+     "game": "BKN @ IND",
      "label": "threes",
      "line": 0.5,
-     "name": "Kris Dunn",
-     "odds": -236,
-     "pid": "2991139",
-     "projection": 0.91,
+     "name": "Kelly Oubre Jr.",
+     "odds": -244,
+     "pid": "3133603",
+     "projection": 0.914,
      "side": "over",
      "sport": "nba",
-     "start": "2026-11-02T01:30Z",
+     "start": "2026-11-01T22:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.47,
-   "price": -236,
-   "projected_profit": -1.21,
-   "start": "2026-11-02T01:30Z"
+   "payout": 28.2,
+   "price": -244,
+   "projected_profit": -1.19,
+   "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T07:55+00:00",
-  "start": "2026-11-02T01:30Z"
+  "seen": "2026-11-01T08:19+00:00",
+  "start": "2026-11-01T22:00Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.53,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.52,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.346617272727272
    }
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -341,8 +341,32 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-01T20:30Z"
+ },
+ "prop|nba|401909904": {
+  "game": {
+   "date": "2026-11-01T22:00Z",
+   "event_id": "401909904",
+   "name": "Brooklyn Nets at Indiana Pacers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.077,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.667,
+   "name": "Kelly Oubre Jr.",
+   "pid": "3133603",
+   "price": "-244",
+   "prob": 0.655,
+   "projection": 0.914,
+   "score": 0.667,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-01T08:19+00:00",
+  "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
   "game": {
@@ -352,20 +376,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.073,
+   "ev": -0.035,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.66,
+   "line": 1.5,
+   "market_prob": 0.664,
    "name": "Kris Dunn",
    "pid": "2991139",
-   "price": "-236",
-   "prob": 0.651,
+   "price": "-241",
+   "prob": 0.682,
    "projection": 0.91,
-   "score": 0.66,
-   "side": "over",
+   "score": 0.664,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -376,20 +400,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.076,
+   "ev": -0.081,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.661,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-230",
-   "prob": 0.644,
+   "price": "-238",
+   "prob": 0.647,
    "projection": 1.089,
-   "score": 0.655,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T07:55+00:00",
+  "seen": "2026-11-01T08:19+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
