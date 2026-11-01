@@ -1,7 +1,7 @@
 {
  "bet|2026-11-01|parlay": {
   "bet": {
-   "chance": 0.1702,
+   "chance": 0.1687,
    "kind": "parlay",
    "legs": [
     {
@@ -18,6 +18,19 @@
      "type": "spread"
     },
     {
+     "chance": 0.544,
+     "event_id": "401873031",
+     "game": "TEN @ CIN",
+     "line": 12.5,
+     "odds": -108,
+     "side": "away",
+     "sport": "nfl",
+     "start": "2026-11-01T18:00Z",
+     "team": "TEN",
+     "team_name": "TEN",
+     "type": "spread"
+    },
+    {
      "chance": 0.5720000000000001,
      "event_id": "401873035",
      "game": "PHI @ WSH",
@@ -29,27 +42,14 @@
      "team": "PHI",
      "team_name": "PHI",
      "type": "spread"
-    },
-    {
-     "chance": 0.5489999999999999,
-     "event_id": "401909906",
-     "game": "TOR @ LAL",
-     "line": 4.5,
-     "odds": -108,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-02T02:00Z",
-     "team": "TOR",
-     "team_name": "TOR",
-     "type": "spread"
     }
    ],
    "payout": 145.82,
    "price": 629,
-   "projected_profit": 4.82,
+   "projected_profit": 4.59,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-01T20:30Z"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "bet|2026-11-01|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.65,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.52,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -213,7 +213,7 @@
  "parlay|2026-11-01|nba": {
   "card": {
    "two": {
-    "chance": 0.29536199999999996,
+    "chance": 0.288368,
     "legs": [
      {
       "chance": 0.538,
@@ -227,10 +227,10 @@
       "team": "ORL"
      },
      {
-      "chance": 0.5489999999999999,
+      "chance": 0.536,
       "event_id": "401909906",
       "game": "TOR @ LAL",
-      "line": 4.5,
+      "line": 3.5,
       "odds": -108,
       "side": "away",
       "sport": "nba",
@@ -239,10 +239,10 @@
      }
     ],
     "payout": 73.53535353535354,
-    "projected_profit": 1.7195490909090871
+    "projected_profit": 1.205242828282831
    }
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.473245714285717
    }
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -341,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909904": {
@@ -365,7 +365,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
@@ -376,20 +376,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.042,
+   "ev": -0.043,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.659,
+   "market_prob": 0.66,
    "name": "Gui Santos",
    "pid": "4997536",
-   "price": "-235",
+   "price": "-236",
    "prob": 0.672,
    "projection": 1.078,
-   "score": 0.659,
+   "score": 0.66,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -413,7 +413,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T13:20+00:00",
+  "seen": "2026-11-01T13:33+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
