@@ -49,38 +49,38 @@
    "projected_profit": 4.59,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909905",
-     "game": "LAC @ GS",
+     "chance": 0.662,
+     "event_id": "401909903",
+     "game": "BOS @ ORL",
      "label": "threes",
-     "line": 0.5,
-     "name": "Kris Dunn",
-     "odds": -235,
-     "pid": "2991139",
-     "projection": 0.91,
-     "side": "over",
+     "line": 1.5,
+     "name": "Jase Richardson",
+     "odds": -239,
+     "pid": "5239561",
+     "projection": 0.843,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-02T01:30Z",
+     "start": "2026-11-01T20:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
-   "start": "2026-11-02T01:30Z"
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.22,
+   "start": "2026-11-01T20:30Z"
   },
-  "seen": "2026-11-01T14:07+00:00",
-  "start": "2026-11-02T01:30Z"
+  "seen": "2026-11-01T14:19+00:00",
+  "start": "2026-11-01T20:30Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -106,34 +106,34 @@
    "projected_profit": 1.65,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
   "bet": {
-   "chance": 0.646,
+   "chance": 0.639,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.646,
-     "event_id": "401873026",
-     "game": "BAL @ BUF",
+     "chance": 0.639,
+     "event_id": "401909904",
+     "game": "BKN @ IND",
      "odds": -170,
      "side": "home",
-     "sport": "nfl",
-     "start": "2026-11-01T18:00Z",
-     "team": "BUF",
-     "team_name": "Buffalo Bills",
+     "sport": "nba",
+     "start": "2026-11-01T22:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
      "type": "ml"
     }
    ],
    "payout": 31.76,
    "price": -170,
-   "projected_profit": 0.52,
-   "start": "2026-11-01T18:00Z"
+   "projected_profit": 0.3,
+   "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T14:07+00:00",
-  "start": "2026-11-01T18:00Z"
+  "seen": "2026-11-01T14:19+00:00",
+  "start": "2026-11-01T22:00Z"
  },
  "parlay|2026-10-31|nfl": {
   "card": {
@@ -231,18 +231,18 @@
       "event_id": "401909906",
       "game": "TOR @ LAL",
       "line": 2.5,
-      "odds": 100,
+      "odds": -105,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-02T02:00Z",
       "team": "TOR"
      }
     ],
-    "payout": 76.36363636363637,
-    "projected_profit": 1.486741818181823
+    "payout": 74.54545454545455,
+    "projected_profit": 0.9751527272727287
    }
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.473245714285717
    }
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -328,20 +328,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.008,
+   "ev": -0.015,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.651,
+   "market_prob": 0.662,
    "name": "Jase Richardson",
    "pid": "5239561",
-   "price": "-227",
-   "prob": 0.689,
+   "price": "-239",
+   "prob": 0.694,
    "projection": 0.843,
-   "score": 0.651,
+   "score": 0.662,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909904": {
@@ -365,7 +365,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
@@ -376,20 +376,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.072,
+   "ev": -0.032,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.659,
+   "line": 1.5,
+   "market_prob": 0.66,
    "name": "Kris Dunn",
    "pid": "2991139",
-   "price": "-235",
-   "prob": 0.651,
+   "price": "-236",
+   "prob": 0.68,
    "projection": 0.91,
-   "score": 0.659,
-   "side": "over",
+   "score": 0.66,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -413,7 +413,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T14:07+00:00",
+  "seen": "2026-11-01T14:19+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
