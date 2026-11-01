@@ -5,6 +5,19 @@
    "kind": "parlay",
    "legs": [
     {
+     "chance": 0.56,
+     "event_id": "401873031",
+     "game": "TEN @ CIN",
+     "line": 13.5,
+     "odds": -105,
+     "side": "away",
+     "sport": "nfl",
+     "start": "2026-11-01T18:00Z",
+     "team": "TEN",
+     "team_name": "TEN",
+     "type": "spread"
+    },
+    {
      "chance": 0.542,
      "event_id": "401873030",
      "game": "MIN @ DET",
@@ -15,19 +28,6 @@
      "start": "2026-11-01T18:00Z",
      "team": "MIN",
      "team_name": "MIN",
-     "type": "spread"
-    },
-    {
-     "chance": 0.56,
-     "event_id": "401873031",
-     "game": "TEN @ CIN",
-     "line": 13.5,
-     "odds": -112,
-     "side": "away",
-     "sport": "nfl",
-     "start": "2026-11-01T18:00Z",
-     "team": "TEN",
-     "team_name": "TEN",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 145.82,
-   "price": 629,
-   "projected_profit": 4.96,
+   "payout": 150.41,
+   "price": 652,
+   "projected_profit": 5.75,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T16:58+00:00",
+  "seen": "2026-11-01T17:14+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
@@ -59,28 +59,28 @@
    "legs": [
     {
      "chance": 0.661,
-     "event_id": "401909905",
-     "game": "LAC @ GS",
+     "event_id": "401909903",
+     "game": "BOS @ ORL",
      "label": "threes",
-     "line": 0.5,
-     "name": "Gui Santos",
-     "odds": -238,
-     "pid": "4997536",
-     "projection": 1.078,
-     "side": "over",
+     "line": 1.5,
+     "name": "Jase Richardson",
+     "odds": -237,
+     "pid": "5239561",
+     "projection": 0.843,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-02T01:30Z",
+     "start": "2026-11-01T20:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
-   "start": "2026-11-02T01:30Z"
+   "payout": 28.44,
+   "price": -237,
+   "projected_profit": -1.2,
+   "start": "2026-11-01T20:30Z"
   },
-  "seen": "2026-11-01T16:58+00:00",
-  "start": "2026-11-02T01:30Z"
+  "seen": "2026-11-01T17:14+00:00",
+  "start": "2026-11-01T20:30Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.72,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T16:58+00:00",
+  "seen": "2026-11-01T17:14+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.3,
    "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T16:58+00:00",
+  "seen": "2026-11-01T17:14+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.1899459627329207
    }
   },
-  "seen": "2026-11-01T16:58+00:00",
+  "seen": "2026-11-01T17:14+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -250,6 +250,17 @@
    "three": {
     "chance": 0.17118528000000005,
     "legs": [
+     {
+      "chance": 0.56,
+      "event_id": "401873031",
+      "game": "TEN @ CIN",
+      "line": 13.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "nfl",
+      "start": "2026-11-01T18:00Z",
+      "team": "TEN"
+     },
      {
       "chance": 0.542,
       "event_id": "401873030",
@@ -262,11 +273,29 @@
       "team": "MIN"
      },
      {
+      "chance": 0.5640000000000001,
+      "event_id": "401873035",
+      "game": "PHI @ WSH",
+      "line": 6.0,
+      "odds": -108,
+      "side": "away",
+      "sport": "nfl",
+      "start": "2026-11-02T01:20Z",
+      "team": "PHI"
+     }
+    ],
+    "payout": 150.40564373897706,
+    "projected_profit": 5.747232237037043
+   },
+   "two": {
+    "chance": 0.31584000000000007,
+    "legs": [
+     {
       "chance": 0.56,
       "event_id": "401873031",
       "game": "TEN @ CIN",
       "line": 13.5,
-      "odds": -112,
+      "odds": -105,
       "side": "away",
       "sport": "nfl",
       "start": "2026-11-01T18:00Z",
@@ -284,40 +313,11 @@
       "team": "PHI"
      }
     ],
-    "payout": 145.82010582010582,
-    "projected_profit": 4.962255644444454
-   },
-   "two": {
-    "chance": 0.30568800000000007,
-    "legs": [
-     {
-      "chance": 0.542,
-      "event_id": "401873030",
-      "game": "MIN @ DET",
-      "line": 3.0,
-      "odds": 100,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-01T18:00Z",
-      "team": "MIN"
-     },
-     {
-      "chance": 0.5640000000000001,
-      "event_id": "401873035",
-      "game": "PHI @ WSH",
-      "line": 6.0,
-      "odds": -108,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-02T01:20Z",
-      "team": "PHI"
-     }
-    ],
-    "payout": 77.03703703703704,
-    "projected_profit": 3.5492977777777845
+    "payout": 75.20282186948853,
+    "projected_profit": 3.752059259259262
    }
   },
-  "seen": "2026-11-01T16:58+00:00",
+  "seen": "2026-11-01T17:14+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -328,20 +328,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.008,
+   "ev": -0.014,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.653,
+   "market_prob": 0.661,
    "name": "Jase Richardson",
    "pid": "5239561",
-   "price": "-228",
-   "prob": 0.69,
+   "price": "-237",
+   "prob": 0.694,
    "projection": 0.843,
-   "score": 0.653,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T16:58+00:00",
+  "seen": "2026-11-01T17:14+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909905": {
@@ -365,31 +365,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T16:58+00:00",
+  "seen": "2026-11-01T17:14+00:00",
   "start": "2026-11-02T01:30Z"
- },
- "prop|nba|401909906": {
-  "game": {
-   "date": "2026-11-02T02:00Z",
-   "event_id": "401909906",
-   "name": "Toronto Raptors at Los Angeles Lakers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.103,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.659,
-   "name": "Scottie Barnes",
-   "pid": "4433134",
-   "price": "-235",
-   "prob": 0.629,
-   "projection": 0.764,
-   "score": 0.659,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-01T16:58+00:00",
-  "start": "2026-11-02T02:00Z"
  }
 }
