@@ -26,7 +26,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-01T20:30Z"
   },
-  "seen": "2026-11-01T17:58+00:00",
+  "seen": "2026-11-01T18:10+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "bet|2026-11-01|spread": {
@@ -53,7 +53,7 @@
    "projected_profit": 1.72,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T17:58+00:00",
+  "seen": "2026-11-01T18:10+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -79,83 +79,8 @@
    "projected_profit": 0.3,
    "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T17:58+00:00",
+  "seen": "2026-11-01T18:10+00:00",
   "start": "2026-11-01T22:00Z"
- },
- "parlay|2026-10-31|nfl": {
-  "card": {
-   "three": {
-    "chance": 0.16629427200000005,
-    "legs": [
-     {
-      "chance": 0.542,
-      "event_id": "401873030",
-      "game": "MIN @ DET",
-      "line": 3.0,
-      "odds": 100,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-01T18:00Z",
-      "team": "MIN"
-     },
-     {
-      "chance": 0.544,
-      "event_id": "401873031",
-      "game": "TEN @ CIN",
-      "line": 12.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-01T18:00Z",
-      "team": "TEN"
-     },
-     {
-      "chance": 0.5640000000000001,
-      "event_id": "401873035",
-      "game": "PHI @ WSH",
-      "line": 6.0,
-      "odds": -110,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-02T01:20Z",
-      "team": "PHI"
-     }
-    ],
-    "payout": 144.54545454545456,
-    "projected_profit": 4.037081134545463
-   },
-   "two": {
-    "chance": 0.30568800000000007,
-    "legs": [
-     {
-      "chance": 0.542,
-      "event_id": "401873030",
-      "game": "MIN @ DET",
-      "line": 3.0,
-      "odds": 100,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-01T18:00Z",
-      "team": "MIN"
-     },
-     {
-      "chance": 0.5640000000000001,
-      "event_id": "401873035",
-      "game": "PHI @ WSH",
-      "line": 6.0,
-      "odds": -110,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-02T01:20Z",
-      "team": "PHI"
-     }
-    ],
-    "payout": 76.36363636363637,
-    "projected_profit": 3.343447272727282
-   }
-  },
-  "seen": "2026-11-01T03:59+00:00",
-  "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-11-01|nba": {
   "card": {
@@ -189,7 +114,7 @@
     "projected_profit": 1.1899459627329207
    }
   },
-  "seen": "2026-11-01T17:58+00:00",
+  "seen": "2026-11-01T18:10+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909903": {
@@ -213,7 +138,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T17:58+00:00",
+  "seen": "2026-11-01T18:10+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909905": {
@@ -237,7 +162,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T17:58+00:00",
+  "seen": "2026-11-01T18:10+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -248,20 +173,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.179,
+   "ev": 0.023,
    "label": "threes",
-   "line": 1.5,
+   "line": 0.5,
    "market_prob": 0.656,
    "name": "Collin Sexton",
    "pid": "4277811",
-   "price": "-232",
-   "prob": 0.574,
+   "price": "-231",
+   "prob": 0.714,
    "projection": 1.531,
    "score": 0.656,
-   "side": "under",
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T17:58+00:00",
+  "seen": "2026-11-01T18:10+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
