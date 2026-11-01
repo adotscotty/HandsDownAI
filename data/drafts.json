@@ -2,7 +2,7 @@
  "parlay|2026-10-31|nfl": {
   "card": {
    "three": {
-    "chance": 0.16039731200000004,
+    "chance": 0.16629427200000005,
     "legs": [
      {
       "chance": 0.542,
@@ -27,22 +27,22 @@
       "team": "TEN"
      },
      {
-      "chance": 0.544,
-      "event_id": "401873033",
-      "game": "KC @ DEN",
-      "line": 1.5,
-      "odds": -115,
-      "side": "home",
+      "chance": 0.5640000000000001,
+      "event_id": "401873035",
+      "game": "PHI @ WSH",
+      "line": 6.0,
+      "odds": -110,
+      "side": "away",
       "sport": "nfl",
-      "start": "2026-11-01T21:25Z",
-      "team": "DEN"
+      "start": "2026-11-02T01:20Z",
+      "team": "PHI"
      }
     ],
-    "payout": 141.55279503105587,
-    "projected_profit": 2.704687829068323
+    "payout": 144.54545454545456,
+    "projected_profit": 4.037081134545463
    },
    "two": {
-    "chance": 0.29484800000000005,
+    "chance": 0.30568800000000007,
     "legs": [
      {
       "chance": 0.542,
@@ -56,22 +56,22 @@
       "team": "MIN"
      },
      {
-      "chance": 0.544,
-      "event_id": "401873031",
-      "game": "TEN @ CIN",
-      "line": 12.5,
-      "odds": -112,
+      "chance": 0.5640000000000001,
+      "event_id": "401873035",
+      "game": "PHI @ WSH",
+      "line": 6.0,
+      "odds": -110,
       "side": "away",
       "sport": "nfl",
-      "start": "2026-11-01T18:00Z",
-      "team": "TEN"
+      "start": "2026-11-02T01:20Z",
+      "team": "PHI"
      }
     ],
-    "payout": 75.71428571428571,
-    "projected_profit": 2.3242057142857178
+    "payout": 76.36363636363637,
+    "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T01:18+00:00",
+  "seen": "2026-11-01T01:31+00:00",
   "start": "2026-11-01T18:00Z"
  }
 }
