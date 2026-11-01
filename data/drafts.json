@@ -71,31 +71,7 @@
     "projected_profit": 2.3242057142857178
    }
   },
-  "seen": "2026-10-31T23:54+00:00",
+  "seen": "2026-11-01T00:08+00:00",
   "start": "2026-11-01T18:00Z"
- },
- "prop|nba|401909902": {
-  "game": {
-   "date": "2026-11-01T00:30Z",
-   "event_id": "401909902",
-   "name": "Oklahoma City Thunder at Houston Rockets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.017,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Kenrich Williams",
-   "pid": "3133626",
-   "price": "-230",
-   "prob": 0.685,
-   "projection": 0.869,
-   "score": 0.655,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-10-31T23:54+00:00",
-  "start": "2026-11-01T00:30Z"
  }
 }
