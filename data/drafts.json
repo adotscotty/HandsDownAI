@@ -1,17 +1,17 @@
 {
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.655,
+   "chance": 0.659,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.655,
+     "chance": 0.659,
      "event_id": "401909905",
      "game": "LAC @ GS",
      "label": "threes",
      "line": 0.5,
      "name": "Gui Santos",
-     "odds": -230,
+     "odds": -235,
      "pid": "4997536",
      "projection": 1.078,
      "side": "over",
@@ -21,12 +21,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.7,
-   "price": -230,
-   "projected_profit": -1.2,
+   "payout": 28.51,
+   "price": -235,
+   "projected_profit": -1.21,
    "start": "2026-11-02T01:30Z"
   },
-  "seen": "2026-11-01T23:38+00:00",
+  "seen": "2026-11-01T23:50+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "bet|2026-11-01|spread": {
@@ -53,7 +53,7 @@
    "projected_profit": 1.72,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T23:38+00:00",
+  "seen": "2026-11-01T23:50+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "prop|nba|401909905": {
@@ -64,20 +64,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.039,
+   "ev": -0.042,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
+   "market_prob": 0.659,
    "name": "Gui Santos",
    "pid": "4997536",
-   "price": "-230",
-   "prob": 0.669,
+   "price": "-235",
+   "prob": 0.672,
    "projection": 1.078,
-   "score": 0.655,
+   "score": 0.659,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T23:38+00:00",
+  "seen": "2026-11-01T23:50+00:00",
   "start": "2026-11-02T01:30Z"
  }
 }
