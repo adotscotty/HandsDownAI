@@ -49,38 +49,38 @@
    "projected_profit": 4.47,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T07:30+00:00",
+  "seen": "2026-11-01T07:42+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.66,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
-     "event_id": "401909903",
-     "game": "BOS @ ORL",
+     "chance": 0.66,
+     "event_id": "401909905",
+     "game": "LAC @ GS",
      "label": "threes",
-     "line": 1.5,
-     "name": "Jase Richardson",
-     "odds": -234,
-     "pid": "5239561",
-     "projection": 0.843,
-     "side": "under",
+     "line": 0.5,
+     "name": "Kris Dunn",
+     "odds": -236,
+     "pid": "2991139",
+     "projection": 0.91,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-01T20:30Z",
+     "start": "2026-11-02T01:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.24,
-   "start": "2026-11-01T20:30Z"
+   "payout": 28.47,
+   "price": -236,
+   "projected_profit": -1.21,
+   "start": "2026-11-02T01:30Z"
   },
-  "seen": "2026-11-01T07:30+00:00",
-  "start": "2026-11-01T20:30Z"
+  "seen": "2026-11-01T07:42+00:00",
+  "start": "2026-11-02T01:30Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -106,34 +106,34 @@
    "projected_profit": 1.53,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T07:30+00:00",
+  "seen": "2026-11-01T07:42+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.646,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.657,
-     "event_id": "401909904",
-     "game": "BKN @ IND",
-     "odds": -175,
+     "chance": 0.646,
+     "event_id": "401873026",
+     "game": "BAL @ BUF",
+     "odds": -170,
      "side": "home",
-     "sport": "nba",
-     "start": "2026-11-01T22:00Z",
-     "team": "IND",
-     "team_name": "Indiana Pacers",
+     "sport": "nfl",
+     "start": "2026-11-01T18:00Z",
+     "team": "BUF",
+     "team_name": "Buffalo Bills",
      "type": "ml"
     }
    ],
-   "payout": 31.43,
-   "price": -175,
-   "projected_profit": 0.65,
-   "start": "2026-11-01T22:00Z"
+   "payout": 31.76,
+   "price": -170,
+   "projected_profit": 0.52,
+   "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T07:30+00:00",
-  "start": "2026-11-01T22:00Z"
+  "seen": "2026-11-01T07:42+00:00",
+  "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-10-31|nfl": {
   "card": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.346617272727272
    }
   },
-  "seen": "2026-11-01T07:30+00:00",
+  "seen": "2026-11-01T07:42+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T07:30+00:00",
+  "seen": "2026-11-01T07:42+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -341,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T07:30+00:00",
+  "seen": "2026-11-01T07:42+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909905": {
@@ -352,20 +352,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.069,
+   "ev": -0.073,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.654,
+   "market_prob": 0.66,
    "name": "Kris Dunn",
    "pid": "2991139",
-   "price": "-229",
-   "prob": 0.648,
+   "price": "-236",
+   "prob": 0.651,
    "projection": 0.91,
-   "score": 0.654,
+   "score": 0.66,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T07:30+00:00",
+  "seen": "2026-11-01T07:42+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -379,17 +379,17 @@
    "ev": -0.076,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.654,
+   "market_prob": 0.655,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-229",
-   "prob": 0.643,
+   "price": "-230",
+   "prob": 0.644,
    "projection": 1.089,
-   "score": 0.654,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T07:30+00:00",
+  "seen": "2026-11-01T07:42+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
