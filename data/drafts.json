@@ -49,38 +49,38 @@
    "projected_profit": 4.47,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.663,
+   "chance": 0.657,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.663,
-     "event_id": "401909905",
-     "game": "LAC @ GS",
+     "chance": 0.657,
+     "event_id": "401909903",
+     "game": "BOS @ ORL",
      "label": "threes",
-     "line": 0.5,
-     "name": "Kris Dunn",
-     "odds": -239,
-     "pid": "2991139",
-     "projection": 0.91,
-     "side": "over",
+     "line": 1.5,
+     "name": "Jase Richardson",
+     "odds": -234,
+     "pid": "5239561",
+     "projection": 0.843,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-02T01:30Z",
+     "start": "2026-11-01T20:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.19,
-   "start": "2026-11-02T01:30Z"
+   "payout": 28.55,
+   "price": -234,
+   "projected_profit": -1.24,
+   "start": "2026-11-01T20:30Z"
   },
-  "seen": "2026-11-01T06:47+00:00",
-  "start": "2026-11-02T01:30Z"
+  "seen": "2026-11-01T07:30+00:00",
+  "start": "2026-11-01T20:30Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.53,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.65,
    "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.346617272727272
    }
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -341,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909905": {
@@ -352,20 +352,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.074,
+   "ev": -0.069,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.663,
+   "market_prob": 0.654,
    "name": "Kris Dunn",
    "pid": "2991139",
-   "price": "-239",
-   "prob": 0.653,
+   "price": "-229",
+   "prob": 0.648,
    "projection": 0.91,
-   "score": 0.663,
+   "score": 0.654,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -389,7 +389,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T06:47+00:00",
+  "seen": "2026-11-01T07:30+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
