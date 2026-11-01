@@ -49,38 +49,38 @@
    "projected_profit": 4.47,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.66,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
-     "event_id": "401909905",
-     "game": "LAC @ GS",
+     "chance": 0.66,
+     "event_id": "401909904",
+     "game": "BKN @ IND",
      "label": "threes",
-     "line": 0.5,
-     "name": "Gui Santos",
-     "odds": -238,
-     "pid": "4997536",
-     "projection": 1.078,
-     "side": "over",
+     "line": 1.5,
+     "name": "Nolan Traore",
+     "odds": -236,
+     "pid": "5279130",
+     "projection": 1.062,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-02T01:30Z",
+     "start": "2026-11-01T22:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
-   "start": "2026-11-02T01:30Z"
+   "payout": 28.47,
+   "price": -236,
+   "projected_profit": -1.21,
+   "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T04:25+00:00",
-  "start": "2026-11-02T01:30Z"
+  "seen": "2026-11-01T04:46+00:00",
+  "start": "2026-11-01T22:00Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.53,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.65,
    "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.346617272727272
    }
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -341,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909904": {
@@ -352,20 +352,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.071,
+   "ev": -0.073,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
-   "name": "Kelly Oubre Jr.",
-   "pid": "3133603",
-   "price": "-233",
-   "prob": 0.65,
-   "projection": 0.914,
-   "score": 0.657,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.66,
+   "name": "Nolan Traore",
+   "pid": "5279130",
+   "price": "-236",
+   "prob": 0.651,
+   "projection": 1.062,
+   "score": 0.66,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
@@ -376,20 +376,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.045,
+   "ev": -0.037,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.661,
+   "market_prob": 0.651,
    "name": "Gui Santos",
    "pid": "4997536",
-   "price": "-238",
-   "prob": 0.673,
+   "price": "-226",
+   "prob": 0.668,
    "projection": 1.078,
-   "score": 0.661,
+   "score": 0.651,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T04:25+00:00",
+  "seen": "2026-11-01T04:46+00:00",
   "start": "2026-11-02T01:30Z"
  }
 }
