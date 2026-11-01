@@ -1,7 +1,7 @@
 {
  "bet|2026-11-01|parlay": {
   "bet": {
-   "chance": 0.1687,
+   "chance": 0.1712,
    "kind": "parlay",
    "legs": [
     {
@@ -18,11 +18,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.544,
+     "chance": 0.56,
      "event_id": "401873031",
      "game": "TEN @ CIN",
-     "line": 12.5,
-     "odds": -105,
+     "line": 13.5,
+     "odds": -112,
      "side": "away",
      "sport": "nfl",
      "start": "2026-11-01T18:00Z",
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.5720000000000001,
+     "chance": 0.5640000000000001,
      "event_id": "401873035",
      "game": "PHI @ WSH",
-     "line": 6.5,
-     "odds": -112,
+     "line": 6.0,
+     "odds": -108,
      "side": "away",
      "sport": "nfl",
      "start": "2026-11-02T01:20Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 147.82,
-   "price": 639,
-   "projected_profit": 4.93,
+   "payout": 145.82,
+   "price": 629,
+   "projected_profit": 4.96,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
@@ -64,7 +64,7 @@
      "label": "threes",
      "line": 0.5,
      "name": "Gui Santos",
-     "odds": -237,
+     "odds": -238,
      "pid": "4997536",
      "projection": 1.078,
      "side": "over",
@@ -74,25 +74,25 @@
      "type": "prop"
     }
    ],
-   "payout": 28.44,
-   "price": -237,
-   "projected_profit": -1.2,
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.23,
    "start": "2026-11-02T01:30Z"
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "bet|2026-11-01|spread": {
   "bet": {
-   "chance": 0.572,
+   "chance": 0.564,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.5720000000000001,
+     "chance": 0.5640000000000001,
      "event_id": "401873035",
      "game": "PHI @ WSH",
-     "line": 6.5,
-     "odds": -112,
+     "line": 6.0,
+     "odds": -108,
      "side": "away",
      "sport": "nfl",
      "start": "2026-11-02T01:20Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 37.86,
-   "price": -112,
-   "projected_profit": 1.65,
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 1.72,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.18,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -220,7 +220,7 @@
       "event_id": "401909903",
       "game": "BOS @ ORL",
       "line": 6.5,
-      "odds": -110,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-01T20:30Z",
@@ -238,17 +238,17 @@
       "team": "TOR"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 1.131101818181822
+    "payout": 76.23582766439908,
+    "projected_profit": 1.6102651247165554
    }
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
   "card": {
    "three": {
-    "chance": 0.16865305600000005,
+    "chance": 0.17118528000000005,
     "legs": [
      {
       "chance": 0.542,
@@ -262,33 +262,33 @@
       "team": "MIN"
      },
      {
-      "chance": 0.544,
+      "chance": 0.56,
       "event_id": "401873031",
       "game": "TEN @ CIN",
-      "line": 12.5,
-      "odds": -105,
+      "line": 13.5,
+      "odds": -112,
       "side": "away",
       "sport": "nfl",
       "start": "2026-11-01T18:00Z",
       "team": "TEN"
      },
      {
-      "chance": 0.5720000000000001,
+      "chance": 0.5640000000000001,
       "event_id": "401873035",
       "game": "PHI @ WSH",
-      "line": 6.5,
-      "odds": -112,
+      "line": 6.0,
+      "odds": -108,
       "side": "away",
       "sport": "nfl",
       "start": "2026-11-02T01:20Z",
       "team": "PHI"
      }
     ],
-    "payout": 147.82312925170066,
-    "projected_profit": 4.930822495782319
+    "payout": 145.82010582010582,
+    "projected_profit": 4.962255644444454
    },
    "two": {
-    "chance": 0.3100240000000001,
+    "chance": 0.30568800000000007,
     "legs": [
      {
       "chance": 0.542,
@@ -302,22 +302,22 @@
       "team": "MIN"
      },
      {
-      "chance": 0.5720000000000001,
+      "chance": 0.5640000000000001,
       "event_id": "401873035",
       "game": "PHI @ WSH",
-      "line": 6.5,
-      "odds": -112,
+      "line": 6.0,
+      "odds": -108,
       "side": "away",
       "sport": "nfl",
       "start": "2026-11-02T01:20Z",
       "team": "PHI"
      }
     ],
-    "payout": 75.71428571428571,
-    "projected_profit": 3.473245714285717
+    "payout": 77.03703703703704,
+    "projected_profit": 3.5492977777777845
    }
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -341,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909905": {
@@ -352,20 +352,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.044,
+   "ev": -0.045,
    "label": "threes",
    "line": 0.5,
    "market_prob": 0.661,
    "name": "Gui Santos",
    "pid": "4997536",
-   "price": "-237",
+   "price": "-238",
    "prob": 0.673,
    "projection": 1.078,
    "score": 0.661,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -376,20 +376,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.076,
+   "ev": -0.103,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.654,
-   "name": "Sandro Mamukelashvili",
-   "pid": "4278580",
-   "price": "-229",
-   "prob": 0.643,
-   "projection": 1.089,
-   "score": 0.654,
-   "side": "under",
+   "line": 0.5,
+   "market_prob": 0.659,
+   "name": "Scottie Barnes",
+   "pid": "4433134",
+   "price": "-235",
+   "prob": 0.629,
+   "projection": 0.764,
+   "score": 0.659,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T15:44+00:00",
+  "seen": "2026-11-01T15:59+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
