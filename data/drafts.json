@@ -1,4 +1,140 @@
 {
+ "bet|2026-11-01|parlay": {
+  "bet": {
+   "chance": 0.1678,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.542,
+     "event_id": "401873030",
+     "game": "MIN @ DET",
+     "line": 3.0,
+     "odds": 100,
+     "side": "away",
+     "sport": "nfl",
+     "start": "2026-11-01T18:00Z",
+     "team": "MIN",
+     "team_name": "MIN",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5640000000000001,
+     "event_id": "401873035",
+     "game": "PHI @ WSH",
+     "line": 6.0,
+     "odds": -110,
+     "side": "away",
+     "sport": "nfl",
+     "start": "2026-11-02T01:20Z",
+     "team": "PHI",
+     "team_name": "PHI",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5489999999999999,
+     "event_id": "401909906",
+     "game": "TOR @ LAL",
+     "line": 4.5,
+     "odds": -110,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-02T02:00Z",
+     "team": "TOR",
+     "team_name": "TOR",
+     "type": "spread"
+    }
+   ],
+   "payout": 145.79,
+   "price": 629,
+   "projected_profit": 4.47,
+   "start": "2026-11-01T18:00Z"
+  },
+  "seen": "2026-11-01T04:12+00:00",
+  "start": "2026-11-01T18:00Z"
+ },
+ "bet|2026-11-01|prop": {
+  "bet": {
+   "chance": 0.657,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.657,
+     "event_id": "401909904",
+     "game": "BKN @ IND",
+     "label": "threes",
+     "line": 0.5,
+     "name": "Kelly Oubre Jr.",
+     "odds": -233,
+     "pid": "3133603",
+     "projection": 0.914,
+     "side": "over",
+     "sport": "nba",
+     "start": "2026-11-01T22:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.58,
+   "price": -233,
+   "projected_profit": -1.22,
+   "start": "2026-11-01T22:00Z"
+  },
+  "seen": "2026-11-01T04:12+00:00",
+  "start": "2026-11-01T22:00Z"
+ },
+ "bet|2026-11-01|spread": {
+  "bet": {
+   "chance": 0.564,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.5640000000000001,
+     "event_id": "401873035",
+     "game": "PHI @ WSH",
+     "line": 6.0,
+     "odds": -110,
+     "side": "away",
+     "sport": "nfl",
+     "start": "2026-11-02T01:20Z",
+     "team": "PHI",
+     "team_name": "Philadelphia Eagles",
+     "type": "spread"
+    }
+   ],
+   "payout": 38.18,
+   "price": -110,
+   "projected_profit": 1.53,
+   "start": "2026-11-02T01:20Z"
+  },
+  "seen": "2026-11-01T04:12+00:00",
+  "start": "2026-11-02T01:20Z"
+ },
+ "bet|2026-11-01|winner": {
+  "bet": {
+   "chance": 0.657,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.657,
+     "event_id": "401909904",
+     "game": "BKN @ IND",
+     "odds": -175,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-01T22:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
+     "type": "ml"
+    }
+   ],
+   "payout": 31.43,
+   "price": -175,
+   "projected_profit": 0.65,
+   "start": "2026-11-01T22:00Z"
+  },
+  "seen": "2026-11-01T04:12+00:00",
+  "start": "2026-11-01T22:00Z"
+ },
  "parlay|2026-10-31|nfl": {
   "card": {
    "three": {
@@ -74,6 +210,116 @@
   "seen": "2026-11-01T03:59+00:00",
   "start": "2026-11-01T18:00Z"
  },
+ "parlay|2026-11-01|nba": {
+  "card": {
+   "two": {
+    "chance": 0.29536199999999996,
+    "legs": [
+     {
+      "chance": 0.538,
+      "event_id": "401909903",
+      "game": "BOS @ ORL",
+      "line": 6.5,
+      "odds": -112,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-01T20:30Z",
+      "team": "ORL"
+     },
+     {
+      "chance": 0.5489999999999999,
+      "event_id": "401909906",
+      "game": "TOR @ LAL",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-02T02:00Z",
+      "team": "TOR"
+     }
+    ],
+    "payout": 72.27272727272728,
+    "projected_profit": 1.346617272727272
+   }
+  },
+  "seen": "2026-11-01T04:12+00:00",
+  "start": "2026-11-01T20:30Z"
+ },
+ "parlay|2026-11-01|nfl": {
+  "card": {
+   "three": {
+    "chance": 0.16629427200000005,
+    "legs": [
+     {
+      "chance": 0.542,
+      "event_id": "401873030",
+      "game": "MIN @ DET",
+      "line": 3.0,
+      "odds": 100,
+      "side": "away",
+      "sport": "nfl",
+      "start": "2026-11-01T18:00Z",
+      "team": "MIN"
+     },
+     {
+      "chance": 0.544,
+      "event_id": "401873031",
+      "game": "TEN @ CIN",
+      "line": 12.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "nfl",
+      "start": "2026-11-01T18:00Z",
+      "team": "TEN"
+     },
+     {
+      "chance": 0.5640000000000001,
+      "event_id": "401873035",
+      "game": "PHI @ WSH",
+      "line": 6.0,
+      "odds": -110,
+      "side": "away",
+      "sport": "nfl",
+      "start": "2026-11-02T01:20Z",
+      "team": "PHI"
+     }
+    ],
+    "payout": 144.54545454545456,
+    "projected_profit": 4.037081134545463
+   },
+   "two": {
+    "chance": 0.30568800000000007,
+    "legs": [
+     {
+      "chance": 0.542,
+      "event_id": "401873030",
+      "game": "MIN @ DET",
+      "line": 3.0,
+      "odds": 100,
+      "side": "away",
+      "sport": "nfl",
+      "start": "2026-11-01T18:00Z",
+      "team": "MIN"
+     },
+     {
+      "chance": 0.5640000000000001,
+      "event_id": "401873035",
+      "game": "PHI @ WSH",
+      "line": 6.0,
+      "odds": -110,
+      "side": "away",
+      "sport": "nfl",
+      "start": "2026-11-02T01:20Z",
+      "team": "PHI"
+     }
+    ],
+    "payout": 76.36363636363637,
+    "projected_profit": 3.343447272727282
+   }
+  },
+  "seen": "2026-11-01T04:12+00:00",
+  "start": "2026-11-01T18:00Z"
+ },
  "prop|nba|401909903": {
   "game": {
    "date": "2026-11-01T20:30Z",
@@ -95,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T03:59+00:00",
+  "seen": "2026-11-01T04:12+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909904": {
@@ -119,7 +365,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T03:59+00:00",
+  "seen": "2026-11-01T04:12+00:00",
   "start": "2026-11-01T22:00Z"
  }
 }
