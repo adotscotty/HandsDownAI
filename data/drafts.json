@@ -71,7 +71,31 @@
     "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T02:43+00:00",
+  "seen": "2026-11-01T03:12+00:00",
   "start": "2026-11-01T18:00Z"
+ },
+ "prop|nba|401909903": {
+  "game": {
+   "date": "2026-11-01T20:30Z",
+   "event_id": "401909903",
+   "name": "Boston Celtics at Orlando Magic",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.007,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.651,
+   "name": "Jase Richardson",
+   "pid": "5239561",
+   "price": "-226",
+   "prob": 0.689,
+   "projection": 0.843,
+   "score": 0.651,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-01T03:12+00:00",
+  "start": "2026-11-01T20:30Z"
  }
 }
