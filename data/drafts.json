@@ -26,7 +26,7 @@
    "projected_profit": -1.21,
    "start": "2026-11-02T01:30Z"
   },
-  "seen": "2026-11-01T21:00+00:00",
+  "seen": "2026-11-01T21:13+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "bet|2026-11-01|spread": {
@@ -53,16 +53,16 @@
    "projected_profit": 1.72,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T21:00+00:00",
+  "seen": "2026-11-01T21:13+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
   "bet": {
-   "chance": 0.635,
+   "chance": 0.636,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.635,
+     "chance": 0.636,
      "event_id": "401909904",
      "game": "BKN @ IND",
      "odds": -170,
@@ -76,10 +76,10 @@
    ],
    "payout": 31.76,
    "price": -170,
-   "projected_profit": 0.17,
+   "projected_profit": 0.2,
    "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T21:00+00:00",
+  "seen": "2026-11-01T21:13+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909904": {
@@ -103,7 +103,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T21:00+00:00",
+  "seen": "2026-11-01T21:13+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
@@ -127,31 +127,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T21:00+00:00",
+  "seen": "2026-11-01T21:13+00:00",
   "start": "2026-11-02T01:30Z"
- },
- "prop|nba|401909906": {
-  "game": {
-   "date": "2026-11-02T02:00Z",
-   "event_id": "401909906",
-   "name": "Toronto Raptors at Los Angeles Lakers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.025,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.652,
-   "name": "Collin Sexton",
-   "pid": "4277811",
-   "price": "-227",
-   "prob": 0.712,
-   "projection": 1.531,
-   "score": 0.652,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-01T21:00+00:00",
-  "start": "2026-11-02T02:00Z"
  }
 }
