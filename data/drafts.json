@@ -49,37 +49,37 @@
    "projected_profit": 4.47,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "bet|2026-11-01|prop": {
   "bet": {
-   "chance": 0.667,
+   "chance": 0.663,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.667,
+     "chance": 0.663,
      "event_id": "401909904",
      "game": "BKN @ IND",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Kelly Oubre Jr.",
-     "odds": -244,
+     "odds": -240,
      "pid": "3133603",
      "projection": 0.914,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-01T22:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.2,
-   "price": -244,
-   "projected_profit": -1.19,
+   "payout": 28.33,
+   "price": -240,
+   "projected_profit": -1.21,
    "start": "2026-11-01T22:00Z"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "bet|2026-11-01|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.53,
    "start": "2026-11-02T01:20Z"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-02T01:20Z"
  },
  "bet|2026-11-01|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.52,
    "start": "2026-11-01T18:00Z"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "parlay|2026-10-31|nfl": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.346617272727272
    }
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "parlay|2026-11-01|nfl": {
@@ -317,7 +317,7 @@
     "projected_profit": 3.343447272727282
    }
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-01T18:00Z"
  },
  "prop|nba|401909903": {
@@ -341,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-01T20:30Z"
  },
  "prop|nba|401909904": {
@@ -352,20 +352,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.077,
+   "ev": -0.036,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.667,
+   "line": 1.5,
+   "market_prob": 0.663,
    "name": "Kelly Oubre Jr.",
    "pid": "3133603",
-   "price": "-244",
-   "prob": 0.655,
+   "price": "-240",
+   "prob": 0.681,
    "projection": 0.914,
-   "score": 0.667,
-   "side": "over",
+   "score": 0.663,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-01T22:00Z"
  },
  "prop|nba|401909905": {
@@ -376,20 +376,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.035,
+   "ev": -0.033,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.664,
+   "market_prob": 0.662,
    "name": "Kris Dunn",
    "pid": "2991139",
-   "price": "-241",
-   "prob": 0.682,
+   "price": "-238",
+   "prob": 0.681,
    "projection": 0.91,
-   "score": 0.664,
+   "score": 0.662,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-02T01:30Z"
  },
  "prop|nba|401909906": {
@@ -413,7 +413,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-01T08:32+00:00",
+  "seen": "2026-11-01T08:45+00:00",
   "start": "2026-11-02T02:00Z"
  }
 }
