@@ -49,8 +49,38 @@
    "projected_profit": 4.37,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T05:04+00:00",
+  "seen": "2026-11-02T05:39+00:00",
   "start": "2026-11-03T00:30Z"
+ },
+ "bet|2026-11-02|prop": {
+  "bet": {
+   "chance": 0.651,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.651,
+     "event_id": "401909914",
+     "game": "NO @ MEM",
+     "label": "threes",
+     "line": 0.5,
+     "name": "GG Jackson",
+     "odds": -226,
+     "pid": "5105550",
+     "projection": 1.31,
+     "side": "over",
+     "sport": "nba",
+     "start": "2026-11-03T01:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.85,
+   "price": -226,
+   "projected_profit": -1.22,
+   "start": "2026-11-03T01:00Z"
+  },
+  "seen": "2026-11-02T05:39+00:00",
+  "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
   "bet": {
@@ -76,7 +106,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T05:04+00:00",
+  "seen": "2026-11-02T05:39+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -102,7 +132,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T05:04+00:00",
+  "seen": "2026-11-02T05:39+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "parlay|2026-11-02|nba": {
@@ -177,7 +207,31 @@
     "projected_profit": 3.5117302079395003
    }
   },
-  "seen": "2026-11-02T05:04+00:00",
+  "seen": "2026-11-02T05:39+00:00",
   "start": "2026-11-03T00:30Z"
+ },
+ "prop|nba|401909914": {
+  "game": {
+   "date": "2026-11-03T01:00Z",
+   "event_id": "401909914",
+   "name": "New Orleans Pelicans at Memphis Grizzlies",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.002,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.651,
+   "name": "GG Jackson",
+   "pid": "5105550",
+   "price": "-226",
+   "prob": 0.692,
+   "projection": 1.31,
+   "score": 0.651,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-02T05:39+00:00",
+  "start": "2026-11-03T01:00Z"
  }
 }
