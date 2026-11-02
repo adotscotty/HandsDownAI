@@ -49,37 +49,37 @@
    "projected_profit": 4.7,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
   "bet": {
-   "chance": 0.663,
+   "chance": 0.667,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.663,
-     "event_id": "401909910",
-     "game": "BKN @ NY",
+     "chance": 0.667,
+     "event_id": "401909908",
+     "game": "DET @ CHA",
      "label": "threes",
-     "line": 0.5,
-     "name": "Nolan Traore",
-     "odds": -240,
-     "pid": "5279130",
-     "projection": 1.376,
-     "side": "over",
+     "line": 1.5,
+     "name": "Dennis Schroder",
+     "odds": -245,
+     "pid": "3032979",
+     "projection": 0.946,
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.33,
-   "price": -240,
-   "projected_profit": -1.21,
+   "payout": 28.16,
+   "price": -245,
+   "projected_profit": -1.22,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.61,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.57,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "parlay|2026-11-02|nba": {
@@ -250,7 +250,7 @@
     "projected_profit": 3.404288601645124
    }
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -261,20 +261,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.047,
+   "ev": -0.048,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.656,
-   "name": "John Collins",
-   "pid": "3908845",
-   "price": "-232",
-   "prob": 0.666,
-   "projection": 1.043,
-   "score": 0.656,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.667,
+   "name": "Dennis Schroder",
+   "pid": "3032979",
+   "price": "-245",
+   "prob": 0.676,
+   "projection": 0.946,
+   "score": 0.667,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909910": {
@@ -285,20 +285,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.002,
+   "ev": -0.001,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.663,
+   "market_prob": 0.662,
    "name": "Nolan Traore",
    "pid": "5279130",
-   "price": "-240",
+   "price": "-238",
    "prob": 0.704,
    "projection": 1.376,
-   "score": 0.663,
+   "score": 0.662,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -322,7 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909915": {
@@ -346,7 +346,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909916": {
@@ -370,7 +370,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:23+00:00",
+  "seen": "2026-11-02T17:36+00:00",
   "start": "2026-11-03T01:30Z"
  }
 }
