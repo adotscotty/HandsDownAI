@@ -49,22 +49,22 @@
    "projected_profit": 5.18,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.664,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
+     "chance": 0.664,
      "event_id": "401909908",
      "game": "DET @ CHA",
      "label": "threes",
      "line": 1.5,
      "name": "Dennis Schroder",
-     "odds": -238,
+     "odds": -241,
      "pid": "3032979",
      "projection": 0.946,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
+   "payout": 28.3,
+   "price": -241,
+   "projected_profit": -1.21,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.64,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.51,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.87,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "parlay|2026-11-02|nba": {
@@ -250,7 +250,7 @@
     "projected_profit": 3.6464797493734302
    }
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -261,20 +261,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.044,
+   "ev": -0.045,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.661,
+   "market_prob": 0.664,
    "name": "Dennis Schroder",
    "pid": "3032979",
-   "price": "-238",
-   "prob": 0.673,
+   "price": "-241",
+   "prob": 0.675,
    "projection": 0.946,
-   "score": 0.661,
+   "score": 0.664,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -298,32 +298,8 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T00:30Z"
- },
- "prop|nba|401909914": {
-  "game": {
-   "date": "2026-11-03T01:00Z",
-   "event_id": "401909914",
-   "name": "New Orleans Pelicans at Memphis Grizzlies",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.003,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.653,
-   "name": "GG Jackson",
-   "pid": "5105550",
-   "price": "-228",
-   "prob": 0.693,
-   "projection": 1.31,
-   "score": 0.653,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T20:38+00:00",
-  "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909915": {
   "game": {
@@ -346,7 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909920": {
@@ -370,7 +346,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:38+00:00",
+  "seen": "2026-11-02T20:53+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }
