@@ -1,15 +1,15 @@
 {
  "bet|2026-11-02|parlay": {
   "bet": {
-   "chance": 0.1798,
+   "chance": 0.164,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.588,
+     "chance": 0.547,
      "event_id": "401909909",
      "game": "ATL @ IND",
-     "line": 5.5,
-     "odds": -115,
+     "line": 8.5,
+     "odds": -103,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
@@ -18,7 +18,7 @@
      "type": "spread"
     },
     {
-     "chance": 0.546,
+     "chance": 0.548,
      "event_id": "401909910",
      "game": "BKN @ NY",
      "line": 14.5,
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.56,
+     "chance": 0.547,
      "event_id": "401909915",
      "game": "MIL @ MIN",
-     "line": -11.5,
-     "odds": -111,
+     "line": -12.5,
+     "odds": -110,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T01:00Z",
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 138.13,
-   "price": 591,
-   "projected_profit": 4.83,
+   "payout": 146.24,
+   "price": 631,
+   "projected_profit": 3.98,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
   "bet": {
-   "chance": 0.667,
+   "chance": 0.66,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.667,
+     "chance": 0.66,
      "event_id": "401909908",
      "game": "DET @ CHA",
      "label": "threes",
      "line": 1.5,
      "name": "Dennis Schroder",
-     "odds": -245,
+     "odds": -236,
      "pid": "3032979",
      "projection": 0.946,
      "side": "under",
@@ -74,25 +74,25 @@
      "type": "prop"
     }
    ],
-   "payout": 28.16,
-   "price": -245,
-   "projected_profit": -1.22,
+   "payout": 28.47,
+   "price": -236,
+   "projected_profit": -1.21,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
   "bet": {
-   "chance": 0.3669,
+   "chance": 0.3337,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.588,
+     "chance": 0.547,
      "event_id": "401909909",
      "game": "ATL @ IND",
-     "line": 5.5,
-     "odds": -115,
+     "line": 8.5,
+     "odds": -103,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
@@ -101,15 +101,15 @@
      "type": "spread"
     },
     {
-     "chance": 0.624,
+     "chance": 0.61,
      "event_id": "401909909",
      "game": "ATL @ IND",
      "label": "threes",
-     "line": 1.5,
-     "name": "Kelly Oubre Jr.",
-     "odds": -199,
-     "pid": "3133603",
-     "projection": 0.955,
+     "line": 2.5,
+     "name": "CJ McCollum",
+     "odds": -186,
+     "pid": "2490149",
+     "projection": 1.862,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
@@ -117,40 +117,40 @@
      "type": "prop"
     }
    ],
-   "payout": 56.18,
-   "price": 181,
-   "projected_profit": 0.61,
+   "payout": 60.61,
+   "price": 203,
+   "projected_profit": 0.22,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|spread": {
   "bet": {
-   "chance": 0.588,
+   "chance": 0.549,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.588,
-     "event_id": "401909909",
-     "game": "ATL @ IND",
-     "line": 5.5,
-     "odds": -115,
-     "side": "home",
+     "chance": 0.5489999999999999,
+     "event_id": "401909918",
+     "game": "POR @ DEN",
+     "line": 4.5,
+     "odds": -112,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "team": "IND",
-     "team_name": "Indiana Pacers",
+     "start": "2026-11-03T02:00Z",
+     "team": "POR",
+     "team_name": "Portland Trail Blazers",
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 1.99,
-   "start": "2026-11-03T00:30Z"
+   "payout": 37.86,
+   "price": -112,
+   "projected_profit": 0.78,
+   "start": "2026-11-03T02:00Z"
   },
-  "seen": "2026-11-02T17:49+00:00",
-  "start": "2026-11-03T00:30Z"
+  "seen": "2026-11-02T18:17+00:00",
+  "start": "2026-11-03T02:00Z"
  },
  "bet|2026-11-02|winner": {
   "bet": {
@@ -175,27 +175,27 @@
    "projected_profit": 0.57,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "parlay|2026-11-02|nba": {
   "card": {
    "three": {
-    "chance": 0.17978688,
+    "chance": 0.16396653200000003,
     "legs": [
      {
-      "chance": 0.588,
+      "chance": 0.547,
       "event_id": "401909909",
       "game": "ATL @ IND",
-      "line": 5.5,
-      "odds": -115,
+      "line": 8.5,
+      "odds": -103,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T00:30Z",
       "team": "IND"
      },
      {
-      "chance": 0.546,
+      "chance": 0.548,
       "event_id": "401909910",
       "game": "BKN @ NY",
       "line": 14.5,
@@ -206,51 +206,51 @@
       "team": "BKN"
      },
      {
-      "chance": 0.56,
+      "chance": 0.547,
       "event_id": "401909915",
       "game": "MIL @ MIN",
-      "line": -11.5,
-      "odds": -111,
+      "line": -12.5,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
       "team": "MIN"
      }
     ],
-    "payout": 138.13109253634275,
-    "projected_profit": 4.834158158100351
+    "payout": 146.2435677530017,
+    "projected_profit": 3.9790506317667287
    },
    "two": {
-    "chance": 0.32928,
+    "chance": 0.299756,
     "legs": [
      {
-      "chance": 0.588,
+      "chance": 0.547,
       "event_id": "401909909",
       "game": "ATL @ IND",
-      "line": 5.5,
-      "odds": -115,
+      "line": 8.5,
+      "odds": -103,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T00:30Z",
       "team": "IND"
      },
      {
-      "chance": 0.56,
-      "event_id": "401909915",
-      "game": "MIL @ MIN",
-      "line": -11.5,
-      "odds": -111,
-      "side": "home",
+      "chance": 0.548,
+      "event_id": "401909910",
+      "game": "BKN @ NY",
+      "line": 14.5,
+      "odds": -106,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-03T01:00Z",
-      "team": "MIN"
+      "start": "2026-11-03T00:30Z",
+      "team": "BKN"
      }
     ],
-    "payout": 71.07716412064238,
-    "projected_profit": 3.404288601645124
+    "payout": 76.60377358490565,
+    "projected_profit": 2.9624407547169795
    }
   },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -261,68 +261,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.048,
+   "ev": -0.042,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.667,
+   "market_prob": 0.66,
    "name": "Dennis Schroder",
    "pid": "3032979",
-   "price": "-245",
-   "prob": 0.676,
+   "price": "-236",
+   "prob": 0.673,
    "projection": 0.946,
-   "score": 0.667,
+   "score": 0.66,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:49+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "prop|nba|401909910": {
-  "game": {
-   "date": "2026-11-03T00:30Z",
-   "event_id": "401909910",
-   "name": "Brooklyn Nets at New York Knicks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.001,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.662,
-   "name": "Nolan Traore",
-   "pid": "5279130",
-   "price": "-238",
-   "prob": 0.704,
-   "projection": 1.376,
-   "score": 0.662,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T17:49+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "prop|nba|401909912": {
-  "game": {
-   "date": "2026-11-03T00:30Z",
-   "event_id": "401909912",
-   "name": "Chicago Bulls at Philadelphia 76ers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.145,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Josh Giddey",
-   "pid": "4871145",
-   "price": "-227",
-   "prob": 0.594,
-   "projection": 1.383,
-   "score": 0.652,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909915": {
@@ -346,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909916": {
@@ -370,7 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T17:49+00:00",
+  "seen": "2026-11-02T18:17+00:00",
   "start": "2026-11-03T01:30Z"
  }
 }
