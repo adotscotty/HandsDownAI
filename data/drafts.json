@@ -35,7 +35,7 @@
      "event_id": "401909915",
      "game": "MIL @ MIN",
      "line": -12.5,
-     "odds": -110,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T01:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 146.24,
-   "price": 631,
-   "projected_profit": 3.98,
+   "payout": 149.56,
+   "price": 648,
+   "projected_profit": 4.52,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T18:17+00:00",
+  "seen": "2026-11-02T18:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
@@ -79,51 +79,51 @@
    "projected_profit": -1.21,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T18:17+00:00",
+  "seen": "2026-11-02T18:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
   "bet": {
-   "chance": 0.3337,
+   "chance": 0.3561,
    "kind": "sgp",
    "legs": [
     {
      "chance": 0.547,
-     "event_id": "401909909",
-     "game": "ATL @ IND",
-     "line": 8.5,
-     "odds": -103,
+     "event_id": "401909915",
+     "game": "MIL @ MIN",
+     "line": -12.5,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "team": "IND",
-     "team_name": "Indiana Pacers",
+     "start": "2026-11-03T01:00Z",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
      "type": "spread"
     },
     {
-     "chance": 0.61,
-     "event_id": "401909909",
-     "game": "ATL @ IND",
+     "chance": 0.651,
+     "event_id": "401909915",
+     "game": "MIL @ MIN",
      "label": "threes",
-     "line": 2.5,
-     "name": "CJ McCollum",
-     "odds": -186,
-     "pid": "2490149",
-     "projection": 1.862,
+     "line": 1.5,
+     "name": "Kyle Kuzma",
+     "odds": -225,
+     "pid": "3134907",
+     "projection": 1.486,
      "side": "under",
      "sport": "nba",
-     "start": "2026-11-03T00:30Z",
+     "start": "2026-11-03T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 60.61,
-   "price": 203,
-   "projected_profit": 0.22,
-   "start": "2026-11-03T00:30Z"
+   "payout": 56.4,
+   "price": 182,
+   "projected_profit": 0.08,
+   "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T18:17+00:00",
-  "start": "2026-11-03T00:30Z"
+  "seen": "2026-11-02T18:31+00:00",
+  "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
   "bet": {
@@ -149,7 +149,7 @@
    "projected_profit": 0.78,
    "start": "2026-11-03T02:00Z"
   },
-  "seen": "2026-11-02T18:17+00:00",
+  "seen": "2026-11-02T18:31+00:00",
   "start": "2026-11-03T02:00Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,13 +175,13 @@
    "projected_profit": 0.57,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T18:17+00:00",
+  "seen": "2026-11-02T18:31+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "parlay|2026-11-02|nba": {
   "card": {
    "three": {
-    "chance": 0.16396653200000003,
+    "chance": 0.16396653200000005,
     "legs": [
      {
       "chance": 0.547,
@@ -210,18 +210,18 @@
       "event_id": "401909915",
       "game": "MIL @ MIN",
       "line": -12.5,
-      "odds": -110,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
       "team": "MIN"
      }
     ],
-    "payout": 146.2435677530017,
-    "projected_profit": 3.9790506317667287
+    "payout": 149.55974842767296,
+    "projected_profit": 4.522793276477994
    },
    "two": {
-    "chance": 0.299756,
+    "chance": 0.29920900000000006,
     "legs": [
      {
       "chance": 0.547,
@@ -235,22 +235,22 @@
       "team": "IND"
      },
      {
-      "chance": 0.548,
-      "event_id": "401909910",
-      "game": "BKN @ NY",
-      "line": 14.5,
-      "odds": -106,
-      "side": "away",
+      "chance": 0.547,
+      "event_id": "401909915",
+      "game": "MIL @ MIN",
+      "line": -12.5,
+      "odds": -105,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-03T00:30Z",
-      "team": "BKN"
+      "start": "2026-11-03T01:00Z",
+      "team": "MIN"
      }
     ],
-    "payout": 76.60377358490565,
-    "projected_profit": 2.9624407547169795
+    "payout": 76.957928802589,
+    "projected_profit": 3.026504919093856
    }
   },
-  "seen": "2026-11-02T18:17+00:00",
+  "seen": "2026-11-02T18:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -274,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T18:17+00:00",
+  "seen": "2026-11-02T18:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909915": {
@@ -298,31 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T18:17+00:00",
+  "seen": "2026-11-02T18:31+00:00",
   "start": "2026-11-03T01:00Z"
- },
- "prop|nba|401909916": {
-  "game": {
-   "date": "2026-11-03T01:30Z",
-   "event_id": "401909916",
-   "name": "Boston Celtics at Houston Rockets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.208,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.653,
-   "name": "Marcus Smart",
-   "pid": "2990992",
-   "price": "-228",
-   "prob": 0.55,
-   "projection": 1.691,
-   "score": 0.653,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T18:17+00:00",
-  "start": "2026-11-03T01:30Z"
  }
 }
