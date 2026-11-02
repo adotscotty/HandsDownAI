@@ -22,7 +22,7 @@
      "event_id": "401909910",
      "game": "BKN @ NY",
      "line": 14.5,
-     "odds": -110,
+     "odds": -105,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
@@ -35,7 +35,7 @@
      "event_id": "401909915",
      "game": "MIL @ MIN",
      "line": -10.5,
-     "odds": -115,
+     "odds": -110,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T01:00Z",
@@ -44,43 +44,86 @@
      "type": "spread"
     }
    ],
-   "payout": 133.46,
-   "price": 567,
-   "projected_profit": 4.37,
+   "payout": 139.37,
+   "price": 597,
+   "projected_profit": 5.45,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T07:06+00:00",
+  "seen": "2026-11-02T08:01+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
   "bet": {
-   "chance": 0.663,
+   "chance": 0.664,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.663,
+     "chance": 0.664,
      "event_id": "401909908",
      "game": "DET @ CHA",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "John Collins",
-     "odds": -240,
+     "odds": -241,
      "pid": "3908845",
      "projection": 1.043,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.33,
-   "price": -240,
+   "payout": 28.3,
+   "price": -241,
    "projected_profit": -1.21,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T07:06+00:00",
+  "seen": "2026-11-02T08:01+00:00",
   "start": "2026-11-03T00:30Z"
+ },
+ "bet|2026-11-02|sgp": {
+  "bet": {
+   "chance": 0.3724,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.572,
+     "event_id": "401909915",
+     "game": "MIL @ MIN",
+     "line": -10.5,
+     "odds": -110,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-03T01:00Z",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
+     "type": "spread"
+    },
+    {
+     "chance": 0.651,
+     "event_id": "401909915",
+     "game": "MIL @ MIN",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Kyle Kuzma",
+     "odds": -225,
+     "pid": "3134907",
+     "projection": 1.486,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-03T01:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 55.15,
+   "price": 176,
+   "projected_profit": 0.54,
+   "start": "2026-11-03T01:00Z"
+  },
+  "seen": "2026-11-02T08:01+00:00",
+  "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
   "bet": {
@@ -106,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T07:06+00:00",
+  "seen": "2026-11-02T08:01+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -116,24 +159,24 @@
    "legs": [
     {
      "chance": 0.641,
-     "event_id": "401909908",
-     "game": "DET @ CHA",
+     "event_id": "401873036",
+     "game": "CHI @ SEA",
      "odds": -175,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "team": "DET",
-     "team_name": "Detroit Pistons",
+     "side": "home",
+     "sport": "nfl",
+     "start": "2026-11-03T01:15Z",
+     "team": "SEA",
+     "team_name": "Seattle Seahawks",
      "type": "ml"
     }
    ],
    "payout": 31.43,
    "price": -175,
    "projected_profit": 0.15,
-   "start": "2026-11-03T00:30Z"
+   "start": "2026-11-03T01:15Z"
   },
-  "seen": "2026-11-02T07:06+00:00",
-  "start": "2026-11-03T00:30Z"
+  "seen": "2026-11-02T08:01+00:00",
+  "start": "2026-11-03T01:15Z"
  },
  "parlay|2026-11-02|nba": {
   "card": {
@@ -156,7 +199,7 @@
       "event_id": "401909910",
       "game": "BKN @ NY",
       "line": 14.5,
-      "odds": -110,
+      "odds": -105,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-03T00:30Z",
@@ -167,15 +210,15 @@
       "event_id": "401909915",
       "game": "MIL @ MIN",
       "line": -10.5,
-      "odds": -115,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
       "team": "MIN"
      }
     ],
-    "payout": 133.45592026121324,
-    "projected_profit": 4.373114505557645
+    "payout": 139.36758893280634,
+    "projected_profit": 5.452765203478258
    },
    "two": {
     "chance": 0.33633599999999997,
@@ -196,18 +239,18 @@
       "event_id": "401909915",
       "game": "MIL @ MIN",
       "line": -10.5,
-      "odds": -115,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
       "team": "MIN"
      }
     ],
-    "payout": 69.90548204158789,
-    "projected_profit": 3.5117302079395003
+    "payout": 71.38339920948617,
+    "projected_profit": 4.008806956521738
    }
   },
-  "seen": "2026-11-02T07:06+00:00",
+  "seen": "2026-11-02T08:01+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -218,20 +261,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.051,
+   "ev": -0.07,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.663,
+   "line": 1.5,
+   "market_prob": 0.664,
    "name": "John Collins",
    "pid": "3908845",
-   "price": "-240",
-   "prob": 0.67,
+   "price": "-241",
+   "prob": 0.657,
    "projection": 1.043,
-   "score": 0.663,
-   "side": "over",
+   "score": 0.664,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T07:06+00:00",
+  "seen": "2026-11-02T08:01+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -255,31 +298,55 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T07:06+00:00",
+  "seen": "2026-11-02T08:01+00:00",
   "start": "2026-11-03T00:30Z"
  },
- "prop|nba|401909914": {
+ "prop|nba|401909915": {
   "game": {
    "date": "2026-11-03T01:00Z",
-   "event_id": "401909914",
-   "name": "New Orleans Pelicans at Memphis Grizzlies",
+   "event_id": "401909915",
+   "name": "Milwaukee Bucks at Minnesota Timberwolves",
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.003,
+   "ev": -0.166,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.653,
-   "name": "GG Jackson",
-   "pid": "5105550",
-   "price": "-228",
-   "prob": 0.693,
-   "projection": 1.31,
-   "score": 0.653,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.651,
+   "name": "Kyle Kuzma",
+   "pid": "3134907",
+   "price": "-225",
+   "prob": 0.577,
+   "projection": 1.486,
+   "score": 0.651,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T07:06+00:00",
+  "seen": "2026-11-02T08:01+00:00",
   "start": "2026-11-03T01:00Z"
+ },
+ "prop|nba|401909916": {
+  "game": {
+   "date": "2026-11-03T01:30Z",
+   "event_id": "401909916",
+   "name": "Boston Celtics at Houston Rockets",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.21,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.656,
+   "name": "Marcus Smart",
+   "pid": "2990992",
+   "price": "-231",
+   "prob": 0.552,
+   "projection": 1.691,
+   "score": 0.656,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-02T08:01+00:00",
+  "start": "2026-11-03T01:30Z"
  }
 }
