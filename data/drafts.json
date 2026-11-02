@@ -1,7 +1,7 @@
 {
  "bet|2026-11-02|parlay": {
   "bet": {
-   "chance": 0.1733,
+   "chance": 0.169,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.563,
-     "event_id": "401909915",
-     "game": "MIL @ MIN",
-     "line": -10.5,
-     "odds": -115,
-     "side": "home",
+     "chance": 0.5489999999999999,
+     "event_id": "401909910",
+     "game": "BKN @ NY",
+     "line": 14.5,
+     "odds": -110,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-03T01:00Z",
-     "team": "MIN",
-     "team_name": "MIN",
+     "start": "2026-11-03T00:30Z",
+     "team": "BKN",
+     "team_name": "BKN",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 136.92,
-   "price": 585,
-   "projected_profit": 3.74,
+   "payout": 139.82,
+   "price": 599,
+   "projected_profit": 3.63,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.23,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.13,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.43,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,13 +175,13 @@
    "projected_profit": 0.28,
    "start": "2026-11-03T03:00Z"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T03:00Z"
  },
  "parlay|2026-11-02|nba": {
   "card": {
    "three": {
-    "chance": 0.17334995199999997,
+    "chance": 0.16903929599999998,
     "legs": [
      {
       "chance": 0.566,
@@ -195,15 +195,15 @@
       "team": "IND"
      },
      {
-      "chance": 0.563,
-      "event_id": "401909915",
-      "game": "MIL @ MIN",
-      "line": -10.5,
-      "odds": -115,
-      "side": "home",
+      "chance": 0.5489999999999999,
+      "event_id": "401909910",
+      "game": "BKN @ NY",
+      "line": 14.5,
+      "odds": -110,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-03T01:00Z",
-      "team": "MIN"
+      "start": "2026-11-03T00:30Z",
+      "team": "BKN"
      },
      {
       "chance": 0.544,
@@ -217,11 +217,11 @@
       "team": "DAL"
      }
     ],
-    "payout": 136.9225634178905,
-    "projected_profit": 3.735519796208269
+    "payout": 139.81733220050978,
+    "projected_profit": 3.634623403772302
    },
    "two": {
-    "chance": 0.31865799999999994,
+    "chance": 0.307904,
     "legs": [
      {
       "chance": 0.566,
@@ -235,22 +235,22 @@
       "team": "IND"
      },
      {
-      "chance": 0.563,
-      "event_id": "401909915",
-      "game": "MIL @ MIN",
-      "line": -10.5,
-      "odds": -115,
+      "chance": 0.544,
+      "event_id": "401909913",
+      "game": "SAC @ DAL",
+      "line": -8.5,
+      "odds": -107,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
-      "team": "MIN"
+      "team": "DAL"
      }
     ],
-    "payout": 70.77639751552793,
-    "projected_profit": 2.553465279503097
+    "payout": 73.23765020026703,
+    "projected_profit": 2.5501654472630193
    }
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -274,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909909": {
@@ -298,7 +298,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909910": {
@@ -309,20 +309,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.001,
+   "ev": -0.148,
    "label": "threes",
-   "line": 0.5,
+   "line": 1.5,
    "market_prob": 0.661,
    "name": "Nolan Traore",
    "pid": "5279130",
-   "price": "-238",
-   "prob": 0.703,
+   "price": "-237",
+   "prob": 0.599,
    "projection": 1.376,
    "score": 0.661,
-   "side": "over",
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909913": {
@@ -346,7 +346,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909914": {
@@ -357,20 +357,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.13,
+   "ev": -0.008,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
+   "line": 0.5,
+   "market_prob": 0.659,
    "name": "GG Jackson",
    "pid": "5105550",
-   "price": "-230",
-   "prob": 0.606,
+   "price": "-235",
+   "prob": 0.696,
    "projection": 1.31,
-   "score": 0.655,
-   "side": "under",
+   "score": 0.659,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909920": {
@@ -381,20 +381,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": 0.034,
+   "ev": 0.031,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.651,
+   "market_prob": 0.655,
    "name": "Scottie Barnes",
    "pid": "4433134",
-   "price": "-226",
-   "prob": 0.717,
+   "price": "-230",
+   "prob": 0.719,
    "projection": 0.705,
-   "score": 0.651,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T03:00Z"
  },
  "prop|nba|401909921": {
@@ -418,7 +418,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:31+00:00",
+  "seen": "2026-11-02T23:45+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }
