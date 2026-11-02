@@ -1,7 +1,7 @@
 {
  "bet|2026-11-02|parlay": {
   "bet": {
-   "chance": 0.1806,
+   "chance": 0.1826,
    "kind": "parlay",
    "legs": [
     {
@@ -18,6 +18,19 @@
      "type": "spread"
     },
     {
+     "chance": 0.5429999999999999,
+     "event_id": "401909910",
+     "game": "BKN @ NY",
+     "line": 14.5,
+     "odds": -105,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-03T00:30Z",
+     "team": "BKN",
+     "team_name": "BKN",
+     "type": "spread"
+    },
+    {
      "chance": 0.572,
      "event_id": "401909915",
      "game": "MIL @ MIN",
@@ -29,57 +42,44 @@
      "team": "MIN",
      "team_name": "MIN",
      "type": "spread"
-    },
-    {
-     "chance": 0.5369999999999999,
-     "event_id": "401909918",
-     "game": "POR @ DEN",
-     "line": 3.5,
-     "odds": -102,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-03T02:00Z",
-     "team": "POR",
-     "team_name": "POR",
-     "type": "spread"
     }
    ],
-   "payout": 140.17,
-   "price": 601,
-   "projected_profit": 5.32,
+   "payout": 138.18,
+   "price": 591,
+   "projected_profit": 5.24,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
   "bet": {
-   "chance": 0.664,
+   "chance": 0.663,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.664,
+     "chance": 0.663,
      "event_id": "401909908",
      "game": "DET @ CHA",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "John Collins",
-     "odds": -241,
+     "odds": -239,
      "pid": "3908845",
      "projection": 1.043,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.3,
-   "price": -241,
-   "projected_profit": -1.21,
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.19,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,13 +175,13 @@
    "projected_profit": 0.15,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "parlay|2026-11-02|nba": {
   "card": {
    "three": {
-    "chance": 0.18061243199999996,
+    "chance": 0.18263044799999995,
     "legs": [
      {
       "chance": 0.588,
@@ -195,6 +195,17 @@
       "team": "IND"
      },
      {
+      "chance": 0.5429999999999999,
+      "event_id": "401909910",
+      "game": "BKN @ NY",
+      "line": 14.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-03T00:30Z",
+      "team": "BKN"
+     },
+     {
       "chance": 0.572,
       "event_id": "401909915",
       "game": "MIL @ MIN",
@@ -204,21 +215,10 @@
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
       "team": "MIN"
-     },
-     {
-      "chance": 0.5369999999999999,
-      "event_id": "401909918",
-      "game": "POR @ DEN",
-      "line": 3.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-03T02:00Z",
-      "team": "POR"
      }
     ],
-    "payout": 140.16502253075143,
-    "projected_profit": 5.315545600613806
+    "payout": 138.18249038745932,
+    "projected_profit": 5.236330125217382
    },
    "two": {
     "chance": 0.33633599999999997,
@@ -250,7 +250,7 @@
     "projected_profit": 3.804650434782605
    }
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -261,20 +261,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.07,
+   "ev": -0.05,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.664,
+   "line": 0.5,
+   "market_prob": 0.663,
    "name": "John Collins",
    "pid": "3908845",
-   "price": "-241",
-   "prob": 0.657,
+   "price": "-239",
+   "prob": 0.669,
    "projection": 1.043,
-   "score": 0.664,
-   "side": "under",
+   "score": 0.663,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -298,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909915": {
@@ -322,7 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T08:28+00:00",
+  "seen": "2026-11-02T09:11+00:00",
   "start": "2026-11-03T01:00Z"
  }
 }
