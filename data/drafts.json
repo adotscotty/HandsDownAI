@@ -1,15 +1,15 @@
 {
  "bet|2026-11-02|parlay": {
   "bet": {
-   "chance": 0.1728,
+   "chance": 0.1768,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.56,
+     "chance": 0.573,
      "event_id": "401909909",
      "game": "ATL @ IND",
-     "line": 9.5,
-     "odds": -108,
+     "line": 10.5,
+     "odds": -114,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 146.15,
-   "price": 631,
-   "projected_profit": 5.25,
+   "payout": 142.45,
+   "price": 612,
+   "projected_profit": 5.18,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.23,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
@@ -122,35 +122,35 @@
    "projected_profit": 0.64,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
   "bet": {
-   "chance": 0.563,
+   "chance": 0.573,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.563,
-     "event_id": "401909915",
-     "game": "MIL @ MIN",
-     "line": -10.5,
-     "odds": -105,
+     "chance": 0.573,
+     "event_id": "401909909",
+     "game": "ATL @ IND",
+     "line": 10.5,
+     "odds": -114,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-03T01:00Z",
-     "team": "MIN",
-     "team_name": "Minnesota Timberwolves",
+     "start": "2026-11-03T00:30Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 1.98,
-   "start": "2026-11-03T01:00Z"
+   "payout": 37.54,
+   "price": -114,
+   "projected_profit": 1.51,
+   "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T20:25+00:00",
-  "start": "2026-11-03T01:00Z"
+  "seen": "2026-11-02T20:38+00:00",
+  "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
   "bet": {
@@ -175,20 +175,20 @@
    "projected_profit": 0.87,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "parlay|2026-11-02|nba": {
   "card": {
    "three": {
-    "chance": 0.17277344000000003,
+    "chance": 0.176784252,
     "legs": [
      {
-      "chance": 0.56,
+      "chance": 0.573,
       "event_id": "401909909",
       "game": "ATL @ IND",
-      "line": 9.5,
-      "odds": -108,
+      "line": 10.5,
+      "odds": -114,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T00:30Z",
@@ -217,18 +217,18 @@
       "team": "MIN"
      }
     ],
-    "payout": 146.14888023693055,
-    "projected_profit": 5.250644790682511
+    "payout": 142.45078104065195,
+    "projected_profit": 5.183054773087438
    },
    "two": {
-    "chance": 0.31528,
+    "chance": 0.32259899999999997,
     "legs": [
      {
-      "chance": 0.56,
+      "chance": 0.573,
       "event_id": "401909909",
       "game": "ATL @ IND",
-      "line": 9.5,
-      "odds": -108,
+      "line": 10.5,
+      "odds": -114,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T00:30Z",
@@ -246,11 +246,11 @@
       "team": "MIN"
      }
     ],
-    "payout": 75.20282186948853,
-    "projected_profit": 3.709945679012346
+    "payout": 73.2999164578112,
+    "projected_profit": 3.6464797493734302
    }
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -274,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -298,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909914": {
@@ -309,20 +309,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.005,
+   "ev": -0.003,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
+   "market_prob": 0.653,
    "name": "GG Jackson",
    "pid": "5105550",
-   "price": "-230",
-   "prob": 0.694,
+   "price": "-228",
+   "prob": 0.693,
    "projection": 1.31,
-   "score": 0.655,
+   "score": 0.653,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909915": {
@@ -346,7 +346,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909920": {
@@ -370,7 +370,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T20:25+00:00",
+  "seen": "2026-11-02T20:38+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }
