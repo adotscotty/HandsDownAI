@@ -35,7 +35,7 @@
      "event_id": "401909915",
      "game": "MIL @ MIN",
      "line": -10.5,
-     "odds": -110,
+     "odds": -112,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T01:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 139.37,
-   "price": 597,
-   "projected_profit": 5.45,
+   "payout": 138.18,
+   "price": 591,
+   "projected_profit": 5.24,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
@@ -92,7 +92,7 @@
      "event_id": "401909915",
      "game": "MIL @ MIN",
      "line": -10.5,
-     "odds": -110,
+     "odds": -112,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T01:00Z",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.15,
-   "price": 176,
-   "projected_profit": 0.54,
+   "payout": 54.68,
+   "price": 173,
+   "projected_profit": 0.36,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-03T01:15Z"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T01:15Z"
  },
  "parlay|2026-11-02|nba": {
@@ -210,15 +210,15 @@
       "event_id": "401909915",
       "game": "MIL @ MIN",
       "line": -10.5,
-      "odds": -110,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
       "team": "MIN"
      }
     ],
-    "payout": 139.36758893280634,
-    "projected_profit": 5.452765203478258
+    "payout": 138.18249038745932,
+    "projected_profit": 5.236330125217382
    },
    "two": {
     "chance": 0.33633599999999997,
@@ -239,18 +239,18 @@
       "event_id": "401909915",
       "game": "MIL @ MIN",
       "line": -10.5,
-      "odds": -110,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-03T01:00Z",
       "team": "MIN"
      }
     ],
-    "payout": 71.38339920948617,
-    "projected_profit": 4.008806956521738
+    "payout": 70.77639751552795,
+    "projected_profit": 3.804650434782605
    }
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -274,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -298,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909915": {
@@ -322,31 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T08:01+00:00",
+  "seen": "2026-11-02T08:15+00:00",
   "start": "2026-11-03T01:00Z"
- },
- "prop|nba|401909916": {
-  "game": {
-   "date": "2026-11-03T01:30Z",
-   "event_id": "401909916",
-   "name": "Boston Celtics at Houston Rockets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.21,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.656,
-   "name": "Marcus Smart",
-   "pid": "2990992",
-   "price": "-231",
-   "prob": 0.552,
-   "projection": 1.691,
-   "score": 0.656,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T08:01+00:00",
-  "start": "2026-11-03T01:30Z"
  }
 }
