@@ -49,16 +49,16 @@
    "projected_profit": 3.74,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
+     "chance": 0.661,
      "event_id": "401909908",
      "game": "DET @ CHA",
      "label": "threes",
@@ -76,15 +76,15 @@
    ],
    "payout": 28.4,
    "price": -238,
-   "projected_profit": -1.2,
+   "projected_profit": -1.23,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
   "bet": {
-   "chance": 0.3373,
+   "chance": 0.3736,
    "kind": "sgp",
    "legs": [
     {
@@ -101,28 +101,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.596,
+     "chance": 0.66,
      "event_id": "401909909",
      "game": "ATL @ IND",
      "label": "threes",
-     "line": 3.5,
-     "name": "Nickeil Alexander-Walker",
-     "odds": -175,
-     "pid": "4278039",
-     "projection": 3.024,
-     "side": "under",
+     "line": 0.5,
+     "name": "Asa Newell",
+     "odds": -236,
+     "pid": "4873201",
+     "projection": 0.43,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-03T00:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 59.49,
-   "price": 197,
-   "projected_profit": 0.07,
+   "payout": 53.9,
+   "price": 169,
+   "projected_profit": 0.13,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.43,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.28,
    "start": "2026-11-03T03:00Z"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T03:00Z"
  },
  "parlay|2026-11-02|nba": {
@@ -250,7 +250,7 @@
     "projected_profit": 2.553465279503097
    }
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -261,20 +261,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.043,
+   "ev": -0.044,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.662,
+   "market_prob": 0.661,
    "name": "Dennis Schroder",
    "pid": "3032979",
    "price": "-238",
-   "prob": 0.674,
+   "prob": 0.673,
    "projection": 0.946,
-   "score": 0.662,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
+  "start": "2026-11-03T00:30Z"
+ },
+ "prop|nba|401909909": {
+  "game": {
+   "date": "2026-11-03T00:30Z",
+   "event_id": "401909909",
+   "name": "Atlanta Hawks at Indiana Pacers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.197,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.66,
+   "name": "Asa Newell",
+   "pid": "4873201",
+   "price": "-236",
+   "prob": 0.564,
+   "projection": 0.43,
+   "score": 0.66,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909910": {
@@ -298,8 +322,32 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T00:30Z"
+ },
+ "prop|nba|401909913": {
+  "game": {
+   "date": "2026-11-03T01:00Z",
+   "event_id": "401909913",
+   "name": "Sacramento Kings at Dallas Mavericks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.104,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.656,
+   "name": "Naji Marshall",
+   "pid": "4278594",
+   "price": "-231",
+   "prob": 0.625,
+   "projection": 0.749,
+   "score": 0.656,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-02T23:31+00:00",
+  "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909914": {
   "game": {
@@ -322,7 +370,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909920": {
@@ -346,7 +394,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:18+00:00",
+  "seen": "2026-11-02T23:31+00:00",
+  "start": "2026-11-03T03:00Z"
+ },
+ "prop|nba|401909921": {
+  "game": {
+   "date": "2026-11-03T03:00Z",
+   "event_id": "401909921",
+   "name": "Miami Heat at Los Angeles Lakers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.066,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.651,
+   "name": "Pelle Larsson",
+   "pid": "4601025",
+   "price": "-226",
+   "prob": 0.647,
+   "projection": 0.916,
+   "score": 0.651,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-02T23:31+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }
