@@ -49,7 +49,7 @@
    "projected_profit": 5.24,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,19 +149,19 @@
    "projected_profit": 1.99,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
   "bet": {
-   "chance": 0.699,
+   "chance": 0.681,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.699,
+     "chance": 0.681,
      "event_id": "401909914",
      "game": "NO @ MEM",
-     "odds": -198,
+     "odds": -196,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-03T01:00Z",
@@ -170,12 +170,12 @@
      "type": "ml"
     }
    ],
-   "payout": 30.1,
-   "price": -198,
-   "projected_profit": 1.04,
+   "payout": 30.2,
+   "price": -196,
+   "projected_profit": 0.57,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "parlay|2026-11-02|nba": {
@@ -250,7 +250,7 @@
     "projected_profit": 3.804650434782605
    }
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -274,7 +274,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -298,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909915": {
@@ -322,7 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909916": {
@@ -333,44 +333,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.209,
+   "ev": -0.208,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.651,
    "name": "Marcus Smart",
    "pid": "2990992",
-   "price": "-230",
-   "prob": 0.551,
+   "price": "-226",
+   "prob": 0.549,
    "projection": 1.691,
-   "score": 0.655,
+   "score": 0.651,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T14:28+00:00",
+  "seen": "2026-11-02T14:43+00:00",
   "start": "2026-11-03T01:30Z"
- },
- "prop|nba|401909920": {
-  "game": {
-   "date": "2026-11-03T03:00Z",
-   "event_id": "401909920",
-   "name": "Toronto Raptors at LA Clippers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.025,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.662,
-   "name": "Scottie Barnes",
-   "pid": "4433134",
-   "price": "-239",
-   "prob": 0.723,
-   "projection": 0.705,
-   "score": 0.662,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T14:28+00:00",
-  "start": "2026-11-03T03:00Z"
  }
 }
