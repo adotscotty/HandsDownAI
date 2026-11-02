@@ -49,37 +49,37 @@
    "projected_profit": 5.24,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
+     "chance": 0.662,
      "event_id": "401909920",
      "game": "TOR @ LAC",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Scottie Barnes",
-     "odds": -235,
+     "odds": -239,
      "pid": "4433134",
      "projection": 0.705,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-03T03:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.22,
    "start": "2026-11-03T03:00Z"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T03:00Z"
  },
  "bet|2026-11-02|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-03T01:00Z"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "bet|2026-11-02|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-03T00:30Z"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "bet|2026-11-02|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-03T01:15Z"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T01:15Z"
  },
  "parlay|2026-11-02|nba": {
@@ -250,7 +250,7 @@
     "projected_profit": 3.804650434782605
    }
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909908": {
@@ -274,7 +274,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909912": {
@@ -298,7 +298,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909915": {
@@ -322,7 +322,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909920": {
@@ -333,20 +333,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.117,
+   "ev": 0.025,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.659,
+   "line": 1.5,
+   "market_prob": 0.662,
    "name": "Scottie Barnes",
    "pid": "4433134",
-   "price": "-235",
-   "prob": 0.619,
+   "price": "-239",
+   "prob": 0.723,
    "projection": 0.705,
-   "score": 0.659,
-   "side": "over",
+   "score": 0.662,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T13:27+00:00",
+  "seen": "2026-11-02T13:40+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }
