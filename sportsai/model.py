@@ -89,6 +89,13 @@ class RatingModel:
                 from .cbbplayers import preseason
                 for t, pts in preseason(season).items():
                     self.r[t] = (1 - pw) * self.r[t] + pw * pts * self.p.get("pl_k", 1.0)
+            # ...and bracketology (average projected NCAA seed). Off: tested 2022/2024/2025 preseason
+            # Bracket Matrix on top of player ratings, no gain (early-season miss flat, spread picks slightly worse).
+            sw = self.p.get("sd_w", 0.0)
+            if sw:
+                from .cbbseeds import load as seeds
+                for t, seed in seeds(season).items():
+                    self.r[t] = (1 - sw) * self.r[t] + sw * (self.p.get("sd_a", 23.5) - self.p.get("sd_b", 1.35) * seed)
             self.n.clear()
             self.wl.clear()
             # Player history and QBs carry over, so injuries count from opening night.
