@@ -2,24 +2,13 @@
  "parlay|2026-11-03|cbb": {
   "card": {
    "three": {
-    "chance": 0.30858861200000004,
+    "chance": 0.319304216,
     "legs": [
      {
-      "chance": 0.659,
-      "event_id": "401920422",
-      "game": "DREX @ UVA",
-      "line": 31.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-04T00:30Z",
-      "team": "DREX"
-     },
-     {
-      "chance": 0.7010000000000001,
+      "chance": 0.727,
       "event_id": "401929372",
       "game": "UAPB @ ARK",
-      "line": 39.5,
+      "line": 41.5,
       "odds": -105,
       "side": "away",
       "sport": "cbb",
@@ -27,28 +16,39 @@
       "team": "UAPB"
      },
      {
-      "chance": 0.6679999999999999,
+      "chance": 0.6819999999999999,
       "event_id": "401921808",
       "game": "NOLA @ LSU",
-      "line": 23.5,
-      "odds": -105,
+      "line": 24.5,
+      "odds": -110,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-04T01:00Z",
       "team": "NOLA"
+     },
+     {
+      "chance": 0.644,
+      "event_id": "401920806",
+      "game": "ALST @ TA&M",
+      "line": 31.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-04T01:00Z",
+      "team": "ALST"
      }
     ],
-    "payout": 144.30353093618396,
-    "projected_profit": 24.530426318296072
+    "payout": 145.54112554112555,
+    "projected_profit": 26.47189498666667
    },
    "two": {
-    "chance": 0.468268,
+    "chance": 0.4958139999999999,
     "legs": [
      {
-      "chance": 0.7010000000000001,
+      "chance": 0.727,
       "event_id": "401929372",
       "game": "UAPB @ ARK",
-      "line": 39.5,
+      "line": 41.5,
       "odds": -105,
       "side": "away",
       "sport": "cbb",
@@ -56,22 +56,22 @@
       "team": "UAPB"
      },
      {
-      "chance": 0.6679999999999999,
+      "chance": 0.6819999999999999,
       "event_id": "401921808",
       "game": "NOLA @ LSU",
-      "line": 23.5,
-      "odds": -105,
+      "line": 24.5,
+      "odds": -110,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-04T01:00Z",
       "team": "NOLA"
      }
     ],
-    "payout": 76.23582766439908,
-    "projected_profit": 15.698798548752833
+    "payout": 74.54545454545455,
+    "projected_profit": 16.960679999999996
    }
   },
-  "seen": "2026-11-03T13:25+00:00",
-  "start": "2026-11-04T00:30Z"
+  "seen": "2026-11-03T13:50+00:00",
+  "start": "2026-11-04T01:00Z"
  }
 }
