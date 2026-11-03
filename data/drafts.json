@@ -1,157 +1,4 @@
 {
- "bet|2026-11-02|parlay": {
-  "bet": {
-   "chance": 0.174,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.566,
-     "event_id": "401909909",
-     "game": "ATL @ IND",
-     "line": 9.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "team": "IND",
-     "team_name": "IND",
-     "type": "spread"
-    },
-    {
-     "chance": 0.5489999999999999,
-     "event_id": "401909910",
-     "game": "BKN @ NY",
-     "line": 14.5,
-     "odds": -110,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "team": "BKN",
-     "team_name": "BKN",
-     "type": "spread"
-    },
-    {
-     "chance": 0.56,
-     "event_id": "401909915",
-     "game": "MIL @ MIN",
-     "line": -10.5,
-     "odds": -115,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-03T01:00Z",
-     "team": "MIN",
-     "team_name": "MIN",
-     "type": "spread"
-    }
-   ],
-   "payout": 137.48,
-   "price": 587,
-   "projected_profit": 3.92,
-   "start": "2026-11-03T00:30Z"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "bet|2026-11-02|prop": {
-  "bet": {
-   "chance": 0.661,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.661,
-     "event_id": "401909908",
-     "game": "DET @ CHA",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Dennis Schroder",
-     "odds": -238,
-     "pid": "3032979",
-     "projection": 0.946,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
-   "start": "2026-11-03T00:30Z"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "bet|2026-11-02|sgp": {
-  "bet": {
-   "chance": 0.3736,
-   "kind": "sgp",
-   "legs": [
-    {
-     "chance": 0.566,
-     "event_id": "401909909",
-     "game": "ATL @ IND",
-     "line": 9.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "team": "IND",
-     "team_name": "Indiana Pacers",
-     "type": "spread"
-    },
-    {
-     "chance": 0.66,
-     "event_id": "401909909",
-     "game": "ATL @ IND",
-     "label": "threes",
-     "line": 0.5,
-     "name": "Asa Newell",
-     "odds": -236,
-     "pid": "4873201",
-     "projection": 0.43,
-     "side": "over",
-     "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 54.84,
-   "price": 174,
-   "projected_profit": 0.49,
-   "start": "2026-11-03T00:30Z"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "bet|2026-11-02|spread": {
-  "bet": {
-   "chance": 0.566,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.566,
-     "event_id": "401909909",
-     "game": "ATL @ IND",
-     "line": 9.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-03T00:30Z",
-     "team": "IND",
-     "team_name": "Indiana Pacers",
-     "type": "spread"
-    }
-   ],
-   "payout": 38.52,
-   "price": -108,
-   "projected_profit": 1.8,
-   "start": "2026-11-03T00:30Z"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
- },
  "bet|2026-11-02|winner": {
   "bet": {
    "chance": 0.652,
@@ -175,155 +22,8 @@
    "projected_profit": 0.28,
    "start": "2026-11-03T03:00Z"
   },
-  "seen": "2026-11-02T23:58+00:00",
+  "seen": "2026-11-03T00:11+00:00",
   "start": "2026-11-03T03:00Z"
- },
- "parlay|2026-11-02|nba": {
-  "card": {
-   "three": {
-    "chance": 0.17401103999999998,
-    "legs": [
-     {
-      "chance": 0.566,
-      "event_id": "401909909",
-      "game": "ATL @ IND",
-      "line": 9.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-03T00:30Z",
-      "team": "IND"
-     },
-     {
-      "chance": 0.5489999999999999,
-      "event_id": "401909910",
-      "game": "BKN @ NY",
-      "line": 14.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-03T00:30Z",
-      "team": "BKN"
-     },
-     {
-      "chance": 0.56,
-      "event_id": "401909915",
-      "game": "MIL @ MIN",
-      "line": -10.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-03T01:00Z",
-      "team": "MIN"
-     }
-    ],
-    "payout": 137.47913921826964,
-    "projected_profit": 3.9228879936758823
-   },
-   "two": {
-    "chance": 0.31073399999999995,
-    "legs": [
-     {
-      "chance": 0.566,
-      "event_id": "401909909",
-      "game": "ATL @ IND",
-      "line": 9.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-03T00:30Z",
-      "team": "IND"
-     },
-     {
-      "chance": 0.5489999999999999,
-      "event_id": "401909910",
-      "game": "BKN @ NY",
-      "line": 14.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-03T00:30Z",
-      "team": "BKN"
-     }
-    ],
-    "payout": 73.53535353535354,
-    "projected_profit": 2.8499345454545413
-   }
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "prop|nba|401909908": {
-  "game": {
-   "date": "2026-11-03T00:30Z",
-   "event_id": "401909908",
-   "name": "Detroit Pistons at Charlotte Hornets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.044,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.661,
-   "name": "Dennis Schroder",
-   "pid": "3032979",
-   "price": "-238",
-   "prob": 0.673,
-   "projection": 0.946,
-   "score": 0.661,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "prop|nba|401909909": {
-  "game": {
-   "date": "2026-11-03T00:30Z",
-   "event_id": "401909909",
-   "name": "Atlanta Hawks at Indiana Pacers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.197,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.66,
-   "name": "Asa Newell",
-   "pid": "4873201",
-   "price": "-236",
-   "prob": 0.564,
-   "projection": 0.43,
-   "score": 0.66,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
- },
- "prop|nba|401909910": {
-  "game": {
-   "date": "2026-11-03T00:30Z",
-   "event_id": "401909910",
-   "name": "Brooklyn Nets at New York Knicks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.148,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.661,
-   "name": "Nolan Traore",
-   "pid": "5279130",
-   "price": "-237",
-   "prob": 0.599,
-   "projection": 1.376,
-   "score": 0.661,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T00:30Z"
  },
  "prop|nba|401909913": {
   "game": {
@@ -346,7 +46,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:58+00:00",
+  "seen": "2026-11-03T00:11+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909914": {
@@ -357,45 +57,21 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.008,
+   "ev": -0.132,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.659,
+   "line": 1.5,
+   "market_prob": 0.657,
    "name": "GG Jackson",
    "pid": "5105550",
-   "price": "-235",
-   "prob": 0.696,
+   "price": "-233",
+   "prob": 0.608,
    "projection": 1.31,
-   "score": 0.659,
-   "side": "over",
+   "score": 0.657,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:58+00:00",
+  "seen": "2026-11-03T00:11+00:00",
   "start": "2026-11-03T01:00Z"
- },
- "prop|nba|401909916": {
-  "game": {
-   "date": "2026-11-03T01:30Z",
-   "event_id": "401909916",
-   "name": "Boston Celtics at Houston Rockets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.034,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.661,
-   "name": "Marcus Smart",
-   "pid": "2990992",
-   "price": "-238",
-   "prob": 0.728,
-   "projection": 1.691,
-   "score": 0.661,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-02T23:58+00:00",
-  "start": "2026-11-03T01:30Z"
  },
  "prop|nba|401909920": {
   "game": {
@@ -418,7 +94,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:58+00:00",
+  "seen": "2026-11-03T00:11+00:00",
   "start": "2026-11-03T03:00Z"
  },
  "prop|nba|401909921": {
@@ -442,7 +118,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-02T23:58+00:00",
+  "seen": "2026-11-03T00:11+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }

@@ -52,3 +52,6 @@ nba,401909903,2026-11-01T20:30Z,Boston Celtics at Orlando Magic,5239561,Jase Ric
 nba,401909904,2026-11-01T22:00Z,Brooklyn Nets at Indiana Pacers,3133603,Kelly Oubre Jr.,tpm,threes,over,0.5,-231,0.9,0.65,-0.069,2,win,8.66,2026-11-01T21:47+00:00
 nba,401909905,2026-11-02T01:30Z,LA Clippers at Golden State Warriors,4997536,Gui Santos,tpm,threes,over,0.5,-229,1.1,0.669,-0.039,0,loss,-20.00,2026-11-02T01:10+00:00
 nba,401909906,2026-11-02T02:00Z,Toronto Raptors at Los Angeles Lakers,4277811,Collin Sexton,tpm,threes,under,1.5,-233,1.5,0.574,-0.179,1,win,8.58,2026-11-02T01:48+00:00
+nba,401909908,2026-11-03T00:30Z,Detroit Pistons at Charlotte Hornets,3032979,Dennis Schroder,tpm,threes,under,1.5,-238,0.9,0.673,-0.044,,,,2026-11-03T00:11+00:00
+nba,401909909,2026-11-03T00:30Z,Atlanta Hawks at Indiana Pacers,4873201,Asa Newell,tpm,threes,over,0.5,-237,0.4,0.565,-0.197,,,,2026-11-03T00:11+00:00
+nba,401909910,2026-11-03T00:30Z,Brooklyn Nets at New York Knicks,5279130,Nolan Traore,tpm,threes,under,1.5,-237,1.4,0.599,-0.148,,,,2026-11-03T00:11+00:00
