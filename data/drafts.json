@@ -2,19 +2,8 @@
  "parlay|2026-11-03|cbb": {
   "card": {
    "three": {
-    "chance": 0.33296963500000004,
+    "chance": 0.32539066000000005,
     "legs": [
-     {
-      "chance": 0.659,
-      "event_id": "401920422",
-      "game": "DREX @ UVA",
-      "line": 31.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-04T00:30Z",
-      "team": "DREX"
-     },
      {
       "chance": 0.727,
       "event_id": "401929372",
@@ -36,10 +25,21 @@
       "sport": "cbb",
       "start": "2026-11-04T01:00Z",
       "team": "NOLA"
+     },
+     {
+      "chance": 0.644,
+      "event_id": "401920806",
+      "game": "ALST @ TA&M",
+      "line": 31.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-04T01:00Z",
+      "team": "ALST"
      }
     ],
-    "payout": 137.97520661157026,
-    "projected_profit": 25.94155418450414
+    "payout": 142.31404958677686,
+    "projected_profit": 26.30766252231406
    },
    "two": {
     "chance": 0.5052650000000001,
@@ -71,7 +71,7 @@
     "projected_profit": 16.83006033057852
    }
   },
-  "seen": "2026-11-03T14:15+00:00",
-  "start": "2026-11-04T00:30Z"
+  "seen": "2026-11-03T14:29+00:00",
+  "start": "2026-11-04T01:00Z"
  }
 }
