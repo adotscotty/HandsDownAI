@@ -3,7 +3,8 @@ import csv, datetime as dt, json, os, shutil
 from .fetch_history import DATA
 
 SITE = os.path.join(os.path.dirname(__file__), "..", "site")
-NAMES = {"nfl": "NFL", "nba": "NBA", "cfb": "College Football"}
+NAMES = {"nfl": "NFL", "nba": "NBA", "cfb": "College Football", "cbb": "College Basketball"}
+COLLEGE = ("cfb", "cbb")  # college spreads are leans, not bets, until the model beats 52.4% there
 
 
 def record(rows):
@@ -165,9 +166,11 @@ def daily(day):
     """Everything we picked on one Eastern date, with results for games that have finished."""
     from .parlays import results, decimal
     games = []
-    for sport in ("nfl", "nba", "cfb"):
+    for sport in ("nfl", "nba", "cfb", "cbb"):
         for r in load_season(sport):
             if eastern_date(r["date"]).isoformat() != day:
+                continue
+            if sport == "cbb" and r["spread"] is None:   # 100+ games a day: list only those with a line
                 continue
             m = r["home_score"] - r["away_score"]
             g = dict(sport=sport, date=r["date"], home=r["home"], away=r["away"], home_score=r["home_score"],
@@ -207,8 +210,8 @@ def daily(day):
     summary = dict(
         games=len(games),
         winners=[sum(g["winner_right"] for g in games), sum(not g["winner_right"] for g in games)],
-        ats=tally([g for g in games if g["sport"] != "cfb"], "ats", "win", "loss"),  # NFL + NBA spread picks
-        cfb_leans=tally([g for g in games if g["sport"] == "cfb"], "ats", "win", "loss"),  # college: leans, not bets
+        ats=tally([g for g in games if g["sport"] not in COLLEGE], "ats", "win", "loss"),  # NFL + NBA spread picks
+        cfb_leans=tally([g for g in games if g["sport"] in COLLEGE], "ats", "win", "loss"),  # college: leans, not bets
         props=tally(props, "result", "win", "loss"),
         parlays=tally(parlays, "status", "won", "lost"),
         best_bets=tally([x for x in best if x["kind"] in CORE], "status", "won", "lost"),  # straight bets
@@ -283,7 +286,7 @@ def main():
             shutil.copy(os.path.join(DATA, extra), os.path.join(SITE, "data", extra))
     backtest = json.load(open(os.path.join(DATA, "backtest_summary.json")))
     track = {}
-    for sport in ("nfl", "nba", "cfb"):
+    for sport in ("nfl", "nba", "cfb", "cbb"):
         rows = load_season(sport)
         b = backtest.get(sport, {})
         track[sport] = dict(

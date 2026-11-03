@@ -36,6 +36,9 @@ DEFAULTS = {
                 lu=0.7, lu_mix=0.0, luck=0.25, pace_adj=1, late_tank=5.0, late_top=0.0, cur=1),
     "cfb": dict(k=0.12, early=2.0, carry=0.7, hfa=2.8, cap=35, beta=5.0, sigma=15.5, new=-18.0,
                 rest=0.0, rest_cap=14, qbq=0.0, qb_repl=5.0),
+    # pl_w / pl_k: how much of each team's opening rating comes from its players (see cbbplayers.py)
+    "cbb": dict(k=0.08, early=2.0, carry=0.6, hfa=3.0, cap=30, beta=0.0, sigma=11.0, new=-15.0,
+                rest=0.0, rest_cap=3, qbq=0.0, qb_repl=0.0, pl_w=0.0, pl_k=0.6),
 }
 
 
@@ -80,6 +83,12 @@ class RatingModel:
             for t, wins in wt.items():
                 if w and wins:
                     self.r[t] = (1 - w) * self.r[t] + w * (wins - 41) / self.p.get("wt_k", 2.7)
+            # College basketball: rosters turn over every year, so mix in a player-based estimate
+            pw = self.p.get("pl_w", 0.0)
+            if pw:
+                from .cbbplayers import preseason
+                for t, pts in preseason(season).items():
+                    self.r[t] = (1 - pw) * self.r[t] + pw * pts * self.p.get("pl_k", 1.0)
             self.n.clear()
             self.wl.clear()
             # Player history and QBs carry over, so injuries count from opening night.

@@ -157,6 +157,16 @@ class SameGameParlayProp(unittest.TestCase):
         self.assertEqual(leg["pid"], "1")
 
 
+class CollegeBasketballPlayers(unittest.TestCase):
+    def test_preseason_ratings_from_players(self):
+        from sportsai import cbbplayers
+        p = cbbplayers.preseason(2024)          # 2024-25: Houston and Auburn were top seeds
+        self.assertGreater(len(p), 300)
+        top = sorted(p, key=p.get, reverse=True)[:10]
+        self.assertIn("248", top)   # Houston
+        self.assertIn("2", top)     # Auburn
+
+
 class SiteBuild(unittest.TestCase):
     def test_build_runs_on_saved_data(self):
         """The site build must finish on today's saved data (a crash here once froze the site)."""

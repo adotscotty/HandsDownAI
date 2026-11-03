@@ -1,5 +1,6 @@
 // HandsDown AI: renders the data/*.json files the updater writes every 15 minutes.
-const SPORT = { nfl: "NFL", nba: "NBA", cfb: "College" };
+const SPORT = { nfl: "NFL", nba: "NBA", cfb: "College FB", cbb: "College BB" };
+const LEAN = ["cfb", "cbb"];  // college spreads are leans, not bets, until the model beats 52.4% there
 const NAMES = { winner: "Best winner", spread: "Best spread", parlay: "Long-shot parlay", prop: "Best player prop", sgp: "Same-game parlay" };
 const WHY = { winner: "Most likely winner priced to profit (-200 or better)", spread: "Most likely cover priced to profit", parlay: "Best value 2- or 3-game parlay",
   prop: "DraftKings' most likely player prop", sgp: "Our spread pick plus a player prop, priced to profit" };
@@ -218,8 +219,8 @@ function whyList(g) {
     const vf = -g.spread, pm = g.predicted_home_margin;
     items.push(`Vegas has ${Math.abs(vf) < 0.25 ? "it a pick'em" : `the ${vf > 0 ? H : A} by ${Math.abs(vf).toFixed(1)}`}. Vegas is usually sharper, so our prediction is 60% Vegas and 40% our model: the ${pm >= 0 ? H : A} by ${Math.abs(pm).toFixed(1)}.`);
     const d = pm + g.spread;
-    if (Math.abs(d) >= 0.05) items.push(`That's ${d > 0 ? "a bit more" : "a bit less"} than Vegas gives the ${H}, so our spread ${g.sport === "cfb" ? "lean" : "pick"} is the ${d > 0 ? H : A}. Our chance it covers: ${Math.round(100 * Math.max(g.home_cover_prob, 1 - g.home_cover_prob))}%.` +
-      (g.sport === "cfb" ? " College spreads are leans, not bets, until our model beats the 52.4% break-even there." : ""));
+    if (Math.abs(d) >= 0.05) items.push(`That's ${d > 0 ? "a bit more" : "a bit less"} than Vegas gives the ${H}, so our spread ${LEAN.includes(g.sport) ? "lean" : "pick"} is the ${d > 0 ? H : A}. Our chance it covers: ${Math.round(100 * Math.max(g.home_cover_prob, 1 - g.home_cover_prob))}%.` +
+      (LEAN.includes(g.sport) ? " College spreads are leans, not bets, until our model beats the 52.4% break-even there." : ""));
   }
   return h("ul", {}, ...items.map(t => h("li", { text: t })));
 }
@@ -240,7 +241,7 @@ function gameRow(g) {
   if (g.spread != null) {
     const d = g.predicted_home_margin + g.spread;
     pickTxt = Math.abs(d) < 0.05 ? "No spread pick: our prediction lands right on the line"
-      : `${g.sport === "cfb" ? "Our spread lean (not a bet)" : "Our spread pick"}: ${d > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`}`;
+      : `${LEAN.includes(g.sport) ? "Our spread lean (not a bet)" : "Our spread pick"}: ${d > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`}`;
   }
   if (e != null && g.model_home_margin != null) {
     const side = e > 0 ? `${g.home} ${line(g.spread)}` : `${g.away} ${line(-g.spread)}`;
@@ -276,7 +277,8 @@ const dayKey = s => new Date(s).toLocaleDateString("en-CA");
 function renderGames() {
   const box = document.getElementById("gamesList"), pick = document.getElementById("dayPick");
   box.replaceChildren(); pick.replaceChildren();
-  let games = (S.preds?.games || []).filter(g => sportOk(g.sport));
+  // college basketball has 100+ games a day: in "All", show only the ones with a betting line
+  let games = (S.preds?.games || []).filter(g => sportOk(g.sport) && !(S.sport === "all" && g.sport === "cbb" && g.spread == null));
   if (S.edgeOnly) games = games.filter(g => g.edge_vs_spread != null && Math.abs(g.edge_vs_spread) >= 4 && Math.abs(g.edge_vs_spread) < 7);
   if (!games.length) { box.append(h("p", { class: "empty", text: S.edgeOnly ? "No gold-stripe games right now. Untick \"Gold stripe only\" to see every game." : "No games to show right now." })); return; }
   const days = [...new Set(games.map(g => dayKey(g.date)))];
@@ -304,7 +306,7 @@ function renderParlays() {
   const P = S.parlays;
   if (!P) { box.append(h("p", { class: "empty", text: "Parlays will appear after the next update." })); return; }
   const items = [];
-  for (const sp of ["nfl", "nba", "cfb"]) {
+  for (const sp of ["nfl", "nba", "cfb", "cbb"]) {
     if (!sportOk(sp)) continue;
     const c = (P.current || {})[sp]; if (!c) continue;
     for (const [k, n] of [["two", "2-game"], ["three", "3-game"]]) if (c[k]) {
@@ -401,7 +403,7 @@ function gamesTable(games) {
     const ats = g.ats === "win" ? h("span", { class: "w", text: `covered by ${g.by}` }) : g.ats === "loss" ? h("span", { class: "l", text: `missed by ${-g.by}` }) : g.ats ? "push" : "–";
     tb.append(h("tr", {},
       h("td", {}, `${g.away} ${g.away_score} @ ${g.home} ${g.home_score}`, h("small", { text: SPORT[g.sport] })),
-      h("td", {}, g.pick ? g.pick + (g.sport === "cfb" ? " (lean)" : "") : "–", h("small", {}, ats)),
+      h("td", {}, g.pick ? g.pick + (LEAN.includes(g.sport) ? " (lean)" : "") : "–", h("small", {}, ats)),
       h("td", { class: "r " + (g.winner_right ? "w" : "l"), text: g.winner_right ? "Right" : "Wrong" })));
   }
   return h("div", { class: "wide-scroll" }, h("table", { class: "rise" }, h("thead", {}, h("tr", {}, h("th", { text: "Final" }),
@@ -490,7 +492,7 @@ function renderTrack() {
     const figs = h("div", { class: "season-figs" });
     if (s) {
       figs.append(h("div", {}, h("strong", { text: s.winner_pct + "%" }), h("small", { text: "Winners picked this season" })),
-        h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: sp === "cfb" ? "Spread leans won-lost (not bets until above 52.4%)" : "Spread picks won-lost" })),
+        h("div", {}, h("strong", { text: s.ats ? wl(s.ats.wins, s.ats.losses, s.ats.pushes) : "–" }), h("small", { text: LEAN.includes(sp) ? "Spread leans won-lost (not bets until above 52.4%)" : "Spread picks won-lost" })),
         h("div", {}, h("strong", { class: "gold", text: s.model_ats_big ? wl(s.model_ats_big.wins, s.model_ats_big.losses, s.model_ats_big.pushes) : "–" }),
           h("small", { text: "Gold-edge picks won-lost" + (s.model_ats_big && s.model_ats_big.pct != null ? ` (${s.model_ats_big.pct}%)` : "") })),
         h("div", {}, h("strong", { text: s.avg_miss + " pts" }), h("small", { text: `Average miss on margin · ${s.games.toLocaleString()} games` })));
@@ -560,7 +562,7 @@ document.getElementById("stake").addEventListener("input", e => e.target.value &
 document.querySelectorAll(".chips button").forEach(b => b.addEventListener("click", () => setStake(b.dataset.v)));
 
 for (const g of document.querySelectorAll(".sports")) {
-  for (const [k, n] of [["all", "All"], ["nfl", "NFL"], ["nba", "NBA"], ["cfb", "College"]]) g.append(h("button", { "data-sport": k, text: n }));
+  for (const [k, n] of [["all", "All"], ["nfl", "NFL"], ["nba", "NBA"], ["cfb", "College FB"], ["cbb", "College BB"]]) g.append(h("button", { "data-sport": k, text: n }));
   g.addEventListener("click", e => {
     const b = e.target.closest("button"); if (!b) return;
     S.sport = b.dataset.sport; syncSports(); rerender();
@@ -614,7 +616,7 @@ setInterval(freshness, 60 * 1000);
 // ---------- live scores (straight from ESPN, every minute) ----------
 const LIVE = {};          // event_id -> { state: pre|in|post, detail, home, away, hs, as }
 const BOX = {};           // event_id -> { pid -> stats }
-const FEEDS = { nfl: "football/nfl", nba: "basketball/nba", cfb: "football/college-football" };
+const FEEDS = { nfl: "football/nfl", nba: "basketball/nba", cfb: "football/college-football", cbb: "basketball/mens-college-basketball" };
 const COMBOS = { pr: ["pts", "reb"], pa: ["pts", "ast"], ar: ["ast", "reb"], pra: ["pts", "reb", "ast"],
   rr_yds: ["rush_yds", "rec_yds"], pr_yds: ["pass_yds", "rush_yds"] };
 const etDate = (d = new Date()) => new URLSearchParams(location.search).get("liveday") || new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(d).replaceAll("-", "");
@@ -623,7 +625,7 @@ const n = v => +String(v ?? 0).split(/[-/]/)[0] || 0;
 async function loadLive() {
   const day = etDate();
   const boards = await Promise.all(Object.entries(FEEDS).map(([sp, path]) =>
-    fetch(`https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard?dates=${day}${sp === "cfb" ? "&groups=80&limit=300" : ""}`)
+    fetch(`https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard?dates=${day}${sp === "cfb" ? "&groups=80&limit=300" : sp === "cbb" ? "&groups=50&limit=400" : ""}`)
       .then(r => r.ok ? r.json() : null).catch(() => null)));
   S.liveFail = boards.every(b => !b);
   for (const b of boards) for (const e of (b && b.events) || []) {

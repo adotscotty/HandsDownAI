@@ -15,6 +15,8 @@ GRID = {
                 late_top=[0, 1.5, 3]),
     "cfb": dict(k=[0.08, 0.11, 0.14, 0.18], carry=[0.55, 0.7, 0.85], hfa=[2.0, 2.75, 3.5], beta=[0, 4, 7],
                 early=[0.5, 1, 2, 4]),
+    "cbb": dict(k=[0.025, 0.035, 0.05, 0.07], carry=[0.5, 0.7, 0.85], hfa=[3.0, 3.5, 4.0], early=[1, 2, 4],
+                pl_w=[0, 0.5, 0.7, 0.85, 1.0], pl_k=[0.8, 1.0, 1.2]),
 }
 
 
@@ -157,4 +159,4 @@ def main(sports):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:] or ["nfl", "nba", "cfb"])
+    main(sys.argv[1:] or ["nfl", "nba", "cfb", "cbb"])

@@ -8,7 +8,9 @@ LEAGUES = {  # our sport key -> ESPN path
     "nfl": "football/nfl",
     "nba": "basketball/nba",
     "cfb": "football/college-football",
+    "cbb": "basketball/mens-college-basketball",
 }
+COLLEGE = ("cfb", "cbb")  # sports with a top division (FBS / Division I) plus smaller-school opponents
 CACHE_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "cache")
 
 
@@ -48,7 +50,7 @@ def get_many(urls, cache=True, workers=8):
 
 
 def scoreboard_url(sport, yyyymmdd):
-    extra = "&groups=80&limit=300" if sport == "cfb" else "&limit=300"
+    extra = {"cfb": "&groups=80&limit=300", "cbb": "&groups=50&limit=400"}.get(sport, "&limit=300")
     return f"{SITE}/{LEAGUES[sport]}/scoreboard?dates={yyyymmdd}{extra}"
 
 
@@ -62,7 +64,7 @@ def odds_url(sport, event_id):
 
 
 def teams_url(sport):
-    extra = "?groups=80&limit=400" if sport == "cfb" else "?limit=100"
+    extra = {"cfb": "?groups=80&limit=400", "cbb": "?groups=50&limit=400"}.get(sport, "?limit=100")
     return f"{SITE}/{LEAGUES[sport]}/teams{extra}"
 
 

@@ -4,7 +4,8 @@ import datetime as dt, json, os, re
 from .espn import get_json
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "powerindex")
-PATHS = {"nba": ("basketball", "nba", "bpi"), "nfl": ("football", "nfl", "fpi"), "cfb": ("football", "college-football", "fpi")}
+PATHS = {"nba": ("basketball", "nba", "bpi"), "nfl": ("football", "nfl", "fpi"), "cfb": ("football", "college-football", "fpi"),
+         "cbb": ("basketball", "mens-college-basketball", "bpi")}
 
 
 def main():
@@ -16,7 +17,7 @@ def main():
             continue
         try:
             t = dt.date.today()
-            if sport == "nba":   # NBA seasons are named by the year they end
+            if sport in ("nba", "cbb"):   # basketball seasons are named by the year they end
                 season = t.year + (1 if t.month >= 8 else 0)
             else:                # football seasons by the year they start (January = last season's playoffs/bowls)
                 season = t.year - (1 if t.month <= 2 else 0)

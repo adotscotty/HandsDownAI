@@ -10,10 +10,12 @@ from .espn import get_json, get_many, scoreboard_url, summary_url, roster_url
 from .fetch_history import DATA, days, main_teams, add_lineups, add_closing_spreads, fbs_teams_from_games
 from .backtest import load
 from .model import run, RatingModel, win_prob
+from .espn import COLLEGE
 from .nbainjury import latest_report as nba_official_report, norm as norm_name
 
-CURRENT = {"nfl": (2026, "2026-09-01"), "nba": (2026, "2026-10-01"), "cfb": (2026, "2026-08-22")}
-LOOKAHEAD = {"nfl": 7, "nba": 2, "cfb": 7}
+CURRENT = {"nfl": (2026, "2026-09-01"), "nba": (2026, "2026-10-01"), "cfb": (2026, "2026-08-22"),
+           "cbb": (2026, "2026-11-01")}
+LOOKAHEAD = {"nfl": 7, "nba": 2, "cfb": 7, "cbb": 2}
 # How likely a listed player is to miss the game, by injury-report status
 STATUS_WEIGHT = {"out": 1.0, "injured reserve": 1.0, "suspension": 1.0, "doubtful": 0.75,
                  "questionable": 0.3, "day-to-day": 0.3, "probable": 0.05}
@@ -24,7 +26,7 @@ def parse_event(sport, ev, known):
     side = {c["homeAway"]: c for c in comp["competitors"]}
     h, a = side["home"], side["away"]
     ids = {h["team"]["id"], a["team"]["id"]}
-    if sport != "cfb" and not ids <= known:
+    if sport not in COLLEGE and not ids <= known:
         return None
     if ev.get("season", {}).get("type") not in (2, 3):
         return None
@@ -105,7 +107,7 @@ def injury_list(summary, team_id):
 
 # How far our team-strength gap may differ from ESPN's power index before we pull it back
 # (tested on NFL 2023-25: a 6-point cutoff was the only one that didn't hurt; college ratings spread wider).
-ESPN_CAP = {"nfl": 6.0, "nba": 6.0, "cfb": 10.0}
+ESPN_CAP = {"nfl": 6.0, "nba": 6.0, "cfb": 10.0, "cbb": 8.0}
 
 
 def latest_powerindex(sport):
@@ -169,12 +171,12 @@ def predict_sport(sport, settings, blend_w=0.0):
                 games[g["event_id"]] = g
     games = sorted(games.values(), key=lambda g: g["date"])
     history = load(sport)
-    if sport == "cfb":  # FBS = FBS last season, or already 5+ games in ESPN's FBS list this season
+    if sport in COLLEGE:  # FBS / Division I = last season's, or already 5+ games in ESPN's list this season
         fbs = {t for _, t in fbs_teams_from_games(games)}
         fbs |= {g[s + "_id"] for g in history if g["season"] == season - 1 for s in ("home", "away") if g[s + "_fbs"]}
     for g in games:
-        g["home_fbs"] = int(sport != "cfb" or g["home_id"] in fbs)
-        g["away_fbs"] = int(sport != "cfb" or g["away_id"] in fbs)
+        g["home_fbs"] = int(sport not in COLLEGE or g["home_id"] in fbs)
+        g["away_fbs"] = int(sport not in COLLEGE or g["away_id"] in fbs)
     done = [g for g in games if g["completed"]]
     upcoming = [g for g in games if not g["completed"] and g.get("state", "pre") == "pre"]  # skip live games
     new_done = [g for g in done if not g.get("_stored")]
@@ -401,4 +403,4 @@ def main(sports):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:] or ["nfl", "nba", "cfb"])
+    main(sys.argv[1:] or ["nfl", "nba", "cfb", "cbb"])

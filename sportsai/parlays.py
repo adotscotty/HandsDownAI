@@ -67,7 +67,7 @@ def load_log():
 def results():
     """event_id -> (home score, away score) for finished games this season."""
     out = {}
-    for sport in ("nfl", "nba", "cfb"):
+    for sport in ("nfl", "nba", "cfb", "cbb"):
         path = os.path.join(DATA, f"current_{sport}.csv")
         if os.path.exists(path):
             with open(path) as f:
@@ -103,7 +103,7 @@ def eastern_today(now):
 
 
 MIN_GAMES = {2: 4, 3: 6}  # a sport needs this many games with lines to get a 2- / 3-game parlay
-SPORTS = ("nfl", "nba", "cfb")
+SPORTS = ("nfl", "nba", "cfb", "cbb")
 
 
 def as_row(slot, sport, kind, p, now):

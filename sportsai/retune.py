@@ -17,7 +17,7 @@ def all_games(sport):
     current = load_current(sport)
     for g in current:
         g["home_fbs"] = g["away_fbs"] = 1
-    if sport == "cfb":
+    if sport in ("cfb", "cbb"):
         season = CURRENT[sport][0]
         fbs = {t for _, t in fbs_teams_from_games(current)}
         fbs |= {g[s + "_id"] for g in history if g["season"] == season - 1 for s in ("home", "away") if g[s + "_fbs"]}
@@ -61,4 +61,4 @@ def main(sports):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:] or ["nfl", "nba", "cfb"])
+    main(sys.argv[1:] or ["nfl", "nba", "cfb", "cbb"])

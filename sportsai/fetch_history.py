@@ -1,6 +1,6 @@
 """Download past seasons (scores, closing spreads, who played) into data/games_<sport>.csv."""
 import csv, datetime as dt, os, sys
-from .espn import get_many, get_json, scoreboard_url, summary_url, odds_url, teams_url
+from .espn import get_many, get_json, scoreboard_url, summary_url, odds_url, teams_url, COLLEGE
 
 SEASONS = {  # season label -> (first day, last day)
     "nfl": {2021: ("2021-09-09", "2022-02-14"), 2022: ("2022-09-08", "2023-02-13"),
@@ -12,8 +12,12 @@ SEASONS = {  # season label -> (first day, last day)
     "cfb": {2021: ("2021-08-28", "2022-01-11"), 2022: ("2022-08-27", "2023-01-10"),
             2023: ("2023-08-26", "2024-01-09"), 2024: ("2024-08-24", "2025-01-20"),
             2025: ("2025-08-23", "2026-01-20")},
+    # men's college basketball, labeled by the year the season starts (2025 = 2025-26)
+    "cbb": {2021: ("2021-11-09", "2022-04-04"), 2022: ("2022-11-07", "2023-04-03"),
+            2023: ("2023-11-06", "2024-04-08"), 2024: ("2024-11-04", "2025-04-07"),
+            2025: ("2025-11-03", "2026-04-06")},
 }
-ODDS_SEASONS = {"nfl": (2023, 2024, 2025), "nba": (2023, 2024, 2025), "cfb": (2023, 2024, 2025)}  # seasons we pull closing spreads for (default: test season)
+ODDS_SEASONS = {"nfl": (2023, 2024, 2025), "nba": (2023, 2024, 2025), "cfb": (2023, 2024, 2025), "cbb": (2023, 2024, 2025)}  # seasons we pull closing spreads for (default: test season)
 TEST_SEASON = 2025  # the "last season" we backtest on; 2024 is used to tune and seed ratings
 DATA = os.path.join(os.path.dirname(__file__), "..", "data")
 
@@ -37,7 +41,7 @@ def fbs_teams_from_games(games):
 
 
 def main_teams(sport):
-    if sport == "cfb":
+    if sport in COLLEGE:
         return set()  # decided from the games themselves, see fbs_teams_from_games
     data = get_json(teams_url(sport))
     return {t["team"]["id"] for t in data["sports"][0]["leagues"][0]["teams"]}
@@ -58,7 +62,7 @@ def fetch_games(sport):
                 side = {c["homeAway"]: c for c in comp["competitors"]}
                 h, aw = side["home"], side["away"]
                 ids = {h["team"]["id"], aw["team"]["id"]}
-                if sport != "cfb" and not ids <= known:
+                if sport not in COLLEGE and not ids <= known:
                     continue  # skips all-star / exhibition games
                 games.append(dict(
                     sport=sport, season=season, event_id=ev["id"], date=ev["date"],
@@ -68,7 +72,7 @@ def fetch_games(sport):
                 ))
     games = list({g["event_id"]: g for g in games}.values())
     games.sort(key=lambda g: g["date"])
-    fbs = fbs_teams_from_games(games) if sport == "cfb" else None
+    fbs = fbs_teams_from_games(games) if sport in COLLEGE else None
     for g in games:
         g["home_fbs"] = int(fbs is None or (g["season"], g["home_id"]) in fbs)
         g["away_fbs"] = int(fbs is None or (g["season"], g["away_id"]) in fbs)
@@ -181,7 +185,9 @@ def player_lines(sport, summary, team_id):
 
 
 def add_lineups(sport, games):
-    """NBA: minutes for every player. NFL/CFB: the main passer (QB)."""
+    """NBA: minutes for every player. NFL/CFB: the main passer (QB). College basketball: none (team ratings only)."""
+    if sport == "cbb":
+        return
     sums = get_many([summary_url(sport, g["event_id"]) for g in games])
     for g, s in zip(games, sums):
         for side in ("home", "away"):
@@ -213,4 +219,4 @@ def main(sports):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:] or ["nfl", "nba", "cfb"])
+    main(sys.argv[1:] or ["nfl", "nba", "cfb", "cbb"])

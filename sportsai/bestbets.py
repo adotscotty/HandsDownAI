@@ -79,7 +79,8 @@ def candidates(preds, day, now):
     chance is DraftKings' own fair odds, which always sit just under break-even, and the 65%+ prop rule
     has been the bet that pays, so the prop keeps its own rule."""
     games = [p for p in preds if eastern_date(p["date"]) == day
-             and dt.datetime.fromisoformat(p["date"].replace("Z", "+00:00")) > now]
+             and dt.datetime.fromisoformat(p["date"].replace("Z", "+00:00")) > now
+             and p["sport"] != "cbb"]   # college basketball: no best bets until it has a track record
     out = {}
     # Winner: the most likely winner with a moneyline no worse than -200 that beats its break-even
     wins = []
@@ -97,7 +98,7 @@ def candidates(preds, day, now):
         out["winner"] = max(wins, key=lambda b: b["chance"])
     # Spread: the side most likely to cover, among those that beat their break-even
     # (college spreads are leans, not bets, until the model beats 52.4% there)
-    spreads = [make_bet("spread", [l]) for l in (spread_leg(p) for p in games if p["sport"] != "cfb") if l]
+    spreads = [make_bet("spread", [l]) for l in (spread_leg(p) for p in games if p["sport"] not in ("cfb", "cbb")) if l]
     spreads = [b for b in spreads if has_value(b)]
     if spreads:
         out["spread"] = max(spreads, key=lambda b: b["chance"])

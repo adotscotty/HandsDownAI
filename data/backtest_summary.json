@@ -163,5 +163,59 @@
    "qb_repl": 5.0
   },
   "blend_w": 0.4
+ },
+ "cbb": {
+  "games": 5807,
+  "games_with_spread": 5744,
+  "model_avg_miss": 9.38,
+  "model_no_injury_avg_miss": 9.38,
+  "model_avg_miss_same_games": 9.16,
+  "vegas_avg_miss_same_games": 8.94,
+  "picked_winner_pct": 72.4,
+  "vegas_picked_winner_pct": 72.8,
+  "brier": 0.1769,
+  "against_spread": {
+   "edge_0+": {
+    "wins": 2959,
+    "losses": 2785,
+    "pushes": 0,
+    "win_pct": 51.5
+   },
+   "edge_2+": {
+    "wins": 1261,
+    "losses": 1176,
+    "pushes": 0,
+    "win_pct": 51.7
+   },
+   "edge_4+": {
+    "wins": 436,
+    "losses": 380,
+    "pushes": 0,
+    "win_pct": 53.4
+   },
+   "edge_6+": {
+    "wins": 151,
+    "losses": 150,
+    "pushes": 0,
+    "win_pct": 50.2
+   }
+  },
+  "settings": {
+   "k": 0.05,
+   "early": 2.0,
+   "carry": 0.85,
+   "hfa": 3.0,
+   "cap": 30,
+   "beta": 0.0,
+   "sigma": 10.45,
+   "new": -15.0,
+   "rest": 0.0,
+   "rest_cap": 3,
+   "qbq": 0.0,
+   "qb_repl": 0.0,
+   "pl_w": 0.85,
+   "pl_k": 1.0
+  },
+  "blend_w": 0.4
  }
 }

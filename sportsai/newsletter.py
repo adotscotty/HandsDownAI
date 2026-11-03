@@ -19,7 +19,7 @@ SUBSCRIBE = "https://buttondown.com/handsdownai"
 STAKE = 20.0
 FIRST_ISSUE_DATE = dt.date(2026, 10, 22)            # issue #1 went out the week of Oct 22
 KIND = {"winner": "Winner", "spread": "Spread", "parlay": "Parlay", "prop": "Player prop", "sgp": "Same-game parlay"}
-SPORT = {"nfl": "NFL", "nba": "NBA", "cfb": "College"}
+SPORT = {"nfl": "NFL", "nba": "NBA", "cfb": "College FB", "cbb": "College BB"}
 OUT = os.path.join(DATA, "newsletter")
 
 
