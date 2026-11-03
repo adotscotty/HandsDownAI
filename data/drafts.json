@@ -71,7 +71,31 @@
     "projected_profit": 19.07426727272727
    }
   },
-  "seen": "2026-11-03T23:42+00:00",
+  "seen": "2026-11-03T23:55+00:00",
   "start": "2026-11-04T00:30Z"
+ },
+ "prop|nba|401909922": {
+  "game": {
+   "date": "2026-11-05T00:00Z",
+   "event_id": "401909922",
+   "name": "Philadelphia 76ers at Detroit Pistons",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.068,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.651,
+   "name": "Joel Embiid",
+   "pid": "3059318",
+   "price": "-226",
+   "prob": 0.646,
+   "projection": 0.906,
+   "score": 0.651,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-03T23:55+00:00",
+  "start": "2026-11-05T00:00Z"
  }
 }
