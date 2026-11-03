@@ -20,7 +20,7 @@
       "event_id": "401929372",
       "game": "UAPB @ ARK",
       "line": 41.5,
-      "odds": -110,
+      "odds": -105,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-04T01:00Z",
@@ -38,8 +38,8 @@
       "team": "NOLA"
      }
     ],
-    "payout": 137.97520661157026,
-    "projected_profit": 27.66023103169421
+    "payout": 141.1038961038961,
+    "projected_profit": 28.7409618940909
    },
    "two": {
     "chance": 0.5241669999999999,
@@ -49,7 +49,7 @@
       "event_id": "401929372",
       "game": "UAPB @ ARK",
       "line": 41.5,
-      "odds": -110,
+      "odds": -105,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-04T01:00Z",
@@ -67,11 +67,11 @@
       "team": "NOLA"
      }
     ],
-    "payout": 72.89256198347108,
-    "projected_profit": 18.207875537190084
+    "payout": 74.54545454545455,
+    "projected_profit": 19.07426727272727
    }
   },
-  "seen": "2026-11-03T15:55+00:00",
+  "seen": "2026-11-03T16:25+00:00",
   "start": "2026-11-04T00:30Z"
  }
 }
