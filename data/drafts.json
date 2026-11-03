@@ -22,7 +22,7 @@
    "projected_profit": 0.28,
    "start": "2026-11-03T03:00Z"
   },
-  "seen": "2026-11-03T00:19+00:00",
+  "seen": "2026-11-03T00:32+00:00",
   "start": "2026-11-03T03:00Z"
  },
  "prop|nba|401909913": {
@@ -46,7 +46,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-03T00:19+00:00",
+  "seen": "2026-11-03T00:32+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909914": {
@@ -57,20 +57,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.132,
+   "ev": -0.129,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.657,
+   "market_prob": 0.653,
    "name": "GG Jackson",
    "pid": "5105550",
-   "price": "-233",
-   "prob": 0.608,
+   "price": "-228",
+   "prob": 0.606,
    "projection": 1.31,
-   "score": 0.657,
+   "score": 0.653,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-03T00:19+00:00",
+  "seen": "2026-11-03T00:32+00:00",
   "start": "2026-11-03T01:00Z"
  },
  "prop|nba|401909920": {
@@ -81,44 +81,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.117,
+   "ev": -0.116,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.657,
+   "market_prob": 0.658,
    "name": "Scottie Barnes",
    "pid": "4433134",
    "price": "-234",
    "prob": 0.619,
    "projection": 0.705,
-   "score": 0.657,
+   "score": 0.658,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-03T00:19+00:00",
-  "start": "2026-11-03T03:00Z"
- },
- "prop|nba|401909921": {
-  "game": {
-   "date": "2026-11-03T03:00Z",
-   "event_id": "401909921",
-   "name": "Miami Heat at Los Angeles Lakers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.066,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.651,
-   "name": "Pelle Larsson",
-   "pid": "4601025",
-   "price": "-226",
-   "prob": 0.647,
-   "projection": 0.916,
-   "score": 0.651,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-03T00:19+00:00",
+  "seen": "2026-11-03T00:32+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }
