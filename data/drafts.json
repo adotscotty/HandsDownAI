@@ -2,7 +2,7 @@
  "parlay|2026-11-03|cbb": {
   "card": {
    "three": {
-    "chance": 0.33919784399999997,
+    "chance": 0.34542605299999996,
     "legs": [
      {
       "chance": 0.659,
@@ -27,22 +27,22 @@
       "team": "UAPB"
      },
      {
-      "chance": 0.708,
+      "chance": 0.721,
       "event_id": "401921808",
       "game": "NOLA @ LSU",
-      "line": 26.5,
-      "odds": -108,
+      "line": 27.5,
+      "odds": -110,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-04T01:00Z",
       "team": "NOLA"
      }
     ],
-    "payout": 139.19191919191923,
-    "projected_profit": 27.21359889212122
+    "payout": 137.97520661157026,
+    "projected_profit": 27.66023103169421
    },
    "two": {
-    "chance": 0.514716,
+    "chance": 0.5241669999999999,
     "legs": [
      {
       "chance": 0.727,
@@ -56,22 +56,22 @@
       "team": "UAPB"
      },
      {
-      "chance": 0.708,
+      "chance": 0.721,
       "event_id": "401921808",
       "game": "NOLA @ LSU",
-      "line": 26.5,
-      "odds": -108,
+      "line": 27.5,
+      "odds": -110,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-04T01:00Z",
       "team": "NOLA"
      }
     ],
-    "payout": 73.53535353535355,
-    "projected_profit": 17.849823030303035
+    "payout": 72.89256198347108,
+    "projected_profit": 18.207875537190084
    }
   },
-  "seen": "2026-11-03T15:42+00:00",
+  "seen": "2026-11-03T15:55+00:00",
   "start": "2026-11-04T00:30Z"
  }
 }
