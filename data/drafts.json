@@ -22,31 +22,7 @@
    "projected_profit": 0.28,
    "start": "2026-11-03T03:00Z"
   },
-  "seen": "2026-11-03T01:47+00:00",
-  "start": "2026-11-03T03:00Z"
- },
- "prop|nba|401909920": {
-  "game": {
-   "date": "2026-11-03T03:00Z",
-   "event_id": "401909920",
-   "name": "Toronto Raptors at LA Clippers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.117,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.659,
-   "name": "Scottie Barnes",
-   "pid": "4433134",
-   "price": "-235",
-   "prob": 0.62,
-   "projection": 0.705,
-   "score": 0.659,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-03T01:47+00:00",
+  "seen": "2026-11-03T02:00+00:00",
   "start": "2026-11-03T03:00Z"
  }
 }
