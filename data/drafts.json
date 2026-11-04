@@ -1,4 +1,74 @@
 {
+ "parlay|2026-11-03|cfb": {
+  "card": {
+   "two": {
+    "chance": 0.318978,
+    "legs": [
+     {
+      "chance": 0.594,
+      "event_id": "401866457",
+      "game": "TOL @ SAC",
+      "line": 25.5,
+      "odds": -112,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-05T00:00Z",
+      "team": "SAC"
+     },
+     {
+      "chance": 0.537,
+      "event_id": "401866455",
+      "game": "BALL @ MASS",
+      "line": -3.0,
+      "odds": -115,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-05T00:00Z",
+      "team": "MASS"
+     }
+    ],
+    "payout": 70.77639751552793,
+    "projected_profit": 2.576113726708069
+   }
+  },
+  "seen": "2026-11-04T00:35+00:00",
+  "start": "2026-11-05T00:00Z"
+ },
+ "parlay|2026-11-03|nba": {
+  "card": {
+   "two": {
+    "chance": 0.283424,
+    "legs": [
+     {
+      "chance": 0.544,
+      "event_id": "401909923",
+      "game": "ATL @ WSH",
+      "line": 1.5,
+      "odds": -106,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T00:00Z",
+      "team": "WSH"
+     },
+     {
+      "chance": 0.521,
+      "event_id": "401909924",
+      "game": "MIL @ BOS",
+      "line": -11.5,
+      "odds": -106,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T00:30Z",
+      "team": "BOS"
+     }
+    ],
+    "payout": 75.53577785688857,
+    "projected_profit": 1.408652303310788
+   }
+  },
+  "seen": "2026-11-04T00:35+00:00",
+  "start": "2026-11-05T00:00Z"
+ },
  "prop|nba|401909922": {
   "game": {
    "date": "2026-11-05T00:00Z",
@@ -20,7 +90,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T00:22+00:00",
+  "seen": "2026-11-04T00:35+00:00",
   "start": "2026-11-05T00:00Z"
  }
 }
