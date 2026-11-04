@@ -49,81 +49,8 @@
    "projected_profit": 5.98,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T05:37+00:00",
+  "seen": "2026-11-04T05:50+00:00",
   "start": "2026-11-05T00:00Z"
- },
- "bet|2026-11-04|prop": {
-  "bet": {
-   "chance": 0.657,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.657,
-     "event_id": "401909922",
-     "game": "PHI @ DET",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Kevin Huerter",
-     "odds": -233,
-     "pid": "4066372",
-     "projection": 1.338,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-05T00:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.58,
-   "price": -233,
-   "projected_profit": -1.22,
-   "start": "2026-11-05T00:00Z"
-  },
-  "seen": "2026-11-04T05:37+00:00",
-  "start": "2026-11-05T00:00Z"
- },
- "bet|2026-11-04|sgp": {
-  "bet": {
-   "chance": 0.3447,
-   "kind": "sgp",
-   "legs": [
-    {
-     "chance": 0.556,
-     "event_id": "401909929",
-     "game": "CLE @ OKC",
-     "line": -2.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-05T01:00Z",
-     "team": "OKC",
-     "team_name": "Oklahoma City Thunder",
-     "type": "spread"
-    },
-    {
-     "chance": 0.62,
-     "event_id": "401909929",
-     "game": "CLE @ OKC",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Shai Gilgeous-Alexander",
-     "odds": -195,
-     "pid": "4278073",
-     "projection": 1.742,
-     "side": "over",
-     "sport": "nba",
-     "start": "2026-11-05T01:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 59.07,
-   "price": 195,
-   "projected_profit": 0.36,
-   "start": "2026-11-05T01:00Z"
-  },
-  "seen": "2026-11-04T05:37+00:00",
-  "start": "2026-11-05T01:00Z"
  },
  "bet|2026-11-04|spread": {
   "bet": {
@@ -149,7 +76,7 @@
    "projected_profit": 1.29,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T05:37+00:00",
+  "seen": "2026-11-04T05:50+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|winner": {
@@ -175,7 +102,7 @@
    "projected_profit": 2.11,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T05:37+00:00",
+  "seen": "2026-11-04T05:50+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -325,7 +252,7 @@
     "projected_profit": 5.153968253968252
    }
   },
-  "seen": "2026-11-04T05:37+00:00",
+  "seen": "2026-11-04T05:50+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "parlay|2026-11-04|nba": {
@@ -400,103 +327,7 @@
     "projected_profit": 3.1108996996997043
    }
   },
-  "seen": "2026-11-04T05:37+00:00",
+  "seen": "2026-11-04T05:50+00:00",
   "start": "2026-11-05T01:00Z"
- },
- "prop|nba|401909922": {
-  "game": {
-   "date": "2026-11-05T00:00Z",
-   "event_id": "401909922",
-   "name": "Philadelphia 76ers at Detroit Pistons",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.138,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.657,
-   "name": "Kevin Huerter",
-   "pid": "4066372",
-   "price": "-233",
-   "prob": 0.603,
-   "projection": 1.338,
-   "score": 0.657,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-04T05:37+00:00",
-  "start": "2026-11-05T00:00Z"
- },
- "prop|nba|401909926": {
-  "game": {
-   "date": "2026-11-05T00:30Z",
-   "event_id": "401909926",
-   "name": "Chicago Bulls at New York Knicks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.073,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Mikal Bridges",
-   "pid": "3147657",
-   "price": "-231",
-   "prob": 0.647,
-   "projection": 1.074,
-   "score": 0.655,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-04T05:37+00:00",
-  "start": "2026-11-05T00:30Z"
- },
- "prop|nba|401909928": {
-  "game": {
-   "date": "2026-11-05T01:00Z",
-   "event_id": "401909928",
-   "name": "Utah Jazz at New Orleans Pelicans",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.023,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.655,
-   "name": "Herbert Jones",
-   "pid": "4277813",
-   "price": "-231",
-   "prob": 0.682,
-   "projection": 1.192,
-   "score": 0.655,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-04T05:37+00:00",
-  "start": "2026-11-05T01:00Z"
- },
- "prop|nba|401909935": {
-  "game": {
-   "date": "2026-11-05T03:30Z",
-   "event_id": "401909935",
-   "name": "Miami Heat at LA Clippers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.084,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
-   "name": "Kris Dunn",
-   "pid": "2991139",
-   "price": "-234",
-   "prob": 0.641,
-   "projection": 0.85,
-   "score": 0.657,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-04T05:37+00:00",
-  "start": "2026-11-05T03:30Z"
  }
 }
