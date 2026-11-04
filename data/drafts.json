@@ -1,7 +1,7 @@
 {
  "bet|2026-11-04|parlay": {
   "bet": {
-   "chance": 0.1807,
+   "chance": 0.18,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.556,
-     "event_id": "401909929",
-     "game": "CLE @ OKC",
-     "line": -2.5,
-     "odds": -105,
-     "side": "home",
+     "chance": 0.554,
+     "event_id": "401909931",
+     "game": "TOR @ DEN",
+     "line": 4.5,
+     "odds": -110,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-05T01:00Z",
-     "team": "OKC",
-     "team_name": "OKC",
+     "start": "2026-11-05T02:00Z",
+     "team": "TOR",
+     "team_name": "TOR",
      "type": "spread"
     },
     {
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 144.3,
-   "price": 622,
-   "projected_profit": 6.07,
+   "payout": 141.1,
+   "price": 606,
+   "projected_profit": 5.4,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
   "bet": {
-   "chance": 0.66,
+   "chance": 0.659,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.66,
+     "chance": 0.659,
      "event_id": "401909922",
      "game": "PHI @ DET",
      "label": "threes",
      "line": 1.5,
      "name": "Daniss Jenkins",
-     "odds": -236,
+     "odds": -235,
      "pid": "5107199",
      "projection": 1.305,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.47,
-   "price": -236,
+   "payout": 28.51,
+   "price": -235,
    "projected_profit": -1.21,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|sgp": {
@@ -122,46 +122,46 @@
    "projected_profit": 0.06,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|spread": {
   "bet": {
-   "chance": 0.556,
+   "chance": 0.557,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.556,
-     "event_id": "401909929",
-     "game": "CLE @ OKC",
-     "line": -2.5,
-     "odds": -105,
+     "chance": 0.557,
+     "event_id": "401909923",
+     "game": "ATL @ WSH",
+     "line": 2.5,
+     "odds": -116,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-05T01:00Z",
-     "team": "OKC",
-     "team_name": "Oklahoma City Thunder",
+     "start": "2026-11-05T00:00Z",
+     "team": "WSH",
+     "team_name": "Washington Wizards",
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 1.71,
-   "start": "2026-11-05T01:00Z"
+   "payout": 37.24,
+   "price": -116,
+   "projected_profit": 0.74,
+   "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T13:11+00:00",
-  "start": "2026-11-05T01:00Z"
+  "seen": "2026-11-04T13:53+00:00",
+  "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|winner": {
   "bet": {
-   "chance": 0.635,
+   "chance": 0.654,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.635,
+     "chance": 0.654,
      "event_id": "401909929",
      "game": "CLE @ OKC",
-     "odds": -135,
+     "odds": -155,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-05T01:00Z",
@@ -170,12 +170,12 @@
      "type": "ml"
     }
    ],
-   "payout": 34.81,
-   "price": -135,
-   "projected_profit": 2.11,
+   "payout": 32.9,
+   "price": -155,
+   "projected_profit": 1.52,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -256,29 +256,29 @@
  "parlay|2026-11-04|cbb": {
   "card": {
    "three": {
-    "chance": 0.20044499999999996,
+    "chance": 0.22840272,
     "legs": [
      {
-      "chance": 0.6,
+      "chance": 0.624,
+      "event_id": "401920410",
+      "game": "UMES @ HPU",
+      "line": 33.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T00:00Z",
+      "team": "UMES"
+     },
+     {
+      "chance": 0.63,
       "event_id": "401920798",
       "game": "SELA @ AUB",
-      "line": 26.5,
-      "odds": -112,
+      "line": 28.5,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-05T01:00Z",
       "team": "SELA"
-     },
-     {
-      "chance": 0.575,
-      "event_id": "401928811",
-      "game": "NKU @ SDAK",
-      "line": 2.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SDAK"
      },
      {
       "chance": 0.581,
@@ -292,68 +292,68 @@
       "team": "NDSU"
      }
     ],
-    "payout": 139.1919191919192,
-    "projected_profit": 7.900324242424237
+    "payout": 135.11857707509878,
+    "projected_profit": 10.861450526482209
    },
    "two": {
-    "chance": 0.34859999999999997,
+    "chance": 0.39312,
     "legs": [
      {
-      "chance": 0.6,
+      "chance": 0.624,
+      "event_id": "401920410",
+      "game": "UMES @ HPU",
+      "line": 33.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T00:00Z",
+      "team": "UMES"
+     },
+     {
+      "chance": 0.63,
       "event_id": "401920798",
       "game": "SELA @ AUB",
-      "line": 26.5,
-      "odds": -112,
+      "line": 28.5,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-05T01:00Z",
       "team": "SELA"
-     },
-     {
-      "chance": 0.581,
-      "event_id": "401917512",
-      "game": "NDSU @ SMC",
-      "line": 13.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T03:00Z",
-      "team": "NDSU"
      }
     ],
-    "payout": 72.27272727272727,
-    "projected_profit": 5.194272727272722
+    "payout": 70.77639751552793,
+    "projected_profit": 7.823617391304342
    }
   },
-  "seen": "2026-11-04T13:11+00:00",
-  "start": "2026-11-05T01:00Z"
+  "seen": "2026-11-04T13:53+00:00",
+  "start": "2026-11-05T00:00Z"
  },
  "parlay|2026-11-04|nba": {
   "card": {
    "three": {
-    "chance": 0.16544780800000006,
+    "chance": 0.16454963400000003,
     "legs": [
      {
-      "chance": 0.544,
-      "event_id": "401909923",
-      "game": "ATL @ WSH",
-      "line": 1.5,
-      "odds": -104,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-05T00:00Z",
-      "team": "WSH"
-     },
-     {
-      "chance": 0.556,
+      "chance": 0.543,
       "event_id": "401909929",
       "game": "CLE @ OKC",
-      "line": -2.5,
-      "odds": -105,
+      "line": -3.5,
+      "odds": -107,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-05T01:00Z",
       "team": "OKC"
+     },
+     {
+      "chance": 0.554,
+      "event_id": "401909931",
+      "game": "TOR @ DEN",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T02:00Z",
+      "team": "TOR"
      },
      {
       "chance": 0.547,
@@ -367,22 +367,22 @@
       "team": "LAC"
      }
     ],
-    "payout": 149.53950811093668,
-    "projected_profit": 4.7409838263527035
+    "payout": 144.214103653356,
+    "projected_profit": 3.730377973797797
    },
    "two": {
-    "chance": 0.30413200000000007,
+    "chance": 0.30303800000000003,
     "legs": [
      {
-      "chance": 0.556,
-      "event_id": "401909929",
-      "game": "CLE @ OKC",
-      "line": -2.5,
-      "odds": -105,
-      "side": "home",
+      "chance": 0.554,
+      "event_id": "401909931",
+      "game": "TOR @ DEN",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-05T01:00Z",
-      "team": "OKC"
+      "start": "2026-11-05T02:00Z",
+      "team": "TOR"
      },
      {
       "chance": 0.547,
@@ -396,12 +396,12 @@
       "team": "LAC"
      }
     ],
-    "payout": 76.23582766439908,
-    "projected_profit": 3.1857547392290257
+    "payout": 74.54545454545455,
+    "projected_profit": 2.5901054545454585
    }
   },
-  "seen": "2026-11-04T13:11+00:00",
-  "start": "2026-11-05T00:00Z"
+  "seen": "2026-11-04T13:53+00:00",
+  "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909922": {
   "game": {
@@ -414,17 +414,17 @@
    "ev": -0.132,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.66,
+   "market_prob": 0.659,
    "name": "Daniss Jenkins",
    "pid": "5107199",
-   "price": "-236",
-   "prob": 0.61,
+   "price": "-235",
+   "prob": 0.609,
    "projection": 1.305,
-   "score": 0.66,
+   "score": 0.659,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909924": {
@@ -448,7 +448,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T00:30Z"
  },
  "prop|nba|401909928": {
@@ -459,20 +459,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.1,
+   "ev": -0.101,
    "label": "threes",
    "line": 1.5,
    "market_prob": 0.652,
    "name": "Herbert Jones",
    "pid": "4277813",
-   "price": "-227",
+   "price": "-228",
    "prob": 0.625,
    "projection": 1.192,
    "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909930": {
@@ -496,7 +496,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T01:30Z"
  },
  "prop|nba|401909935": {
@@ -520,7 +520,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T13:11+00:00",
+  "seen": "2026-11-04T13:53+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
