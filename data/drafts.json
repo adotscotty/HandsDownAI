@@ -2,59 +2,48 @@
  "parlay|2026-11-03|nba": {
   "card": {
    "three": {
-    "chance": 0.17033505600000007,
+    "chance": 0.16727697600000002,
     "legs": [
      {
-      "chance": 0.557,
-      "event_id": "401909923",
-      "game": "ATL @ WSH",
-      "line": 2.5,
-      "odds": -117,
+      "chance": 0.552,
+      "event_id": "401909930",
+      "game": "MIN @ HOU",
+      "line": 8.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T01:30Z",
+      "team": "MIN"
+     },
+     {
+      "chance": 0.554,
+      "event_id": "401909931",
+      "game": "TOR @ DEN",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T02:00Z",
+      "team": "TOR"
+     },
+     {
+      "chance": 0.547,
+      "event_id": "401909935",
+      "game": "MIA @ LAC",
+      "line": 4.5,
+      "odds": -106,
       "side": "home",
       "sport": "nba",
-      "start": "2026-11-05T00:00Z",
-      "team": "WSH"
-     },
-     {
-      "chance": 0.552,
-      "event_id": "401909930",
-      "game": "MIN @ HOU",
-      "line": 8.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-05T01:30Z",
-      "team": "MIN"
-     },
-     {
-      "chance": 0.554,
-      "event_id": "401909931",
-      "game": "TOR @ DEN",
-      "line": 4.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-05T02:00Z",
-      "team": "TOR"
+      "start": "2026-11-05T03:30Z",
+      "team": "LAC"
      }
     ],
-    "payout": 134.04428904428906,
-    "projected_profit": 2.8324414808391722
+    "payout": 140.45454545454544,
+    "projected_profit": 3.4948116290909113
    },
    "two": {
-    "chance": 0.3058080000000001,
+    "chance": 0.30303800000000003,
     "legs": [
-     {
-      "chance": 0.552,
-      "event_id": "401909930",
-      "game": "MIN @ HOU",
-      "line": 8.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-05T01:30Z",
-      "team": "MIN"
-     },
      {
       "chance": 0.554,
       "event_id": "401909931",
@@ -65,14 +54,25 @@
       "sport": "nba",
       "start": "2026-11-05T02:00Z",
       "team": "TOR"
+     },
+     {
+      "chance": 0.547,
+      "event_id": "401909935",
+      "game": "MIA @ LAC",
+      "line": 4.5,
+      "odds": -106,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T03:30Z",
+      "team": "LAC"
      }
     ],
-    "payout": 72.27272727272728,
-    "projected_profit": 2.1015781818181907
+    "payout": 74.20240137221269,
+    "projected_profit": 2.486147307032592
    }
   },
-  "seen": "2026-11-04T03:23+00:00",
-  "start": "2026-11-05T00:00Z"
+  "seen": "2026-11-04T03:42+00:00",
+  "start": "2026-11-05T01:30Z"
  },
  "prop|nba|401909922": {
   "game": {
@@ -82,20 +82,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.14,
+   "ev": -0.138,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.661,
+   "market_prob": 0.657,
    "name": "Kevin Huerter",
    "pid": "4066372",
-   "price": "-237",
-   "prob": 0.605,
+   "price": "-233",
+   "prob": 0.603,
    "projection": 1.338,
-   "score": 0.661,
+   "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T03:23+00:00",
+  "seen": "2026-11-04T03:42+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909926": {
@@ -119,7 +119,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T03:23+00:00",
+  "seen": "2026-11-04T03:42+00:00",
   "start": "2026-11-05T00:30Z"
+ },
+ "prop|nba|401909928": {
+  "game": {
+   "date": "2026-11-05T01:00Z",
+   "event_id": "401909928",
+   "name": "Utah Jazz at New Orleans Pelicans",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.02,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.652,
+   "name": "Herbert Jones",
+   "pid": "4277813",
+   "price": "-228",
+   "prob": 0.681,
+   "projection": 1.192,
+   "score": 0.652,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-04T03:42+00:00",
+  "start": "2026-11-05T01:00Z"
  }
 }
