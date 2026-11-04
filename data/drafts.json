@@ -49,24 +49,24 @@
    "projected_profit": 5.98,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.657,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
+     "chance": 0.657,
      "event_id": "401909922",
      "game": "PHI @ DET",
      "label": "threes",
      "line": 1.5,
-     "name": "Kevin Huerter",
-     "odds": -235,
-     "pid": "4066372",
-     "projection": 1.338,
+     "name": "Daniss Jenkins",
+     "odds": -233,
+     "pid": "5107199",
+     "projection": 1.305,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-05T00:00Z",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
+   "payout": 28.58,
+   "price": -233,
+   "projected_profit": -1.22,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "bet|2026-11-04|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.29,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 2.11,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -256,47 +256,47 @@
  "parlay|2026-11-04|cbb": {
   "card": {
    "three": {
-    "chance": 0.2001,
+    "chance": 0.20044499999999996,
     "legs": [
      {
-      "chance": 0.5800000000000001,
-      "event_id": "401920410",
-      "game": "UMES @ HPU",
-      "line": 30.5,
+      "chance": 0.6,
+      "event_id": "401920798",
+      "game": "SELA @ AUB",
+      "line": 26.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SELA"
+     },
+     {
+      "chance": 0.575,
+      "event_id": "401928811",
+      "game": "NKU @ SDAK",
+      "line": 2.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SDAK"
+     },
+     {
+      "chance": 0.581,
+      "event_id": "401917512",
+      "game": "NDSU @ SMC",
+      "line": 13.5,
       "odds": -110,
       "side": "away",
       "sport": "cbb",
-      "start": "2026-11-05T00:00Z",
-      "team": "UMES"
-     },
-     {
-      "chance": 0.6,
-      "event_id": "401920798",
-      "game": "SELA @ AUB",
-      "line": 26.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SELA"
-     },
-     {
-      "chance": 0.575,
-      "event_id": "401928811",
-      "game": "NKU @ SDAK",
-      "line": 2.5,
-      "odds": -108,
-      "side": "home",
-      "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SDAK"
+      "start": "2026-11-05T03:00Z",
+      "team": "NDSU"
      }
     ],
     "payout": 139.1919191919192,
-    "projected_profit": 7.85230303030303
+    "projected_profit": 7.900324242424237
    },
    "two": {
-    "chance": 0.345,
+    "chance": 0.34859999999999997,
     "legs": [
      {
       "chance": 0.6,
@@ -310,23 +310,23 @@
       "team": "SELA"
      },
      {
-      "chance": 0.575,
-      "event_id": "401928811",
-      "game": "NKU @ SDAK",
-      "line": 2.5,
-      "odds": -108,
-      "side": "home",
+      "chance": 0.581,
+      "event_id": "401917512",
+      "game": "NDSU @ SMC",
+      "line": 13.5,
+      "odds": -110,
+      "side": "away",
       "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SDAK"
+      "start": "2026-11-05T03:00Z",
+      "team": "NDSU"
      }
     ],
-    "payout": 72.91005291005291,
-    "projected_profit": 5.153968253968252
+    "payout": 72.27272727272727,
+    "projected_profit": 5.194272727272722
    }
   },
-  "seen": "2026-11-04T08:23+00:00",
-  "start": "2026-11-05T00:00Z"
+  "seen": "2026-11-04T08:50+00:00",
+  "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-04|nba": {
   "card": {
@@ -400,7 +400,7 @@
     "projected_profit": 3.1108996996997043
    }
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909922": {
@@ -411,20 +411,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.139,
+   "ev": -0.13,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
-   "name": "Kevin Huerter",
-   "pid": "4066372",
-   "price": "-235",
-   "prob": 0.604,
-   "projection": 1.338,
-   "score": 0.659,
+   "market_prob": 0.657,
+   "name": "Daniss Jenkins",
+   "pid": "5107199",
+   "price": "-233",
+   "prob": 0.608,
+   "projection": 1.305,
+   "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909924": {
@@ -435,20 +435,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.001,
+   "ev": 0.002,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
+   "market_prob": 0.653,
    "name": "Kyle Kuzma",
    "pid": "3134907",
-   "price": "-231",
-   "prob": 0.697,
+   "price": "-228",
+   "prob": 0.696,
    "projection": 1.343,
-   "score": 0.655,
+   "score": 0.653,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
+  "start": "2026-11-05T00:30Z"
+ },
+ "prop|nba|401909925": {
+  "game": {
+   "date": "2026-11-05T00:30Z",
+   "event_id": "401909925",
+   "name": "Charlotte Hornets at Brooklyn Nets",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.053,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.651,
+   "name": "Noah Clowney",
+   "pid": "4712896",
+   "price": "-226",
+   "prob": 0.657,
+   "projection": 0.989,
+   "score": 0.651,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T00:30Z"
  },
  "prop|nba|401909928": {
@@ -472,7 +496,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909935": {
@@ -496,7 +520,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T08:23+00:00",
+  "seen": "2026-11-04T08:50+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
