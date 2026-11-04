@@ -1,7 +1,7 @@
 {
  "bet|2026-11-04|parlay": {
   "bet": {
-   "chance": 0.1807,
+   "chance": 0.183,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.547,
-     "event_id": "401909923",
-     "game": "ATL @ WSH",
-     "line": 2.5,
-     "odds": -103,
-     "side": "home",
+     "chance": 0.554,
+     "event_id": "401909931",
+     "game": "TOR @ DEN",
+     "line": 4.5,
+     "odds": -108,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-05T00:00Z",
-     "team": "WSH",
-     "team_name": "WSH",
+     "start": "2026-11-05T02:00Z",
+     "team": "TOR",
+     "team_name": "TOR",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 143.88,
-   "price": 619,
-   "projected_profit": 5.99,
+   "payout": 140.6,
+   "price": 603,
+   "projected_profit": 5.72,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T22:46+00:00",
+  "seen": "2026-11-04T22:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T22:46+00:00",
+  "seen": "2026-11-04T22:59+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|sgp": {
@@ -122,35 +122,35 @@
    "projected_profit": 0.41,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T22:46+00:00",
+  "seen": "2026-11-04T22:59+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|spread": {
   "bet": {
-   "chance": 0.556,
+   "chance": 0.56,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.556,
-     "event_id": "401909935",
-     "game": "MIA @ LAC",
-     "line": 5.5,
-     "odds": -105,
+     "chance": 0.56,
+     "event_id": "401909923",
+     "game": "ATL @ WSH",
+     "line": 3.5,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-05T03:30Z",
-     "team": "LAC",
-     "team_name": "LA Clippers",
+     "start": "2026-11-05T00:00Z",
+     "team": "WSH",
+     "team_name": "Washington Wizards",
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 1.71,
-   "start": "2026-11-05T03:30Z"
+   "payout": 37.09,
+   "price": -117,
+   "projected_profit": 0.77,
+   "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T22:46+00:00",
-  "start": "2026-11-05T03:30Z"
+  "seen": "2026-11-04T22:59+00:00",
+  "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|winner": {
   "bet": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.2,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T22:46+00:00",
+  "seen": "2026-11-04T22:59+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -325,25 +325,54 @@
     "projected_profit": 9.442332857142855
    }
   },
-  "seen": "2026-11-04T22:46+00:00",
+  "seen": "2026-11-04T22:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "parlay|2026-11-04|nba": {
   "card": {
    "three": {
-    "chance": 0.16848912800000004,
+    "chance": 0.17095332000000002,
     "legs": [
      {
-      "chance": 0.547,
-      "event_id": "401909923",
-      "game": "ATL @ WSH",
-      "line": 2.5,
-      "odds": -103,
+      "chance": 0.554,
+      "event_id": "401909931",
+      "game": "TOR @ DEN",
+      "line": 4.5,
+      "odds": -108,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T02:00Z",
+      "team": "TOR"
+     },
+     {
+      "chance": 0.5549999999999999,
+      "event_id": "401909933",
+      "game": "DAL @ SA",
+      "line": 12.5,
+      "odds": -111,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T02:30Z",
+      "team": "DAL"
+     },
+     {
+      "chance": 0.556,
+      "event_id": "401909935",
+      "game": "MIA @ LAC",
+      "line": 5.5,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
-      "start": "2026-11-05T00:00Z",
-      "team": "WSH"
-     },
+      "start": "2026-11-05T03:30Z",
+      "team": "LAC"
+     }
+    ],
+    "payout": 142.95311184200074,
+    "projected_profit": 4.438309073721346
+   },
+   "two": {
+    "chance": 0.3080240000000001,
+    "legs": [
      {
       "chance": 0.554,
       "event_id": "401909931",
@@ -367,41 +396,12 @@
       "team": "LAC"
      }
     ],
-    "payout": 148.2152702864677,
-    "projected_profit": 4.972661646851261
-   },
-   "two": {
-    "chance": 0.30413200000000007,
-    "legs": [
-     {
-      "chance": 0.547,
-      "event_id": "401909923",
-      "game": "ATL @ WSH",
-      "line": 2.5,
-      "odds": -103,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-05T00:00Z",
-      "team": "WSH"
-     },
-     {
-      "chance": 0.556,
-      "event_id": "401909935",
-      "game": "MIA @ LAC",
-      "line": 5.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-05T03:30Z",
-      "team": "LAC"
-     }
-    ],
-    "payout": 76.957928802589,
-    "projected_profit": 3.4053688025890025
+    "payout": 75.20282186948853,
+    "projected_profit": 3.1642740035273427
    }
   },
-  "seen": "2026-11-04T22:46+00:00",
-  "start": "2026-11-05T00:00Z"
+  "seen": "2026-11-04T22:59+00:00",
+  "start": "2026-11-05T02:00Z"
  },
  "prop|nba|401909922": {
   "game": {
@@ -424,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T22:46+00:00",
+  "seen": "2026-11-04T22:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909935": {
@@ -448,7 +448,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T22:46+00:00",
+  "seen": "2026-11-04T22:59+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
