@@ -2,7 +2,7 @@
  "parlay|2026-11-03|nba": {
   "card": {
    "three": {
-    "chance": 0.17094998400000005,
+    "chance": 0.17033505600000007,
     "legs": [
      {
       "chance": 0.557,
@@ -16,17 +16,6 @@
       "team": "WSH"
      },
      {
-      "chance": 0.556,
-      "event_id": "401909929",
-      "game": "CLE @ OKC",
-      "line": -2.5,
-      "odds": -117,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-05T01:00Z",
-      "team": "OKC"
-     },
-     {
       "chance": 0.552,
       "event_id": "401909930",
       "game": "MIN @ HOU",
@@ -36,25 +25,25 @@
       "sport": "nba",
       "start": "2026-11-05T01:30Z",
       "team": "MIN"
+     },
+     {
+      "chance": 0.554,
+      "event_id": "401909931",
+      "game": "TOR @ DEN",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T02:00Z",
+      "team": "TOR"
      }
     ],
-    "payout": 130.22536343049165,
-    "projected_profit": 2.2620237948367397
+    "payout": 134.04428904428906,
+    "projected_profit": 2.8324414808391722
    },
    "two": {
-    "chance": 0.30746400000000007,
+    "chance": 0.3058080000000001,
     "legs": [
-     {
-      "chance": 0.557,
-      "event_id": "401909923",
-      "game": "ATL @ WSH",
-      "line": 2.5,
-      "odds": -117,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-05T00:00Z",
-      "team": "WSH"
-     },
      {
       "chance": 0.552,
       "event_id": "401909930",
@@ -65,13 +54,24 @@
       "sport": "nba",
       "start": "2026-11-05T01:30Z",
       "team": "MIN"
+     },
+     {
+      "chance": 0.554,
+      "event_id": "401909931",
+      "game": "TOR @ DEN",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T02:00Z",
+      "team": "TOR"
      }
     ],
-    "payout": 70.21367521367522,
-    "projected_profit": 1.5881774358974425
+    "payout": 72.27272727272728,
+    "projected_profit": 2.1015781818181907
    }
   },
-  "seen": "2026-11-04T01:37+00:00",
+  "seen": "2026-11-04T02:07+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909922": {
@@ -82,20 +82,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.141,
+   "ev": -0.138,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.664,
+   "market_prob": 0.657,
    "name": "Kevin Huerter",
    "pid": "4066372",
-   "price": "-241",
-   "prob": 0.607,
+   "price": "-233",
+   "prob": 0.603,
    "projection": 1.338,
-   "score": 0.664,
+   "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T01:37+00:00",
+  "seen": "2026-11-04T02:07+00:00",
   "start": "2026-11-05T00:00Z"
+ },
+ "prop|nba|401909926": {
+  "game": {
+   "date": "2026-11-05T00:30Z",
+   "event_id": "401909926",
+   "name": "Chicago Bulls at New York Knicks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.073,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.655,
+   "name": "Mikal Bridges",
+   "pid": "3147657",
+   "price": "-231",
+   "prob": 0.647,
+   "projection": 1.074,
+   "score": 0.655,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-04T02:07+00:00",
+  "start": "2026-11-05T00:30Z"
  }
 }
