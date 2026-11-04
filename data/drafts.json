@@ -31,15 +31,15 @@
       "event_id": "401909929",
       "game": "CLE @ OKC",
       "line": -2.5,
-      "odds": -118,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-05T01:00Z",
       "team": "OKC"
      }
     ],
-    "payout": 133.18021423553884,
-    "projected_profit": 1.488565238563936
+    "payout": 133.7023667260726,
+    "projected_profit": 1.5728142985441913
    },
    "two": {
     "chance": 0.3096920000000001,
@@ -60,18 +60,18 @@
       "event_id": "401909929",
       "game": "CLE @ OKC",
       "line": -2.5,
-      "odds": -118,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-05T01:00Z",
       "team": "OKC"
      }
     ],
-    "payout": 68.52962480081125,
-    "projected_profit": 1.2230765638128425
+    "payout": 68.79830520856163,
+    "projected_profit": 1.306284736649875
    }
   },
-  "seen": "2026-11-04T01:11+00:00",
+  "seen": "2026-11-04T01:24+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909922": {
@@ -95,7 +95,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T01:11+00:00",
+  "seen": "2026-11-04T01:24+00:00",
   "start": "2026-11-05T00:00Z"
  }
 }
