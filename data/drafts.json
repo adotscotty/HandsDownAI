@@ -1,4 +1,183 @@
 {
+ "bet|2026-11-04|parlay": {
+  "bet": {
+   "chance": 0.1849,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.594,
+     "event_id": "401866457",
+     "game": "TOL @ SAC",
+     "line": 25.5,
+     "odds": -112,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-11-05T00:00Z",
+     "team": "SAC",
+     "team_name": "SAC",
+     "type": "spread"
+    },
+    {
+     "chance": 0.556,
+     "event_id": "401909929",
+     "game": "CLE @ OKC",
+     "line": -2.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-05T01:00Z",
+     "team": "OKC",
+     "team_name": "OKC",
+     "type": "spread"
+    },
+    {
+     "chance": 0.56,
+     "event_id": "401909935",
+     "game": "MIA @ LAC",
+     "line": 5.5,
+     "odds": -111,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-05T03:30Z",
+     "team": "LAC",
+     "team_name": "LAC",
+     "type": "spread"
+    }
+   ],
+   "payout": 140.5,
+   "price": 602,
+   "projected_profit": 5.98,
+   "start": "2026-11-05T00:00Z"
+  },
+  "seen": "2026-11-04T05:02+00:00",
+  "start": "2026-11-05T00:00Z"
+ },
+ "bet|2026-11-04|prop": {
+  "bet": {
+   "chance": 0.657,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.657,
+     "event_id": "401909922",
+     "game": "PHI @ DET",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Kevin Huerter",
+     "odds": -233,
+     "pid": "4066372",
+     "projection": 1.338,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-05T00:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.58,
+   "price": -233,
+   "projected_profit": -1.22,
+   "start": "2026-11-05T00:00Z"
+  },
+  "seen": "2026-11-04T05:02+00:00",
+  "start": "2026-11-05T00:00Z"
+ },
+ "bet|2026-11-04|sgp": {
+  "bet": {
+   "chance": 0.3447,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.556,
+     "event_id": "401909929",
+     "game": "CLE @ OKC",
+     "line": -2.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-05T01:00Z",
+     "team": "OKC",
+     "team_name": "Oklahoma City Thunder",
+     "type": "spread"
+    },
+    {
+     "chance": 0.62,
+     "event_id": "401909929",
+     "game": "CLE @ OKC",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Shai Gilgeous-Alexander",
+     "odds": -195,
+     "pid": "4278073",
+     "projection": 1.742,
+     "side": "over",
+     "sport": "nba",
+     "start": "2026-11-05T01:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 59.07,
+   "price": 195,
+   "projected_profit": 0.36,
+   "start": "2026-11-05T01:00Z"
+  },
+  "seen": "2026-11-04T05:02+00:00",
+  "start": "2026-11-05T01:00Z"
+ },
+ "bet|2026-11-04|spread": {
+  "bet": {
+   "chance": 0.56,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.56,
+     "event_id": "401909935",
+     "game": "MIA @ LAC",
+     "line": 5.5,
+     "odds": -111,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-05T03:30Z",
+     "team": "LAC",
+     "team_name": "LA Clippers",
+     "type": "spread"
+    }
+   ],
+   "payout": 38.02,
+   "price": -111,
+   "projected_profit": 1.29,
+   "start": "2026-11-05T03:30Z"
+  },
+  "seen": "2026-11-04T05:02+00:00",
+  "start": "2026-11-05T03:30Z"
+ },
+ "bet|2026-11-04|winner": {
+  "bet": {
+   "chance": 0.635,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.635,
+     "event_id": "401909929",
+     "game": "CLE @ OKC",
+     "odds": -135,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-05T01:00Z",
+     "team": "OKC",
+     "team_name": "Oklahoma City Thunder",
+     "type": "ml"
+    }
+   ],
+   "payout": 34.81,
+   "price": -135,
+   "projected_profit": 2.11,
+   "start": "2026-11-05T01:00Z"
+  },
+  "seen": "2026-11-04T05:02+00:00",
+  "start": "2026-11-05T01:00Z"
+ },
  "parlay|2026-11-03|nba": {
   "card": {
    "three": {
@@ -74,6 +253,156 @@
   "seen": "2026-11-04T04:49+00:00",
   "start": "2026-11-05T01:00Z"
  },
+ "parlay|2026-11-04|cbb": {
+  "card": {
+   "three": {
+    "chance": 0.2001,
+    "legs": [
+     {
+      "chance": 0.5800000000000001,
+      "event_id": "401920410",
+      "game": "UMES @ HPU",
+      "line": 30.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T00:00Z",
+      "team": "UMES"
+     },
+     {
+      "chance": 0.6,
+      "event_id": "401920798",
+      "game": "SELA @ AUB",
+      "line": 26.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SELA"
+     },
+     {
+      "chance": 0.575,
+      "event_id": "401928811",
+      "game": "NKU @ SDAK",
+      "line": 2.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SDAK"
+     }
+    ],
+    "payout": 139.1919191919192,
+    "projected_profit": 7.85230303030303
+   },
+   "two": {
+    "chance": 0.345,
+    "legs": [
+     {
+      "chance": 0.6,
+      "event_id": "401920798",
+      "game": "SELA @ AUB",
+      "line": 26.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SELA"
+     },
+     {
+      "chance": 0.575,
+      "event_id": "401928811",
+      "game": "NKU @ SDAK",
+      "line": 2.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SDAK"
+     }
+    ],
+    "payout": 72.91005291005291,
+    "projected_profit": 5.153968253968252
+   }
+  },
+  "seen": "2026-11-04T05:02+00:00",
+  "start": "2026-11-05T00:00Z"
+ },
+ "parlay|2026-11-04|nba": {
+  "card": {
+   "three": {
+    "chance": 0.17249344000000005,
+    "legs": [
+     {
+      "chance": 0.556,
+      "event_id": "401909929",
+      "game": "CLE @ OKC",
+      "line": -2.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T01:00Z",
+      "team": "OKC"
+     },
+     {
+      "chance": 0.554,
+      "event_id": "401909931",
+      "game": "TOR @ DEN",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T02:00Z",
+      "team": "TOR"
+     },
+     {
+      "chance": 0.56,
+      "event_id": "401909935",
+      "game": "MIA @ LAC",
+      "line": 5.5,
+      "odds": -111,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T03:30Z",
+      "team": "LAC"
+     }
+    ],
+    "payout": 141.70352170352172,
+    "projected_profit": 4.442927918755128
+   },
+   "two": {
+    "chance": 0.3113600000000001,
+    "legs": [
+     {
+      "chance": 0.556,
+      "event_id": "401909929",
+      "game": "CLE @ OKC",
+      "line": -2.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T01:00Z",
+      "team": "OKC"
+     },
+     {
+      "chance": 0.56,
+      "event_id": "401909935",
+      "game": "MIA @ LAC",
+      "line": 5.5,
+      "odds": -111,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T03:30Z",
+      "team": "LAC"
+     }
+    ],
+    "payout": 74.22565422565422,
+    "projected_profit": 3.1108996996997043
+   }
+  },
+  "seen": "2026-11-04T05:02+00:00",
+  "start": "2026-11-05T01:00Z"
+ },
  "prop|nba|401909922": {
   "game": {
    "date": "2026-11-05T00:00Z",
@@ -95,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T04:49+00:00",
+  "seen": "2026-11-04T05:02+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909926": {
@@ -119,7 +448,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T04:49+00:00",
+  "seen": "2026-11-04T05:02+00:00",
   "start": "2026-11-05T00:30Z"
  },
  "prop|nba|401909928": {
@@ -130,20 +459,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.024,
+   "ev": -0.023,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.659,
+   "market_prob": 0.655,
    "name": "Herbert Jones",
    "pid": "4277813",
-   "price": "-235",
-   "prob": 0.684,
+   "price": "-231",
+   "prob": 0.682,
    "projection": 1.192,
-   "score": 0.659,
+   "score": 0.655,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T04:49+00:00",
+  "seen": "2026-11-04T05:02+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909935": {
@@ -167,7 +496,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T04:49+00:00",
+  "seen": "2026-11-04T05:02+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
