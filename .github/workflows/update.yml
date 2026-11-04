@@ -17,8 +17,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # GitHub only starts this about every 40 minutes, so each start refreshes the site three times,
-  # about 13 minutes apart. That keeps picks fresh right up to the 25-minute lock.
+  # GitHub only starts this about every 40-60 minutes (it often skips 15-minute schedules), so each
+  # start refreshes the site five times, about 13 minutes apart (~55 minutes in all). The next start
+  # waits its turn and begins right after, so the site keeps updating with no long gaps.
   pass1:
     uses: ./.github/workflows/refresh.yml
     with: { pass: 1, wait_minutes: 0 }
@@ -32,3 +33,13 @@ jobs:
     if: ${{ !cancelled() }}
     uses: ./.github/workflows/refresh.yml
     with: { pass: 3, wait_minutes: 12 }
+  pass4:
+    needs: pass3
+    if: ${{ !cancelled() }}
+    uses: ./.github/workflows/refresh.yml
+    with: { pass: 4, wait_minutes: 12 }
+  pass5:
+    needs: pass4
+    if: ${{ !cancelled() }}
+    uses: ./.github/workflows/refresh.yml
+    with: { pass: 5, wait_minutes: 12 }

@@ -172,6 +172,8 @@ class SiteBuild(unittest.TestCase):
         """The site build must finish on today's saved data (a crash here once froze the site)."""
         import subprocess, sys
         root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        if not os.path.exists(os.path.join(root, "data", "predictions.json")):
+            self.skipTest("no predictions yet (fresh checkout: the update makes them after the checks)")
         tmp = tempfile.mkdtemp()
         try:
             for d in ("sportsai", "site"):
