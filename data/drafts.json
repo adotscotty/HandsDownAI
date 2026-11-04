@@ -2,7 +2,7 @@
  "parlay|2026-11-03|nba": {
   "card": {
    "three": {
-    "chance": 0.16134953200000005,
+    "chance": 0.17094998400000005,
     "legs": [
      {
       "chance": 0.557,
@@ -16,17 +16,6 @@
       "team": "WSH"
      },
      {
-      "chance": 0.521,
-      "event_id": "401909924",
-      "game": "MIL @ BOS",
-      "line": -11.5,
-      "odds": -106,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-05T00:30Z",
-      "team": "BOS"
-     },
-     {
       "chance": 0.556,
       "event_id": "401909929",
       "game": "CLE @ OKC",
@@ -36,13 +25,24 @@
       "sport": "nba",
       "start": "2026-11-05T01:00Z",
       "team": "OKC"
+     },
+     {
+      "chance": 0.552,
+      "event_id": "401909930",
+      "game": "MIN @ HOU",
+      "line": 8.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-05T01:30Z",
+      "team": "MIN"
      }
     ],
-    "payout": 133.7023667260726,
-    "projected_profit": 1.5728142985441913
+    "payout": 130.22536343049165,
+    "projected_profit": 2.2620237948367397
    },
    "two": {
-    "chance": 0.3096920000000001,
+    "chance": 0.30746400000000007,
     "legs": [
      {
       "chance": 0.557,
@@ -56,22 +56,22 @@
       "team": "WSH"
      },
      {
-      "chance": 0.556,
-      "event_id": "401909929",
-      "game": "CLE @ OKC",
-      "line": -2.5,
-      "odds": -117,
-      "side": "home",
+      "chance": 0.552,
+      "event_id": "401909930",
+      "game": "MIN @ HOU",
+      "line": 8.5,
+      "odds": -112,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-05T01:00Z",
-      "team": "OKC"
+      "start": "2026-11-05T01:30Z",
+      "team": "MIN"
      }
     ],
-    "payout": 68.79830520856163,
-    "projected_profit": 1.306284736649875
+    "payout": 70.21367521367522,
+    "projected_profit": 1.5881774358974425
    }
   },
-  "seen": "2026-11-04T01:24+00:00",
+  "seen": "2026-11-04T01:37+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909922": {
@@ -82,20 +82,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.068,
+   "ev": -0.141,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.651,
-   "name": "Joel Embiid",
-   "pid": "3059318",
-   "price": "-226",
-   "prob": 0.646,
-   "projection": 0.906,
-   "score": 0.651,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.664,
+   "name": "Kevin Huerter",
+   "pid": "4066372",
+   "price": "-241",
+   "prob": 0.607,
+   "projection": 1.338,
+   "score": 0.664,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T01:24+00:00",
+  "seen": "2026-11-04T01:37+00:00",
   "start": "2026-11-05T00:00Z"
  }
 }
