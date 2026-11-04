@@ -49,37 +49,37 @@
    "projected_profit": 5.98,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
+     "chance": 0.662,
      "event_id": "401909922",
      "game": "PHI @ DET",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Kevin Huerter",
-     "odds": -233,
+     "odds": -238,
      "pid": "4066372",
      "projection": 1.338,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-05T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.58,
-   "price": -233,
-   "projected_profit": -1.22,
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.2,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "bet|2026-11-04|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.29,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 2.11,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -256,7 +256,47 @@
  "parlay|2026-11-04|cbb": {
   "card": {
    "three": {
-    "chance": 0.19527,
+    "chance": 0.2001,
+    "legs": [
+     {
+      "chance": 0.5800000000000001,
+      "event_id": "401920410",
+      "game": "UMES @ HPU",
+      "line": 30.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T00:00Z",
+      "team": "UMES"
+     },
+     {
+      "chance": 0.6,
+      "event_id": "401920798",
+      "game": "SELA @ AUB",
+      "line": 26.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SELA"
+     },
+     {
+      "chance": 0.575,
+      "event_id": "401928811",
+      "game": "NKU @ SDAK",
+      "line": 2.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cbb",
+      "start": "2026-11-05T01:00Z",
+      "team": "SDAK"
+     }
+    ],
+    "payout": 139.1919191919192,
+    "projected_profit": 7.85230303030303
+   },
+   "two": {
+    "chance": 0.345,
     "legs": [
      {
       "chance": 0.6,
@@ -279,54 +319,14 @@
       "sport": "cbb",
       "start": "2026-11-05T01:00Z",
       "team": "SDAK"
-     },
-     {
-      "chance": 0.5660000000000001,
-      "event_id": "401917512",
-      "game": "NDSU @ SMC",
-      "line": 12.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T03:00Z",
-      "team": "NDSU"
      }
     ],
-    "payout": 144.39049693951654,
-    "projected_profit": 8.195132337379395
-   },
-   "two": {
-    "chance": 0.3396,
-    "legs": [
-     {
-      "chance": 0.6,
-      "event_id": "401920798",
-      "game": "SELA @ AUB",
-      "line": 26.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SELA"
-     },
-     {
-      "chance": 0.5660000000000001,
-      "event_id": "401917512",
-      "game": "NDSU @ SMC",
-      "line": 12.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T03:00Z",
-      "team": "NDSU"
-     }
-    ],
-    "payout": 74.9719887955182,
-    "projected_profit": 5.460487394957983
+    "payout": 72.91005291005291,
+    "projected_profit": 5.153968253968252
    }
   },
-  "seen": "2026-11-04T07:07+00:00",
-  "start": "2026-11-05T01:00Z"
+  "seen": "2026-11-04T07:58+00:00",
+  "start": "2026-11-05T00:00Z"
  },
  "parlay|2026-11-04|nba": {
   "card": {
@@ -400,7 +400,7 @@
     "projected_profit": 3.1108996996997043
    }
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909922": {
@@ -411,21 +411,45 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.138,
+   "ev": -0.006,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.657,
+   "line": 0.5,
+   "market_prob": 0.662,
    "name": "Kevin Huerter",
    "pid": "4066372",
-   "price": "-233",
-   "prob": 0.603,
+   "price": "-238",
+   "prob": 0.7,
    "projection": 1.338,
-   "score": 0.657,
-   "side": "under",
+   "score": 0.662,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T00:00Z"
+ },
+ "prop|nba|401909924": {
+  "game": {
+   "date": "2026-11-05T00:30Z",
+   "event_id": "401909924",
+   "name": "Milwaukee Bucks at Boston Celtics",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.001,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.655,
+   "name": "Kyle Kuzma",
+   "pid": "3134907",
+   "price": "-231",
+   "prob": 0.697,
+   "projection": 1.343,
+   "score": 0.655,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-04T07:58+00:00",
+  "start": "2026-11-05T00:30Z"
  },
  "prop|nba|401909928": {
   "game": {
@@ -438,17 +462,17 @@
    "ev": -0.021,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.654,
+   "market_prob": 0.655,
    "name": "Herbert Jones",
    "pid": "4277813",
-   "price": "-229",
-   "prob": 0.681,
+   "price": "-230",
+   "prob": 0.682,
    "projection": 1.192,
-   "score": 0.654,
+   "score": 0.655,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909935": {
@@ -472,7 +496,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T07:07+00:00",
+  "seen": "2026-11-04T07:58+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
