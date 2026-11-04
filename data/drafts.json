@@ -22,7 +22,7 @@
      "event_id": "401909923",
      "game": "ATL @ WSH",
      "line": 2.5,
-     "odds": -108,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-05T00:00Z",
@@ -44,43 +44,43 @@
      "type": "spread"
     }
    ],
-   "payout": 142.35,
-   "price": 612,
-   "projected_profit": 5.76,
+   "payout": 144.98,
+   "price": 625,
+   "projected_profit": 6.24,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
-     "event_id": "401909930",
-     "game": "MIN @ HOU",
+     "chance": 0.661,
+     "event_id": "401909922",
+     "game": "PHI @ DET",
      "label": "threes",
-     "line": 1.5,
-     "name": "Tari Eason",
-     "odds": -239,
-     "pid": "4433192",
-     "projection": 1.134,
-     "side": "under",
+     "line": 0.5,
+     "name": "Daniss Jenkins",
+     "odds": -237,
+     "pid": "5107199",
+     "projection": 1.305,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-05T01:30Z",
+     "start": "2026-11-05T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
-   "start": "2026-11-05T01:30Z"
+   "payout": 28.44,
+   "price": -237,
+   "projected_profit": -1.2,
+   "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T14:06+00:00",
-  "start": "2026-11-05T01:30Z"
+  "seen": "2026-11-04T14:19+00:00",
+  "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|sgp": {
   "bet": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.06,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|spread": {
@@ -135,7 +135,7 @@
      "event_id": "401909923",
      "game": "ATL @ WSH",
      "line": 2.5,
-     "odds": -108,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-05T00:00Z",
@@ -144,12 +144,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.52,
-   "price": -108,
-   "projected_profit": 1.45,
+   "payout": 39.23,
+   "price": -104,
+   "projected_profit": 1.85,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.52,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -256,14 +256,14 @@
  "parlay|2026-11-04|cbb": {
   "card": {
    "three": {
-    "chance": 0.22291227,
+    "chance": 0.22840272,
     "legs": [
      {
-      "chance": 0.609,
+      "chance": 0.624,
       "event_id": "401920410",
       "game": "UMES @ HPU",
-      "line": 32.5,
-      "odds": -105,
+      "line": 33.5,
+      "odds": -112,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-05T00:00Z",
@@ -292,18 +292,18 @@
       "team": "NDSU"
      }
     ],
-    "payout": 139.36758893280629,
-    "projected_profit": 11.066745613438727
+    "payout": 135.11857707509878,
+    "projected_profit": 10.861450526482209
    },
    "two": {
-    "chance": 0.38367,
+    "chance": 0.39312,
     "legs": [
      {
-      "chance": 0.609,
+      "chance": 0.624,
       "event_id": "401920410",
       "game": "UMES @ HPU",
-      "line": 32.5,
-      "odds": -105,
+      "line": 33.5,
+      "odds": -112,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-05T00:00Z",
@@ -321,11 +321,11 @@
       "team": "SELA"
      }
     ],
-    "payout": 73.00207039337472,
-    "projected_profit": 8.008704347826082
+    "payout": 70.77639751552793,
+    "projected_profit": 7.823617391304342
    }
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "parlay|2026-11-04|nba": {
@@ -338,7 +338,7 @@
       "event_id": "401909923",
       "game": "ATL @ WSH",
       "line": 2.5,
-      "odds": -108,
+      "odds": -104,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-05T00:00Z",
@@ -367,8 +367,8 @@
       "team": "LAC"
      }
     ],
-    "payout": 143.56902356902356,
-    "projected_profit": 4.233326458720541
+    "payout": 146.22377622377624,
+    "projected_profit": 4.6814279095104965
    },
    "two": {
     "chance": 0.30467900000000003,
@@ -378,7 +378,7 @@
       "event_id": "401909923",
       "game": "ATL @ WSH",
       "line": 2.5,
-      "odds": -108,
+      "odds": -104,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-05T00:00Z",
@@ -396,11 +396,11 @@
       "team": "LAC"
      }
     ],
-    "payout": 75.20282186948853,
-    "projected_profit": 2.912720564373899
+    "payout": 76.5934065934066,
+    "projected_profit": 3.336402527472533
    }
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909922": {
@@ -411,20 +411,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.132,
+   "ev": -0.01,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.659,
+   "line": 0.5,
+   "market_prob": 0.661,
    "name": "Daniss Jenkins",
    "pid": "5107199",
-   "price": "-235",
-   "prob": 0.609,
+   "price": "-237",
+   "prob": 0.696,
    "projection": 1.305,
-   "score": 0.659,
-   "side": "under",
+   "score": 0.661,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909924": {
@@ -448,7 +448,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T00:30Z"
  },
  "prop|nba|401909928": {
@@ -459,20 +459,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.101,
+   "ev": -0.102,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.652,
+   "market_prob": 0.655,
    "name": "Herbert Jones",
    "pid": "4277813",
-   "price": "-228",
-   "prob": 0.625,
+   "price": "-230",
+   "prob": 0.626,
    "projection": 1.192,
-   "score": 0.652,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909930": {
@@ -483,20 +483,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.093,
+   "ev": -0.086,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.662,
+   "market_prob": 0.652,
    "name": "Tari Eason",
    "pid": "4433192",
-   "price": "-239",
-   "prob": 0.64,
+   "price": "-227",
+   "prob": 0.635,
    "projection": 1.134,
-   "score": 0.662,
+   "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T01:30Z"
  },
  "prop|nba|401909935": {
@@ -520,7 +520,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T14:06+00:00",
+  "seen": "2026-11-04T14:19+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
