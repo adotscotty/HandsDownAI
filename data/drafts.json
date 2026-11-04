@@ -1,7 +1,7 @@
 {
  "bet|2026-11-04|parlay": {
   "bet": {
-   "chance": 0.18,
+   "chance": 0.1843,
    "kind": "parlay",
    "legs": [
     {
@@ -22,7 +22,7 @@
      "event_id": "401909931",
      "game": "TOR @ DEN",
      "line": 4.5,
-     "odds": -110,
+     "odds": -108,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-05T02:00Z",
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.547,
+     "chance": 0.56,
      "event_id": "401909935",
      "game": "MIA @ LAC",
-     "line": 4.5,
-     "odds": -105,
+     "line": 5.5,
+     "odds": -113,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-05T03:30Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 139.37,
-   "price": 597,
-   "projected_profit": 5.09,
+   "payout": 135.74,
+   "price": 579,
+   "projected_profit": 5.01,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
@@ -79,51 +79,51 @@
    "projected_profit": -1.23,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|sgp": {
   "bet": {
-   "chance": 0.3616,
+   "chance": 0.3402,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.547,
-     "event_id": "401909935",
-     "game": "MIA @ LAC",
+     "chance": 0.554,
+     "event_id": "401909931",
+     "game": "TOR @ DEN",
      "line": 4.5,
-     "odds": -105,
-     "side": "home",
+     "odds": -108,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-05T03:30Z",
-     "team": "LAC",
-     "team_name": "LA Clippers",
+     "start": "2026-11-05T02:00Z",
+     "team": "TOR",
+     "team_name": "Toronto Raptors",
      "type": "spread"
     },
     {
-     "chance": 0.661,
-     "event_id": "401909935",
-     "game": "MIA @ LAC",
-     "label": "threes",
-     "line": 0.5,
-     "name": "Kris Dunn",
-     "odds": -238,
-     "pid": "2991139",
-     "projection": 0.85,
-     "side": "over",
+     "chance": 0.614,
+     "event_id": "401909931",
+     "game": "TOR @ DEN",
+     "label": "assists",
+     "line": 2.5,
+     "name": "Cameron Johnson",
+     "odds": -189,
+     "pid": "3138196",
+     "projection": 2.45,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-05T03:30Z",
-     "stat": "tpm",
+     "start": "2026-11-05T02:00Z",
+     "stat": "ast",
      "type": "prop"
     }
    ],
-   "payout": 55.45,
-   "price": 177,
-   "projected_profit": 0.05,
-   "start": "2026-11-05T03:30Z"
+   "payout": 58.9,
+   "price": 194,
+   "projected_profit": 0.03,
+   "start": "2026-11-05T02:00Z"
   },
-  "seen": "2026-11-04T15:46+00:00",
-  "start": "2026-11-05T03:30Z"
+  "seen": "2026-11-04T15:59+00:00",
+  "start": "2026-11-05T02:00Z"
  },
  "bet|2026-11-04|spread": {
   "bet": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.11,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|winner": {
@@ -161,7 +161,7 @@
      "chance": 0.654,
      "event_id": "401909929",
      "game": "CLE @ OKC",
-     "odds": -155,
+     "odds": -156,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-05T01:00Z",
@@ -170,12 +170,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.9,
-   "price": -155,
-   "projected_profit": 1.52,
+   "payout": 32.82,
+   "price": -156,
+   "projected_profit": 1.46,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -325,13 +325,13 @@
     "projected_profit": 9.95669925925926
    }
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "parlay|2026-11-04|nba": {
   "card": {
    "three": {
-    "chance": 0.172428622,
+    "chance": 0.17652656000000003,
     "legs": [
      {
       "chance": 0.569,
@@ -349,58 +349,58 @@
       "event_id": "401909931",
       "game": "TOR @ DEN",
       "line": 4.5,
-      "odds": -110,
+      "odds": -108,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-05T02:00Z",
       "team": "TOR"
      },
      {
-      "chance": 0.547,
+      "chance": 0.56,
       "event_id": "401909935",
       "game": "MIA @ LAC",
-      "line": 4.5,
-      "odds": -105,
+      "line": 5.5,
+      "odds": -113,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-05T03:30Z",
       "team": "LAC"
      }
     ],
-    "payout": 138.25951825951827,
-    "projected_profit": 3.839898211872576
+    "payout": 134.66185949961763,
+    "projected_profit": 3.7713948206708245
    },
    "two": {
-    "chance": 0.30303800000000003,
+    "chance": 0.31024000000000007,
     "legs": [
      {
       "chance": 0.554,
       "event_id": "401909931",
       "game": "TOR @ DEN",
       "line": 4.5,
-      "odds": -110,
+      "odds": -108,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-05T02:00Z",
       "team": "TOR"
      },
      {
-      "chance": 0.547,
+      "chance": 0.56,
       "event_id": "401909935",
       "game": "MIA @ LAC",
-      "line": 4.5,
-      "odds": -105,
+      "line": 5.5,
+      "odds": -113,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-05T03:30Z",
       "team": "LAC"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 2.5901054545454585
+    "payout": 72.60570304818093,
+    "projected_profit": 2.525193313667657
    }
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909922": {
@@ -424,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909924": {
@@ -448,32 +448,8 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T00:30Z"
- },
- "prop|nba|401909930": {
-  "game": {
-   "date": "2026-11-05T01:30Z",
-   "event_id": "401909930",
-   "name": "Minnesota Timberwolves at Houston Rockets",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.088,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.656,
-   "name": "Tari Eason",
-   "pid": "4433192",
-   "price": "-231",
-   "prob": 0.636,
-   "projection": 1.134,
-   "score": 0.656,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-04T15:46+00:00",
-  "start": "2026-11-05T01:30Z"
  },
  "prop|nba|401909935": {
   "game": {
@@ -496,7 +472,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T15:46+00:00",
+  "seen": "2026-11-04T15:59+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
