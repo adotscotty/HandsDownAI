@@ -1,90 +1,7 @@
 {
- "bet|2026-11-04|parlay": {
-  "bet": {
-   "chance": 0.1799,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.584,
-     "event_id": "401866457",
-     "game": "TOL @ SAC",
-     "line": 24.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "cfb",
-     "start": "2026-11-05T00:00Z",
-     "team": "SAC",
-     "team_name": "SAC",
-     "type": "spread"
-    },
-    {
-     "chance": 0.554,
-     "event_id": "401909931",
-     "game": "TOR @ DEN",
-     "line": 4.5,
-     "odds": -108,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-05T02:00Z",
-     "team": "TOR",
-     "team_name": "TOR",
-     "type": "spread"
-    },
-    {
-     "chance": 0.556,
-     "event_id": "401909935",
-     "game": "MIA @ LAC",
-     "line": 5.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-05T03:30Z",
-     "team": "LAC",
-     "team_name": "LAC",
-     "type": "spread"
-    }
-   ],
-   "payout": 146.82,
-   "price": 634,
-   "projected_profit": 6.41,
-   "start": "2026-11-05T00:00Z"
-  },
-  "seen": "2026-11-04T23:25+00:00",
-  "start": "2026-11-05T00:00Z"
- },
- "bet|2026-11-04|prop": {
-  "bet": {
-   "chance": 0.663,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.663,
-     "event_id": "401909922",
-     "game": "PHI @ DET",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Daniss Jenkins",
-     "odds": -240,
-     "pid": "5107199",
-     "projection": 1.305,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-05T00:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.33,
-   "price": -240,
-   "projected_profit": -1.21,
-   "start": "2026-11-05T00:00Z"
-  },
-  "seen": "2026-11-04T23:25+00:00",
-  "start": "2026-11-05T00:00Z"
- },
  "bet|2026-11-04|sgp": {
   "bet": {
-   "chance": 0.3681,
+   "chance": 0.3625,
    "kind": "sgp",
    "legs": [
     {
@@ -101,13 +18,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.662,
+     "chance": 0.652,
      "event_id": "401909935",
      "game": "MIA @ LAC",
      "label": "threes",
      "line": 0.5,
      "name": "Kris Dunn",
-     "odds": -238,
+     "odds": -227,
      "pid": "2991139",
      "projection": 0.85,
      "side": "over",
@@ -117,12 +34,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.45,
-   "price": 177,
-   "projected_profit": 0.41,
+   "payout": 56.25,
+   "price": 181,
+   "projected_profit": 0.39,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T23:25+00:00",
+  "seen": "2026-11-04T23:38+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|spread": {
@@ -149,7 +66,7 @@
    "projected_profit": 1.71,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T23:25+00:00",
+  "seen": "2026-11-04T23:38+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|winner": {
@@ -175,7 +92,7 @@
    "projected_profit": 1.2,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T23:25+00:00",
+  "seen": "2026-11-04T23:38+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -253,81 +170,6 @@
   "seen": "2026-11-04T04:49+00:00",
   "start": "2026-11-05T01:00Z"
  },
- "parlay|2026-11-04|cbb": {
-  "card": {
-   "three": {
-    "chance": 0.245290584,
-    "legs": [
-     {
-      "chance": 0.638,
-      "event_id": "401920410",
-      "game": "UMES @ HPU",
-      "line": 34.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T00:00Z",
-      "team": "UMES"
-     },
-     {
-      "chance": 0.644,
-      "event_id": "401920798",
-      "game": "SELA @ AUB",
-      "line": 29.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SELA"
-     },
-     {
-      "chance": 0.597,
-      "event_id": "401909726",
-      "game": "WAKE @ VAN",
-      "line": 17.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T23:00Z",
-      "team": "WAKE"
-     }
-    ],
-    "payout": 135.638666180758,
-    "projected_profit": 13.27088764045918
-   },
-   "two": {
-    "chance": 0.410872,
-    "legs": [
-     {
-      "chance": 0.638,
-      "event_id": "401920410",
-      "game": "UMES @ HPU",
-      "line": 34.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T00:00Z",
-      "team": "UMES"
-     },
-     {
-      "chance": 0.644,
-      "event_id": "401920798",
-      "game": "SELA @ AUB",
-      "line": 29.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SELA"
-     }
-    ],
-    "payout": 71.65816326530611,
-    "projected_profit": 9.442332857142855
-   }
-  },
-  "seen": "2026-11-04T23:25+00:00",
-  "start": "2026-11-05T00:00Z"
- },
  "parlay|2026-11-04|nba": {
   "card": {
    "three": {
@@ -400,32 +242,8 @@
     "projected_profit": 3.1642740035273427
    }
   },
-  "seen": "2026-11-04T23:25+00:00",
+  "seen": "2026-11-04T23:38+00:00",
   "start": "2026-11-05T02:00Z"
- },
- "prop|nba|401909922": {
-  "game": {
-   "date": "2026-11-05T00:00Z",
-   "event_id": "401909922",
-   "name": "Philadelphia 76ers at Detroit Pistons",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.134,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.663,
-   "name": "Daniss Jenkins",
-   "pid": "5107199",
-   "price": "-240",
-   "prob": 0.611,
-   "projection": 1.305,
-   "score": 0.663,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-04T23:25+00:00",
-  "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909935": {
   "game": {
@@ -435,20 +253,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.086,
+   "ev": -0.08,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.662,
+   "market_prob": 0.652,
    "name": "Kris Dunn",
    "pid": "2991139",
-   "price": "-238",
-   "prob": 0.644,
+   "price": "-227",
+   "prob": 0.639,
    "projection": 0.85,
-   "score": 0.662,
+   "score": 0.652,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T23:25+00:00",
+  "seen": "2026-11-04T23:38+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
