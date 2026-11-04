@@ -49,7 +49,7 @@
    "projected_profit": 5.72,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|sgp": {
@@ -122,35 +122,35 @@
    "projected_profit": 0.41,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|spread": {
   "bet": {
-   "chance": 0.56,
+   "chance": 0.556,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.56,
-     "event_id": "401909923",
-     "game": "ATL @ WSH",
-     "line": 3.5,
-     "odds": -117,
+     "chance": 0.556,
+     "event_id": "401909935",
+     "game": "MIA @ LAC",
+     "line": 5.5,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-05T00:00Z",
-     "team": "WSH",
-     "team_name": "Washington Wizards",
+     "start": "2026-11-05T03:30Z",
+     "team": "LAC",
+     "team_name": "LA Clippers",
      "type": "spread"
     }
    ],
-   "payout": 37.09,
-   "price": -117,
-   "projected_profit": 0.77,
-   "start": "2026-11-05T00:00Z"
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 1.71,
+   "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T22:59+00:00",
-  "start": "2026-11-05T00:00Z"
+  "seen": "2026-11-04T23:12+00:00",
+  "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|winner": {
   "bet": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.2,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -256,7 +256,7 @@
  "parlay|2026-11-04|cbb": {
   "card": {
    "three": {
-    "chance": 0.23255355200000002,
+    "chance": 0.245290584,
     "legs": [
      {
       "chance": 0.638,
@@ -281,19 +281,19 @@
       "team": "SELA"
      },
      {
-      "chance": 0.5660000000000001,
-      "event_id": "401917512",
-      "game": "NDSU @ SMC",
-      "line": 12.5,
-      "odds": -102,
+      "chance": 0.597,
+      "event_id": "401909726",
+      "game": "WAKE @ VAN",
+      "line": 17.5,
+      "odds": -112,
       "side": "away",
       "sport": "cbb",
-      "start": "2026-11-05T03:00Z",
-      "team": "NDSU"
+      "start": "2026-11-05T23:00Z",
+      "team": "WAKE"
      }
     ],
-    "payout": 141.9112645058023,
-    "projected_profit": 13.001968629635854
+    "payout": 135.638666180758,
+    "projected_profit": 13.27088764045918
    },
    "two": {
     "chance": 0.410872,
@@ -325,7 +325,7 @@
     "projected_profit": 9.442332857142855
    }
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "parlay|2026-11-04|nba": {
@@ -400,7 +400,7 @@
     "projected_profit": 3.1642740035273427
    }
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T02:00Z"
  },
  "prop|nba|401909922": {
@@ -414,17 +414,17 @@
    "ev": -0.131,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.657,
+   "market_prob": 0.658,
    "name": "Daniss Jenkins",
    "pid": "5107199",
    "price": "-234",
    "prob": 0.609,
    "projection": 1.305,
-   "score": 0.657,
+   "score": 0.658,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909935": {
@@ -448,7 +448,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T22:59+00:00",
+  "seen": "2026-11-04T23:12+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
