@@ -1,7 +1,7 @@
 {
  "bet|2026-11-04|parlay": {
   "bet": {
-   "chance": 0.1797,
+   "chance": 0.1807,
    "kind": "parlay",
    "legs": [
     {
@@ -18,19 +18,6 @@
      "type": "spread"
     },
     {
-     "chance": 0.544,
-     "event_id": "401909923",
-     "game": "ATL @ WSH",
-     "line": 1.5,
-     "odds": -104,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-05T00:00Z",
-     "team": "WSH",
-     "team_name": "WSH",
-     "type": "spread"
-    },
-    {
      "chance": 0.556,
      "event_id": "401909929",
      "game": "CLE @ OKC",
@@ -42,14 +29,27 @@
      "team": "OKC",
      "team_name": "OKC",
      "type": "spread"
+    },
+    {
+     "chance": 0.547,
+     "event_id": "401909935",
+     "game": "MIA @ LAC",
+     "line": 4.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-05T03:30Z",
+     "team": "LAC",
+     "team_name": "LAC",
+     "type": "spread"
     }
    ],
-   "payout": 144.98,
-   "price": 625,
-   "projected_profit": 6.05,
+   "payout": 144.3,
+   "price": 622,
+   "projected_profit": 6.07,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
@@ -79,13 +79,56 @@
    "projected_profit": -1.2,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|sgp": {
   "bet": {
-   "chance": 0.3408,
+   "chance": 0.3638,
    "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.547,
+     "event_id": "401909935",
+     "game": "MIA @ LAC",
+     "line": 4.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-05T03:30Z",
+     "team": "LAC",
+     "team_name": "LA Clippers",
+     "type": "spread"
+    },
+    {
+     "chance": 0.665,
+     "event_id": "401909935",
+     "game": "MIA @ LAC",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Kris Dunn",
+     "odds": -242,
+     "pid": "2991139",
+     "projection": 0.85,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-05T03:30Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 55.18,
+   "price": 176,
+   "projected_profit": 0.07,
+   "start": "2026-11-05T03:30Z"
+  },
+  "seen": "2026-11-04T12:19+00:00",
+  "start": "2026-11-05T03:30Z"
+ },
+ "bet|2026-11-04|spread": {
+  "bet": {
+   "chance": 0.556,
+   "kind": "spread",
    "legs": [
     {
      "chance": 0.556,
@@ -99,58 +142,15 @@
      "team": "OKC",
      "team_name": "Oklahoma City Thunder",
      "type": "spread"
-    },
-    {
-     "chance": 0.613,
-     "event_id": "401909929",
-     "game": "CLE @ OKC",
-     "label": "assists",
-     "line": 2.5,
-     "name": "Jaylin Williams",
-     "odds": -189,
-     "pid": "4432823",
-     "projection": 1.815,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-05T01:00Z",
-     "stat": "ast",
-     "type": "prop"
     }
    ],
-   "payout": 59.71,
-   "price": 199,
-   "projected_profit": 0.35,
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 1.71,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T01:00Z"
- },
- "bet|2026-11-04|spread": {
-  "bet": {
-   "chance": 0.56,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.56,
-     "event_id": "401909935",
-     "game": "MIA @ LAC",
-     "line": 5.5,
-     "odds": -115,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-05T03:30Z",
-     "team": "LAC",
-     "team_name": "LA Clippers",
-     "type": "spread"
-    }
-   ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 0.94,
-   "start": "2026-11-05T03:30Z"
-  },
-  "seen": "2026-11-04T12:06+00:00",
-  "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|winner": {
   "bet": {
@@ -175,7 +175,7 @@
    "projected_profit": 2.11,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -325,13 +325,13 @@
     "projected_profit": 5.194272727272722
    }
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-04|nba": {
   "card": {
    "three": {
-    "chance": 0.16756505600000005,
+    "chance": 0.16544780800000006,
     "legs": [
      {
       "chance": 0.544,
@@ -356,34 +356,23 @@
       "team": "OKC"
      },
      {
-      "chance": 0.554,
-      "event_id": "401909931",
-      "game": "TOR @ DEN",
+      "chance": 0.547,
+      "event_id": "401909935",
+      "game": "MIA @ LAC",
       "line": 4.5,
-      "odds": -110,
-      "side": "away",
+      "odds": -105,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-05T02:00Z",
-      "team": "TOR"
+      "start": "2026-11-05T03:30Z",
+      "team": "LAC"
      }
     ],
-    "payout": 146.22377622377624,
-    "projected_profit": 4.501995251468539
+    "payout": 149.53950811093668,
+    "projected_profit": 4.7409838263527035
    },
    "two": {
-    "chance": 0.30246400000000007,
+    "chance": 0.30413200000000007,
     "legs": [
-     {
-      "chance": 0.544,
-      "event_id": "401909923",
-      "game": "ATL @ WSH",
-      "line": 1.5,
-      "odds": -104,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-05T00:00Z",
-      "team": "WSH"
-     },
      {
       "chance": 0.556,
       "event_id": "401909929",
@@ -394,13 +383,24 @@
       "sport": "nba",
       "start": "2026-11-05T01:00Z",
       "team": "OKC"
+     },
+     {
+      "chance": 0.547,
+      "event_id": "401909935",
+      "game": "MIA @ LAC",
+      "line": 4.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-05T03:30Z",
+      "team": "LAC"
      }
     ],
-    "payout": 76.5934065934066,
-    "projected_profit": 3.1667481318681396
+    "payout": 76.23582766439908,
+    "projected_profit": 3.1857547392290257
    }
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909922": {
@@ -424,7 +424,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "prop|nba|401909924": {
@@ -448,7 +448,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T00:30Z"
  },
  "prop|nba|401909928": {
@@ -472,7 +472,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909930": {
@@ -496,7 +496,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T01:30Z"
  },
  "prop|nba|401909935": {
@@ -520,7 +520,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T12:06+00:00",
+  "seen": "2026-11-04T12:19+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
