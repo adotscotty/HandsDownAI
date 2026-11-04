@@ -49,7 +49,7 @@
    "projected_profit": 5.98,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.22,
    "start": "2026-11-05T00:00Z"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T00:00Z"
  },
  "bet|2026-11-04|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "bet|2026-11-04|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.29,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 2.11,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -256,19 +256,8 @@
  "parlay|2026-11-04|cbb": {
   "card": {
    "three": {
-    "chance": 0.2001,
+    "chance": 0.19527,
     "legs": [
-     {
-      "chance": 0.5800000000000001,
-      "event_id": "401920410",
-      "game": "UMES @ HPU",
-      "line": 30.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-05T00:00Z",
-      "team": "UMES"
-     },
      {
       "chance": 0.6,
       "event_id": "401920798",
@@ -290,13 +279,24 @@
       "sport": "cbb",
       "start": "2026-11-05T01:00Z",
       "team": "SDAK"
+     },
+     {
+      "chance": 0.5660000000000001,
+      "event_id": "401917512",
+      "game": "NDSU @ SMC",
+      "line": 12.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-05T03:00Z",
+      "team": "NDSU"
      }
     ],
-    "payout": 139.1919191919192,
-    "projected_profit": 7.85230303030303
+    "payout": 144.39049693951654,
+    "projected_profit": 8.195132337379395
    },
    "two": {
-    "chance": 0.345,
+    "chance": 0.3396,
     "legs": [
      {
       "chance": 0.6,
@@ -310,23 +310,23 @@
       "team": "SELA"
      },
      {
-      "chance": 0.575,
-      "event_id": "401928811",
-      "game": "NKU @ SDAK",
-      "line": 2.5,
-      "odds": -108,
-      "side": "home",
+      "chance": 0.5660000000000001,
+      "event_id": "401917512",
+      "game": "NDSU @ SMC",
+      "line": 12.5,
+      "odds": -102,
+      "side": "away",
       "sport": "cbb",
-      "start": "2026-11-05T01:00Z",
-      "team": "SDAK"
+      "start": "2026-11-05T03:00Z",
+      "team": "NDSU"
      }
     ],
-    "payout": 72.91005291005291,
-    "projected_profit": 5.153968253968252
+    "payout": 74.9719887955182,
+    "projected_profit": 5.460487394957983
    }
   },
-  "seen": "2026-11-04T06:03+00:00",
-  "start": "2026-11-05T00:00Z"
+  "seen": "2026-11-04T06:41+00:00",
+  "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-04|nba": {
   "card": {
@@ -400,7 +400,7 @@
     "projected_profit": 3.1108996996997043
    }
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909922": {
@@ -424,32 +424,8 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T00:00Z"
- },
- "prop|nba|401909926": {
-  "game": {
-   "date": "2026-11-05T00:30Z",
-   "event_id": "401909926",
-   "name": "Chicago Bulls at New York Knicks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.073,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Mikal Bridges",
-   "pid": "3147657",
-   "price": "-231",
-   "prob": 0.647,
-   "projection": 1.074,
-   "score": 0.655,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-04T06:03+00:00",
-  "start": "2026-11-05T00:30Z"
  },
  "prop|nba|401909928": {
   "game": {
@@ -459,20 +435,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.023,
+   "ev": -0.022,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
+   "market_prob": 0.656,
    "name": "Herbert Jones",
    "pid": "4277813",
    "price": "-231",
-   "prob": 0.682,
+   "prob": 0.683,
    "projection": 1.192,
-   "score": 0.655,
+   "score": 0.656,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "prop|nba|401909935": {
@@ -496,7 +472,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-04T06:03+00:00",
+  "seen": "2026-11-04T06:41+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
