@@ -1,7 +1,7 @@
 {
  "bet|2026-11-05|parlay": {
   "bet": {
-   "chance": 0.169,
+   "chance": 0.173,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.5569999999999999,
+     "chance": 0.5700000000000001,
      "event_id": "401909937",
      "game": "MIA @ GS",
-     "line": 6.5,
-     "odds": -105,
+     "line": 7.5,
+     "odds": -114,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
@@ -44,25 +44,25 @@
      "type": "spread"
     }
    ],
-   "payout": 142.53,
-   "price": 613,
-   "projected_profit": 4.09,
+   "payout": 137.04,
+   "price": 585,
+   "projected_profit": 3.7,
    "start": "2026-11-06T00:30Z"
   },
-  "seen": "2026-11-05T07:33+00:00",
+  "seen": "2026-11-05T07:57+00:00",
   "start": "2026-11-06T00:30Z"
  },
  "bet|2026-11-05|sgp": {
   "bet": {
-   "chance": 0.337,
+   "chance": 0.3449,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.5569999999999999,
+     "chance": 0.5700000000000001,
      "event_id": "401909937",
      "game": "MIA @ GS",
-     "line": 6.5,
-     "odds": -105,
+     "line": 7.5,
+     "odds": -114,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
@@ -87,40 +87,40 @@
      "type": "prop"
     }
    ],
-   "payout": 60.5,
-   "price": 203,
-   "projected_profit": 0.39,
+   "payout": 58.17,
+   "price": 191,
+   "projected_profit": 0.06,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T07:33+00:00",
+  "seen": "2026-11-05T07:57+00:00",
   "start": "2026-11-06T03:00Z"
  },
  "bet|2026-11-05|spread": {
   "bet": {
-   "chance": 0.563,
+   "chance": 0.57,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.563,
-     "event_id": "401873037",
-     "game": "JAX @ BAL",
-     "line": 10.0,
-     "odds": -115,
-     "side": "home",
-     "sport": "nfl",
-     "start": "2026-11-06T01:15Z",
-     "team": "BAL",
-     "team_name": "Baltimore Ravens",
+     "chance": 0.5700000000000001,
+     "event_id": "401909937",
+     "game": "MIA @ GS",
+     "line": 7.5,
+     "odds": -114,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-06T03:00Z",
+     "team": "MIA",
+     "team_name": "Miami Heat",
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 1.05,
-   "start": "2026-11-06T01:15Z"
+   "payout": 37.54,
+   "price": -114,
+   "projected_profit": 1.4,
+   "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T07:33+00:00",
-  "start": "2026-11-06T01:15Z"
+  "seen": "2026-11-05T07:57+00:00",
+  "start": "2026-11-06T03:00Z"
  },
  "parlay|2026-11-05|cbb": {
   "card": {
@@ -194,7 +194,7 @@
     "projected_profit": 13.975668027210872
    }
   },
-  "seen": "2026-11-05T07:33+00:00",
+  "seen": "2026-11-05T07:57+00:00",
   "start": "2026-11-06T00:00Z"
  }
 }
