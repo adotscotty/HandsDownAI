@@ -49,12 +49,12 @@
    "projected_profit": 2.92,
    "start": "2026-11-06T00:30Z"
   },
-  "seen": "2026-11-05T13:29+00:00",
+  "seen": "2026-11-05T13:42+00:00",
   "start": "2026-11-06T00:30Z"
  },
  "bet|2026-11-05|sgp": {
   "bet": {
-   "chance": 0.3688,
+   "chance": 0.3642,
    "kind": "sgp",
    "legs": [
     {
@@ -71,13 +71,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.647,
+     "chance": 0.639,
      "event_id": "401909937",
      "game": "MIA @ GS",
      "label": "threes",
      "line": 1.5,
      "name": "Bam Adebayo",
-     "odds": -222,
+     "odds": -213,
      "pid": "4066261",
      "projection": 1.262,
      "side": "under",
@@ -87,12 +87,12 @@
      "type": "prop"
     }
    ],
-   "payout": 54.46,
-   "price": 172,
-   "projected_profit": 0.08,
+   "payout": 55.17,
+   "price": 176,
+   "projected_profit": 0.09,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T13:29+00:00",
+  "seen": "2026-11-05T13:42+00:00",
   "start": "2026-11-06T03:00Z"
  },
  "bet|2026-11-05|spread": {
@@ -119,7 +119,7 @@
    "projected_profit": 1.4,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T13:29+00:00",
+  "seen": "2026-11-05T13:42+00:00",
   "start": "2026-11-06T03:00Z"
  },
  "bet|2026-11-05|winner": {
@@ -145,7 +145,7 @@
    "projected_profit": 0.39,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-05T13:29+00:00",
+  "seen": "2026-11-05T13:42+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "parlay|2026-11-05|cbb": {
@@ -154,16 +154,45 @@
     "chance": 0.31028399999999995,
     "legs": [
      {
+      "chance": 0.6799999999999999,
+      "event_id": "401909563",
+      "game": "CCU @ DUKE",
+      "line": 40.5,
+      "odds": -108,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-06T01:00Z",
+      "team": "CCU"
+     },
+     {
+      "chance": 0.6759999999999999,
+      "event_id": "401926780",
+      "game": "JXST @ USA",
+      "line": 5.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-06T01:00Z",
+      "team": "JXST"
+     },
+     {
       "chance": 0.675,
       "event_id": "401906864",
       "game": "GWEB @ TEX",
       "line": 41.5,
-      "odds": -105,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-06T01:00Z",
       "team": "GWEB"
-     },
+     }
+    ],
+    "payout": 136.31009891879455,
+    "projected_profit": 22.294842732919243
+   },
+   "two": {
+    "chance": 0.4596799999999999,
+    "legs": [
      {
       "chance": 0.6799999999999999,
       "event_id": "401909563",
@@ -187,40 +216,11 @@
       "team": "JXST"
      }
     ],
-    "payout": 142.34819853867472,
-    "projected_profit": 24.16836843537414
-   },
-   "two": {
-    "chance": 0.45899999999999996,
-    "legs": [
-     {
-      "chance": 0.675,
-      "event_id": "401906864",
-      "game": "GWEB @ TEX",
-      "line": 41.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-06T01:00Z",
-      "team": "GWEB"
-     },
-     {
-      "chance": 0.6799999999999999,
-      "event_id": "401909563",
-      "game": "CCU @ DUKE",
-      "line": 40.5,
-      "odds": -108,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-06T01:00Z",
-      "team": "CCU"
-     }
-    ],
-    "payout": 75.20282186948853,
-    "projected_profit": 14.518095238095235
+    "payout": 72.91005291005291,
+    "projected_profit": 13.51529312169312
    }
   },
-  "seen": "2026-11-05T13:29+00:00",
+  "seen": "2026-11-05T13:42+00:00",
   "start": "2026-11-06T01:00Z"
  }
 }
