@@ -1,7 +1,7 @@
 {
  "bet|2026-11-05|parlay": {
   "bet": {
-   "chance": 0.1706,
+   "chance": 0.1746,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.5569999999999999,
+     "chance": 0.5700000000000001,
      "event_id": "401909937",
      "game": "MIA @ GS",
-     "line": 6.5,
-     "odds": -103,
+     "line": 7.5,
+     "odds": -118,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
@@ -44,83 +44,40 @@
      "type": "spread"
     }
    ],
-   "payout": 136.15,
-   "price": 581,
-   "projected_profit": 3.23,
+   "payout": 127.62,
+   "price": 538,
+   "projected_profit": 2.28,
    "start": "2026-11-06T00:30Z"
   },
-  "seen": "2026-11-05T18:30+00:00",
+  "seen": "2026-11-05T18:44+00:00",
   "start": "2026-11-06T00:30Z"
  },
- "bet|2026-11-05|sgp": {
+ "bet|2026-11-05|spread": {
   "bet": {
-   "chance": 0.3526,
-   "kind": "sgp",
+   "chance": 0.57,
+   "kind": "spread",
    "legs": [
     {
-     "chance": 0.5569999999999999,
+     "chance": 0.5700000000000001,
      "event_id": "401909937",
      "game": "MIA @ GS",
-     "line": 6.5,
-     "odds": -103,
+     "line": 7.5,
+     "odds": -118,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
      "team": "MIA",
      "team_name": "Miami Heat",
      "type": "spread"
-    },
-    {
-     "chance": 0.633,
-     "event_id": "401909937",
-     "game": "MIA @ GS",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Bam Adebayo",
-     "odds": -207,
-     "pid": "4066261",
-     "projection": 1.262,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-06T03:00Z",
-     "stat": "tpm",
-     "type": "prop"
     }
    ],
-   "payout": 58.46,
-   "price": 192,
-   "projected_profit": 0.61,
+   "payout": 36.95,
+   "price": -118,
+   "projected_profit": 1.06,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T18:30+00:00",
+  "seen": "2026-11-05T18:44+00:00",
   "start": "2026-11-06T03:00Z"
- },
- "bet|2026-11-05|spread": {
-  "bet": {
-   "chance": 0.563,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.563,
-     "event_id": "401873037",
-     "game": "JAX @ BAL",
-     "line": 10.0,
-     "odds": -115,
-     "side": "home",
-     "sport": "nfl",
-     "start": "2026-11-06T01:15Z",
-     "team": "BAL",
-     "team_name": "Baltimore Ravens",
-     "type": "spread"
-    }
-   ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 1.05,
-   "start": "2026-11-06T01:15Z"
-  },
-  "seen": "2026-11-05T18:30+00:00",
-  "start": "2026-11-06T01:15Z"
  },
  "bet|2026-11-05|winner": {
   "bet": {
@@ -145,7 +102,7 @@
    "projected_profit": 0.46,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-05T18:30+00:00",
+  "seen": "2026-11-05T18:44+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "parlay|2026-11-05|cbb": {
@@ -220,7 +177,7 @@
     "projected_profit": 14.213523809523807
    }
   },
-  "seen": "2026-11-05T18:30+00:00",
+  "seen": "2026-11-05T18:44+00:00",
   "start": "2026-11-06T00:00Z"
  }
 }
