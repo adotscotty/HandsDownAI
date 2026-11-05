@@ -49,12 +49,12 @@
    "projected_profit": 4.0,
    "start": "2026-11-06T00:30Z"
   },
-  "seen": "2026-11-05T10:02+00:00",
+  "seen": "2026-11-05T10:15+00:00",
   "start": "2026-11-06T00:30Z"
  },
  "bet|2026-11-05|sgp": {
   "bet": {
-   "chance": 0.3614,
+   "chance": 0.3625,
    "kind": "sgp",
    "legs": [
     {
@@ -71,13 +71,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.634,
+     "chance": 0.636,
      "event_id": "401909937",
      "game": "MIA @ GS",
      "label": "threes",
      "line": 1.5,
      "name": "Will Richard",
-     "odds": -208,
+     "odds": -211,
      "pid": "4897262",
      "projection": 0.835,
      "side": "under",
@@ -87,12 +87,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.59,
-   "price": 178,
-   "projected_profit": 0.09,
+   "payout": 55.34,
+   "price": 177,
+   "projected_profit": 0.06,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T10:02+00:00",
+  "seen": "2026-11-05T10:15+00:00",
   "start": "2026-11-06T03:00Z"
  },
  "bet|2026-11-05|spread": {
@@ -119,7 +119,7 @@
    "projected_profit": 1.4,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T10:02+00:00",
+  "seen": "2026-11-05T10:15+00:00",
   "start": "2026-11-06T03:00Z"
  },
  "parlay|2026-11-05|cbb": {
@@ -194,7 +194,7 @@
     "projected_profit": 13.975668027210872
    }
   },
-  "seen": "2026-11-05T10:02+00:00",
+  "seen": "2026-11-05T10:15+00:00",
   "start": "2026-11-06T01:00Z"
  }
 }
