@@ -1,7 +1,7 @@
 {
  "bet|2026-11-05|parlay": {
   "bet": {
-   "chance": 0.1611,
+   "chance": 0.1572,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.531,
+     "chance": 0.518,
      "event_id": "401909937",
      "game": "MIA @ GS",
-     "line": 4.5,
-     "odds": -113,
+     "line": 3.5,
+     "odds": -103,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 131.77,
-   "price": 559,
-   "projected_profit": 1.23,
+   "payout": 137.77,
+   "price": 589,
+   "projected_profit": 1.66,
    "start": "2026-11-06T00:30Z"
   },
-  "seen": "2026-11-05T21:12+00:00",
+  "seen": "2026-11-05T21:25+00:00",
   "start": "2026-11-06T00:30Z"
  },
  "bet|2026-11-05|prop": {
   "bet": {
-   "chance": 0.66,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.66,
+     "chance": 0.662,
      "event_id": "401909936",
      "game": "ORL @ PHX",
      "label": "threes",
      "line": 0.5,
      "name": "Jase Richardson",
-     "odds": -236,
+     "odds": -238,
      "pid": "5239561",
      "projection": 0.779,
      "side": "over",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.47,
-   "price": -236,
-   "projected_profit": -1.21,
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.2,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-05T21:12+00:00",
+  "seen": "2026-11-05T21:25+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "bet|2026-11-05|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.05,
    "start": "2026-11-06T01:15Z"
   },
-  "seen": "2026-11-05T21:12+00:00",
+  "seen": "2026-11-05T21:25+00:00",
   "start": "2026-11-06T01:15Z"
  },
  "bet|2026-11-05|winner": {
@@ -118,7 +118,7 @@
      "chance": 0.543,
      "event_id": "401909936",
      "game": "ORL @ PHX",
-     "odds": -114,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-06T02:00Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 37.54,
-   "price": -114,
-   "projected_profit": 0.39,
+   "payout": 37.09,
+   "price": -117,
+   "projected_profit": 0.14,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-05T21:12+00:00",
+  "seen": "2026-11-05T21:25+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "parlay|2026-11-05|cbb": {
@@ -207,7 +207,7 @@
     "projected_profit": 14.992244897959175
    }
   },
-  "seen": "2026-11-05T21:12+00:00",
+  "seen": "2026-11-05T21:25+00:00",
   "start": "2026-11-06T00:00Z"
  },
  "prop|nba|401909936": {
@@ -218,20 +218,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.1,
+   "ev": -0.101,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.66,
+   "market_prob": 0.662,
    "name": "Jase Richardson",
    "pid": "5239561",
-   "price": "-236",
-   "prob": 0.632,
+   "price": "-238",
+   "prob": 0.633,
    "projection": 0.779,
-   "score": 0.66,
+   "score": 0.662,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-05T21:12+00:00",
+  "seen": "2026-11-05T21:25+00:00",
   "start": "2026-11-06T02:00Z"
+ },
+ "prop|nba|401909937": {
+  "game": {
+   "date": "2026-11-06T03:00Z",
+   "event_id": "401909937",
+   "name": "Miami Heat at Golden State Warriors",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.121,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.658,
+   "name": "Bam Adebayo",
+   "pid": "4066261",
+   "price": "-234",
+   "prob": 0.616,
+   "projection": 1.262,
+   "score": 0.658,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-05T21:25+00:00",
+  "start": "2026-11-06T03:00Z"
  }
 }
