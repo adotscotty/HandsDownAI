@@ -35,7 +35,7 @@
      "event_id": "401909937",
      "game": "MIA @ GS",
      "line": 7.5,
-     "odds": -110,
+     "odds": -114,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 133.52,
-   "price": 568,
-   "projected_profit": 3.31,
+   "payout": 131.29,
+   "price": 556,
+   "projected_profit": 2.92,
    "start": "2026-11-06T00:30Z"
   },
-  "seen": "2026-11-05T14:34+00:00",
+  "seen": "2026-11-05T14:47+00:00",
   "start": "2026-11-06T00:30Z"
  },
  "bet|2026-11-05|sgp": {
@@ -62,7 +62,7 @@
      "event_id": "401909937",
      "game": "MIA @ GS",
      "line": 7.5,
-     "odds": -110,
+     "odds": -114,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
@@ -87,12 +87,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.54,
-   "price": 178,
-   "projected_profit": 0.45,
+   "payout": 54.61,
+   "price": 173,
+   "projected_profit": 0.11,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T14:34+00:00",
+  "seen": "2026-11-05T14:47+00:00",
   "start": "2026-11-06T03:00Z"
  },
  "bet|2026-11-05|spread": {
@@ -105,7 +105,7 @@
      "event_id": "401909937",
      "game": "MIA @ GS",
      "line": 7.5,
-     "odds": -110,
+     "odds": -114,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-06T03:00Z",
@@ -114,12 +114,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 1.76,
+   "payout": 37.54,
+   "price": -114,
+   "projected_profit": 1.4,
    "start": "2026-11-06T03:00Z"
   },
-  "seen": "2026-11-05T14:34+00:00",
+  "seen": "2026-11-05T14:47+00:00",
   "start": "2026-11-06T03:00Z"
  },
  "bet|2026-11-05|winner": {
@@ -145,7 +145,7 @@
    "projected_profit": 0.73,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-05T14:34+00:00",
+  "seen": "2026-11-05T14:47+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "parlay|2026-11-05|cbb": {
@@ -220,7 +220,7 @@
     "projected_profit": 13.635921159420285
    }
   },
-  "seen": "2026-11-05T14:34+00:00",
+  "seen": "2026-11-05T14:47+00:00",
   "start": "2026-11-06T00:00Z"
  }
 }
