@@ -1,11 +1,11 @@
 {
  "bet|2026-11-04|sgp": {
   "bet": {
-   "chance": 0.3709,
+   "chance": 0.3701,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.556,
+     "chance": 0.554,
      "event_id": "401909935",
      "game": "MIA @ LAC",
      "line": 5.5,
@@ -18,15 +18,15 @@
      "type": "spread"
     },
     {
-     "chance": 0.667,
+     "chance": 0.668,
      "event_id": "401909935",
      "game": "MIA @ LAC",
      "label": "threes",
-     "line": 1.5,
-     "name": "Kris Dunn",
-     "odds": -244,
-     "pid": "2991139",
-     "projection": 0.85,
+     "line": 0.5,
+     "name": "Giannis Antetokounmpo",
+     "odds": -245,
+     "pid": "3032977",
+     "projection": 0.396,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-05T03:30Z",
@@ -34,12 +34,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.05,
+   "payout": 54.99,
    "price": 175,
-   "projected_profit": 0.42,
+   "projected_profit": 0.35,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-05T01:41+00:00",
+  "seen": "2026-11-05T01:54+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "prop|nba|401909933": {
@@ -53,17 +53,17 @@
    "ev": -0.132,
    "label": "assists",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.654,
    "name": "Julian Champagnie",
    "pid": "4592479",
-   "price": "-230",
-   "prob": 0.605,
+   "price": "-229",
+   "prob": 0.604,
    "projection": 1.305,
-   "score": 0.655,
+   "score": 0.654,
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-11-05T01:41+00:00",
+  "seen": "2026-11-05T01:54+00:00",
   "start": "2026-11-05T02:30Z"
  },
  "prop|nba|401909935": {
@@ -74,20 +74,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.02,
+   "ev": -0.145,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.667,
-   "name": "Kris Dunn",
-   "pid": "2991139",
-   "price": "-244",
-   "prob": 0.695,
-   "projection": 0.85,
-   "score": 0.667,
+   "line": 0.5,
+   "market_prob": 0.668,
+   "name": "Giannis Antetokounmpo",
+   "pid": "3032977",
+   "price": "-245",
+   "prob": 0.607,
+   "projection": 0.396,
+   "score": 0.668,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-05T01:41+00:00",
+  "seen": "2026-11-05T01:54+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
