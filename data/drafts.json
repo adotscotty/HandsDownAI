@@ -1,7 +1,7 @@
 {
  "bet|2026-11-04|sgp": {
   "bet": {
-   "chance": 0.3714,
+   "chance": 0.3703,
    "kind": "sgp",
    "legs": [
     {
@@ -18,28 +18,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.668,
+     "chance": 0.666,
      "event_id": "401909935",
      "game": "MIA @ LAC",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Kris Dunn",
-     "odds": -245,
+     "odds": -243,
      "pid": "2991139",
      "projection": 0.85,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-05T03:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 54.99,
-   "price": 175,
-   "projected_profit": 0.42,
+   "payout": 55.12,
+   "price": 176,
+   "projected_profit": 0.41,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-05T00:05+00:00",
+  "seen": "2026-11-05T00:18+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|spread": {
@@ -49,25 +49,25 @@
    "legs": [
     {
      "chance": 0.556,
-     "event_id": "401909935",
-     "game": "MIA @ LAC",
-     "line": 5.5,
-     "odds": -105,
-     "side": "home",
+     "event_id": "401909931",
+     "game": "TOR @ DEN",
+     "line": 4.5,
+     "odds": -108,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-05T03:30Z",
-     "team": "LAC",
-     "team_name": "LA Clippers",
+     "start": "2026-11-05T02:00Z",
+     "team": "TOR",
+     "team_name": "Toronto Raptors",
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 1.71,
-   "start": "2026-11-05T03:30Z"
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 1.42,
+   "start": "2026-11-05T02:00Z"
   },
-  "seen": "2026-11-05T00:05+00:00",
-  "start": "2026-11-05T03:30Z"
+  "seen": "2026-11-05T00:18+00:00",
+  "start": "2026-11-05T02:00Z"
  },
  "bet|2026-11-04|winner": {
   "bet": {
@@ -92,7 +92,7 @@
    "projected_profit": 1.2,
    "start": "2026-11-05T01:00Z"
   },
-  "seen": "2026-11-05T00:05+00:00",
+  "seen": "2026-11-05T00:18+00:00",
   "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
@@ -170,30 +170,6 @@
   "seen": "2026-11-04T04:49+00:00",
   "start": "2026-11-05T01:00Z"
  },
- "prop|nba|401909933": {
-  "game": {
-   "date": "2026-11-05T02:30Z",
-   "event_id": "401909933",
-   "name": "Dallas Mavericks at San Antonio Spurs",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.02,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.656,
-   "name": "Zaccharie Risacher",
-   "pid": "5211175",
-   "price": "-231",
-   "prob": 0.684,
-   "projection": 1.208,
-   "score": 0.656,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-05T00:05+00:00",
-  "start": "2026-11-05T02:30Z"
- },
  "prop|nba|401909935": {
   "game": {
    "date": "2026-11-05T03:30Z",
@@ -202,20 +178,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.09,
+   "ev": -0.02,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.668,
+   "line": 1.5,
+   "market_prob": 0.666,
    "name": "Kris Dunn",
    "pid": "2991139",
-   "price": "-245",
-   "prob": 0.647,
+   "price": "-243",
+   "prob": 0.695,
    "projection": 0.85,
-   "score": 0.668,
-   "side": "over",
+   "score": 0.666,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-05T00:05+00:00",
+  "seen": "2026-11-05T00:18+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
