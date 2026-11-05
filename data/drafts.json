@@ -39,32 +39,8 @@
    "projected_profit": 0.35,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-05T01:54+00:00",
+  "seen": "2026-11-05T02:07+00:00",
   "start": "2026-11-05T03:30Z"
- },
- "prop|nba|401909933": {
-  "game": {
-   "date": "2026-11-05T02:30Z",
-   "event_id": "401909933",
-   "name": "Dallas Mavericks at San Antonio Spurs",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.132,
-   "label": "assists",
-   "line": 1.5,
-   "market_prob": 0.654,
-   "name": "Julian Champagnie",
-   "pid": "4592479",
-   "price": "-229",
-   "prob": 0.604,
-   "projection": 1.305,
-   "score": 0.654,
-   "side": "under",
-   "stat": "ast"
-  },
-  "seen": "2026-11-05T01:54+00:00",
-  "start": "2026-11-05T02:30Z"
  },
  "prop|nba|401909935": {
   "game": {
@@ -87,7 +63,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-05T01:54+00:00",
+  "seen": "2026-11-05T02:07+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
