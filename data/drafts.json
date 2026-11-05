@@ -39,7 +39,7 @@
    "projected_profit": 0.41,
    "start": "2026-11-05T03:30Z"
   },
-  "seen": "2026-11-05T00:32+00:00",
+  "seen": "2026-11-05T00:46+00:00",
   "start": "2026-11-05T03:30Z"
  },
  "bet|2026-11-04|spread": {
@@ -66,34 +66,8 @@
    "projected_profit": 1.42,
    "start": "2026-11-05T02:00Z"
   },
-  "seen": "2026-11-05T00:32+00:00",
+  "seen": "2026-11-05T00:46+00:00",
   "start": "2026-11-05T02:00Z"
- },
- "bet|2026-11-04|winner": {
-  "bet": {
-   "chance": 0.654,
-   "kind": "winner",
-   "legs": [
-    {
-     "chance": 0.654,
-     "event_id": "401909929",
-     "game": "CLE @ OKC",
-     "odds": -161,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-05T01:00Z",
-     "team": "OKC",
-     "team_name": "Oklahoma City Thunder",
-     "type": "ml"
-    }
-   ],
-   "payout": 32.42,
-   "price": -161,
-   "projected_profit": 1.2,
-   "start": "2026-11-05T01:00Z"
-  },
-  "seen": "2026-11-05T00:32+00:00",
-  "start": "2026-11-05T01:00Z"
  },
  "parlay|2026-11-03|nba": {
   "card": {
@@ -191,7 +165,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-05T00:32+00:00",
+  "seen": "2026-11-05T00:46+00:00",
   "start": "2026-11-05T03:30Z"
  }
 }
