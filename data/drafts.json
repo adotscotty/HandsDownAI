@@ -9,7 +9,7 @@
      "event_id": "401909288",
      "game": "BOS @ CHA",
      "line": 8.5,
-     "odds": -106,
+     "odds": -110,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-07T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 146.95,
-   "price": 635,
-   "projected_profit": 4.8,
+   "payout": 144.36,
+   "price": 622,
+   "projected_profit": 4.36,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T05:03+00:00",
+  "seen": "2026-11-06T05:18+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -62,7 +62,7 @@
      "event_id": "401909288",
      "game": "BOS @ CHA",
      "line": 8.5,
-     "odds": -106,
+     "odds": -110,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-07T00:00Z",
@@ -71,12 +71,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.87,
-   "price": -106,
-   "projected_profit": 1.22,
+   "payout": 38.18,
+   "price": -110,
+   "projected_profit": 0.85,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T05:03+00:00",
+  "seen": "2026-11-06T05:18+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -88,7 +88,7 @@
      "chance": 0.671,
      "event_id": "401909293",
      "game": "MIN @ NO",
-     "odds": -165,
+     "odds": -184,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-07T01:00Z",
@@ -97,12 +97,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.12,
-   "price": -165,
-   "projected_profit": 1.55,
+   "payout": 30.87,
+   "price": -184,
+   "projected_profit": 0.71,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T05:03+00:00",
+  "seen": "2026-11-06T05:18+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -150,7 +150,7 @@
       "event_id": "401909751",
       "game": "UAPB @ BAY",
       "line": 36.5,
-      "odds": -105,
+      "odds": -108,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-06T22:00Z",
@@ -179,8 +179,8 @@
       "team": "IDHO"
      }
     ],
-    "payout": 153.1429303747643,
-    "projected_profit": 26.674032467776144
+    "payout": 151.06782291711167,
+    "projected_profit": 26.04159300344314
    },
    "two": {
     "chance": 0.4645950000000001,
@@ -190,7 +190,7 @@
       "event_id": "401909751",
       "game": "UAPB @ BAY",
       "line": 36.5,
-      "odds": -105,
+      "odds": -108,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-06T22:00Z",
@@ -208,11 +208,11 @@
       "team": "IDHO"
      }
     ],
-    "payout": 77.32959850606909,
-    "projected_profit": 15.926944817927179
+    "payout": 76.28177196804648,
+    "projected_profit": 15.44012984749456
    }
   },
-  "seen": "2026-11-06T05:03+00:00",
+  "seen": "2026-11-06T05:18+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -247,7 +247,7 @@
     "projected_profit": 3.3716052406417134
    }
   },
-  "seen": "2026-11-06T05:03+00:00",
+  "seen": "2026-11-06T05:18+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
@@ -260,7 +260,7 @@
       "event_id": "401909288",
       "game": "BOS @ CHA",
       "line": 8.5,
-      "odds": -106,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
@@ -289,8 +289,8 @@
       "team": "MIN"
      }
     ],
-    "payout": 144.20466681769636,
-    "projected_profit": 2.0751416898799313
+    "payout": 141.65912989240607,
+    "projected_profit": 1.6854657553719044
    },
    "two": {
     "chance": 0.28883400000000004,
@@ -300,7 +300,7 @@
       "event_id": "401909288",
       "game": "BOS @ CHA",
       "line": 8.5,
-      "odds": -106,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
@@ -318,11 +318,11 @@
       "team": "OKC"
      }
     ],
-    "payout": 75.53577785688857,
-    "projected_profit": 1.8173008615165571
+    "payout": 74.2024013722127,
+    "projected_profit": 1.4321763979416886
    }
   },
-  "seen": "2026-11-06T05:03+00:00",
+  "seen": "2026-11-06T05:18+00:00",
   "start": "2026-11-07T00:00Z"
  }
 }
