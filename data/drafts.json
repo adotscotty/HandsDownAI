@@ -49,37 +49,37 @@
    "projected_profit": 4.6,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.666,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
+     "chance": 0.666,
      "event_id": "401909292",
      "game": "TOR @ MIL",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Jaime Jaquez Jr.",
-     "odds": -237,
+     "odds": -243,
      "pid": "4432848",
      "projection": 1.748,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-07T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.44,
-   "price": -237,
+   "payout": 28.23,
+   "price": -243,
    "projected_profit": -1.2,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "bet|2026-11-06|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.5,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -161,7 +161,7 @@
      "chance": 0.679,
      "event_id": "401909292",
      "game": "TOR @ MIL",
-     "odds": -184,
+     "odds": -192,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-07T01:00Z",
@@ -170,12 +170,12 @@
      "type": "ml"
     }
    ],
-   "payout": 30.87,
-   "price": -184,
-   "projected_profit": 0.96,
+   "payout": 30.42,
+   "price": -192,
+   "projected_profit": 0.65,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -285,7 +285,7 @@
     "projected_profit": 5.9718074655047175
    }
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|nba": {
@@ -360,8 +360,32 @@
     "projected_profit": 2.7454559090909143
    }
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T00:00Z"
+ },
+ "prop|nba|401909290": {
+  "game": {
+   "date": "2026-11-07T01:00Z",
+   "event_id": "401909290",
+   "name": "Utah Jazz at Dallas Mavericks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.012,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.651,
+   "name": "Svi Mykhailiuk",
+   "pid": "3133602",
+   "price": "-226",
+   "prob": 0.702,
+   "projection": 1.419,
+   "score": 0.651,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-06T23:26+00:00",
+  "start": "2026-11-07T01:00Z"
  },
  "prop|nba|401909292": {
   "game": {
@@ -371,20 +395,44 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.223,
+   "ev": 0.037,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.661,
+   "line": 0.5,
+   "market_prob": 0.666,
    "name": "Jaime Jaquez Jr.",
    "pid": "4432848",
-   "price": "-237",
-   "prob": 0.547,
+   "price": "-243",
+   "prob": 0.734,
    "projection": 1.748,
-   "score": 0.661,
+   "score": 0.666,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-06T23:26+00:00",
+  "start": "2026-11-07T01:00Z"
+ },
+ "prop|nba|401909293": {
+  "game": {
+   "date": "2026-11-07T01:00Z",
+   "event_id": "401909293",
+   "name": "Minnesota Timberwolves at New Orleans Pelicans",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.066,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.651,
+   "name": "Trey Lyles",
+   "pid": "3136196",
+   "price": "-225",
+   "prob": 0.647,
+   "projection": 1.061,
+   "score": 0.651,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "prop|nba|401909294": {
@@ -408,7 +456,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T23:12+00:00",
+  "seen": "2026-11-06T23:26+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
