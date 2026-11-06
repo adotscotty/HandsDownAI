@@ -1,44 +1,4 @@
 {
- "bet|2026-11-05|parlay": {
-  "bet": {
-   "chance": 0.3304,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.5389999999999999,
-     "event_id": "401862817",
-     "game": "UTSA @ FAU",
-     "line": -7.0,
-     "odds": -115,
-     "side": "away",
-     "sport": "cfb",
-     "start": "2026-11-06T00:30Z",
-     "team": "UTSA",
-     "team_name": "UTSA",
-     "type": "spread"
-    },
-    {
-     "chance": 0.613,
-     "event_id": "401873037",
-     "game": "JAX @ BAL",
-     "line": 10.0,
-     "odds": -110,
-     "side": "home",
-     "sport": "nfl",
-     "start": "2026-11-06T01:15Z",
-     "team": "BAL",
-     "team_name": "BAL",
-     "type": "spread"
-    }
-   ],
-   "payout": 71.38,
-   "price": 257,
-   "projected_profit": 3.59,
-   "start": "2026-11-06T00:30Z"
-  },
-  "seen": "2026-11-05T23:54+00:00",
-  "start": "2026-11-06T00:30Z"
- },
  "bet|2026-11-05|prop": {
   "bet": {
    "chance": 0.662,
@@ -66,19 +26,19 @@
    "projected_profit": -1.2,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-05T23:54+00:00",
+  "seen": "2026-11-06T00:07+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "bet|2026-11-05|spread": {
   "bet": {
-   "chance": 0.613,
+   "chance": 0.605,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.613,
+     "chance": 0.605,
      "event_id": "401873037",
      "game": "JAX @ BAL",
-     "line": 10.0,
+     "line": 9.5,
      "odds": -110,
      "side": "home",
      "sport": "nfl",
@@ -90,10 +50,10 @@
    ],
    "payout": 38.18,
    "price": -110,
-   "projected_profit": 3.41,
+   "projected_profit": 3.1,
    "start": "2026-11-06T01:15Z"
   },
-  "seen": "2026-11-05T23:54+00:00",
+  "seen": "2026-11-06T00:07+00:00",
   "start": "2026-11-06T01:15Z"
  },
  "bet|2026-11-05|winner": {
@@ -119,7 +79,7 @@
    "projected_profit": 0.14,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-05T23:54+00:00",
+  "seen": "2026-11-06T00:07+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "prop|nba|401909936": {
@@ -143,7 +103,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-05T23:54+00:00",
+  "seen": "2026-11-06T00:07+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "prop|nba|401909937": {
@@ -167,7 +127,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-05T23:54+00:00",
+  "seen": "2026-11-06T00:07+00:00",
   "start": "2026-11-06T03:00Z"
  }
 }
