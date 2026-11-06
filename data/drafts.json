@@ -1,7 +1,7 @@
 {
  "bet|2026-11-06|parlay": {
   "bet": {
-   "chance": 0.1642,
+   "chance": 0.1706,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.5429999999999999,
-     "event_id": "401909287",
-     "game": "WSH @ ATL",
-     "line": 7.5,
-     "odds": -105,
-     "side": "away",
+     "chance": 0.564,
+     "event_id": "401909295",
+     "game": "SA @ SAC",
+     "line": 17.5,
+     "odds": -114,
+     "side": "home",
      "sport": "nba",
-     "start": "2026-11-07T00:00Z",
-     "team": "WSH",
-     "team_name": "WSH",
+     "start": "2026-11-07T03:00Z",
+     "team": "SAC",
+     "team_name": "SAC",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 148.84,
-   "price": 644,
-   "projected_profit": 4.45,
+   "payout": 143.11,
+   "price": 616,
+   "projected_profit": 4.41,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|prop": {
@@ -64,7 +64,7 @@
      "label": "threes",
      "line": 0.5,
      "name": "Sandro Mamukelashvili",
-     "odds": -233,
+     "odds": -232,
      "pid": "4278580",
      "projection": 1.172,
      "side": "over",
@@ -74,56 +74,13 @@
      "type": "prop"
     }
    ],
-   "payout": 28.58,
-   "price": -233,
-   "projected_profit": -1.22,
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.2,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T03:00Z"
- },
- "bet|2026-11-06|sgp": {
-  "bet": {
-   "chance": 0.3363,
-   "kind": "sgp",
-   "legs": [
-    {
-     "chance": 0.546,
-     "event_id": "401909288",
-     "game": "BOS @ CHA",
-     "line": 9.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-07T00:00Z",
-     "team": "CHA",
-     "team_name": "Charlotte Hornets",
-     "type": "spread"
-    },
-    {
-     "chance": 0.616,
-     "event_id": "401909288",
-     "game": "BOS @ CHA",
-     "label": "assists",
-     "line": 2.5,
-     "name": "Naz Reid",
-     "odds": -191,
-     "pid": "4396971",
-     "projection": 1.892,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-07T00:00Z",
-     "stat": "ast",
-     "type": "prop"
-    }
-   ],
-   "payout": 59.49,
-   "price": 197,
-   "projected_profit": 0.01,
-   "start": "2026-11-07T00:00Z"
-  },
-  "seen": "2026-11-06T20:19+00:00",
-  "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|spread": {
   "bet": {
@@ -149,7 +106,7 @@
    "projected_profit": 1.17,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -175,7 +132,7 @@
    "projected_profit": 0.96,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -216,14 +173,14 @@
  "parlay|2026-11-06|cbb": {
   "card": {
    "three": {
-    "chance": 0.33440849999999994,
+    "chance": 0.33541934999999995,
     "legs": [
      {
-      "chance": 0.718,
+      "chance": 0.731,
       "event_id": "401909751",
       "game": "UAPB @ BAY",
-      "line": 37.5,
-      "odds": -108,
+      "line": 38.5,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-06T22:00Z",
@@ -241,29 +198,29 @@
       "team": "NICH"
      },
      {
-      "chance": 0.675,
-      "event_id": "401906802",
-      "game": "MVSU @ OU",
-      "line": 41.5,
+      "chance": 0.665,
+      "event_id": "401921809",
+      "game": "TXSO @ LSU",
+      "line": 35.5,
       "odds": -105,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-07T01:00Z",
-      "team": "MVSU"
+      "team": "TXSO"
      }
     ],
-    "payout": 146.82455698328712,
-    "projected_profit": 29.099379863945565
+    "payout": 142.5278517203983,
+    "projected_profit": 27.80659938095237
    },
    "two": {
-    "chance": 0.4954199999999999,
+    "chance": 0.5043899999999999,
     "legs": [
      {
-      "chance": 0.718,
+      "chance": 0.731,
       "event_id": "401909751",
       "game": "UAPB @ BAY",
-      "line": 37.5,
-      "odds": -108,
+      "line": 38.5,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-06T22:00Z",
@@ -281,11 +238,11 @@
       "team": "NICH"
      }
     ],
-    "payout": 75.20282186948853,
-    "projected_profit": 17.256982010582
+    "payout": 73.00207039337474,
+    "projected_profit": 16.821514285714272
    }
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -360,13 +317,13 @@
     "projected_profit": 5.9718074655047175
    }
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|nba": {
   "card": {
    "three": {
-    "chance": 0.16721359199999997,
+    "chance": 0.17121686400000002,
     "legs": [
      {
       "chance": 0.546,
@@ -380,11 +337,11 @@
       "team": "CHA"
      },
      {
-      "chance": 0.5429999999999999,
+      "chance": 0.556,
       "event_id": "401909287",
       "game": "WSH @ ATL",
-      "line": 7.5,
-      "odds": -105,
+      "line": 8.5,
+      "odds": -113,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
@@ -402,11 +359,11 @@
       "team": "SAC"
      }
     ],
-    "payout": 143.10936070334566,
-    "projected_profit": 3.9298302520300687
+    "payout": 138.1670991638388,
+    "projected_profit": 3.6565374268095034
    },
    "two": {
-    "chance": 0.29647799999999996,
+    "chance": 0.307944,
     "legs": [
      {
       "chance": 0.546,
@@ -420,22 +377,22 @@
       "team": "CHA"
      },
      {
-      "chance": 0.5429999999999999,
-      "event_id": "401909287",
-      "game": "WSH @ ATL",
-      "line": 7.5,
-      "odds": -105,
-      "side": "away",
+      "chance": 0.564,
+      "event_id": "401909295",
+      "game": "SA @ SAC",
+      "line": 17.5,
+      "odds": -114,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-07T00:00Z",
-      "team": "WSH"
+      "start": "2026-11-07T03:00Z",
+      "team": "SAC"
      }
     ],
-    "payout": 76.23582766439908,
-    "projected_profit": 2.602245714285708
+    "payout": 73.2999164578112,
+    "projected_profit": 2.5722694736842087
    }
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909289": {
@@ -459,7 +416,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "prop|nba|401909294": {
@@ -470,20 +427,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.026,
+   "ev": -0.025,
    "label": "threes",
    "line": 0.5,
    "market_prob": 0.657,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-233",
+   "price": "-232",
    "prob": 0.681,
    "projection": 1.172,
    "score": 0.657,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T20:19+00:00",
+  "seen": "2026-11-06T20:32+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
