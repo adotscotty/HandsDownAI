@@ -26,35 +26,83 @@
    "projected_profit": -1.2,
    "start": "2026-11-06T02:00Z"
   },
-  "seen": "2026-11-06T00:48+00:00",
+  "seen": "2026-11-06T01:01+00:00",
   "start": "2026-11-06T02:00Z"
  },
- "bet|2026-11-05|spread": {
-  "bet": {
-   "chance": 0.59,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.59,
-     "event_id": "401873037",
-     "game": "JAX @ BAL",
-     "line": 8.5,
-     "odds": 102,
-     "side": "home",
-     "sport": "nfl",
-     "start": "2026-11-06T01:15Z",
-     "team": "BAL",
-     "team_name": "Baltimore Ravens",
-     "type": "spread"
-    }
-   ],
-   "payout": 40.4,
-   "price": 102,
-   "projected_profit": 3.84,
-   "start": "2026-11-06T01:15Z"
+ "parlay|2026-11-05|nba": {
+  "card": {
+   "three": {
+    "chance": 0.14523166,
+    "legs": [
+     {
+      "chance": 0.518,
+      "event_id": "401909937",
+      "game": "MIA @ GS",
+      "line": 3.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-06T03:00Z",
+      "team": "MIA"
+     },
+     {
+      "chance": 0.53,
+      "event_id": "401909293",
+      "game": "MIN @ NO",
+      "line": -4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T01:00Z",
+      "team": "MIN"
+     },
+     {
+      "chance": 0.529,
+      "event_id": "401909291",
+      "game": "OKC @ MEM",
+      "line": -3.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T01:00Z",
+      "team": "OKC"
+     }
+    ],
+    "payout": 142.31404958677686,
+    "projected_profit": 0.6685056628099204
+   },
+   "two": {
+    "chance": 0.27454,
+    "legs": [
+     {
+      "chance": 0.518,
+      "event_id": "401909937",
+      "game": "MIA @ GS",
+      "line": 3.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-06T03:00Z",
+      "team": "MIA"
+     },
+     {
+      "chance": 0.53,
+      "event_id": "401909293",
+      "game": "MIN @ NO",
+      "line": -4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T01:00Z",
+      "team": "MIN"
+     }
+    ],
+    "payout": 74.54545454545455,
+    "projected_profit": 0.4657090909090904
+   }
   },
-  "seen": "2026-11-06T00:48+00:00",
-  "start": "2026-11-06T01:15Z"
+  "seen": "2026-11-06T01:01+00:00",
+  "start": "2026-11-06T03:00Z"
  },
  "prop|nba|401909936": {
   "game": {
@@ -77,7 +125,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T00:48+00:00",
+  "seen": "2026-11-06T01:01+00:00",
   "start": "2026-11-06T02:00Z"
  },
  "prop|nba|401909937": {
@@ -101,7 +149,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T00:48+00:00",
+  "seen": "2026-11-06T01:01+00:00",
   "start": "2026-11-06T03:00Z"
  }
 }
