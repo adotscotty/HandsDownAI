@@ -1,7 +1,7 @@
 {
  "bet|2026-11-06|parlay": {
   "bet": {
-   "chance": 0.1697,
+   "chance": 0.1658,
    "kind": "parlay",
    "legs": [
     {
@@ -9,7 +9,7 @@
      "event_id": "401909287",
      "game": "WSH @ ATL",
      "line": 7.5,
-     "odds": -104,
+     "odds": -105,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-07T00:00Z",
@@ -18,11 +18,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.564,
+     "chance": 0.551,
      "event_id": "401909295",
      "game": "SA @ SAC",
-     "line": 17.5,
-     "odds": -114,
+     "line": 16.5,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-07T03:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 143.78,
-   "price": 619,
-   "projected_profit": 4.39,
+   "payout": 149.54,
+   "price": 648,
+   "projected_profit": 4.79,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|prop": {
@@ -79,20 +79,63 @@
    "projected_profit": -1.22,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
+  "start": "2026-11-07T03:00Z"
+ },
+ "bet|2026-11-06|sgp": {
+  "bet": {
+   "chance": 0.3548,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.551,
+     "event_id": "401909295",
+     "game": "SA @ SAC",
+     "line": 16.5,
+     "odds": -104,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-07T03:00Z",
+     "team": "SAC",
+     "team_name": "Sacramento Kings",
+     "type": "spread"
+    },
+    {
+     "chance": 0.644,
+     "event_id": "401909295",
+     "game": "SA @ SAC",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Dylan Harper",
+     "odds": -219,
+     "pid": "5037871",
+     "projection": 1.338,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-07T03:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 57.14,
+   "price": 186,
+   "projected_profit": 0.28,
+   "start": "2026-11-07T03:00Z"
+  },
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|spread": {
   "bet": {
-   "chance": 0.564,
+   "chance": 0.551,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.564,
+     "chance": 0.551,
      "event_id": "401909295",
      "game": "SA @ SAC",
-     "line": 17.5,
-     "odds": -114,
+     "line": 16.5,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-07T03:00Z",
@@ -101,12 +144,12 @@
      "type": "spread"
     }
    ],
-   "payout": 37.54,
-   "price": -114,
-   "projected_profit": 1.17,
+   "payout": 39.23,
+   "price": -104,
+   "projected_profit": 1.62,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -132,7 +175,7 @@
    "projected_profit": 0.65,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -242,7 +285,7 @@
     "projected_profit": 16.447047619047616
    }
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -317,20 +360,20 @@
     "projected_profit": 5.9718074655047175
    }
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|nba": {
   "card": {
    "three": {
-    "chance": 0.16721359199999997,
+    "chance": 0.163359378,
     "legs": [
      {
       "chance": 0.5429999999999999,
       "event_id": "401909287",
       "game": "WSH @ ATL",
       "line": 7.5,
-      "odds": -104,
+      "odds": -105,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
@@ -348,51 +391,51 @@
       "team": "CHA"
      },
      {
-      "chance": 0.564,
+      "chance": 0.551,
       "event_id": "401909295",
       "game": "SA @ SAC",
-      "line": 17.5,
-      "odds": -114,
+      "line": 16.5,
+      "odds": -104,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T03:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 140.59256532940745,
-    "projected_profit": 3.508987857224877
+    "payout": 146.22377622377624,
+    "projected_profit": 3.887025132727274
    },
    "two": {
-    "chance": 0.3062519999999999,
+    "chance": 0.299193,
     "legs": [
      {
       "chance": 0.5429999999999999,
       "event_id": "401909287",
       "game": "WSH @ ATL",
       "line": 7.5,
-      "odds": -104,
+      "odds": -105,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
       "team": "WSH"
      },
      {
-      "chance": 0.564,
+      "chance": 0.551,
       "event_id": "401909295",
       "game": "SA @ SAC",
-      "line": 17.5,
-      "odds": -114,
+      "line": 16.5,
+      "odds": -104,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T03:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 73.64372469635629,
-    "projected_profit": 2.5535379757084975
+    "payout": 76.5934065934066,
+    "projected_profit": 2.9162110989010976
    }
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909289": {
@@ -403,20 +446,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.096,
+   "ev": -0.054,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
-   "name": "LeBron James",
-   "pid": "1966",
-   "price": "-231",
-   "prob": 0.631,
-   "projection": 1.164,
-   "score": 0.655,
+   "market_prob": 0.651,
+   "name": "Kentavious Caldwell-Pope",
+   "pid": "2581018",
+   "price": "-226",
+   "prob": 0.656,
+   "projection": 1.013,
+   "score": 0.651,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "prop|nba|401909294": {
@@ -440,31 +483,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T19:21+00:00",
-  "start": "2026-11-07T03:00Z"
- },
- "prop|nba|401909295": {
-  "game": {
-   "date": "2026-11-07T03:00Z",
-   "event_id": "401909295",
-   "name": "San Antonio Spurs at Sacramento Kings",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.135,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-227",
-   "prob": 0.601,
-   "projection": 1.338,
-   "score": 0.652,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-06T19:21+00:00",
+  "seen": "2026-11-06T19:34+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
