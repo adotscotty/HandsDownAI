@@ -49,24 +49,24 @@
    "projected_profit": 4.18,
    "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "bet|2026-11-06|prop": {
   "bet": {
-   "chance": 0.655,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.655,
+     "chance": 0.656,
      "event_id": "401909294",
      "game": "POR @ LAL",
      "label": "threes",
      "line": 0.5,
-     "name": "Sandro Mamukelashvili",
-     "odds": -231,
-     "pid": "4278580",
-     "projection": 1.172,
+     "name": "Donovan Clingan",
+     "odds": -232,
+     "pid": "5105565",
+     "projection": 1.141,
      "side": "over",
      "sport": "nba",
      "start": "2026-11-07T03:00Z",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.23,
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.22,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.42,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -242,7 +242,7 @@
     "projected_profit": 15.44012984749456
    }
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -277,7 +277,7 @@
     "projected_profit": 3.3716052406417134
    }
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
@@ -352,7 +352,7 @@
     "projected_profit": 1.2758761904761897
    }
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909294": {
@@ -363,20 +363,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.025,
+   "ev": -0.031,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
-   "name": "Sandro Mamukelashvili",
-   "pid": "4278580",
-   "price": "-231",
-   "prob": 0.68,
-   "projection": 1.172,
-   "score": 0.655,
+   "market_prob": 0.656,
+   "name": "Donovan Clingan",
+   "pid": "5105565",
+   "price": "-232",
+   "prob": 0.677,
+   "projection": 1.141,
+   "score": 0.656,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T09:02+00:00",
+  "seen": "2026-11-06T09:15+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
