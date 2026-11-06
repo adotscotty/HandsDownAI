@@ -49,8 +49,38 @@
    "projected_profit": 4.07,
    "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T06:38+00:00",
+  "seen": "2026-11-06T06:41+00:00",
   "start": "2026-11-07T00:30Z"
+ },
+ "bet|2026-11-06|prop": {
+  "bet": {
+   "chance": 0.654,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.654,
+     "event_id": "401909292",
+     "game": "TOR @ MIL",
+     "label": "threes",
+     "line": 0.5,
+     "name": "Scottie Barnes",
+     "odds": -229,
+     "pid": "4433134",
+     "projection": 0.671,
+     "side": "over",
+     "sport": "nba",
+     "start": "2026-11-07T01:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.73,
+   "price": -229,
+   "projected_profit": -1.21,
+   "start": "2026-11-07T01:00Z"
+  },
+  "seen": "2026-11-06T06:41+00:00",
+  "start": "2026-11-07T01:00Z"
  },
  "bet|2026-11-06|spread": {
   "bet": {
@@ -76,7 +106,7 @@
    "projected_profit": 0.42,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T06:38+00:00",
+  "seen": "2026-11-06T06:41+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -102,7 +132,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T06:38+00:00",
+  "seen": "2026-11-06T06:41+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -212,7 +242,7 @@
     "projected_profit": 15.44012984749456
    }
   },
-  "seen": "2026-11-06T06:38+00:00",
+  "seen": "2026-11-06T06:41+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -247,7 +277,7 @@
     "projected_profit": 3.3716052406417134
    }
   },
-  "seen": "2026-11-06T06:38+00:00",
+  "seen": "2026-11-06T06:41+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
@@ -322,7 +352,31 @@
     "projected_profit": 1.174011973875185
    }
   },
-  "seen": "2026-11-06T06:38+00:00",
+  "seen": "2026-11-06T06:41+00:00",
   "start": "2026-11-07T00:00Z"
+ },
+ "prop|nba|401909292": {
+  "game": {
+   "date": "2026-11-07T01:00Z",
+   "event_id": "401909292",
+   "name": "Toronto Raptors at Milwaukee Bucks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.122,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.654,
+   "name": "Scottie Barnes",
+   "pid": "4433134",
+   "price": "-229",
+   "prob": 0.611,
+   "projection": 0.671,
+   "score": 0.654,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-06T06:41+00:00",
+  "start": "2026-11-07T01:00Z"
  }
 }
