@@ -75,9 +75,9 @@ jobs:
         continue-on-error: true   # GitHub Pages sometimes says "busy" or has a hiccup: try again below
         with:
           artifact_name: github-pages-${{ inputs.pass }}
-      - name: Wait a minute before trying the website again
+      - name: Wait for GitHub to finish the last website update, then try again
         if: steps.deploy.outcome == 'failure'
-        run: sleep 90
+        run: sleep 240   # the previous update can stay "in progress" for a few minutes after it finishes
       - id: deploy_retry
         if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
