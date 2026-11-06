@@ -1,7 +1,7 @@
 {
  "bet|2026-11-06|parlay": {
   "bet": {
-   "chance": 0.1623,
+   "chance": 0.1635,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.525,
-     "event_id": "401909295",
-     "game": "SA @ SAC",
-     "line": 14.5,
-     "odds": -104,
-     "side": "home",
+     "chance": 0.529,
+     "event_id": "401909291",
+     "game": "OKC @ MEM",
+     "line": -3.5,
+     "odds": -106,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-07T03:00Z",
-     "team": "SAC",
-     "team_name": "SAC",
+     "start": "2026-11-07T01:00Z",
+     "team": "OKC",
+     "team_name": "OKC",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 148.32,
-   "price": 642,
-   "projected_profit": 4.07,
+   "payout": 146.95,
+   "price": 635,
+   "projected_profit": 4.03,
    "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "bet|2026-11-06|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.42,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -242,7 +242,7 @@
     "projected_profit": 15.44012984749456
    }
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -277,13 +277,53 @@
     "projected_profit": 3.3716052406417134
    }
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
   "card": {
    "three": {
-    "chance": 0.15163785000000002,
+    "chance": 0.15308202,
+    "legs": [
+     {
+      "chance": 0.546,
+      "event_id": "401909288",
+      "game": "BOS @ CHA",
+      "line": 8.5,
+      "odds": -115,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T00:00Z",
+      "team": "CHA"
+     },
+     {
+      "chance": 0.53,
+      "event_id": "401909287",
+      "game": "WSH @ ATL",
+      "line": 6.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T00:00Z",
+      "team": "WSH"
+     },
+     {
+      "chance": 0.529,
+      "event_id": "401909291",
+      "game": "OKC @ MEM",
+      "line": -3.5,
+      "odds": -106,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T01:00Z",
+      "team": "OKC"
+     }
+    ],
+    "payout": 138.72622865239765,
+    "projected_profit": 1.236491309090912
+   },
+   "two": {
+    "chance": 0.28883400000000004,
     "legs": [
      {
       "chance": 0.546,
@@ -306,53 +346,13 @@
       "sport": "nba",
       "start": "2026-11-07T01:00Z",
       "team": "OKC"
-     },
-     {
-      "chance": 0.525,
-      "event_id": "401909295",
-      "game": "SA @ SAC",
-      "line": 14.5,
-      "odds": -104,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-07T03:00Z",
-      "team": "SAC"
      }
     ],
-    "payout": 142.53738878021076,
-    "projected_profit": 1.614063179245285
-   },
-   "two": {
-    "chance": 0.277725,
-    "legs": [
-     {
-      "chance": 0.529,
-      "event_id": "401909291",
-      "game": "OKC @ MEM",
-      "line": -3.5,
-      "odds": -106,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-07T01:00Z",
-      "team": "OKC"
-     },
-     {
-      "chance": 0.525,
-      "event_id": "401909295",
-      "game": "SA @ SAC",
-      "line": 14.5,
-      "odds": -104,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-07T03:00Z",
-      "team": "SAC"
-     }
-    ],
-    "payout": 76.24092888243833,
-    "projected_profit": 1.174011973875185
+    "payout": 72.66611977030352,
+    "projected_profit": 0.9884460377358515
    }
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909292": {
@@ -376,7 +376,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T06:41+00:00",
+  "seen": "2026-11-06T06:55+00:00",
   "start": "2026-11-07T01:00Z"
  }
 }
