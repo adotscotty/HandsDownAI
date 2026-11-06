@@ -2,7 +2,7 @@
  "parlay|2026-11-05|cfb": {
   "card": {
    "two": {
-    "chance": 0.29275999999999996,
+    "chance": 0.309087,
     "legs": [
      {
       "chance": 0.563,
@@ -16,22 +16,22 @@
       "team": "USF"
      },
      {
-      "chance": 0.52,
-      "event_id": "401864533",
-      "game": "UNM @ NEV",
-      "line": 10.0,
+      "chance": 0.549,
+      "event_id": "401856855",
+      "game": "TCU @ ARIZ",
+      "line": -7.5,
       "odds": -108,
       "side": "home",
       "sport": "cfb",
-      "start": "2026-11-07T02:00Z",
-      "team": "NEV"
+      "start": "2026-11-07T03:15Z",
+      "team": "ARIZ"
      }
     ],
     "payout": 73.53535353535355,
-    "projected_profit": 1.528210101010103
+    "projected_profit": 2.7288218181818245
    }
   },
-  "seen": "2026-11-06T03:03+00:00",
+  "seen": "2026-11-06T03:16+00:00",
   "start": "2026-11-07T00:30Z"
  }
 }
