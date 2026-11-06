@@ -1,7 +1,7 @@
 {
  "bet|2026-11-06|parlay": {
   "bet": {
-   "chance": 0.1688,
+   "chance": 0.1703,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.549,
+     "chance": 0.554,
      "event_id": "401856855",
      "game": "TCU @ ARIZ",
-     "line": -7.5,
-     "odds": -102,
+     "line": -7.0,
+     "odds": -105,
      "side": "home",
      "sport": "cfb",
      "start": "2026-11-07T03:15Z",
@@ -44,43 +44,43 @@
      "type": "spread"
     }
    ],
-   "payout": 145.63,
-   "price": 628,
-   "projected_profit": 4.58,
+   "payout": 143.57,
+   "price": 618,
+   "projected_profit": 4.45,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.663,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
-     "event_id": "401909294",
-     "game": "POR @ LAL",
+     "chance": 0.663,
+     "event_id": "401909289",
+     "game": "PHI @ CLE",
      "label": "threes",
-     "line": 0.5,
-     "name": "Donovan Clingan",
-     "odds": -239,
-     "pid": "5105565",
-     "projection": 1.141,
-     "side": "over",
+     "line": 1.5,
+     "name": "LeBron James",
+     "odds": -240,
+     "pid": "1966",
+     "projection": 1.164,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-07T03:00Z",
+     "start": "2026-11-07T00:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
-   "start": "2026-11-07T03:00Z"
+   "payout": 28.33,
+   "price": -240,
+   "projected_profit": -1.21,
+   "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T14:22+00:00",
-  "start": "2026-11-07T03:00Z"
+  "seen": "2026-11-06T14:35+00:00",
+  "start": "2026-11-07T00:30Z"
  },
  "bet|2026-11-06|spread": {
   "bet": {
@@ -106,33 +106,33 @@
    "projected_profit": 0.85,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|winner": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.671,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909291",
-     "game": "OKC @ MEM",
-     "odds": -170,
+     "chance": 0.671,
+     "event_id": "401909293",
+     "game": "MIN @ NO",
+     "odds": -174,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-07T01:00Z",
-     "team": "OKC",
-     "team_name": "Oklahoma City Thunder",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
      "type": "ml"
     }
    ],
-   "payout": 31.76,
-   "price": -170,
-   "projected_profit": 0.93,
+   "payout": 31.49,
+   "price": -174,
+   "projected_profit": 1.13,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -173,58 +173,29 @@
  "parlay|2026-11-06|cbb": {
   "card": {
    "three": {
-    "chance": 0.322696484,
+    "chance": 0.33701439199999994,
     "legs": [
      {
-      "chance": 0.718,
+      "chance": 0.731,
       "event_id": "401909751",
       "game": "UAPB @ BAY",
-      "line": 37.5,
-      "odds": -115,
+      "line": 38.5,
+      "odds": -108,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-06T22:00Z",
       "team": "UAPB"
      },
      {
-      "chance": 0.6819999999999999,
-      "event_id": "401917914",
-      "game": "CARK @ MISS",
-      "line": 19.5,
-      "odds": -108,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-07T01:30Z",
-      "team": "CARK"
-     },
-     {
-      "chance": 0.659,
-      "event_id": "401922261",
-      "game": "IDHO @ CSU",
-      "line": 16.5,
+      "chance": 0.6759999999999999,
+      "event_id": "401919015",
+      "game": "NICH @ UAB",
+      "line": 14.5,
       "odds": -102,
       "side": "away",
       "sport": "cbb",
-      "start": "2026-11-07T02:00Z",
-      "team": "IDHO"
-     }
-    ],
-    "payout": 142.61374759243475,
-    "projected_profit": 26.02095491814216
-   },
-   "two": {
-    "chance": 0.48967599999999994,
-    "legs": [
-     {
-      "chance": 0.718,
-      "event_id": "401909751",
-      "game": "UAPB @ BAY",
-      "line": 37.5,
-      "odds": -115,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-06T22:00Z",
-      "team": "UAPB"
+      "start": "2026-11-07T00:30Z",
+      "team": "NICH"
      },
      {
       "chance": 0.6819999999999999,
@@ -238,17 +209,46 @@
       "team": "CARK"
      }
     ],
-    "payout": 72.01288244766506,
-    "projected_profit": 15.262980225442831
+    "payout": 146.91304230883028,
+    "projected_profit": 29.511809630580707
+   },
+   "two": {
+    "chance": 0.49415599999999993,
+    "legs": [
+     {
+      "chance": 0.731,
+      "event_id": "401909751",
+      "game": "UAPB @ BAY",
+      "line": 38.5,
+      "odds": -108,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-06T22:00Z",
+      "team": "UAPB"
+     },
+     {
+      "chance": 0.6759999999999999,
+      "event_id": "401919015",
+      "game": "NICH @ UAB",
+      "line": 14.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-07T00:30Z",
+      "team": "NICH"
+     }
+    ],
+    "payout": 76.28177196804648,
+    "projected_profit": 17.695095308641974
    }
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
   "card": {
    "two": {
-    "chance": 0.309087,
+    "chance": 0.311902,
     "legs": [
      {
       "chance": 0.563,
@@ -262,28 +262,28 @@
       "team": "USF"
      },
      {
-      "chance": 0.549,
+      "chance": 0.554,
       "event_id": "401856855",
       "game": "TCU @ ARIZ",
-      "line": -7.5,
-      "odds": -102,
+      "line": -7.0,
+      "odds": -105,
       "side": "home",
       "sport": "cfb",
       "start": "2026-11-07T03:15Z",
       "team": "ARIZ"
      }
     ],
-    "payout": 76.28177196804648,
-    "projected_profit": 3.577704052287583
+    "payout": 75.20282186948853,
+    "projected_profit": 3.4559105467372113
    }
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
   "card": {
    "three": {
-    "chance": 0.15950516399999998,
+    "chance": 0.15713333999999998,
     "legs": [
      {
       "chance": 0.546,
@@ -308,19 +308,19 @@
       "team": "WSH"
      },
      {
-      "chance": 0.538,
-      "event_id": "401909295",
-      "game": "SA @ SAC",
-      "line": 15.5,
-      "odds": -110,
-      "side": "home",
+      "chance": 0.53,
+      "event_id": "401909293",
+      "game": "MIN @ NO",
+      "line": -4.5,
+      "odds": -105,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-07T03:00Z",
-      "team": "SAC"
+      "start": "2026-11-07T01:00Z",
+      "team": "MIN"
      }
     ],
-    "payout": 139.15852742299026,
-    "projected_profit": 2.196503738602555
+    "payout": 142.31404958677686,
+    "projected_profit": 2.3622819404958655
    },
    "two": {
     "chance": 0.29647799999999996,
@@ -352,7 +352,7 @@
     "projected_profit": 1.6110409917355355
    }
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909289": {
@@ -363,20 +363,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.095,
+   "ev": -0.1,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.654,
+   "market_prob": 0.663,
    "name": "LeBron James",
    "pid": "1966",
-   "price": "-229",
-   "prob": 0.63,
+   "price": "-240",
+   "prob": 0.635,
    "projection": 1.164,
-   "score": 0.654,
+   "score": 0.663,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "prop|nba|401909294": {
@@ -387,20 +387,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.035,
+   "ev": -0.028,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.662,
-   "name": "Donovan Clingan",
-   "pid": "5105565",
-   "price": "-239",
-   "prob": 0.68,
-   "projection": 1.141,
-   "score": 0.662,
+   "market_prob": 0.66,
+   "name": "Sandro Mamukelashvili",
+   "pid": "4278580",
+   "price": "-236",
+   "prob": 0.682,
+   "projection": 1.172,
+   "score": 0.66,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "prop|nba|401909295": {
@@ -424,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T14:22+00:00",
+  "seen": "2026-11-06T14:35+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
