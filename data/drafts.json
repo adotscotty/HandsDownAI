@@ -1,4 +1,110 @@
 {
+ "bet|2026-11-06|parlay": {
+  "bet": {
+   "chance": 0.1688,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.546,
+     "event_id": "401909288",
+     "game": "BOS @ CHA",
+     "line": 8.5,
+     "odds": -106,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-07T00:00Z",
+     "team": "CHA",
+     "team_name": "CHA",
+     "type": "spread"
+    },
+    {
+     "chance": 0.563,
+     "event_id": "401862818",
+     "game": "USF @ ECU",
+     "line": 2.5,
+     "odds": -110,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-11-07T00:30Z",
+     "team": "USF",
+     "team_name": "USF",
+     "type": "spread"
+    },
+    {
+     "chance": 0.549,
+     "event_id": "401856855",
+     "game": "TCU @ ARIZ",
+     "line": -7.5,
+     "odds": -102,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-11-07T03:15Z",
+     "team": "ARIZ",
+     "team_name": "ARIZ",
+     "type": "spread"
+    }
+   ],
+   "payout": 146.95,
+   "price": 635,
+   "projected_profit": 4.8,
+   "start": "2026-11-07T00:00Z"
+  },
+  "seen": "2026-11-06T05:03+00:00",
+  "start": "2026-11-07T00:00Z"
+ },
+ "bet|2026-11-06|spread": {
+  "bet": {
+   "chance": 0.546,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.546,
+     "event_id": "401909288",
+     "game": "BOS @ CHA",
+     "line": 8.5,
+     "odds": -106,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-07T00:00Z",
+     "team": "CHA",
+     "team_name": "Charlotte Hornets",
+     "type": "spread"
+    }
+   ],
+   "payout": 38.87,
+   "price": -106,
+   "projected_profit": 1.22,
+   "start": "2026-11-07T00:00Z"
+  },
+  "seen": "2026-11-06T05:03+00:00",
+  "start": "2026-11-07T00:00Z"
+ },
+ "bet|2026-11-06|winner": {
+  "bet": {
+   "chance": 0.671,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.671,
+     "event_id": "401909293",
+     "game": "MIN @ NO",
+     "odds": -165,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-07T01:00Z",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
+     "type": "ml"
+    }
+   ],
+   "payout": 32.12,
+   "price": -165,
+   "projected_profit": 1.55,
+   "start": "2026-11-07T01:00Z"
+  },
+  "seen": "2026-11-06T05:03+00:00",
+  "start": "2026-11-07T01:00Z"
+ },
  "parlay|2026-11-05|cfb": {
   "card": {
    "two": {
@@ -33,5 +139,190 @@
   },
   "seen": "2026-11-06T04:50+00:00",
   "start": "2026-11-07T00:30Z"
+ },
+ "parlay|2026-11-06|cbb": {
+  "card": {
+   "three": {
+    "chance": 0.3047743200000001,
+    "legs": [
+     {
+      "chance": 0.7050000000000001,
+      "event_id": "401909751",
+      "game": "UAPB @ BAY",
+      "line": 36.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-06T22:00Z",
+      "team": "UAPB"
+     },
+     {
+      "chance": 0.656,
+      "event_id": "401909772",
+      "game": "USM @ ISU",
+      "line": 30.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-07T01:00Z",
+      "team": "USM"
+     },
+     {
+      "chance": 0.659,
+      "event_id": "401922261",
+      "game": "IDHO @ CSU",
+      "line": 16.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-07T02:00Z",
+      "team": "IDHO"
+     }
+    ],
+    "payout": 153.1429303747643,
+    "projected_profit": 26.674032467776144
+   },
+   "two": {
+    "chance": 0.4645950000000001,
+    "legs": [
+     {
+      "chance": 0.7050000000000001,
+      "event_id": "401909751",
+      "game": "UAPB @ BAY",
+      "line": 36.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-06T22:00Z",
+      "team": "UAPB"
+     },
+     {
+      "chance": 0.659,
+      "event_id": "401922261",
+      "game": "IDHO @ CSU",
+      "line": 16.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-07T02:00Z",
+      "team": "IDHO"
+     }
+    ],
+    "payout": 77.32959850606909,
+    "projected_profit": 15.926944817927179
+   }
+  },
+  "seen": "2026-11-06T05:03+00:00",
+  "start": "2026-11-06T22:00Z"
+ },
+ "parlay|2026-11-06|cfb": {
+  "card": {
+   "two": {
+    "chance": 0.309087,
+    "legs": [
+     {
+      "chance": 0.563,
+      "event_id": "401862818",
+      "game": "USF @ ECU",
+      "line": 2.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-11-07T00:30Z",
+      "team": "USF"
+     },
+     {
+      "chance": 0.549,
+      "event_id": "401856855",
+      "game": "TCU @ ARIZ",
+      "line": -7.5,
+      "odds": -102,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T03:15Z",
+      "team": "ARIZ"
+     }
+    ],
+    "payout": 75.6149732620321,
+    "projected_profit": 3.3716052406417134
+   }
+  },
+  "seen": "2026-11-06T05:03+00:00",
+  "start": "2026-11-07T00:30Z"
+ },
+ "parlay|2026-11-06|nba": {
+  "card": {
+   "three": {
+    "chance": 0.15308202,
+    "legs": [
+     {
+      "chance": 0.546,
+      "event_id": "401909288",
+      "game": "BOS @ CHA",
+      "line": 8.5,
+      "odds": -106,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T00:00Z",
+      "team": "CHA"
+     },
+     {
+      "chance": 0.529,
+      "event_id": "401909291",
+      "game": "OKC @ MEM",
+      "line": -3.5,
+      "odds": -106,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T01:00Z",
+      "team": "OKC"
+     },
+     {
+      "chance": 0.53,
+      "event_id": "401909293",
+      "game": "MIN @ NO",
+      "line": -4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T01:00Z",
+      "team": "MIN"
+     }
+    ],
+    "payout": 144.20466681769636,
+    "projected_profit": 2.0751416898799313
+   },
+   "two": {
+    "chance": 0.28883400000000004,
+    "legs": [
+     {
+      "chance": 0.546,
+      "event_id": "401909288",
+      "game": "BOS @ CHA",
+      "line": 8.5,
+      "odds": -106,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T00:00Z",
+      "team": "CHA"
+     },
+     {
+      "chance": 0.529,
+      "event_id": "401909291",
+      "game": "OKC @ MEM",
+      "line": -3.5,
+      "odds": -106,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T01:00Z",
+      "team": "OKC"
+     }
+    ],
+    "payout": 75.53577785688857,
+    "projected_profit": 1.8173008615165571
+   }
+  },
+  "seen": "2026-11-06T05:03+00:00",
+  "start": "2026-11-07T00:00Z"
  }
 }
