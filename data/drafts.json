@@ -1,20 +1,20 @@
 {
  "bet|2026-11-06|parlay": {
   "bet": {
-   "chance": 0.1703,
+   "chance": 0.1694,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.546,
-     "event_id": "401909288",
-     "game": "BOS @ CHA",
-     "line": 8.5,
-     "odds": -110,
-     "side": "home",
+     "chance": 0.5429999999999999,
+     "event_id": "401909287",
+     "game": "WSH @ ATL",
+     "line": 7.5,
+     "odds": -104,
+     "side": "away",
      "sport": "nba",
      "start": "2026-11-07T00:00Z",
-     "team": "CHA",
-     "team_name": "CHA",
+     "team": "WSH",
+     "team_name": "WSH",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 143.57,
-   "price": 618,
-   "projected_profit": 4.45,
+   "payout": 147.51,
+   "price": 638,
+   "projected_profit": 4.98,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|prop": {
@@ -79,35 +79,35 @@
    "projected_profit": -1.23,
    "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "bet|2026-11-06|spread": {
   "bet": {
-   "chance": 0.546,
+   "chance": 0.551,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.546,
-     "event_id": "401909288",
-     "game": "BOS @ CHA",
-     "line": 8.5,
+     "chance": 0.551,
+     "event_id": "401909295",
+     "game": "SA @ SAC",
+     "line": 16.5,
      "odds": -110,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-07T00:00Z",
-     "team": "CHA",
-     "team_name": "Charlotte Hornets",
+     "start": "2026-11-07T03:00Z",
+     "team": "SAC",
+     "team_name": "Sacramento Kings",
      "type": "spread"
     }
    ],
    "payout": 38.18,
    "price": -110,
-   "projected_profit": 0.85,
-   "start": "2026-11-07T00:00Z"
+   "projected_profit": 1.04,
+   "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T15:18+00:00",
-  "start": "2026-11-07T00:00Z"
+  "seen": "2026-11-06T15:31+00:00",
+  "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|winner": {
   "bet": {
@@ -132,7 +132,7 @@
    "projected_profit": 1.13,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -242,7 +242,7 @@
     "projected_profit": 16.34872359788359
    }
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -277,14 +277,25 @@
     "projected_profit": 3.4559105467372113
    }
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
   "card": {
    "three": {
-    "chance": 0.15713333999999998,
+    "chance": 0.163359378,
     "legs": [
+     {
+      "chance": 0.5429999999999999,
+      "event_id": "401909287",
+      "game": "WSH @ ATL",
+      "line": 7.5,
+      "odds": -104,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-07T00:00Z",
+      "team": "WSH"
+     },
      {
       "chance": 0.546,
       "event_id": "401909288",
@@ -297,62 +308,51 @@
       "team": "CHA"
      },
      {
-      "chance": 0.5429999999999999,
-      "event_id": "401909287",
-      "game": "WSH @ ATL",
-      "line": 7.5,
+      "chance": 0.551,
+      "event_id": "401909295",
+      "game": "SA @ SAC",
+      "line": 16.5,
       "odds": -110,
-      "side": "away",
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-07T00:00Z",
-      "team": "WSH"
-     },
-     {
-      "chance": 0.53,
-      "event_id": "401909293",
-      "game": "MIN @ NO",
-      "line": -4.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-07T01:00Z",
-      "team": "MIN"
+      "start": "2026-11-07T03:00Z",
+      "team": "SAC"
      }
     ],
-    "payout": 142.31404958677686,
-    "projected_profit": 2.3622819404958655
+    "payout": 142.98156389065483,
+    "projected_profit": 3.357379342644631
    },
    "two": {
-    "chance": 0.29647799999999996,
+    "chance": 0.299193,
     "legs": [
-     {
-      "chance": 0.546,
-      "event_id": "401909288",
-      "game": "BOS @ CHA",
-      "line": 8.5,
-      "odds": -110,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-07T00:00Z",
-      "team": "CHA"
-     },
      {
       "chance": 0.5429999999999999,
       "event_id": "401909287",
       "game": "WSH @ ATL",
       "line": 7.5,
-      "odds": -110,
+      "odds": -104,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
       "team": "WSH"
+     },
+     {
+      "chance": 0.551,
+      "event_id": "401909295",
+      "game": "SA @ SAC",
+      "line": 16.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T03:00Z",
+      "team": "SAC"
      }
     ],
-    "payout": 72.89256198347108,
-    "projected_profit": 1.6110409917355355
+    "payout": 74.89510489510491,
+    "projected_profit": 2.4080911188811207
    }
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909289": {
@@ -376,7 +376,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "prop|nba|401909294": {
@@ -400,7 +400,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "prop|nba|401909295": {
@@ -424,7 +424,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T15:18+00:00",
+  "seen": "2026-11-06T15:31+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
