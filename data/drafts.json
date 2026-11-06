@@ -49,7 +49,7 @@
    "projected_profit": 4.36,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T05:58+00:00",
+  "seen": "2026-11-06T06:11+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -76,7 +76,7 @@
    "projected_profit": 0.85,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T05:58+00:00",
+  "seen": "2026-11-06T06:11+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -102,7 +102,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T05:58+00:00",
+  "seen": "2026-11-06T06:11+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -143,7 +143,7 @@
  "parlay|2026-11-06|cbb": {
   "card": {
    "three": {
-    "chance": 0.3047743200000001,
+    "chance": 0.30802648500000007,
     "legs": [
      {
       "chance": 0.7050000000000001,
@@ -157,15 +157,15 @@
       "team": "UAPB"
      },
      {
-      "chance": 0.656,
-      "event_id": "401909772",
-      "game": "USM @ ISU",
-      "line": 30.5,
-      "odds": -102,
+      "chance": 0.663,
+      "event_id": "401919015",
+      "game": "NICH @ UAB",
+      "line": 13.5,
+      "odds": -105,
       "side": "away",
       "sport": "cbb",
-      "start": "2026-11-07T01:00Z",
-      "team": "USM"
+      "start": "2026-11-07T00:30Z",
+      "team": "NICH"
      },
      {
       "chance": 0.659,
@@ -179,8 +179,8 @@
       "team": "IDHO"
      }
     ],
-    "payout": 151.06782291711167,
-    "projected_profit": 26.04159300344314
+    "payout": 148.93107860428123,
+    "projected_profit": 25.87471664973546
    },
    "two": {
     "chance": 0.4645950000000001,
@@ -212,7 +212,7 @@
     "projected_profit": 15.44012984749456
    }
   },
-  "seen": "2026-11-06T05:58+00:00",
+  "seen": "2026-11-06T06:11+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -247,13 +247,13 @@
     "projected_profit": 3.3716052406417134
    }
   },
-  "seen": "2026-11-06T05:58+00:00",
+  "seen": "2026-11-06T06:11+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
   "card": {
    "three": {
-    "chance": 0.15308202,
+    "chance": 0.15163785000000002,
     "legs": [
      {
       "chance": 0.546,
@@ -267,17 +267,6 @@
       "team": "CHA"
      },
      {
-      "chance": 0.53,
-      "event_id": "401909287",
-      "game": "WSH @ ATL",
-      "line": 6.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-07T00:00Z",
-      "team": "WSH"
-     },
-     {
       "chance": 0.529,
       "event_id": "401909291",
       "game": "OKC @ MEM",
@@ -287,13 +276,24 @@
       "sport": "nba",
       "start": "2026-11-07T01:00Z",
       "team": "OKC"
+     },
+     {
+      "chance": 0.525,
+      "event_id": "401909295",
+      "game": "SA @ SAC",
+      "line": 14.5,
+      "odds": -104,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T03:00Z",
+      "team": "SAC"
      }
     ],
-    "payout": 141.65912989240607,
-    "projected_profit": 1.6854657553719044
+    "payout": 145.55086423010954,
+    "projected_profit": 2.071020117495717
    },
    "two": {
-    "chance": 0.28883400000000004,
+    "chance": 0.28665,
     "legs": [
      {
       "chance": 0.546,
@@ -307,22 +307,22 @@
       "team": "CHA"
      },
      {
-      "chance": 0.529,
-      "event_id": "401909291",
-      "game": "OKC @ MEM",
-      "line": -3.5,
-      "odds": -106,
-      "side": "away",
+      "chance": 0.525,
+      "event_id": "401909295",
+      "game": "SA @ SAC",
+      "line": 14.5,
+      "odds": -104,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-07T01:00Z",
-      "team": "OKC"
+      "start": "2026-11-07T03:00Z",
+      "team": "SAC"
      }
     ],
-    "payout": 74.2024013722127,
-    "projected_profit": 1.4321763979416886
+    "payout": 74.89510489510491,
+    "projected_profit": 1.4686818181818246
    }
   },
-  "seen": "2026-11-06T05:58+00:00",
+  "seen": "2026-11-06T06:11+00:00",
   "start": "2026-11-07T00:00Z"
  }
 }
