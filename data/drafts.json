@@ -49,38 +49,38 @@
    "projected_profit": 4.8,
    "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "bet|2026-11-06|prop": {
   "bet": {
-   "chance": 0.655,
+   "chance": 0.657,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.655,
-     "event_id": "401909289",
-     "game": "PHI @ CLE",
+     "chance": 0.657,
+     "event_id": "401909294",
+     "game": "POR @ LAL",
      "label": "threes",
-     "line": 1.5,
-     "name": "LeBron James",
-     "odds": -231,
-     "pid": "1966",
-     "projection": 1.164,
-     "side": "under",
+     "line": 0.5,
+     "name": "Sandro Mamukelashvili",
+     "odds": -233,
+     "pid": "4278580",
+     "projection": 1.172,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-07T00:30Z",
+     "start": "2026-11-07T03:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.23,
-   "start": "2026-11-07T00:30Z"
+   "payout": 28.58,
+   "price": -233,
+   "projected_profit": -1.22,
+   "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T16:59+00:00",
-  "start": "2026-11-07T00:30Z"
+  "seen": "2026-11-06T17:12+00:00",
+  "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|sgp": {
   "bet": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.21,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -149,33 +149,33 @@
    "projected_profit": 1.52,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|winner": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.653,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909291",
-     "game": "OKC @ MEM",
-     "odds": -170,
+     "chance": 0.653,
+     "event_id": "401909293",
+     "game": "MIN @ NO",
+     "odds": -174,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-07T01:00Z",
-     "team": "OKC",
-     "team_name": "Oklahoma City Thunder",
+     "team": "MIN",
+     "team_name": "Minnesota Timberwolves",
      "type": "ml"
     }
    ],
-   "payout": 31.76,
-   "price": -170,
-   "projected_profit": 0.93,
+   "payout": 31.49,
+   "price": -174,
+   "projected_profit": 0.57,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -285,43 +285,83 @@
     "projected_profit": 16.447047619047616
    }
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
   "card": {
-   "two": {
-    "chance": 0.311902,
+   "three": {
+    "chance": 0.18907739399999995,
     "legs": [
      {
-      "chance": 0.563,
-      "event_id": "401862818",
-      "game": "USF @ ECU",
+      "chance": 0.583,
+      "event_id": "401862822",
+      "game": "TLSA @ TULN",
       "line": 2.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cfb",
-      "start": "2026-11-07T00:30Z",
-      "team": "USF"
-     },
-     {
-      "chance": 0.554,
-      "event_id": "401856855",
-      "game": "TCU @ ARIZ",
-      "line": -7.0,
-      "odds": -105,
+      "odds": -102,
       "side": "home",
       "sport": "cfb",
-      "start": "2026-11-07T03:15Z",
-      "team": "ARIZ"
+      "start": "2026-11-07T17:00Z",
+      "team": "TULN"
+     },
+     {
+      "chance": 0.573,
+      "event_id": "401856849",
+      "game": "BYU @ UTAH",
+      "line": -4.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T17:00Z",
+      "team": "UTAH"
+     },
+     {
+      "chance": 0.566,
+      "event_id": "401858292",
+      "game": "UNC @ CONN",
+      "line": 7.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T17:00Z",
+      "team": "CONN"
      }
     ],
-    "payout": 73.91156462585033,
-    "projected_profit": 3.0531648299319727
+    "payout": 146.91304230883028,
+    "projected_profit": 7.777935184365365
+   },
+   "two": {
+    "chance": 0.33405899999999994,
+    "legs": [
+     {
+      "chance": 0.583,
+      "event_id": "401862822",
+      "game": "TLSA @ TULN",
+      "line": 2.5,
+      "odds": -102,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T17:00Z",
+      "team": "TULN"
+     },
+     {
+      "chance": 0.573,
+      "event_id": "401856849",
+      "game": "BYU @ UTAH",
+      "line": -4.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T17:00Z",
+      "team": "UTAH"
+     }
+    ],
+    "payout": 76.28177196804648,
+    "projected_profit": 5.482612461873636
    }
   },
-  "seen": "2026-11-06T16:59+00:00",
-  "start": "2026-11-07T00:30Z"
+  "seen": "2026-11-06T17:12+00:00",
+  "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|nba": {
   "card": {
@@ -395,7 +435,7 @@
     "projected_profit": 2.9162110989010976
    }
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909289": {
@@ -419,7 +459,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "prop|nba|401909294": {
@@ -430,20 +470,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.021,
+   "ev": -0.026,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.651,
+   "market_prob": 0.657,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-225",
-   "prob": 0.678,
+   "price": "-233",
+   "prob": 0.681,
    "projection": 1.172,
-   "score": 0.651,
+   "score": 0.657,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "prop|nba|401909295": {
@@ -467,7 +507,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T16:59+00:00",
+  "seen": "2026-11-06T17:12+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
