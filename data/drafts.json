@@ -1,22 +1,9 @@
 {
  "bet|2026-11-06|parlay": {
   "bet": {
-   "chance": 0.1694,
+   "chance": 0.1719,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.5429999999999999,
-     "event_id": "401909287",
-     "game": "WSH @ ATL",
-     "line": 7.5,
-     "odds": -104,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-07T00:00Z",
-     "team": "WSH",
-     "team_name": "WSH",
-     "type": "spread"
-    },
     {
      "chance": 0.563,
      "event_id": "401862818",
@@ -28,6 +15,19 @@
      "start": "2026-11-07T00:30Z",
      "team": "USF",
      "team_name": "USF",
+     "type": "spread"
+    },
+    {
+     "chance": 0.551,
+     "event_id": "401909295",
+     "game": "SA @ SAC",
+     "line": 16.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-07T03:00Z",
+     "team": "SAC",
+     "team_name": "SAC",
      "type": "spread"
     },
     {
@@ -44,13 +44,13 @@
      "type": "spread"
     }
    ],
-   "payout": 147.51,
-   "price": 638,
-   "projected_profit": 4.98,
-   "start": "2026-11-07T00:00Z"
+   "payout": 146.82,
+   "price": 634,
+   "projected_profit": 5.23,
+   "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T16:00+00:00",
-  "start": "2026-11-07T00:00Z"
+  "seen": "2026-11-06T16:17+00:00",
+  "start": "2026-11-07T00:30Z"
  },
  "bet|2026-11-06|prop": {
   "bet": {
@@ -79,8 +79,51 @@
    "projected_profit": -1.23,
    "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-07T00:30Z"
+ },
+ "bet|2026-11-06|sgp": {
+  "bet": {
+   "chance": 0.3593,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.551,
+     "event_id": "401909295",
+     "game": "SA @ SAC",
+     "line": 16.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-07T03:00Z",
+     "team": "SAC",
+     "team_name": "Sacramento Kings",
+     "type": "spread"
+    },
+    {
+     "chance": 0.652,
+     "event_id": "401909295",
+     "game": "SA @ SAC",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Dylan Harper",
+     "odds": -227,
+     "pid": "5037871",
+     "projection": 1.338,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-07T03:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 56.25,
+   "price": 181,
+   "projected_profit": 0.21,
+   "start": "2026-11-07T03:00Z"
+  },
+  "seen": "2026-11-06T16:17+00:00",
+  "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|spread": {
   "bet": {
@@ -92,7 +135,7 @@
      "event_id": "401909295",
      "game": "SA @ SAC",
      "line": 16.5,
-     "odds": -110,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-07T03:00Z",
@@ -101,12 +144,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 1.04,
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 1.52,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -132,7 +175,7 @@
    "projected_profit": 1.13,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -173,7 +216,7 @@
  "parlay|2026-11-06|cbb": {
   "card": {
    "three": {
-    "chance": 0.33787643999999994,
+    "chance": 0.33440849999999994,
     "legs": [
      {
       "chance": 0.718,
@@ -198,22 +241,22 @@
       "team": "NICH"
      },
      {
-      "chance": 0.6819999999999999,
-      "event_id": "401917914",
-      "game": "CARK @ MISS",
-      "line": 19.5,
-      "odds": -108,
+      "chance": 0.675,
+      "event_id": "401909785",
+      "game": "MTSU @ KU",
+      "line": 30.5,
+      "odds": -110,
       "side": "away",
       "sport": "cbb",
-      "start": "2026-11-07T01:30Z",
-      "team": "CARK"
+      "start": "2026-11-07T02:00Z",
+      "team": "MTSU"
      }
     ],
-    "payout": 140.41936116010191,
-    "projected_profit": 27.444393855849498
+    "payout": 139.1919191919192,
+    "projected_profit": 26.546960909090906
    },
    "two": {
-    "chance": 0.48967599999999994,
+    "chance": 0.4954199999999999,
     "legs": [
      {
       "chance": 0.718,
@@ -227,22 +270,22 @@
       "team": "UAPB"
      },
      {
-      "chance": 0.6819999999999999,
-      "event_id": "401917914",
-      "game": "CARK @ MISS",
-      "line": 19.5,
-      "odds": -108,
+      "chance": 0.69,
+      "event_id": "401919015",
+      "game": "NICH @ UAB",
+      "line": 15.5,
+      "odds": -112,
       "side": "away",
       "sport": "cbb",
-      "start": "2026-11-07T01:30Z",
-      "team": "CARK"
+      "start": "2026-11-07T00:30Z",
+      "team": "NICH"
      }
     ],
-    "payout": 74.18381344307271,
-    "projected_profit": 16.326033031550068
+    "payout": 72.91005291005291,
+    "projected_profit": 16.12109841269841
    }
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -277,7 +320,7 @@
     "projected_profit": 3.4559105467372113
    }
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
@@ -312,15 +355,15 @@
       "event_id": "401909295",
       "game": "SA @ SAC",
       "line": 16.5,
-      "odds": -110,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T03:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 142.98156389065483,
-    "projected_profit": 3.357379342644631
+    "payout": 146.22377622377624,
+    "projected_profit": 3.887025132727274
    },
    "two": {
     "chance": 0.299193,
@@ -341,18 +384,18 @@
       "event_id": "401909295",
       "game": "SA @ SAC",
       "line": 16.5,
-      "odds": -110,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T03:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 74.89510489510491,
-    "projected_profit": 2.4080911188811207
+    "payout": 76.5934065934066,
+    "projected_profit": 2.9162110989010976
    }
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909289": {
@@ -376,7 +419,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "prop|nba|401909294": {
@@ -400,7 +443,31 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T16:00+00:00",
+  "seen": "2026-11-06T16:17+00:00",
+  "start": "2026-11-07T03:00Z"
+ },
+ "prop|nba|401909295": {
+  "game": {
+   "date": "2026-11-07T03:00Z",
+   "event_id": "401909295",
+   "name": "San Antonio Spurs at Sacramento Kings",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.135,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.652,
+   "name": "Dylan Harper",
+   "pid": "5037871",
+   "price": "-227",
+   "prob": 0.601,
+   "projection": 1.338,
+   "score": 0.652,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-06T16:17+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
