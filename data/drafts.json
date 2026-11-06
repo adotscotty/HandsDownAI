@@ -1,7 +1,7 @@
 {
  "bet|2026-11-06|parlay": {
   "bet": {
-   "chance": 0.1635,
+   "chance": 0.1638,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.529,
-     "event_id": "401909291",
-     "game": "OKC @ MEM",
-     "line": -3.5,
-     "odds": -106,
+     "chance": 0.53,
+     "event_id": "401909293",
+     "game": "MIN @ NO",
+     "line": -4.5,
+     "odds": -105,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-07T01:00Z",
-     "team": "OKC",
-     "team_name": "OKC",
+     "team": "MIN",
+     "team_name": "MIN",
      "type": "spread"
     },
     {
@@ -44,27 +44,27 @@
      "type": "spread"
     }
    ],
-   "payout": 146.95,
-   "price": 635,
-   "projected_profit": 4.03,
+   "payout": 147.63,
+   "price": 638,
+   "projected_profit": 4.18,
    "start": "2026-11-07T00:30Z"
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "bet|2026-11-06|prop": {
   "bet": {
-   "chance": 0.657,
+   "chance": 0.651,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.657,
+     "chance": 0.651,
      "event_id": "401909292",
      "game": "TOR @ MIL",
      "label": "threes",
      "line": 0.5,
      "name": "Scottie Barnes",
-     "odds": -234,
+     "odds": -226,
      "pid": "4433134",
      "projection": 0.671,
      "side": "over",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.24,
+   "payout": 28.85,
+   "price": -226,
+   "projected_profit": -1.22,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.42,
    "start": "2026-11-07T00:00Z"
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "bet|2026-11-06|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-07T01:00Z"
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-07T01:00Z"
  },
  "parlay|2026-11-05|cfb": {
@@ -242,7 +242,7 @@
     "projected_profit": 15.44012984749456
    }
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-06T22:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -277,7 +277,7 @@
     "projected_profit": 3.3716052406417134
    }
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-07T00:30Z"
  },
  "parlay|2026-11-06|nba": {
@@ -298,14 +298,14 @@
      },
      {
       "chance": 0.53,
-      "event_id": "401909287",
-      "game": "WSH @ ATL",
-      "line": 6.5,
-      "odds": -110,
+      "event_id": "401909293",
+      "game": "MIN @ NO",
+      "line": -4.5,
+      "odds": -105,
       "side": "away",
       "sport": "nba",
-      "start": "2026-11-07T00:00Z",
-      "team": "WSH"
+      "start": "2026-11-07T01:00Z",
+      "team": "MIN"
      },
      {
       "chance": 0.529,
@@ -319,22 +319,22 @@
       "team": "OKC"
      }
     ],
-    "payout": 138.72622865239765,
-    "projected_profit": 1.236491309090912
+    "payout": 141.87194812297355,
+    "projected_profit": 1.7180444000000001
    },
    "two": {
-    "chance": 0.28883400000000004,
+    "chance": 0.28037,
     "legs": [
      {
-      "chance": 0.546,
-      "event_id": "401909288",
-      "game": "BOS @ CHA",
-      "line": 8.5,
-      "odds": -115,
-      "side": "home",
+      "chance": 0.53,
+      "event_id": "401909293",
+      "game": "MIN @ NO",
+      "line": -4.5,
+      "odds": -105,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-07T00:00Z",
-      "team": "CHA"
+      "start": "2026-11-07T01:00Z",
+      "team": "MIN"
      },
      {
       "chance": 0.529,
@@ -348,11 +348,11 @@
       "team": "OKC"
      }
     ],
-    "payout": 72.66611977030352,
-    "projected_profit": 0.9884460377358515
+    "payout": 75.88499550763702,
+    "projected_profit": 1.2758761904761897
    }
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-07T00:00Z"
  },
  "prop|nba|401909292": {
@@ -363,20 +363,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.125,
+   "ev": -0.121,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.657,
+   "market_prob": 0.651,
    "name": "Scottie Barnes",
    "pid": "4433134",
-   "price": "-234",
-   "prob": 0.613,
+   "price": "-226",
+   "prob": 0.61,
    "projection": 0.671,
-   "score": 0.657,
+   "score": 0.651,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-06T07:08+00:00",
+  "seen": "2026-11-06T07:21+00:00",
   "start": "2026-11-07T01:00Z"
  }
 }
