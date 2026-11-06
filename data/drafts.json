@@ -9,7 +9,7 @@
      "event_id": "401909288",
      "game": "BOS @ CHA",
      "line": 10.5,
-     "odds": -114,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-07T00:00Z",
@@ -44,9 +44,9 @@
      "type": "spread"
     }
    ],
-   "payout": 139.94,
-   "price": 600,
-   "projected_profit": 4.4,
+   "payout": 139.37,
+   "price": 597,
+   "projected_profit": 4.3,
    "start": "2026-11-07T00:00Z"
   },
   "seen": "2026-11-06T22:19+00:00",
@@ -298,7 +298,7 @@
       "event_id": "401909288",
       "game": "BOS @ CHA",
       "line": 10.5,
-      "odds": -114,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
@@ -327,8 +327,8 @@
       "team": "SAC"
      }
     ],
-    "payout": 135.10352712029473,
-    "projected_profit": 3.4281765863395073
+    "payout": 134.5545489523943,
+    "projected_profit": 3.332978794440521
    },
    "two": {
     "chance": 0.314717,
@@ -338,7 +338,7 @@
       "event_id": "401909288",
       "game": "BOS @ CHA",
       "line": 10.5,
-      "odds": -114,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T00:00Z",
@@ -356,8 +356,8 @@
       "team": "SAC"
      }
     ],
-    "payout": 71.67464114832538,
-    "projected_profit": 2.5572280382775183
+    "payout": 71.38339920948617,
+    "projected_profit": 2.4655692490118604
    }
   },
   "seen": "2026-11-06T22:19+00:00",
