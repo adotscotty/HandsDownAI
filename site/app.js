@@ -173,15 +173,22 @@ function renderHome() {
   const rb = document.getElementById("homeRecord"); rb.replaceChildren();
   const r = B.record;
   rb.append(totalBlock(r.core || r.all, "straight bets since Oct 22"),
-    recordRows([["Prop", r.prop], ["Spread", r.spread], ["Winner", r.winner], ["Long shots (parlays)", r.fun]].filter(x => x[1])));
+    recordRows([["Prop", r.prop], ["Spread", r.spread], ["Winner", r.winner], ["Long-shot parlay", r.parlay], ["Same-game parlay", r.sgp]].filter(x => x[1])));
+}
+
+// Every tracked bet type, with the same names and numbers on the home page and the Record page
+function betTypes() {
+  const r = S.best ? S.best.record : {};
+  return [["Best prop", r.prop], ["Best spread", r.spread], ["Best winner", r.winner], ["Long-shot parlay", r.parlay],
+    ["Same-game parlay", r.sgp], ["All parlays (Parlays page)", S.parlays && S.parlays.record, 1], ["All props (Props page)", S.props && S.props.record && S.props.record.all, 1]]
+    .filter(([, x]) => x);
 }
 
 // "What's paying": profit by bet type, best first
 function renderPaying() {
   const box = document.getElementById("homePaying"); box.replaceChildren();
   const B = S.best; if (!B) return;
-  const r = B.record, tiles = [["Best prop", r.prop], ["Best spread", r.spread], ["Best winner", r.winner], ["All props", S.props && S.props.record && S.props.record.all], ["Long shots", r.fun]]
-    .filter(([, x]) => x).sort((a, b) => (b[1].profit ?? 0) - (a[1].profit ?? 0));
+  const tiles = betTypes().sort((a, b) => (b[1].profit ?? 0) - (a[1].profit ?? 0));
   for (const [name, x] of tiles) {
     const w = x.won ?? x.wins ?? 0, l = x.lost ?? x.losses ?? 0;
     box.append(h("div", { class: "rise" }, h("p", { class: "lbl", text: name }),
@@ -474,11 +481,11 @@ function renderRecord() {
       h("div", { class: "big " + cls(x.profit), text: signed(scale(x.profit)) }),
       h("p", { text: (w + l ? wl(w, l, x.pushes) : "No graded bets yet") + (x.roi != null ? ` · ${x.roi}%` : "") + (note ? ` · ${note}` : "") })));
   };
-  if (B) { const r = B.record; tile("Best prop", r.prop); tile("Best spread", r.spread); tile("Best winner", r.winner); tile("Long-shot parlay", r.parlay); tile("Same-game parlay", r.sgp); }
+  const all = betTypes();
+  for (const [name, x] of all.filter(t => !t[2])) tile(name, x);   // the best bets
   const types2 = document.getElementById("recTypes2"); types2.replaceChildren();
   types = types2;
-  if (S.parlays) tile("All parlays", S.parlays.record, S.parlays.record.pending ? `${S.parlays.record.pending} pending` : null);
-  if (S.props) tile("All props", S.props.record.all);
+  for (const [name, x] of all.filter(t => t[2])) tile(name, x, x.pending ? `${x.pending} pending` : null);   // every parlay and prop
   renderTrack();
 }
 
