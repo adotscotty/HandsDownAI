@@ -1,7 +1,7 @@
 {
  "bet|2026-11-07|parlay": {
   "bet": {
-   "chance": 0.1982,
+   "chance": 0.2002,
    "kind": "parlay",
    "legs": [
     {
@@ -9,7 +9,7 @@
      "event_id": "401862822",
      "game": "TLSA @ TULN",
      "line": 2.5,
-     "odds": -105,
+     "odds": 100,
      "side": "home",
      "sport": "cfb",
      "start": "2026-11-07T17:00Z",
@@ -18,11 +18,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.584,
+     "chance": 0.59,
      "event_id": "401856854",
      "game": "OKST @ KSU",
-     "line": 6.5,
-     "odds": -102,
+     "line": 7.0,
+     "odds": -112,
      "side": "home",
      "sport": "cfb",
      "start": "2026-11-07T18:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 147.63,
-   "price": 638,
-   "projected_profit": 9.25,
+   "payout": 144.55,
+   "price": 623,
+   "projected_profit": 8.94,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "bet|2026-11-07|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.86,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.22,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.96,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -325,20 +325,20 @@
     "projected_profit": 11.981192727272724
    }
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-07T18:00Z"
  },
  "parlay|2026-11-07|cfb": {
   "card": {
    "three": {
-    "chance": 0.19509045599999994,
+    "chance": 0.19709480999999995,
     "legs": [
      {
       "chance": 0.583,
       "event_id": "401862822",
       "game": "TLSA @ TULN",
       "line": 2.5,
-      "odds": -105,
+      "odds": 100,
       "side": "home",
       "sport": "cfb",
       "start": "2026-11-07T17:00Z",
@@ -356,51 +356,51 @@
       "team": "UTAH"
      },
      {
-      "chance": 0.584,
+      "chance": 0.59,
       "event_id": "401856854",
       "game": "OKST @ KSU",
-      "line": 6.5,
-      "odds": -102,
+      "line": 7.0,
+      "odds": -112,
       "side": "home",
       "sport": "cfb",
       "start": "2026-11-07T18:00Z",
       "team": "KSU"
      }
     ],
-    "payout": 148.93107860428123,
-    "projected_profit": 9.055032037481059
+    "payout": 145.82010582010582,
+    "projected_profit": 8.740386050793646
    },
    "two": {
-    "chance": 0.34047199999999994,
+    "chance": 0.34396999999999994,
     "legs": [
      {
       "chance": 0.583,
       "event_id": "401862822",
       "game": "TLSA @ TULN",
       "line": 2.5,
-      "odds": -105,
+      "odds": 100,
       "side": "home",
       "sport": "cfb",
       "start": "2026-11-07T17:00Z",
       "team": "TULN"
      },
      {
-      "chance": 0.584,
+      "chance": 0.59,
       "event_id": "401856854",
       "game": "OKST @ KSU",
-      "line": 6.5,
-      "odds": -102,
+      "line": 7.0,
+      "odds": -112,
       "side": "home",
       "sport": "cfb",
       "start": "2026-11-07T18:00Z",
       "team": "KSU"
      }
     ],
-    "payout": 77.32959850606909,
-    "projected_profit": 6.328563062558352
+    "payout": 75.71428571428571,
+    "projected_profit": 6.04344285714285
    }
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-07|nba": {
@@ -475,7 +475,7 @@
     "projected_profit": 3.693916172248805
    }
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-07T22:00Z"
  },
  "prop|nba|401909944": {
@@ -499,7 +499,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T16:08+00:00",
+  "seen": "2026-11-07T16:21+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
