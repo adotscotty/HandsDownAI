@@ -1,7 +1,7 @@
 {
  "bet|2026-11-06|sgp": {
   "bet": {
-   "chance": 0.3502,
+   "chance": 0.3553,
    "kind": "sgp",
    "legs": [
     {
@@ -18,13 +18,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.622,
+     "chance": 0.631,
      "event_id": "401909295",
      "game": "SA @ SAC",
      "label": "threes",
      "line": 1.5,
      "name": "Dylan Harper",
-     "odds": -196,
+     "odds": -205,
      "pid": "5037871",
      "projection": 1.338,
      "side": "under",
@@ -34,12 +34,12 @@
      "type": "prop"
     }
    ],
-   "payout": 57.66,
-   "price": 188,
-   "projected_profit": 0.19,
+   "payout": 56.81,
+   "price": 184,
+   "projected_profit": 0.18,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-07T00:48+00:00",
+  "seen": "2026-11-07T01:01+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "bet|2026-11-06|spread": {
@@ -66,7 +66,7 @@
    "projected_profit": 1.5,
    "start": "2026-11-07T03:00Z"
   },
-  "seen": "2026-11-07T00:48+00:00",
+  "seen": "2026-11-07T01:01+00:00",
   "start": "2026-11-07T03:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -141,7 +141,7 @@
     "projected_profit": 5.165270687830681
    }
   },
-  "seen": "2026-11-07T00:48+00:00",
+  "seen": "2026-11-07T01:01+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "prop|nba|401909294": {
@@ -165,7 +165,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T00:48+00:00",
+  "seen": "2026-11-07T01:01+00:00",
   "start": "2026-11-07T03:00Z"
  }
 }
