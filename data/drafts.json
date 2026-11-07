@@ -1,33 +1,33 @@
 {
  "bet|2026-11-07|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
-     "event_id": "401909944",
-     "game": "SA @ POR",
+     "chance": 0.656,
+     "event_id": "401909942",
+     "game": "ORL @ GS",
      "label": "threes",
-     "line": 1.5,
-     "name": "Donovan Clingan",
-     "odds": -237,
-     "pid": "5105565",
-     "projection": 1.318,
-     "side": "under",
+     "line": 0.5,
+     "name": "Will Richard",
+     "odds": -231,
+     "pid": "4897262",
+     "projection": 0.93,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-08T03:00Z",
+     "start": "2026-11-08T01:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.44,
-   "price": -237,
+   "payout": 28.66,
+   "price": -231,
    "projected_profit": -1.2,
-   "start": "2026-11-08T03:00Z"
+   "start": "2026-11-08T01:30Z"
   },
-  "seen": "2026-11-07T20:44+00:00",
-  "start": "2026-11-08T03:00Z"
+  "seen": "2026-11-07T20:45+00:00",
+  "start": "2026-11-08T01:30Z"
  },
  "bet|2026-11-07|sgp": {
   "bet": {
@@ -69,7 +69,7 @@
    "projected_profit": 0.51,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T20:44+00:00",
+  "seen": "2026-11-07T20:45+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 1.89,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T20:44+00:00",
+  "seen": "2026-11-07T20:45+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "parlay|2026-11-07|nba": {
@@ -171,7 +171,7 @@
     "projected_profit": 3.5721350427350416
    }
   },
-  "seen": "2026-11-07T20:44+00:00",
+  "seen": "2026-11-07T20:45+00:00",
   "start": "2026-11-07T22:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -246,7 +246,7 @@
     "projected_profit": 4.372039999999998
    }
   },
-  "seen": "2026-11-07T20:44+00:00",
+  "seen": "2026-11-07T20:45+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909942": {
@@ -270,7 +270,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T20:44+00:00",
+  "seen": "2026-11-07T20:45+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
@@ -281,20 +281,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.135,
+   "ev": -0.13,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.661,
+   "market_prob": 0.652,
    "name": "Donovan Clingan",
    "pid": "5105565",
-   "price": "-237",
-   "prob": 0.608,
+   "price": "-227",
+   "prob": 0.604,
    "projection": 1.318,
-   "score": 0.661,
+   "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T20:44+00:00",
+  "seen": "2026-11-07T20:45+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
