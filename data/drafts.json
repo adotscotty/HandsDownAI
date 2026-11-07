@@ -1,45 +1,45 @@
 {
  "bet|2026-11-07|prop": {
   "bet": {
-   "chance": 0.656,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.656,
-     "event_id": "401909942",
-     "game": "ORL @ GS",
+     "chance": 0.662,
+     "event_id": "401909944",
+     "game": "SA @ POR",
      "label": "threes",
      "line": 0.5,
-     "name": "Will Richard",
-     "odds": -231,
-     "pid": "4897262",
-     "projection": 0.93,
+     "name": "Dylan Harper",
+     "odds": -239,
+     "pid": "5037871",
+     "projection": 1.277,
      "side": "over",
      "sport": "nba",
-     "start": "2026-11-08T01:30Z",
+     "start": "2026-11-08T03:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.2,
-   "start": "2026-11-08T01:30Z"
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.22,
+   "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T22:17+00:00",
-  "start": "2026-11-08T01:30Z"
+  "seen": "2026-11-07T22:30+00:00",
+  "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
   "bet": {
-   "chance": 0.3575,
+   "chance": 0.3543,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.59,
+     "chance": 0.577,
      "event_id": "401909940",
      "game": "NY @ CLE",
-     "line": 5.5,
-     "odds": -118,
+     "line": 4.5,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
@@ -48,41 +48,41 @@
      "type": "spread"
     },
     {
-     "chance": 0.606,
+     "chance": 0.614,
      "event_id": "401909940",
      "game": "NY @ CLE",
      "label": "threes",
      "line": 1.5,
-     "name": "Evan Mobley",
-     "odds": -182,
-     "pid": "4432158",
-     "projection": 1.657,
-     "side": "under",
+     "name": "Landry Shamet",
+     "odds": -190,
+     "pid": "3914044",
+     "projection": 2.068,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 57.25,
-   "price": 186,
-   "projected_profit": 0.47,
+   "payout": 59.88,
+   "price": 199,
+   "projected_profit": 1.21,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T22:17+00:00",
+  "seen": "2026-11-07T22:30+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
   "bet": {
-   "chance": 0.59,
+   "chance": 0.577,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.59,
+     "chance": 0.577,
      "event_id": "401909940",
      "game": "NY @ CLE",
-     "line": 5.5,
-     "odds": -118,
+     "line": 4.5,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
@@ -91,12 +91,12 @@
      "type": "spread"
     }
    ],
-   "payout": 36.95,
-   "price": -118,
-   "projected_profit": 1.8,
+   "payout": 39.23,
+   "price": -104,
+   "projected_profit": 2.64,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T22:17+00:00",
+  "seen": "2026-11-07T22:30+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -171,7 +171,7 @@
     "projected_profit": 3.9428486956521738
    }
   },
-  "seen": "2026-11-07T22:17+00:00",
+  "seen": "2026-11-07T22:30+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909942": {
@@ -195,7 +195,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T22:17+00:00",
+  "seen": "2026-11-07T22:30+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
@@ -206,20 +206,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.124,
+   "ev": -0.015,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.656,
+   "line": 0.5,
+   "market_prob": 0.662,
    "name": "Dylan Harper",
    "pid": "5037871",
-   "price": "-232",
-   "prob": 0.612,
+   "price": "-239",
+   "prob": 0.694,
    "projection": 1.277,
-   "score": 0.656,
-   "side": "under",
+   "score": 0.662,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T22:17+00:00",
+  "seen": "2026-11-07T22:30+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
