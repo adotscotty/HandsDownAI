@@ -26,7 +26,7 @@
    "projected_profit": -1.21,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T17:28+00:00",
+  "seen": "2026-11-07T17:41+00:00",
   "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": 0.74,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T17:28+00:00",
+  "seen": "2026-11-07T17:41+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
@@ -96,83 +96,8 @@
    "projected_profit": 2.13,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T17:28+00:00",
+  "seen": "2026-11-07T17:41+00:00",
   "start": "2026-11-08T01:00Z"
- },
- "parlay|2026-11-07|cbb": {
-  "card": {
-   "three": {
-    "chance": 0.27971843199999996,
-    "legs": [
-     {
-      "chance": 0.6579999999999999,
-      "event_id": "401921154",
-      "game": "NCAT @ OHIO",
-      "line": 14.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-07T18:00Z",
-      "team": "NCAT"
-     },
-     {
-      "chance": 0.652,
-      "event_id": "401929293",
-      "game": "OMA @ USU",
-      "line": 29.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-07T21:00Z",
-      "team": "OMA"
-     },
-     {
-      "chance": 0.652,
-      "event_id": "401917517",
-      "game": "PRST @ SEA",
-      "line": 10.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-08T03:00Z",
-      "team": "PRST"
-     }
-    ],
-    "payout": 141.1038961038961,
-    "projected_profit": 19.469360567272716
-   },
-   "two": {
-    "chance": 0.42901599999999995,
-    "legs": [
-     {
-      "chance": 0.6579999999999999,
-      "event_id": "401921154",
-      "game": "NCAT @ OHIO",
-      "line": 14.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-07T18:00Z",
-      "team": "NCAT"
-     },
-     {
-      "chance": 0.652,
-      "event_id": "401917517",
-      "game": "PRST @ SEA",
-      "line": 10.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-08T03:00Z",
-      "team": "PRST"
-     }
-    ],
-    "payout": 74.54545454545455,
-    "projected_profit": 11.981192727272724
-   }
-  },
-  "seen": "2026-11-07T17:28+00:00",
-  "start": "2026-11-07T18:00Z"
  },
  "parlay|2026-11-07|nba": {
   "card": {
@@ -246,7 +171,7 @@
     "projected_profit": 3.592269170222849
    }
   },
-  "seen": "2026-11-07T17:28+00:00",
+  "seen": "2026-11-07T17:41+00:00",
   "start": "2026-11-07T22:00Z"
  },
  "prop|nba|401909944": {
@@ -270,7 +195,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T17:28+00:00",
+  "seen": "2026-11-07T17:41+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
