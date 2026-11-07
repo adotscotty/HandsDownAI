@@ -49,7 +49,7 @@
    "projected_profit": 8.5,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "bet|2026-11-07|prop": {
@@ -62,12 +62,12 @@
      "event_id": "401909944",
      "game": "SA @ POR",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Donovan Clingan",
      "odds": -242,
      "pid": "5105565",
      "projection": 1.318,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-08T03:00Z",
      "stat": "tpm",
@@ -79,51 +79,51 @@
    "projected_profit": -1.2,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
   "bet": {
-   "chance": 0.3664,
+   "chance": 0.3433,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.551,
-     "event_id": "401909944",
-     "game": "SA @ POR",
-     "line": 5.5,
-     "odds": -105,
+     "chance": 0.577,
+     "event_id": "401909940",
+     "game": "NY @ CLE",
+     "line": 4.5,
+     "odds": -110,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-08T03:00Z",
-     "team": "POR",
-     "team_name": "Portland Trail Blazers",
+     "start": "2026-11-08T01:00Z",
+     "team": "CLE",
+     "team_name": "Cleveland Cavaliers",
      "type": "spread"
     },
     {
-     "chance": 0.665,
-     "event_id": "401909944",
-     "game": "SA @ POR",
+     "chance": 0.595,
+     "event_id": "401909940",
+     "game": "NY @ CLE",
      "label": "threes",
-     "line": 1.5,
-     "name": "Donovan Clingan",
-     "odds": -242,
-     "pid": "5105565",
-     "projection": 1.318,
+     "line": 2.5,
+     "name": "OG Anunoby",
+     "odds": -174,
+     "pid": "3934719",
+     "projection": 2.162,
      "side": "under",
      "sport": "nba",
-     "start": "2026-11-08T03:00Z",
+     "start": "2026-11-08T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 55.18,
-   "price": 176,
-   "projected_profit": 0.22,
-   "start": "2026-11-08T03:00Z"
+   "payout": 60.13,
+   "price": 201,
+   "projected_profit": 0.64,
+   "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T08:09+00:00",
-  "start": "2026-11-08T03:00Z"
+  "seen": "2026-11-07T08:22+00:00",
+  "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
   "bet": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.03,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.23,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -325,7 +325,7 @@
     "projected_profit": 12.239337551020405
    }
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-07T19:00Z"
  },
  "parlay|2026-11-07|cfb": {
@@ -400,13 +400,13 @@
     "projected_profit": 5.876958207282907
    }
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-07|nba": {
   "card": {
    "three": {
-    "chance": 0.180582536,
+    "chance": 0.18484310399999995,
     "legs": [
      {
       "chance": 0.568,
@@ -431,23 +431,34 @@
       "team": "CLE"
      },
      {
-      "chance": 0.551,
+      "chance": 0.564,
       "event_id": "401909944",
       "game": "SA @ POR",
-      "line": 5.5,
-      "odds": -105,
+      "line": 6.5,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-08T03:00Z",
       "team": "POR"
      }
     ],
-    "payout": 139.93620414673046,
-    "projected_profit": 5.270034623030302
+    "payout": 132.93501819817612,
+    "projected_profit": 4.572121394047354
    },
    "two": {
-    "chance": 0.317927,
+    "chance": 0.32773599999999997,
     "legs": [
+     {
+      "chance": 0.568,
+      "event_id": "401909938",
+      "game": "DEN @ IND",
+      "line": 7.5,
+      "odds": -114,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T22:00Z",
+      "team": "IND"
+     },
      {
       "chance": 0.577,
       "event_id": "401909940",
@@ -458,24 +469,13 @@
       "sport": "nba",
       "start": "2026-11-08T01:00Z",
       "team": "CLE"
-     },
-     {
-      "chance": 0.551,
-      "event_id": "401909944",
-      "game": "SA @ POR",
-      "line": 5.5,
-      "odds": -105,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-08T03:00Z",
-      "team": "POR"
      }
     ],
-    "payout": 74.54545454545455,
-    "projected_profit": 3.7000127272727283
+    "payout": 71.67464114832538,
+    "projected_profit": 3.4903601913875626
    }
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-07T22:00Z"
  },
  "prop|nba|401909942": {
@@ -486,20 +486,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.041,
+   "ev": -0.048,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.651,
+   "market_prob": 0.662,
    "name": "Jase Richardson",
    "pid": "5239561",
-   "price": "-227",
-   "prob": 0.666,
+   "price": "-239",
+   "prob": 0.671,
    "projection": 0.961,
-   "score": 0.651,
+   "score": 0.662,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
@@ -510,20 +510,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.137,
+   "ev": -0.011,
    "label": "threes",
-   "line": 1.5,
+   "line": 0.5,
    "market_prob": 0.665,
    "name": "Donovan Clingan",
    "pid": "5105565",
    "price": "-242",
-   "prob": 0.61,
+   "prob": 0.7,
    "projection": 1.318,
    "score": 0.665,
-   "side": "under",
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T08:09+00:00",
+  "seen": "2026-11-07T08:22+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
