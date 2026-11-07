@@ -22,7 +22,7 @@
      "event_id": "401856854",
      "game": "OKST @ KSU",
      "line": 6.5,
-     "odds": -102,
+     "odds": -105,
      "side": "home",
      "sport": "cfb",
      "start": "2026-11-07T18:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 153.14,
-   "price": 666,
-   "projected_profit": 8.54,
+   "payout": 150.98,
+   "price": 655,
+   "projected_profit": 8.14,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "bet|2026-11-07|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.21,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.65,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.03,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.96,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -256,14 +256,14 @@
  "parlay|2026-11-07|cbb": {
   "card": {
    "three": {
-    "chance": 0.276107004,
+    "chance": 0.27032898000000005,
     "legs": [
      {
-      "chance": 0.669,
+      "chance": 0.655,
       "event_id": "401917962",
       "game": "LAM @ ACU",
-      "line": 2.5,
-      "odds": -112,
+      "line": 1.5,
+      "odds": -110,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-07T19:00Z",
@@ -292,18 +292,18 @@
       "team": "PRST"
      }
     ],
-    "payout": 144.303530936184,
-    "projected_profit": 19.843215593411074
+    "payout": 145.54112554112555,
+    "projected_profit": 19.343984015584425
    },
    "two": {
-    "chance": 0.436188,
+    "chance": 0.42706000000000005,
     "legs": [
      {
-      "chance": 0.669,
+      "chance": 0.655,
       "event_id": "401917962",
       "game": "LAM @ ACU",
-      "line": 2.5,
-      "odds": -112,
+      "line": 1.5,
+      "odds": -110,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-07T19:00Z",
@@ -321,11 +321,11 @@
       "team": "PRST"
      }
     ],
-    "payout": 73.91156462585033,
-    "projected_profit": 12.239337551020405
+    "payout": 74.54545454545455,
+    "projected_profit": 11.835381818181823
    }
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-07T19:00Z"
  },
  "parlay|2026-11-07|cfb": {
@@ -349,7 +349,7 @@
       "event_id": "401856854",
       "game": "OKST @ KSU",
       "line": 6.5,
-      "odds": -102,
+      "odds": -105,
       "side": "home",
       "sport": "cfb",
       "start": "2026-11-07T18:00Z",
@@ -367,8 +367,8 @@
       "team": "ASU"
      }
     ],
-    "payout": 153.1429303747643,
-    "projected_profit": 8.544314467982645
+    "payout": 150.97683517851584,
+    "projected_profit": 8.14057593236761
    },
    "two": {
     "chance": 0.33463199999999993,
@@ -389,18 +389,18 @@
       "event_id": "401856854",
       "game": "OKST @ KSU",
       "line": 6.5,
-      "odds": -102,
+      "odds": -105,
       "side": "home",
       "sport": "cfb",
       "start": "2026-11-07T18:00Z",
       "team": "KSU"
      }
     ],
-    "payout": 77.32959850606909,
-    "projected_profit": 5.876958207282907
+    "payout": 76.23582766439908,
+    "projected_profit": 5.510947482993188
    }
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-07|nba": {
@@ -475,8 +475,32 @@
     "projected_profit": 3.4903601913875626
    }
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-07T22:00Z"
+ },
+ "prop|nba|401909942": {
+  "game": {
+   "date": "2026-11-08T01:30Z",
+   "event_id": "401909942",
+   "name": "Orlando Magic at Golden State Warriors",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.041,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.653,
+   "name": "Jase Richardson",
+   "pid": "5239561",
+   "price": "-228",
+   "prob": 0.667,
+   "projection": 0.961,
+   "score": 0.653,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-07T13:56+00:00",
+  "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
   "game": {
@@ -499,7 +523,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T13:43+00:00",
+  "seen": "2026-11-07T13:56+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
