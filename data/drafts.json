@@ -1,4 +1,110 @@
 {
+ "bet|2026-11-07|parlay": {
+  "bet": {
+   "chance": 0.1931,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.573,
+     "event_id": "401856849",
+     "game": "BYU @ UTAH",
+     "line": -4.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-11-07T17:00Z",
+     "team": "UTAH",
+     "team_name": "UTAH",
+     "type": "spread"
+    },
+    {
+     "chance": 0.584,
+     "event_id": "401856854",
+     "game": "OKST @ KSU",
+     "line": 6.5,
+     "odds": -102,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-11-07T18:00Z",
+     "team": "KSU",
+     "team_name": "KSU",
+     "type": "spread"
+    },
+    {
+     "chance": 0.577,
+     "event_id": "401909940",
+     "game": "NY @ CLE",
+     "line": 4.5,
+     "odds": -106,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-08T01:00Z",
+     "team": "CLE",
+     "team_name": "CLE",
+     "type": "spread"
+    }
+   ],
+   "payout": 150.28,
+   "price": 651,
+   "projected_profit": 9.02,
+   "start": "2026-11-07T17:00Z"
+  },
+  "seen": "2026-11-07T05:07+00:00",
+  "start": "2026-11-07T17:00Z"
+ },
+ "bet|2026-11-07|spread": {
+  "bet": {
+   "chance": 0.577,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.577,
+     "event_id": "401909940",
+     "game": "NY @ CLE",
+     "line": 4.5,
+     "odds": -106,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-08T01:00Z",
+     "team": "CLE",
+     "team_name": "Cleveland Cavaliers",
+     "type": "spread"
+    }
+   ],
+   "payout": 38.87,
+   "price": -106,
+   "projected_profit": 2.43,
+   "start": "2026-11-08T01:00Z"
+  },
+  "seen": "2026-11-07T05:07+00:00",
+  "start": "2026-11-08T01:00Z"
+ },
+ "bet|2026-11-07|winner": {
+  "bet": {
+   "chance": 0.689,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.689,
+     "event_id": "401856849",
+     "game": "BYU @ UTAH",
+     "odds": -185,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-11-07T17:00Z",
+     "team": "UTAH",
+     "team_name": "Utah Utes",
+     "type": "ml"
+    }
+   ],
+   "payout": 30.81,
+   "price": -185,
+   "projected_profit": 1.23,
+   "start": "2026-11-07T17:00Z"
+  },
+  "seen": "2026-11-07T05:07+00:00",
+  "start": "2026-11-07T17:00Z"
+ },
  "parlay|2026-11-06|cfb": {
   "card": {
    "three": {
@@ -73,5 +179,230 @@
   },
   "seen": "2026-11-07T04:54+00:00",
   "start": "2026-11-07T17:00Z"
+ },
+ "parlay|2026-11-07|cbb": {
+  "card": {
+   "three": {
+    "chance": 0.276107004,
+    "legs": [
+     {
+      "chance": 0.669,
+      "event_id": "401917962",
+      "game": "LAM @ ACU",
+      "line": 2.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-07T19:00Z",
+      "team": "LAM"
+     },
+     {
+      "chance": 0.633,
+      "event_id": "401926112",
+      "game": "UNI @ FUR",
+      "line": 4.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-07T22:00Z",
+      "team": "UNI"
+     },
+     {
+      "chance": 0.652,
+      "event_id": "401917517",
+      "game": "PRST @ SEA",
+      "line": 10.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-08T03:00Z",
+      "team": "PRST"
+     }
+    ],
+    "payout": 141.1038961038961,
+    "projected_profit": 18.95977400597402
+   },
+   "two": {
+    "chance": 0.436188,
+    "legs": [
+     {
+      "chance": 0.669,
+      "event_id": "401917962",
+      "game": "LAM @ ACU",
+      "line": 2.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-07T19:00Z",
+      "team": "LAM"
+     },
+     {
+      "chance": 0.652,
+      "event_id": "401917517",
+      "game": "PRST @ SEA",
+      "line": 10.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-08T03:00Z",
+      "team": "PRST"
+     }
+    ],
+    "payout": 73.91156462585033,
+    "projected_profit": 12.239337551020405
+   }
+  },
+  "seen": "2026-11-07T05:07+00:00",
+  "start": "2026-11-07T19:00Z"
+ },
+ "parlay|2026-11-07|cfb": {
+  "card": {
+   "three": {
+    "chance": 0.19174413599999995,
+    "legs": [
+     {
+      "chance": 0.573,
+      "event_id": "401856849",
+      "game": "BYU @ UTAH",
+      "line": -4.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T17:00Z",
+      "team": "UTAH"
+     },
+     {
+      "chance": 0.584,
+      "event_id": "401856854",
+      "game": "OKST @ KSU",
+      "line": 6.5,
+      "odds": -102,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T18:00Z",
+      "team": "KSU"
+     },
+     {
+      "chance": 0.573,
+      "event_id": "401858290",
+      "game": "MRMK @ WAKE",
+      "line": 47.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-11-07T20:30Z",
+      "team": "MRMK"
+     }
+    ],
+    "payout": 147.62923351158645,
+    "projected_profit": 8.307039828021384
+   },
+   "two": {
+    "chance": 0.33463199999999993,
+    "legs": [
+     {
+      "chance": 0.573,
+      "event_id": "401856849",
+      "game": "BYU @ UTAH",
+      "line": -4.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T17:00Z",
+      "team": "UTAH"
+     },
+     {
+      "chance": 0.584,
+      "event_id": "401856854",
+      "game": "OKST @ KSU",
+      "line": 6.5,
+      "odds": -102,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-07T18:00Z",
+      "team": "KSU"
+     }
+    ],
+    "payout": 77.32959850606909,
+    "projected_profit": 5.876958207282907
+   }
+  },
+  "seen": "2026-11-07T05:07+00:00",
+  "start": "2026-11-07T17:00Z"
+ },
+ "parlay|2026-11-07|nba": {
+  "card": {
+   "three": {
+    "chance": 0.174027816,
+    "legs": [
+     {
+      "chance": 0.568,
+      "event_id": "401909938",
+      "game": "DEN @ IND",
+      "line": 7.5,
+      "odds": -114,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T22:00Z",
+      "team": "IND"
+     },
+     {
+      "chance": 0.577,
+      "event_id": "401909940",
+      "game": "NY @ CLE",
+      "line": 4.5,
+      "odds": -106,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-08T01:00Z",
+      "team": "CLE"
+     },
+     {
+      "chance": 0.531,
+      "event_id": "401909941",
+      "game": "WSH @ OKC",
+      "line": -11.5,
+      "odds": -110,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-08T01:00Z",
+      "team": "OKC"
+     }
+    ],
+    "payout": 139.29222713731156,
+    "projected_profit": 4.240722074482264
+   },
+   "two": {
+    "chance": 0.32773599999999997,
+    "legs": [
+     {
+      "chance": 0.568,
+      "event_id": "401909938",
+      "game": "DEN @ IND",
+      "line": 7.5,
+      "odds": -114,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-07T22:00Z",
+      "team": "IND"
+     },
+     {
+      "chance": 0.577,
+      "event_id": "401909940",
+      "game": "NY @ CLE",
+      "line": 4.5,
+      "odds": -106,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-08T01:00Z",
+      "team": "CLE"
+     }
+    ],
+    "payout": 72.96259516716319,
+    "projected_profit": 3.912469089705393
+   }
+  },
+  "seen": "2026-11-07T05:07+00:00",
+  "start": "2026-11-07T22:00Z"
  }
 }
