@@ -26,20 +26,20 @@
    "projected_profit": -1.2,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T20:18+00:00",
+  "seen": "2026-11-07T20:31+00:00",
   "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
   "bet": {
-   "chance": 0.3611,
+   "chance": 0.3543,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.59,
+     "chance": 0.577,
      "event_id": "401909940",
      "game": "NY @ CLE",
-     "line": 5.5,
-     "odds": -117,
+     "line": 4.5,
+     "odds": -103,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
@@ -48,41 +48,41 @@
      "type": "spread"
     },
     {
-     "chance": 0.612,
+     "chance": 0.614,
      "event_id": "401909940",
      "game": "NY @ CLE",
      "label": "threes",
-     "line": 2.5,
-     "name": "Landry Shamet",
-     "odds": -188,
-     "pid": "3914044",
-     "projection": 2.068,
-     "side": "under",
+     "line": 1.5,
+     "name": "Meleek Thomas",
+     "odds": -190,
+     "pid": "5041951",
+     "projection": 2.54,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 56.82,
-   "price": 184,
-   "projected_profit": 0.52,
+   "payout": 60.16,
+   "price": 201,
+   "projected_profit": 1.31,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T20:18+00:00",
+  "seen": "2026-11-07T20:31+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
   "bet": {
-   "chance": 0.59,
+   "chance": 0.577,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.59,
+     "chance": 0.577,
      "event_id": "401909940",
      "game": "NY @ CLE",
-     "line": 5.5,
-     "odds": -117,
+     "line": 4.5,
+     "odds": -103,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
@@ -91,87 +91,87 @@
      "type": "spread"
     }
    ],
-   "payout": 37.09,
-   "price": -117,
-   "projected_profit": 1.89,
+   "payout": 39.42,
+   "price": -103,
+   "projected_profit": 2.74,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T20:18+00:00",
+  "seen": "2026-11-07T20:31+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "parlay|2026-11-07|nba": {
   "card": {
    "three": {
-    "chance": 0.18029456,
+    "chance": 0.180582536,
     "legs": [
      {
       "chance": 0.568,
       "event_id": "401909938",
       "game": "DEN @ IND",
       "line": 7.5,
-      "odds": -104,
+      "odds": -103,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T22:00Z",
       "team": "IND"
      },
      {
-      "chance": 0.59,
+      "chance": 0.577,
       "event_id": "401909940",
       "game": "NY @ CLE",
-      "line": 5.5,
-      "odds": -117,
+      "line": 4.5,
+      "odds": -103,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-08T01:00Z",
       "team": "CLE"
      },
      {
-      "chance": 0.538,
+      "chance": 0.551,
       "event_id": "401909944",
       "game": "SA @ POR",
-      "line": 4.5,
-      "odds": -103,
+      "line": 5.5,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-08T03:00Z",
       "team": "POR"
      }
     ],
-    "payout": 143.40342008004444,
-    "projected_profit": 5.854856525826776
+    "payout": 147.05014610236591,
+    "projected_profit": 6.554688302335752
    },
    "two": {
-    "chance": 0.33512,
+    "chance": 0.32773599999999997,
     "legs": [
      {
       "chance": 0.568,
       "event_id": "401909938",
       "game": "DEN @ IND",
       "line": 7.5,
-      "odds": -104,
+      "odds": -103,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T22:00Z",
       "team": "IND"
      },
      {
-      "chance": 0.59,
+      "chance": 0.577,
       "event_id": "401909940",
       "game": "NY @ CLE",
-      "line": 5.5,
-      "odds": -117,
+      "line": 4.5,
+      "odds": -103,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-08T01:00Z",
       "team": "CLE"
      }
     ],
-    "payout": 72.7613412228797,
-    "projected_profit": 4.38378067061144
+    "payout": 77.68686963898577,
+    "projected_profit": 5.4607839080026395
    }
   },
-  "seen": "2026-11-07T20:18+00:00",
+  "seen": "2026-11-07T20:31+00:00",
   "start": "2026-11-07T22:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -246,7 +246,7 @@
     "projected_profit": 4.372039999999998
    }
   },
-  "seen": "2026-11-07T20:18+00:00",
+  "seen": "2026-11-07T20:31+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909942": {
@@ -270,7 +270,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T20:18+00:00",
+  "seen": "2026-11-07T20:31+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
@@ -294,7 +294,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T20:18+00:00",
+  "seen": "2026-11-07T20:31+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
