@@ -26,12 +26,12 @@
    "projected_profit": -1.2,
    "start": "2026-11-08T01:30Z"
   },
-  "seen": "2026-11-07T21:11+00:00",
+  "seen": "2026-11-07T21:24+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "bet|2026-11-07|sgp": {
   "bet": {
-   "chance": 0.3623,
+   "chance": 0.3611,
    "kind": "sgp",
    "legs": [
     {
@@ -48,28 +48,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.614,
+     "chance": 0.612,
      "event_id": "401909940",
      "game": "NY @ CLE",
      "label": "threes",
-     "line": 1.5,
-     "name": "Meleek Thomas",
-     "odds": -190,
-     "pid": "5041951",
-     "projection": 2.54,
-     "side": "over",
+     "line": 2.5,
+     "name": "Landry Shamet",
+     "odds": -188,
+     "pid": "3914044",
+     "projection": 2.068,
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 56.62,
-   "price": 183,
-   "projected_profit": 0.51,
+   "payout": 56.82,
+   "price": 184,
+   "projected_profit": 0.52,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T21:11+00:00",
+  "seen": "2026-11-07T21:24+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
@@ -96,7 +96,7 @@
    "projected_profit": 1.89,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T21:11+00:00",
+  "seen": "2026-11-07T21:24+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "parlay|2026-11-07|nba": {
@@ -171,7 +171,7 @@
     "projected_profit": 4.704833584715935
    }
   },
-  "seen": "2026-11-07T21:11+00:00",
+  "seen": "2026-11-07T21:24+00:00",
   "start": "2026-11-07T22:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -246,7 +246,7 @@
     "projected_profit": 4.372039999999998
    }
   },
-  "seen": "2026-11-07T21:11+00:00",
+  "seen": "2026-11-07T21:24+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909942": {
@@ -270,7 +270,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T21:11+00:00",
+  "seen": "2026-11-07T21:24+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
@@ -281,20 +281,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.13,
+   "ev": -0.003,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
+   "line": 0.5,
+   "market_prob": 0.654,
    "name": "Donovan Clingan",
    "pid": "5105565",
-   "price": "-227",
-   "prob": 0.604,
+   "price": "-229",
+   "prob": 0.694,
    "projection": 1.318,
-   "score": 0.652,
-   "side": "under",
+   "score": 0.654,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T21:11+00:00",
+  "seen": "2026-11-07T21:24+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
