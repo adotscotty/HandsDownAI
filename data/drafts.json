@@ -49,8 +49,51 @@
    "projected_profit": 9.02,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T05:07+00:00",
+  "seen": "2026-11-07T05:20+00:00",
   "start": "2026-11-07T17:00Z"
+ },
+ "bet|2026-11-07|sgp": {
+  "bet": {
+   "chance": 0.3624,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.568,
+     "event_id": "401909938",
+     "game": "DEN @ IND",
+     "line": 7.5,
+     "odds": -114,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-07T22:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
+     "type": "spread"
+    },
+    {
+     "chance": 0.638,
+     "event_id": "401909938",
+     "game": "DEN @ IND",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Christian Braun",
+     "odds": -212,
+     "pid": "4431767",
+     "projection": 1.587,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-07T22:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 55.25,
+   "price": 176,
+   "projected_profit": 0.02,
+   "start": "2026-11-07T22:00Z"
+  },
+  "seen": "2026-11-07T05:20+00:00",
+  "start": "2026-11-07T22:00Z"
  },
  "bet|2026-11-07|spread": {
   "bet": {
@@ -76,7 +119,7 @@
    "projected_profit": 2.43,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T05:07+00:00",
+  "seen": "2026-11-07T05:20+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|winner": {
@@ -102,7 +145,7 @@
    "projected_profit": 1.23,
    "start": "2026-11-07T17:00Z"
   },
-  "seen": "2026-11-07T05:07+00:00",
+  "seen": "2026-11-07T05:20+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-06|cfb": {
@@ -190,7 +233,7 @@
       "event_id": "401917962",
       "game": "LAM @ ACU",
       "line": 2.5,
-      "odds": -112,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-07T19:00Z",
@@ -219,8 +262,8 @@
       "team": "PRST"
      }
     ],
-    "payout": 141.1038961038961,
-    "projected_profit": 18.95977400597402
+    "payout": 139.36758893280629,
+    "projected_profit": 18.480367434940696
    },
    "two": {
     "chance": 0.436188,
@@ -230,7 +273,7 @@
       "event_id": "401917962",
       "game": "LAM @ ACU",
       "line": 2.5,
-      "odds": -112,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-07T19:00Z",
@@ -248,11 +291,11 @@
       "team": "PRST"
      }
     ],
-    "payout": 73.91156462585033,
-    "projected_profit": 12.239337551020405
+    "payout": 73.00207039337472,
+    "projected_profit": 11.842627080745334
    }
   },
-  "seen": "2026-11-07T05:07+00:00",
+  "seen": "2026-11-07T05:20+00:00",
   "start": "2026-11-07T19:00Z"
  },
  "parlay|2026-11-07|cfb": {
@@ -327,7 +370,7 @@
     "projected_profit": 5.876958207282907
    }
   },
-  "seen": "2026-11-07T05:07+00:00",
+  "seen": "2026-11-07T05:20+00:00",
   "start": "2026-11-07T17:00Z"
  },
  "parlay|2026-11-07|nba": {
@@ -402,7 +445,7 @@
     "projected_profit": 3.912469089705393
    }
   },
-  "seen": "2026-11-07T05:07+00:00",
+  "seen": "2026-11-07T05:20+00:00",
   "start": "2026-11-07T22:00Z"
  }
 }
