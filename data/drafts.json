@@ -26,20 +26,20 @@
    "projected_profit": -1.2,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T20:31+00:00",
+  "seen": "2026-11-07T20:44+00:00",
   "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
   "bet": {
-   "chance": 0.3543,
+   "chance": 0.3623,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.577,
+     "chance": 0.59,
      "event_id": "401909940",
      "game": "NY @ CLE",
-     "line": 4.5,
-     "odds": -103,
+     "line": 5.5,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
@@ -64,25 +64,25 @@
      "type": "prop"
     }
    ],
-   "payout": 60.16,
-   "price": 201,
-   "projected_profit": 1.31,
+   "payout": 56.62,
+   "price": 183,
+   "projected_profit": 0.51,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T20:31+00:00",
+  "seen": "2026-11-07T20:44+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
   "bet": {
-   "chance": 0.577,
+   "chance": 0.59,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.577,
+     "chance": 0.59,
      "event_id": "401909940",
      "game": "NY @ CLE",
-     "line": 4.5,
-     "odds": -103,
+     "line": 5.5,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-08T01:00Z",
@@ -91,36 +91,36 @@
      "type": "spread"
     }
    ],
-   "payout": 39.42,
-   "price": -103,
-   "projected_profit": 2.74,
+   "payout": 37.09,
+   "price": -117,
+   "projected_profit": 1.89,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T20:31+00:00",
+  "seen": "2026-11-07T20:44+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "parlay|2026-11-07|nba": {
   "card": {
    "three": {
-    "chance": 0.180582536,
+    "chance": 0.18952746999999998,
     "legs": [
      {
-      "chance": 0.568,
+      "chance": 0.583,
       "event_id": "401909938",
       "game": "DEN @ IND",
-      "line": 7.5,
-      "odds": -103,
+      "line": 8.5,
+      "odds": -118,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T22:00Z",
       "team": "IND"
      },
      {
-      "chance": 0.577,
+      "chance": 0.59,
       "event_id": "401909940",
       "game": "NY @ CLE",
-      "line": 4.5,
-      "odds": -103,
+      "line": 5.5,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-08T01:00Z",
@@ -138,40 +138,40 @@
       "team": "POR"
      }
     ],
-    "payout": 147.05014610236591,
-    "projected_profit": 6.554688302335752
+    "payout": 129.71678980153558,
+    "projected_profit": 4.5848949876068374
    },
    "two": {
-    "chance": 0.32773599999999997,
+    "chance": 0.34396999999999994,
     "legs": [
      {
-      "chance": 0.568,
+      "chance": 0.583,
       "event_id": "401909938",
       "game": "DEN @ IND",
-      "line": 7.5,
-      "odds": -103,
+      "line": 8.5,
+      "odds": -118,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-07T22:00Z",
       "team": "IND"
      },
      {
-      "chance": 0.577,
+      "chance": 0.59,
       "event_id": "401909940",
       "game": "NY @ CLE",
-      "line": 4.5,
-      "odds": -103,
+      "line": 5.5,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-08T01:00Z",
       "team": "CLE"
      }
     ],
-    "payout": 77.68686963898577,
-    "projected_profit": 5.4607839080026395
+    "payout": 68.52962480081125,
+    "projected_profit": 3.5721350427350416
    }
   },
-  "seen": "2026-11-07T20:31+00:00",
+  "seen": "2026-11-07T20:44+00:00",
   "start": "2026-11-07T22:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -246,7 +246,7 @@
     "projected_profit": 4.372039999999998
    }
   },
-  "seen": "2026-11-07T20:31+00:00",
+  "seen": "2026-11-07T20:44+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909942": {
@@ -270,7 +270,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T20:31+00:00",
+  "seen": "2026-11-07T20:44+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
@@ -294,7 +294,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T20:31+00:00",
+  "seen": "2026-11-07T20:44+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
