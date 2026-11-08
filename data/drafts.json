@@ -26,12 +26,12 @@
    "projected_profit": -1.2,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T20:44+00:00",
+  "seen": "2026-11-08T20:57+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
-   "chance": 0.3697,
+   "chance": 0.3708,
    "kind": "sgp",
    "legs": [
     {
@@ -48,13 +48,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.652,
+     "chance": 0.654,
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "label": "threes",
      "line": 1.5,
      "name": "Bobby Portis",
-     "odds": -227,
+     "odds": -229,
      "pid": "3064482",
      "projection": 1.408,
      "side": "under",
@@ -64,25 +64,25 @@
      "type": "prop"
     }
    ],
-   "payout": 54.53,
-   "price": 173,
-   "projected_profit": 0.16,
+   "payout": 54.39,
+   "price": 172,
+   "projected_profit": 0.17,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T20:44+00:00",
+  "seen": "2026-11-08T20:57+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-08|nba": {
   "card": {
    "three": {
-    "chance": 0.162815184,
+    "chance": 0.16667758800000002,
     "legs": [
      {
-      "chance": 0.548,
+      "chance": 0.561,
       "event_id": "401909947",
       "game": "UTAH @ MIN",
-      "line": -12.5,
-      "odds": -103,
+      "line": -11.5,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T00:00Z",
@@ -111,18 +111,18 @@
       "team": "SAC"
      }
     ],
-    "payout": 146.35362210604927,
-    "projected_profit": 3.8285919122628798
+    "payout": 137.7268244575937,
+    "projected_profit": 2.9559749034911285
    },
    "two": {
-    "chance": 0.310716,
+    "chance": 0.318087,
     "legs": [
      {
-      "chance": 0.548,
+      "chance": 0.561,
       "event_id": "401909947",
       "game": "UTAH @ MIN",
-      "line": -12.5,
-      "odds": -103,
+      "line": -11.5,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T00:00Z",
@@ -140,11 +140,11 @@
       "team": "SAC"
      }
     ],
-    "payout": 74.61165048543688,
-    "projected_profit": 3.1830335922330057
+    "payout": 70.21367521367522,
+    "projected_profit": 2.3340573076923086
    }
   },
-  "seen": "2026-11-08T20:44+00:00",
+  "seen": "2026-11-08T20:57+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "prop|nba|401909949": {
@@ -168,7 +168,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T20:44+00:00",
+  "seen": "2026-11-08T20:57+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -182,17 +182,17 @@
    "ev": -0.151,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.652,
+   "market_prob": 0.654,
    "name": "Bobby Portis",
    "pid": "3064482",
-   "price": "-227",
-   "prob": 0.59,
+   "price": "-229",
+   "prob": 0.591,
    "projection": 1.408,
-   "score": 0.652,
+   "score": 0.654,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T20:44+00:00",
+  "seen": "2026-11-08T20:57+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
