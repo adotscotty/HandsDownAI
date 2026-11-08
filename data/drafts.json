@@ -1,37 +1,37 @@
 {
  "bet|2026-11-08|prop": {
   "bet": {
-   "chance": 0.655,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.655,
-     "event_id": "401909951",
-     "game": "MIA @ SAC",
+     "chance": 0.661,
+     "event_id": "401909949",
+     "game": "BOS @ MIL",
      "label": "threes",
      "line": 1.5,
-     "name": "Bobby Portis",
-     "odds": -230,
-     "pid": "3064482",
-     "projection": 1.408,
+     "name": "Jaime Jaquez Jr.",
+     "odds": -237,
+     "pid": "4432848",
+     "projection": 1.758,
      "side": "under",
      "sport": "nba",
-     "start": "2026-11-09T02:00Z",
+     "start": "2026-11-09T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.7,
-   "price": -230,
+   "payout": 28.44,
+   "price": -237,
    "projected_profit": -1.2,
-   "start": "2026-11-09T02:00Z"
+   "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T18:32+00:00",
-  "start": "2026-11-09T02:00Z"
+  "seen": "2026-11-08T18:45+00:00",
+  "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
-   "chance": 0.3727,
+   "chance": 0.3721,
    "kind": "sgp",
    "legs": [
     {
@@ -48,28 +48,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.655,
+     "chance": 0.654,
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "label": "threes",
-     "line": 1.5,
-     "name": "Bobby Portis",
-     "odds": -230,
-     "pid": "3064482",
-     "projection": 1.408,
-     "side": "under",
+     "line": 0.5,
+     "name": "Pelle Larsson",
+     "odds": -229,
+     "pid": "4601025",
+     "projection": 1.047,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 54.32,
+   "payout": 54.39,
    "price": 172,
    "projected_profit": 0.24,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T18:32+00:00",
+  "seen": "2026-11-08T18:45+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-08|nba": {
@@ -144,7 +144,7 @@
     "projected_profit": 2.592463074534159
    }
   },
-  "seen": "2026-11-08T18:32+00:00",
+  "seen": "2026-11-08T18:45+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "prop|nba|401909949": {
@@ -155,20 +155,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.142,
+   "ev": -0.224,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.654,
-   "name": "Kyle Kuzma",
-   "pid": "3134907",
-   "price": "-229",
-   "prob": 0.597,
-   "projection": 1.365,
-   "score": 0.654,
+   "market_prob": 0.661,
+   "name": "Jaime Jaquez Jr.",
+   "pid": "4432848",
+   "price": "-237",
+   "prob": 0.545,
+   "projection": 1.758,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T18:32+00:00",
+  "seen": "2026-11-08T18:45+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -179,20 +179,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.152,
+   "ev": -0.044,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Bobby Portis",
-   "pid": "3064482",
-   "price": "-230",
-   "prob": 0.591,
-   "projection": 1.408,
-   "score": 0.655,
-   "side": "under",
+   "line": 0.5,
+   "market_prob": 0.654,
+   "name": "Pelle Larsson",
+   "pid": "4601025",
+   "price": "-229",
+   "prob": 0.665,
+   "projection": 1.047,
+   "score": 0.654,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T18:32+00:00",
+  "seen": "2026-11-08T18:45+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
