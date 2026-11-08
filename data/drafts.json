@@ -1,7 +1,7 @@
 {
  "bet|2026-11-08|parlay": {
   "bet": {
-   "chance": 0.1761,
+   "chance": 0.1802,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.556,
+     "chance": 0.569,
      "event_id": "401909951",
      "game": "MIA @ SAC",
-     "line": 9.5,
-     "odds": -104,
+     "line": 10.5,
+     "odds": -112,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 148.85,
-   "price": 644,
-   "projected_profit": 6.21,
+   "payout": 143.64,
+   "price": 618,
+   "projected_profit": 5.89,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "bet|2026-11-08|prop": {
@@ -79,20 +79,20 @@
    "projected_profit": -1.2,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
-   "chance": 0.3681,
+   "chance": 0.3767,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.556,
+     "chance": 0.569,
      "event_id": "401909951",
      "game": "MIA @ SAC",
-     "line": 9.5,
-     "odds": -104,
+     "line": 10.5,
+     "odds": -112,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.71,
-   "price": 179,
-   "projected_profit": 0.51,
+   "payout": 53.76,
+   "price": 169,
+   "projected_profit": 0.25,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "bet|2026-11-08|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.61,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "bet|2026-11-08|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -325,13 +325,13 @@
     "projected_profit": 13.706919999999997
    }
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-08T17:00Z"
  },
  "parlay|2026-11-08|nba": {
   "card": {
    "three": {
-    "chance": 0.16240648800000004,
+    "chance": 0.166203762,
     "legs": [
      {
       "chance": 0.547,
@@ -356,22 +356,22 @@
       "team": "MIL"
      },
      {
-      "chance": 0.556,
+      "chance": 0.569,
       "event_id": "401909951",
       "game": "MIA @ SAC",
-      "line": 9.5,
-      "odds": -104,
+      "line": 10.5,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 141.40411596144546,
-    "projected_profit": 2.9649458620431055
+    "payout": 136.45299145299145,
+    "projected_profit": 2.6790005156410253
    },
    "two": {
-    "chance": 0.30413200000000007,
+    "chance": 0.311243,
     "legs": [
      {
       "chance": 0.547,
@@ -385,22 +385,22 @@
       "team": "MIN"
      },
      {
-      "chance": 0.556,
+      "chance": 0.569,
       "event_id": "401909951",
       "game": "MIA @ SAC",
-      "line": 9.5,
-      "odds": -104,
+      "line": 10.5,
+      "odds": -112,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 76.24092888243833,
-    "projected_profit": 3.187306182873737
+    "payout": 73.57142857142857,
+    "projected_profit": 2.89859214285714
    }
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "parlay|2026-11-08|nfl": {
@@ -475,7 +475,7 @@
     "projected_profit": 3.791753333333329
    }
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909949": {
@@ -499,7 +499,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -523,7 +523,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T14:35+00:00",
+  "seen": "2026-11-08T14:48+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
