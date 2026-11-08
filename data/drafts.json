@@ -1,34 +1,4 @@
 {
- "bet|2026-11-07|prop": {
-  "bet": {
-   "chance": 0.662,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.662,
-     "event_id": "401909944",
-     "game": "SA @ POR",
-     "label": "threes",
-     "line": 0.5,
-     "name": "Dylan Harper",
-     "odds": -239,
-     "pid": "5037871",
-     "projection": 1.277,
-     "side": "over",
-     "sport": "nba",
-     "start": "2026-11-08T03:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
-   "start": "2026-11-08T03:00Z"
-  },
-  "seen": "2026-11-08T00:42+00:00",
-  "start": "2026-11-08T03:00Z"
- },
  "parlay|2026-11-07|nfl": {
   "card": {
    "three": {
@@ -101,7 +71,7 @@
     "projected_profit": 3.7081148849104864
    }
   },
-  "seen": "2026-11-08T00:42+00:00",
+  "seen": "2026-11-08T00:55+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909944": {
@@ -125,7 +95,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T00:42+00:00",
+  "seen": "2026-11-08T00:55+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
