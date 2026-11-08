@@ -35,7 +35,7 @@
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "line": 9.5,
-     "odds": -105,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 148.16,
-   "price": 641,
-   "projected_profit": 6.09,
+   "payout": 148.85,
+   "price": 644,
+   "projected_profit": 6.21,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "bet|2026-11-08|prop": {
@@ -59,28 +59,28 @@
    "legs": [
     {
      "chance": 0.662,
-     "event_id": "401909949",
-     "game": "BOS @ MIL",
+     "event_id": "401909951",
+     "game": "MIA @ SAC",
      "label": "threes",
-     "line": 1.5,
-     "name": "Jaime Jaquez Jr.",
-     "odds": -239,
-     "pid": "4432848",
-     "projection": 1.758,
-     "side": "under",
+     "line": 0.5,
+     "name": "Pelle Larsson",
+     "odds": -238,
+     "pid": "4601025",
+     "projection": 1.047,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-09T01:00Z",
+     "start": "2026-11-09T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
-   "start": "2026-11-09T01:00Z"
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.2,
+   "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T14:22+00:00",
-  "start": "2026-11-09T01:00Z"
+  "seen": "2026-11-08T14:35+00:00",
+  "start": "2026-11-09T02:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
@@ -92,7 +92,7 @@
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "line": 9.5,
-     "odds": -105,
+     "odds": -104,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.45,
-   "price": 177,
-   "projected_profit": 0.41,
+   "payout": 55.71,
+   "price": 179,
+   "projected_profit": 0.51,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "bet|2026-11-08|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 2.61,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "bet|2026-11-08|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -325,13 +325,13 @@
     "projected_profit": 13.706919999999997
    }
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-08T17:00Z"
  },
  "parlay|2026-11-08|nba": {
   "card": {
    "three": {
-    "chance": 0.15845277200000005,
+    "chance": 0.16240648800000004,
     "legs": [
      {
       "chance": 0.547,
@@ -345,11 +345,11 @@
       "team": "MIN"
      },
      {
-      "chance": 0.521,
+      "chance": 0.534,
       "event_id": "401909949",
       "game": "BOS @ MIL",
-      "line": 12.5,
-      "odds": -104,
+      "line": 13.5,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T01:00Z",
@@ -360,15 +360,15 @@
       "event_id": "401909951",
       "game": "MIA @ SAC",
       "line": 9.5,
-      "odds": -105,
+      "odds": -104,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 148.8513373419034,
-    "projected_profit": 3.58590701773171
+    "payout": 141.40411596144546,
+    "projected_profit": 2.9649458620431055
    },
    "two": {
     "chance": 0.30413200000000007,
@@ -389,18 +389,18 @@
       "event_id": "401909951",
       "game": "MIA @ SAC",
       "line": 9.5,
-      "odds": -105,
+      "odds": -104,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 75.88499550763702,
-    "projected_profit": 3.0790554537286674
+    "payout": 76.24092888243833,
+    "projected_profit": 3.187306182873737
    }
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "parlay|2026-11-08|nfl": {
@@ -475,7 +475,7 @@
     "projected_profit": 3.791753333333329
    }
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909949": {
@@ -486,20 +486,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.225,
+   "ev": -0.224,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.662,
+   "market_prob": 0.661,
    "name": "Jaime Jaquez Jr.",
    "pid": "4432848",
-   "price": "-239",
-   "prob": 0.546,
+   "price": "-237",
+   "prob": 0.545,
    "projection": 1.758,
-   "score": 0.662,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -523,7 +523,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T14:22+00:00",
+  "seen": "2026-11-08T14:35+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
