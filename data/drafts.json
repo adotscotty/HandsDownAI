@@ -2,14 +2,14 @@
  "parlay|2026-11-07|nfl": {
   "card": {
    "three": {
-    "chance": 0.165845988,
+    "chance": 0.161657958,
     "legs": [
      {
-      "chance": 0.594,
+      "chance": 0.579,
       "event_id": "401873040",
       "game": "DAL @ IND",
-      "line": 5.5,
-      "odds": -115,
+      "line": 4.5,
+      "odds": -105,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -38,18 +38,18 @@
       "team": "WSH"
      }
     ],
-    "payout": 144.02576489533013,
-    "projected_profit": 3.88609527652174
+    "payout": 150.40564373897706,
+    "projected_profit": 4.314269238518516
    },
    "two": {
-    "chance": 0.320166,
+    "chance": 0.312081,
     "legs": [
      {
-      "chance": 0.594,
+      "chance": 0.579,
       "event_id": "401873040",
       "game": "DAL @ IND",
-      "line": 5.5,
-      "odds": -115,
+      "line": 4.5,
+      "odds": -105,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -67,11 +67,11 @@
       "team": "PHI"
      }
     ],
-    "payout": 72.01288244766506,
-    "projected_profit": 3.056076521739133
+    "payout": 75.20282186948853,
+    "projected_profit": 3.46937185185185
    }
   },
-  "seen": "2026-11-08T03:16+00:00",
+  "seen": "2026-11-08T03:29+00:00",
   "start": "2026-11-08T18:00Z"
  }
 }
