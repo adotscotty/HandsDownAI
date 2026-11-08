@@ -26,12 +26,12 @@
    "projected_profit": -1.22,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-07T23:49+00:00",
+  "seen": "2026-11-08T00:02+00:00",
   "start": "2026-11-08T03:00Z"
  },
  "bet|2026-11-07|sgp": {
   "bet": {
-   "chance": 0.3641,
+   "chance": 0.3612,
    "kind": "sgp",
    "legs": [
     {
@@ -48,13 +48,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.631,
+     "chance": 0.626,
      "event_id": "401909940",
      "game": "NY @ CLE",
      "label": "threes",
      "line": 0.5,
      "name": "Tyrese Proctor",
-     "odds": -205,
+     "odds": -201,
      "pid": "5023693",
      "projection": 1.243,
      "side": "over",
@@ -64,12 +64,12 @@
      "type": "prop"
     }
    ],
-   "payout": 57.31,
-   "price": 187,
-   "projected_profit": 0.87,
+   "payout": 57.68,
+   "price": 188,
+   "projected_profit": 0.83,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T23:49+00:00",
+  "seen": "2026-11-08T00:02+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "bet|2026-11-07|spread": {
@@ -96,20 +96,20 @@
    "projected_profit": 2.23,
    "start": "2026-11-08T01:00Z"
   },
-  "seen": "2026-11-07T23:49+00:00",
+  "seen": "2026-11-08T00:02+00:00",
   "start": "2026-11-08T01:00Z"
  },
  "parlay|2026-11-07|nfl": {
   "card": {
    "three": {
-    "chance": 0.161657958,
+    "chance": 0.165845988,
     "legs": [
      {
-      "chance": 0.579,
+      "chance": 0.594,
       "event_id": "401873040",
       "game": "DAL @ IND",
-      "line": 4.5,
-      "odds": -105,
+      "line": 5.5,
+      "odds": -115,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -120,7 +120,7 @@
       "event_id": "401873044",
       "game": "NYG @ PHI",
       "line": 3.0,
-      "odds": 100,
+      "odds": -102,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -138,18 +138,18 @@
       "team": "WSH"
      }
     ],
-    "payout": 156.19047619047618,
-    "projected_profit": 5.249433439999997
+    "payout": 148.0988917306053,
+    "projected_profit": 4.561607020767262
    },
    "two": {
-    "chance": 0.312081,
+    "chance": 0.320166,
     "legs": [
      {
-      "chance": 0.579,
+      "chance": 0.594,
       "event_id": "401873040",
       "game": "DAL @ IND",
-      "line": 4.5,
-      "odds": -105,
+      "line": 5.5,
+      "odds": -115,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -160,19 +160,43 @@
       "event_id": "401873044",
       "game": "NYG @ PHI",
       "line": 3.0,
-      "odds": 100,
+      "odds": -102,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
       "team": "PHI"
      }
     ],
-    "payout": 78.09523809523809,
-    "projected_profit": 4.372039999999998
+    "payout": 74.04944586530264,
+    "projected_profit": 3.7081148849104864
    }
   },
-  "seen": "2026-11-07T23:49+00:00",
+  "seen": "2026-11-08T00:02+00:00",
   "start": "2026-11-08T18:00Z"
+ },
+ "prop|nba|401909941": {
+  "game": {
+   "date": "2026-11-08T01:00Z",
+   "event_id": "401909941",
+   "name": "Washington Wizards at Oklahoma City Thunder",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.001,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.658,
+   "name": "AJ Dybantsa",
+   "pid": "5142718",
+   "price": "-234",
+   "prob": 0.702,
+   "projection": 0.797,
+   "score": 0.658,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-08T00:02+00:00",
+  "start": "2026-11-08T01:00Z"
  },
  "prop|nba|401909942": {
   "game": {
@@ -195,7 +219,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T23:49+00:00",
+  "seen": "2026-11-08T00:02+00:00",
   "start": "2026-11-08T01:30Z"
  },
  "prop|nba|401909944": {
@@ -219,7 +243,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-07T23:49+00:00",
+  "seen": "2026-11-08T00:02+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
