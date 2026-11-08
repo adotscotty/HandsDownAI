@@ -1,32 +1,32 @@
 {
  "bet|2026-11-08|prop": {
   "bet": {
-   "chance": 0.663,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.663,
+     "chance": 0.656,
      "event_id": "401909949",
      "game": "BOS @ MIL",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Kyle Kuzma",
-     "odds": -240,
+     "odds": -231,
      "pid": "3134907",
      "projection": 1.365,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-09T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.33,
-   "price": -240,
-   "projected_profit": -1.21,
+   "payout": 28.66,
+   "price": -231,
+   "projected_profit": -1.2,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T20:17+00:00",
+  "seen": "2026-11-08T20:30+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
@@ -69,13 +69,13 @@
    "projected_profit": 0.23,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T20:17+00:00",
+  "seen": "2026-11-08T20:30+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-08|nba": {
   "card": {
    "three": {
-    "chance": 0.17141523300000003,
+    "chance": 0.16726551600000003,
     "legs": [
      {
       "chance": 0.561,
@@ -89,11 +89,11 @@
       "team": "MIN"
      },
      {
-      "chance": 0.537,
+      "chance": 0.524,
       "event_id": "401909949",
       "game": "BOS @ MIL",
-      "line": 13.5,
-      "odds": -116,
+      "line": 12.5,
+      "odds": -104,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T01:00Z",
@@ -111,8 +111,8 @@
       "team": "SAC"
      }
     ],
-    "payout": 131.79053330477615,
-    "projected_profit": 2.5909049736324654
+    "payout": 138.83062589584327,
+    "projected_profit": 3.2215762770711898
    },
    "two": {
     "chance": 0.319209,
@@ -144,7 +144,7 @@
     "projected_profit": 2.592463074534159
    }
   },
-  "seen": "2026-11-08T20:17+00:00",
+  "seen": "2026-11-08T20:30+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "prop|nba|401909949": {
@@ -155,20 +155,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.147,
+   "ev": 0.002,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.663,
+   "line": 0.5,
+   "market_prob": 0.656,
    "name": "Kyle Kuzma",
    "pid": "3134907",
-   "price": "-240",
-   "prob": 0.602,
+   "price": "-231",
+   "prob": 0.7,
    "projection": 1.365,
-   "score": 0.663,
-   "side": "under",
+   "score": 0.656,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T20:17+00:00",
+  "seen": "2026-11-08T20:30+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -192,7 +192,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T20:17+00:00",
+  "seen": "2026-11-08T20:30+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
