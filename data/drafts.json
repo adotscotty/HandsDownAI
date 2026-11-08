@@ -49,38 +49,38 @@
    "projected_profit": 5.91,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "bet|2026-11-08|prop": {
   "bet": {
-   "chance": 0.655,
+   "chance": 0.652,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.655,
-     "event_id": "401909951",
-     "game": "MIA @ SAC",
+     "chance": 0.652,
+     "event_id": "401909949",
+     "game": "BOS @ MIL",
      "label": "threes",
-     "line": 0.5,
-     "name": "Pelle Larsson",
-     "odds": -230,
-     "pid": "4601025",
-     "projection": 1.047,
-     "side": "over",
+     "line": 1.5,
+     "name": "Kyle Kuzma",
+     "odds": -228,
+     "pid": "3134907",
+     "projection": 1.365,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-09T02:00Z",
+     "start": "2026-11-09T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.7,
-   "price": -230,
-   "projected_profit": -1.2,
-   "start": "2026-11-09T02:00Z"
+   "payout": 28.77,
+   "price": -228,
+   "projected_profit": -1.24,
+   "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T10:12+00:00",
-  "start": "2026-11-09T02:00Z"
+  "seen": "2026-11-08T10:25+00:00",
+  "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 2.61,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "bet|2026-11-08|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.36,
    "start": "2026-11-08T18:00Z"
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -282,13 +282,13 @@
     "projected_profit": 14.58346666666666
    }
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-08T17:00Z"
  },
  "parlay|2026-11-08|nba": {
   "card": {
    "three": {
-    "chance": 0.15474794100000003,
+    "chance": 0.15104311000000004,
     "legs": [
      {
       "chance": 0.547,
@@ -313,22 +313,22 @@
       "team": "MIL"
      },
      {
-      "chance": 0.543,
+      "chance": 0.53,
       "event_id": "401909951",
       "game": "MIA @ SAC",
-      "line": 8.5,
-      "odds": -114,
+      "line": 7.5,
+      "odds": -107,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 141.79523211731714,
-    "projected_profit": 1.9425202137719033
+    "payout": 146.12996276986854,
+    "projected_profit": 2.071924040945163
    },
    "two": {
-    "chance": 0.29702100000000003,
+    "chance": 0.28991000000000006,
     "legs": [
      {
       "chance": 0.547,
@@ -342,22 +342,22 @@
       "team": "MIN"
      },
      {
-      "chance": 0.543,
+      "chance": 0.53,
       "event_id": "401909951",
       "game": "MIA @ SAC",
-      "line": 8.5,
-      "odds": -114,
+      "line": 7.5,
+      "odds": -107,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 72.96259516716319,
-    "projected_profit": 1.67142297914598
+    "payout": 75.1930876388644,
+    "projected_profit": 1.7992280373831804
    }
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "parlay|2026-11-08|nfl": {
@@ -432,7 +432,7 @@
     "projected_profit": 4.372039999999998
    }
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909949": {
@@ -456,7 +456,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -467,20 +467,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.045,
+   "ev": -0.044,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
+   "market_prob": 0.652,
    "name": "Pelle Larsson",
    "pid": "4601025",
-   "price": "-230",
-   "prob": 0.666,
+   "price": "-228",
+   "prob": 0.665,
    "projection": 1.047,
-   "score": 0.655,
+   "score": 0.652,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T10:12+00:00",
+  "seen": "2026-11-08T10:25+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
