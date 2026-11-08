@@ -2,14 +2,14 @@
  "parlay|2026-11-07|nfl": {
   "card": {
    "three": {
-    "chance": 0.161657958,
+    "chance": 0.165845988,
     "legs": [
      {
-      "chance": 0.579,
+      "chance": 0.594,
       "event_id": "401873040",
       "game": "DAL @ IND",
-      "line": 4.5,
-      "odds": -105,
+      "line": 5.5,
+      "odds": -115,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -38,18 +38,18 @@
       "team": "WSH"
      }
     ],
-    "payout": 154.65919701213818,
-    "projected_profit": 5.001889974901957
+    "payout": 148.0988917306053,
+    "projected_profit": 4.561607020767262
    },
    "two": {
-    "chance": 0.312081,
+    "chance": 0.320166,
     "legs": [
      {
-      "chance": 0.579,
+      "chance": 0.594,
       "event_id": "401873040",
       "game": "DAL @ IND",
-      "line": 4.5,
-      "odds": -105,
+      "line": 5.5,
+      "odds": -115,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -67,11 +67,11 @@
       "team": "PHI"
      }
     ],
-    "payout": 77.32959850606909,
-    "projected_profit": 4.133098431372549
+    "payout": 74.04944586530264,
+    "projected_profit": 3.7081148849104864
    }
   },
-  "seen": "2026-11-08T02:01+00:00",
+  "seen": "2026-11-08T02:14+00:00",
   "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909944": {
@@ -95,7 +95,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T02:01+00:00",
+  "seen": "2026-11-08T02:14+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
