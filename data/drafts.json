@@ -1,57 +1,4 @@
 {
- "bet|2026-11-08|parlay": {
-  "bet": {
-   "chance": 0.1805,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.579,
-     "event_id": "401873040",
-     "game": "DAL @ IND",
-     "line": 4.5,
-     "odds": -115,
-     "side": "home",
-     "sport": "nfl",
-     "start": "2026-11-08T18:00Z",
-     "team": "IND",
-     "team_name": "IND",
-     "type": "spread"
-    },
-    {
-     "chance": 0.548,
-     "event_id": "401909947",
-     "game": "UTAH @ MIN",
-     "line": -12.5,
-     "odds": -105,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-09T00:00Z",
-     "team": "MIN",
-     "team_name": "MIN",
-     "type": "spread"
-    },
-    {
-     "chance": 0.569,
-     "event_id": "401909951",
-     "game": "MIA @ SAC",
-     "line": 10.5,
-     "odds": -112,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-09T02:00Z",
-     "team": "SAC",
-     "team_name": "SAC",
-     "type": "spread"
-    }
-   ],
-   "payout": 138.18,
-   "price": 591,
-   "projected_profit": 4.95,
-   "start": "2026-11-08T18:00Z"
-  },
-  "seen": "2026-11-08T17:26+00:00",
-  "start": "2026-11-08T18:00Z"
- },
  "bet|2026-11-08|prop": {
   "bet": {
    "chance": 0.662,
@@ -79,12 +26,12 @@
    "projected_profit": -1.22,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T17:26+00:00",
+  "seen": "2026-11-08T17:39+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
-   "chance": 0.3767,
+   "chance": 0.3738,
    "kind": "sgp",
    "legs": [
     {
@@ -101,82 +48,29 @@
      "type": "spread"
     },
     {
-     "chance": 0.662,
+     "chance": 0.657,
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "label": "threes",
-     "line": 0.5,
-     "name": "Pelle Larsson",
-     "odds": -238,
-     "pid": "4601025",
-     "projection": 1.047,
-     "side": "over",
+     "line": 1.5,
+     "name": "Bobby Portis",
+     "odds": -233,
+     "pid": "3064482",
+     "projection": 1.408,
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 53.76,
-   "price": 169,
-   "projected_profit": 0.25,
+   "payout": 54.1,
+   "price": 171,
+   "projected_profit": 0.23,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T17:26+00:00",
+  "seen": "2026-11-08T17:39+00:00",
   "start": "2026-11-09T02:00Z"
- },
- "bet|2026-11-08|spread": {
-  "bet": {
-   "chance": 0.579,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.579,
-     "event_id": "401873040",
-     "game": "DAL @ IND",
-     "line": 4.5,
-     "odds": -115,
-     "side": "home",
-     "sport": "nfl",
-     "start": "2026-11-08T18:00Z",
-     "team": "IND",
-     "team_name": "Indianapolis Colts",
-     "type": "spread"
-    }
-   ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 1.65,
-   "start": "2026-11-08T18:00Z"
-  },
-  "seen": "2026-11-08T17:26+00:00",
-  "start": "2026-11-08T18:00Z"
- },
- "bet|2026-11-08|winner": {
-  "bet": {
-   "chance": 0.628,
-   "kind": "winner",
-   "legs": [
-    {
-     "chance": 0.628,
-     "event_id": "401873041",
-     "game": "DEN @ CAR",
-     "odds": -148,
-     "side": "away",
-     "sport": "nfl",
-     "start": "2026-11-08T18:00Z",
-     "team": "DEN",
-     "team_name": "Denver Broncos",
-     "type": "ml"
-    }
-   ],
-   "payout": 33.51,
-   "price": -148,
-   "projected_profit": 1.05,
-   "start": "2026-11-08T18:00Z"
-  },
-  "seen": "2026-11-08T17:26+00:00",
-  "start": "2026-11-08T18:00Z"
  },
  "parlay|2026-11-07|nfl": {
   "card": {
@@ -325,83 +219,8 @@
     "projected_profit": 3.046512789115642
    }
   },
-  "seen": "2026-11-08T17:26+00:00",
+  "seen": "2026-11-08T17:39+00:00",
   "start": "2026-11-09T00:00Z"
- },
- "parlay|2026-11-08|nfl": {
-  "card": {
-   "three": {
-    "chance": 0.16910737199999998,
-    "legs": [
-     {
-      "chance": 0.579,
-      "event_id": "401873040",
-      "game": "DAL @ IND",
-      "line": 4.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nfl",
-      "start": "2026-11-08T18:00Z",
-      "team": "IND"
-     },
-     {
-      "chance": 0.532,
-      "event_id": "401873044",
-      "game": "NYG @ PHI",
-      "line": 3.0,
-      "odds": -110,
-      "side": "home",
-      "sport": "nfl",
-      "start": "2026-11-08T18:00Z",
-      "team": "PHI"
-     },
-     {
-      "chance": 0.5489999999999999,
-      "event_id": "401873048",
-      "game": "ARI @ SEA",
-      "line": 8.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-08T21:25Z",
-      "team": "ARI"
-     }
-    ],
-    "payout": 136.27739849083724,
-    "projected_profit": 3.0455127217822486
-   },
-   "two": {
-    "chance": 0.31787099999999996,
-    "legs": [
-     {
-      "chance": 0.579,
-      "event_id": "401873040",
-      "game": "DAL @ IND",
-      "line": 4.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nfl",
-      "start": "2026-11-08T18:00Z",
-      "team": "IND"
-     },
-     {
-      "chance": 0.5489999999999999,
-      "event_id": "401873048",
-      "game": "ARI @ SEA",
-      "line": 8.5,
-      "odds": -110,
-      "side": "away",
-      "sport": "nfl",
-      "start": "2026-11-08T21:25Z",
-      "team": "ARI"
-     }
-    ],
-    "payout": 71.38339920948617,
-    "projected_profit": 2.6907124901185746
-   }
-  },
-  "seen": "2026-11-08T17:26+00:00",
-  "start": "2026-11-08T18:00Z"
  },
  "prop|nba|401909946": {
   "game": {
@@ -424,7 +243,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T17:26+00:00",
+  "seen": "2026-11-08T17:39+00:00",
   "start": "2026-11-08T23:00Z"
  },
  "prop|nba|401909949": {
@@ -448,7 +267,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T17:26+00:00",
+  "seen": "2026-11-08T17:39+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -459,20 +278,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.049,
+   "ev": -0.154,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.662,
-   "name": "Pelle Larsson",
-   "pid": "4601025",
-   "price": "-238",
-   "prob": 0.669,
-   "projection": 1.047,
-   "score": 0.662,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.657,
+   "name": "Bobby Portis",
+   "pid": "3064482",
+   "price": "-233",
+   "prob": 0.592,
+   "projection": 1.408,
+   "score": 0.657,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T17:26+00:00",
+  "seen": "2026-11-08T17:39+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
