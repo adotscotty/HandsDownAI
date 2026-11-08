@@ -1,32 +1,32 @@
 {
  "bet|2026-11-08|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
+     "chance": 0.662,
      "event_id": "401909949",
      "game": "BOS @ MIL",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Jaime Jaquez Jr.",
-     "odds": -237,
+     "odds": -239,
      "pid": "4432848",
      "projection": 1.758,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-09T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.44,
-   "price": -237,
-   "projected_profit": -1.2,
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.22,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T18:59+00:00",
+  "seen": "2026-11-08T19:12+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
@@ -69,7 +69,7 @@
    "projected_profit": 0.24,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T18:59+00:00",
+  "seen": "2026-11-08T19:12+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-08|nba": {
@@ -144,7 +144,7 @@
     "projected_profit": 2.592463074534159
    }
   },
-  "seen": "2026-11-08T18:59+00:00",
+  "seen": "2026-11-08T19:12+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "prop|nba|401909949": {
@@ -155,20 +155,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.224,
+   "ev": 0.04,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.661,
+   "line": 0.5,
+   "market_prob": 0.662,
    "name": "Jaime Jaquez Jr.",
    "pid": "4432848",
-   "price": "-237",
-   "prob": 0.545,
+   "price": "-239",
+   "prob": 0.733,
    "projection": 1.758,
-   "score": 0.661,
-   "side": "under",
+   "score": 0.662,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T18:59+00:00",
+  "seen": "2026-11-08T19:12+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -192,7 +192,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T18:59+00:00",
+  "seen": "2026-11-08T19:12+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
