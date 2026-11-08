@@ -26,78 +26,8 @@
    "projected_profit": -1.22,
    "start": "2026-11-08T03:00Z"
   },
-  "seen": "2026-11-08T00:29+00:00",
+  "seen": "2026-11-08T00:42+00:00",
   "start": "2026-11-08T03:00Z"
- },
- "bet|2026-11-07|sgp": {
-  "bet": {
-   "chance": 0.3624,
-   "kind": "sgp",
-   "legs": [
-    {
-     "chance": 0.577,
-     "event_id": "401909940",
-     "game": "NY @ CLE",
-     "line": 4.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-08T01:00Z",
-     "team": "CLE",
-     "team_name": "Cleveland Cavaliers",
-     "type": "spread"
-    },
-    {
-     "chance": 0.628,
-     "event_id": "401909940",
-     "game": "NY @ CLE",
-     "label": "threes",
-     "line": 0.5,
-     "name": "Tyrese Proctor",
-     "odds": -202,
-     "pid": "5023693",
-     "projection": 1.243,
-     "side": "over",
-     "sport": "nba",
-     "start": "2026-11-08T01:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 57.59,
-   "price": 188,
-   "projected_profit": 0.87,
-   "start": "2026-11-08T01:00Z"
-  },
-  "seen": "2026-11-08T00:29+00:00",
-  "start": "2026-11-08T01:00Z"
- },
- "bet|2026-11-07|spread": {
-  "bet": {
-   "chance": 0.577,
-   "kind": "spread",
-   "legs": [
-    {
-     "chance": 0.577,
-     "event_id": "401909940",
-     "game": "NY @ CLE",
-     "line": 4.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-08T01:00Z",
-     "team": "CLE",
-     "team_name": "Cleveland Cavaliers",
-     "type": "spread"
-    }
-   ],
-   "payout": 38.52,
-   "price": -108,
-   "projected_profit": 2.23,
-   "start": "2026-11-08T01:00Z"
-  },
-  "seen": "2026-11-08T00:29+00:00",
-  "start": "2026-11-08T01:00Z"
  },
  "parlay|2026-11-07|nfl": {
   "card": {
@@ -171,32 +101,8 @@
     "projected_profit": 3.7081148849104864
    }
   },
-  "seen": "2026-11-08T00:29+00:00",
+  "seen": "2026-11-08T00:42+00:00",
   "start": "2026-11-08T18:00Z"
- },
- "prop|nba|401909941": {
-  "game": {
-   "date": "2026-11-08T01:00Z",
-   "event_id": "401909941",
-   "name": "Washington Wizards at Oklahoma City Thunder",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.097,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.661,
-   "name": "AJ Dybantsa",
-   "pid": "5142718",
-   "price": "-237",
-   "prob": 0.635,
-   "projection": 0.797,
-   "score": 0.661,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-08T00:29+00:00",
-  "start": "2026-11-08T01:00Z"
  },
  "prop|nba|401909944": {
   "game": {
@@ -219,7 +125,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T00:29+00:00",
+  "seen": "2026-11-08T00:42+00:00",
   "start": "2026-11-08T03:00Z"
  }
 }
