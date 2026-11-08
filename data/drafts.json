@@ -26,12 +26,12 @@
    "projected_profit": -1.22,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T17:39+00:00",
+  "seen": "2026-11-08T17:52+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
-   "chance": 0.3738,
+   "chance": 0.3727,
    "kind": "sgp",
    "legs": [
     {
@@ -48,13 +48,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.657,
+     "chance": 0.655,
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "label": "threes",
      "line": 1.5,
      "name": "Bobby Portis",
-     "odds": -233,
+     "odds": -230,
      "pid": "3064482",
      "projection": 1.408,
      "side": "under",
@@ -64,12 +64,12 @@
      "type": "prop"
     }
    ],
-   "payout": 54.1,
-   "price": 171,
-   "projected_profit": 0.23,
+   "payout": 54.32,
+   "price": 172,
+   "projected_profit": 0.24,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T17:39+00:00",
+  "seen": "2026-11-08T17:52+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-07|nfl": {
@@ -219,32 +219,8 @@
     "projected_profit": 3.046512789115642
    }
   },
-  "seen": "2026-11-08T17:39+00:00",
+  "seen": "2026-11-08T17:52+00:00",
   "start": "2026-11-09T00:00Z"
- },
- "prop|nba|401909946": {
-  "game": {
-   "date": "2026-11-08T23:00Z",
-   "event_id": "401909946",
-   "name": "Los Angeles Lakers at Detroit Pistons",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.117,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Daniss Jenkins",
-   "pid": "5107199",
-   "price": "-228",
-   "prob": 0.614,
-   "projection": 1.257,
-   "score": 0.652,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-08T17:39+00:00",
-  "start": "2026-11-08T23:00Z"
  },
  "prop|nba|401909949": {
   "game": {
@@ -267,7 +243,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T17:39+00:00",
+  "seen": "2026-11-08T17:52+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "prop|nba|401909951": {
@@ -278,20 +254,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.154,
+   "ev": -0.152,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.657,
+   "market_prob": 0.655,
    "name": "Bobby Portis",
    "pid": "3064482",
-   "price": "-233",
-   "prob": 0.592,
+   "price": "-230",
+   "prob": 0.591,
    "projection": 1.408,
-   "score": 0.657,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T17:39+00:00",
+  "seen": "2026-11-08T17:52+00:00",
   "start": "2026-11-09T02:00Z"
  }
 }
