@@ -26,7 +26,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T22:55+00:00",
+  "seen": "2026-11-08T23:08+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
@@ -69,51 +69,11 @@
    "projected_profit": 0.02,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T22:55+00:00",
+  "seen": "2026-11-08T23:08+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-08|nba": {
   "card": {
-   "three": {
-    "chance": 0.17171649,
-    "legs": [
-     {
-      "chance": 0.561,
-      "event_id": "401909947",
-      "game": "UTAH @ MIN",
-      "line": -11.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-09T00:00Z",
-      "team": "MIN"
-     },
-     {
-      "chance": 0.537,
-      "event_id": "401909949",
-      "game": "BOS @ MIL",
-      "line": 13.5,
-      "odds": -116,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-09T01:00Z",
-      "team": "MIL"
-     },
-     {
-      "chance": 0.57,
-      "event_id": "401909951",
-      "game": "MIA @ SAC",
-      "line": 11.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-09T02:00Z",
-      "team": "SAC"
-     }
-    ],
-    "payout": 130.16882862916364,
-    "projected_profit": 2.352134359611494
-   },
    "two": {
     "chance": 0.31977,
     "legs": [
@@ -144,8 +104,32 @@
     "projected_profit": 2.353675992438557
    }
   },
-  "seen": "2026-11-08T22:55+00:00",
+  "seen": "2026-11-08T23:08+00:00",
   "start": "2026-11-09T00:00Z"
+ },
+ "prop|nba|401909948": {
+  "game": {
+   "date": "2026-11-09T00:30Z",
+   "event_id": "401909948",
+   "name": "Brooklyn Nets at Dallas Mavericks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.048,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.654,
+   "name": "Zaccharie Risacher",
+   "pid": "5211175",
+   "price": "-229",
+   "prob": 0.662,
+   "projection": 0.985,
+   "score": 0.654,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-08T23:08+00:00",
+  "start": "2026-11-09T00:30Z"
  },
  "prop|nba|401909949": {
   "game": {
@@ -168,7 +152,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T22:55+00:00",
+  "seen": "2026-11-08T23:08+00:00",
   "start": "2026-11-09T01:00Z"
  }
 }
