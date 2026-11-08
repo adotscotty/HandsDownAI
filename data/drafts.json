@@ -20,7 +20,7 @@
       "event_id": "401873044",
       "game": "NYG @ PHI",
       "line": 3.0,
-      "odds": -102,
+      "odds": -108,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
@@ -38,8 +38,8 @@
       "team": "WSH"
      }
     ],
-    "payout": 154.65919701213818,
-    "projected_profit": 5.001889974901957
+    "payout": 150.40564373897706,
+    "projected_profit": 4.314269238518516
    },
    "two": {
     "chance": 0.312081,
@@ -60,42 +60,18 @@
       "event_id": "401873044",
       "game": "NYG @ PHI",
       "line": 3.0,
-      "odds": -102,
+      "odds": -108,
       "side": "home",
       "sport": "nfl",
       "start": "2026-11-08T18:00Z",
       "team": "PHI"
      }
     ],
-    "payout": 77.32959850606909,
-    "projected_profit": 4.133098431372549
+    "payout": 75.20282186948853,
+    "projected_profit": 3.46937185185185
    }
   },
-  "seen": "2026-11-08T02:34+00:00",
+  "seen": "2026-11-08T02:47+00:00",
   "start": "2026-11-08T18:00Z"
- },
- "prop|nba|401909944": {
-  "game": {
-   "date": "2026-11-08T03:00Z",
-   "event_id": "401909944",
-   "name": "San Antonio Spurs at Portland Trail Blazers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.124,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.657,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-233",
-   "prob": 0.613,
-   "projection": 1.277,
-   "score": 0.657,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-08T02:34+00:00",
-  "start": "2026-11-08T03:00Z"
  }
 }
