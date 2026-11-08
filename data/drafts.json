@@ -26,12 +26,12 @@
    "projected_profit": -1.2,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T22:30+00:00",
+  "seen": "2026-11-08T22:42+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
-   "chance": 0.3629,
+   "chance": 0.3546,
    "kind": "sgp",
    "legs": [
     {
@@ -48,28 +48,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.655,
+     "chance": 0.64,
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Bobby Portis",
-     "odds": -230,
+     "odds": -214,
      "pid": "3064482",
      "projection": 1.408,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 56.56,
-   "price": 183,
-   "projected_profit": 0.52,
+   "payout": 57.84,
+   "price": 189,
+   "projected_profit": 0.51,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T22:30+00:00",
+  "seen": "2026-11-08T22:42+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-08|nba": {
@@ -144,7 +144,7 @@
     "projected_profit": 2.9035105614183223
    }
   },
-  "seen": "2026-11-08T22:30+00:00",
+  "seen": "2026-11-08T22:42+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "prop|nba|401909949": {
@@ -168,31 +168,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T22:30+00:00",
+  "seen": "2026-11-08T22:42+00:00",
   "start": "2026-11-09T01:00Z"
- },
- "prop|nba|401909951": {
-  "game": {
-   "date": "2026-11-09T02:00Z",
-   "event_id": "401909951",
-   "name": "Miami Heat at Sacramento Kings",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.008,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.655,
-   "name": "Bobby Portis",
-   "pid": "3064482",
-   "price": "-230",
-   "prob": 0.703,
-   "projection": 1.408,
-   "score": 0.655,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-08T22:30+00:00",
-  "start": "2026-11-09T02:00Z"
  }
 }
