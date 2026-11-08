@@ -26,20 +26,20 @@
    "projected_profit": -1.2,
    "start": "2026-11-09T01:00Z"
   },
-  "seen": "2026-11-08T22:42+00:00",
+  "seen": "2026-11-08T22:55+00:00",
   "start": "2026-11-09T01:00Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
-   "chance": 0.3546,
+   "chance": 0.3659,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.554,
+     "chance": 0.57,
      "event_id": "401909951",
      "game": "MIA @ SAC",
-     "line": 9.5,
-     "odds": -103,
+     "line": 11.5,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
@@ -48,34 +48,34 @@
      "type": "spread"
     },
     {
-     "chance": 0.64,
+     "chance": 0.642,
      "event_id": "401909951",
      "game": "MIA @ SAC",
      "label": "threes",
-     "line": 1.5,
-     "name": "Bobby Portis",
-     "odds": -214,
-     "pid": "3064482",
-     "projection": 1.408,
-     "side": "under",
+     "line": 0.5,
+     "name": "Bam Adebayo",
+     "odds": -216,
+     "pid": "4066261",
+     "projection": 1.15,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-09T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 57.84,
-   "price": 189,
-   "projected_profit": 0.51,
+   "payout": 54.7,
+   "price": 174,
+   "projected_profit": 0.02,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T22:42+00:00",
+  "seen": "2026-11-08T22:55+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "parlay|2026-11-08|nba": {
   "card": {
    "three": {
-    "chance": 0.16689637800000004,
+    "chance": 0.17171649,
     "legs": [
      {
       "chance": 0.561,
@@ -100,22 +100,22 @@
       "team": "MIL"
      },
      {
-      "chance": 0.554,
+      "chance": 0.57,
       "event_id": "401909951",
       "game": "MIA @ SAC",
-      "line": 9.5,
-      "odds": -103,
+      "line": 11.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 137.22245673279863,
-    "projected_profit": 2.9019310089658106
+    "payout": 130.16882862916364,
+    "projected_profit": 2.352134359611494
    },
    "two": {
-    "chance": 0.31079400000000007,
+    "chance": 0.31977,
     "legs": [
      {
       "chance": 0.561,
@@ -129,22 +129,22 @@
       "team": "MIN"
      },
      {
-      "chance": 0.554,
+      "chance": 0.57,
       "event_id": "401909951",
       "game": "MIA @ SAC",
-      "line": 9.5,
-      "odds": -103,
+      "line": 11.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-09T02:00Z",
       "team": "SAC"
      }
     ],
-    "payout": 73.69354157872519,
-    "projected_profit": 2.9035105614183223
+    "payout": 69.90548204158789,
+    "projected_profit": 2.353675992438557
    }
   },
-  "seen": "2026-11-08T22:42+00:00",
+  "seen": "2026-11-08T22:55+00:00",
   "start": "2026-11-09T00:00Z"
  },
  "prop|nba|401909949": {
@@ -168,7 +168,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T22:42+00:00",
+  "seen": "2026-11-08T22:55+00:00",
   "start": "2026-11-09T01:00Z"
  }
 }
