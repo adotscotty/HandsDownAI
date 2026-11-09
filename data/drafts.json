@@ -49,7 +49,7 @@
    "projected_profit": 3.15,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -79,12 +79,12 @@
    "projected_profit": -1.23,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|sgp": {
   "bet": {
-   "chance": 0.3378,
+   "chance": 0.3627,
    "kind": "sgp",
    "legs": [
     {
@@ -101,28 +101,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.612,
+     "chance": 0.657,
      "event_id": "401909952",
      "game": "LAL @ ATL",
      "label": "threes",
-     "line": 2.5,
-     "name": "Aaron Wiggins",
-     "odds": -188,
-     "pid": "4397183",
-     "projection": 2.604,
-     "side": "under",
+     "line": 0.5,
+     "name": "Sandro Mamukelashvili",
+     "odds": -233,
+     "pid": "4278580",
+     "projection": 1.113,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 59.82,
-   "price": 199,
-   "projected_profit": 0.21,
+   "payout": 55.81,
+   "price": 179,
+   "projected_profit": 0.24,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.55,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -175,13 +175,13 @@
    "projected_profit": 0.71,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "parlay|2026-11-09|cbb": {
   "card": {
    "three": {
-    "chance": 0.3112452,
+    "chance": 0.30525084799999996,
     "legs": [
      {
       "chance": 0.716,
@@ -195,11 +195,11 @@
       "team": "SIUE"
      },
      {
-      "chance": 0.675,
+      "chance": 0.6619999999999999,
       "event_id": "401921810",
       "game": "LT @ LSU",
-      "line": 31.5,
-      "odds": -112,
+      "line": 30.5,
+      "odds": -108,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-10T01:00Z",
@@ -217,11 +217,11 @@
       "team": "ULM"
      }
     ],
-    "payout": 144.303530936184,
-    "projected_profit": 24.91378134693877
+    "payout": 146.82455698328712,
+    "projected_profit": 24.81832052637271
    },
    "two": {
-    "chance": 0.4833,
+    "chance": 0.4739919999999999,
     "legs": [
      {
       "chance": 0.716,
@@ -235,22 +235,22 @@
       "team": "SIUE"
      },
      {
-      "chance": 0.675,
+      "chance": 0.6619999999999999,
       "event_id": "401921810",
       "game": "LT @ LSU",
-      "line": 31.5,
-      "odds": -112,
+      "line": 30.5,
+      "odds": -108,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-10T01:00Z",
       "team": "LT"
      }
     ],
-    "payout": 73.91156462585033,
-    "projected_profit": 15.721459183673467
+    "payout": 75.20282186948853,
+    "projected_profit": 15.6455359435626
    }
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -325,7 +325,31 @@
     "projected_profit": 2.577285274725277
    }
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
+  "start": "2026-11-10T00:00Z"
+ },
+ "prop|nba|401909952": {
+  "game": {
+   "date": "2026-11-10T00:00Z",
+   "event_id": "401909952",
+   "name": "Los Angeles Lakers at Atlanta Hawks",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.036,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.657,
+   "name": "Sandro Mamukelashvili",
+   "pid": "4278580",
+   "price": "-233",
+   "prob": 0.675,
+   "projection": 1.113,
+   "score": 0.657,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -349,7 +373,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T07:00+00:00",
+  "seen": "2026-11-09T07:13+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
