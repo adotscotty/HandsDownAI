@@ -3,8 +3,9 @@
 How picks are made: for every upcoming game in the next 24 hours with a betting line, take the side
 our main prediction favors against the spread, with its chance of covering. A parlay pays only if
 every leg covers, so its chance is the legs' chances multiplied together. Projected return =
-chance x payout - stake. For each sport we show the best 2-game parlay (if it has 4+ games that day)
-and the best 3-game parlay (if it has 6+ games), all legs from that sport.
+chance x payout - stake. For NFL, NBA and college football we show the best 2-game parlay (if the sport
+has 4+ games that day), all legs from that sport. College basketball and 3-game parlays were dropped on
+Nov 9 2026 after losing badly (0-12 and 3-27); their past results stay in the log and the record.
 
 Tracking: one card per sport per day. It is locked 25 minutes before its first game, then every parlay
 on it is graded when its games are final, at $20 each. Results: data/parlays_log.csv.
@@ -103,7 +104,8 @@ def eastern_today(now):
 
 
 MIN_GAMES = {2: 4, 3: 6}  # a sport needs this many games with lines to get a 2- / 3-game parlay
-SPORTS = ("nfl", "nba", "cfb", "cbb")
+SPORTS = ("nfl", "nba", "cfb")   # college basketball dropped Nov 9 2026 (0-12)
+KINDS = (("two", 2),)            # 3-game parlays dropped Nov 9 2026 (3-27)
 
 
 def as_row(slot, sport, kind, p, now):
@@ -119,8 +121,8 @@ def from_row(r):
 
 
 def update_parlays(preds):
-    """One card per sport per day (US Eastern): the best 2-game and 3-game parlay, each only when the
-    sport has enough games. A sport's card keeps updating until its first game is 25 minutes away;
+    """One card per sport per day (US Eastern): the best 2-game parlay, only when the sport has enough
+    games. A sport's card keeps updating until its first game is 25 minutes away;
     then it is locked, tracked at $20 per parlay, and shown for the rest of the day."""
     now = dt.datetime.now(dt.timezone.utc)
     today = eastern_today(now)
@@ -133,8 +135,8 @@ def update_parlays(preds):
     for key, d in list(drafts.items()):
         if key.startswith("parlay|") and lock.missed(drafts, key, now):
             _, day, sport = key.split("|")
-            if not any(r["slot"].startswith(f"{day}|{sport}|") for r in log.values()):
-                for kind in ("two", "three"):
+            if sport in SPORTS and not any(r["slot"].startswith(f"{day}|{sport}|") for r in log.values()):
+                for kind, _size in KINDS:
                     if kind in d["card"]:
                         slot = f"{day}|{sport}|{kind}"
                         log[slot] = as_row(slot, sport, kind, d["card"][kind], lock.when(d["seen"]))
@@ -151,14 +153,14 @@ def update_parlays(preds):
             card["locked"] = True
         else:
             pool = [l for l in legs if l["sport"] == sport]
-            for kind, size in (("two", 2), ("three", 3)):
+            for kind, size in KINDS:
                 if len(pool) >= MIN_GAMES[size]:
                     best = best_parlays(pool, size, n=1)
                     if best:
                         card[kind] = best[0]
             starts = [l["start"] for p in card.values() for l in p["legs"]]
             if starts and lock.in_window(min(starts), now):
-                for kind in ("two", "three"):
+                for kind, _size in KINDS:
                     if kind in card:
                         slot = f"{today}|{sport}|{kind}"
                         log[slot] = as_row(slot, sport, kind, card[kind], now)

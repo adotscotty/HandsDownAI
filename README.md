@@ -79,8 +79,9 @@ NBA tuning on more seasons and back-to-back rest made no difference, so NBA is u
   be more likely than not). A kind with no such bet is left off that day. The player prop keeps its own rule
   (DraftKings' most likely side at 65%+), since its chance is DraftKings' own fair odds, which always sit just
   under break-even.
-- Parlays tab: `sportsai/parlays.py` picks the best 2- and 3-game spread parlays for the day, locks the card
-  45 minutes before its first game and grades each parlay at $5 (`data/parlays_log.csv`).
+- Parlays tab: `sportsai/parlays.py` picks the best 2-game spread parlay per sport (NFL, NBA, college football)
+  for the day, locks the card 25 minutes before its first game and grades each parlay at $20 (`data/parlays_log.csv`).
+  College basketball and 3-game parlays were dropped on Nov 9 2026 (0-12 and 3-27); past results stay in the log.
 - `.github/workflows/retune.yml` re-picks the model's settings every quarter (Jan 1, Apr 1, Jul 1, Oct 1)
   using every finished game so far (`python -m sportsai.retune`). New settings are only kept if they
   predicted recent games at least as well as the old ones; each retune is logged under `retunes` in
