@@ -126,6 +126,16 @@ class Locking(unittest.TestCase):
             p = at(dt.datetime(2026, 10, 28, 4, 10, tzinfo=dt.timezone.utc)); parlays.update_parlays([]); p.stop()
         self.assertEqual(sorted(parlays.load_log()), ["2026-10-27|nba|two"])
 
+    def test_parlays_skip_college_basketball_and_three_game(self):
+        def legs(sport):
+            return [dict(event_id=f"{sport}{i}", sport=sport, side="home", team="T", game="A @ B", line=-2.5,
+                         start="2026-10-28T03:00Z", odds=-110, chance=0.55) for i in range(8)]
+        p = at(dt.datetime(2026, 10, 28, 2, 50, tzinfo=dt.timezone.utc))   # inside the lock window
+        with mock.patch.object(parlays, "legs_for", lambda preds, now: legs("nba") + legs("cbb")):
+            parlays.update_parlays([])
+        p.stop()
+        self.assertEqual(sorted(parlays.load_log()), ["2026-10-27|nba|two"])
+
 
 class PropPick(unittest.TestCase):
     """Per-game prop: DraftKings' most likely side, only when it is at least 65% likely (tested 2026-10-28)."""

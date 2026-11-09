@@ -180,7 +180,7 @@ function renderHome() {
 function betTypes() {
   const r = S.best ? S.best.record : {};
   return [["Best prop", r.prop], ["Best spread", r.spread], ["Best winner", r.winner], ["Long-shot parlay", r.parlay],
-    ["Same-game parlay", r.sgp], ["All parlays (Parlays page)", S.parlays && S.parlays.record, 1], ["All props (Props page)", S.props && S.props.record && S.props.record.all, 1]]
+    ["Same-game parlay", r.sgp], ["Parlays by sport (Parlays page)", S.parlays && S.parlays.record, 1], ["All props (Props page)", S.props && S.props.record && S.props.record.all, 1]]
     .filter(([, x]) => x);
 }
 
@@ -322,10 +322,10 @@ function renderParlays() {
         { ...p, legs: p.legs.map(l => ({ ...l, type: "spread" })), locked: c.locked }));
     }
   }
-  box.append(items.length ? pairs(items) : h("p", { class: "empty", text: "No parlays today. A sport needs at least 4 games with lines in the next 24 hours for a 2-game parlay, and 6 for a 3-game parlay." }));
+  box.append(items.length ? pairs(items) : h("p", { class: "empty", text: "No parlays today. NFL, NBA or college football needs at least 4 games with lines in the next 24 hours for a 2-game parlay." }));
   const r = P.record;
   rec.style.marginTop = "28px";
-  rec.append(recordRows([["All parlays", r], ["2-game", (r.by_kind || {}).two], ["3-game", (r.by_kind || {}).three]]));
+  rec.append(recordRows([["Parlays by sport", r], ["2-game", (r.by_kind || {}).two], ["3-game (dropped Nov 9)", (r.by_kind || {}).three]]));
   if (P.history && P.history.length) {
     const tb = h("tbody");
     for (const x of P.history) tb.append(h("tr", {}, h("td", { text: x.legs.map(l => `${l.team} ${line(l.line)}`).join(", ") }),
