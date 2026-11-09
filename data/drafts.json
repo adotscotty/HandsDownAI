@@ -1,9 +1,22 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.2817,
+   "chance": 0.1513,
    "kind": "parlay",
    "legs": [
+    {
+     "chance": 0.537,
+     "event_id": "401909953",
+     "game": "CLE @ CHA",
+     "line": 8.5,
+     "odds": -108,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-10T00:00Z",
+     "team": "CHA",
+     "team_name": "CHA",
+     "type": "spread"
+    },
     {
      "chance": 0.515,
      "event_id": "401909958",
@@ -31,13 +44,13 @@
      "type": "spread"
     }
    ],
-   "payout": 72.67,
-   "price": 263,
-   "projected_profit": 0.47,
-   "start": "2026-11-10T02:00Z"
+   "payout": 139.95,
+   "price": 600,
+   "projected_profit": 1.17,
+   "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T15:06+00:00",
-  "start": "2026-11-10T02:00Z"
+  "seen": "2026-11-09T15:19+00:00",
+  "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
@@ -66,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T15:06+00:00",
+  "seen": "2026-11-09T15:19+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -93,7 +106,7 @@
    "projected_profit": 0.45,
    "start": "2026-11-10T03:00Z"
   },
-  "seen": "2026-11-09T15:06+00:00",
+  "seen": "2026-11-09T15:19+00:00",
   "start": "2026-11-10T03:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -105,7 +118,7 @@
      "chance": 0.627,
      "event_id": "401909956",
      "game": "IND @ DAL",
-     "odds": -156,
+     "odds": -161,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-10T01:00Z",
@@ -114,19 +127,30 @@
      "type": "ml"
     }
    ],
-   "payout": 32.82,
-   "price": -156,
-   "projected_profit": 0.58,
+   "payout": 32.42,
+   "price": -161,
+   "projected_profit": 0.33,
    "start": "2026-11-10T01:00Z"
   },
-  "seen": "2026-11-09T15:06+00:00",
+  "seen": "2026-11-09T15:19+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|cbb": {
   "card": {
    "three": {
-    "chance": 0.32964422399999993,
+    "chance": 0.32615856,
     "legs": [
+     {
+      "chance": 0.655,
+      "event_id": "401921720",
+      "game": "UNF @ MIA",
+      "line": 37.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T00:00Z",
+      "team": "UNF"
+     },
      {
       "chance": 0.741,
       "event_id": "401921815",
@@ -148,21 +172,10 @@
       "sport": "cbb",
       "start": "2026-11-10T01:00Z",
       "team": "ULM"
-     },
-     {
-      "chance": 0.6619999999999999,
-      "event_id": "401921810",
-      "game": "LT @ LSU",
-      "line": 30.5,
-      "odds": -115,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T01:00Z",
-      "team": "LT"
      }
     ],
-    "payout": 132.32109100729133,
-    "projected_profit": 23.61888336393192
+    "payout": 133.96960958296359,
+    "projected_profit": 23.6953349453416
    },
    "two": {
     "chance": 0.49795199999999995,
@@ -194,8 +207,8 @@
     "projected_profit": 15.243248695652163
    }
   },
-  "seen": "2026-11-09T15:06+00:00",
-  "start": "2026-11-10T01:00Z"
+  "seen": "2026-11-09T15:19+00:00",
+  "start": "2026-11-10T00:00Z"
  },
  "parlay|2026-11-09|nba": {
   "card": {
@@ -207,7 +220,7 @@
       "event_id": "401909953",
       "game": "CLE @ CHA",
       "line": 8.5,
-      "odds": -116,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-10T00:00Z",
@@ -236,22 +249,22 @@
       "team": "NO"
      }
     ],
-    "payout": 135.30932646884105,
-    "projected_profit": 0.4689975175299139
+    "payout": 139.94956400206604,
+    "projected_profit": 1.1709521649074794
    },
    "two": {
-    "chance": 0.281705,
+    "chance": 0.293739,
     "legs": [
      {
-      "chance": 0.515,
-      "event_id": "401909958",
-      "game": "SA @ PHX",
+      "chance": 0.537,
+      "event_id": "401909953",
+      "game": "CLE @ CHA",
       "line": 8.5,
-      "odds": -106,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
-      "start": "2026-11-10T02:00Z",
-      "team": "PHX"
+      "start": "2026-11-10T00:00Z",
+      "team": "CHA"
      },
      {
       "chance": 0.5469999999999999,
@@ -265,11 +278,11 @@
       "team": "NO"
      }
     ],
-    "payout": 72.66611977030352,
-    "projected_profit": 0.4704092698933522
+    "payout": 72.01288244766505,
+    "projected_profit": 1.1529920772946802
    }
   },
-  "seen": "2026-11-09T15:06+00:00",
+  "seen": "2026-11-09T15:19+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909952": {
@@ -293,7 +306,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T15:06+00:00",
+  "seen": "2026-11-09T15:19+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -317,7 +330,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T15:06+00:00",
+  "seen": "2026-11-09T15:19+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -341,7 +354,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T15:06+00:00",
+  "seen": "2026-11-09T15:19+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
