@@ -1,22 +1,9 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.1513,
+   "chance": 0.2817,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.537,
-     "event_id": "401909953",
-     "game": "CLE @ CHA",
-     "line": 8.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-10T00:00Z",
-     "team": "CHA",
-     "team_name": "CHA",
-     "type": "spread"
-    },
     {
      "chance": 0.515,
      "event_id": "401909958",
@@ -44,13 +31,13 @@
      "type": "spread"
     }
    ],
-   "payout": 139.95,
-   "price": 600,
-   "projected_profit": 1.17,
-   "start": "2026-11-10T00:00Z"
+   "payout": 72.67,
+   "price": 263,
+   "projected_profit": 0.47,
+   "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T14:53+00:00",
-  "start": "2026-11-10T00:00Z"
+  "seen": "2026-11-09T15:06+00:00",
+  "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
@@ -79,7 +66,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -106,7 +93,7 @@
    "projected_profit": 0.45,
    "start": "2026-11-10T03:00Z"
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T03:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -118,7 +105,7 @@
      "chance": 0.627,
      "event_id": "401909956",
      "game": "IND @ DAL",
-     "odds": -161,
+     "odds": -156,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-10T01:00Z",
@@ -127,18 +114,18 @@
      "type": "ml"
     }
    ],
-   "payout": 32.42,
-   "price": -161,
-   "projected_profit": 0.33,
+   "payout": 32.82,
+   "price": -156,
+   "projected_profit": 0.58,
    "start": "2026-11-10T01:00Z"
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|cbb": {
   "card": {
    "three": {
-    "chance": 0.32217494399999996,
+    "chance": 0.32964422399999993,
     "legs": [
      {
       "chance": 0.741,
@@ -152,15 +139,44 @@
       "team": "SIUE"
      },
      {
-      "chance": 0.647,
+      "chance": 0.6719999999999999,
+      "event_id": "401917978",
+      "game": "ULM @ TA&M",
+      "line": 38.5,
+      "odds": -115,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "ULM"
+     },
+     {
+      "chance": 0.6619999999999999,
       "event_id": "401921810",
       "game": "LT @ LSU",
-      "line": 29.5,
-      "odds": -105,
+      "line": 30.5,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-10T01:00Z",
       "team": "LT"
+     }
+    ],
+    "payout": 132.32109100729133,
+    "projected_profit": 23.61888336393192
+   },
+   "two": {
+    "chance": 0.49795199999999995,
+    "legs": [
+     {
+      "chance": 0.741,
+      "event_id": "401921815",
+      "game": "SIUE @ MIZ",
+      "line": 31.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "SIUE"
      },
      {
       "chance": 0.6719999999999999,
@@ -174,40 +190,11 @@
       "team": "ULM"
      }
     ],
-    "payout": 138.1824903874593,
-    "projected_profit": 24.51893610236023
-   },
-   "two": {
-    "chance": 0.479427,
-    "legs": [
-     {
-      "chance": 0.741,
-      "event_id": "401921815",
-      "game": "SIUE @ MIZ",
-      "line": 31.5,
-      "odds": -112,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T01:00Z",
-      "team": "SIUE"
-     },
-     {
-      "chance": 0.647,
-      "event_id": "401921810",
-      "game": "LT @ LSU",
-      "line": 29.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T01:00Z",
-      "team": "LT"
-     }
-    ],
-    "payout": 73.91156462585033,
-    "projected_profit": 15.43519969387755
+    "payout": 70.77639751552793,
+    "projected_profit": 15.243248695652163
    }
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -220,7 +207,7 @@
       "event_id": "401909953",
       "game": "CLE @ CHA",
       "line": 8.5,
-      "odds": -108,
+      "odds": -116,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-10T00:00Z",
@@ -249,22 +236,22 @@
       "team": "NO"
      }
     ],
-    "payout": 139.94956400206604,
-    "projected_profit": 1.1709521649074794
+    "payout": 135.30932646884105,
+    "projected_profit": 0.4689975175299139
    },
    "two": {
-    "chance": 0.293739,
+    "chance": 0.281705,
     "legs": [
      {
-      "chance": 0.537,
-      "event_id": "401909953",
-      "game": "CLE @ CHA",
+      "chance": 0.515,
+      "event_id": "401909958",
+      "game": "SA @ PHX",
       "line": 8.5,
-      "odds": -108,
+      "odds": -106,
       "side": "home",
       "sport": "nba",
-      "start": "2026-11-10T00:00Z",
-      "team": "CHA"
+      "start": "2026-11-10T02:00Z",
+      "team": "PHX"
      },
      {
       "chance": 0.5469999999999999,
@@ -278,11 +265,11 @@
       "team": "NO"
      }
     ],
-    "payout": 72.01288244766505,
-    "projected_profit": 1.1529920772946802
+    "payout": 72.66611977030352,
+    "projected_profit": 0.4704092698933522
    }
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909952": {
@@ -293,20 +280,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.085,
+   "ev": -0.084,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
+   "market_prob": 0.656,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-235",
-   "prob": 0.642,
+   "price": "-232",
+   "prob": 0.64,
    "projection": 1.113,
-   "score": 0.659,
+   "score": 0.656,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -330,7 +317,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -354,7 +341,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:53+00:00",
+  "seen": "2026-11-09T15:06+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
