@@ -49,7 +49,7 @@
    "projected_profit": 2.35,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T14:22+00:00",
+  "seen": "2026-11-09T14:35+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -59,17 +59,17 @@
    "legs": [
     {
      "chance": 0.661,
-     "event_id": "401909958",
-     "game": "SA @ PHX",
+     "event_id": "401909954",
+     "game": "WSH @ DET",
      "label": "threes",
      "line": 1.5,
-     "name": "Dylan Harper",
+     "name": "AJ Dybantsa",
      "odds": -237,
-     "pid": "5037871",
-     "projection": 1.231,
+     "pid": "5142718",
+     "projection": 0.837,
      "side": "under",
      "sport": "nba",
-     "start": "2026-11-10T02:00Z",
+     "start": "2026-11-10T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
@@ -77,10 +77,10 @@
    "payout": 28.44,
    "price": -237,
    "projected_profit": -1.2,
-   "start": "2026-11-10T02:00Z"
+   "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T14:22+00:00",
-  "start": "2026-11-10T02:00Z"
+  "seen": "2026-11-09T14:35+00:00",
+  "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-10T03:00Z"
   },
-  "seen": "2026-11-09T14:22+00:00",
+  "seen": "2026-11-09T14:35+00:00",
   "start": "2026-11-10T03:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -132,25 +132,14 @@
    "projected_profit": 0.71,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T14:22+00:00",
+  "seen": "2026-11-09T14:35+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "parlay|2026-11-09|cbb": {
   "card": {
    "three": {
-    "chance": 0.314024685,
+    "chance": 0.32217494399999996,
     "legs": [
-     {
-      "chance": 0.655,
-      "event_id": "401921720",
-      "game": "UNF @ MIA",
-      "line": 37.5,
-      "odds": -108,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T00:00Z",
-      "team": "UNF"
-     },
      {
       "chance": 0.741,
       "event_id": "401921815",
@@ -172,10 +161,21 @@
       "sport": "cbb",
       "start": "2026-11-10T01:00Z",
       "team": "LT"
+     },
+     {
+      "chance": 0.6719999999999999,
+      "event_id": "401917978",
+      "game": "ULM @ TA&M",
+      "line": 38.5,
+      "odds": -115,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "ULM"
      }
     ],
-    "payout": 142.34819853867472,
-    "projected_profit": 24.700848206424794
+    "payout": 138.1824903874593,
+    "projected_profit": 24.51893610236023
    },
    "two": {
     "chance": 0.479427,
@@ -207,8 +207,8 @@
     "projected_profit": 15.43519969387755
    }
   },
-  "seen": "2026-11-09T14:22+00:00",
-  "start": "2026-11-10T00:00Z"
+  "seen": "2026-11-09T14:35+00:00",
+  "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
   "card": {
@@ -282,7 +282,7 @@
     "projected_profit": 1.6133436543654405
    }
   },
-  "seen": "2026-11-09T14:22+00:00",
+  "seen": "2026-11-09T14:35+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909952": {
@@ -293,20 +293,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.082,
+   "ev": -0.086,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.66,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-230",
-   "prob": 0.64,
+   "price": "-236",
+   "prob": 0.642,
    "projection": 1.113,
-   "score": 0.655,
+   "score": 0.66,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:22+00:00",
+  "seen": "2026-11-09T14:35+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -317,20 +317,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.005,
+   "ev": -0.012,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.651,
+   "market_prob": 0.661,
    "name": "AJ Dybantsa",
    "pid": "5142718",
-   "price": "-226",
-   "prob": 0.69,
+   "price": "-237",
+   "prob": 0.695,
    "projection": 0.837,
-   "score": 0.651,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:22+00:00",
+  "seen": "2026-11-09T14:35+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -354,7 +354,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:22+00:00",
+  "seen": "2026-11-09T14:35+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
