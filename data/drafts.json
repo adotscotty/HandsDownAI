@@ -1,7 +1,7 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.1566,
+   "chance": 0.1525,
    "kind": "parlay",
    "legs": [
     {
@@ -31,25 +31,25 @@
      "type": "spread"
     },
     {
-     "chance": 0.534,
-     "event_id": "401909959",
-     "game": "NO @ GS",
-     "line": 8.5,
-     "odds": -102,
-     "side": "away",
+     "chance": 0.52,
+     "event_id": "401909957",
+     "game": "DEN @ HOU",
+     "line": -4.5,
+     "odds": -105,
+     "side": "home",
      "sport": "nba",
-     "start": "2026-11-10T03:00Z",
-     "team": "NO",
-     "team_name": "NO",
+     "start": "2026-11-10T01:30Z",
+     "team": "HOU",
+     "team_name": "HOU",
      "type": "spread"
     }
    ],
-   "payout": 148.32,
-   "price": 642,
-   "projected_profit": 3.22,
+   "payout": 146.22,
+   "price": 631,
+   "projected_profit": 2.29,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T20:07+00:00",
+  "seen": "2026-11-09T20:24+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -79,35 +79,35 @@
    "projected_profit": -1.2,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T20:07+00:00",
+  "seen": "2026-11-09T20:24+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
-   "chance": 0.546,
+   "chance": 0.547,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.546,
-     "event_id": "401909952",
-     "game": "LAL @ ATL",
-     "line": 1.5,
-     "odds": -110,
+     "chance": 0.5469999999999999,
+     "event_id": "401909959",
+     "game": "NO @ GS",
+     "line": 9.5,
+     "odds": -117,
      "side": "away",
      "sport": "nba",
-     "start": "2026-11-10T00:00Z",
-     "team": "LAL",
-     "team_name": "Los Angeles Lakers",
+     "start": "2026-11-10T03:00Z",
+     "team": "NO",
+     "team_name": "New Orleans Pelicans",
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 0.85,
-   "start": "2026-11-10T00:00Z"
+   "payout": 37.09,
+   "price": -117,
+   "projected_profit": 0.29,
+   "start": "2026-11-10T03:00Z"
   },
-  "seen": "2026-11-09T20:07+00:00",
-  "start": "2026-11-10T00:00Z"
+  "seen": "2026-11-09T20:24+00:00",
+  "start": "2026-11-10T03:00Z"
  },
  "bet|2026-11-09|winner": {
   "bet": {
@@ -118,7 +118,7 @@
      "chance": 0.662,
      "event_id": "401909957",
      "game": "DEN @ HOU",
-     "odds": -182,
+     "odds": -173,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-10T01:30Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 30.99,
-   "price": -182,
-   "projected_profit": 0.51,
+   "payout": 31.56,
+   "price": -173,
+   "projected_profit": 0.89,
    "start": "2026-11-10T01:30Z"
   },
-  "seen": "2026-11-09T20:07+00:00",
+  "seen": "2026-11-09T20:24+00:00",
   "start": "2026-11-10T01:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -212,8 +212,8 @@
  },
  "parlay|2026-11-09|nba": {
   "card": {
-   "three": {
-    "chance": 0.15656986800000003,
+   "two": {
+    "chance": 0.293202,
     "legs": [
      {
       "chance": 0.537,
@@ -236,53 +236,13 @@
       "sport": "nba",
       "start": "2026-11-10T00:00Z",
       "team": "LAL"
-     },
-     {
-      "chance": 0.534,
-      "event_id": "401909959",
-      "game": "NO @ GS",
-      "line": 8.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-10T03:00Z",
-      "team": "NO"
      }
     ],
-    "payout": 148.32167832167832,
-    "projected_profit": 3.222705596363639
-   },
-   "two": {
-    "chance": 0.286758,
-    "legs": [
-     {
-      "chance": 0.537,
-      "event_id": "401909953",
-      "game": "CLE @ CHA",
-      "line": 8.5,
-      "odds": -104,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-10T00:00Z",
-      "team": "CHA"
-     },
-     {
-      "chance": 0.534,
-      "event_id": "401909959",
-      "game": "NO @ GS",
-      "line": 8.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-10T03:00Z",
-      "team": "NO"
-     }
-    ],
-    "payout": 77.6923076923077,
-    "projected_profit": 2.2788907692307703
+    "payout": 74.89510489510491,
+    "projected_profit": 1.9593945454545505
    }
   },
-  "seen": "2026-11-09T20:07+00:00",
+  "seen": "2026-11-09T20:24+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -306,7 +266,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T20:07+00:00",
+  "seen": "2026-11-09T20:24+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -330,7 +290,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T20:07+00:00",
+  "seen": "2026-11-09T20:24+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
