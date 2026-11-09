@@ -49,37 +49,37 @@
    "projected_profit": 2.59,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T18:55+00:00",
+  "seen": "2026-11-09T19:08+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
-   "chance": 0.666,
+   "chance": 0.663,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.666,
+     "chance": 0.663,
      "event_id": "401909958",
      "game": "SA @ PHX",
      "label": "threes",
-     "line": 0.5,
-     "name": "De'Aaron Fox",
-     "odds": -244,
-     "pid": "4066259",
-     "projection": 0.968,
-     "side": "over",
+     "line": 1.5,
+     "name": "Dylan Harper",
+     "odds": -239,
+     "pid": "5037871",
+     "projection": 1.231,
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-10T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.2,
-   "price": -244,
-   "projected_profit": -1.22,
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.19,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T18:55+00:00",
+  "seen": "2026-11-09T19:08+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.21,
    "start": "2026-11-10T03:00Z"
   },
-  "seen": "2026-11-09T18:55+00:00",
+  "seen": "2026-11-09T19:08+00:00",
   "start": "2026-11-10T03:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -118,7 +118,7 @@
      "chance": 0.625,
      "event_id": "401909956",
      "game": "IND @ DAL",
-     "odds": -155,
+     "odds": -161,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-10T01:00Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.9,
-   "price": -155,
-   "projected_profit": 0.56,
+   "payout": 32.42,
+   "price": -161,
+   "projected_profit": 0.26,
    "start": "2026-11-10T01:00Z"
   },
-  "seen": "2026-11-09T18:55+00:00",
+  "seen": "2026-11-09T19:08+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -207,7 +207,7 @@
     "projected_profit": 14.514786313932973
    }
   },
-  "seen": "2026-11-09T18:55+00:00",
+  "seen": "2026-11-09T19:08+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -282,7 +282,7 @@
     "projected_profit": 2.3539928301886803
    }
   },
-  "seen": "2026-11-09T18:55+00:00",
+  "seen": "2026-11-09T19:08+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -293,20 +293,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.067,
+   "ev": -0.116,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.666,
-   "name": "De'Aaron Fox",
-   "pid": "4066259",
-   "price": "-244",
-   "prob": 0.662,
-   "projection": 0.968,
-   "score": 0.666,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.663,
+   "name": "Dylan Harper",
+   "pid": "5037871",
+   "price": "-239",
+   "prob": 0.623,
+   "projection": 1.231,
+   "score": 0.663,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T18:55+00:00",
+  "seen": "2026-11-09T19:08+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
