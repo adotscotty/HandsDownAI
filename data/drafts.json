@@ -49,24 +49,24 @@
    "projected_profit": 2.36,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T21:31+00:00",
+  "seen": "2026-11-09T21:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.663,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
+     "chance": 0.663,
      "event_id": "401909958",
      "game": "SA @ PHX",
      "label": "threes",
      "line": 1.5,
-     "name": "Dylan Harper",
-     "odds": -238,
-     "pid": "5037871",
-     "projection": 1.231,
+     "name": "De'Aaron Fox",
+     "odds": -239,
+     "pid": "4066259",
+     "projection": 0.968,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-10T02:00Z",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.19,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T21:31+00:00",
+  "seen": "2026-11-09T21:43+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.85,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T21:31+00:00",
+  "seen": "2026-11-09T21:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-10T01:30Z"
   },
-  "seen": "2026-11-09T21:31+00:00",
+  "seen": "2026-11-09T21:43+00:00",
   "start": "2026-11-10T01:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -242,7 +242,7 @@
     "projected_profit": 1.9593945454545505
    }
   },
-  "seen": "2026-11-09T21:31+00:00",
+  "seen": "2026-11-09T21:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -266,7 +266,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T21:31+00:00",
+  "seen": "2026-11-09T21:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -277,20 +277,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.116,
+   "ev": -0.049,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.661,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-238",
-   "prob": 0.622,
-   "projection": 1.231,
-   "score": 0.661,
+   "market_prob": 0.663,
+   "name": "De'Aaron Fox",
+   "pid": "4066259",
+   "price": "-239",
+   "prob": 0.67,
+   "projection": 0.968,
+   "score": 0.663,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T21:31+00:00",
+  "seen": "2026-11-09T21:43+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
