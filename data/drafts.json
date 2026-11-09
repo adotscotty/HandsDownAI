@@ -1,1 +1,258 @@
-{}
+{
+ "bet|2026-11-09|parlay": {
+  "bet": {
+   "chance": 0.1661,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.552,
+     "event_id": "401909952",
+     "game": "LAL @ ATL",
+     "line": 2.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-10T00:00Z",
+     "team": "ATL",
+     "team_name": "ATL",
+     "type": "spread"
+    },
+    {
+     "chance": 0.55,
+     "event_id": "401909953",
+     "game": "CLE @ CHA",
+     "line": 9.5,
+     "odds": -115,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-10T00:00Z",
+     "team": "CHA",
+     "team_name": "CHA",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5469999999999999,
+     "event_id": "401909959",
+     "game": "NO @ GS",
+     "line": 9.5,
+     "odds": -110,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-10T03:00Z",
+     "team": "NO",
+     "team_name": "NO",
+     "type": "spread"
+    }
+   ],
+   "payout": 139.37,
+   "price": 597,
+   "projected_profit": 3.14,
+   "start": "2026-11-10T00:00Z"
+  },
+  "seen": "2026-11-09T05:10+00:00",
+  "start": "2026-11-10T00:00Z"
+ },
+ "bet|2026-11-09|spread": {
+  "bet": {
+   "chance": 0.552,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.552,
+     "event_id": "401909952",
+     "game": "LAL @ ATL",
+     "line": 2.5,
+     "odds": -105,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-10T00:00Z",
+     "team": "ATL",
+     "team_name": "Atlanta Hawks",
+     "type": "spread"
+    }
+   ],
+   "payout": 39.05,
+   "price": -105,
+   "projected_profit": 1.55,
+   "start": "2026-11-10T00:00Z"
+  },
+  "seen": "2026-11-09T05:10+00:00",
+  "start": "2026-11-10T00:00Z"
+ },
+ "bet|2026-11-09|winner": {
+  "bet": {
+   "chance": 0.645,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.645,
+     "event_id": "401909956",
+     "game": "IND @ DAL",
+     "odds": -169,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-10T01:00Z",
+     "team": "DAL",
+     "team_name": "Dallas Mavericks",
+     "type": "ml"
+    }
+   ],
+   "payout": 31.83,
+   "price": -169,
+   "projected_profit": 0.53,
+   "start": "2026-11-10T01:00Z"
+  },
+  "seen": "2026-11-09T05:10+00:00",
+  "start": "2026-11-10T01:00Z"
+ },
+ "parlay|2026-11-09|cbb": {
+  "card": {
+   "three": {
+    "chance": 0.3112452,
+    "legs": [
+     {
+      "chance": 0.716,
+      "event_id": "401921815",
+      "game": "SIUE @ MIZ",
+      "line": 29.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "SIUE"
+     },
+     {
+      "chance": 0.675,
+      "event_id": "401921810",
+      "game": "LT @ LSU",
+      "line": 31.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "LT"
+     },
+     {
+      "chance": 0.644,
+      "event_id": "401917978",
+      "game": "ULM @ TA&M",
+      "line": 36.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "ULM"
+     }
+    ],
+    "payout": 144.303530936184,
+    "projected_profit": 24.91378134693877
+   },
+   "two": {
+    "chance": 0.4833,
+    "legs": [
+     {
+      "chance": 0.716,
+      "event_id": "401921815",
+      "game": "SIUE @ MIZ",
+      "line": 29.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "SIUE"
+     },
+     {
+      "chance": 0.675,
+      "event_id": "401921810",
+      "game": "LT @ LSU",
+      "line": 31.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cbb",
+      "start": "2026-11-10T01:00Z",
+      "team": "LT"
+     }
+    ],
+    "payout": 73.91156462585033,
+    "projected_profit": 15.721459183673467
+   }
+  },
+  "seen": "2026-11-09T05:10+00:00",
+  "start": "2026-11-10T01:00Z"
+ },
+ "parlay|2026-11-09|nba": {
+  "card": {
+   "three": {
+    "chance": 0.1660692,
+    "legs": [
+     {
+      "chance": 0.552,
+      "event_id": "401909952",
+      "game": "LAL @ ATL",
+      "line": 2.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-10T00:00Z",
+      "team": "ATL"
+     },
+     {
+      "chance": 0.55,
+      "event_id": "401909953",
+      "game": "CLE @ CHA",
+      "line": 9.5,
+      "odds": -115,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-10T00:00Z",
+      "team": "CHA"
+     },
+     {
+      "chance": 0.5469999999999999,
+      "event_id": "401909959",
+      "game": "NO @ GS",
+      "line": 9.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-10T03:00Z",
+      "team": "NO"
+     }
+    ],
+    "payout": 139.3675889328063,
+    "projected_profit": 3.144663999999999
+   },
+   "two": {
+    "chance": 0.301944,
+    "legs": [
+     {
+      "chance": 0.552,
+      "event_id": "401909952",
+      "game": "LAL @ ATL",
+      "line": 2.5,
+      "odds": -105,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-10T00:00Z",
+      "team": "ATL"
+     },
+     {
+      "chance": 0.5469999999999999,
+      "event_id": "401909959",
+      "game": "NO @ GS",
+      "line": 9.5,
+      "odds": -110,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-10T03:00Z",
+      "team": "NO"
+     }
+    ],
+    "payout": 74.54545454545455,
+    "projected_profit": 2.5085527272727255
+   }
+  },
+  "seen": "2026-11-09T05:10+00:00",
+  "start": "2026-11-10T00:00Z"
+ }
+}
