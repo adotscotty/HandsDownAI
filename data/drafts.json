@@ -49,8 +49,38 @@
    "projected_profit": 3.15,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T05:56+00:00",
+  "seen": "2026-11-09T06:09+00:00",
   "start": "2026-11-10T00:00Z"
+ },
+ "bet|2026-11-09|prop": {
+  "bet": {
+   "chance": 0.661,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.661,
+     "event_id": "401909958",
+     "game": "SA @ PHX",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Dylan Harper",
+     "odds": -238,
+     "pid": "5037871",
+     "projection": 1.231,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-10T02:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.23,
+   "start": "2026-11-10T02:00Z"
+  },
+  "seen": "2026-11-09T06:09+00:00",
+  "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
@@ -76,7 +106,7 @@
    "projected_profit": 1.55,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T05:56+00:00",
+  "seen": "2026-11-09T06:09+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -102,7 +132,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T05:56+00:00",
+  "seen": "2026-11-09T06:09+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -177,7 +207,7 @@
     "projected_profit": 15.721459183673467
    }
   },
-  "seen": "2026-11-09T05:56+00:00",
+  "seen": "2026-11-09T06:09+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -252,7 +282,31 @@
     "projected_profit": 2.577285274725277
    }
   },
-  "seen": "2026-11-09T05:56+00:00",
+  "seen": "2026-11-09T06:09+00:00",
   "start": "2026-11-10T00:00Z"
+ },
+ "prop|nba|401909958": {
+  "game": {
+   "date": "2026-11-10T02:00Z",
+   "event_id": "401909958",
+   "name": "San Antonio Spurs at Phoenix Suns",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.116,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.661,
+   "name": "Dylan Harper",
+   "pid": "5037871",
+   "price": "-238",
+   "prob": 0.622,
+   "projection": 1.231,
+   "score": 0.661,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-09T06:09+00:00",
+  "start": "2026-11-10T02:00Z"
  }
 }
