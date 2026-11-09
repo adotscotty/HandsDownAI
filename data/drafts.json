@@ -1,7 +1,7 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.1513,
+   "chance": 0.1477,
    "kind": "parlay",
    "legs": [
     {
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.5469999999999999,
+     "chance": 0.534,
      "event_id": "401909959",
      "game": "NO @ GS",
-     "line": 9.5,
-     "odds": -119,
+     "line": 8.5,
+     "odds": -102,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-10T03:00Z",
@@ -44,70 +44,70 @@
      "type": "spread"
     }
    ],
-   "payout": 137.76,
-   "price": 589,
-   "projected_profit": 0.84,
+   "payout": 148.25,
+   "price": 641,
+   "projected_profit": 1.89,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T17:23+00:00",
+  "seen": "2026-11-09T17:36+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.66,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
+     "chance": 0.66,
      "event_id": "401909958",
      "game": "SA @ PHX",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "De'Aaron Fox",
-     "odds": -238,
+     "odds": -236,
      "pid": "4066259",
      "projection": 0.968,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-10T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
+   "payout": 28.47,
+   "price": -236,
+   "projected_profit": -1.21,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T17:23+00:00",
+  "seen": "2026-11-09T17:36+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
-   "chance": 0.547,
+   "chance": 0.537,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.5469999999999999,
-     "event_id": "401909959",
-     "game": "NO @ GS",
-     "line": 9.5,
-     "odds": -119,
-     "side": "away",
+     "chance": 0.537,
+     "event_id": "401909953",
+     "game": "CLE @ CHA",
+     "line": 8.5,
+     "odds": -108,
+     "side": "home",
      "sport": "nba",
-     "start": "2026-11-10T03:00Z",
-     "team": "NO",
-     "team_name": "New Orleans Pelicans",
+     "start": "2026-11-10T00:00Z",
+     "team": "CHA",
+     "team_name": "Charlotte Hornets",
      "type": "spread"
     }
    ],
-   "payout": 36.81,
-   "price": -119,
-   "projected_profit": 0.13,
-   "start": "2026-11-10T03:00Z"
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 0.68,
+   "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T17:23+00:00",
-  "start": "2026-11-10T03:00Z"
+  "seen": "2026-11-09T17:36+00:00",
+  "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
   "bet": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.58,
    "start": "2026-11-10T01:00Z"
   },
-  "seen": "2026-11-09T17:23+00:00",
+  "seen": "2026-11-09T17:36+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -207,13 +207,13 @@
     "projected_profit": 14.514786313932973
    }
   },
-  "seen": "2026-11-09T17:23+00:00",
+  "seen": "2026-11-09T17:36+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "parlay|2026-11-09|nba": {
   "card": {
    "three": {
-    "chance": 0.151275585,
+    "chance": 0.14768037,
     "legs": [
      {
       "chance": 0.537,
@@ -238,22 +238,22 @@
       "team": "PHX"
      },
      {
-      "chance": 0.5469999999999999,
+      "chance": 0.534,
       "event_id": "401909959",
       "game": "NO @ GS",
-      "line": 9.5,
-      "odds": -119,
+      "line": 8.5,
+      "odds": -102,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-10T03:00Z",
       "team": "NO"
      }
     ],
-    "payout": 137.76157003681976,
-    "projected_profit": 0.8399620978383808
+    "payout": 148.24570778695826,
+    "projected_profit": 1.892980976889877
    },
    "two": {
-    "chance": 0.293739,
+    "chance": 0.286758,
     "legs": [
      {
       "chance": 0.537,
@@ -267,22 +267,22 @@
       "team": "CHA"
      },
      {
-      "chance": 0.5469999999999999,
+      "chance": 0.534,
       "event_id": "401909959",
       "game": "NO @ GS",
-      "line": 9.5,
-      "odds": -119,
+      "line": 8.5,
+      "odds": -102,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-10T03:00Z",
       "team": "NO"
      }
     ],
-    "payout": 70.88702147525677,
-    "projected_profit": 0.8222828011204477
+    "payout": 76.28177196804648,
+    "projected_profit": 1.8744083660130748
    }
   },
-  "seen": "2026-11-09T17:23+00:00",
+  "seen": "2026-11-09T17:36+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -306,7 +306,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T17:23+00:00",
+  "seen": "2026-11-09T17:36+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -317,20 +317,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.049,
+   "ev": -0.062,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.661,
+   "line": 0.5,
+   "market_prob": 0.66,
    "name": "De'Aaron Fox",
    "pid": "4066259",
-   "price": "-238",
-   "prob": 0.669,
+   "price": "-236",
+   "prob": 0.659,
    "projection": 0.968,
-   "score": 0.661,
-   "side": "under",
+   "score": 0.66,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T17:23+00:00",
+  "seen": "2026-11-09T17:36+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
