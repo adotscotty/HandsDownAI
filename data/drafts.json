@@ -49,38 +49,38 @@
    "projected_profit": 2.59,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T18:42+00:00",
+  "seen": "2026-11-09T18:55+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.666,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
-     "event_id": "401909954",
-     "game": "WSH @ DET",
+     "chance": 0.666,
+     "event_id": "401909958",
+     "game": "SA @ PHX",
      "label": "threes",
-     "line": 1.5,
-     "name": "AJ Dybantsa",
-     "odds": -239,
-     "pid": "5142718",
-     "projection": 0.837,
-     "side": "under",
+     "line": 0.5,
+     "name": "De'Aaron Fox",
+     "odds": -244,
+     "pid": "4066259",
+     "projection": 0.968,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-10T00:00Z",
+     "start": "2026-11-10T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
+   "payout": 28.2,
+   "price": -244,
    "projected_profit": -1.22,
-   "start": "2026-11-10T00:00Z"
+   "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T18:42+00:00",
-  "start": "2026-11-10T00:00Z"
+  "seen": "2026-11-09T18:55+00:00",
+  "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
@@ -106,19 +106,19 @@
    "projected_profit": 0.21,
    "start": "2026-11-10T03:00Z"
   },
-  "seen": "2026-11-09T18:42+00:00",
+  "seen": "2026-11-09T18:55+00:00",
   "start": "2026-11-10T03:00Z"
  },
  "bet|2026-11-09|winner": {
   "bet": {
-   "chance": 0.627,
+   "chance": 0.625,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.627,
+     "chance": 0.625,
      "event_id": "401909956",
      "game": "IND @ DAL",
-     "odds": -156,
+     "odds": -155,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-10T01:00Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.82,
-   "price": -156,
-   "projected_profit": 0.58,
+   "payout": 32.9,
+   "price": -155,
+   "projected_profit": 0.56,
    "start": "2026-11-10T01:00Z"
   },
-  "seen": "2026-11-09T18:42+00:00",
+  "seen": "2026-11-09T18:55+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -207,7 +207,7 @@
     "projected_profit": 14.514786313932973
    }
   },
-  "seen": "2026-11-09T18:42+00:00",
+  "seen": "2026-11-09T18:55+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -282,31 +282,7 @@
     "projected_profit": 2.3539928301886803
    }
   },
-  "seen": "2026-11-09T18:42+00:00",
-  "start": "2026-11-10T00:00Z"
- },
- "prop|nba|401909954": {
-  "game": {
-   "date": "2026-11-10T00:00Z",
-   "event_id": "401909954",
-   "name": "Washington Wizards at Detroit Pistons",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.013,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.662,
-   "name": "AJ Dybantsa",
-   "pid": "5142718",
-   "price": "-239",
-   "prob": 0.696,
-   "projection": 0.837,
-   "score": 0.662,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-09T18:42+00:00",
+  "seen": "2026-11-09T18:55+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -317,20 +293,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.057,
+   "ev": -0.067,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.653,
+   "market_prob": 0.666,
    "name": "De'Aaron Fox",
    "pid": "4066259",
-   "price": "-228",
-   "prob": 0.655,
+   "price": "-244",
+   "prob": 0.662,
    "projection": 0.968,
-   "score": 0.653,
+   "score": 0.666,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T18:42+00:00",
+  "seen": "2026-11-09T18:55+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
