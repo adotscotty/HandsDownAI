@@ -49,7 +49,7 @@
    "projected_profit": 2.35,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -59,15 +59,15 @@
    "legs": [
     {
      "chance": 0.661,
-     "event_id": "401909954",
-     "game": "WSH @ DET",
+     "event_id": "401909952",
+     "game": "LAL @ ATL",
      "label": "threes",
-     "line": 1.5,
-     "name": "AJ Dybantsa",
+     "line": 0.5,
+     "name": "Sandro Mamukelashvili",
      "odds": -237,
-     "pid": "5142718",
-     "projection": 0.837,
-     "side": "under",
+     "pid": "4278580",
+     "projection": 1.113,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
      "stat": "tpm",
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-10T03:00Z"
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T03:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -207,7 +207,7 @@
     "projected_profit": 15.43519969387755
    }
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -282,7 +282,7 @@
     "projected_profit": 1.6133436543654405
    }
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909952": {
@@ -293,20 +293,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.086,
+   "ev": -0.038,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.66,
+   "line": 0.5,
+   "market_prob": 0.661,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-236",
-   "prob": 0.642,
+   "price": "-237",
+   "prob": 0.677,
    "projection": 1.113,
-   "score": 0.66,
-   "side": "under",
+   "score": 0.661,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -330,7 +330,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -354,7 +354,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T14:35+00:00",
+  "seen": "2026-11-09T14:40+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
