@@ -5,19 +5,6 @@
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.546,
-     "event_id": "401909952",
-     "game": "LAL @ ATL",
-     "line": 1.5,
-     "odds": -106,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-10T00:00Z",
-     "team": "LAL",
-     "team_name": "LAL",
-     "type": "spread"
-    },
-    {
      "chance": 0.537,
      "event_id": "401909953",
      "game": "CLE @ CHA",
@@ -28,6 +15,19 @@
      "start": "2026-11-10T00:00Z",
      "team": "CHA",
      "team_name": "CHA",
+     "type": "spread"
+    },
+    {
+     "chance": 0.546,
+     "event_id": "401909952",
+     "game": "LAL @ ATL",
+     "line": 1.5,
+     "odds": -110,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-10T00:00Z",
+     "team": "LAL",
+     "team_name": "LAL",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 150.99,
-   "price": 655,
-   "projected_profit": 3.64,
+   "payout": 148.32,
+   "price": 642,
+   "projected_profit": 3.22,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T19:41+00:00",
+  "seen": "2026-11-09T19:54+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T19:41+00:00",
+  "seen": "2026-11-09T19:54+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -92,7 +92,7 @@
      "event_id": "401909952",
      "game": "LAL @ ATL",
      "line": 1.5,
-     "odds": -106,
+     "odds": -110,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.87,
-   "price": -106,
-   "projected_profit": 1.22,
+   "payout": 38.18,
+   "price": -110,
+   "projected_profit": 0.85,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T19:41+00:00",
+  "seen": "2026-11-09T19:54+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.44,
    "start": "2026-11-10T01:30Z"
   },
-  "seen": "2026-11-09T19:41+00:00",
+  "seen": "2026-11-09T19:54+00:00",
   "start": "2026-11-10T01:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -207,7 +207,7 @@
     "projected_profit": 14.514786313932973
    }
   },
-  "seen": "2026-11-09T19:41+00:00",
+  "seen": "2026-11-09T19:54+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -216,16 +216,45 @@
     "chance": 0.15656986800000003,
     "legs": [
      {
+      "chance": 0.537,
+      "event_id": "401909953",
+      "game": "CLE @ CHA",
+      "line": 8.5,
+      "odds": -104,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-10T00:00Z",
+      "team": "CHA"
+     },
+     {
       "chance": 0.546,
       "event_id": "401909952",
       "game": "LAL @ ATL",
       "line": 1.5,
-      "odds": -106,
+      "odds": -110,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-10T00:00Z",
       "team": "LAL"
      },
+     {
+      "chance": 0.534,
+      "event_id": "401909959",
+      "game": "NO @ GS",
+      "line": 8.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-10T03:00Z",
+      "team": "NO"
+     }
+    ],
+    "payout": 148.32167832167832,
+    "projected_profit": 3.222705596363639
+   },
+   "two": {
+    "chance": 0.286758,
+    "legs": [
      {
       "chance": 0.537,
       "event_id": "401909953",
@@ -249,40 +278,35 @@
       "team": "NO"
      }
     ],
-    "payout": 150.98693759071116,
-    "projected_profit": 3.6400048883018883
-   },
-   "two": {
-    "chance": 0.29156400000000005,
-    "legs": [
-     {
-      "chance": 0.546,
-      "event_id": "401909952",
-      "game": "LAL @ ATL",
-      "line": 1.5,
-      "odds": -106,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-10T00:00Z",
-      "team": "LAL"
-     },
-     {
-      "chance": 0.534,
-      "event_id": "401909959",
-      "game": "NO @ GS",
-      "line": 8.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-10T03:00Z",
-      "team": "NO"
-     }
-    ],
-    "payout": 76.97373288938216,
-    "projected_profit": 2.442769456159823
+    "payout": 77.6923076923077,
+    "projected_profit": 2.2788907692307703
    }
   },
-  "seen": "2026-11-09T19:41+00:00",
+  "seen": "2026-11-09T19:54+00:00",
+  "start": "2026-11-10T00:00Z"
+ },
+ "prop|nba|401909954": {
+  "game": {
+   "date": "2026-11-10T00:00Z",
+   "event_id": "401909954",
+   "name": "Washington Wizards at Detroit Pistons",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.011,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.659,
+   "name": "AJ Dybantsa",
+   "pid": "5142718",
+   "price": "-235",
+   "prob": 0.694,
+   "projection": 0.837,
+   "score": 0.659,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-09T19:54+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -306,7 +330,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T19:41+00:00",
+  "seen": "2026-11-09T19:54+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
