@@ -22,7 +22,7 @@
      "event_id": "401909953",
      "game": "CLE @ CHA",
      "line": 8.5,
-     "odds": -110,
+     "odds": -105,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 146.22,
-   "price": 631,
-   "projected_profit": 3.15,
+   "payout": 149.54,
+   "price": 648,
+   "projected_profit": 3.67,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -79,12 +79,12 @@
    "projected_profit": -1.23,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|sgp": {
   "bet": {
-   "chance": 0.3627,
+   "chance": 0.3594,
    "kind": "sgp",
    "legs": [
     {
@@ -101,28 +101,28 @@
      "type": "spread"
     },
     {
-     "chance": 0.657,
+     "chance": 0.651,
      "event_id": "401909952",
      "game": "LAL @ ATL",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Sandro Mamukelashvili",
-     "odds": -233,
+     "odds": -226,
      "pid": "4278580",
      "projection": 1.113,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 55.81,
-   "price": 179,
+   "payout": 56.33,
+   "price": 182,
    "projected_profit": 0.24,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.55,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -250,7 +250,7 @@
     "projected_profit": 15.6455359435626
    }
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -274,7 +274,7 @@
       "event_id": "401909953",
       "game": "CLE @ CHA",
       "line": 8.5,
-      "odds": -110,
+      "odds": -105,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-10T00:00Z",
@@ -292,11 +292,11 @@
       "team": "NO"
      }
     ],
-    "payout": 146.22377622377624,
-    "projected_profit": 3.1458223675524515
+    "payout": 149.53950811093668,
+    "projected_profit": 3.6706709473155428
    },
    "two": {
-    "chance": 0.29476800000000003,
+    "chance": 0.296424,
     "legs": [
      {
       "chance": 0.552,
@@ -310,22 +310,22 @@
       "team": "ATL"
      },
      {
-      "chance": 0.534,
-      "event_id": "401909959",
-      "game": "NO @ GS",
+      "chance": 0.537,
+      "event_id": "401909953",
+      "game": "CLE @ CHA",
       "line": 8.5,
-      "odds": -104,
-      "side": "away",
+      "odds": -105,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-10T03:00Z",
-      "team": "NO"
+      "start": "2026-11-10T00:00Z",
+      "team": "CHA"
      }
     ],
-    "payout": 76.5934065934066,
-    "projected_profit": 2.577285274725277
+    "payout": 76.23582766439908,
+    "projected_profit": 2.5981289795918343
    }
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909952": {
@@ -336,20 +336,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.036,
+   "ev": -0.08,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
+   "line": 1.5,
+   "market_prob": 0.651,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-233",
-   "prob": 0.675,
+   "price": "-226",
+   "prob": 0.638,
    "projection": 1.113,
-   "score": 0.657,
-   "side": "over",
+   "score": 0.651,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -373,7 +373,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -397,7 +397,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T08:28+00:00",
+  "seen": "2026-11-09T08:41+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
