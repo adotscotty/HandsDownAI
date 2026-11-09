@@ -1,33 +1,33 @@
 {
  "bet|2026-11-08|prop": {
   "bet": {
-   "chance": 0.656,
+   "chance": 0.654,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.656,
-     "event_id": "401909949",
-     "game": "BOS @ MIL",
+     "chance": 0.654,
+     "event_id": "401909948",
+     "game": "BKN @ DAL",
      "label": "threes",
-     "line": 0.5,
-     "name": "Kyle Kuzma",
-     "odds": -231,
-     "pid": "3134907",
-     "projection": 1.365,
-     "side": "over",
+     "line": 1.5,
+     "name": "Zaccharie Risacher",
+     "odds": -229,
+     "pid": "5211175",
+     "projection": 0.985,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-09T01:00Z",
+     "start": "2026-11-09T00:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.2,
-   "start": "2026-11-09T01:00Z"
+   "payout": 28.73,
+   "price": -229,
+   "projected_profit": -1.21,
+   "start": "2026-11-09T00:30Z"
   },
-  "seen": "2026-11-08T23:47+00:00",
-  "start": "2026-11-09T01:00Z"
+  "seen": "2026-11-09T00:00+00:00",
+  "start": "2026-11-09T00:30Z"
  },
  "bet|2026-11-08|sgp": {
   "bet": {
@@ -69,7 +69,7 @@
    "projected_profit": 0.02,
    "start": "2026-11-09T02:00Z"
   },
-  "seen": "2026-11-08T23:47+00:00",
+  "seen": "2026-11-09T00:00+00:00",
   "start": "2026-11-09T02:00Z"
  },
  "prop|nba|401909948": {
@@ -93,31 +93,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-08T23:47+00:00",
+  "seen": "2026-11-09T00:00+00:00",
   "start": "2026-11-09T00:30Z"
- },
- "prop|nba|401909949": {
-  "game": {
-   "date": "2026-11-09T01:00Z",
-   "event_id": "401909949",
-   "name": "Boston Celtics at Milwaukee Bucks",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.002,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.656,
-   "name": "Kyle Kuzma",
-   "pid": "3134907",
-   "price": "-231",
-   "prob": 0.7,
-   "projection": 1.365,
-   "score": 0.656,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-08T23:47+00:00",
-  "start": "2026-11-09T01:00Z"
  }
 }
