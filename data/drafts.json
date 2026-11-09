@@ -1,7 +1,7 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.1622,
+   "chance": 0.1564,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.539,
-     "event_id": "401909952",
-     "game": "LAL @ ATL",
-     "line": 1.5,
-     "odds": -110,
+     "chance": 0.52,
+     "event_id": "401909955",
+     "game": "MEM @ TOR",
+     "line": -3.5,
+     "odds": -102,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-10T00:00Z",
-     "team": "ATL",
-     "team_name": "ATL",
+     "start": "2026-11-10T00:30Z",
+     "team": "TOR",
+     "team_name": "TOR",
      "type": "spread"
     },
     {
@@ -44,29 +44,29 @@
      "type": "spread"
     }
    ],
-   "payout": 140.39,
-   "price": 602,
-   "projected_profit": 2.76,
+   "payout": 145.63,
+   "price": 628,
+   "projected_profit": 2.78,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
-   "chance": 0.658,
+   "chance": 0.655,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.658,
-     "event_id": "401909954",
-     "game": "WSH @ DET",
+     "chance": 0.655,
+     "event_id": "401909952",
+     "game": "LAL @ ATL",
      "label": "threes",
      "line": 1.5,
-     "name": "AJ Dybantsa",
-     "odds": -234,
-     "pid": "5142718",
-     "projection": 0.837,
+     "name": "Sandro Mamukelashvili",
+     "odds": -231,
+     "pid": "4278580",
+     "projection": 1.113,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.55,
-   "price": -234,
-   "projected_profit": -1.22,
+   "payout": 28.66,
+   "price": -231,
+   "projected_profit": -1.23,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.19,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.71,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -207,13 +207,13 @@
     "projected_profit": 15.6455359435626
    }
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
   "card": {
    "three": {
-    "chance": 0.16215815,
+    "chance": 0.156442,
     "legs": [
      {
       "chance": 0.55,
@@ -227,15 +227,15 @@
       "team": "CHA"
      },
      {
-      "chance": 0.539,
-      "event_id": "401909952",
-      "game": "LAL @ ATL",
-      "line": 1.5,
-      "odds": -110,
+      "chance": 0.52,
+      "event_id": "401909955",
+      "game": "MEM @ TOR",
+      "line": -3.5,
+      "odds": -102,
       "side": "home",
       "sport": "nba",
-      "start": "2026-11-10T00:00Z",
-      "team": "ATL"
+      "start": "2026-11-10T00:30Z",
+      "team": "TOR"
      },
      {
       "chance": 0.5469999999999999,
@@ -249,8 +249,8 @@
       "team": "NO"
      }
     ],
-    "payout": 140.38567493112947,
-    "projected_profit": 2.764681333333332
+    "payout": 145.62883739354328,
+    "projected_profit": 2.7824665795206975
    },
    "two": {
     "chance": 0.30085,
@@ -282,7 +282,7 @@
     "projected_profit": 2.123111111111111
    }
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909952": {
@@ -293,20 +293,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.079,
+   "ev": -0.083,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.651,
+   "market_prob": 0.655,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-225",
-   "prob": 0.638,
+   "price": "-231",
+   "prob": 0.64,
    "projection": 1.113,
-   "score": 0.651,
+   "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -317,20 +317,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.01,
+   "ev": -0.005,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.658,
+   "market_prob": 0.651,
    "name": "AJ Dybantsa",
    "pid": "5142718",
-   "price": "-234",
-   "prob": 0.694,
+   "price": "-226",
+   "prob": 0.69,
    "projection": 0.837,
-   "score": 0.658,
+   "score": 0.651,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -354,7 +354,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T13:14+00:00",
+  "seen": "2026-11-09T13:43+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
