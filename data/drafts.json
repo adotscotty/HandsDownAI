@@ -49,38 +49,38 @@
    "projected_profit": 1.89,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T17:53+00:00",
+  "seen": "2026-11-09T18:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
   "bet": {
-   "chance": 0.66,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.66,
-     "event_id": "401909958",
-     "game": "SA @ PHX",
+     "chance": 0.661,
+     "event_id": "401909954",
+     "game": "WSH @ DET",
      "label": "threes",
-     "line": 0.5,
-     "name": "De'Aaron Fox",
-     "odds": -236,
-     "pid": "4066259",
-     "projection": 0.968,
-     "side": "over",
+     "line": 1.5,
+     "name": "AJ Dybantsa",
+     "odds": -237,
+     "pid": "5142718",
+     "projection": 0.837,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-10T02:00Z",
+     "start": "2026-11-10T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.47,
-   "price": -236,
-   "projected_profit": -1.21,
-   "start": "2026-11-10T02:00Z"
+   "payout": 28.44,
+   "price": -237,
+   "projected_profit": -1.2,
+   "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T17:53+00:00",
-  "start": "2026-11-10T02:00Z"
+  "seen": "2026-11-09T18:06+00:00",
+  "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.68,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T17:53+00:00",
+  "seen": "2026-11-09T18:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.58,
    "start": "2026-11-10T01:00Z"
   },
-  "seen": "2026-11-09T17:53+00:00",
+  "seen": "2026-11-09T18:06+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -207,7 +207,7 @@
     "projected_profit": 14.514786313932973
    }
   },
-  "seen": "2026-11-09T17:53+00:00",
+  "seen": "2026-11-09T18:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "parlay|2026-11-09|nba": {
@@ -282,7 +282,7 @@
     "projected_profit": 1.8744083660130748
    }
   },
-  "seen": "2026-11-09T17:53+00:00",
+  "seen": "2026-11-09T18:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -293,20 +293,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.006,
+   "ev": -0.012,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.652,
+   "market_prob": 0.661,
    "name": "AJ Dybantsa",
    "pid": "5142718",
-   "price": "-228",
-   "prob": 0.691,
+   "price": "-237",
+   "prob": 0.695,
    "projection": 0.837,
-   "score": 0.652,
+   "score": 0.661,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T17:53+00:00",
+  "seen": "2026-11-09T18:06+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -317,20 +317,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.062,
+   "ev": -0.057,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.66,
+   "market_prob": 0.653,
    "name": "De'Aaron Fox",
    "pid": "4066259",
-   "price": "-236",
-   "prob": 0.659,
+   "price": "-228",
+   "prob": 0.655,
    "projection": 0.968,
-   "score": 0.66,
+   "score": 0.653,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T17:53+00:00",
+  "seen": "2026-11-09T18:06+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
