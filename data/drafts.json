@@ -1,11 +1,11 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.1542,
+   "chance": 0.1514,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.552,
+     "chance": 0.542,
      "event_id": "401909952",
      "game": "LAL @ ATL",
      "line": 2.5,
@@ -46,10 +46,10 @@
    ],
    "payout": 148.17,
    "price": 641,
-   "projected_profit": 2.84,
+   "projected_profit": 2.43,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T22:38+00:00",
+  "seen": "2026-11-09T22:51+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -59,57 +59,14 @@
    "legs": [
     {
      "chance": 0.663,
-     "event_id": "401909958",
-     "game": "SA @ PHX",
+     "event_id": "401909954",
+     "game": "WSH @ DET",
      "label": "threes",
      "line": 1.5,
-     "name": "De'Aaron Fox",
-     "odds": -239,
-     "pid": "4066259",
-     "projection": 0.968,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-10T02:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.19,
-   "start": "2026-11-10T02:00Z"
-  },
-  "seen": "2026-11-09T22:38+00:00",
-  "start": "2026-11-10T02:00Z"
- },
- "bet|2026-11-09|sgp": {
-  "bet": {
-   "chance": 0.3356,
-   "kind": "sgp",
-   "legs": [
-    {
-     "chance": 0.552,
-     "event_id": "401909952",
-     "game": "LAL @ ATL",
-     "line": 2.5,
-     "odds": -106,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-10T00:00Z",
-     "team": "LAL",
-     "team_name": "Los Angeles Lakers",
-     "type": "spread"
-    },
-    {
-     "chance": 0.608,
-     "event_id": "401909952",
-     "game": "LAL @ ATL",
-     "label": "threes",
-     "line": 2.5,
-     "name": "Aaron Wiggins",
-     "odds": -184,
-     "pid": "4397183",
-     "projection": 2.604,
+     "name": "AJ Dybantsa",
+     "odds": -240,
+     "pid": "5142718",
+     "projection": 0.837,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
@@ -117,21 +74,21 @@
      "type": "prop"
     }
    ],
-   "payout": 59.99,
-   "price": 200,
-   "projected_profit": 0.13,
+   "payout": 28.33,
+   "price": -240,
+   "projected_profit": -1.21,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T22:38+00:00",
+  "seen": "2026-11-09T22:51+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
-   "chance": 0.552,
+   "chance": 0.542,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.552,
+     "chance": 0.542,
      "event_id": "401909952",
      "game": "LAL @ ATL",
      "line": 2.5,
@@ -146,10 +103,10 @@
    ],
    "payout": 38.87,
    "price": -106,
-   "projected_profit": 1.46,
+   "projected_profit": 1.07,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T22:38+00:00",
+  "seen": "2026-11-09T22:51+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -175,7 +132,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-10T01:30Z"
   },
-  "seen": "2026-11-09T22:38+00:00",
+  "seen": "2026-11-09T22:51+00:00",
   "start": "2026-11-10T01:30Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -256,10 +213,10 @@
  "parlay|2026-11-09|nba": {
   "card": {
    "two": {
-    "chance": 0.29421600000000003,
+    "chance": 0.28888600000000003,
     "legs": [
      {
-      "chance": 0.552,
+      "chance": 0.542,
       "event_id": "401909952",
       "game": "LAL @ ATL",
       "line": 2.5,
@@ -282,10 +239,10 @@
      }
     ],
     "payout": 76.24092888243831,
-    "projected_profit": 2.431301132075472
+    "projected_profit": 2.0249369811320754
    }
   },
-  "seen": "2026-11-09T22:38+00:00",
+  "seen": "2026-11-09T22:51+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -296,20 +253,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.006,
+   "ev": -0.014,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.651,
+   "market_prob": 0.663,
    "name": "AJ Dybantsa",
    "pid": "5142718",
-   "price": "-227",
-   "prob": 0.69,
+   "price": "-240",
+   "prob": 0.696,
    "projection": 0.837,
-   "score": 0.651,
+   "score": 0.663,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T22:38+00:00",
+  "seen": "2026-11-09T22:51+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -333,7 +290,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T22:38+00:00",
+  "seen": "2026-11-09T22:51+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
