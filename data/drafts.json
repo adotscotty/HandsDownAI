@@ -1,7 +1,7 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.1661,
+   "chance": 0.1621,
    "kind": "parlay",
    "legs": [
     {
@@ -18,11 +18,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.55,
+     "chance": 0.537,
      "event_id": "401909953",
      "game": "CLE @ CHA",
-     "line": 9.5,
-     "odds": -115,
+     "line": 8.5,
+     "odds": -110,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-10T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 139.37,
-   "price": 597,
-   "projected_profit": 3.14,
+   "payout": 142.31,
+   "price": 612,
+   "projected_profit": 3.08,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T05:22+00:00",
+  "seen": "2026-11-09T05:35+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -76,7 +76,7 @@
    "projected_profit": 1.55,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T05:22+00:00",
+  "seen": "2026-11-09T05:35+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
@@ -102,7 +102,7 @@
    "projected_profit": 0.53,
    "start": "2026-11-10T01:00Z"
   },
-  "seen": "2026-11-09T05:22+00:00",
+  "seen": "2026-11-09T05:35+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|cbb": {
@@ -177,13 +177,13 @@
     "projected_profit": 15.721459183673467
    }
   },
-  "seen": "2026-11-09T05:22+00:00",
+  "seen": "2026-11-09T05:35+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
   "card": {
    "three": {
-    "chance": 0.1660692,
+    "chance": 0.162143928,
     "legs": [
      {
       "chance": 0.552,
@@ -197,11 +197,11 @@
       "team": "ATL"
      },
      {
-      "chance": 0.55,
+      "chance": 0.537,
       "event_id": "401909953",
       "game": "CLE @ CHA",
-      "line": 9.5,
-      "odds": -115,
+      "line": 8.5,
+      "odds": -110,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-10T00:00Z",
@@ -219,8 +219,8 @@
       "team": "NO"
      }
     ],
-    "payout": 139.3675889328063,
-    "projected_profit": 3.144663999999999
+    "payout": 142.31404958677686,
+    "projected_profit": 3.0753590095867764
    },
    "two": {
     "chance": 0.301944,
@@ -252,7 +252,7 @@
     "projected_profit": 2.5085527272727255
    }
   },
-  "seen": "2026-11-09T05:22+00:00",
+  "seen": "2026-11-09T05:35+00:00",
   "start": "2026-11-10T00:00Z"
  }
 }
