@@ -1,7 +1,7 @@
 {
  "bet|2026-11-09|parlay": {
   "bet": {
-   "chance": 0.1564,
+   "chance": 0.1549,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.52,
-     "event_id": "401909955",
-     "game": "MEM @ TOR",
-     "line": -3.5,
-     "odds": -102,
+     "chance": 0.515,
+     "event_id": "401909958",
+     "game": "SA @ PHX",
+     "line": 8.5,
+     "odds": -106,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-10T00:30Z",
-     "team": "TOR",
-     "team_name": "TOR",
+     "start": "2026-11-10T02:00Z",
+     "team": "PHX",
+     "team_name": "PHX",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 145.63,
-   "price": 628,
-   "projected_profit": 2.78,
+   "payout": 142.91,
+   "price": 615,
+   "projected_profit": 2.14,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|prop": {
@@ -64,7 +64,7 @@
      "label": "threes",
      "line": 1.5,
      "name": "Sandro Mamukelashvili",
-     "odds": -231,
+     "odds": -230,
      "pid": "4278580",
      "projection": 1.113,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.23,
+   "payout": 28.7,
+   "price": -230,
+   "projected_profit": -1.2,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|spread": {
@@ -106,16 +106,16 @@
    "projected_profit": 1.19,
    "start": "2026-11-10T00:00Z"
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "bet|2026-11-09|winner": {
   "bet": {
-   "chance": 0.631,
+   "chance": 0.613,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.631,
+     "chance": 0.613,
      "event_id": "401909955",
      "game": "MEM @ TOR",
      "odds": -156,
@@ -129,16 +129,16 @@
    ],
    "payout": 32.82,
    "price": -156,
-   "projected_profit": 0.71,
+   "projected_profit": 0.12,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "parlay|2026-11-09|cbb": {
   "card": {
    "three": {
-    "chance": 0.30525084799999996,
+    "chance": 0.3185226239999999,
     "legs": [
      {
       "chance": 0.716,
@@ -163,19 +163,19 @@
       "team": "LT"
      },
      {
-      "chance": 0.644,
+      "chance": 0.6719999999999999,
       "event_id": "401917978",
       "game": "ULM @ TA&M",
-      "line": 36.5,
-      "odds": -110,
+      "line": 38.5,
+      "odds": -115,
       "side": "away",
       "sport": "cbb",
       "start": "2026-11-10T01:00Z",
       "team": "ULM"
      }
     ],
-    "payout": 143.56902356902356,
-    "projected_profit": 23.82456619097642
+    "payout": 140.59658001686986,
+    "projected_profit": 24.78319159239934
    },
    "two": {
     "chance": 0.4739919999999999,
@@ -207,13 +207,13 @@
     "projected_profit": 15.6455359435626
    }
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T01:00Z"
  },
  "parlay|2026-11-09|nba": {
   "card": {
    "three": {
-    "chance": 0.156442,
+    "chance": 0.15493775,
     "legs": [
      {
       "chance": 0.55,
@@ -227,15 +227,15 @@
       "team": "CHA"
      },
      {
-      "chance": 0.52,
-      "event_id": "401909955",
-      "game": "MEM @ TOR",
-      "line": -3.5,
-      "odds": -102,
+      "chance": 0.515,
+      "event_id": "401909958",
+      "game": "SA @ PHX",
+      "line": 8.5,
+      "odds": -106,
       "side": "home",
       "sport": "nba",
-      "start": "2026-11-10T00:30Z",
-      "team": "TOR"
+      "start": "2026-11-10T02:00Z",
+      "team": "PHX"
      },
      {
       "chance": 0.5469999999999999,
@@ -249,8 +249,8 @@
       "team": "NO"
      }
     ],
-    "payout": 145.62883739354328,
-    "projected_profit": 2.7824665795206975
+    "payout": 142.90832856870594,
+    "projected_profit": 2.141894884696022
    },
    "two": {
     "chance": 0.30085,
@@ -282,7 +282,7 @@
     "projected_profit": 2.123111111111111
    }
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909952": {
@@ -293,20 +293,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.083,
+   "ev": -0.082,
    "label": "threes",
    "line": 1.5,
    "market_prob": 0.655,
    "name": "Sandro Mamukelashvili",
    "pid": "4278580",
-   "price": "-231",
+   "price": "-230",
    "prob": 0.64,
    "projection": 1.113,
    "score": 0.655,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909954": {
@@ -330,7 +330,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
@@ -354,7 +354,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T13:43+00:00",
+  "seen": "2026-11-09T13:56+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
