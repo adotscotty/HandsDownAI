@@ -1,85 +1,32 @@
 {
- "bet|2026-11-10|parlay": {
-  "bet": {
-   "chance": 0.1588,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.561,
-     "event_id": "401866459",
-     "game": "KENT @ BGSU",
-     "line": -3.5,
-     "odds": -112,
-     "side": "home",
-     "sport": "cfb",
-     "start": "2026-11-11T00:00Z",
-     "team": "BGSU",
-     "team_name": "BGSU",
-     "type": "spread"
-    },
-    {
-     "chance": 0.532,
-     "event_id": "401909964",
-     "game": "ORL @ SAC",
-     "line": 5.5,
-     "odds": -108,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-11T03:00Z",
-     "team": "SAC",
-     "team_name": "SAC",
-     "type": "spread"
-    },
-    {
-     "chance": 0.532,
-     "event_id": "401909965",
-     "game": "OKC @ POR",
-     "line": -1.5,
-     "odds": -111,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-11T04:00Z",
-     "team": "OKC",
-     "team_name": "OKC",
-     "type": "spread"
-    }
-   ],
-   "payout": 138.59,
-   "price": 593,
-   "projected_profit": 2.01,
-   "start": "2026-11-11T00:00Z"
-  },
-  "seen": "2026-11-10T23:27+00:00",
-  "start": "2026-11-11T00:00Z"
- },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.674,
+   "chance": 0.667,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.674,
+     "chance": 0.667,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
-     "name": "Giannis Antetokounmpo",
-     "odds": -253,
-     "pid": "3032977",
-     "projection": 0.392,
-     "side": "under",
+     "name": "Bam Adebayo",
+     "odds": -245,
+     "pid": "4066261",
+     "projection": 1.139,
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 27.91,
-   "price": -253,
-   "projected_profit": -1.19,
+   "payout": 28.16,
+   "price": -245,
+   "projected_profit": -1.22,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T23:27+00:00",
+  "seen": "2026-11-10T23:40+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,34 +53,8 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T23:27+00:00",
+  "seen": "2026-11-10T23:40+00:00",
   "start": "2026-11-11T02:00Z"
- },
- "bet|2026-11-10|winner": {
-  "bet": {
-   "chance": 0.654,
-   "kind": "winner",
-   "legs": [
-    {
-     "chance": 0.654,
-     "event_id": "401866459",
-     "game": "KENT @ BGSU",
-     "odds": -180,
-     "side": "home",
-     "sport": "cfb",
-     "start": "2026-11-11T00:00Z",
-     "team": "BGSU",
-     "team_name": "Bowling Green Falcons",
-     "type": "ml"
-    }
-   ],
-   "payout": 31.11,
-   "price": -180,
-   "projected_profit": 0.35,
-   "start": "2026-11-11T00:00Z"
-  },
-  "seen": "2026-11-10T23:27+00:00",
-  "start": "2026-11-11T00:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
@@ -167,7 +88,7 @@
     "projected_profit": 0.7229851718385127
    }
   },
-  "seen": "2026-11-10T23:27+00:00",
+  "seen": "2026-11-10T23:40+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909963": {
@@ -178,20 +99,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.147,
+   "ev": -0.039,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.674,
-   "name": "Giannis Antetokounmpo",
-   "pid": "3032977",
-   "price": "-253",
-   "prob": 0.611,
-   "projection": 0.392,
-   "score": 0.674,
-   "side": "under",
+   "market_prob": 0.667,
+   "name": "Bam Adebayo",
+   "pid": "4066261",
+   "price": "-245",
+   "prob": 0.683,
+   "projection": 1.139,
+   "score": 0.667,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:27+00:00",
+  "seen": "2026-11-10T23:40+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -215,7 +136,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:27+00:00",
+  "seen": "2026-11-10T23:40+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -239,7 +160,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:27+00:00",
+  "seen": "2026-11-10T23:40+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
