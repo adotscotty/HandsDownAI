@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1534,
+   "chance": 0.1488,
    "kind": "parlay",
    "legs": [
     {
@@ -22,7 +22,7 @@
      "event_id": "401909962",
      "game": "LAC @ PHX",
      "line": 3.5,
-     "odds": -112,
+     "odds": -108,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
@@ -31,42 +31,42 @@
      "type": "spread"
     },
     {
-     "chance": 0.535,
-     "event_id": "401909963",
-     "game": "MIA @ UTAH",
-     "line": 8.5,
-     "odds": -115,
-     "side": "home",
+     "chance": 0.519,
+     "event_id": "401909965",
+     "game": "OKC @ POR",
+     "line": -2.5,
+     "odds": -104,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-11T02:00Z",
-     "team": "UTAH",
-     "team_name": "UTAH",
+     "start": "2026-11-11T04:00Z",
+     "team": "OKC",
+     "team_name": "OKC",
      "type": "spread"
     }
    ],
-   "payout": 136.31,
-   "price": 582,
-   "projected_profit": 0.91,
+   "payout": 145.51,
+   "price": 628,
+   "projected_profit": 1.66,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.663,
+   "chance": 0.681,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.663,
+     "chance": 0.681,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
-     "line": 1.5,
-     "name": "Bam Adebayo",
-     "odds": -240,
-     "pid": "4066261",
-     "projection": 1.139,
+     "line": 0.5,
+     "name": "Giannis Antetokounmpo",
+     "odds": -263,
+     "pid": "3032977",
+     "projection": 0.392,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.33,
-   "price": -240,
-   "projected_profit": -1.21,
+   "payout": 27.6,
+   "price": -263,
+   "projected_profit": -1.2,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,19 +106,19 @@
    "projected_profit": 0.0,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
   "bet": {
-   "chance": 0.581,
+   "chance": 0.6,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.581,
+     "chance": 0.6,
      "event_id": "401909965",
      "game": "OKC @ POR",
-     "odds": -130,
+     "odds": -135,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-11T04:00Z",
@@ -127,47 +127,47 @@
      "type": "ml"
     }
    ],
-   "payout": 35.38,
-   "price": -130,
-   "projected_profit": 0.56,
+   "payout": 34.81,
+   "price": -135,
+   "projected_profit": 0.89,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.28408500000000003,
+    "chance": 0.27558900000000003,
     "legs": [
      {
       "chance": 0.531,
       "event_id": "401909962",
       "game": "LAC @ PHX",
       "line": 3.5,
-      "odds": -112,
+      "odds": -108,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-11T02:00Z",
       "team": "LAC"
      },
      {
-      "chance": 0.535,
-      "event_id": "401909963",
-      "game": "MIA @ UTAH",
-      "line": 8.5,
-      "odds": -115,
-      "side": "home",
+      "chance": 0.519,
+      "event_id": "401909965",
+      "game": "OKC @ POR",
+      "line": -2.5,
+      "odds": -104,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-11T02:00Z",
-      "team": "UTAH"
+      "start": "2026-11-11T04:00Z",
+      "team": "OKC"
      }
     ],
-    "payout": 70.77639751552793,
-    "projected_profit": 0.10651288819875404
+    "payout": 75.55555555555556,
+    "projected_profit": 0.8222800000000028
    }
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909961": {
@@ -191,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T01:00Z"
  },
  "prop|nba|401909962": {
@@ -202,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.146,
+   "ev": -0.152,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.655,
+   "market_prob": 0.665,
    "name": "Derrick Jones Jr.",
    "pid": "3936099",
-   "price": "-230",
-   "prob": 0.595,
+   "price": "-242",
+   "prob": 0.6,
    "projection": 1.382,
-   "score": 0.655,
+   "score": 0.665,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -226,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.094,
+   "ev": -0.151,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.663,
-   "name": "Bam Adebayo",
-   "pid": "4066261",
-   "price": "-240",
-   "prob": 0.639,
-   "projection": 1.139,
-   "score": 0.663,
+   "line": 0.5,
+   "market_prob": 0.681,
+   "name": "Giannis Antetokounmpo",
+   "pid": "3032977",
+   "price": "-263",
+   "prob": 0.615,
+   "projection": 0.392,
+   "score": 0.681,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -263,7 +263,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T17:32+00:00",
+  "seen": "2026-11-10T17:45+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
