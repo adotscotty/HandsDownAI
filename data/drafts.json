@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1559,
+   "chance": 0.1542,
    "kind": "parlay",
    "legs": [
     {
@@ -18,6 +18,19 @@
      "type": "spread"
     },
     {
+     "chance": 0.526,
+     "event_id": "401909963",
+     "game": "MIA @ UTAH",
+     "line": 8.5,
+     "odds": -102,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-11T02:00Z",
+     "team": "UTAH",
+     "team_name": "UTAH",
+     "type": "spread"
+    },
+    {
      "chance": 0.532,
      "event_id": "401909964",
      "game": "ORL @ SAC",
@@ -29,85 +42,72 @@
      "team": "SAC",
      "team_name": "SAC",
      "type": "spread"
-    },
-    {
-     "chance": 0.532,
-     "event_id": "401909965",
-     "game": "OKC @ POR",
-     "line": -1.5,
-     "odds": -111,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-11T04:00Z",
-     "team": "OKC",
-     "team_name": "OKC",
-     "type": "spread"
     }
    ],
-   "payout": 136.89,
-   "price": 584,
-   "projected_profit": 1.35,
+   "payout": 142.61,
+   "price": 613,
+   "projected_profit": 1.99,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T22:22+00:00",
+  "seen": "2026-11-10T22:34+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.665,
+   "chance": 0.674,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.665,
+     "chance": 0.674,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
-     "name": "Bam Adebayo",
-     "odds": -242,
-     "pid": "4066261",
-     "projection": 1.139,
-     "side": "over",
+     "name": "Giannis Antetokounmpo",
+     "odds": -253,
+     "pid": "3032977",
+     "projection": 0.392,
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.26,
-   "price": -242,
-   "projected_profit": -1.2,
+   "payout": 27.91,
+   "price": -253,
+   "projected_profit": -1.19,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T22:22+00:00",
+  "seen": "2026-11-10T22:34+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
   "bet": {
-   "chance": 0.539,
+   "chance": 0.532,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.539,
-     "event_id": "401909963",
-     "game": "MIA @ UTAH",
-     "line": 9.5,
-     "odds": -115,
+     "chance": 0.532,
+     "event_id": "401909964",
+     "game": "ORL @ SAC",
+     "line": 5.5,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-11T02:00Z",
-     "team": "UTAH",
-     "team_name": "Utah Jazz",
+     "start": "2026-11-11T03:00Z",
+     "team": "SAC",
+     "team_name": "Sacramento Kings",
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 0.15,
-   "start": "2026-11-11T02:00Z"
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 0.49,
+   "start": "2026-11-11T03:00Z"
   },
-  "seen": "2026-11-10T22:22+00:00",
-  "start": "2026-11-11T02:00Z"
+  "seen": "2026-11-10T22:34+00:00",
+  "start": "2026-11-11T03:00Z"
  },
  "bet|2026-11-10|winner": {
   "bet": {
@@ -132,14 +132,25 @@
    "projected_profit": 0.92,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T22:22+00:00",
+  "seen": "2026-11-10T22:34+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.28302400000000005,
+    "chance": 0.279832,
     "legs": [
+     {
+      "chance": 0.526,
+      "event_id": "401909963",
+      "game": "MIA @ UTAH",
+      "line": 8.5,
+      "odds": -102,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-11T02:00Z",
+      "team": "UTAH"
+     },
      {
       "chance": 0.532,
       "event_id": "401909964",
@@ -150,25 +161,14 @@
       "sport": "nba",
       "start": "2026-11-11T03:00Z",
       "team": "SAC"
-     },
-     {
-      "chance": 0.532,
-      "event_id": "401909965",
-      "game": "OKC @ POR",
-      "line": -1.5,
-      "odds": -111,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-11T04:00Z",
-      "team": "OKC"
      }
     ],
-    "payout": 73.2198865532199,
-    "projected_profit": 0.7229851718385127
+    "payout": 76.28177196804648,
+    "projected_profit": 1.3460808133623843
    }
   },
-  "seen": "2026-11-10T22:22+00:00",
-  "start": "2026-11-11T03:00Z"
+  "seen": "2026-11-10T22:34+00:00",
+  "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909962": {
   "game": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T22:22+00:00",
+  "seen": "2026-11-10T22:34+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -202,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.037,
+   "ev": -0.147,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.665,
-   "name": "Bam Adebayo",
-   "pid": "4066261",
-   "price": "-242",
-   "prob": 0.681,
-   "projection": 1.139,
-   "score": 0.665,
-   "side": "over",
+   "market_prob": 0.674,
+   "name": "Giannis Antetokounmpo",
+   "pid": "3032977",
+   "price": "-253",
+   "prob": 0.611,
+   "projection": 0.392,
+   "score": 0.674,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T22:22+00:00",
+  "seen": "2026-11-10T22:34+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -239,7 +239,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T22:22+00:00",
+  "seen": "2026-11-10T22:34+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -263,7 +263,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T22:22+00:00",
+  "seen": "2026-11-10T22:34+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
