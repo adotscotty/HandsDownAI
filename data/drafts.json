@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1518,
+   "chance": 0.1539,
    "kind": "parlay",
    "legs": [
     {
@@ -31,25 +31,25 @@
      "type": "spread"
     },
     {
-     "chance": 0.519,
-     "event_id": "401909965",
-     "game": "OKC @ POR",
-     "line": -2.5,
-     "odds": -104,
-     "side": "away",
+     "chance": 0.526,
+     "event_id": "401909964",
+     "game": "ORL @ SAC",
+     "line": 6.5,
+     "odds": -107,
+     "side": "home",
      "sport": "nba",
-     "start": "2026-11-11T04:00Z",
-     "team": "OKC",
-     "team_name": "OKC",
+     "start": "2026-11-11T03:00Z",
+     "team": "SAC",
+     "team_name": "SAC",
      "type": "spread"
     }
    ],
-   "payout": 141.26,
-   "price": 606,
-   "projected_profit": 1.45,
+   "payout": 139.31,
+   "price": 597,
+   "projected_profit": 1.44,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T19:43+00:00",
+  "seen": "2026-11-10T19:56+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.17,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T19:43+00:00",
+  "seen": "2026-11-10T19:56+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,19 +106,19 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T19:43+00:00",
+  "seen": "2026-11-10T19:56+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
   "bet": {
-   "chance": 0.6,
+   "chance": 0.581,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.6,
+     "chance": 0.581,
      "event_id": "401909965",
      "game": "OKC @ POR",
-     "odds": -130,
+     "odds": -125,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-11T04:00Z",
@@ -127,18 +127,18 @@
      "type": "ml"
     }
    ],
-   "payout": 35.38,
-   "price": -130,
-   "projected_profit": 1.23,
+   "payout": 36.0,
+   "price": -125,
+   "projected_profit": 0.92,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T19:43+00:00",
+  "seen": "2026-11-10T19:56+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.27558900000000003,
+    "chance": 0.27930600000000005,
     "legs": [
      {
       "chance": 0.531,
@@ -152,22 +152,46 @@
       "team": "LAC"
      },
      {
-      "chance": 0.519,
-      "event_id": "401909965",
-      "game": "OKC @ POR",
-      "line": -2.5,
-      "odds": -104,
-      "side": "away",
+      "chance": 0.526,
+      "event_id": "401909964",
+      "game": "ORL @ SAC",
+      "line": 6.5,
+      "odds": -107,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-11T04:00Z",
-      "team": "OKC"
+      "start": "2026-11-11T03:00Z",
+      "team": "SAC"
      }
     ],
-    "payout": 75.55555555555556,
-    "projected_profit": 0.8222800000000028
+    "payout": 74.5171339563863,
+    "projected_profit": 0.8130826168224381
    }
   },
-  "seen": "2026-11-10T19:43+00:00",
+  "seen": "2026-11-10T19:56+00:00",
+  "start": "2026-11-11T02:00Z"
+ },
+ "prop|nba|401909962": {
+  "game": {
+   "date": "2026-11-11T02:00Z",
+   "event_id": "401909962",
+   "name": "LA Clippers at Phoenix Suns",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.042,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.652,
+   "name": "Keaton Wagler",
+   "pid": "5254165",
+   "price": "-227",
+   "prob": 0.723,
+   "projection": 1.68,
+   "score": 0.652,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-10T19:56+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -191,7 +215,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T19:43+00:00",
+  "seen": "2026-11-10T19:56+00:00",
   "start": "2026-11-11T02:00Z"
+ },
+ "prop|nba|401909965": {
+  "game": {
+   "date": "2026-11-11T04:00Z",
+   "event_id": "401909965",
+   "name": "Oklahoma City Thunder at Portland Trail Blazers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.021,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.652,
+   "name": "Donovan Clingan",
+   "pid": "5105565",
+   "price": "-228",
+   "prob": 0.681,
+   "projection": 1.191,
+   "score": 0.652,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-10T19:56+00:00",
+  "start": "2026-11-11T04:00Z"
  }
 }
