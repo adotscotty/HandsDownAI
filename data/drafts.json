@@ -49,22 +49,22 @@
    "projected_profit": 1.45,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T19:30+00:00",
+  "seen": "2026-11-10T19:43+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.69,
+   "chance": 0.693,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.69,
+     "chance": 0.693,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
      "name": "Giannis Antetokounmpo",
-     "odds": -275,
+     "odds": -279,
      "pid": "3032977",
      "projection": 0.392,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 27.27,
-   "price": -275,
-   "projected_profit": -1.18,
+   "payout": 27.17,
+   "price": -279,
+   "projected_profit": -1.17,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T19:30+00:00",
+  "seen": "2026-11-10T19:43+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T19:30+00:00",
+  "seen": "2026-11-10T19:43+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -118,7 +118,7 @@
      "chance": 0.6,
      "event_id": "401909965",
      "game": "OKC @ POR",
-     "odds": -135,
+     "odds": -130,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-11T04:00Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 34.81,
-   "price": -135,
-   "projected_profit": 0.89,
+   "payout": 35.38,
+   "price": -130,
+   "projected_profit": 1.23,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T19:30+00:00",
+  "seen": "2026-11-10T19:43+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -167,7 +167,7 @@
     "projected_profit": 0.8222800000000028
    }
   },
-  "seen": "2026-11-10T19:30+00:00",
+  "seen": "2026-11-10T19:43+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -178,44 +178,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.155,
+   "ev": -0.157,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.69,
+   "market_prob": 0.693,
    "name": "Giannis Antetokounmpo",
    "pid": "3032977",
-   "price": "-275",
-   "prob": 0.619,
+   "price": "-279",
+   "prob": 0.621,
    "projection": 0.392,
-   "score": 0.69,
+   "score": 0.693,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T19:30+00:00",
+  "seen": "2026-11-10T19:43+00:00",
   "start": "2026-11-11T02:00Z"
- },
- "prop|nba|401909965": {
-  "game": {
-   "date": "2026-11-11T04:00Z",
-   "event_id": "401909965",
-   "name": "Oklahoma City Thunder at Portland Trail Blazers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.026,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.657,
-   "name": "Kenrich Williams",
-   "pid": "3133626",
-   "price": "-233",
-   "prob": 0.718,
-   "projection": 1.573,
-   "score": 0.657,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-10T19:30+00:00",
-  "start": "2026-11-11T04:00Z"
  }
 }
