@@ -1,1 +1,26 @@
-{}
+{
+ "prop|nba|401909963": {
+  "game": {
+   "date": "2026-11-11T02:00Z",
+   "event_id": "401909963",
+   "name": "Miami Heat at Utah Jazz",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.033,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.66,
+   "name": "Bam Adebayo",
+   "pid": "4066261",
+   "price": "-236",
+   "prob": 0.679,
+   "projection": 1.139,
+   "score": 0.66,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-10T04:58+00:00",
+  "start": "2026-11-11T02:00Z"
+ }
+}
