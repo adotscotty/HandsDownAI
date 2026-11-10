@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1539,
+   "chance": 0.1557,
    "kind": "parlay",
    "legs": [
     {
@@ -31,25 +31,25 @@
      "type": "spread"
     },
     {
-     "chance": 0.526,
-     "event_id": "401909964",
-     "game": "ORL @ SAC",
-     "line": 6.5,
-     "odds": -107,
-     "side": "home",
+     "chance": 0.532,
+     "event_id": "401909965",
+     "game": "OKC @ POR",
+     "line": -1.5,
+     "odds": -111,
+     "side": "away",
      "sport": "nba",
-     "start": "2026-11-11T03:00Z",
-     "team": "SAC",
-     "team_name": "SAC",
+     "start": "2026-11-11T04:00Z",
+     "team": "OKC",
+     "team_name": "OKC",
      "type": "spread"
     }
    ],
-   "payout": 139.31,
-   "price": 597,
-   "projected_profit": 1.44,
+   "payout": 136.89,
+   "price": 584,
+   "projected_profit": 1.31,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.18,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,13 +132,13 @@
    "projected_profit": 0.92,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.27930600000000005,
+    "chance": 0.282492,
     "legs": [
      {
       "chance": 0.531,
@@ -152,22 +152,22 @@
       "team": "LAC"
      },
      {
-      "chance": 0.526,
-      "event_id": "401909964",
-      "game": "ORL @ SAC",
-      "line": 6.5,
-      "odds": -107,
-      "side": "home",
+      "chance": 0.532,
+      "event_id": "401909965",
+      "game": "OKC @ POR",
+      "line": -1.5,
+      "odds": -111,
+      "side": "away",
       "sport": "nba",
-      "start": "2026-11-11T03:00Z",
-      "team": "SAC"
+      "start": "2026-11-11T04:00Z",
+      "team": "OKC"
      }
     ],
-    "payout": 74.5171339563863,
-    "projected_profit": 0.8130826168224381
+    "payout": 73.2198865532199,
+    "projected_profit": 0.6840321921921948
    }
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909962": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -215,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -226,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.051,
+   "ev": -0.055,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.652,
+   "market_prob": 0.66,
    "name": "Ajay Mitchell",
    "pid": "4900671",
-   "price": "-228",
-   "prob": 0.66,
+   "price": "-236",
+   "prob": 0.663,
    "projection": 0.996,
-   "score": 0.652,
+   "score": 0.66,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:09+00:00",
+  "seen": "2026-11-10T20:10+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
