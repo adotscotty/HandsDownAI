@@ -49,24 +49,24 @@
    "projected_profit": 1.59,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T10:06+00:00",
+  "seen": "2026-11-10T10:19+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.664,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.664,
+     "chance": 0.656,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
-     "name": "Bam Adebayo",
-     "odds": -241,
-     "pid": "4066261",
-     "projection": 1.139,
+     "name": "Pelle Larsson",
+     "odds": -232,
+     "pid": "4601025",
+     "projection": 1.167,
      "side": "over",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.3,
-   "price": -241,
-   "projected_profit": -1.21,
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.22,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T10:06+00:00",
+  "seen": "2026-11-10T10:19+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.49,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T10:06+00:00",
+  "seen": "2026-11-10T10:19+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T10:06+00:00",
+  "seen": "2026-11-10T10:19+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -167,31 +167,7 @@
     "projected_profit": 0.7626648447205007
    }
   },
-  "seen": "2026-11-10T10:06+00:00",
-  "start": "2026-11-11T02:00Z"
- },
- "prop|nba|401909962": {
-  "game": {
-   "date": "2026-11-11T02:00Z",
-   "event_id": "401909962",
-   "name": "LA Clippers at Phoenix Suns",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.042,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.652,
-   "name": "Keaton Wagler",
-   "pid": "5254165",
-   "price": "-227",
-   "prob": 0.723,
-   "projection": 1.68,
-   "score": 0.652,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-10T10:06+00:00",
+  "seen": "2026-11-10T10:19+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -202,44 +178,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.037,
+   "ev": -0.027,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.664,
-   "name": "Bam Adebayo",
-   "pid": "4066261",
-   "price": "-241",
-   "prob": 0.681,
-   "projection": 1.139,
-   "score": 0.664,
+   "market_prob": 0.656,
+   "name": "Pelle Larsson",
+   "pid": "4601025",
+   "price": "-232",
+   "prob": 0.68,
+   "projection": 1.167,
+   "score": 0.656,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T10:06+00:00",
+  "seen": "2026-11-10T10:19+00:00",
   "start": "2026-11-11T02:00Z"
- },
- "prop|nba|401909965": {
-  "game": {
-   "date": "2026-11-11T04:00Z",
-   "event_id": "401909965",
-   "name": "Oklahoma City Thunder at Portland Trail Blazers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.187,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Kenrich Williams",
-   "pid": "3133626",
-   "price": "-230",
-   "prob": 0.567,
-   "projection": 1.573,
-   "score": 0.655,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-10T10:06+00:00",
-  "start": "2026-11-11T04:00Z"
  }
 }
