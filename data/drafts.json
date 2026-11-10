@@ -26,16 +26,16 @@
    "projected_profit": -1.21,
    "start": "2026-11-10T02:00Z"
   },
-  "seen": "2026-11-09T23:48+00:00",
+  "seen": "2026-11-10T00:01+00:00",
   "start": "2026-11-10T02:00Z"
  },
  "bet|2026-11-09|spread": {
   "bet": {
-   "chance": 0.554,
+   "chance": 0.546,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.554,
+     "chance": 0.546,
      "event_id": "401909955",
      "game": "MEM @ TOR",
      "line": 1.5,
@@ -50,10 +50,10 @@
    ],
    "payout": 38.35,
    "price": -109,
-   "projected_profit": 1.25,
+   "projected_profit": 0.94,
    "start": "2026-11-10T00:30Z"
   },
-  "seen": "2026-11-09T23:48+00:00",
+  "seen": "2026-11-10T00:01+00:00",
   "start": "2026-11-10T00:30Z"
  },
  "bet|2026-11-09|winner": {
@@ -79,83 +79,8 @@
    "projected_profit": 0.89,
    "start": "2026-11-10T01:30Z"
   },
-  "seen": "2026-11-09T23:48+00:00",
+  "seen": "2026-11-10T00:01+00:00",
   "start": "2026-11-10T01:30Z"
- },
- "parlay|2026-11-09|cbb": {
-  "card": {
-   "three": {
-    "chance": 0.296944532,
-    "legs": [
-     {
-      "chance": 0.641,
-      "event_id": "401921720",
-      "game": "UNF @ MIA",
-      "line": 36.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T00:00Z",
-      "team": "UNF"
-     },
-     {
-      "chance": 0.716,
-      "event_id": "401921815",
-      "game": "SIUE @ MIZ",
-      "line": 29.5,
-      "odds": -108,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T01:00Z",
-      "team": "SIUE"
-     },
-     {
-      "chance": 0.647,
-      "event_id": "401921810",
-      "game": "LT @ LSU",
-      "line": 29.5,
-      "odds": -108,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T01:00Z",
-      "team": "LT"
-     }
-    ],
-    "payout": 144.83506434123717,
-    "projected_profit": 23.00798039799856
-   },
-   "two": {
-    "chance": 0.458956,
-    "legs": [
-     {
-      "chance": 0.641,
-      "event_id": "401921720",
-      "game": "UNF @ MIA",
-      "line": 36.5,
-      "odds": -105,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T00:00Z",
-      "team": "UNF"
-     },
-     {
-      "chance": 0.716,
-      "event_id": "401921815",
-      "game": "SIUE @ MIZ",
-      "line": 29.5,
-      "odds": -108,
-      "side": "away",
-      "sport": "cbb",
-      "start": "2026-11-10T01:00Z",
-      "team": "SIUE"
-     }
-    ],
-    "payout": 75.20282186948853,
-    "projected_profit": 14.514786313932973
-   }
-  },
-  "seen": "2026-11-09T20:07+00:00",
-  "start": "2026-11-10T00:00Z"
  },
  "prop|nba|401909958": {
   "game": {
@@ -178,7 +103,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-09T23:48+00:00",
+  "seen": "2026-11-10T00:01+00:00",
   "start": "2026-11-10T02:00Z"
  }
 }
