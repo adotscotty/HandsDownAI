@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1571,
+   "chance": 0.1534,
    "kind": "parlay",
    "legs": [
     {
@@ -18,19 +18,6 @@
      "type": "spread"
     },
     {
-     "chance": 0.548,
-     "event_id": "401909963",
-     "game": "MIA @ UTAH",
-     "line": 9.5,
-     "odds": -115,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-11T02:00Z",
-     "team": "UTAH",
-     "team_name": "UTAH",
-     "type": "spread"
-    },
-    {
      "chance": 0.531,
      "event_id": "401909962",
      "game": "LAC @ PHX",
@@ -42,14 +29,27 @@
      "team": "LAC",
      "team_name": "LAC",
      "type": "spread"
+    },
+    {
+     "chance": 0.535,
+     "event_id": "401909963",
+     "game": "MIA @ UTAH",
+     "line": 8.5,
+     "odds": -115,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-11T02:00Z",
+     "team": "UTAH",
+     "team_name": "UTAH",
+     "type": "spread"
     }
    ],
    "payout": 136.31,
    "price": 582,
-   "projected_profit": 1.42,
+   "projected_profit": 0.91,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T14:16+00:00",
+  "seen": "2026-11-10T14:28+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,19 +79,19 @@
    "projected_profit": -1.2,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T14:16+00:00",
+  "seen": "2026-11-10T14:28+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "bet|2026-11-10|spread": {
   "bet": {
-   "chance": 0.548,
+   "chance": 0.535,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.548,
+     "chance": 0.535,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
-     "line": 9.5,
+     "line": 8.5,
      "odds": -115,
      "side": "home",
      "sport": "nba",
@@ -103,10 +103,10 @@
    ],
    "payout": 37.39,
    "price": -115,
-   "projected_profit": 0.49,
+   "projected_profit": 0.0,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T14:16+00:00",
+  "seen": "2026-11-10T14:28+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,25 +132,14 @@
    "projected_profit": 0.56,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T14:16+00:00",
+  "seen": "2026-11-10T14:28+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.290988,
+    "chance": 0.28408500000000003,
     "legs": [
-     {
-      "chance": 0.548,
-      "event_id": "401909963",
-      "game": "MIA @ UTAH",
-      "line": 9.5,
-      "odds": -115,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-11T02:00Z",
-      "team": "UTAH"
-     },
      {
       "chance": 0.531,
       "event_id": "401909962",
@@ -161,13 +150,24 @@
       "sport": "nba",
       "start": "2026-11-11T02:00Z",
       "team": "LAC"
+     },
+     {
+      "chance": 0.535,
+      "event_id": "401909963",
+      "game": "MIA @ UTAH",
+      "line": 8.5,
+      "odds": -115,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-11T02:00Z",
+      "team": "UTAH"
      }
     ],
-    "payout": 70.77639751552795,
-    "projected_profit": 0.5950823602484476
+    "payout": 70.77639751552793,
+    "projected_profit": 0.10651288819875404
    }
   },
-  "seen": "2026-11-10T14:16+00:00",
+  "seen": "2026-11-10T14:28+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -178,20 +178,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": 0.004,
+   "ev": 0.006,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.656,
+   "market_prob": 0.654,
    "name": "Bobby Portis",
    "pid": "3064482",
-   "price": "-232",
-   "prob": 0.702,
+   "price": "-229",
+   "prob": 0.701,
    "projection": 1.389,
-   "score": 0.656,
+   "score": 0.654,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T14:16+00:00",
+  "seen": "2026-11-10T14:28+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -215,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T14:16+00:00",
+  "seen": "2026-11-10T14:28+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
