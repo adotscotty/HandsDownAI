@@ -22,7 +22,7 @@
      "event_id": "401909964",
      "game": "ORL @ SAC",
      "line": 6.5,
-     "odds": -111,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-11T03:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 135.11,
-   "price": 576,
-   "projected_profit": 1.58,
+   "payout": 131.83,
+   "price": 559,
+   "projected_profit": 1.06,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.18,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -92,7 +92,7 @@
      "event_id": "401909964",
      "game": "ORL @ SAC",
      "line": 6.5,
-     "odds": -111,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-11T03:00Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.02,
-   "price": -111,
-   "projected_profit": 0.72,
+   "payout": 37.09,
+   "price": -117,
+   "projected_profit": 0.22,
    "start": "2026-11-11T03:00Z"
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.92,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -145,7 +145,7 @@
       "event_id": "401909964",
       "game": "ORL @ SAC",
       "line": 6.5,
-      "odds": -111,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-11T03:00Z",
@@ -163,12 +163,36 @@
       "team": "OKC"
      }
     ],
-    "payout": 72.26848470091714,
-    "projected_profit": 0.953524454183917
+    "payout": 70.51205051205052,
+    "projected_profit": 0.4442639254639289
    }
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T03:00Z"
+ },
+ "prop|nba|401909962": {
+  "game": {
+   "date": "2026-11-11T02:00Z",
+   "event_id": "401909962",
+   "name": "LA Clippers at Phoenix Suns",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.042,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.651,
+   "name": "Keaton Wagler",
+   "pid": "5254165",
+   "price": "-226",
+   "prob": 0.722,
+   "projection": 1.68,
+   "score": 0.651,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-10T21:02+00:00",
+  "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
   "game": {
@@ -191,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -202,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.074,
+   "ev": -0.031,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.661,
+   "line": 1.5,
+   "market_prob": 0.659,
    "name": "Keegan Murray",
    "pid": "4594327",
-   "price": "-237",
-   "prob": 0.651,
+   "price": "-235",
+   "prob": 0.68,
    "projection": 0.908,
-   "score": 0.661,
-   "side": "over",
+   "score": 0.659,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -239,7 +263,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:49+00:00",
+  "seen": "2026-11-10T21:02+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
