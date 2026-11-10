@@ -54,17 +54,17 @@
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.67,
+   "chance": 0.664,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.67,
+     "chance": 0.664,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
      "name": "Bam Adebayo",
-     "odds": -249,
+     "odds": -241,
      "pid": "4066261",
      "projection": 1.139,
      "side": "over",
@@ -74,9 +74,9 @@
      "type": "prop"
     }
    ],
-   "payout": 28.03,
-   "price": -249,
-   "projected_profit": -1.22,
+   "payout": 28.3,
+   "price": -241,
+   "projected_profit": -1.21,
    "start": "2026-11-11T02:00Z"
   },
   "seen": "2026-11-10T09:53+00:00",
@@ -202,16 +202,16 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.041,
+   "ev": -0.037,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.67,
+   "market_prob": 0.664,
    "name": "Bam Adebayo",
    "pid": "4066261",
-   "price": "-249",
-   "prob": 0.684,
+   "price": "-241",
+   "prob": 0.681,
    "projection": 1.139,
-   "score": 0.67,
+   "score": 0.664,
    "side": "over",
    "stat": "tpm"
   },
