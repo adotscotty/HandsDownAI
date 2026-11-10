@@ -49,7 +49,7 @@
    "projected_profit": 0.91,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T14:58+00:00",
+  "seen": "2026-11-10T15:11+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -63,10 +63,10 @@
      "game": "OKC @ POR",
      "label": "threes",
      "line": 1.5,
-     "name": "Kenrich Williams",
+     "name": "Donovan Clingan",
      "odds": -242,
-     "pid": "3133626",
-     "projection": 1.573,
+     "pid": "5105565",
+     "projection": 1.191,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-11T04:00Z",
@@ -79,7 +79,7 @@
    "projected_profit": -1.2,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T14:58+00:00",
+  "seen": "2026-11-10T15:11+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.0,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T14:58+00:00",
+  "seen": "2026-11-10T15:11+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.56,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T14:58+00:00",
+  "seen": "2026-11-10T15:11+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -167,7 +167,31 @@
     "projected_profit": 0.10651288819875404
    }
   },
-  "seen": "2026-11-10T14:58+00:00",
+  "seen": "2026-11-10T15:11+00:00",
+  "start": "2026-11-11T02:00Z"
+ },
+ "prop|nba|401909962": {
+  "game": {
+   "date": "2026-11-11T02:00Z",
+   "event_id": "401909962",
+   "name": "LA Clippers at Phoenix Suns",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.146,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.655,
+   "name": "Derrick Jones Jr.",
+   "pid": "3936099",
+   "price": "-230",
+   "prob": 0.595,
+   "projection": 1.382,
+   "score": 0.655,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-10T15:11+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -191,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T14:58+00:00",
+  "seen": "2026-11-10T15:11+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -202,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.192,
+   "ev": -0.108,
    "label": "threes",
    "line": 1.5,
    "market_prob": 0.665,
-   "name": "Kenrich Williams",
-   "pid": "3133626",
+   "name": "Donovan Clingan",
+   "pid": "5105565",
    "price": "-242",
-   "prob": 0.572,
-   "projection": 1.573,
+   "prob": 0.631,
+   "projection": 1.191,
    "score": 0.665,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T14:58+00:00",
+  "seen": "2026-11-10T15:11+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
