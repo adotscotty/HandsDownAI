@@ -1,15 +1,15 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1559,
+   "chance": 0.1588,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.551,
+     "chance": 0.561,
      "event_id": "401866459",
      "game": "KENT @ BGSU",
-     "line": -4.5,
-     "odds": -115,
+     "line": -3.5,
+     "odds": -112,
      "side": "home",
      "sport": "cfb",
      "start": "2026-11-11T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 136.89,
-   "price": 584,
-   "projected_profit": 1.35,
+   "payout": 138.59,
+   "price": 593,
+   "projected_profit": 2.01,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T23:01+00:00",
+  "seen": "2026-11-10T23:14+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.19,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T23:01+00:00",
+  "seen": "2026-11-10T23:14+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,34 +106,34 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T23:01+00:00",
+  "seen": "2026-11-10T23:14+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
   "bet": {
-   "chance": 0.581,
+   "chance": 0.654,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.581,
-     "event_id": "401909965",
-     "game": "OKC @ POR",
-     "odds": -125,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-11T04:00Z",
-     "team": "OKC",
-     "team_name": "Oklahoma City Thunder",
+     "chance": 0.654,
+     "event_id": "401866459",
+     "game": "KENT @ BGSU",
+     "odds": -180,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-11-11T00:00Z",
+     "team": "BGSU",
+     "team_name": "Bowling Green Falcons",
      "type": "ml"
     }
    ],
-   "payout": 36.0,
-   "price": -125,
-   "projected_profit": 0.92,
-   "start": "2026-11-11T04:00Z"
+   "payout": 31.11,
+   "price": -180,
+   "projected_profit": 0.35,
+   "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T23:01+00:00",
-  "start": "2026-11-11T04:00Z"
+  "seen": "2026-11-10T23:14+00:00",
+  "start": "2026-11-11T00:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
@@ -167,32 +167,8 @@
     "projected_profit": 0.7229851718385127
    }
   },
-  "seen": "2026-11-10T23:01+00:00",
+  "seen": "2026-11-10T23:14+00:00",
   "start": "2026-11-11T03:00Z"
- },
- "prop|nba|401909962": {
-  "game": {
-   "date": "2026-11-11T02:00Z",
-   "event_id": "401909962",
-   "name": "LA Clippers at Phoenix Suns",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.042,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.651,
-   "name": "Keaton Wagler",
-   "pid": "5254165",
-   "price": "-226",
-   "prob": 0.722,
-   "projection": 1.68,
-   "score": 0.651,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-10T23:01+00:00",
-  "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
   "game": {
@@ -215,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:01+00:00",
+  "seen": "2026-11-10T23:14+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -239,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:01+00:00",
+  "seen": "2026-11-10T23:14+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -263,7 +239,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:01+00:00",
+  "seen": "2026-11-10T23:14+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
