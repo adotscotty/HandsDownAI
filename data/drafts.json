@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.161,
+   "chance": 0.1536,
    "kind": "parlay",
    "legs": [
     {
@@ -31,40 +31,40 @@
      "type": "spread"
     },
     {
-     "chance": 0.544,
-     "event_id": "401909962",
-     "game": "LAC @ PHX",
-     "line": 4.5,
-     "odds": -110,
+     "chance": 0.519,
+     "event_id": "401909965",
+     "game": "OKC @ POR",
+     "line": -2.5,
+     "odds": -105,
      "side": "away",
      "sport": "nba",
-     "start": "2026-11-11T02:00Z",
-     "team": "LAC",
-     "team_name": "LAC",
+     "start": "2026-11-11T04:00Z",
+     "team": "OKC",
+     "team_name": "OKC",
      "type": "spread"
     }
    ],
-   "payout": 140.39,
-   "price": 602,
-   "projected_profit": 2.6,
+   "payout": 143.57,
+   "price": 618,
+   "projected_profit": 2.05,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T06:32+00:00",
+  "seen": "2026-11-10T06:45+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.665,
+   "chance": 0.658,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.665,
+     "chance": 0.658,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
      "name": "Bam Adebayo",
-     "odds": -242,
+     "odds": -234,
      "pid": "4066261",
      "projection": 1.139,
      "side": "over",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.26,
-   "price": -242,
-   "projected_profit": -1.2,
+   "payout": 28.55,
+   "price": -234,
+   "projected_profit": -1.22,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T06:32+00:00",
+  "seen": "2026-11-10T06:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.92,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T06:32+00:00",
+  "seen": "2026-11-10T06:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,13 +132,13 @@
    "projected_profit": 1.23,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T06:32+00:00",
+  "seen": "2026-11-10T06:45+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.29811200000000004,
+    "chance": 0.28441200000000005,
     "legs": [
      {
       "chance": 0.548,
@@ -152,22 +152,22 @@
       "team": "UTAH"
      },
      {
-      "chance": 0.544,
-      "event_id": "401909962",
-      "game": "LAC @ PHX",
-      "line": 4.5,
-      "odds": -110,
+      "chance": 0.519,
+      "event_id": "401909965",
+      "game": "OKC @ POR",
+      "line": -2.5,
+      "odds": -105,
       "side": "away",
       "sport": "nba",
-      "start": "2026-11-11T02:00Z",
-      "team": "LAC"
+      "start": "2026-11-11T04:00Z",
+      "team": "OKC"
      }
     ],
-    "payout": 72.89256198347108,
-    "projected_profit": 1.7301474380165338
+    "payout": 74.54545454545455,
+    "projected_profit": 1.201621818181824
    }
   },
-  "seen": "2026-11-10T06:32+00:00",
+  "seen": "2026-11-10T06:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -178,20 +178,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.037,
+   "ev": -0.032,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.665,
+   "market_prob": 0.658,
    "name": "Bam Adebayo",
    "pid": "4066261",
-   "price": "-242",
-   "prob": 0.681,
+   "price": "-234",
+   "prob": 0.678,
    "projection": 1.139,
-   "score": 0.665,
+   "score": 0.658,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T06:32+00:00",
+  "seen": "2026-11-10T06:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -215,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T06:32+00:00",
+  "seen": "2026-11-10T06:45+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
