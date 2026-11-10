@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1488,
+   "chance": 0.2867,
    "kind": "parlay",
    "legs": [
     {
@@ -29,27 +29,14 @@
      "team": "LAC",
      "team_name": "LAC",
      "type": "spread"
-    },
-    {
-     "chance": 0.519,
-     "event_id": "401909965",
-     "game": "OKC @ POR",
-     "line": -2.5,
-     "odds": -104,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-11T04:00Z",
-     "team": "OKC",
-     "team_name": "OKC",
-     "type": "spread"
     }
    ],
-   "payout": 145.51,
-   "price": 628,
-   "projected_profit": 1.66,
+   "payout": 74.18,
+   "price": 271,
+   "projected_profit": 1.27,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,43 +66,43 @@
    "projected_profit": -1.2,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
   "bet": {
-   "chance": 0.535,
+   "chance": 0.531,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.535,
-     "event_id": "401909963",
-     "game": "MIA @ UTAH",
-     "line": 8.5,
-     "odds": -115,
-     "side": "home",
+     "chance": 0.531,
+     "event_id": "401909962",
+     "game": "LAC @ PHX",
+     "line": 3.5,
+     "odds": -108,
+     "side": "away",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
-     "team": "UTAH",
-     "team_name": "Utah Jazz",
+     "team": "LAC",
+     "team_name": "LA Clippers",
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 0.0,
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 0.45,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
   "bet": {
-   "chance": 0.6,
+   "chance": 0.581,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.6,
+     "chance": 0.581,
      "event_id": "401909965",
      "game": "OKC @ POR",
      "odds": -135,
@@ -129,16 +116,16 @@
    ],
    "payout": 34.81,
    "price": -135,
-   "projected_profit": 0.89,
+   "projected_profit": 0.23,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.27558900000000003,
+    "chance": 0.27718200000000004,
     "legs": [
      {
       "chance": 0.531,
@@ -152,22 +139,22 @@
       "team": "LAC"
      },
      {
-      "chance": 0.519,
-      "event_id": "401909965",
-      "game": "OKC @ POR",
-      "line": -2.5,
-      "odds": -104,
-      "side": "away",
+      "chance": 0.522,
+      "event_id": "401909963",
+      "game": "MIA @ UTAH",
+      "line": 7.5,
+      "odds": -110,
+      "side": "home",
       "sport": "nba",
-      "start": "2026-11-11T04:00Z",
-      "team": "OKC"
+      "start": "2026-11-11T02:00Z",
+      "team": "UTAH"
      }
     ],
-    "payout": 75.55555555555556,
-    "projected_profit": 0.8222800000000028
+    "payout": 73.53535353535354,
+    "projected_profit": 0.38267636363636726
    }
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909961": {
@@ -191,7 +178,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T01:00Z"
  },
  "prop|nba|401909962": {
@@ -215,7 +202,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -239,7 +226,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -263,7 +250,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T18:12+00:00",
+  "seen": "2026-11-10T18:24+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
