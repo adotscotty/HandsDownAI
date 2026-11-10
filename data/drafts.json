@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1557,
+   "chance": 0.158,
    "kind": "parlay",
    "legs": [
     {
@@ -18,16 +18,16 @@
      "type": "spread"
     },
     {
-     "chance": 0.531,
-     "event_id": "401909962",
-     "game": "LAC @ PHX",
-     "line": 3.5,
-     "odds": -108,
-     "side": "away",
+     "chance": 0.539,
+     "event_id": "401909963",
+     "game": "MIA @ UTAH",
+     "line": 9.5,
+     "odds": -115,
+     "side": "home",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
-     "team": "LAC",
-     "team_name": "LAC",
+     "team": "UTAH",
+     "team_name": "UTAH",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 136.89,
-   "price": 584,
-   "projected_profit": 1.31,
+   "payout": 132.88,
+   "price": 564,
+   "projected_profit": 1.0,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T20:23+00:00",
+  "seen": "2026-11-10T20:36+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.18,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T20:23+00:00",
+  "seen": "2026-11-10T20:36+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T20:23+00:00",
+  "seen": "2026-11-10T20:36+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,24 +132,24 @@
    "projected_profit": 0.92,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T20:23+00:00",
+  "seen": "2026-11-10T20:36+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.282492,
+    "chance": 0.28674800000000006,
     "legs": [
      {
-      "chance": 0.531,
-      "event_id": "401909962",
-      "game": "LAC @ PHX",
-      "line": 3.5,
-      "odds": -108,
-      "side": "away",
+      "chance": 0.539,
+      "event_id": "401909963",
+      "game": "MIA @ UTAH",
+      "line": 9.5,
+      "odds": -115,
+      "side": "home",
       "sport": "nba",
       "start": "2026-11-11T02:00Z",
-      "team": "LAC"
+      "team": "UTAH"
      },
      {
       "chance": 0.532,
@@ -163,35 +163,11 @@
       "team": "OKC"
      }
     ],
-    "payout": 73.2198865532199,
-    "projected_profit": 0.6840321921921948
+    "payout": 71.07716412064238,
+    "projected_profit": 0.3812346572659635
    }
   },
-  "seen": "2026-11-10T20:23+00:00",
-  "start": "2026-11-11T02:00Z"
- },
- "prop|nba|401909962": {
-  "game": {
-   "date": "2026-11-11T02:00Z",
-   "event_id": "401909962",
-   "name": "LA Clippers at Phoenix Suns",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": 0.042,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.652,
-   "name": "Keaton Wagler",
-   "pid": "5254165",
-   "price": "-227",
-   "prob": 0.723,
-   "projection": 1.68,
-   "score": 0.652,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-10T20:23+00:00",
+  "seen": "2026-11-10T20:36+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -215,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:23+00:00",
+  "seen": "2026-11-10T20:36+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -239,7 +215,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T20:23+00:00",
+  "seen": "2026-11-10T20:36+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
