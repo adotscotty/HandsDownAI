@@ -49,8 +49,38 @@
    "projected_profit": 1.42,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T10:32+00:00",
+  "seen": "2026-11-10T10:45+00:00",
   "start": "2026-11-11T00:00Z"
+ },
+ "bet|2026-11-10|prop": {
+  "bet": {
+   "chance": 0.652,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.652,
+     "event_id": "401909963",
+     "game": "MIA @ UTAH",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Bobby Portis",
+     "odds": -227,
+     "pid": "3064482",
+     "projection": 1.389,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-11T02:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.81,
+   "price": -227,
+   "projected_profit": -1.22,
+   "start": "2026-11-11T02:00Z"
+  },
+  "seen": "2026-11-10T10:45+00:00",
+  "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
   "bet": {
@@ -76,7 +106,7 @@
    "projected_profit": 0.49,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T10:32+00:00",
+  "seen": "2026-11-10T10:45+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -102,7 +132,7 @@
    "projected_profit": 0.51,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T10:32+00:00",
+  "seen": "2026-11-10T10:45+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -137,7 +167,31 @@
     "projected_profit": 0.5950823602484476
    }
   },
-  "seen": "2026-11-10T10:32+00:00",
+  "seen": "2026-11-10T10:45+00:00",
+  "start": "2026-11-11T02:00Z"
+ },
+ "prop|nba|401909963": {
+  "game": {
+   "date": "2026-11-11T02:00Z",
+   "event_id": "401909963",
+   "name": "Miami Heat at Utah Jazz",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.146,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.652,
+   "name": "Bobby Portis",
+   "pid": "3064482",
+   "price": "-227",
+   "prob": 0.593,
+   "projection": 1.389,
+   "score": 0.652,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-10T10:45+00:00",
   "start": "2026-11-11T02:00Z"
  }
 }
