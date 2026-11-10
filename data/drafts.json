@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1577,
+   "chance": 0.1518,
    "kind": "parlay",
    "legs": [
     {
@@ -18,19 +18,6 @@
      "type": "spread"
     },
     {
-     "chance": 0.539,
-     "event_id": "401909963",
-     "game": "MIA @ UTAH",
-     "line": 9.5,
-     "odds": -110,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-11T02:00Z",
-     "team": "UTAH",
-     "team_name": "UTAH",
-     "type": "spread"
-    },
-    {
      "chance": 0.531,
      "event_id": "401909962",
      "game": "LAC @ PHX",
@@ -42,14 +29,27 @@
      "team": "LAC",
      "team_name": "LAC",
      "type": "spread"
+    },
+    {
+     "chance": 0.519,
+     "event_id": "401909965",
+     "game": "OKC @ POR",
+     "line": -2.5,
+     "odds": -104,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-11T04:00Z",
+     "team": "OKC",
+     "team_name": "OKC",
+     "type": "spread"
     }
    ],
-   "payout": 137.48,
-   "price": 587,
-   "projected_profit": 1.68,
+   "payout": 141.26,
+   "price": 606,
+   "projected_profit": 1.45,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T19:04+00:00",
+  "seen": "2026-11-10T19:17+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.18,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T19:04+00:00",
+  "seen": "2026-11-10T19:17+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -92,7 +92,7 @@
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "line": 9.5,
-     "odds": -110,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 0.58,
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T19:04+00:00",
+  "seen": "2026-11-10T19:17+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,25 +132,14 @@
    "projected_profit": 0.89,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T19:04+00:00",
+  "seen": "2026-11-10T19:17+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.28620900000000005,
+    "chance": 0.27558900000000003,
     "legs": [
-     {
-      "chance": 0.539,
-      "event_id": "401909963",
-      "game": "MIA @ UTAH",
-      "line": 9.5,
-      "odds": -110,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-11T02:00Z",
-      "team": "UTAH"
-     },
      {
       "chance": 0.531,
       "event_id": "401909962",
@@ -161,13 +150,24 @@
       "sport": "nba",
       "start": "2026-11-11T02:00Z",
       "team": "LAC"
+     },
+     {
+      "chance": 0.519,
+      "event_id": "401909965",
+      "game": "OKC @ POR",
+      "line": -2.5,
+      "odds": -104,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-11T04:00Z",
+      "team": "OKC"
      }
     ],
-    "payout": 73.53535353535355,
-    "projected_profit": 1.046480000000006
+    "payout": 75.55555555555556,
+    "projected_profit": 0.8222800000000028
    }
   },
-  "seen": "2026-11-10T19:04+00:00",
+  "seen": "2026-11-10T19:17+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -191,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T19:04+00:00",
+  "seen": "2026-11-10T19:17+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -215,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T19:04+00:00",
+  "seen": "2026-11-10T19:17+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
