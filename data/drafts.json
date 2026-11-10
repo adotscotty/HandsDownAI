@@ -1,7 +1,7 @@
 {
  "bet|2026-11-10|parlay": {
   "bet": {
-   "chance": 0.1598,
+   "chance": 0.1559,
    "kind": "parlay",
    "legs": [
     {
@@ -18,11 +18,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.545,
+     "chance": 0.532,
      "event_id": "401909964",
      "game": "ORL @ SAC",
-     "line": 6.5,
-     "odds": -117,
+     "line": 5.5,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-11T03:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 131.83,
-   "price": 559,
-   "projected_profit": 1.06,
+   "payout": 136.89,
+   "price": 584,
+   "projected_profit": 1.35,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
@@ -79,35 +79,35 @@
    "projected_profit": -1.18,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
   "bet": {
-   "chance": 0.545,
+   "chance": 0.539,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.545,
-     "event_id": "401909964",
-     "game": "ORL @ SAC",
-     "line": 6.5,
-     "odds": -117,
+     "chance": 0.539,
+     "event_id": "401909963",
+     "game": "MIA @ UTAH",
+     "line": 9.5,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-11T03:00Z",
-     "team": "SAC",
-     "team_name": "Sacramento Kings",
+     "start": "2026-11-11T02:00Z",
+     "team": "UTAH",
+     "team_name": "Utah Jazz",
      "type": "spread"
     }
    ],
-   "payout": 37.09,
-   "price": -117,
-   "projected_profit": 0.22,
-   "start": "2026-11-11T03:00Z"
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 0.15,
+   "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T21:03+00:00",
-  "start": "2026-11-11T03:00Z"
+  "seen": "2026-11-10T21:16+00:00",
+  "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
   "bet": {
@@ -132,20 +132,20 @@
    "projected_profit": 0.92,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.28994000000000003,
+    "chance": 0.28302400000000005,
     "legs": [
      {
-      "chance": 0.545,
+      "chance": 0.532,
       "event_id": "401909964",
       "game": "ORL @ SAC",
-      "line": 6.5,
-      "odds": -117,
+      "line": 5.5,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-11T03:00Z",
@@ -163,11 +163,11 @@
       "team": "OKC"
      }
     ],
-    "payout": 70.51205051205052,
-    "projected_profit": 0.4442639254639289
+    "payout": 73.2198865532199,
+    "projected_profit": 0.7229851718385127
    }
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909962": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -215,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -226,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.074,
+   "ev": -0.03,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.661,
+   "line": 1.5,
+   "market_prob": 0.657,
    "name": "Keegan Murray",
    "pid": "4594327",
-   "price": "-237",
-   "prob": 0.651,
+   "price": "-233",
+   "prob": 0.679,
    "projection": 0.908,
-   "score": 0.661,
-   "side": "over",
+   "score": 0.657,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -250,20 +250,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.059,
+   "ev": -0.024,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.663,
-   "name": "Ajay Mitchell",
-   "pid": "4900671",
-   "price": "-240",
-   "prob": 0.664,
-   "projection": 0.996,
-   "score": 0.663,
+   "market_prob": 0.659,
+   "name": "Donovan Clingan",
+   "pid": "5105565",
+   "price": "-235",
+   "prob": 0.684,
+   "projection": 1.191,
+   "score": 0.659,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:03+00:00",
+  "seen": "2026-11-10T21:16+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
