@@ -49,22 +49,22 @@
    "projected_profit": 1.35,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.686,
+   "chance": 0.693,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.686,
+     "chance": 0.693,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
      "name": "Giannis Antetokounmpo",
-     "odds": -269,
+     "odds": -280,
      "pid": "3032977",
      "projection": 0.392,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 27.43,
-   "price": -269,
-   "projected_profit": -1.18,
+   "payout": 27.14,
+   "price": -280,
+   "projected_profit": -1.19,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.92,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -167,7 +167,7 @@
     "projected_profit": 0.7229851718385127
    }
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909962": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -202,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.153,
+   "ev": -0.157,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.686,
+   "market_prob": 0.693,
    "name": "Giannis Antetokounmpo",
    "pid": "3032977",
-   "price": "-269",
-   "prob": 0.617,
+   "price": "-280",
+   "prob": 0.621,
    "projection": 0.392,
-   "score": 0.686,
+   "score": 0.693,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -226,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.03,
+   "ev": -0.031,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.657,
+   "market_prob": 0.659,
    "name": "Keegan Murray",
    "pid": "4594327",
-   "price": "-233",
-   "prob": 0.679,
+   "price": "-235",
+   "prob": 0.68,
    "projection": 0.908,
-   "score": 0.657,
+   "score": 0.659,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -263,7 +263,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T21:16+00:00",
+  "seen": "2026-11-10T21:29+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
