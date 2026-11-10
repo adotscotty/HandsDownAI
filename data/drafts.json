@@ -49,24 +49,24 @@
    "projected_profit": 0.91,
    "start": "2026-11-11T00:00Z"
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T00:00Z"
  },
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.658,
+   "chance": 0.657,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.658,
+     "chance": 0.657,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 1.5,
-     "name": "Bam Adebayo",
+     "name": "Bobby Portis",
      "odds": -234,
-     "pid": "4066261",
-     "projection": 1.139,
+     "pid": "3064482",
+     "projection": 1.389,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
@@ -76,10 +76,10 @@
    ],
    "payout": 28.55,
    "price": -234,
-   "projected_profit": -1.22,
+   "projected_profit": -1.24,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.0,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.56,
    "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T04:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -167,7 +167,7 @@
     "projected_profit": 0.10651288819875404
    }
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909962": {
@@ -191,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
@@ -202,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.091,
+   "ev": -0.15,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.658,
-   "name": "Bam Adebayo",
-   "pid": "4066261",
+   "market_prob": 0.657,
+   "name": "Bobby Portis",
+   "pid": "3064482",
    "price": "-234",
-   "prob": 0.637,
-   "projection": 1.139,
-   "score": 0.658,
+   "prob": 0.595,
+   "projection": 1.389,
+   "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909965": {
@@ -239,7 +239,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T15:39+00:00",
+  "seen": "2026-11-10T15:59+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
