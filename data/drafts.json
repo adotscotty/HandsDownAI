@@ -1,77 +1,101 @@
 {
  "bet|2026-11-10|prop": {
   "bet": {
-   "chance": 0.667,
+   "chance": 0.664,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.667,
-     "event_id": "401909963",
-     "game": "MIA @ UTAH",
+     "chance": 0.664,
+     "event_id": "401909965",
+     "game": "OKC @ POR",
      "label": "threes",
      "line": 0.5,
-     "name": "Giannis Antetokounmpo",
-     "odds": -244,
-     "pid": "3032977",
-     "projection": 0.392,
-     "side": "under",
+     "name": "Ajay Mitchell",
+     "odds": -241,
+     "pid": "4900671",
+     "projection": 0.996,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-11T02:00Z",
+     "start": "2026-11-11T04:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.2,
-   "price": -244,
-   "projected_profit": -1.19,
-   "start": "2026-11-11T02:00Z"
+   "payout": 28.3,
+   "price": -241,
+   "projected_profit": -1.21,
+   "start": "2026-11-11T04:00Z"
   },
-  "seen": "2026-11-11T00:19+00:00",
-  "start": "2026-11-11T02:00Z"
+  "seen": "2026-11-11T00:32+00:00",
+  "start": "2026-11-11T04:00Z"
  },
  "bet|2026-11-10|spread": {
   "bet": {
-   "chance": 0.54,
+   "chance": 0.532,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.54,
-     "event_id": "401909963",
-     "game": "MIA @ UTAH",
-     "line": 8.5,
-     "odds": -107,
+     "chance": 0.532,
+     "event_id": "401909964",
+     "game": "ORL @ SAC",
+     "line": 5.5,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-11T02:00Z",
-     "team": "UTAH",
-     "team_name": "Utah Jazz",
+     "start": "2026-11-11T03:00Z",
+     "team": "SAC",
+     "team_name": "Sacramento Kings",
      "type": "spread"
     }
    ],
-   "payout": 38.69,
-   "price": -107,
-   "projected_profit": 0.89,
-   "start": "2026-11-11T02:00Z"
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 0.49,
+   "start": "2026-11-11T03:00Z"
   },
-  "seen": "2026-11-11T00:19+00:00",
-  "start": "2026-11-11T02:00Z"
+  "seen": "2026-11-11T00:32+00:00",
+  "start": "2026-11-11T03:00Z"
+ },
+ "parlay|2026-11-10|cfb": {
+  "card": {
+   "two": {
+    "chance": 0.30144400000000005,
+    "legs": [
+     {
+      "chance": 0.527,
+      "event_id": "401866460",
+      "game": "OHIO @ M-OH",
+      "line": 1.5,
+      "odds": -112,
+      "side": "home",
+      "sport": "cfb",
+      "start": "2026-11-11T01:00Z",
+      "team": "M-OH"
+     },
+     {
+      "chance": 0.5720000000000001,
+      "event_id": "401866462",
+      "game": "SAC @ CMU",
+      "line": 18.5,
+      "odds": -115,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-11-12T00:30Z",
+      "team": "SAC"
+     }
+    ],
+    "payout": 70.77639751552795,
+    "projected_profit": 1.3351203726708079
+   }
+  },
+  "seen": "2026-11-11T00:32+00:00",
+  "start": "2026-11-11T01:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.28728000000000004,
+    "chance": 0.28302400000000005,
     "legs": [
-     {
-      "chance": 0.54,
-      "event_id": "401909963",
-      "game": "MIA @ UTAH",
-      "line": 8.5,
-      "odds": -107,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-11T02:00Z",
-      "team": "UTAH"
-     },
      {
       "chance": 0.532,
       "event_id": "401909964",
@@ -82,14 +106,25 @@
       "sport": "nba",
       "start": "2026-11-11T03:00Z",
       "team": "SAC"
+     },
+     {
+      "chance": 0.532,
+      "event_id": "401909965",
+      "game": "OKC @ POR",
+      "line": -1.5,
+      "odds": -111,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-11T04:00Z",
+      "team": "OKC"
      }
     ],
-    "payout": 74.5171339563863,
-    "projected_profit": 1.4072822429906608
+    "payout": 73.2198865532199,
+    "projected_profit": 0.7229851718385127
    }
   },
-  "seen": "2026-11-11T00:19+00:00",
-  "start": "2026-11-11T02:00Z"
+  "seen": "2026-11-11T00:32+00:00",
+  "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909963": {
   "game": {
@@ -99,20 +134,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.143,
+   "ev": -0.101,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.667,
-   "name": "Giannis Antetokounmpo",
-   "pid": "3032977",
-   "price": "-244",
-   "prob": 0.608,
-   "projection": 0.392,
-   "score": 0.667,
+   "line": 1.5,
+   "market_prob": 0.663,
+   "name": "Pelle Larsson",
+   "pid": "4601025",
+   "price": "-240",
+   "prob": 0.634,
+   "projection": 1.167,
+   "score": 0.663,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T00:19+00:00",
+  "seen": "2026-11-11T00:32+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -136,7 +171,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T00:19+00:00",
+  "seen": "2026-11-11T00:32+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -160,7 +195,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T00:19+00:00",
+  "seen": "2026-11-11T00:32+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
