@@ -46,7 +46,7 @@ cbb,401925818,2026-11-03T00:00Z,INST,Indiana State Sycamores,CLT,Charlotte 49ers
 cbb,401924875,2026-11-03T00:00Z,SHU,Sacred Heart Pioneers,USCG,Coast Guard Bears,111,44,,9.75,9.75,0.82,0.0,0.0,1,0
 cbb,401924743,2026-11-03T00:00Z,YALE,Yale Bulldogs,HOW,Howard Bison,72,62,-8.5,3.6,-3.75,0.63,0.0,0.0,1,1
 cbb,401923324,2026-11-03T00:00Z,UML,UMass Lowell River Hawks,RIVI,Rivier Raiders,121,57,,11.45,11.45,0.86,0.0,0.0,1,0
-cbb,401922247,2026-11-03T00:00Z,UWF,West Florida Argonauts,SEBC,Southeastern Baptist Chargers,127,42,,4.06,4.06,0.65,0.0,0.0,0,0
+cbb,401922247,2026-11-03T00:00Z,UWF,West Florida Argonauts,SEBC,Southeastern Baptist Chargers,127,42,,4.06,4.06,0.65,0.0,0.0,1,0
 cbb,401921766,2026-11-03T00:00Z,WVU,West Virginia Mountaineers,NIA,Niagara Purple Eagles,91,46,-28.5,27.53,26.07,1.0,0.0,0.0,1,1
 cbb,401921753,2026-11-03T00:00Z,UCF,UCF Knights,FGCU,Florida Gulf Coast Eagles,96,95,-22.5,20.99,18.73,0.98,0.0,0.0,1,1
 cbb,401921139,2026-11-03T00:00Z,COLU,Columbia Lions,ELON,Elon Phoenix,71,84,-4.5,5.56,7.14,0.7,0.0,0.0,1,1
@@ -306,7 +306,7 @@ cbb,401909739,2026-11-06T03:30Z,ARIZ,Arizona Wildcats,CP,Cal Poly Mustangs,104,8
 cbb,401909552,2026-11-06T21:00Z,BC,Boston College Eagles,MASS,Massachusetts Minutemen,71,55,-5.5,5.24,4.85,0.69,0.0,0.0,1,1
 cbb,401920423,2026-11-06T22:00Z,UVA,Virginia Cavaliers,NE,Northeastern Huskies,97,72,-33.5,30.85,26.88,1.0,0.0,0.0,1,1
 cbb,401909751,2026-11-06T22:00Z,BAY,Baylor Bears,UAPB,Arkansas-Pine Bluff Golden Lions,109,53,-38.5,32.08,22.45,1.0,0.0,0.0,1,1
-cbb,401922248,2026-11-06T22:00Z,FIU,Florida International Panthers,UWF,West Florida Argonauts,85,75,-16.5,13.96,10.15,0.91,0.0,0.0,1,0
+cbb,401922248,2026-11-06T22:00Z,FIU,Florida International Panthers,UWF,West Florida Argonauts,85,75,-16.5,13.96,10.15,0.91,0.0,0.0,1,1
 cbb,401920717,2026-11-06T23:00Z,ORE,Oregon Ducks,EWU,Eastern Washington Eagles,98,71,-16.5,18.01,20.27,0.96,0.0,0.0,1,1
 cbb,401916314,2026-11-06T23:30Z,OSU,Ohio State Buckeyes,YSU,Youngstown State Penguins,89,65,-25.5,24.83,23.83,0.99,0.0,0.0,1,1
 cbb,401922059,2026-11-06T23:30Z,UPST,South Carolina Upstate Spartans,SCST,South Carolina State Bulldogs,70,78,-3.5,1.76,-0.86,0.57,0.0,0.0,1,1
@@ -490,7 +490,7 @@ cbb,401911010,2026-11-10T00:00Z,BGSU,Bowling Green Falcons,CLE,Cleveland State V
 cbb,401911008,2026-11-10T00:00Z,BALL,Ball State Cardinals,BRES,Brescia Bearcats,89,64,,16.14,16.14,0.94,0.0,0.0,1,0
 cbb,401921720,2026-11-10T00:00Z,MIA,Miami Hurricanes,UNF,North Florida Ospreys,89,51,-35.5,32.12,27.06,1.0,0.0,0.0,1,1
 cbb,401929047,2026-11-10T00:00Z,WIU,Western Illinois Leathernecks,SCIA,Simpson (IA) Storm,90,48,,3.93,3.93,0.65,0.0,0.0,1,0
-cbb,401922249,2026-11-10T00:00Z,UWF,West Florida Argonauts,BAP,Baptist (Fl) Eagles,110,59,,13.65,13.65,0.9,0.0,0.0,0,0
+cbb,401922249,2026-11-10T00:00Z,UWF,West Florida Argonauts,BAP,Baptist (Fl) Eagles,110,59,,13.65,13.65,0.9,0.0,0.0,1,0
 cbb,401920972,2026-11-10T00:00Z,UTC,Chattanooga Mocs,COV,Covenant Fighting Scots,97,67,,8.65,8.65,0.8,0.0,0.0,1,0
 cbb,401918074,2026-11-10T00:00Z,CLEM,Clemson Tigers,UND,North Dakota Fighting Hawks,92,77,-23.5,23.47,23.44,0.99,0.0,0.0,1,1
 cbb,401920686,2026-11-10T00:00Z,CONN,UConn Huskies,WAG,Wagner Seahawks,83,41,-39.5,37.3,34.0,1.0,0.0,0.0,1,1

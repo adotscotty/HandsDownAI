@@ -10,23 +10,23 @@
      "game": "MIA @ UTAH",
      "label": "threes",
      "line": 0.5,
-     "name": "Bam Adebayo",
-     "odds": -245,
-     "pid": "4066261",
-     "projection": 1.139,
-     "side": "over",
+     "name": "Giannis Antetokounmpo",
+     "odds": -244,
+     "pid": "3032977",
+     "projection": 0.392,
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.16,
-   "price": -245,
-   "projected_profit": -1.22,
+   "payout": 28.2,
+   "price": -244,
+   "projected_profit": -1.19,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T23:54+00:00",
+  "seen": "2026-11-11T00:06+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
@@ -53,7 +53,7 @@
    "projected_profit": 0.15,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-10T23:54+00:00",
+  "seen": "2026-11-11T00:06+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "parlay|2026-11-10|nba": {
@@ -88,7 +88,7 @@
     "projected_profit": 0.7229851718385127
    }
   },
-  "seen": "2026-11-10T23:54+00:00",
+  "seen": "2026-11-11T00:06+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909963": {
@@ -99,20 +99,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.039,
+   "ev": -0.143,
    "label": "threes",
    "line": 0.5,
    "market_prob": 0.667,
-   "name": "Bam Adebayo",
-   "pid": "4066261",
-   "price": "-245",
-   "prob": 0.683,
-   "projection": 1.139,
+   "name": "Giannis Antetokounmpo",
+   "pid": "3032977",
+   "price": "-244",
+   "prob": 0.608,
+   "projection": 0.392,
    "score": 0.667,
-   "side": "over",
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:54+00:00",
+  "seen": "2026-11-11T00:06+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -136,7 +136,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:54+00:00",
+  "seen": "2026-11-11T00:06+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -147,20 +147,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.057,
+   "ev": -0.06,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.659,
+   "market_prob": 0.664,
    "name": "Ajay Mitchell",
    "pid": "4900671",
-   "price": "-235",
-   "prob": 0.662,
+   "price": "-241",
+   "prob": 0.664,
    "projection": 0.996,
-   "score": 0.659,
+   "score": 0.664,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-10T23:54+00:00",
+  "seen": "2026-11-11T00:06+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
