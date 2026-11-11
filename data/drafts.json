@@ -49,37 +49,37 @@
    "projected_profit": 2.32,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T16:57+00:00",
+  "seen": "2026-11-11T17:10+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
   "bet": {
-   "chance": 0.656,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.656,
+     "chance": 0.661,
      "event_id": "401909974",
      "game": "GS @ HOU",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Marcus Smart",
-     "odds": -232,
+     "odds": -238,
      "pid": "2990992",
      "projection": 1.309,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-12T02:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.62,
-   "price": -232,
-   "projected_profit": -1.22,
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.23,
    "start": "2026-11-12T02:30Z"
   },
-  "seen": "2026-11-11T16:57+00:00",
+  "seen": "2026-11-11T17:10+00:00",
   "start": "2026-11-12T02:30Z"
  },
  "bet|2026-11-11|spread": {
@@ -106,39 +106,39 @@
    "projected_profit": 0.91,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T16:57+00:00",
+  "seen": "2026-11-11T17:10+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
   "bet": {
-   "chance": 0.622,
+   "chance": 0.591,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.622,
-     "event_id": "401909973",
-     "game": "ORL @ UTAH",
-     "odds": -155,
-     "side": "away",
+     "chance": 0.591,
+     "event_id": "401909966",
+     "game": "WSH @ IND",
+     "odds": -142,
+     "side": "home",
      "sport": "nba",
-     "start": "2026-11-12T02:00Z",
-     "team": "ORL",
-     "team_name": "Orlando Magic",
+     "start": "2026-11-12T00:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
      "type": "ml"
     }
    ],
-   "payout": 32.9,
-   "price": -155,
-   "projected_profit": 0.47,
-   "start": "2026-11-12T02:00Z"
+   "payout": 34.08,
+   "price": -142,
+   "projected_profit": 0.14,
+   "start": "2026-11-12T00:00Z"
   },
-  "seen": "2026-11-11T16:57+00:00",
-  "start": "2026-11-12T02:00Z"
+  "seen": "2026-11-11T17:10+00:00",
+  "start": "2026-11-12T00:00Z"
  },
  "parlay|2026-11-11|nba": {
   "card": {
    "two": {
-    "chance": 0.272228,
+    "chance": 0.272766,
     "legs": [
      {
       "chance": 0.538,
@@ -152,7 +152,7 @@
       "team": "MEM"
      },
      {
-      "chance": 0.506,
+      "chance": 0.507,
       "event_id": "401909974",
       "game": "GS @ HOU",
       "line": 6.5,
@@ -164,10 +164,10 @@
      }
     ],
     "payout": 75.88499550763702,
-    "projected_profit": 0.6580205570530104
+    "projected_profit": 0.6988466846361199
    }
   },
-  "seen": "2026-11-11T16:57+00:00",
+  "seen": "2026-11-11T17:10+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909969": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T16:57+00:00",
+  "seen": "2026-11-11T17:10+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909974": {
@@ -202,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.006,
+   "ev": -0.134,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.656,
+   "line": 1.5,
+   "market_prob": 0.661,
    "name": "Marcus Smart",
    "pid": "2990992",
-   "price": "-232",
-   "prob": 0.694,
+   "price": "-238",
+   "prob": 0.61,
    "projection": 1.309,
-   "score": 0.656,
-   "side": "over",
+   "score": 0.661,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T16:57+00:00",
+  "seen": "2026-11-11T17:10+00:00",
   "start": "2026-11-12T02:30Z"
  },
  "prop|nba|401909975": {
@@ -239,7 +239,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T16:57+00:00",
+  "seen": "2026-11-11T17:10+00:00",
   "start": "2026-11-12T03:00Z"
  }
 }
