@@ -1,7 +1,7 @@
 {
  "bet|2026-11-11|parlay": {
   "bet": {
-   "chance": 0.1569,
+   "chance": 0.1587,
    "kind": "parlay",
    "legs": [
     {
@@ -31,7 +31,7 @@
      "type": "spread"
     },
     {
-     "chance": 0.538,
+     "chance": 0.544,
      "event_id": "401909970",
      "game": "DEN @ MEM",
      "line": 3.5,
@@ -46,10 +46,10 @@
    ],
    "payout": 142.21,
    "price": 611,
-   "projected_profit": 2.32,
+   "projected_profit": 2.57,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T18:03+00:00",
+  "seen": "2026-11-11T18:16+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
@@ -79,16 +79,16 @@
    "projected_profit": -1.19,
    "start": "2026-11-12T03:00Z"
   },
-  "seen": "2026-11-11T18:03+00:00",
+  "seen": "2026-11-11T18:16+00:00",
   "start": "2026-11-12T03:00Z"
  },
  "bet|2026-11-11|spread": {
   "bet": {
-   "chance": 0.538,
+   "chance": 0.544,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.538,
+     "chance": 0.544,
      "event_id": "401909970",
      "game": "DEN @ MEM",
      "line": 3.5,
@@ -103,56 +103,56 @@
    ],
    "payout": 38.87,
    "price": -106,
-   "projected_profit": 0.91,
+   "projected_profit": 1.14,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T18:03+00:00",
+  "seen": "2026-11-11T18:16+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
   "bet": {
-   "chance": 0.603,
+   "chance": 0.619,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.603,
-     "event_id": "401909973",
-     "game": "ORL @ UTAH",
-     "odds": -148,
-     "side": "away",
+     "chance": 0.619,
+     "event_id": "401909967",
+     "game": "CLE @ NY",
+     "odds": -152,
+     "side": "home",
      "sport": "nba",
-     "start": "2026-11-12T02:00Z",
-     "team": "ORL",
-     "team_name": "Orlando Magic",
+     "start": "2026-11-12T00:00Z",
+     "team": "NY",
+     "team_name": "New York Knicks",
      "type": "ml"
     }
    ],
-   "payout": 33.51,
-   "price": -148,
-   "projected_profit": 0.21,
-   "start": "2026-11-12T02:00Z"
+   "payout": 33.16,
+   "price": -152,
+   "projected_profit": 0.52,
+   "start": "2026-11-12T00:00Z"
   },
-  "seen": "2026-11-11T18:03+00:00",
-  "start": "2026-11-12T02:00Z"
+  "seen": "2026-11-11T18:16+00:00",
+  "start": "2026-11-12T00:00Z"
  },
  "parlay|2026-11-11|nba": {
   "card": {
    "two": {
-    "chance": 0.27707000000000004,
+    "chance": 0.27961600000000003,
     "legs": [
      {
-      "chance": 0.515,
+      "chance": 0.514,
       "event_id": "401909968",
       "game": "BOS @ TOR",
       "line": 5.5,
-      "odds": -107,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-12T00:00Z",
       "team": "TOR"
      },
      {
-      "chance": 0.538,
+      "chance": 0.544,
       "event_id": "401909970",
       "game": "DEN @ MEM",
       "line": 3.5,
@@ -163,11 +163,11 @@
       "team": "MEM"
      }
     ],
-    "payout": 75.1930876388644,
-    "projected_profit": 0.8337487921001632
+    "payout": 74.85674353598881,
+    "projected_profit": 0.931143200559049
    }
   },
-  "seen": "2026-11-11T18:03+00:00",
+  "seen": "2026-11-11T18:16+00:00",
   "start": "2026-11-12T00:00Z"
  },
  "prop|nba|401909969": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T18:03+00:00",
+  "seen": "2026-11-11T18:16+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909974": {
@@ -215,7 +215,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T18:03+00:00",
+  "seen": "2026-11-11T18:16+00:00",
   "start": "2026-11-12T02:30Z"
  },
  "prop|nba|401909975": {
@@ -239,7 +239,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T18:03+00:00",
+  "seen": "2026-11-11T18:16+00:00",
   "start": "2026-11-12T03:00Z"
  }
 }
