@@ -1,7 +1,7 @@
 {
  "bet|2026-11-11|parlay": {
   "bet": {
-   "chance": 0.1674,
+   "chance": 0.1634,
    "kind": "parlay",
    "legs": [
     {
@@ -31,10 +31,10 @@
      "type": "spread"
     },
     {
-     "chance": 0.544,
+     "chance": 0.531,
      "event_id": "401909971",
      "game": "LAL @ MIL",
-     "line": -11.5,
+     "line": -12.5,
      "odds": -110,
      "side": "away",
      "sport": "nba",
@@ -46,67 +46,67 @@
    ],
    "payout": 138.73,
    "price": 594,
-   "projected_profit": 3.22,
+   "projected_profit": 2.67,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T09:40+00:00",
+  "seen": "2026-11-11T09:48+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
   "bet": {
-   "chance": 0.656,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.656,
-     "event_id": "401909969",
-     "game": "SA @ CHI",
+     "chance": 0.661,
+     "event_id": "401909975",
+     "game": "OKC @ POR",
      "label": "threes",
      "line": 1.5,
-     "name": "Dylan Harper",
-     "odds": -231,
-     "pid": "5037871",
-     "projection": 1.101,
+     "name": "Kenrich Williams",
+     "odds": -238,
+     "pid": "3133626",
+     "projection": 1.511,
      "side": "under",
      "sport": "nba",
-     "start": "2026-11-12T01:00Z",
+     "start": "2026-11-12T03:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.2,
-   "start": "2026-11-12T01:00Z"
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.23,
+   "start": "2026-11-12T03:00Z"
   },
-  "seen": "2026-11-11T09:40+00:00",
-  "start": "2026-11-12T01:00Z"
+  "seen": "2026-11-11T09:48+00:00",
+  "start": "2026-11-12T03:00Z"
  },
  "bet|2026-11-11|spread": {
   "bet": {
-   "chance": 0.544,
+   "chance": 0.538,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.544,
-     "event_id": "401909971",
-     "game": "LAL @ MIL",
-     "line": -11.5,
-     "odds": -110,
-     "side": "away",
+     "chance": 0.538,
+     "event_id": "401909970",
+     "game": "DEN @ MEM",
+     "line": 3.5,
+     "odds": -106,
+     "side": "home",
      "sport": "nba",
      "start": "2026-11-12T01:00Z",
-     "team": "LAL",
-     "team_name": "Los Angeles Lakers",
+     "team": "MEM",
+     "team_name": "Memphis Grizzlies",
      "type": "spread"
     }
    ],
-   "payout": 38.18,
-   "price": -110,
-   "projected_profit": 0.77,
+   "payout": 38.87,
+   "price": -106,
+   "projected_profit": 0.91,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T09:40+00:00",
+  "seen": "2026-11-11T09:48+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -132,13 +132,13 @@
    "projected_profit": 0.91,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T09:40+00:00",
+  "seen": "2026-11-11T09:48+00:00",
   "start": "2026-11-12T02:00Z"
  },
  "parlay|2026-11-11|nba": {
   "card": {
    "two": {
-    "chance": 0.29267200000000004,
+    "chance": 0.28567800000000004,
     "legs": [
      {
       "chance": 0.538,
@@ -152,10 +152,10 @@
       "team": "MEM"
      },
      {
-      "chance": 0.544,
+      "chance": 0.531,
       "event_id": "401909971",
       "game": "LAL @ MIL",
-      "line": -11.5,
+      "line": -12.5,
       "odds": -110,
       "side": "away",
       "sport": "nba",
@@ -164,10 +164,10 @@
      }
     ],
     "payout": 74.20240137221269,
-    "projected_profit": 1.716965214408237
+    "projected_profit": 1.1979936192109797
    }
   },
-  "seen": "2026-11-11T09:40+00:00",
+  "seen": "2026-11-11T09:48+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909969": {
@@ -191,7 +191,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T09:40+00:00",
+  "seen": "2026-11-11T09:48+00:00",
   "start": "2026-11-12T01:00Z"
+ },
+ "prop|nba|401909975": {
+  "game": {
+   "date": "2026-11-12T03:00Z",
+   "event_id": "401909975",
+   "name": "Oklahoma City Thunder at Portland Trail Blazers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.178,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.661,
+   "name": "Kenrich Williams",
+   "pid": "3133626",
+   "price": "-238",
+   "prob": 0.579,
+   "projection": 1.511,
+   "score": 0.661,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-11T09:48+00:00",
+  "start": "2026-11-12T03:00Z"
  }
 }
