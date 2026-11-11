@@ -49,22 +49,22 @@
    "projected_profit": 3.22,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T09:27+00:00",
+  "seen": "2026-11-11T09:40+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
+     "chance": 0.656,
      "event_id": "401909969",
      "game": "SA @ CHI",
      "label": "threes",
      "line": 1.5,
      "name": "Dylan Harper",
-     "odds": -239,
+     "odds": -231,
      "pid": "5037871",
      "projection": 1.101,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
+   "payout": 28.66,
+   "price": -231,
+   "projected_profit": -1.2,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T09:27+00:00",
+  "seen": "2026-11-11T09:40+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.77,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T09:27+00:00",
+  "seen": "2026-11-11T09:40+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -118,7 +118,7 @@
      "chance": 0.654,
      "event_id": "401909973",
      "game": "ORL @ UTAH",
-     "odds": -166,
+     "odds": -167,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-12T02:00Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.05,
-   "price": -166,
-   "projected_profit": 0.96,
+   "payout": 31.98,
+   "price": -167,
+   "projected_profit": 0.91,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T09:27+00:00",
+  "seen": "2026-11-11T09:40+00:00",
   "start": "2026-11-12T02:00Z"
  },
  "parlay|2026-11-11|nba": {
@@ -167,7 +167,7 @@
     "projected_profit": 1.716965214408237
    }
   },
-  "seen": "2026-11-11T09:27+00:00",
+  "seen": "2026-11-11T09:40+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909969": {
@@ -178,20 +178,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.085,
+   "ev": -0.08,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.662,
+   "market_prob": 0.656,
    "name": "Dylan Harper",
    "pid": "5037871",
-   "price": "-239",
-   "prob": 0.645,
+   "price": "-231",
+   "prob": 0.642,
    "projection": 1.101,
-   "score": 0.662,
+   "score": 0.656,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T09:27+00:00",
+  "seen": "2026-11-11T09:40+00:00",
   "start": "2026-11-12T01:00Z"
  }
 }
