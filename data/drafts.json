@@ -49,38 +49,38 @@
    "projected_profit": 2.67,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T10:39+00:00",
+  "seen": "2026-11-11T10:49+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.66,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
-     "event_id": "401909975",
-     "game": "OKC @ POR",
+     "chance": 0.66,
+     "event_id": "401909974",
+     "game": "GS @ HOU",
      "label": "threes",
      "line": 1.5,
-     "name": "Kenrich Williams",
-     "odds": -238,
-     "pid": "3133626",
-     "projection": 1.511,
+     "name": "Marcus Smart",
+     "odds": -236,
+     "pid": "2990992",
+     "projection": 1.309,
      "side": "under",
      "sport": "nba",
-     "start": "2026-11-12T03:00Z",
+     "start": "2026-11-12T02:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
-   "start": "2026-11-12T03:00Z"
+   "payout": 28.47,
+   "price": -236,
+   "projected_profit": -1.21,
+   "start": "2026-11-12T02:30Z"
   },
-  "seen": "2026-11-11T10:39+00:00",
-  "start": "2026-11-12T03:00Z"
+  "seen": "2026-11-11T10:49+00:00",
+  "start": "2026-11-12T02:30Z"
  },
  "bet|2026-11-11|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.91,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T10:39+00:00",
+  "seen": "2026-11-11T10:49+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.39,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T10:39+00:00",
+  "seen": "2026-11-11T10:49+00:00",
   "start": "2026-11-12T02:00Z"
  },
  "parlay|2026-11-11|nba": {
@@ -167,7 +167,7 @@
     "projected_profit": 1.1979936192109797
    }
   },
-  "seen": "2026-11-11T10:39+00:00",
+  "seen": "2026-11-11T10:49+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909969": {
@@ -191,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T10:39+00:00",
+  "seen": "2026-11-11T10:49+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909974": {
@@ -215,31 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T10:39+00:00",
+  "seen": "2026-11-11T10:49+00:00",
   "start": "2026-11-12T02:30Z"
- },
- "prop|nba|401909975": {
-  "game": {
-   "date": "2026-11-12T03:00Z",
-   "event_id": "401909975",
-   "name": "Oklahoma City Thunder at Portland Trail Blazers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.178,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.661,
-   "name": "Kenrich Williams",
-   "pid": "3133626",
-   "price": "-238",
-   "prob": 0.579,
-   "projection": 1.511,
-   "score": 0.661,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-11T10:39+00:00",
-  "start": "2026-11-12T03:00Z"
  }
 }
