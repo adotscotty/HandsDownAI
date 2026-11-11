@@ -1,1 +1,143 @@
-{}
+{
+ "bet|2026-11-11|parlay": {
+  "bet": {
+   "chance": 0.1756,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.5720000000000001,
+     "event_id": "401866462",
+     "game": "SAC @ CMU",
+     "line": 18.5,
+     "odds": -115,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-11-12T00:30Z",
+     "team": "SAC",
+     "team_name": "SAC",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5569999999999999,
+     "event_id": "401909971",
+     "game": "LAL @ MIL",
+     "line": -10.5,
+     "odds": -115,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-12T01:00Z",
+     "team": "LAL",
+     "team_name": "LAL",
+     "type": "spread"
+    },
+    {
+     "chance": 0.551,
+     "event_id": "401909970",
+     "game": "DEN @ MEM",
+     "line": 4.5,
+     "odds": -114,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-12T01:00Z",
+     "team": "MEM",
+     "team_name": "MEM",
+     "type": "spread"
+    }
+   ],
+   "payout": 131.23,
+   "price": 556,
+   "projected_profit": 3.04,
+   "start": "2026-11-12T00:30Z"
+  },
+  "seen": "2026-11-11T05:03+00:00",
+  "start": "2026-11-12T00:30Z"
+ },
+ "bet|2026-11-11|spread": {
+  "bet": {
+   "chance": 0.557,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.5569999999999999,
+     "event_id": "401909971",
+     "game": "LAL @ MIL",
+     "line": -10.5,
+     "odds": -115,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-12T01:00Z",
+     "team": "LAL",
+     "team_name": "Los Angeles Lakers",
+     "type": "spread"
+    }
+   ],
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 0.83,
+   "start": "2026-11-12T01:00Z"
+  },
+  "seen": "2026-11-11T05:03+00:00",
+  "start": "2026-11-12T01:00Z"
+ },
+ "bet|2026-11-11|winner": {
+  "bet": {
+   "chance": 0.561,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.5609999999999999,
+     "event_id": "401866461",
+     "game": "BUFF @ BALL",
+     "odds": -122,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-11-12T00:30Z",
+     "team": "BUFF",
+     "team_name": "Buffalo Bulls",
+     "type": "ml"
+    }
+   ],
+   "payout": 36.39,
+   "price": -122,
+   "projected_profit": 0.42,
+   "start": "2026-11-12T00:30Z"
+  },
+  "seen": "2026-11-11T05:03+00:00",
+  "start": "2026-11-12T00:30Z"
+ },
+ "parlay|2026-11-11|nba": {
+  "card": {
+   "two": {
+    "chance": 0.306907,
+    "legs": [
+     {
+      "chance": 0.5569999999999999,
+      "event_id": "401909971",
+      "game": "LAL @ MIL",
+      "line": -10.5,
+      "odds": -115,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-12T01:00Z",
+      "team": "LAL"
+     },
+     {
+      "chance": 0.551,
+      "event_id": "401909970",
+      "game": "DEN @ MEM",
+      "line": 4.5,
+      "odds": -114,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-12T01:00Z",
+      "team": "MEM"
+     }
+    ],
+    "payout": 70.1906941266209,
+    "projected_profit": 1.542015362318839
+   }
+  },
+  "seen": "2026-11-11T05:03+00:00",
+  "start": "2026-11-12T01:00Z"
+ }
+}
