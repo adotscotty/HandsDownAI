@@ -1,57 +1,4 @@
 {
- "bet|2026-11-11|parlay": {
-  "bet": {
-   "chance": 0.1644,
-   "kind": "parlay",
-   "legs": [
-    {
-     "chance": 0.5609999999999999,
-     "event_id": "401866462",
-     "game": "SAC @ CMU",
-     "line": 17.5,
-     "odds": -118,
-     "side": "away",
-     "sport": "cfb",
-     "start": "2026-11-12T00:30Z",
-     "team": "SAC",
-     "team_name": "SAC",
-     "type": "spread"
-    },
-    {
-     "chance": 0.551,
-     "event_id": "401909970",
-     "game": "DEN @ MEM",
-     "line": 4.5,
-     "odds": -117,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-12T01:00Z",
-     "team": "MEM",
-     "team_name": "MEM",
-     "type": "spread"
-    },
-    {
-     "chance": 0.532,
-     "event_id": "401909975",
-     "game": "OKC @ POR",
-     "line": 2.5,
-     "odds": -106,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-12T03:00Z",
-     "team": "OKC",
-     "team_name": "OKC",
-     "type": "spread"
-    }
-   ],
-   "payout": 133.18,
-   "price": 566,
-   "projected_profit": 1.9,
-   "start": "2026-11-12T00:30Z"
-  },
-  "seen": "2026-11-11T23:31+00:00",
-  "start": "2026-11-12T00:30Z"
- },
  "bet|2026-11-11|prop": {
   "bet": {
    "chance": 0.656,
@@ -79,20 +26,20 @@
    "projected_profit": -1.22,
    "start": "2026-11-12T02:30Z"
   },
-  "seen": "2026-11-11T23:31+00:00",
+  "seen": "2026-11-11T23:44+00:00",
   "start": "2026-11-12T02:30Z"
  },
  "bet|2026-11-11|spread": {
   "bet": {
-   "chance": 0.551,
+   "chance": 0.538,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.551,
+     "chance": 0.538,
      "event_id": "401909970",
      "game": "DEN @ MEM",
-     "line": 4.5,
-     "odds": -117,
+     "line": 3.5,
+     "odds": -106,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-12T01:00Z",
@@ -101,12 +48,12 @@
      "type": "spread"
     }
    ],
-   "payout": 37.09,
-   "price": -117,
-   "projected_profit": 0.44,
+   "payout": 38.87,
+   "price": -106,
+   "projected_profit": 0.91,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T23:31+00:00",
+  "seen": "2026-11-11T23:44+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -132,42 +79,31 @@
    "projected_profit": 0.2,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T23:31+00:00",
+  "seen": "2026-11-11T23:44+00:00",
   "start": "2026-11-12T02:00Z"
  },
- "parlay|2026-11-11|nba": {
-  "card": {
-   "two": {
-    "chance": 0.29313200000000006,
-    "legs": [
-     {
-      "chance": 0.551,
-      "event_id": "401909970",
-      "game": "DEN @ MEM",
-      "line": 4.5,
-      "odds": -117,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-12T01:00Z",
-      "team": "MEM"
-     },
-     {
-      "chance": 0.532,
-      "event_id": "401909975",
-      "game": "OKC @ POR",
-      "line": 2.5,
-      "odds": -106,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-12T03:00Z",
-      "team": "OKC"
-     }
-    ],
-    "payout": 72.08837284308983,
-    "projected_profit": 1.131408908240612
-   }
+ "prop|nba|401909969": {
+  "game": {
+   "date": "2026-11-12T01:00Z",
+   "event_id": "401909969",
+   "name": "San Antonio Spurs at Chicago Bulls",
+   "sport": "nba"
   },
-  "seen": "2026-11-11T23:31+00:00",
+  "prop": {
+   "ev": -0.036,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.655,
+   "name": "Dylan Harper",
+   "pid": "5037871",
+   "price": "-230",
+   "prob": 0.672,
+   "projection": 1.101,
+   "score": 0.655,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-11T23:44+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909974": {
@@ -191,7 +127,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T23:31+00:00",
+  "seen": "2026-11-11T23:44+00:00",
   "start": "2026-11-12T02:30Z"
  }
 }
