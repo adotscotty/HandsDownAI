@@ -1,17 +1,17 @@
 {
  "bet|2026-11-11|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
+     "chance": 0.656,
      "event_id": "401909974",
      "game": "GS @ HOU",
      "label": "threes",
      "line": 1.5,
      "name": "Al Horford",
-     "odds": -235,
+     "odds": -232,
      "pid": "3213",
      "projection": 1.267,
      "side": "under",
@@ -21,12 +21,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.22,
    "start": "2026-11-12T02:30Z"
   },
-  "seen": "2026-11-11T23:57+00:00",
+  "seen": "2026-11-11T23:58+00:00",
   "start": "2026-11-12T02:30Z"
  },
  "bet|2026-11-11|spread": {
@@ -53,7 +53,7 @@
    "projected_profit": 0.91,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T23:57+00:00",
+  "seen": "2026-11-11T23:58+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -79,7 +79,7 @@
    "projected_profit": 0.2,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T23:57+00:00",
+  "seen": "2026-11-11T23:58+00:00",
   "start": "2026-11-12T02:00Z"
  },
  "prop|nba|401909969": {
@@ -103,7 +103,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T23:57+00:00",
+  "seen": "2026-11-11T23:58+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909974": {
@@ -114,20 +114,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.123,
+   "ev": -0.121,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
+   "market_prob": 0.656,
    "name": "Al Horford",
    "pid": "3213",
-   "price": "-235",
-   "prob": 0.615,
+   "price": "-232",
+   "prob": 0.614,
    "projection": 1.267,
-   "score": 0.659,
+   "score": 0.656,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T23:57+00:00",
+  "seen": "2026-11-11T23:58+00:00",
   "start": "2026-11-12T02:30Z"
  }
 }
