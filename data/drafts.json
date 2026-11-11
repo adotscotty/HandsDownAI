@@ -49,38 +49,38 @@
    "projected_profit": 2.32,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T16:16+00:00",
+  "seen": "2026-11-11T16:36+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
   "bet": {
-   "chance": 0.666,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.666,
-     "event_id": "401909975",
-     "game": "OKC @ POR",
+     "chance": 0.656,
+     "event_id": "401909974",
+     "game": "GS @ HOU",
      "label": "threes",
-     "line": 1.5,
-     "name": "Donovan Clingan",
-     "odds": -243,
-     "pid": "5105565",
-     "projection": 1.181,
-     "side": "under",
+     "line": 0.5,
+     "name": "Marcus Smart",
+     "odds": -232,
+     "pid": "2990992",
+     "projection": 1.309,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-12T03:00Z",
+     "start": "2026-11-12T02:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.23,
-   "price": -243,
-   "projected_profit": -1.2,
-   "start": "2026-11-12T03:00Z"
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.22,
+   "start": "2026-11-12T02:30Z"
   },
-  "seen": "2026-11-11T16:16+00:00",
-  "start": "2026-11-12T03:00Z"
+  "seen": "2026-11-11T16:36+00:00",
+  "start": "2026-11-12T02:30Z"
  },
  "bet|2026-11-11|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.91,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T16:16+00:00",
+  "seen": "2026-11-11T16:36+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -118,7 +118,7 @@
      "chance": 0.622,
      "event_id": "401909973",
      "game": "ORL @ UTAH",
-     "odds": -161,
+     "odds": -155,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-12T02:00Z",
@@ -127,18 +127,18 @@
      "type": "ml"
     }
    ],
-   "payout": 32.42,
-   "price": -161,
-   "projected_profit": 0.17,
+   "payout": 32.9,
+   "price": -155,
+   "projected_profit": 0.47,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T16:16+00:00",
+  "seen": "2026-11-11T16:36+00:00",
   "start": "2026-11-12T02:00Z"
  },
  "parlay|2026-11-11|nba": {
   "card": {
    "two": {
-    "chance": 0.27976,
+    "chance": 0.272228,
     "legs": [
      {
       "chance": 0.538,
@@ -152,22 +152,22 @@
       "team": "MEM"
      },
      {
-      "chance": 0.52,
-      "event_id": "401909972",
-      "game": "BKN @ NO",
-      "line": 4.5,
-      "odds": -106,
+      "chance": 0.506,
+      "event_id": "401909974",
+      "game": "GS @ HOU",
+      "line": 6.5,
+      "odds": -105,
       "side": "away",
       "sport": "nba",
-      "start": "2026-11-12T01:00Z",
-      "team": "BKN"
+      "start": "2026-11-12T02:30Z",
+      "team": "GS"
      }
     ],
-    "payout": 75.53577785688857,
-    "projected_profit": 1.1318892132431486
+    "payout": 75.88499550763702,
+    "projected_profit": 0.6580205570530104
    }
   },
-  "seen": "2026-11-11T16:16+00:00",
+  "seen": "2026-11-11T16:36+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909969": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T16:16+00:00",
+  "seen": "2026-11-11T16:36+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909974": {
@@ -202,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.008,
+   "ev": -0.006,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.659,
+   "market_prob": 0.656,
    "name": "Marcus Smart",
    "pid": "2990992",
-   "price": "-235",
-   "prob": 0.696,
+   "price": "-232",
+   "prob": 0.694,
    "projection": 1.309,
-   "score": 0.659,
+   "score": 0.656,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T16:16+00:00",
+  "seen": "2026-11-11T16:36+00:00",
   "start": "2026-11-12T02:30Z"
  },
  "prop|nba|401909975": {
@@ -226,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.106,
+   "ev": -0.023,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.666,
+   "line": 0.5,
+   "market_prob": 0.656,
    "name": "Donovan Clingan",
    "pid": "5105565",
-   "price": "-243",
-   "prob": 0.633,
+   "price": "-231",
+   "prob": 0.682,
    "projection": 1.181,
-   "score": 0.666,
-   "side": "under",
+   "score": 0.656,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T16:16+00:00",
+  "seen": "2026-11-11T16:36+00:00",
   "start": "2026-11-12T03:00Z"
  }
 }
