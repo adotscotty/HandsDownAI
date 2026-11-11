@@ -1,22 +1,9 @@
 {
  "bet|2026-11-11|parlay": {
   "bet": {
-   "chance": 0.1609,
+   "chance": 0.1644,
    "kind": "parlay",
    "legs": [
-    {
-     "chance": 0.539,
-     "event_id": "401909968",
-     "game": "BOS @ TOR",
-     "line": 5.5,
-     "odds": -111,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-12T00:00Z",
-     "team": "TOR",
-     "team_name": "TOR",
-     "type": "spread"
-    },
     {
      "chance": 0.5609999999999999,
      "event_id": "401866462",
@@ -28,6 +15,19 @@
      "start": "2026-11-12T00:30Z",
      "team": "SAC",
      "team_name": "SAC",
+     "type": "spread"
+    },
+    {
+     "chance": 0.551,
+     "event_id": "401909970",
+     "game": "DEN @ MEM",
+     "line": 4.5,
+     "odds": -117,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-12T01:00Z",
+     "team": "MEM",
+     "team_name": "MEM",
      "type": "spread"
     },
     {
@@ -44,43 +44,43 @@
      "type": "spread"
     }
    ],
-   "payout": 136.5,
-   "price": 582,
-   "projected_profit": 1.96,
-   "start": "2026-11-12T00:00Z"
+   "payout": 133.18,
+   "price": 566,
+   "projected_profit": 1.9,
+   "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T23:18+00:00",
-  "start": "2026-11-12T00:00Z"
+  "seen": "2026-11-11T23:31+00:00",
+  "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.656,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909969",
-     "game": "SA @ CHI",
+     "chance": 0.656,
+     "event_id": "401909974",
+     "game": "GS @ HOU",
      "label": "threes",
-     "line": 0.5,
-     "name": "Dylan Harper",
-     "odds": -235,
-     "pid": "5037871",
-     "projection": 1.101,
-     "side": "over",
+     "line": 1.5,
+     "name": "Al Horford",
+     "odds": -232,
+     "pid": "3213",
+     "projection": 1.267,
+     "side": "under",
      "sport": "nba",
-     "start": "2026-11-12T01:00Z",
+     "start": "2026-11-12T02:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
-   "start": "2026-11-12T01:00Z"
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.22,
+   "start": "2026-11-12T02:30Z"
   },
-  "seen": "2026-11-11T23:18+00:00",
-  "start": "2026-11-12T01:00Z"
+  "seen": "2026-11-11T23:31+00:00",
+  "start": "2026-11-12T02:30Z"
  },
  "bet|2026-11-11|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.44,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T23:18+00:00",
+  "seen": "2026-11-11T23:31+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -132,24 +132,24 @@
    "projected_profit": 0.2,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T23:18+00:00",
+  "seen": "2026-11-11T23:31+00:00",
   "start": "2026-11-12T02:00Z"
  },
  "parlay|2026-11-11|nba": {
   "card": {
    "two": {
-    "chance": 0.28674800000000006,
+    "chance": 0.29313200000000006,
     "legs": [
      {
-      "chance": 0.539,
-      "event_id": "401909968",
-      "game": "BOS @ TOR",
-      "line": 5.5,
-      "odds": -111,
+      "chance": 0.551,
+      "event_id": "401909970",
+      "game": "DEN @ MEM",
+      "line": 4.5,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
-      "start": "2026-11-12T00:00Z",
-      "team": "TOR"
+      "start": "2026-11-12T01:00Z",
+      "team": "MEM"
      },
      {
       "chance": 0.532,
@@ -163,35 +163,35 @@
       "team": "OKC"
      }
     ],
-    "payout": 73.88407275199728,
-    "projected_profit": 1.1861100934897202
+    "payout": 72.08837284308983,
+    "projected_profit": 1.131408908240612
    }
   },
-  "seen": "2026-11-11T23:18+00:00",
-  "start": "2026-11-12T00:00Z"
+  "seen": "2026-11-11T23:31+00:00",
+  "start": "2026-11-12T01:00Z"
  },
- "prop|nba|401909969": {
+ "prop|nba|401909974": {
   "game": {
-   "date": "2026-11-12T01:00Z",
-   "event_id": "401909969",
-   "name": "San Antonio Spurs at Chicago Bulls",
+   "date": "2026-11-12T02:30Z",
+   "event_id": "401909974",
+   "name": "Golden State Warriors at Houston Rockets",
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.038,
+   "ev": -0.121,
    "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.659,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-235",
-   "prob": 0.675,
-   "projection": 1.101,
-   "score": 0.659,
-   "side": "over",
+   "line": 1.5,
+   "market_prob": 0.656,
+   "name": "Al Horford",
+   "pid": "3213",
+   "price": "-232",
+   "prob": 0.614,
+   "projection": 1.267,
+   "score": 0.656,
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T23:18+00:00",
-  "start": "2026-11-12T01:00Z"
+  "seen": "2026-11-11T23:31+00:00",
+  "start": "2026-11-12T02:30Z"
  }
 }
