@@ -26,20 +26,20 @@
    "projected_profit": -1.19,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-11T00:06+00:00",
+  "seen": "2026-11-11T00:19+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "bet|2026-11-10|spread": {
   "bet": {
-   "chance": 0.539,
+   "chance": 0.54,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.539,
+     "chance": 0.54,
      "event_id": "401909963",
      "game": "MIA @ UTAH",
-     "line": 9.5,
-     "odds": -115,
+     "line": 8.5,
+     "odds": -107,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-11T02:00Z",
@@ -48,19 +48,30 @@
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 0.15,
+   "payout": 38.69,
+   "price": -107,
+   "projected_profit": 0.89,
    "start": "2026-11-11T02:00Z"
   },
-  "seen": "2026-11-11T00:06+00:00",
+  "seen": "2026-11-11T00:19+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "parlay|2026-11-10|nba": {
   "card": {
    "two": {
-    "chance": 0.28302400000000005,
+    "chance": 0.28728000000000004,
     "legs": [
+     {
+      "chance": 0.54,
+      "event_id": "401909963",
+      "game": "MIA @ UTAH",
+      "line": 8.5,
+      "odds": -107,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-11T02:00Z",
+      "team": "UTAH"
+     },
      {
       "chance": 0.532,
       "event_id": "401909964",
@@ -71,25 +82,14 @@
       "sport": "nba",
       "start": "2026-11-11T03:00Z",
       "team": "SAC"
-     },
-     {
-      "chance": 0.532,
-      "event_id": "401909965",
-      "game": "OKC @ POR",
-      "line": -1.5,
-      "odds": -111,
-      "side": "away",
-      "sport": "nba",
-      "start": "2026-11-11T04:00Z",
-      "team": "OKC"
      }
     ],
-    "payout": 73.2198865532199,
-    "projected_profit": 0.7229851718385127
+    "payout": 74.5171339563863,
+    "projected_profit": 1.4072822429906608
    }
   },
-  "seen": "2026-11-11T00:06+00:00",
-  "start": "2026-11-11T03:00Z"
+  "seen": "2026-11-11T00:19+00:00",
+  "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909963": {
   "game": {
@@ -112,7 +112,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T00:06+00:00",
+  "seen": "2026-11-11T00:19+00:00",
   "start": "2026-11-11T02:00Z"
  },
  "prop|nba|401909964": {
@@ -123,20 +123,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.031,
+   "ev": -0.03,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
+   "market_prob": 0.657,
    "name": "Keegan Murray",
    "pid": "4594327",
-   "price": "-235",
-   "prob": 0.68,
+   "price": "-233",
+   "prob": 0.679,
    "projection": 0.908,
-   "score": 0.659,
+   "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T00:06+00:00",
+  "seen": "2026-11-11T00:19+00:00",
   "start": "2026-11-11T03:00Z"
  },
  "prop|nba|401909965": {
@@ -160,7 +160,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T00:06+00:00",
+  "seen": "2026-11-11T00:19+00:00",
   "start": "2026-11-11T04:00Z"
  }
 }
