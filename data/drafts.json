@@ -1,7 +1,7 @@
 {
  "bet|2026-11-11|parlay": {
   "bet": {
-   "chance": 0.1756,
+   "chance": 0.1715,
    "kind": "parlay",
    "legs": [
     {
@@ -18,11 +18,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.5569999999999999,
+     "chance": 0.544,
      "event_id": "401909971",
      "game": "LAL @ MIL",
-     "line": -10.5,
-     "odds": -115,
+     "line": -11.5,
+     "odds": -110,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-12T01:00Z",
@@ -44,39 +44,69 @@
      "type": "spread"
     }
    ],
-   "payout": 131.23,
-   "price": 556,
-   "projected_profit": 3.04,
+   "payout": 134.0,
+   "price": 570,
+   "projected_profit": 2.97,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T05:42+00:00",
+  "seen": "2026-11-11T05:55+00:00",
   "start": "2026-11-12T00:30Z"
+ },
+ "bet|2026-11-11|prop": {
+  "bet": {
+   "chance": 0.662,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.662,
+     "event_id": "401909969",
+     "game": "SA @ CHI",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Dylan Harper",
+     "odds": -239,
+     "pid": "5037871",
+     "projection": 1.101,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-12T01:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.22,
+   "start": "2026-11-12T01:00Z"
+  },
+  "seen": "2026-11-11T05:55+00:00",
+  "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|spread": {
   "bet": {
-   "chance": 0.557,
+   "chance": 0.551,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.5569999999999999,
-     "event_id": "401909971",
-     "game": "LAL @ MIL",
-     "line": -10.5,
-     "odds": -115,
-     "side": "away",
+     "chance": 0.551,
+     "event_id": "401909970",
+     "game": "DEN @ MEM",
+     "line": 4.5,
+     "odds": -114,
+     "side": "home",
      "sport": "nba",
      "start": "2026-11-12T01:00Z",
-     "team": "LAL",
-     "team_name": "Los Angeles Lakers",
+     "team": "MEM",
+     "team_name": "Memphis Grizzlies",
      "type": "spread"
     }
    ],
-   "payout": 37.39,
-   "price": -115,
-   "projected_profit": 0.83,
+   "payout": 37.54,
+   "price": -114,
+   "projected_profit": 0.69,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T05:42+00:00",
+  "seen": "2026-11-11T05:55+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -102,20 +132,20 @@
    "projected_profit": 0.42,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T05:42+00:00",
+  "seen": "2026-11-11T05:55+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "parlay|2026-11-11|nba": {
   "card": {
    "two": {
-    "chance": 0.306907,
+    "chance": 0.29974400000000007,
     "legs": [
      {
-      "chance": 0.5569999999999999,
+      "chance": 0.544,
       "event_id": "401909971",
       "game": "LAL @ MIL",
-      "line": -10.5,
-      "odds": -115,
+      "line": -11.5,
+      "odds": -110,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-12T01:00Z",
@@ -133,11 +163,35 @@
       "team": "MEM"
      }
     ],
-    "payout": 70.1906941266209,
-    "projected_profit": 1.542015362318839
+    "payout": 71.67464114832538,
+    "projected_profit": 1.4840436363636478
    }
   },
-  "seen": "2026-11-11T05:42+00:00",
+  "seen": "2026-11-11T05:55+00:00",
+  "start": "2026-11-12T01:00Z"
+ },
+ "prop|nba|401909969": {
+  "game": {
+   "date": "2026-11-12T01:00Z",
+   "event_id": "401909969",
+   "name": "San Antonio Spurs at Chicago Bulls",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.085,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.662,
+   "name": "Dylan Harper",
+   "pid": "5037871",
+   "price": "-239",
+   "prob": 0.645,
+   "projection": 1.101,
+   "score": 0.662,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-11T05:55+00:00",
   "start": "2026-11-12T01:00Z"
  }
 }
