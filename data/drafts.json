@@ -35,7 +35,7 @@
      "event_id": "401909970",
      "game": "DEN @ MEM",
      "line": 4.5,
-     "odds": -116,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-12T01:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 136.25,
-   "price": 581,
-   "projected_profit": 2.14,
+   "payout": 135.72,
+   "price": 579,
+   "projected_profit": 2.05,
    "start": "2026-11-12T00:30Z"
   },
-  "seen": "2026-11-11T21:35+00:00",
+  "seen": "2026-11-11T21:48+00:00",
   "start": "2026-11-12T00:30Z"
  },
  "bet|2026-11-11|prop": {
@@ -64,7 +64,7 @@
      "label": "threes",
      "line": 1.5,
      "name": "Al Horford",
-     "odds": -232,
+     "odds": -233,
      "pid": "3213",
      "projection": 1.267,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.62,
-   "price": -232,
-   "projected_profit": -1.2,
+   "payout": 28.58,
+   "price": -233,
+   "projected_profit": -1.22,
    "start": "2026-11-12T02:30Z"
   },
-  "seen": "2026-11-11T21:35+00:00",
+  "seen": "2026-11-11T21:48+00:00",
   "start": "2026-11-12T02:30Z"
  },
  "bet|2026-11-11|spread": {
@@ -92,7 +92,7 @@
      "event_id": "401909970",
      "game": "DEN @ MEM",
      "line": 4.5,
-     "odds": -116,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-12T01:00Z",
@@ -101,12 +101,12 @@
      "type": "spread"
     }
    ],
-   "payout": 37.24,
-   "price": -116,
-   "projected_profit": 0.74,
+   "payout": 37.09,
+   "price": -117,
+   "projected_profit": 0.66,
    "start": "2026-11-12T01:00Z"
   },
-  "seen": "2026-11-11T21:35+00:00",
+  "seen": "2026-11-11T21:48+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "bet|2026-11-11|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.2,
    "start": "2026-11-12T02:00Z"
   },
-  "seen": "2026-11-11T21:35+00:00",
+  "seen": "2026-11-11T21:48+00:00",
   "start": "2026-11-12T02:00Z"
  },
  "parlay|2026-11-11|nba": {
@@ -145,7 +145,7 @@
       "event_id": "401909970",
       "game": "DEN @ MEM",
       "line": 4.5,
-      "odds": -116,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-12T01:00Z",
@@ -163,11 +163,11 @@
       "team": "OKC"
      }
     ],
-    "payout": 70.79217148182666,
-    "projected_profit": 0.9774194221808052
+    "payout": 70.51205051205052,
+    "projected_profit": 0.8944128559328597
    }
   },
-  "seen": "2026-11-11T21:35+00:00",
+  "seen": "2026-11-11T21:48+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909969": {
@@ -191,7 +191,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T21:35+00:00",
+  "seen": "2026-11-11T21:48+00:00",
   "start": "2026-11-12T01:00Z"
  },
  "prop|nba|401909974": {
@@ -202,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.121,
+   "ev": -0.122,
    "label": "threes",
    "line": 1.5,
    "market_prob": 0.657,
    "name": "Al Horford",
    "pid": "3213",
-   "price": "-232",
-   "prob": 0.614,
+   "price": "-233",
+   "prob": 0.615,
    "projection": 1.267,
    "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-11T21:35+00:00",
+  "seen": "2026-11-11T21:48+00:00",
   "start": "2026-11-12T02:30Z"
  }
 }
