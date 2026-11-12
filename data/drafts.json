@@ -9,7 +9,7 @@
      "event_id": "401909976",
      "game": "TOR @ PHI",
      "line": 8.5,
-     "odds": -104,
+     "odds": -110,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -22,7 +22,7 @@
      "event_id": "401909977",
      "game": "DET @ WSH",
      "line": 10.5,
-     "odds": -112,
+     "odds": -108,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -44,85 +44,85 @@
      "type": "spread"
     }
    ],
-   "payout": 143.02,
-   "price": 615,
-   "projected_profit": 5.97,
+   "payout": 141.62,
+   "price": 608,
+   "projected_profit": 5.72,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T14:34+00:00",
+  "seen": "2026-11-12T14:47+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|prop": {
   "bet": {
-   "chance": 0.659,
+   "chance": 0.657,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.659,
-     "event_id": "401909978",
-     "game": "DAL @ MIN",
+     "chance": 0.657,
+     "event_id": "401909977",
+     "game": "DET @ WSH",
      "label": "threes",
      "line": 1.5,
-     "name": "Terrence Shannon Jr.",
-     "odds": -235,
-     "pid": "4432847",
-     "projection": 1.274,
+     "name": "AJ Dybantsa",
+     "odds": -233,
+     "pid": "5142718",
+     "projection": 0.73,
      "side": "under",
      "sport": "nba",
-     "start": "2026-11-13T01:00Z",
+     "start": "2026-11-13T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.51,
-   "price": -235,
-   "projected_profit": -1.21,
-   "start": "2026-11-13T01:00Z"
+   "payout": 28.58,
+   "price": -233,
+   "projected_profit": -1.22,
+   "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T14:34+00:00",
-  "start": "2026-11-13T01:00Z"
+  "seen": "2026-11-12T14:47+00:00",
+  "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|sgp": {
   "bet": {
-   "chance": 0.3462,
+   "chance": 0.3666,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.5760000000000001,
-     "event_id": "401909976",
-     "game": "TOR @ PHI",
-     "line": 8.5,
-     "odds": -104,
-     "side": "away",
+     "chance": 0.558,
+     "event_id": "401909977",
+     "game": "DET @ WSH",
+     "line": 10.5,
+     "odds": -108,
+     "side": "home",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
-     "team": "TOR",
-     "team_name": "Toronto Raptors",
+     "team": "WSH",
+     "team_name": "Washington Wizards",
      "type": "spread"
     },
     {
-     "chance": 0.601,
-     "event_id": "401909976",
-     "game": "TOR @ PHI",
-     "label": "assists",
-     "line": 2.5,
-     "name": "Jakob Poeltl",
-     "odds": -178,
-     "pid": "3134908",
-     "projection": 1.553,
+     "chance": 0.657,
+     "event_id": "401909977",
+     "game": "DET @ WSH",
+     "label": "threes",
+     "line": 1.5,
+     "name": "AJ Dybantsa",
+     "odds": -233,
+     "pid": "5142718",
+     "projection": 0.73,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
-     "stat": "ast",
+     "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 61.27,
-   "price": 206,
-   "projected_profit": 1.21,
+   "payout": 55.05,
+   "price": 175,
+   "projected_profit": 0.18,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T14:34+00:00",
+  "seen": "2026-11-12T14:47+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
@@ -135,7 +135,7 @@
      "event_id": "401909976",
      "game": "TOR @ PHI",
      "line": 8.5,
-     "odds": -104,
+     "odds": -110,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -144,12 +144,12 @@
      "type": "spread"
     }
    ],
-   "payout": 39.23,
-   "price": -104,
-   "projected_profit": 2.6,
+   "payout": 38.18,
+   "price": -110,
+   "projected_profit": 1.99,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T14:34+00:00",
+  "seen": "2026-11-12T14:47+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.06,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T14:34+00:00",
+  "seen": "2026-11-12T14:47+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
@@ -188,7 +188,7 @@
       "event_id": "401909976",
       "game": "TOR @ PHI",
       "line": 8.5,
-      "odds": -104,
+      "odds": -110,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-13T00:00Z",
@@ -199,18 +199,18 @@
       "event_id": "401909977",
       "game": "DET @ WSH",
       "line": 10.5,
-      "odds": -112,
+      "odds": -108,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-13T00:00Z",
       "team": "WSH"
      }
     ],
-    "payout": 74.25824175824177,
-    "projected_profit": 3.8671929670329774
+    "payout": 73.53535353535355,
+    "projected_profit": 3.634850909090922
    }
   },
-  "seen": "2026-11-12T14:34+00:00",
+  "seen": "2026-11-12T14:47+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909977": {
@@ -234,7 +234,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T14:34+00:00",
+  "seen": "2026-11-12T14:47+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909978": {
@@ -245,20 +245,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.125,
+   "ev": -0.123,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
+   "market_prob": 0.657,
    "name": "Terrence Shannon Jr.",
    "pid": "4432847",
-   "price": "-235",
-   "prob": 0.614,
+   "price": "-233",
+   "prob": 0.613,
    "projection": 1.274,
-   "score": 0.659,
+   "score": 0.657,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T14:34+00:00",
+  "seen": "2026-11-12T14:47+00:00",
   "start": "2026-11-13T01:00Z"
  }
 }
