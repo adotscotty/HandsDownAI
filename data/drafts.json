@@ -22,7 +22,7 @@
      "event_id": "401909977",
      "game": "DET @ WSH",
      "line": 10.5,
-     "odds": -115,
+     "odds": -117,
      "side": "home",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -44,29 +44,29 @@
      "type": "spread"
     }
    ],
-   "payout": 132.92,
-   "price": 565,
-   "projected_profit": 4.31,
+   "payout": 131.86,
+   "price": 559,
+   "projected_profit": 4.12,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
-     "event_id": "401909976",
-     "game": "TOR @ PHI",
+     "chance": 0.662,
+     "event_id": "401909977",
+     "game": "DET @ WSH",
      "label": "threes",
      "line": 1.5,
-     "name": "Dean Wade",
-     "odds": -238,
-     "pid": "3912848",
-     "projection": 0.836,
+     "name": "AJ Dybantsa",
+     "odds": -239,
+     "pid": "5142718",
+     "projection": 0.73,
      "side": "under",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -74,17 +74,17 @@
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
+   "payout": 28.37,
+   "price": -239,
+   "projected_profit": -1.22,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|sgp": {
   "bet": {
-   "chance": 0.3794,
+   "chance": 0.3742,
    "kind": "sgp",
    "legs": [
     {
@@ -101,13 +101,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.661,
+     "chance": 0.652,
      "event_id": "401909976",
      "game": "TOR @ PHI",
      "label": "threes",
      "line": 1.5,
      "name": "Dean Wade",
-     "odds": -238,
+     "odds": -228,
      "pid": "3912848",
      "projection": 0.836,
      "side": "under",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 52.89,
-   "price": 164,
-   "projected_profit": 0.07,
+   "payout": 53.58,
+   "price": 168,
+   "projected_profit": 0.05,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.38,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.41,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
@@ -199,18 +199,18 @@
       "event_id": "401909977",
       "game": "DET @ WSH",
       "line": 10.5,
-      "odds": -115,
+      "odds": -117,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-13T00:00Z",
       "team": "WSH"
      }
     ],
-    "payout": 69.62518740629685,
-    "projected_profit": 2.300390524737633
+    "payout": 69.07161803713528,
+    "projected_profit": 2.123086684350138
    }
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909976": {
@@ -221,20 +221,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.013,
+   "ev": -0.006,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.661,
+   "market_prob": 0.652,
    "name": "Dean Wade",
    "pid": "3912848",
-   "price": "-238",
-   "prob": 0.695,
+   "price": "-228",
+   "prob": 0.691,
    "projection": 0.836,
-   "score": 0.661,
+   "score": 0.652,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909977": {
@@ -245,20 +245,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": 0.02,
+   "ev": 0.017,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.659,
+   "market_prob": 0.662,
    "name": "AJ Dybantsa",
    "pid": "5142718",
-   "price": "-235",
-   "prob": 0.715,
+   "price": "-239",
+   "prob": 0.717,
    "projection": 0.73,
-   "score": 0.659,
+   "score": 0.662,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T19:35+00:00",
+  "seen": "2026-11-12T19:48+00:00",
   "start": "2026-11-13T00:00Z"
  }
 }
