@@ -7,20 +7,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.04,
+   "ev": -0.039,
    "label": "threes",
    "line": 0.5,
    "market_prob": 0.651,
    "name": "Tari Eason",
    "pid": "4433192",
-   "price": "-226",
+   "price": "-225",
    "prob": 0.665,
    "projection": 1.058,
    "score": 0.651,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T01:35+00:00",
+  "seen": "2026-11-12T01:48+00:00",
   "start": "2026-11-12T02:30Z"
  }
 }
