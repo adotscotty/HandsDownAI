@@ -1,33 +1,33 @@
 {
  "bet|2026-11-12|parlay": {
   "bet": {
-   "chance": 0.1786,
+   "chance": 0.1787,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.545,
-     "event_id": "401909977",
-     "game": "DET @ WSH",
-     "line": 9.5,
-     "odds": -103,
-     "side": "home",
-     "sport": "nba",
-     "start": "2026-11-13T00:00Z",
-     "team": "WSH",
-     "team_name": "WSH",
-     "type": "spread"
-    },
-    {
-     "chance": 0.5740000000000001,
+     "chance": 0.5609999999999999,
      "event_id": "401909976",
      "game": "TOR @ PHI",
-     "line": 7.5,
-     "odds": -119,
+     "line": 6.5,
+     "odds": -102,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
      "team": "TOR",
      "team_name": "TOR",
+     "type": "spread"
+    },
+    {
+     "chance": 0.558,
+     "event_id": "401909977",
+     "game": "DET @ WSH",
+     "line": 10.5,
+     "odds": -117,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-13T00:00Z",
+     "team": "WSH",
+     "team_name": "WSH",
      "type": "spread"
     },
     {
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 138.49,
-   "price": 592,
-   "projected_profit": 4.74,
+   "payout": 140.24,
+   "price": 601,
+   "projected_profit": 5.07,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T21:09+00:00",
+  "seen": "2026-11-12T21:22+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|prop": {
@@ -79,63 +79,63 @@
    "projected_profit": -1.2,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T21:09+00:00",
+  "seen": "2026-11-12T21:22+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|sgp": {
   "bet": {
-   "chance": 0.3526,
+   "chance": 0.3708,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.545,
-     "event_id": "401909977",
-     "game": "DET @ WSH",
-     "line": 9.5,
-     "odds": -103,
-     "side": "home",
+     "chance": 0.5609999999999999,
+     "event_id": "401909976",
+     "game": "TOR @ PHI",
+     "line": 6.5,
+     "odds": -102,
+     "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
-     "team": "WSH",
-     "team_name": "Washington Wizards",
+     "team": "TOR",
+     "team_name": "Toronto Raptors",
      "type": "spread"
     },
     {
-     "chance": 0.647,
-     "event_id": "401909977",
-     "game": "DET @ WSH",
+     "chance": 0.661,
+     "event_id": "401909976",
+     "game": "TOR @ PHI",
      "label": "threes",
-     "line": 0.5,
-     "name": "John Collins",
-     "odds": -222,
-     "pid": "3908845",
-     "projection": 1.015,
-     "side": "over",
+     "line": 1.5,
+     "name": "Dean Wade",
+     "odds": -237,
+     "pid": "3912848",
+     "projection": 0.836,
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 57.17,
-   "price": 186,
-   "projected_profit": 0.16,
+   "payout": 56.32,
+   "price": 182,
+   "projected_profit": 0.88,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T21:09+00:00",
+  "seen": "2026-11-12T21:22+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
   "bet": {
-   "chance": 0.574,
+   "chance": 0.561,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.5740000000000001,
+     "chance": 0.5609999999999999,
      "event_id": "401909976",
      "game": "TOR @ PHI",
-     "line": 7.5,
-     "odds": -119,
+     "line": 6.5,
+     "odds": -102,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -144,24 +144,24 @@
      "type": "spread"
     }
    ],
-   "payout": 36.81,
-   "price": -119,
-   "projected_profit": 1.13,
+   "payout": 39.61,
+   "price": -102,
+   "projected_profit": 2.22,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T21:09+00:00",
+  "seen": "2026-11-12T21:22+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
   "bet": {
-   "chance": 0.605,
+   "chance": 0.582,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.605,
+     "chance": 0.582,
      "event_id": "401873052",
      "game": "WSH @ NYG",
-     "odds": -130,
+     "odds": -125,
      "side": "home",
      "sport": "nfl",
      "start": "2026-11-13T01:15Z",
@@ -170,47 +170,47 @@
      "type": "ml"
     }
    ],
-   "payout": 35.38,
-   "price": -130,
-   "projected_profit": 1.41,
+   "payout": 36.0,
+   "price": -125,
+   "projected_profit": 0.95,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T21:09+00:00",
+  "seen": "2026-11-12T21:22+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
   "card": {
    "two": {
-    "chance": 0.31283000000000005,
+    "chance": 0.313038,
     "legs": [
      {
-      "chance": 0.545,
-      "event_id": "401909977",
-      "game": "DET @ WSH",
-      "line": 9.5,
-      "odds": -103,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-13T00:00Z",
-      "team": "WSH"
-     },
-     {
-      "chance": 0.5740000000000001,
+      "chance": 0.5609999999999999,
       "event_id": "401909976",
       "game": "TOR @ PHI",
-      "line": 7.5,
-      "odds": -119,
+      "line": 6.5,
+      "odds": -102,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-13T00:00Z",
       "team": "TOR"
+     },
+     {
+      "chance": 0.558,
+      "event_id": "401909977",
+      "game": "DET @ WSH",
+      "line": 10.5,
+      "odds": -117,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-13T00:00Z",
+      "team": "WSH"
      }
     ],
-    "payout": 72.54140491147916,
-    "projected_profit": 2.6931276984580315
+    "payout": 73.46070051952405,
+    "projected_profit": 2.995990769230769
    }
   },
-  "seen": "2026-11-12T21:09+00:00",
+  "seen": "2026-11-12T21:22+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909976": {
@@ -234,7 +234,31 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T21:09+00:00",
+  "seen": "2026-11-12T21:22+00:00",
+  "start": "2026-11-13T00:00Z"
+ },
+ "prop|nba|401909977": {
+  "game": {
+   "date": "2026-11-13T00:00Z",
+   "event_id": "401909977",
+   "name": "Detroit Pistons at Washington Wizards",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.052,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.656,
+   "name": "John Collins",
+   "pid": "3908845",
+   "price": "-232",
+   "prob": 0.663,
+   "projection": 1.015,
+   "score": 0.656,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-12T21:22+00:00",
   "start": "2026-11-13T00:00Z"
  }
 }
