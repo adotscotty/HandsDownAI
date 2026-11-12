@@ -49,7 +49,7 @@
    "projected_profit": 5.72,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|prop": {
@@ -62,24 +62,24 @@
      "event_id": "401909978",
      "game": "DAL @ MIN",
      "label": "threes",
-     "line": 0.5,
+     "line": 1.5,
      "name": "Terrence Shannon Jr.",
-     "odds": -238,
+     "odds": -237,
      "pid": "4432847",
      "projection": 1.274,
-     "side": "over",
+     "side": "under",
      "sport": "nba",
      "start": "2026-11-13T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
-   "projected_profit": -1.23,
+   "payout": 28.44,
+   "price": -237,
+   "projected_profit": -1.2,
    "start": "2026-11-13T01:00Z"
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T01:00Z"
  },
  "bet|2026-11-12|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.18,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.06,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
@@ -210,7 +210,7 @@
     "projected_profit": 3.634850909090922
    }
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909977": {
@@ -234,7 +234,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909978": {
@@ -245,20 +245,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.015,
+   "ev": -0.125,
    "label": "threes",
-   "line": 0.5,
+   "line": 1.5,
    "market_prob": 0.661,
    "name": "Terrence Shannon Jr.",
    "pid": "4432847",
-   "price": "-238",
-   "prob": 0.694,
+   "price": "-237",
+   "prob": 0.615,
    "projection": 1.274,
    "score": 0.661,
-   "side": "over",
+   "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T15:15+00:00",
+  "seen": "2026-11-12T15:28+00:00",
   "start": "2026-11-13T01:00Z"
  }
 }
