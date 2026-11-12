@@ -1,15 +1,15 @@
 {
  "bet|2026-11-12|parlay": {
   "bet": {
-   "chance": 0.1847,
+   "chance": 0.1829,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.5860000000000001,
+     "chance": 0.5740000000000001,
      "event_id": "401909976",
      "game": "TOR @ PHI",
-     "line": 8.5,
-     "odds": -112,
+     "line": 7.5,
+     "odds": -110,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -31,11 +31,11 @@
      "type": "spread"
     },
     {
-     "chance": 0.565,
+     "chance": 0.571,
      "event_id": "401862824",
      "game": "MEM @ USF",
-     "line": 3.5,
-     "odds": -105,
+     "line": 4.0,
+     "odds": -110,
      "side": "home",
      "sport": "cfb",
      "start": "2026-11-13T01:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 142.35,
-   "price": 612,
-   "projected_profit": 6.3,
+   "payout": 140.39,
+   "price": 602,
+   "projected_profit": 5.67,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T18:16+00:00",
+  "seen": "2026-11-12T18:29+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.19,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T18:16+00:00",
+  "seen": "2026-11-12T18:29+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|sgp": {
@@ -122,20 +122,20 @@
    "projected_profit": 0.21,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T18:16+00:00",
+  "seen": "2026-11-12T18:29+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
   "bet": {
-   "chance": 0.586,
+   "chance": 0.574,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.5860000000000001,
+     "chance": 0.5740000000000001,
      "event_id": "401909976",
      "game": "TOR @ PHI",
-     "line": 8.5,
-     "odds": -112,
+     "line": 7.5,
+     "odds": -110,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -144,21 +144,21 @@
      "type": "spread"
     }
    ],
-   "payout": 37.86,
-   "price": -112,
-   "projected_profit": 2.18,
+   "payout": 38.18,
+   "price": -110,
+   "projected_profit": 1.92,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T18:16+00:00",
+  "seen": "2026-11-12T18:29+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
   "bet": {
-   "chance": 0.582,
+   "chance": 0.605,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.582,
+     "chance": 0.605,
      "event_id": "401873052",
      "game": "WSH @ NYG",
      "odds": -135,
@@ -172,23 +172,23 @@
    ],
    "payout": 34.81,
    "price": -135,
-   "projected_profit": 0.26,
+   "projected_profit": 1.06,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T18:16+00:00",
+  "seen": "2026-11-12T18:29+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
   "card": {
    "two": {
-    "chance": 0.32698800000000006,
+    "chance": 0.3202920000000001,
     "legs": [
      {
-      "chance": 0.5860000000000001,
+      "chance": 0.5740000000000001,
       "event_id": "401909976",
       "game": "TOR @ PHI",
-      "line": 8.5,
-      "odds": -112,
+      "line": 7.5,
+      "odds": -110,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-13T00:00Z",
@@ -206,11 +206,11 @@
       "team": "WSH"
      }
     ],
-    "payout": 72.91005291005291,
-    "projected_profit": 3.840712380952386
+    "payout": 73.53535353535355,
+    "projected_profit": 3.5527854545454645
    }
   },
-  "seen": "2026-11-12T18:16+00:00",
+  "seen": "2026-11-12T18:29+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909977": {
@@ -234,7 +234,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T18:16+00:00",
+  "seen": "2026-11-12T18:29+00:00",
   "start": "2026-11-13T00:00Z"
  }
 }
