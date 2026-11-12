@@ -1,15 +1,15 @@
 {
  "bet|2026-11-12|parlay": {
   "bet": {
-   "chance": 0.1857,
+   "chance": 0.1816,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.589,
+     "chance": 0.5760000000000001,
      "event_id": "401909976",
      "game": "TOR @ PHI",
-     "line": 9.5,
-     "odds": -118,
+     "line": 8.5,
+     "odds": -104,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -44,12 +44,12 @@
      "type": "spread"
     }
    ],
-   "payout": 134.7,
-   "price": 573,
-   "projected_profit": 5.01,
+   "payout": 143.02,
+   "price": 615,
+   "projected_profit": 5.97,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|prop": {
@@ -79,20 +79,20 @@
    "projected_profit": -1.21,
    "start": "2026-11-13T01:00Z"
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T01:00Z"
  },
  "bet|2026-11-12|sgp": {
   "bet": {
-   "chance": 0.354,
+   "chance": 0.3462,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.589,
+     "chance": 0.5760000000000001,
      "event_id": "401909976",
      "game": "TOR @ PHI",
-     "line": 9.5,
-     "odds": -118,
+     "line": 8.5,
+     "odds": -104,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -117,25 +117,25 @@
      "type": "prop"
     }
    ],
-   "payout": 57.71,
-   "price": 189,
-   "projected_profit": 0.43,
+   "payout": 61.27,
+   "price": 206,
+   "projected_profit": 1.21,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
   "bet": {
-   "chance": 0.589,
+   "chance": 0.576,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.589,
+     "chance": 0.5760000000000001,
      "event_id": "401909976",
      "game": "TOR @ PHI",
-     "line": 9.5,
-     "odds": -118,
+     "line": 8.5,
+     "odds": -104,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-13T00:00Z",
@@ -144,12 +144,12 @@
      "type": "spread"
     }
    ],
-   "payout": 36.95,
-   "price": -118,
-   "projected_profit": 1.76,
+   "payout": 39.23,
+   "price": -104,
+   "projected_profit": 2.6,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
@@ -175,20 +175,20 @@
    "projected_profit": 1.06,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
   "card": {
    "two": {
-    "chance": 0.328662,
+    "chance": 0.3214080000000001,
     "legs": [
      {
-      "chance": 0.589,
+      "chance": 0.5760000000000001,
       "event_id": "401909976",
       "game": "TOR @ PHI",
-      "line": 9.5,
-      "odds": -118,
+      "line": 8.5,
+      "odds": -104,
       "side": "away",
       "sport": "nba",
       "start": "2026-11-13T00:00Z",
@@ -206,11 +206,11 @@
       "team": "WSH"
      }
     ],
-    "payout": 69.93946731234865,
-    "projected_profit": 2.9864452058111333
+    "payout": 74.25824175824177,
+    "projected_profit": 3.8671929670329774
    }
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909977": {
@@ -234,7 +234,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909978": {
@@ -258,7 +258,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T14:21+00:00",
+  "seen": "2026-11-12T14:34+00:00",
   "start": "2026-11-13T01:00Z"
  }
 }
