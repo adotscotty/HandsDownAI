@@ -49,7 +49,80 @@
    "projected_profit": 6.23,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T10:14+00:00",
+  "seen": "2026-11-12T10:27+00:00",
+  "start": "2026-11-13T00:00Z"
+ },
+ "bet|2026-11-12|prop": {
+  "bet": {
+   "chance": 0.656,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.656,
+     "event_id": "401909977",
+     "game": "DET @ WSH",
+     "label": "threes",
+     "line": 1.5,
+     "name": "AJ Dybantsa",
+     "odds": -232,
+     "pid": "5142718",
+     "projection": 0.73,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-13T00:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.62,
+   "price": -232,
+   "projected_profit": -1.22,
+   "start": "2026-11-13T00:00Z"
+  },
+  "seen": "2026-11-12T10:27+00:00",
+  "start": "2026-11-13T00:00Z"
+ },
+ "bet|2026-11-12|sgp": {
+  "bet": {
+   "chance": 0.3587,
+   "kind": "sgp",
+   "legs": [
+    {
+     "chance": 0.589,
+     "event_id": "401909976",
+     "game": "TOR @ PHI",
+     "line": 9.5,
+     "odds": -103,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-13T00:00Z",
+     "team": "TOR",
+     "team_name": "Toronto Raptors",
+     "type": "spread"
+    },
+    {
+     "chance": 0.609,
+     "event_id": "401909976",
+     "game": "TOR @ PHI",
+     "label": "assists",
+     "line": 1.5,
+     "name": "Jakob Poeltl",
+     "odds": -185,
+     "pid": "3134908",
+     "projection": 1.553,
+     "side": "over",
+     "sport": "nba",
+     "start": "2026-11-13T00:00Z",
+     "stat": "ast",
+     "type": "prop"
+    }
+   ],
+   "payout": 60.72,
+   "price": 204,
+   "projected_profit": 1.78,
+   "start": "2026-11-13T00:00Z"
+  },
+  "seen": "2026-11-12T10:27+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
@@ -76,7 +149,7 @@
    "projected_profit": 3.22,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T10:14+00:00",
+  "seen": "2026-11-12T10:27+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
@@ -102,7 +175,7 @@
    "projected_profit": 0.62,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T10:14+00:00",
+  "seen": "2026-11-12T10:27+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
@@ -137,7 +210,31 @@
     "projected_profit": 4.522014271844657
    }
   },
-  "seen": "2026-11-12T10:14+00:00",
+  "seen": "2026-11-12T10:27+00:00",
+  "start": "2026-11-13T00:00Z"
+ },
+ "prop|nba|401909977": {
+  "game": {
+   "date": "2026-11-13T00:00Z",
+   "event_id": "401909977",
+   "name": "Detroit Pistons at Washington Wizards",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": 0.022,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.656,
+   "name": "AJ Dybantsa",
+   "pid": "5142718",
+   "price": "-232",
+   "prob": 0.714,
+   "projection": 0.73,
+   "score": 0.656,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-12T10:27+00:00",
   "start": "2026-11-13T00:00Z"
  }
 }
