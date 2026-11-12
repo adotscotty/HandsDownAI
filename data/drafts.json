@@ -49,22 +49,22 @@
    "projected_profit": 5.85,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T17:36+00:00",
+  "seen": "2026-11-12T17:49+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|prop": {
   "bet": {
-   "chance": 0.665,
+   "chance": 0.667,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.665,
+     "chance": 0.667,
      "event_id": "401909977",
      "game": "DET @ WSH",
      "label": "threes",
      "line": 1.5,
      "name": "AJ Dybantsa",
-     "odds": -242,
+     "odds": -244,
      "pid": "5142718",
      "projection": 0.73,
      "side": "under",
@@ -74,17 +74,17 @@
      "type": "prop"
     }
    ],
-   "payout": 28.26,
-   "price": -242,
-   "projected_profit": -1.2,
+   "payout": 28.2,
+   "price": -244,
+   "projected_profit": -1.19,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T17:36+00:00",
+  "seen": "2026-11-12T17:49+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|sgp": {
   "bet": {
-   "chance": 0.3711,
+   "chance": 0.3722,
    "kind": "sgp",
    "legs": [
     {
@@ -101,13 +101,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.665,
+     "chance": 0.667,
      "event_id": "401909977",
      "game": "DET @ WSH",
      "label": "threes",
      "line": 1.5,
      "name": "AJ Dybantsa",
-     "odds": -242,
+     "odds": -244,
      "pid": "5142718",
      "projection": 0.73,
      "side": "under",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 54.44,
+   "payout": 54.3,
    "price": 172,
-   "projected_profit": 0.2,
+   "projected_profit": 0.21,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T17:36+00:00",
+  "seen": "2026-11-12T17:49+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.81,
    "start": "2026-11-13T00:00Z"
   },
-  "seen": "2026-11-12T17:36+00:00",
+  "seen": "2026-11-12T17:49+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "bet|2026-11-12|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.06,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T17:36+00:00",
+  "seen": "2026-11-12T17:49+00:00",
   "start": "2026-11-13T01:15Z"
  },
  "parlay|2026-11-12|nba": {
@@ -210,7 +210,7 @@
     "projected_profit": 3.4338742857142925
    }
   },
-  "seen": "2026-11-12T17:36+00:00",
+  "seen": "2026-11-12T17:49+00:00",
   "start": "2026-11-13T00:00Z"
  },
  "prop|nba|401909977": {
@@ -221,20 +221,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": 0.015,
+   "ev": 0.014,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.665,
+   "market_prob": 0.667,
    "name": "AJ Dybantsa",
    "pid": "5142718",
-   "price": "-242",
-   "prob": 0.718,
+   "price": "-244",
+   "prob": 0.719,
    "projection": 0.73,
-   "score": 0.665,
+   "score": 0.667,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-12T17:36+00:00",
+  "seen": "2026-11-12T17:49+00:00",
   "start": "2026-11-13T00:00Z"
  }
 }
