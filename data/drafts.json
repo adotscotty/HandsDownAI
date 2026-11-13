@@ -1,4 +1,199 @@
 {
+ "bet|2026-11-13|parlay": {
+  "bet": {
+   "chance": 0.1568,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.551,
+     "event_id": "401909296",
+     "game": "NY @ IND",
+     "line": 6.5,
+     "odds": -108,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-14T00:00Z",
+     "team": "IND",
+     "team_name": "IND",
+     "type": "spread"
+    },
+    {
+     "chance": 0.5369999999999999,
+     "event_id": "401909298",
+     "game": "CLE @ MIA",
+     "line": 2.5,
+     "odds": -112,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-14T01:00Z",
+     "team": "CLE",
+     "team_name": "CLE",
+     "type": "spread"
+    },
+    {
+     "chance": 0.53,
+     "event_id": "401909302",
+     "game": "GS @ SA",
+     "line": 12.5,
+     "odds": -112,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-14T02:30Z",
+     "team": "GS",
+     "team_name": "GS",
+     "type": "spread"
+    }
+   ],
+   "payout": 138.01,
+   "price": 590,
+   "projected_profit": 1.64,
+   "start": "2026-11-14T00:00Z"
+  },
+  "seen": "2026-11-13T05:10+00:00",
+  "start": "2026-11-14T00:00Z"
+ },
+ "bet|2026-11-13|prop": {
+  "bet": {
+   "chance": 0.703,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.703,
+     "event_id": "401909303",
+     "game": "POR @ SAC",
+     "label": "threes",
+     "line": 0.5,
+     "name": "Precious Achiuwa",
+     "odds": -294,
+     "pid": "4431679",
+     "projection": 0.324,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-14T03:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 26.8,
+   "price": -294,
+   "projected_profit": -1.16,
+   "start": "2026-11-14T03:00Z"
+  },
+  "seen": "2026-11-13T05:10+00:00",
+  "start": "2026-11-14T03:00Z"
+ },
+ "bet|2026-11-13|spread": {
+  "bet": {
+   "chance": 0.551,
+   "kind": "spread",
+   "legs": [
+    {
+     "chance": 0.551,
+     "event_id": "401909296",
+     "game": "NY @ IND",
+     "line": 6.5,
+     "odds": -108,
+     "side": "home",
+     "sport": "nba",
+     "start": "2026-11-14T00:00Z",
+     "team": "IND",
+     "team_name": "Indiana Pacers",
+     "type": "spread"
+    }
+   ],
+   "payout": 38.52,
+   "price": -108,
+   "projected_profit": 1.22,
+   "start": "2026-11-14T00:00Z"
+  },
+  "seen": "2026-11-13T05:10+00:00",
+  "start": "2026-11-14T00:00Z"
+ },
+ "bet|2026-11-13|winner": {
+  "bet": {
+   "chance": 0.635,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.635,
+     "event_id": "401909300",
+     "game": "MEM @ NO",
+     "odds": -158,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-14T01:00Z",
+     "team": "MEM",
+     "team_name": "Memphis Grizzlies",
+     "type": "ml"
+    }
+   ],
+   "payout": 32.66,
+   "price": -158,
+   "projected_profit": 0.74,
+   "start": "2026-11-14T01:00Z"
+  },
+  "seen": "2026-11-13T05:10+00:00",
+  "start": "2026-11-14T01:00Z"
+ },
+ "parlay|2026-11-13|nba": {
+  "card": {
+   "two": {
+    "chance": 0.29588699999999996,
+    "legs": [
+     {
+      "chance": 0.551,
+      "event_id": "401909296",
+      "game": "NY @ IND",
+      "line": 6.5,
+      "odds": -108,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-14T00:00Z",
+      "team": "IND"
+     },
+     {
+      "chance": 0.5369999999999999,
+      "event_id": "401909298",
+      "game": "CLE @ MIA",
+      "line": 2.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "nba",
+      "start": "2026-11-14T01:00Z",
+      "team": "CLE"
+     }
+    ],
+    "payout": 72.91005291005291,
+    "projected_profit": 1.5731368253968228
+   }
+  },
+  "seen": "2026-11-13T05:10+00:00",
+  "start": "2026-11-14T00:00Z"
+ },
+ "prop|nba|401909301": {
+  "game": {
+   "date": "2026-11-14T01:30Z",
+   "event_id": "401909301",
+   "name": "Utah Jazz at Houston Rockets",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.031,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.66,
+   "name": "Josh Green",
+   "pid": "4432811",
+   "price": "-236",
+   "prob": 0.681,
+   "projection": 0.906,
+   "score": 0.66,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-13T05:10+00:00",
+  "start": "2026-11-14T01:30Z"
+ },
  "prop|nba|401909303": {
   "game": {
    "date": "2026-11-14T03:00Z",
@@ -7,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.142,
+   "ev": -0.141,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.704,
+   "market_prob": 0.703,
    "name": "Precious Achiuwa",
    "pid": "4431679",
-   "price": "-296",
+   "price": "-294",
    "prob": 0.641,
    "projection": 0.324,
-   "score": 0.704,
+   "score": 0.703,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T04:57+00:00",
+  "seen": "2026-11-13T05:10+00:00",
   "start": "2026-11-14T03:00Z"
  }
 }
