@@ -49,22 +49,22 @@
    "projected_profit": 1.33,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|prop": {
   "bet": {
-   "chance": 0.703,
+   "chance": 0.695,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.703,
+     "chance": 0.695,
      "event_id": "401909303",
      "game": "POR @ SAC",
      "label": "threes",
      "line": 0.5,
      "name": "Precious Achiuwa",
-     "odds": -295,
+     "odds": -282,
      "pid": "4431679",
      "projection": 0.324,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 26.78,
-   "price": -295,
+   "payout": 27.09,
+   "price": -282,
    "projected_profit": -1.17,
    "start": "2026-11-14T03:00Z"
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T03:00Z"
  },
  "bet|2026-11-13|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.84,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|winner": {
@@ -118,7 +118,7 @@
      "chance": 0.635,
      "event_id": "401909300",
      "game": "MEM @ NO",
-     "odds": -158,
+     "odds": -166,
      "side": "away",
      "sport": "nba",
      "start": "2026-11-14T01:00Z",
@@ -127,12 +127,12 @@
      "type": "ml"
     }
    ],
-   "payout": 32.66,
-   "price": -158,
-   "projected_profit": 0.74,
+   "payout": 32.05,
+   "price": -166,
+   "projected_profit": 0.35,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|nba": {
@@ -167,7 +167,7 @@
     "projected_profit": 1.1824265859564065
    }
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909296": {
@@ -191,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909301": {
@@ -215,7 +215,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T01:30Z"
  },
  "prop|nba|401909303": {
@@ -226,20 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.142,
+   "ev": -0.138,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.703,
+   "market_prob": 0.695,
    "name": "Precious Achiuwa",
    "pid": "4431679",
-   "price": "-295",
-   "prob": 0.641,
+   "price": "-282",
+   "prob": 0.637,
    "projection": 0.324,
-   "score": 0.703,
+   "score": 0.695,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T10:27+00:00",
+  "seen": "2026-11-13T10:39+00:00",
   "start": "2026-11-14T03:00Z"
  }
 }
