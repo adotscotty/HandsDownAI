@@ -1,11 +1,11 @@
 {
  "bet|2026-11-13|parlay": {
   "bet": {
-   "chance": 0.1636,
+   "chance": 0.1695,
    "kind": "parlay",
    "legs": [
     {
-     "chance": 0.576,
+     "chance": 0.578,
      "event_id": "401909296",
      "game": "NY @ IND",
      "line": 8.5,
@@ -31,64 +31,64 @@
      "type": "spread"
     },
     {
-     "chance": 0.522,
-     "event_id": "401909303",
-     "game": "POR @ SAC",
-     "line": -10.5,
-     "odds": -105,
+     "chance": 0.5389999999999999,
+     "event_id": "401909298",
+     "game": "CLE @ MIA",
+     "line": 2.5,
+     "odds": -112,
      "side": "away",
      "sport": "nba",
-     "start": "2026-11-14T03:00Z",
-     "team": "POR",
-     "team_name": "POR",
+     "start": "2026-11-14T01:00Z",
+     "team": "CLE",
+     "team_name": "CLE",
      "type": "spread"
     }
    ],
-   "payout": 143.57,
-   "price": 618,
-   "projected_profit": 3.48,
+   "payout": 139.19,
+   "price": 596,
+   "projected_profit": 3.59,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|prop": {
   "bet": {
-   "chance": 0.656,
+   "chance": 0.659,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.656,
-     "event_id": "401909302",
-     "game": "GS @ SA",
+     "chance": 0.659,
+     "event_id": "401909298",
+     "game": "CLE @ MIA",
      "label": "threes",
      "line": 0.5,
-     "name": "Dylan Harper",
-     "odds": -231,
-     "pid": "5037871",
-     "projection": 1.2,
+     "name": "Bobby Portis",
+     "odds": -235,
+     "pid": "3064482",
+     "projection": 1.33,
      "side": "over",
      "sport": "nba",
-     "start": "2026-11-14T02:30Z",
+     "start": "2026-11-14T01:00Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.66,
-   "price": -231,
-   "projected_profit": -1.2,
-   "start": "2026-11-14T02:30Z"
+   "payout": 28.51,
+   "price": -235,
+   "projected_profit": -1.21,
+   "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T22:56+00:00",
-  "start": "2026-11-14T02:30Z"
+  "seen": "2026-11-13T23:10+00:00",
+  "start": "2026-11-14T01:00Z"
  },
  "bet|2026-11-13|sgp": {
   "bet": {
-   "chance": 0.3721,
+   "chance": 0.3734,
    "kind": "sgp",
    "legs": [
     {
-     "chance": 0.576,
+     "chance": 0.578,
      "event_id": "401909296",
      "game": "NY @ IND",
      "line": 8.5,
@@ -119,19 +119,19 @@
    ],
    "payout": 55.54,
    "price": 178,
-   "projected_profit": 0.67,
+   "projected_profit": 0.74,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|spread": {
   "bet": {
-   "chance": 0.576,
+   "chance": 0.578,
    "kind": "spread",
    "legs": [
     {
-     "chance": 0.576,
+     "chance": 0.578,
      "event_id": "401909296",
      "game": "NY @ IND",
      "line": 8.5,
@@ -146,10 +146,10 @@
    ],
    "payout": 38.18,
    "price": -110,
-   "projected_profit": 1.99,
+   "projected_profit": 2.07,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|winner": {
@@ -175,14 +175,25 @@
    "projected_profit": 1.15,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|cfb": {
   "card": {
    "two": {
-    "chance": 0.324274,
+    "chance": 0.32023499999999994,
     "legs": [
+     {
+      "chance": 0.5549999999999999,
+      "event_id": "401862828",
+      "game": "TULN @ RICE",
+      "line": 2.5,
+      "odds": -102,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-11-14T19:00Z",
+      "team": "TULN"
+     },
      {
       "chance": 0.577,
       "event_id": "401869952",
@@ -193,33 +204,22 @@
       "sport": "cfb",
       "start": "2026-11-14T20:30Z",
       "team": "GAST"
-     },
-     {
-      "chance": 0.562,
-      "event_id": "401856887",
-      "game": "MISS @ OU",
-      "line": 1.5,
-      "odds": -108,
-      "side": "away",
-      "sport": "cfb",
-      "start": "2026-11-14T21:15Z",
-      "team": "MISS"
      }
     ],
-    "payout": 74.18381344307271,
-    "projected_profit": 4.05588192043896
+    "payout": 76.28177196804648,
+    "projected_profit": 4.4280932461873626
    }
   },
-  "seen": "2026-11-13T22:56+00:00",
-  "start": "2026-11-14T20:30Z"
+  "seen": "2026-11-13T23:10+00:00",
+  "start": "2026-11-14T19:00Z"
  },
  "parlay|2026-11-13|nba": {
   "card": {
    "two": {
-    "chance": 0.313344,
+    "chance": 0.314432,
     "legs": [
      {
-      "chance": 0.576,
+      "chance": 0.578,
       "event_id": "401909296",
       "game": "NY @ IND",
       "line": 8.5,
@@ -242,10 +242,10 @@
      }
     ],
     "payout": 73.53535353535355,
-    "projected_profit": 3.0418618181818253
+    "projected_profit": 3.121868282828288
    }
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909298": {
@@ -256,20 +256,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.133,
+   "ev": -0.005,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.651,
+   "line": 0.5,
+   "market_prob": 0.659,
    "name": "Bobby Portis",
    "pid": "3064482",
-   "price": "-226",
-   "prob": 0.601,
+   "price": "-235",
+   "prob": 0.698,
    "projection": 1.33,
-   "score": 0.651,
-   "side": "under",
+   "score": 0.659,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "prop|nba|401909302": {
@@ -293,7 +293,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "prop|nba|401909303": {
@@ -317,7 +317,7 @@
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-11-13T22:56+00:00",
+  "seen": "2026-11-13T23:10+00:00",
   "start": "2026-11-14T03:00Z"
  }
 }
