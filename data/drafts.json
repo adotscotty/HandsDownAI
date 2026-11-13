@@ -49,7 +49,7 @@
    "projected_profit": 3.12,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|prop": {
@@ -79,12 +79,12 @@
    "projected_profit": -1.19,
    "start": "2026-11-14T02:30Z"
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "bet|2026-11-13|sgp": {
   "bet": {
-   "chance": 0.3738,
+   "chance": 0.3779,
    "kind": "sgp",
    "legs": [
     {
@@ -101,13 +101,13 @@
      "type": "spread"
     },
     {
-     "chance": 0.649,
+     "chance": 0.656,
      "event_id": "401909296",
      "game": "NY @ IND",
      "label": "threes",
      "line": 1.5,
      "name": "Mikal Bridges",
-     "odds": -224,
+     "odds": -232,
      "pid": "3147657",
      "projection": 0.822,
      "side": "under",
@@ -117,12 +117,12 @@
      "type": "prop"
     }
    ],
-   "payout": 55.23,
-   "price": 176,
+   "payout": 54.64,
+   "price": 173,
    "projected_profit": 0.65,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.48,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|nba": {
@@ -210,7 +210,31 @@
     "projected_profit": 2.7453672727272718
    }
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
+  "start": "2026-11-14T00:00Z"
+ },
+ "prop|nba|401909296": {
+  "game": {
+   "date": "2026-11-14T00:00Z",
+   "event_id": "401909296",
+   "name": "New York Knicks at Indiana Pacers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.005,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.656,
+   "name": "Mikal Bridges",
+   "pid": "3147657",
+   "price": "-232",
+   "prob": 0.695,
+   "projection": 0.822,
+   "score": 0.656,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909301": {
@@ -234,7 +258,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T01:30Z"
  },
  "prop|nba|401909302": {
@@ -258,7 +282,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T16:18+00:00",
+  "seen": "2026-11-13T16:31+00:00",
   "start": "2026-11-14T02:30Z"
  }
 }
