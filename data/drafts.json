@@ -49,37 +49,37 @@
    "projected_profit": 2.64,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|prop": {
   "bet": {
-   "chance": 0.662,
+   "chance": 0.665,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.662,
+     "chance": 0.665,
      "event_id": "401909302",
      "game": "GS @ SA",
      "label": "threes",
-     "line": 1.5,
+     "line": 0.5,
      "name": "Dylan Harper",
-     "odds": -238,
+     "odds": -242,
      "pid": "5037871",
      "projection": 1.2,
-     "side": "under",
+     "side": "over",
      "sport": "nba",
      "start": "2026-11-14T02:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 28.4,
-   "price": -238,
+   "payout": 28.26,
+   "price": -242,
    "projected_profit": -1.2,
    "start": "2026-11-14T02:30Z"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "bet|2026-11-13|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.22,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.54,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.48,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|nba": {
@@ -210,7 +210,7 @@
     "projected_profit": 2.274448695652172
    }
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909300": {
@@ -234,7 +234,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "prop|nba|401909301": {
@@ -258,7 +258,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T01:30Z"
  },
  "prop|nba|401909302": {
@@ -269,20 +269,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.108,
+   "ev": -0.027,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.662,
+   "line": 0.5,
+   "market_prob": 0.665,
    "name": "Dylan Harper",
    "pid": "5037871",
-   "price": "-238",
-   "prob": 0.628,
+   "price": "-242",
+   "prob": 0.688,
    "projection": 1.2,
-   "score": 0.662,
-   "side": "under",
+   "score": 0.665,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "prop|nba|401909303": {
@@ -306,31 +306,7 @@
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-11-13T15:13+00:00",
+  "seen": "2026-11-13T15:26+00:00",
   "start": "2026-11-14T03:00Z"
- },
- "prop|nba|401909304": {
-  "game": {
-   "date": "2026-11-14T03:30Z",
-   "event_id": "401909304",
-   "name": "Oklahoma City Thunder at LA Clippers",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.115,
-   "label": "assists",
-   "line": 1.5,
-   "market_prob": 0.651,
-   "name": "Brook Lopez",
-   "pid": "3448",
-   "price": "-226",
-   "prob": 0.613,
-   "projection": 1.235,
-   "score": 0.651,
-   "side": "under",
-   "stat": "ast"
-  },
-  "seen": "2026-11-13T15:13+00:00",
-  "start": "2026-11-14T03:30Z"
  }
 }
