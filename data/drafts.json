@@ -7,20 +7,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.035,
+   "ev": -0.078,
    "label": "threes",
-   "line": 1.5,
+   "line": 0.5,
    "market_prob": 0.666,
    "name": "Josh Green",
    "pid": "4432811",
    "price": "-243",
-   "prob": 0.684,
+   "prob": 0.653,
    "projection": 0.906,
    "score": 0.666,
-   "side": "under",
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T04:17+00:00",
+  "seen": "2026-11-13T04:30+00:00",
   "start": "2026-11-14T01:30Z"
  }
 }
