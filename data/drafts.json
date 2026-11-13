@@ -49,7 +49,7 @@
    "projected_profit": 1.64,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T05:53+00:00",
+  "seen": "2026-11-13T06:06+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|prop": {
@@ -79,7 +79,7 @@
    "projected_profit": -1.19,
    "start": "2026-11-14T03:00Z"
   },
-  "seen": "2026-11-13T05:53+00:00",
+  "seen": "2026-11-13T06:06+00:00",
   "start": "2026-11-14T03:00Z"
  },
  "bet|2026-11-13|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.22,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T05:53+00:00",
+  "seen": "2026-11-13T06:06+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.74,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T05:53+00:00",
+  "seen": "2026-11-13T06:06+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|nba": {
@@ -167,8 +167,32 @@
     "projected_profit": 1.5731368253968228
    }
   },
-  "seen": "2026-11-13T05:53+00:00",
+  "seen": "2026-11-13T06:06+00:00",
   "start": "2026-11-14T00:00Z"
+ },
+ "prop|nba|401909298": {
+  "game": {
+   "date": "2026-11-14T01:00Z",
+   "event_id": "401909298",
+   "name": "Cleveland Cavaliers at Miami Heat",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.117,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.655,
+   "name": "Pelle Larsson",
+   "pid": "4601025",
+   "price": "-230",
+   "prob": 0.615,
+   "projection": 1.254,
+   "score": 0.655,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-13T06:06+00:00",
+  "start": "2026-11-14T01:00Z"
  },
  "prop|nba|401909301": {
   "game": {
@@ -178,20 +202,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.073,
+   "ev": -0.078,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.658,
+   "market_prob": 0.666,
    "name": "Josh Green",
    "pid": "4432811",
-   "price": "-234",
-   "prob": 0.65,
+   "price": "-243",
+   "prob": 0.653,
    "projection": 0.906,
-   "score": 0.658,
+   "score": 0.666,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T05:53+00:00",
+  "seen": "2026-11-13T06:06+00:00",
   "start": "2026-11-14T01:30Z"
  },
  "prop|nba|401909303": {
@@ -215,7 +239,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T05:53+00:00",
+  "seen": "2026-11-13T06:06+00:00",
   "start": "2026-11-14T03:00Z"
  }
 }
