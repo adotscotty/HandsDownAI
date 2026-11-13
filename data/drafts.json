@@ -20,7 +20,31 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T04:30+00:00",
+  "seen": "2026-11-13T04:43+00:00",
   "start": "2026-11-14T01:30Z"
+ },
+ "prop|nba|401909303": {
+  "game": {
+   "date": "2026-11-14T03:00Z",
+   "event_id": "401909303",
+   "name": "Portland Trail Blazers at Sacramento Kings",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.135,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.69,
+   "name": "Precious Achiuwa",
+   "pid": "4431679",
+   "price": "-275",
+   "prob": 0.634,
+   "projection": 0.324,
+   "score": 0.69,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-13T04:43+00:00",
+  "start": "2026-11-14T03:00Z"
  }
 }
