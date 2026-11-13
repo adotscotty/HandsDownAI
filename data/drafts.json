@@ -49,38 +49,38 @@
    "projected_profit": 1.64,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T08:23+00:00",
+  "seen": "2026-11-13T08:35+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|prop": {
   "bet": {
-   "chance": 0.701,
+   "chance": 0.658,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.701,
-     "event_id": "401909303",
-     "game": "POR @ SAC",
+     "chance": 0.658,
+     "event_id": "401909301",
+     "game": "UTAH @ HOU",
      "label": "threes",
      "line": 0.5,
-     "name": "Precious Achiuwa",
-     "odds": -292,
-     "pid": "4431679",
-     "projection": 0.324,
-     "side": "under",
+     "name": "Josh Green",
+     "odds": -234,
+     "pid": "4432811",
+     "projection": 0.906,
+     "side": "over",
      "sport": "nba",
-     "start": "2026-11-14T03:00Z",
+     "start": "2026-11-14T01:30Z",
      "stat": "tpm",
      "type": "prop"
     }
    ],
-   "payout": 26.85,
-   "price": -292,
-   "projected_profit": -1.18,
-   "start": "2026-11-14T03:00Z"
+   "payout": 28.55,
+   "price": -234,
+   "projected_profit": -1.22,
+   "start": "2026-11-14T01:30Z"
   },
-  "seen": "2026-11-13T08:23+00:00",
-  "start": "2026-11-14T03:00Z"
+  "seen": "2026-11-13T08:35+00:00",
+  "start": "2026-11-14T01:30Z"
  },
  "bet|2026-11-13|spread": {
   "bet": {
@@ -106,7 +106,7 @@
    "projected_profit": 1.22,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T08:23+00:00",
+  "seen": "2026-11-13T08:35+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 0.74,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T08:23+00:00",
+  "seen": "2026-11-13T08:35+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|nba": {
@@ -167,7 +167,7 @@
     "projected_profit": 1.5731368253968228
    }
   },
-  "seen": "2026-11-13T08:23+00:00",
+  "seen": "2026-11-13T08:35+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909296": {
@@ -191,7 +191,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T08:23+00:00",
+  "seen": "2026-11-13T08:35+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909300": {
@@ -215,7 +215,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T08:23+00:00",
+  "seen": "2026-11-13T08:35+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "prop|nba|401909301": {
@@ -226,44 +226,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.078,
+   "ev": -0.073,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.666,
+   "market_prob": 0.658,
    "name": "Josh Green",
    "pid": "4432811",
-   "price": "-243",
-   "prob": 0.653,
+   "price": "-234",
+   "prob": 0.65,
    "projection": 0.906,
-   "score": 0.666,
+   "score": 0.658,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T08:23+00:00",
+  "seen": "2026-11-13T08:35+00:00",
   "start": "2026-11-14T01:30Z"
- },
- "prop|nba|401909303": {
-  "game": {
-   "date": "2026-11-14T03:00Z",
-   "event_id": "401909303",
-   "name": "Portland Trail Blazers at Sacramento Kings",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.141,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.701,
-   "name": "Precious Achiuwa",
-   "pid": "4431679",
-   "price": "-292",
-   "prob": 0.64,
-   "projection": 0.324,
-   "score": 0.701,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-13T08:23+00:00",
-  "start": "2026-11-14T03:00Z"
  }
 }
