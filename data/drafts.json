@@ -49,22 +49,22 @@
    "projected_profit": 3.12,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|prop": {
   "bet": {
-   "chance": 0.668,
+   "chance": 0.66,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.668,
+     "chance": 0.66,
      "event_id": "401909302",
      "game": "GS @ SA",
      "label": "threes",
      "line": 1.5,
      "name": "Dylan Harper",
-     "odds": -245,
+     "odds": -236,
      "pid": "5037871",
      "projection": 1.2,
      "side": "under",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.16,
-   "price": -245,
-   "projected_profit": -1.19,
+   "payout": 28.47,
+   "price": -236,
+   "projected_profit": -1.21,
    "start": "2026-11-14T02:30Z"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "bet|2026-11-13|sgp": {
@@ -122,7 +122,7 @@
    "projected_profit": 0.65,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|spread": {
@@ -149,7 +149,7 @@
    "projected_profit": 1.99,
    "start": "2026-11-14T00:00Z"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "bet|2026-11-13|winner": {
@@ -175,7 +175,7 @@
    "projected_profit": 1.48,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|cfb": {
@@ -210,7 +210,7 @@
     "projected_profit": 2.33644134038801
    }
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T17:00Z"
  },
  "parlay|2026-11-13|nba": {
@@ -245,7 +245,7 @@
     "projected_profit": 2.7453672727272718
    }
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909296": {
@@ -269,7 +269,7 @@
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T00:00Z"
  },
  "prop|nba|401909301": {
@@ -293,7 +293,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T01:30Z"
  },
  "prop|nba|401909302": {
@@ -304,44 +304,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.111,
+   "ev": -0.107,
    "label": "threes",
    "line": 1.5,
-   "market_prob": 0.668,
+   "market_prob": 0.66,
    "name": "Dylan Harper",
    "pid": "5037871",
-   "price": "-245",
-   "prob": 0.631,
+   "price": "-236",
+   "prob": 0.627,
    "projection": 1.2,
-   "score": 0.668,
+   "score": 0.66,
    "side": "under",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T17:38+00:00",
+  "seen": "2026-11-13T17:51+00:00",
   "start": "2026-11-14T02:30Z"
- },
- "prop|nba|401909303": {
-  "game": {
-   "date": "2026-11-14T03:00Z",
-   "event_id": "401909303",
-   "name": "Portland Trail Blazers at Sacramento Kings",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.122,
-   "label": "assists",
-   "line": 1.5,
-   "market_prob": 0.651,
-   "name": "Keegan Murray",
-   "pid": "4594327",
-   "price": "-226",
-   "prob": 0.609,
-   "projection": 1.264,
-   "score": 0.651,
-   "side": "under",
-   "stat": "ast"
-  },
-  "seen": "2026-11-13T17:38+00:00",
-  "start": "2026-11-14T03:00Z"
  }
 }
