@@ -22,7 +22,31 @@
    "projected_profit": 0.95,
    "start": "2026-11-13T01:15Z"
   },
-  "seen": "2026-11-12T23:48+00:00",
+  "seen": "2026-11-13T00:01+00:00",
   "start": "2026-11-13T01:15Z"
+ },
+ "prop|nba|401909978": {
+  "game": {
+   "date": "2026-11-13T01:00Z",
+   "event_id": "401909978",
+   "name": "Dallas Mavericks at Minnesota Timberwolves",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.043,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.655,
+   "name": "Trey Lyles",
+   "pid": "3136196",
+   "price": "-230",
+   "prob": 0.667,
+   "projection": 1.056,
+   "score": 0.655,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-13T00:01+00:00",
+  "start": "2026-11-13T01:00Z"
  }
 }
