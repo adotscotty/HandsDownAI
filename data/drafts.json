@@ -26,16 +26,16 @@
    "projected_profit": -1.2,
    "start": "2026-11-14T02:30Z"
   },
-  "seen": "2026-11-13T23:37+00:00",
+  "seen": "2026-11-13T23:50+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "bet|2026-11-13|winner": {
   "bet": {
-   "chance": 0.654,
+   "chance": 0.651,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.654,
+     "chance": 0.651,
      "event_id": "401909300",
      "game": "MEM @ NO",
      "odds": -162,
@@ -49,10 +49,10 @@
    ],
    "payout": 32.35,
    "price": -162,
-   "projected_profit": 1.15,
+   "projected_profit": 1.06,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T23:37+00:00",
+  "seen": "2026-11-13T23:50+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|cfb": {
@@ -87,7 +87,7 @@
     "projected_profit": 4.4280932461873626
    }
   },
-  "seen": "2026-11-13T23:37+00:00",
+  "seen": "2026-11-13T23:50+00:00",
   "start": "2026-11-14T19:00Z"
  },
  "prop|nba|401909298": {
@@ -98,20 +98,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.059,
+   "ev": -0.052,
    "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
+   "line": 0.5,
+   "market_prob": 0.658,
    "name": "Mario Hezonja",
    "pid": "2995706",
-   "price": "-231",
-   "prob": 0.657,
+   "price": "-234",
+   "prob": 0.664,
    "projection": 1.018,
-   "score": 0.655,
-   "side": "under",
+   "score": 0.658,
+   "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T23:37+00:00",
+  "seen": "2026-11-13T23:50+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "prop|nba|401909302": {
@@ -135,7 +135,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T23:37+00:00",
+  "seen": "2026-11-13T23:50+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "prop|nba|401909303": {
@@ -159,7 +159,7 @@
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-11-13T23:37+00:00",
+  "seen": "2026-11-13T23:50+00:00",
   "start": "2026-11-14T03:00Z"
  }
 }
