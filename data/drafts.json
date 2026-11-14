@@ -1,17 +1,17 @@
 {
  "bet|2026-11-13|prop": {
   "bet": {
-   "chance": 0.664,
+   "chance": 0.662,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.664,
+     "chance": 0.662,
      "event_id": "401909302",
      "game": "GS @ SA",
      "label": "threes",
      "line": 0.5,
      "name": "Dylan Harper",
-     "odds": -241,
+     "odds": -238,
      "pid": "5037871",
      "projection": 1.2,
      "side": "over",
@@ -21,12 +21,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.3,
-   "price": -241,
-   "projected_profit": -1.21,
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.2,
    "start": "2026-11-14T02:30Z"
   },
-  "seen": "2026-11-14T00:55+00:00",
+  "seen": "2026-11-14T01:09+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "parlay|2026-11-13|cfb": {
@@ -50,18 +50,18 @@
       "event_id": "401856887",
       "game": "MISS @ OU",
       "line": 2.5,
-      "odds": -112,
+      "odds": -105,
       "side": "away",
       "sport": "cfb",
       "start": "2026-11-14T21:15Z",
       "team": "MISS"
      }
     ],
-    "payout": 72.91005291005291,
-    "projected_profit": 4.105594603174598
+    "payout": 75.20282186948853,
+    "projected_profit": 4.863632169312162
    }
   },
-  "seen": "2026-11-14T00:55+00:00",
+  "seen": "2026-11-14T01:09+00:00",
   "start": "2026-11-14T20:30Z"
  },
  "prop|nba|401909302": {
@@ -72,20 +72,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.027,
+   "ev": -0.025,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.664,
+   "market_prob": 0.662,
    "name": "Dylan Harper",
    "pid": "5037871",
-   "price": "-241",
-   "prob": 0.688,
+   "price": "-238",
+   "prob": 0.686,
    "projection": 1.2,
-   "score": 0.664,
+   "score": 0.662,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-14T00:55+00:00",
+  "seen": "2026-11-14T01:09+00:00",
   "start": "2026-11-14T02:30Z"
  }
 }
