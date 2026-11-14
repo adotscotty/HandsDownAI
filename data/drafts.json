@@ -49,8 +49,38 @@
    "projected_profit": 7.58,
    "start": "2026-11-14T20:00Z"
   },
-  "seen": "2026-11-14T09:54+00:00",
+  "seen": "2026-11-14T10:07+00:00",
   "start": "2026-11-14T20:00Z"
+ },
+ "bet|2026-11-14|prop": {
+  "bet": {
+   "chance": 0.651,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.651,
+     "event_id": "401909984",
+     "game": "CHI @ MIN",
+     "label": "threes",
+     "line": 1.5,
+     "name": "Terrence Shannon Jr.",
+     "odds": -226,
+     "pid": "4432847",
+     "projection": 1.164,
+     "side": "under",
+     "sport": "nba",
+     "start": "2026-11-15T01:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.85,
+   "price": -226,
+   "projected_profit": -1.22,
+   "start": "2026-11-15T01:00Z"
+  },
+  "seen": "2026-11-14T10:07+00:00",
+  "start": "2026-11-15T01:00Z"
  },
  "bet|2026-11-14|spread": {
   "bet": {
@@ -76,34 +106,34 @@
    "projected_profit": 0.0,
    "start": "2026-11-15T00:00Z"
   },
-  "seen": "2026-11-14T09:54+00:00",
+  "seen": "2026-11-14T10:07+00:00",
   "start": "2026-11-15T00:00Z"
  },
  "bet|2026-11-14|winner": {
   "bet": {
-   "chance": 0.61,
+   "chance": 0.675,
    "kind": "winner",
    "legs": [
     {
-     "chance": 0.61,
-     "event_id": "401862829",
-     "game": "UAB @ TEM",
-     "odds": -135,
+     "chance": 0.675,
+     "event_id": "401909983",
+     "game": "BKN @ MEM",
+     "odds": -197,
      "side": "home",
-     "sport": "cfb",
-     "start": "2026-11-14T18:00Z",
-     "team": "TEM",
-     "team_name": "Temple Owls",
+     "sport": "nba",
+     "start": "2026-11-15T01:00Z",
+     "team": "MEM",
+     "team_name": "Memphis Grizzlies",
      "type": "ml"
     }
    ],
-   "payout": 34.81,
-   "price": -135,
-   "projected_profit": 1.24,
-   "start": "2026-11-14T18:00Z"
+   "payout": 30.15,
+   "price": -197,
+   "projected_profit": 0.35,
+   "start": "2026-11-15T01:00Z"
   },
-  "seen": "2026-11-14T09:54+00:00",
-  "start": "2026-11-14T18:00Z"
+  "seen": "2026-11-14T10:07+00:00",
+  "start": "2026-11-15T01:00Z"
  },
  "parlay|2026-11-13|cfb": {
   "card": {
@@ -172,7 +202,7 @@
     "projected_profit": 4.826865362962959
    }
   },
-  "seen": "2026-11-14T09:54+00:00",
+  "seen": "2026-11-14T10:07+00:00",
   "start": "2026-11-14T20:00Z"
  },
  "parlay|2026-11-14|nba": {
@@ -207,7 +237,31 @@
     "projected_profit": 0.8950175983436814
    }
   },
-  "seen": "2026-11-14T09:54+00:00",
+  "seen": "2026-11-14T10:07+00:00",
   "start": "2026-11-15T00:00Z"
+ },
+ "prop|nba|401909984": {
+  "game": {
+   "date": "2026-11-15T01:00Z",
+   "event_id": "401909984",
+   "name": "Chicago Bulls at Minnesota Timberwolves",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.093,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.651,
+   "name": "Terrence Shannon Jr.",
+   "pid": "4432847",
+   "price": "-226",
+   "prob": 0.629,
+   "projection": 1.164,
+   "score": 0.651,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-14T10:07+00:00",
+  "start": "2026-11-15T01:00Z"
  }
 }
