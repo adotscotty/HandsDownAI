@@ -26,34 +26,8 @@
    "projected_profit": -1.21,
    "start": "2026-11-14T02:30Z"
   },
-  "seen": "2026-11-14T00:30+00:00",
+  "seen": "2026-11-14T00:43+00:00",
   "start": "2026-11-14T02:30Z"
- },
- "bet|2026-11-13|winner": {
-  "bet": {
-   "chance": 0.651,
-   "kind": "winner",
-   "legs": [
-    {
-     "chance": 0.651,
-     "event_id": "401909300",
-     "game": "MEM @ NO",
-     "odds": -162,
-     "side": "away",
-     "sport": "nba",
-     "start": "2026-11-14T01:00Z",
-     "team": "MEM",
-     "team_name": "Memphis Grizzlies",
-     "type": "ml"
-    }
-   ],
-   "payout": 32.35,
-   "price": -162,
-   "projected_profit": 1.06,
-   "start": "2026-11-14T01:00Z"
-  },
-  "seen": "2026-11-14T00:30+00:00",
-  "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|cfb": {
   "card": {
@@ -87,56 +61,8 @@
     "projected_profit": 4.105594603174598
    }
   },
-  "seen": "2026-11-14T00:30+00:00",
+  "seen": "2026-11-14T00:43+00:00",
   "start": "2026-11-14T20:30Z"
- },
- "prop|nba|401909298": {
-  "game": {
-   "date": "2026-11-14T01:00Z",
-   "event_id": "401909298",
-   "name": "Cleveland Cavaliers at Miami Heat",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.06,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.657,
-   "name": "Mario Hezonja",
-   "pid": "2995706",
-   "price": "-234",
-   "prob": 0.658,
-   "projection": 1.018,
-   "score": 0.657,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-14T00:30+00:00",
-  "start": "2026-11-14T01:00Z"
- },
- "prop|nba|401909300": {
-  "game": {
-   "date": "2026-11-14T01:00Z",
-   "event_id": "401909300",
-   "name": "Memphis Grizzlies at New Orleans Pelicans",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.045,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.655,
-   "name": "Herbert Jones",
-   "pid": "4277813",
-   "price": "-230",
-   "prob": 0.665,
-   "projection": 0.972,
-   "score": 0.655,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-14T00:30+00:00",
-  "start": "2026-11-14T01:00Z"
  },
  "prop|nba|401909302": {
   "game": {
@@ -159,7 +85,7 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-14T00:30+00:00",
+  "seen": "2026-11-14T00:43+00:00",
   "start": "2026-11-14T02:30Z"
  }
 }
