@@ -1,4 +1,83 @@
 {
+ "bet|2026-11-14|parlay": {
+  "bet": {
+   "chance": 0.1828,
+   "kind": "parlay",
+   "legs": [
+    {
+     "chance": 0.5529999999999999,
+     "event_id": "401856888",
+     "game": "TENN @ TA&M",
+     "line": -1.5,
+     "odds": 102,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-11-14T20:00Z",
+     "team": "TENN",
+     "team_name": "TENN",
+     "type": "spread"
+    },
+    {
+     "chance": 0.577,
+     "event_id": "401869952",
+     "game": "GASO @ GAST",
+     "line": 6.0,
+     "odds": -108,
+     "side": "home",
+     "sport": "cfb",
+     "start": "2026-11-14T20:30Z",
+     "team": "GAST",
+     "team_name": "GAST",
+     "type": "spread"
+    },
+    {
+     "chance": 0.573,
+     "event_id": "401856887",
+     "game": "MISS @ OU",
+     "line": 2.5,
+     "odds": -105,
+     "side": "away",
+     "sport": "cfb",
+     "start": "2026-11-14T21:15Z",
+     "team": "MISS",
+     "team_name": "MISS",
+     "type": "spread"
+    }
+   ],
+   "payout": 151.91,
+   "price": 660,
+   "projected_profit": 7.77,
+   "start": "2026-11-14T20:00Z"
+  },
+  "seen": "2026-11-14T05:06+00:00",
+  "start": "2026-11-14T20:00Z"
+ },
+ "bet|2026-11-14|winner": {
+  "bet": {
+   "chance": 0.662,
+   "kind": "winner",
+   "legs": [
+    {
+     "chance": 0.6619999999999999,
+     "event_id": "401909982",
+     "game": "DET @ MIA",
+     "odds": -181,
+     "side": "away",
+     "sport": "nba",
+     "start": "2026-11-15T01:00Z",
+     "team": "DET",
+     "team_name": "Detroit Pistons",
+     "type": "ml"
+    }
+   ],
+   "payout": 31.05,
+   "price": -181,
+   "projected_profit": 0.55,
+   "start": "2026-11-15T01:00Z"
+  },
+  "seen": "2026-11-14T05:06+00:00",
+  "start": "2026-11-15T01:00Z"
+ },
  "parlay|2026-11-13|cfb": {
   "card": {
    "two": {
@@ -32,6 +111,41 @@
    }
   },
   "seen": "2026-11-14T04:53+00:00",
+  "start": "2026-11-14T20:00Z"
+ },
+ "parlay|2026-11-14|cfb": {
+  "card": {
+   "two": {
+    "chance": 0.31686899999999996,
+    "legs": [
+     {
+      "chance": 0.5529999999999999,
+      "event_id": "401856888",
+      "game": "TENN @ TA&M",
+      "line": -1.5,
+      "odds": 102,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-11-14T20:00Z",
+      "team": "TENN"
+     },
+     {
+      "chance": 0.573,
+      "event_id": "401856887",
+      "game": "MISS @ OU",
+      "line": 2.5,
+      "odds": -105,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-11-14T21:15Z",
+      "team": "MISS"
+     }
+    ],
+    "payout": 78.87619047619047,
+    "projected_profit": 4.993419599999996
+   }
+  },
+  "seen": "2026-11-14T05:06+00:00",
   "start": "2026-11-14T20:00Z"
  }
 }
