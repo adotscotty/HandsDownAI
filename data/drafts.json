@@ -49,38 +49,8 @@
    "projected_profit": 7.58,
    "start": "2026-11-14T20:00Z"
   },
-  "seen": "2026-11-14T09:15+00:00",
+  "seen": "2026-11-14T09:28+00:00",
   "start": "2026-11-14T20:00Z"
- },
- "bet|2026-11-14|prop": {
-  "bet": {
-   "chance": 0.652,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.652,
-     "event_id": "401909980",
-     "game": "DEN @ NO",
-     "label": "threes",
-     "line": 1.5,
-     "name": "Christian Braun",
-     "odds": -227,
-     "pid": "4431767",
-     "projection": 1.395,
-     "side": "under",
-     "sport": "nba",
-     "start": "2026-11-15T00:00Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.81,
-   "price": -227,
-   "projected_profit": -1.22,
-   "start": "2026-11-15T00:00Z"
-  },
-  "seen": "2026-11-14T09:15+00:00",
-  "start": "2026-11-15T00:00Z"
  },
  "bet|2026-11-14|spread": {
   "bet": {
@@ -106,7 +76,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-15T01:00Z"
   },
-  "seen": "2026-11-14T09:15+00:00",
+  "seen": "2026-11-14T09:28+00:00",
   "start": "2026-11-15T01:00Z"
  },
  "bet|2026-11-14|winner": {
@@ -132,7 +102,7 @@
    "projected_profit": 1.24,
    "start": "2026-11-14T18:00Z"
   },
-  "seen": "2026-11-14T09:15+00:00",
+  "seen": "2026-11-14T09:28+00:00",
   "start": "2026-11-14T18:00Z"
  },
  "parlay|2026-11-13|cfb": {
@@ -202,14 +172,25 @@
     "projected_profit": 4.826865362962959
    }
   },
-  "seen": "2026-11-14T09:15+00:00",
+  "seen": "2026-11-14T09:28+00:00",
   "start": "2026-11-14T20:00Z"
  },
  "parlay|2026-11-14|nba": {
   "card": {
    "two": {
-    "chance": 0.278735,
+    "chance": 0.27927,
     "legs": [
+     {
+      "chance": 0.522,
+      "event_id": "401909980",
+      "game": "DEN @ NO",
+      "line": 11.5,
+      "odds": -107,
+      "side": "home",
+      "sport": "nba",
+      "start": "2026-11-15T00:00Z",
+      "team": "NO"
+     },
      {
       "chance": 0.535,
       "event_id": "401909984",
@@ -220,48 +201,13 @@
       "sport": "nba",
       "start": "2026-11-15T01:00Z",
       "team": "MIN"
-     },
-     {
-      "chance": 0.521,
-      "event_id": "401909983",
-      "game": "BKN @ MEM",
-      "line": -5.5,
-      "odds": -106,
-      "side": "home",
-      "sport": "nba",
-      "start": "2026-11-15T01:00Z",
-      "team": "MEM"
      }
     ],
-    "payout": 75.88499550763702,
-    "projected_profit": 1.1518042228212053
+    "payout": 75.5407209612817,
+    "projected_profit": 1.0962571428571444
    }
   },
-  "seen": "2026-11-14T09:15+00:00",
-  "start": "2026-11-15T01:00Z"
- },
- "prop|nba|401909980": {
-  "game": {
-   "date": "2026-11-15T00:00Z",
-   "event_id": "401909980",
-   "name": "Denver Nuggets at New Orleans Pelicans",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.148,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Christian Braun",
-   "pid": "4431767",
-   "price": "-227",
-   "prob": 0.592,
-   "projection": 1.395,
-   "score": 0.652,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-14T09:15+00:00",
+  "seen": "2026-11-14T09:28+00:00",
   "start": "2026-11-15T00:00Z"
  }
 }
