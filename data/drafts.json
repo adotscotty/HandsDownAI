@@ -1,34 +1,4 @@
 {
- "bet|2026-11-13|prop": {
-  "bet": {
-   "chance": 0.662,
-   "kind": "prop",
-   "legs": [
-    {
-     "chance": 0.662,
-     "event_id": "401909302",
-     "game": "GS @ SA",
-     "label": "threes",
-     "line": 0.5,
-     "name": "Dylan Harper",
-     "odds": -239,
-     "pid": "5037871",
-     "projection": 1.2,
-     "side": "over",
-     "sport": "nba",
-     "start": "2026-11-14T02:30Z",
-     "stat": "tpm",
-     "type": "prop"
-    }
-   ],
-   "payout": 28.37,
-   "price": -239,
-   "projected_profit": -1.22,
-   "start": "2026-11-14T02:30Z"
-  },
-  "seen": "2026-11-14T02:01+00:00",
-  "start": "2026-11-14T02:30Z"
- },
  "parlay|2026-11-13|cfb": {
   "card": {
    "two": {
@@ -61,31 +31,7 @@
     "projected_profit": 4.993419599999996
    }
   },
-  "seen": "2026-11-14T02:01+00:00",
+  "seen": "2026-11-14T02:14+00:00",
   "start": "2026-11-14T20:00Z"
- },
- "prop|nba|401909302": {
-  "game": {
-   "date": "2026-11-14T02:30Z",
-   "event_id": "401909302",
-   "name": "Golden State Warriors at San Antonio Spurs",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.026,
-   "label": "threes",
-   "line": 0.5,
-   "market_prob": 0.662,
-   "name": "Dylan Harper",
-   "pid": "5037871",
-   "price": "-239",
-   "prob": 0.687,
-   "projection": 1.2,
-   "score": 0.662,
-   "side": "over",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-14T02:01+00:00",
-  "start": "2026-11-14T02:30Z"
  }
 }
