@@ -49,7 +49,7 @@
    "projected_profit": 7.58,
    "start": "2026-11-14T20:00Z"
   },
-  "seen": "2026-11-14T09:28+00:00",
+  "seen": "2026-11-14T09:41+00:00",
   "start": "2026-11-14T20:00Z"
  },
  "bet|2026-11-14|spread": {
@@ -59,25 +59,25 @@
    "legs": [
     {
      "chance": 0.535,
-     "event_id": "401909984",
-     "game": "CHI @ MIN",
-     "line": -14.5,
-     "odds": -105,
+     "event_id": "401909980",
+     "game": "DEN @ NO",
+     "line": 12.5,
+     "odds": -115,
      "side": "home",
      "sport": "nba",
-     "start": "2026-11-15T01:00Z",
-     "team": "MIN",
-     "team_name": "Minnesota Timberwolves",
+     "start": "2026-11-15T00:00Z",
+     "team": "NO",
+     "team_name": "New Orleans Pelicans",
      "type": "spread"
     }
    ],
-   "payout": 39.05,
-   "price": -105,
-   "projected_profit": 0.89,
-   "start": "2026-11-15T01:00Z"
+   "payout": 37.39,
+   "price": -115,
+   "projected_profit": 0.0,
+   "start": "2026-11-15T00:00Z"
   },
-  "seen": "2026-11-14T09:28+00:00",
-  "start": "2026-11-15T01:00Z"
+  "seen": "2026-11-14T09:41+00:00",
+  "start": "2026-11-15T00:00Z"
  },
  "bet|2026-11-14|winner": {
   "bet": {
@@ -102,7 +102,7 @@
    "projected_profit": 1.24,
    "start": "2026-11-14T18:00Z"
   },
-  "seen": "2026-11-14T09:28+00:00",
+  "seen": "2026-11-14T09:41+00:00",
   "start": "2026-11-14T18:00Z"
  },
  "parlay|2026-11-13|cfb": {
@@ -172,20 +172,20 @@
     "projected_profit": 4.826865362962959
    }
   },
-  "seen": "2026-11-14T09:28+00:00",
+  "seen": "2026-11-14T09:41+00:00",
   "start": "2026-11-14T20:00Z"
  },
  "parlay|2026-11-14|nba": {
   "card": {
    "two": {
-    "chance": 0.27927,
+    "chance": 0.286225,
     "legs": [
      {
-      "chance": 0.522,
+      "chance": 0.535,
       "event_id": "401909980",
       "game": "DEN @ NO",
-      "line": 11.5,
-      "odds": -107,
+      "line": 12.5,
+      "odds": -115,
       "side": "home",
       "sport": "nba",
       "start": "2026-11-15T00:00Z",
@@ -203,11 +203,11 @@
       "team": "MIN"
      }
     ],
-    "payout": 75.5407209612817,
-    "projected_profit": 1.0962571428571444
+    "payout": 73.00207039337472,
+    "projected_profit": 0.8950175983436814
    }
   },
-  "seen": "2026-11-14T09:28+00:00",
+  "seen": "2026-11-14T09:41+00:00",
   "start": "2026-11-15T00:00Z"
  }
 }
