@@ -31,7 +31,31 @@
     "projected_profit": 4.993419599999996
    }
   },
-  "seen": "2026-11-14T02:41+00:00",
+  "seen": "2026-11-14T02:54+00:00",
   "start": "2026-11-14T20:00Z"
+ },
+ "prop|nba|401909304": {
+  "game": {
+   "date": "2026-11-14T03:30Z",
+   "event_id": "401909304",
+   "name": "Oklahoma City Thunder at LA Clippers",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.115,
+   "label": "assists",
+   "line": 1.5,
+   "market_prob": 0.651,
+   "name": "Brook Lopez",
+   "pid": "3448",
+   "price": "-226",
+   "prob": 0.613,
+   "projection": 1.235,
+   "score": 0.651,
+   "side": "under",
+   "stat": "ast"
+  },
+  "seen": "2026-11-14T02:54+00:00",
+  "start": "2026-11-14T03:30Z"
  }
 }
