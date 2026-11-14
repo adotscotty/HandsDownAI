@@ -49,22 +49,22 @@
    "projected_profit": 7.58,
    "start": "2026-11-14T20:00Z"
   },
-  "seen": "2026-11-14T07:43+00:00",
+  "seen": "2026-11-14T07:56+00:00",
   "start": "2026-11-14T20:00Z"
  },
  "bet|2026-11-14|prop": {
   "bet": {
-   "chance": 0.655,
+   "chance": 0.661,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.655,
+     "chance": 0.661,
      "event_id": "401909982",
      "game": "DET @ MIA",
      "label": "threes",
      "line": 0.5,
      "name": "Bam Adebayo",
-     "odds": -230,
+     "odds": -238,
      "pid": "4066261",
      "projection": 1.164,
      "side": "over",
@@ -74,12 +74,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.7,
-   "price": -230,
-   "projected_profit": -1.2,
+   "payout": 28.4,
+   "price": -238,
+   "projected_profit": -1.23,
    "start": "2026-11-15T01:00Z"
   },
-  "seen": "2026-11-14T07:43+00:00",
+  "seen": "2026-11-14T07:56+00:00",
   "start": "2026-11-15T01:00Z"
  },
  "bet|2026-11-14|spread": {
@@ -106,7 +106,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-15T01:00Z"
   },
-  "seen": "2026-11-14T07:43+00:00",
+  "seen": "2026-11-14T07:56+00:00",
   "start": "2026-11-15T01:00Z"
  },
  "bet|2026-11-14|winner": {
@@ -132,7 +132,7 @@
    "projected_profit": 1.24,
    "start": "2026-11-14T18:00Z"
   },
-  "seen": "2026-11-14T07:43+00:00",
+  "seen": "2026-11-14T07:56+00:00",
   "start": "2026-11-14T18:00Z"
  },
  "parlay|2026-11-13|cfb": {
@@ -202,7 +202,7 @@
     "projected_profit": 4.826865362962959
    }
   },
-  "seen": "2026-11-14T07:43+00:00",
+  "seen": "2026-11-14T07:56+00:00",
   "start": "2026-11-14T20:00Z"
  },
  "parlay|2026-11-14|nba": {
@@ -237,32 +237,8 @@
     "projected_profit": 1.6601144271570014
    }
   },
-  "seen": "2026-11-14T07:43+00:00",
+  "seen": "2026-11-14T07:56+00:00",
   "start": "2026-11-15T01:00Z"
- },
- "prop|nba|401909980": {
-  "game": {
-   "date": "2026-11-15T00:00Z",
-   "event_id": "401909980",
-   "name": "Denver Nuggets at New Orleans Pelicans",
-   "sport": "nba"
-  },
-  "prop": {
-   "ev": -0.148,
-   "label": "threes",
-   "line": 1.5,
-   "market_prob": 0.652,
-   "name": "Christian Braun",
-   "pid": "4431767",
-   "price": "-227",
-   "prob": 0.592,
-   "projection": 1.395,
-   "score": 0.652,
-   "side": "under",
-   "stat": "tpm"
-  },
-  "seen": "2026-11-14T07:43+00:00",
-  "start": "2026-11-15T00:00Z"
  },
  "prop|nba|401909982": {
   "game": {
@@ -272,20 +248,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.026,
+   "ev": -0.031,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.655,
+   "market_prob": 0.661,
    "name": "Bam Adebayo",
    "pid": "4066261",
-   "price": "-230",
-   "prob": 0.679,
+   "price": "-238",
+   "prob": 0.682,
    "projection": 1.164,
-   "score": 0.655,
+   "score": 0.661,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-14T07:43+00:00",
+  "seen": "2026-11-14T07:56+00:00",
   "start": "2026-11-15T01:00Z"
  }
 }
