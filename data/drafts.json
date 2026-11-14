@@ -1,17 +1,17 @@
 {
  "bet|2026-11-13|prop": {
   "bet": {
-   "chance": 0.661,
+   "chance": 0.664,
    "kind": "prop",
    "legs": [
     {
-     "chance": 0.661,
+     "chance": 0.664,
      "event_id": "401909302",
      "game": "GS @ SA",
      "label": "threes",
      "line": 0.5,
      "name": "Dylan Harper",
-     "odds": -237,
+     "odds": -241,
      "pid": "5037871",
      "projection": 1.2,
      "side": "over",
@@ -21,12 +21,12 @@
      "type": "prop"
     }
    ],
-   "payout": 28.44,
-   "price": -237,
-   "projected_profit": -1.2,
+   "payout": 28.3,
+   "price": -241,
+   "projected_profit": -1.21,
    "start": "2026-11-14T02:30Z"
   },
-  "seen": "2026-11-13T23:50+00:00",
+  "seen": "2026-11-14T00:03+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "bet|2026-11-13|winner": {
@@ -52,25 +52,14 @@
    "projected_profit": 1.06,
    "start": "2026-11-14T01:00Z"
   },
-  "seen": "2026-11-13T23:50+00:00",
+  "seen": "2026-11-14T00:03+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "parlay|2026-11-13|cfb": {
   "card": {
    "two": {
-    "chance": 0.32023499999999994,
+    "chance": 0.33062099999999994,
     "legs": [
-     {
-      "chance": 0.5549999999999999,
-      "event_id": "401862828",
-      "game": "TULN @ RICE",
-      "line": 2.5,
-      "odds": -102,
-      "side": "away",
-      "sport": "cfb",
-      "start": "2026-11-14T19:00Z",
-      "team": "TULN"
-     },
      {
       "chance": 0.577,
       "event_id": "401869952",
@@ -81,14 +70,25 @@
       "sport": "cfb",
       "start": "2026-11-14T20:30Z",
       "team": "GAST"
+     },
+     {
+      "chance": 0.573,
+      "event_id": "401856887",
+      "game": "MISS @ OU",
+      "line": 2.5,
+      "odds": -112,
+      "side": "away",
+      "sport": "cfb",
+      "start": "2026-11-14T21:15Z",
+      "team": "MISS"
      }
     ],
-    "payout": 76.28177196804648,
-    "projected_profit": 4.4280932461873626
+    "payout": 72.91005291005291,
+    "projected_profit": 4.105594603174598
    }
   },
-  "seen": "2026-11-13T23:50+00:00",
-  "start": "2026-11-14T19:00Z"
+  "seen": "2026-11-14T00:03+00:00",
+  "start": "2026-11-14T20:30Z"
  },
  "prop|nba|401909298": {
   "game": {
@@ -111,7 +111,31 @@
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T23:50+00:00",
+  "seen": "2026-11-14T00:03+00:00",
+  "start": "2026-11-14T01:00Z"
+ },
+ "prop|nba|401909300": {
+  "game": {
+   "date": "2026-11-14T01:00Z",
+   "event_id": "401909300",
+   "name": "Memphis Grizzlies at New Orleans Pelicans",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.045,
+   "label": "threes",
+   "line": 1.5,
+   "market_prob": 0.655,
+   "name": "Herbert Jones",
+   "pid": "4277813",
+   "price": "-230",
+   "prob": 0.665,
+   "projection": 0.972,
+   "score": 0.655,
+   "side": "under",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-14T00:03+00:00",
   "start": "2026-11-14T01:00Z"
  },
  "prop|nba|401909302": {
@@ -122,20 +146,20 @@
    "sport": "nba"
   },
   "prop": {
-   "ev": -0.025,
+   "ev": -0.027,
    "label": "threes",
    "line": 0.5,
-   "market_prob": 0.661,
+   "market_prob": 0.664,
    "name": "Dylan Harper",
    "pid": "5037871",
-   "price": "-237",
-   "prob": 0.686,
+   "price": "-241",
+   "prob": 0.688,
    "projection": 1.2,
-   "score": 0.661,
+   "score": 0.664,
    "side": "over",
    "stat": "tpm"
   },
-  "seen": "2026-11-13T23:50+00:00",
+  "seen": "2026-11-14T00:03+00:00",
   "start": "2026-11-14T02:30Z"
  },
  "prop|nba|401909303": {
@@ -159,7 +183,7 @@
    "side": "under",
    "stat": "ast"
   },
-  "seen": "2026-11-13T23:50+00:00",
+  "seen": "2026-11-14T00:03+00:00",
   "start": "2026-11-14T03:00Z"
  }
 }
