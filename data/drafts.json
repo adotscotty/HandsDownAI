@@ -1,7 +1,7 @@
 {
  "bet|2026-11-14|parlay": {
   "bet": {
-   "chance": 0.1828,
+   "chance": 0.179,
    "kind": "parlay",
    "legs": [
     {
@@ -31,26 +31,56 @@
      "type": "spread"
     },
     {
-     "chance": 0.573,
-     "event_id": "401856887",
-     "game": "MISS @ OU",
-     "line": 2.5,
-     "odds": -105,
+     "chance": 0.5609999999999999,
+     "event_id": "401862828",
+     "game": "TULN @ RICE",
+     "line": 3.0,
+     "odds": -102,
      "side": "away",
      "sport": "cfb",
-     "start": "2026-11-14T21:15Z",
-     "team": "MISS",
-     "team_name": "MISS",
+     "start": "2026-11-14T21:30Z",
+     "team": "TULN",
+     "team_name": "TULN",
      "type": "spread"
     }
    ],
-   "payout": 151.91,
-   "price": 660,
-   "projected_profit": 7.77,
+   "payout": 154.09,
+   "price": 670,
+   "projected_profit": 7.58,
    "start": "2026-11-14T20:00Z"
   },
-  "seen": "2026-11-14T06:25+00:00",
+  "seen": "2026-11-14T06:37+00:00",
   "start": "2026-11-14T20:00Z"
+ },
+ "bet|2026-11-14|prop": {
+  "bet": {
+   "chance": 0.655,
+   "kind": "prop",
+   "legs": [
+    {
+     "chance": 0.655,
+     "event_id": "401909982",
+     "game": "DET @ MIA",
+     "label": "threes",
+     "line": 0.5,
+     "name": "Bam Adebayo",
+     "odds": -230,
+     "pid": "4066261",
+     "projection": 1.164,
+     "side": "over",
+     "sport": "nba",
+     "start": "2026-11-15T01:00Z",
+     "stat": "tpm",
+     "type": "prop"
+    }
+   ],
+   "payout": 28.7,
+   "price": -230,
+   "projected_profit": -1.2,
+   "start": "2026-11-15T01:00Z"
+  },
+  "seen": "2026-11-14T06:37+00:00",
+  "start": "2026-11-15T01:00Z"
  },
  "bet|2026-11-14|spread": {
   "bet": {
@@ -76,7 +106,7 @@
    "projected_profit": 0.89,
    "start": "2026-11-15T01:00Z"
   },
-  "seen": "2026-11-14T06:25+00:00",
+  "seen": "2026-11-14T06:37+00:00",
   "start": "2026-11-15T01:00Z"
  },
  "bet|2026-11-14|winner": {
@@ -102,7 +132,7 @@
    "projected_profit": 1.24,
    "start": "2026-11-14T18:00Z"
   },
-  "seen": "2026-11-14T06:25+00:00",
+  "seen": "2026-11-14T06:37+00:00",
   "start": "2026-11-14T18:00Z"
  },
  "parlay|2026-11-13|cfb": {
@@ -143,7 +173,7 @@
  "parlay|2026-11-14|cfb": {
   "card": {
    "two": {
-    "chance": 0.31686899999999996,
+    "chance": 0.31908099999999995,
     "legs": [
      {
       "chance": 0.5529999999999999,
@@ -157,22 +187,22 @@
       "team": "TENN"
      },
      {
-      "chance": 0.573,
-      "event_id": "401856887",
-      "game": "MISS @ OU",
-      "line": 2.5,
-      "odds": -105,
-      "side": "away",
+      "chance": 0.577,
+      "event_id": "401869952",
+      "game": "GASO @ GAST",
+      "line": 6.0,
+      "odds": -108,
+      "side": "home",
       "sport": "cfb",
-      "start": "2026-11-14T21:15Z",
-      "team": "MISS"
+      "start": "2026-11-14T20:30Z",
+      "team": "GAST"
      }
     ],
-    "payout": 78.87619047619047,
-    "projected_profit": 4.993419599999996
+    "payout": 77.80740740740741,
+    "projected_profit": 4.826865362962959
    }
   },
-  "seen": "2026-11-14T06:25+00:00",
+  "seen": "2026-11-14T06:37+00:00",
   "start": "2026-11-14T20:00Z"
  },
  "parlay|2026-11-14|nba": {
@@ -207,7 +237,31 @@
     "projected_profit": 1.6574551020408173
    }
   },
-  "seen": "2026-11-14T06:25+00:00",
+  "seen": "2026-11-14T06:37+00:00",
   "start": "2026-11-15T00:30Z"
+ },
+ "prop|nba|401909982": {
+  "game": {
+   "date": "2026-11-15T01:00Z",
+   "event_id": "401909982",
+   "name": "Detroit Pistons at Miami Heat",
+   "sport": "nba"
+  },
+  "prop": {
+   "ev": -0.026,
+   "label": "threes",
+   "line": 0.5,
+   "market_prob": 0.655,
+   "name": "Bam Adebayo",
+   "pid": "4066261",
+   "price": "-230",
+   "prob": 0.679,
+   "projection": 1.164,
+   "score": 0.655,
+   "side": "over",
+   "stat": "tpm"
+  },
+  "seen": "2026-11-14T06:37+00:00",
+  "start": "2026-11-15T01:00Z"
  }
 }
